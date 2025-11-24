@@ -1,0 +1,60 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Next.js
+.next
+out
+build
+next-env.d.ts
+
+# Production
+dist
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env
+.env*.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
+# PWA files
+public/sw.js
+public/workbox-*.js
+public/worker-*.js
+public/sw.js.map
+public/workbox-*.js.map
+public/worker-*.js.map
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Test coverage
+coverage
+
+# Turbo
+.turbo
+
+# IDE
+.vscode
+.idea
+
+# Other
+*.min.js
+*.min.css

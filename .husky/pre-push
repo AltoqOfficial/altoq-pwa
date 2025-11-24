@@ -1,0 +1,20 @@
+echo "🚀 Running pre-push checks..."
+echo ""
+
+echo "🔍 Linting all files..."
+pnpm lint
+
+echo ""
+echo "💅 Checking code formatting..."
+pnpm format:check
+
+echo ""
+echo "📝 Checking TypeScript types..."
+pnpm type-check
+
+echo ""
+echo "🧪 Running tests..."
+pnpm test:ci
+
+echo ""
+echo "✅ Pre-push checks passed! Pushing to remote..."
