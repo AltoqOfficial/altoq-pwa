@@ -108,7 +108,6 @@ export function CandidateSelector({
               allCandidates={mockCandidates}
               selectedId={leftCandidate}
               onChange={handleLeftChange}
-              side="left"
             />
 
             {/* VS Divider */}
@@ -126,7 +125,6 @@ export function CandidateSelector({
               allCandidates={mockCandidates}
               selectedId={rightCandidate}
               onChange={handleRightChange}
-              side="right"
             />
           </div>
         </div>
@@ -140,7 +138,6 @@ interface CandidateCardProps {
   allCandidates: Candidate[];
   selectedId: string | null;
   onChange: (id: string) => void;
-  side: "left" | "right";
 }
 
 function CandidateCard({
@@ -148,7 +145,6 @@ function CandidateCard({
   allCandidates,
   selectedId,
   onChange,
-  side,
 }: CandidateCardProps) {
   return (
     <div className="flex flex-col items-center">
