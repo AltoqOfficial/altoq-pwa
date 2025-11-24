@@ -27,9 +27,9 @@ export default function NotFound() {
           <Link href={ROUTES.HOME}>
             <Button size="lg">Volver al inicio</Button>
           </Link>
-          <Link href={ROUTES.CANDIDATES}>
+          <Link href={ROUTES.COMPARATOR}>
             <Button size="lg" variant="outline">
-              Ver candidatos
+              Comparar Candidatos
             </Button>
           </Link>
         </div>

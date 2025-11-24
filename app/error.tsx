@@ -16,7 +16,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gradient-to-br from-primary-50 to-secondary-50">
+    <main className="flex min-h-screen items-center justify-center bg-linear-to-br from-primary-50 to-secondary-50">
       <Container maxWidth="md" className="text-center">
         <div className="mb-8 inline-flex h-32 w-32 items-center justify-center rounded-full bg-red-100 text-6xl">
           ⚠️

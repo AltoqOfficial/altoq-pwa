@@ -26,63 +26,75 @@ export interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
  * Typography Component (Atom)
  * Handles all text rendering with consistent styling
  */
-export const Typography: React.FC<TypographyProps> = ({
-  variant = "p",
-  weight = "normal",
-  align = "left",
-  color = "inherit",
-  className,
-  children,
-  as,
-  ...props
-}) => {
-  const Component = (as || variant) as React.ElementType;
+export const Typography = React.forwardRef<HTMLElement, TypographyProps>(
+  (
+    {
+      variant = "p",
+      weight = "normal",
+      align = "left",
+      color = "inherit",
+      className,
+      children,
+      as,
+      ...props
+    },
+    ref
+  ) => {
+    // Use 'as' prop if provided, otherwise use variant
+    const Component = (as || variant) as React.ElementType;
 
-  const variantStyles = {
-    h1: "text-4xl md:text-5xl lg:text-6xl font-bold leading-tight",
-    h2: "text-3xl md:text-4xl lg:text-5xl font-bold leading-tight",
-    h3: "text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug",
-    h4: "text-xl md:text-2xl lg:text-3xl font-semibold leading-snug",
-    h5: "text-lg md:text-xl lg:text-2xl font-medium leading-normal",
-    h6: "text-base md:text-lg lg:text-xl font-medium leading-normal",
-    p: "text-base leading-relaxed",
-    span: "text-base",
-    small: "text-sm leading-normal",
-  };
+    const variantStyles: Record<TypographyVariant, string> = {
+      h1: "text-4xl md:text-5xl lg:text-6xl font-bold leading-tight",
+      h2: "text-3xl md:text-4xl lg:text-5xl font-bold leading-tight",
+      h3: "text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug",
+      h4: "text-xl md:text-2xl lg:text-3xl font-semibold leading-snug",
+      h5: "text-lg md:text-xl lg:text-2xl font-medium leading-normal",
+      h6: "text-base md:text-lg lg:text-xl font-medium leading-normal",
+      p: "text-base leading-relaxed",
+      span: "text-base",
+      small: "text-sm leading-normal",
+    };
 
-  const weightStyles = {
-    light: "font-light",
-    normal: "font-normal",
-    medium: "font-medium",
-    semibold: "font-semibold",
-    bold: "font-bold",
-  };
+    const weightStyles: Record<
+      NonNullable<TypographyProps["weight"]>,
+      string
+    > = {
+      light: "font-light",
+      normal: "font-normal",
+      medium: "font-medium",
+      semibold: "font-semibold",
+      bold: "font-bold",
+    };
 
-  const alignStyles = {
-    left: "text-left",
-    center: "text-center",
-    right: "text-right",
-  };
+    const alignStyles: Record<NonNullable<TypographyProps["align"]>, string> = {
+      left: "text-left",
+      center: "text-center",
+      right: "text-right",
+    };
 
-  const colorStyles = {
-    primary: "text-primary-600",
-    secondary: "text-secondary-600",
-    muted: "text-neutral-600",
-    inherit: "",
-  };
+    const colorStyles: Record<NonNullable<TypographyProps["color"]>, string> = {
+      primary: "text-primary-600",
+      secondary: "text-secondary-600",
+      muted: "text-neutral-600",
+      inherit: "",
+    };
 
-  return (
-    <Component
-      className={cn(
-        variantStyles[variant],
-        weightStyles[weight],
-        alignStyles[align],
-        colorStyles[color],
-        className
-      )}
-      {...props}
-    >
-      {children}
-    </Component>
-  );
-};
+    return (
+      <Component
+        ref={ref}
+        className={cn(
+          variantStyles[variant],
+          weightStyles[weight],
+          alignStyles[align],
+          colorStyles[color],
+          className
+        )}
+        {...props}
+      >
+        {children}
+      </Component>
+    );
+  }
+);
+
+Typography.displayName = "Typography";

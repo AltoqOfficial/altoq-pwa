@@ -1,8 +1,3 @@
-/**
- * Atoms Index
- * Export all atomic components
- */
-
-export * from "./Button";
-export * from "./Typography";
-export * from "./Container";
+export { Button } from "./Button";
+export { Typography } from "./Typography";
+export { Container } from "./Container";

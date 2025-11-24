@@ -1,68 +1,18 @@
 /**
  * Application Constants
- * Central location for all application-wide constants
+ * Centralized configuration for Altoq platform
  */
 
-// Application metadata
+// Application Info
 export const APP_NAME = "Altoq";
 export const APP_DESCRIPTION =
-  "Vota informado en las Elecciones Generales 2026";
-export const APP_URL = "https://altoqperu.com";
+  "Plataforma para votar informado en las Elecciones Generales 2026 del Perú";
+export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://altoq.pe";
 
-// Election dates
-export const ELECTION_DATE = new Date("2026-04-05"); // Update with actual date
-export const REGISTRATION_DEADLINE = new Date("2026-03-05"); // Update with actual date
+// Launch Date - January 10, 2026 at 00:00 Peru time (UTC-5)
+export const LAUNCH_DATE = new Date("2026-01-10T00:00:00-05:00");
 
-// API Configuration
-export const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || "https://api.altoqperu.com";
-export const API_TIMEOUT = 30000; // 30 seconds
-
-// Local Storage Keys
-export const STORAGE_KEYS = {
-  USER_PREFERENCES: "altoq_user_preferences",
-  ONBOARDING_COMPLETED: "altoq_onboarding_completed",
-  FAVORITES: "altoq_favorites",
-  THEME: "altoq_theme",
-} as const;
-
-// Routes
-export const ROUTES = {
-  HOME: "/",
-  CANDIDATES: "/candidates",
-  CANDIDATE_DETAIL: "/candidates/:id",
-  PROPOSALS: "/proposals",
-  ABOUT: "/about",
-  PRIVACY: "/privacy",
-  TERMS: "/terms",
-  CONTACT: "/contact",
-} as const;
-
-// Social Media Links
-export const SOCIAL_LINKS = {
-  FACEBOOK: "https://facebook.com/altoq",
-  TWITTER: "https://twitter.com/altoq",
-  INSTAGRAM: "https://instagram.com/altoq",
-  LINKEDIN: "https://linkedin.com/company/altoq",
-} as const;
-
-// Animation Durations (in ms)
-export const ANIMATION = {
-  FAST: 150,
-  NORMAL: 300,
-  SLOW: 500,
-} as const;
-
-// Breakpoints (should match Tailwind config)
-export const BREAKPOINTS = {
-  SM: 640,
-  MD: 768,
-  LG: 1024,
-  XL: 1280,
-  "2XL": 1536,
-} as const;
-
-// SEO Metadata
+// SEO Configuration
 export const SEO = {
   TITLE_TEMPLATE: "%s | Altoq",
   DEFAULT_TITLE: "Altoq - Vota Informado",
@@ -78,3 +28,91 @@ export const SEO = {
     "informado",
   ],
 } as const;
+
+// Routes
+export const ROUTES = {
+  HOME: "/",
+  COMPARATOR: "/compara",
+  JOIN_US: "/unete",
+  ABOUT: "/about",
+  PRIVACY: "/privacy",
+  TERMS: "/terms",
+} as const;
+
+// Social Media Links
+export const SOCIAL_LINKS = {
+  tiktok: "https://tiktok.com/@altoq",
+  linkedin: "https://linkedin.com/company/altoq",
+  instagram: "https://instagram.com/altoq",
+  facebook: "https://facebook.com/altoq",
+  twitter: "https://twitter.com/altoq",
+} as const;
+
+// Contact Information
+export const CONTACT = {
+  email: "contacto@altoqperu.com",
+  phone: "+51 999 999 999",
+} as const;
+
+// Political Parties (from the design)
+export const POLITICAL_PARTIES = [
+  {
+    id: "renovacion-popular",
+    name: "Renovación Popular",
+    logo: "/images/parties/renovacion-popular.png",
+  },
+  {
+    id: "fuerza-popular",
+    name: "Fuerza Popular",
+    logo: "/images/parties/fuerza-popular.png",
+  },
+  {
+    id: "peru-libre",
+    name: "Perú Libre",
+    logo: "/images/parties/peru-libre.png",
+  },
+  {
+    id: "peru-bicentenario",
+    name: "Perú Bicentenario",
+    logo: "/images/parties/peru-bicentenario.png",
+  },
+  {
+    id: "alianza-progreso",
+    name: "Alianza para el Progreso",
+    logo: "/images/parties/alianza-progreso.png",
+  },
+] as const;
+
+// Comparison Tabs
+export const COMPARISON_TABS = [
+  {
+    id: "perfil-general",
+    title: "I. Perfil General",
+    order: 1,
+  },
+  {
+    id: "trayectoria-politica",
+    title: "II. Trayectoria Política",
+    order: 2,
+  },
+  {
+    id: "antecedentes",
+    title: "III. Antecedentes e Investigaciones",
+    order: 3,
+  },
+  {
+    id: "propuestas",
+    title: "IV. Propuestas por Temas",
+    order: 4,
+  },
+  {
+    id: "coherencia",
+    title: "V. Coherencia con el Plan del Partido",
+    order: 5,
+  },
+  {
+    id: "financiamiento",
+    title: "VI. Financiamiento",
+    order: 6,
+  },
+] as const;

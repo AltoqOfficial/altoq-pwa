@@ -61,7 +61,11 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-hover)
+  );
   color: #ffffff;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
@@ -73,7 +77,11 @@ body {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--color-primary-hover), var(--color-primary-active));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-hover),
+    var(--color-primary-active)
+  );
   box-shadow: 0 12px 30px -12px var(--shadow-color);
   transform: translateY(-2px);
 }

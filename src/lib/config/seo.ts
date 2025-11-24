@@ -27,7 +27,7 @@ export function generateMetadata({
   return {
     title: pageTitle,
     description,
-    keywords: SEO.KEYWORDS,
+    keywords: [...SEO.KEYWORDS],
     authors: [{ name: APP_NAME }],
     creator: APP_NAME,
     publisher: APP_NAME,

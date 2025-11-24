@@ -1,84 +1,97 @@
 "use client";
 
-import React from "react";
+import { useEffect, useState } from "react";
 
-import { Typography } from "@/components/atoms";
-import { useCountdown } from "@/hooks";
-import { cn } from "@/lib/utils";
+import { Typography } from "@/components/atoms/Typography";
 
-export interface CountdownTimerProps {
+interface TimeLeft {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
+
+interface CountdownTimerProps {
   targetDate: Date;
-  className?: string;
-  showLabels?: boolean;
+}
+
+function calculateTimeLeft(targetDate: Date): TimeLeft {
+  const difference = targetDate.getTime() - new Date().getTime();
+
+  if (difference <= 0) {
+    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  }
+
+  return {
+    days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+    minutes: Math.floor((difference / 1000 / 60) % 60),
+    seconds: Math.floor((difference / 1000) % 60),
+  };
 }
 
 /**
  * CountdownTimer Component (Molecule)
- * Displays a countdown timer with days, hours, minutes, and seconds
+ * Displays a countdown timer to a target date
+ * Optimized to avoid setState in useEffect warning
  */
-export const CountdownTimer: React.FC<CountdownTimerProps> = ({
-  targetDate,
-  className,
-  showLabels = true,
-}) => {
-  const { days, hours, minutes, seconds, total } = useCountdown(targetDate);
+export function CountdownTimer({ targetDate }: CountdownTimerProps) {
+  // Initialize state with lazy initializer to avoid hydration issues
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(() => {
+    // Return zero values during SSR
+    if (typeof window === "undefined") {
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }
+    // Calculate actual time only on client
+    return calculateTimeLeft(targetDate);
+  });
 
-  if (total <= 0) {
-    return (
-      <div className={cn("text-center", className)}>
-        <Typography variant="h3" color="primary">
-          ¡El día ha llegado!
-        </Typography>
-      </div>
-    );
-  }
+  useEffect(() => {
+    // ✅ Don't call setState immediately - just set up the interval
+    // The interval callback will handle updates
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft(targetDate));
+    }, 1000);
 
-  const timeUnits = [
-    { value: days, label: "Días" },
-    { value: hours, label: "Horas" },
-    { value: minutes, label: "Minutos" },
-    { value: seconds, label: "Segundos" },
-  ];
+    return () => clearInterval(timer);
+  }, [targetDate]);
 
   return (
     <div
-      className={cn(
-        "flex items-center justify-center gap-4 md:gap-6",
-        className
-      )}
+      className="flex items-center justify-center gap-4 md:gap-8"
+      role="timer"
+      aria-live="polite"
     >
-      {timeUnits.map((unit, index) => (
-        <React.Fragment key={unit.label}>
-          <div className="flex flex-col items-center">
-            <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-primary-600 shadow-lg md:h-20 md:w-20 lg:h-24 lg:w-24">
-              <Typography
-                variant="h2"
-                className="font-bold text-white md:text-4xl lg:text-5xl"
-              >
-                {String(unit.value).padStart(2, "0")}
-              </Typography>
-            </div>
-            {showLabels && (
-              <Typography
-                variant="small"
-                className="mt-2 text-neutral-600"
-                weight="medium"
-              >
-                {unit.label}
-              </Typography>
-            )}
-          </div>
-          {index < timeUnits.length - 1 && (
-            <Typography
-              variant="h2"
-              className="hidden text-primary-600 md:block"
-              weight="bold"
-            >
-              :
-            </Typography>
-          )}
-        </React.Fragment>
-      ))}
+      <TimeUnit label="Días" value={timeLeft.days} />
+      <TimeUnit label="Horas" value={timeLeft.hours} />
+      <TimeUnit label="Minutos" value={timeLeft.minutes} />
+      <TimeUnit label="Segundos" value={timeLeft.seconds} />
     </div>
   );
-};
+}
+
+interface TimeUnitProps {
+  label: string;
+  value: number;
+}
+
+function TimeUnit({ label, value }: TimeUnitProps) {
+  return (
+    <div className="flex flex-col items-center" suppressHydrationWarning>
+      <Typography
+        variant="h2"
+        weight="bold"
+        className="text-primary-600 tabular-nums"
+        suppressHydrationWarning
+      >
+        {String(value).padStart(2, "0")}
+      </Typography>
+      <Typography
+        variant="small"
+        className="text-neutral-600 uppercase tracking-wider"
+      >
+        {label}
+      </Typography>
+    </div>
+  );
+}

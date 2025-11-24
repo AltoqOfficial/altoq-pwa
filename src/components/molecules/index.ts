@@ -1,6 +1,1 @@
-/**
- * Molecules Index
- * Export all molecule components
- */
-
-export * from "./CountdownTimer";
+export { CountdownTimer } from "./CountdownTimer";

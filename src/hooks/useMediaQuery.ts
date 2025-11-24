@@ -1,36 +1,29 @@
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 /**
- * Custom hook for media queries
+ * Custom hook for media queries using useSyncExternalStore
  * Returns true if the media query matches
+ * This is the recommended approach for React 18+
  *
  * @example
  * const isMobile = useMediaQuery('(max-width: 768px)');
  */
 export function useMediaQuery(query: string): boolean {
-  const [matches, setMatches] = useState(false);
-
-  useEffect(() => {
+  const subscribe = (callback: () => void) => {
     const mediaQuery = window.matchMedia(query);
-    setMatches(mediaQuery.matches);
+    mediaQuery.addEventListener("change", callback);
+    return () => mediaQuery.removeEventListener("change", callback);
+  };
 
-    const handler = (event: MediaQueryListEvent) => {
-      setMatches(event.matches);
-    };
+  const getSnapshot = () => {
+    return window.matchMedia(query).matches;
+  };
 
-    // Modern browsers
-    if (mediaQuery.addEventListener) {
-      mediaQuery.addEventListener("change", handler);
-      return () => mediaQuery.removeEventListener("change", handler);
-    }
-    // Legacy browsers
-    else {
-      mediaQuery.addListener(handler);
-      return () => mediaQuery.removeListener(handler);
-    }
-  }, [query]);
+  const getServerSnapshot = () => {
+    return false;
+  };
 
-  return matches;
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
 
 /**

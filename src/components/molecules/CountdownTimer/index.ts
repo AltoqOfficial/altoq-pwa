@@ -1,1 +1,1 @@
-export { CountdownTimer, type CountdownTimerProps } from "./CountdownTimer";
+export { CountdownTimer } from "./CountdownTimer";
