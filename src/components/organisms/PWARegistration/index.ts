@@ -1,0 +1,1 @@
+export { PWARegistration } from "./PWARegistration";
