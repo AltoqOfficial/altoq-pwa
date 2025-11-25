@@ -1,5 +1,5 @@
-import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 
@@ -8,6 +8,7 @@ export interface LogoProps {
   size?: "sm" | "md" | "lg";
   className?: string;
   asLink?: boolean;
+  priority?: boolean;
 }
 
 /**
@@ -15,40 +16,45 @@ export interface LogoProps {
  * Displays the Altoq logo with different variants
  *
  * @param variant - Color variant: default (red), white, red
- * @param size - Size: sm (24px), md (32px), lg (48px)
+ * @param size - Size: sm (96x32px), md (128x42px), lg (192x64px)
  * @param className - Additional CSS classes
  * @param asLink - If true, wraps logo in Link to home
+ * @param priority - If true, preloads the image (use for above-the-fold logos)
  */
 export function Logo({
   variant = "default",
   size = "md",
   className,
   asLink = false,
+  priority = false,
 }: LogoProps) {
-  const sizeClasses = {
-    sm: "text-xl",
-    md: "text-2xl",
-    lg: "text-4xl",
+  const sizeConfig = {
+    sm: { width: 96, height: 32, className: "w-24 h-8" },
+    md: { width: 128, height: 42, className: "w-32 h-[42px]" },
+    lg: { width: 192, height: 64, className: "w-48 h-16" },
   };
 
-  const colorClasses = {
-    default: "text-primary-600",
-    white: "text-white",
-    red: "text-primary-600",
+  const filterClasses = {
+    default: "",
+    white: "brightness-0 invert",
+    red: "",
   };
 
   const logoContent = (
-    <span
+    <Image
+      src="/images/logo/altoq.png"
+      alt="Altoq"
+      width={sizeConfig[size].width}
+      height={sizeConfig[size].height}
+      priority={priority}
+      quality={95}
       className={cn(
-        "font-bold tracking-tight",
-        sizeClasses[size],
-        colorClasses[variant],
+        sizeConfig[size].className,
+        filterClasses[variant],
+        "object-contain",
         className
       )}
-      style={{ fontFamily: "var(--font-space-grotesk)" }}
-    >
-      Altoq
-    </span>
+    />
   );
 
   if (asLink) {
