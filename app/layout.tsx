@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { testSohneBreit, testSohneSchmal, kenyanCoffee } from "@/lib/fonts";
 
 import "./globals.css";
 
@@ -7,18 +7,6 @@ import { generateMetadata as createMetadata } from "@/lib/config/seo";
 import { PWARegistration } from "@/components/organisms";
 import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-  display: "swap",
-});
 
 export const metadata: Metadata = createMetadata();
 
@@ -41,7 +29,10 @@ interface RootLayoutProps {
  */
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="es-PE" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html
+      lang="es-PE"
+      className={`${testSohneBreit.variable} ${testSohneSchmal.variable} ${kenyanCoffee.variable}`}
+    >
       <head>
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.webmanifest" />

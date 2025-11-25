@@ -45,7 +45,7 @@ export function Logo({
         colorClasses[variant],
         className
       )}
-      style={{ fontFamily: "var(--font-space-grotesk)" }}
+      style={{ fontFamily: "var(--font-kenyan-coffee)" }}
     >
       Altoq
     </span>
