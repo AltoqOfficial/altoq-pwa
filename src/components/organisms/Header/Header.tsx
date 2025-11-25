@@ -20,7 +20,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/80">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         {/* Logo - ✅ Now with asLink prop */}
-        <Logo variant="default" asLink />
+        <Logo variant="default" asLink priority />
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-6 md:flex">
