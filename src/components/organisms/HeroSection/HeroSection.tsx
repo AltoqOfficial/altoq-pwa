@@ -27,7 +27,6 @@ export function HeroSection() {
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 py-20 text-center">
         {/* Top Text */}
-        <h1 className="font-kenyan text-4xl text-white">Altoq</h1>
         <Typography
           variant="small"
           className="mb-4 text-white uppercase tracking-widest"
