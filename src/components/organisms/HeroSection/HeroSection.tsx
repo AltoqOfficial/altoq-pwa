@@ -1,7 +1,9 @@
+import Image from "next/image";
 import { Typography } from "@/components/atoms/Typography";
-import { Button } from "@/components/atoms/Button";
-import { CountdownTimer } from "@/components/molecules/CountdownTimer";
-import { LAUNCH_DATE } from "@/constants";
+import { DaysCountSVG } from "@/components/molecules/DaysCountSVG";
+import { Logo } from "@/components/atoms/Logo";
+import { AnimatedText } from "@/components/atoms/AnimatedText";
+import { EmailSubscribeForm } from "@/components/molecules/EmailSubscribeForm";
 
 /**
  * HeroSection Component (Organism)
@@ -17,73 +19,119 @@ import { LAUNCH_DATE } from "@/constants";
  */
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-neutral-900">
-      {/* Background Image with Overlay */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-neutral-900 -mt-34.5 md:-mt-20 lg:-mt-34.5 pt-16 md:pt-20">
+      {/* Background Image with Overlays */}
       <div className="absolute inset-0 z-0">
-        {/* TODO: Add background image */}
-        <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/70" />
+        {/* Palacio de Gobierno Background Image */}
+        <Image
+          src="/images/hero/palacio-gobierno.webp"
+          alt="Palacio de Gobierno del Perú"
+          fill
+          priority
+          quality={75}
+          placeholder="blur"
+          blurDataURL="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA="
+          sizes="100vw"
+          className="object-cover"
+        />
+
+        {/* Layer 1: Top gradient - Full screen */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, #0E0E0E 8.36%, rgba(32, 32, 32, 0.00) 100%)",
+          }}
+        />
+
+        {/* Layer 2: Top to bottom gradient - 90% height */}
+        <div
+          className="absolute inset-x-0 top-0"
+          style={{
+            height: "90%",
+            background:
+              "linear-gradient(180deg, #0E0E0E 8.36%, rgba(32, 32, 32, 0.00) 78.05%)",
+          }}
+        />
+
+        {/* Layer 3: Bottom gradient - 20% height */}
+        <div
+          className="absolute inset-x-0 bottom-0"
+          style={{
+            height: "20%",
+            background:
+              "linear-gradient(180deg, rgba(32, 32, 32, 0.00) 8.36%, #0E0E0E 78.05%)",
+          }}
+        />
       </div>
 
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 py-20 text-center">
         {/* Top Text */}
         <Typography
-          variant="small"
-          className="mb-4 text-white uppercase tracking-widest"
+          variant="h6"
+          font="sohneBreit"
+          weight="400"
+          align="center"
+          className="mb-3 uppercase text-gradient-neutral"
+          style={{ letterSpacing: "2.6px" }}
         >
-          Próximamente en
+          Disponible en
         </Typography>
-
         {/* Main Title - Days Count */}
-        <Typography
-          variant="h1"
-          className="mb-6 text-primary-600"
-          style={{ fontSize: "clamp(4rem, 15vw, 12rem)" }}
-          suppressHydrationWarning
-        >
-          50 DÍAS
-        </Typography>
+        <DaysCountSVG />
 
-        {/* Subtitle */}
-        <Typography variant="h3" className="mb-6 text-white">
-          Infórmate <span className="text-primary-600">Altoq</span>
-        </Typography>
+        <div className="mb-2 flex justify-center gap-2 lg:gap-3 group">
+          {/* Subtitle with Animated Text */}
+          <Typography
+            variant="h3"
+            font="sohneBreit"
+            weight="700"
+            align="center"
+            className="text-surface self-center"
+          >
+            <AnimatedText
+              words={["Infórmate", "Compara", "Decide"]}
+              changeDelay={800}
+              restartDelay={2000}
+            />
+          </Typography>
+          <Logo size="sm" priority className="h-10 w-auto md:h-12 lg:h-16" />
+        </div>
 
         {/* Description */}
         <Typography
           variant="p"
-          className="mx-auto mb-8 max-w-2xl text-neutral-300"
+          align="center"
+          font="sohneBreit"
+          weight="400"
+          className="mx-auto mb-8 max-w-2xl text-surface"
         >
-          Obtén acceso prioritario cuando lancemos. Regístrate ahora para
-          recibir actualizaciones y ser el primero en explorar nuestra
-          plataforma.
+          ¿No sabes por quién votar en estas elecciones? Ingresa tu email y
+          recibe acceso anticipado a la plataforma 100% gratis ¡Vota bien{" "}
+          <Typography
+            variant="span"
+            font="sohneBreit"
+            weight="700"
+            className="text-primary-500"
+          >
+            PE
+          </Typography>
+          !
         </Typography>
 
         {/* Email Form */}
-        <form className="mx-auto mb-16 flex max-w-md flex-col gap-4 sm:flex-row">
-          <input
-            type="email"
-            placeholder="tucorreo@ejemplo.com"
-            className="flex-1 rounded-lg border border-neutral-700 bg-white/10 px-4 py-3 text-white placeholder:text-neutral-400 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50"
-            required
+        <div className="mx-auto mb-16 max-w-2xl">
+          <EmailSubscribeForm
+            submitText="¡Notifícame!"
+            placeholder="Email"
+            showCheckbox={true}
+            checkboxLabel="Acepto recibir novedades, noticias y actualizaciones importantes sobre Altoq."
+            inputVariant="default"
+            buttonVariant="primary"
+            size="lg"
           />
-          <Button variant="primary" size="lg" type="submit">
-            Notifícame
-          </Button>
-        </form>
-
-        {/* Countdown Timer */}
-        <div className="mb-8">
-          <Typography variant="h4" className="mb-6 text-white">
-            Lanzamiento en:
-          </Typography>
-          <CountdownTimer targetDate={LAUNCH_DATE} />
         </div>
-
-        {/* CTA Button */}
-        <Button variant="outline" size="lg" asChild>
-          <a href="#conoce-mas">Conoce más</a>
-        </Button>
       </div>
 
       {/* Scroll Indicator */}

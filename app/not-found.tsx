@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-import { Button, Container, Typography } from "@/components/atoms";
+import { Button, Typography } from "@/components/atoms";
 import { ROUTES } from "@/constants";
 
 export default function NotFound() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-linear-to-br from-primary-50 to-secondary-50">
-      <Container maxWidth="md" className="text-center">
+      <div className="container mx-auto max-w-2xl px-4 text-center">
         <div className="mb-8 inline-flex h-32 w-32 items-center justify-center rounded-full bg-primary-100 text-6xl">
           😕
         </div>
@@ -33,7 +33,7 @@ export default function NotFound() {
             </Button>
           </Link>
         </div>
-      </Container>
+      </div>
     </main>
   );
 }

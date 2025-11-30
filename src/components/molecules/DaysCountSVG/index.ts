@@ -1,0 +1,1 @@
+export { DaysCountSVG } from "./DaysCountSVG";

@@ -82,7 +82,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           content="/icons/icon-192x192.png"
         />
       </head>
-      <body className="font-sans antialiased">
+      <body className="antialiased">
         {/* PWA Registration */}
         <PWARegistration />
 

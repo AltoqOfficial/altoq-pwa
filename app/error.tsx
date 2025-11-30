@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-import { Button, Container, Typography } from "@/components/atoms";
+import { Button, Typography } from "@/components/atoms";
 
 export default function Error({
   error,
@@ -17,12 +17,12 @@ export default function Error({
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-linear-to-br from-primary-50 to-secondary-50">
-      <Container maxWidth="md" className="text-center">
-        <div className="mb-8 inline-flex h-32 w-32 items-center justify-center rounded-full bg-red-100 text-6xl">
+      <div className="container mx-auto max-w-2xl px-4 text-center">
+        <div className="mb-8 inline-flex h-32 w-32 items-center justify-center rounded-full bg-primary-100 text-6xl">
           ⚠️
         </div>
 
-        <Typography variant="h2" className="mb-4 text-red-600">
+        <Typography variant="h2" className="mb-4 text-primary-600">
           Algo salió mal
         </Typography>
 
@@ -31,8 +31,8 @@ export default function Error({
         </Typography>
 
         {process.env.NODE_ENV === "development" && (
-          <div className="my-6 rounded-lg bg-red-50 p-4 text-left">
-            <Typography variant="small" className="font-mono text-red-800">
+          <div className="my-6 rounded-lg bg-primary-50 p-4 text-left">
+            <Typography variant="small" className="font-mono text-primary-800">
               {error.message}
             </Typography>
           </div>
@@ -50,7 +50,7 @@ export default function Error({
             Volver al inicio
           </Button>
         </div>
-      </Container>
+      </div>
     </main>
   );
 }

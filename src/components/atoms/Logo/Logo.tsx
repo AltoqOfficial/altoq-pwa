@@ -9,6 +9,7 @@ export interface LogoProps {
   className?: string;
   asLink?: boolean;
   priority?: boolean;
+  quality?: number;
 }
 
 /**
@@ -20,6 +21,7 @@ export interface LogoProps {
  * @param className - Additional CSS classes
  * @param asLink - If true, wraps logo in Link to home
  * @param priority - If true, preloads the image (use for above-the-fold logos)
+ * @param quality - Image quality (1-100), defaults to 100
  */
 export function Logo({
   variant = "default",
@@ -27,6 +29,7 @@ export function Logo({
   className,
   asLink = false,
   priority = false,
+  quality = 100,
 }: LogoProps) {
   const sizeConfig = {
     sm: { width: 96, height: 32, className: "w-24 h-8" },
@@ -42,12 +45,12 @@ export function Logo({
 
   const logoContent = (
     <Image
-      src="/images/logo/altoq.png"
+      src="/images/logo/altoq.webp"
       alt="Altoq"
       width={sizeConfig[size].width}
       height={sizeConfig[size].height}
       priority={priority}
-      quality={95}
+      quality={quality}
       className={cn(
         sizeConfig[size].className,
         filterClasses[variant],
