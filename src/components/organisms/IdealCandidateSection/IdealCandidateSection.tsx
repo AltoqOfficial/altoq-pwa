@@ -103,7 +103,7 @@ export function IdealCandidateSection() {
                 {/* Step Number */}
                 <div className="shrink-0">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-600 text-white">
-                    <Typography variant="h5" weight="bold">
+                    <Typography variant="h5" weight="700">
                       {step.number}
                     </Typography>
                   </div>

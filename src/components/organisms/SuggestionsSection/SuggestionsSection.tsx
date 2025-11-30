@@ -4,6 +4,7 @@ import { useState, FormEvent } from "react";
 
 import { Typography } from "@/components/atoms/Typography";
 import { Button } from "@/components/atoms/Button";
+import { FormField } from "@/components/molecules/FormField";
 
 /**
  * SuggestionsSection Component (Organism)
@@ -14,6 +15,7 @@ import { Button } from "@/components/atoms/Button";
  * - Contact form with name, email, phone, message
  * - Form submission handling
  * - Success/error states
+ * - Uses FormField molecule for consistent styling
  */
 export function SuggestionsSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -147,78 +149,43 @@ export function SuggestionsSection() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Name */}
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="mb-2 block text-sm text-white"
-                  >
-                    Nombre completo
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="w-full rounded-lg border border-neutral-700 bg-neutral-800/50 px-4 py-3 text-white placeholder:text-neutral-500 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50"
-                    placeholder="Tu nombre"
-                  />
-                </div>
+                <FormField
+                  label="Nombre completo"
+                  name="name"
+                  variant="outline"
+                  required
+                  placeholder="Tu nombre"
+                  labelVariant="light"
+                />
 
-                {/* Email */}
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="mb-2 block text-sm text-white"
-                  >
-                    Correo electrónico
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full rounded-lg border border-neutral-700 bg-neutral-800/50 px-4 py-3 text-white placeholder:text-neutral-500 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50"
-                    placeholder="tu@email.com"
-                  />
-                </div>
+                <FormField
+                  label="Correo electrónico"
+                  name="email"
+                  variant="outline"
+                  required
+                  placeholder="tu@email.com"
+                  labelVariant="light"
+                />
 
-                {/* Phone */}
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="mb-2 block text-sm text-white"
-                  >
-                    Teléfono
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full rounded-lg border border-neutral-700 bg-neutral-800/50 px-4 py-3 text-white placeholder:text-neutral-500 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50"
-                    placeholder="+51 999 999 999"
-                  />
-                </div>
+                <FormField
+                  label="Teléfono"
+                  name="phone"
+                  variant="outline"
+                  placeholder="+51 999 999 999"
+                  labelVariant="light"
+                />
 
-                {/* Message */}
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="mb-2 block text-sm text-white"
-                  >
-                    Mensaje
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    required
-                    className="w-full rounded-lg border border-neutral-700 bg-neutral-800/50 px-4 py-3 text-white placeholder:text-neutral-500 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50"
-                    placeholder="Cuéntanos tu sugerencia o pregunta..."
-                  />
-                </div>
+                <FormField
+                  label="Mensaje"
+                  type="textarea"
+                  name="message"
+                  rows={5}
+                  variant="outline"
+                  required
+                  placeholder="Cuéntanos tu sugerencia o pregunta..."
+                  labelVariant="light"
+                />
 
-                {/* Submit Button */}
                 <Button
                   type="submit"
                   variant="primary"
