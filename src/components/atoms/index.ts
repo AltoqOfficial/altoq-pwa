@@ -1,3 +1,9 @@
+export { AnimatedText } from "./AnimatedText";
 export { Button } from "./Button";
+export { Checkbox } from "./Checkbox";
+export { Input } from "./Input";
+export { Label } from "./Label";
+export { Logo } from "./Logo";
+export { Select } from "./Select";
+export { Textarea } from "./Textarea";
 export { Typography } from "./Typography";
-export { Container } from "./Container";
