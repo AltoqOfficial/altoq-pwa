@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import { Typography } from "@/components/atoms/Typography";
 import { Button } from "@/components/atoms/Button";
+import { FormField } from "@/components/molecules/FormField";
 
 interface FormData {
   firstName: string;
@@ -38,6 +39,7 @@ interface FormErrors {
  * - Form validation
  * - Success/error states
  * - File upload handling
+ * - Uses FormField molecule for consistent field styling
  */
 export function VolunteerForm() {
   const [formData, setFormData] = useState<FormData>({
@@ -245,229 +247,89 @@ export function VolunteerForm() {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     {/* Row 1: First Name & Last Name */}
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                      {/* First Name */}
-                      <div>
-                        <label
-                          htmlFor="firstName"
-                          className="mb-2 block text-sm font-medium text-neutral-700"
-                        >
-                          Nombres Completos
-                        </label>
-                        <input
-                          type="text"
-                          id="firstName"
-                          name="firstName"
-                          value={formData.firstName}
-                          onChange={handleInputChange}
-                          className={`w-full rounded-lg border ${
-                            errors.firstName
-                              ? "border-red-500"
-                              : "border-neutral-300"
-                          } bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50`}
-                          placeholder="Juan Carlos"
-                        />
-                        {errors.firstName && (
-                          <Typography
-                            variant="small"
-                            className="mt-1 text-red-500"
-                          >
-                            {errors.firstName}
-                          </Typography>
-                        )}
-                      </div>
+                      <FormField
+                        label="Nombres Completos"
+                        type="input"
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleInputChange}
+                        error={errors.firstName}
+                        placeholder="Juan Carlos"
+                        required
+                      />
 
-                      {/* Last Name */}
-                      <div>
-                        <label
-                          htmlFor="lastName"
-                          className="mb-2 block text-sm font-medium text-neutral-700"
-                        >
-                          Apellidos Completos
-                        </label>
-                        <input
-                          type="text"
-                          id="lastName"
-                          name="lastName"
-                          value={formData.lastName}
-                          onChange={handleInputChange}
-                          className={`w-full rounded-lg border ${
-                            errors.lastName
-                              ? "border-red-500"
-                              : "border-neutral-300"
-                          } bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50`}
-                          placeholder="Pérez García"
-                        />
-                        {errors.lastName && (
-                          <Typography
-                            variant="small"
-                            className="mt-1 text-red-500"
-                          >
-                            {errors.lastName}
-                          </Typography>
-                        )}
-                      </div>
+                      <FormField
+                        label="Apellidos Completos"
+                        type="input"
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleInputChange}
+                        error={errors.lastName}
+                        placeholder="Pérez García"
+                        required
+                      />
                     </div>
 
                     {/* Row 2: Phone & Email */}
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                      {/* Phone */}
-                      <div>
-                        <label
-                          htmlFor="phone"
-                          className="mb-2 block text-sm font-medium text-neutral-700"
-                        >
-                          Número de Teléfono
-                        </label>
-                        <input
-                          type="tel"
-                          id="phone"
-                          name="phone"
-                          value={formData.phone}
-                          onChange={handleInputChange}
-                          className={`w-full rounded-lg border ${
-                            errors.phone
-                              ? "border-red-500"
-                              : "border-neutral-300"
-                          } bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50`}
-                          placeholder="+51 999 999 999"
-                        />
-                        {errors.phone && (
-                          <Typography
-                            variant="small"
-                            className="mt-1 text-red-500"
-                          >
-                            {errors.phone}
-                          </Typography>
-                        )}
-                      </div>
+                      <FormField
+                        label="Número de Teléfono"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                        error={errors.phone}
+                        placeholder="+51 999 999 999"
+                        required
+                      />
 
-                      {/* Email */}
-                      <div>
-                        <label
-                          htmlFor="email"
-                          className="mb-2 block text-sm font-medium text-neutral-700"
-                        >
-                          Correo Electrónico
-                        </label>
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          value={formData.email}
-                          onChange={handleInputChange}
-                          className={`w-full rounded-lg border ${
-                            errors.email
-                              ? "border-red-500"
-                              : "border-neutral-300"
-                          } bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50`}
-                          placeholder="tu@email.com"
-                        />
-                        {errors.email && (
-                          <Typography
-                            variant="small"
-                            className="mt-1 text-red-500"
-                          >
-                            {errors.email}
-                          </Typography>
-                        )}
-                      </div>
+                      <FormField
+                        label="Correo Electrónico"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        error={errors.email}
+                        placeholder="tu@email.com"
+                        required
+                      />
                     </div>
 
                     {/* Row 3: Profession & Specialty */}
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                      {/* Profession */}
-                      <div>
-                        <label
-                          htmlFor="profession"
-                          className="mb-2 block text-sm font-medium text-neutral-700"
-                        >
-                          Profesión
-                        </label>
-                        <input
-                          type="text"
-                          id="profession"
-                          name="profession"
-                          value={formData.profession}
-                          onChange={handleInputChange}
-                          className={`w-full rounded-lg border ${
-                            errors.profession
-                              ? "border-red-500"
-                              : "border-neutral-300"
-                          } bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50`}
-                          placeholder="Ej: Ingeniero de Sistemas"
-                        />
-                        {errors.profession && (
-                          <Typography
-                            variant="small"
-                            className="mt-1 text-red-500"
-                          >
-                            {errors.profession}
-                          </Typography>
-                        )}
-                      </div>
+                      <FormField
+                        label="Profesión"
+                        type="input"
+                        name="profession"
+                        value={formData.profession}
+                        onChange={handleInputChange}
+                        error={errors.profession}
+                        placeholder="Ej: Ingeniero de Sistemas"
+                        required
+                      />
 
-                      {/* Specialty */}
-                      <div>
-                        <label
-                          htmlFor="specialty"
-                          className="mb-2 block text-sm font-medium text-neutral-700"
-                        >
-                          Especialidad
-                        </label>
-                        <input
-                          type="text"
-                          id="specialty"
-                          name="specialty"
-                          value={formData.specialty}
-                          onChange={handleInputChange}
-                          className={`w-full rounded-lg border ${
-                            errors.specialty
-                              ? "border-red-500"
-                              : "border-neutral-300"
-                          } bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50`}
-                          placeholder="Ej: Desarrollo Web"
-                        />
-                        {errors.specialty && (
-                          <Typography
-                            variant="small"
-                            className="mt-1 text-red-500"
-                          >
-                            {errors.specialty}
-                          </Typography>
-                        )}
-                      </div>
+                      <FormField
+                        label="Especialidad"
+                        type="input"
+                        name="specialty"
+                        value={formData.specialty}
+                        onChange={handleInputChange}
+                        error={errors.specialty}
+                        placeholder="Ej: Desarrollo Web"
+                        required
+                      />
                     </div>
 
                     {/* Reason */}
-                    <div>
-                      <label
-                        htmlFor="reason"
-                        className="mb-2 block text-sm font-medium text-neutral-700"
-                      >
-                        Razón de unirse al proyecto
-                      </label>
-                      <textarea
-                        id="reason"
-                        name="reason"
-                        rows={5}
-                        value={formData.reason}
-                        onChange={handleInputChange}
-                        className={`w-full rounded-lg border ${
-                          errors.reason
-                            ? "border-red-500"
-                            : "border-neutral-300"
-                        } bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600/50`}
-                        placeholder="Cuéntanos por qué te gustaría ser parte de Altoq..."
-                      />
-                      {errors.reason && (
-                        <Typography
-                          variant="small"
-                          className="mt-1 text-red-500"
-                        >
-                          {errors.reason}
-                        </Typography>
-                      )}
-                    </div>
+                    <FormField
+                      label="Razón de unirse al proyecto"
+                      type="textarea"
+                      name="reason"
+                      rows={5}
+                      value={formData.reason}
+                      onChange={handleInputChange}
+                      error={errors.reason}
+                      placeholder="Cuéntanos por qué te gustaría ser parte de Altoq..."
+                      required
+                    />
 
                     {/* CV Upload (Optional) */}
                     <div>
