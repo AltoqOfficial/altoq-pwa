@@ -30,10 +30,10 @@ export default function HomePage() {
       <HeroSection />
 
       {/* Candidate Comparison Preview */}
-      <CompareSection />
+      {/* <CompareSection /> */}
 
       {/* Ideal Candidate Feature */}
-      <IdealCandidateSection />
+      {/* <IdealCandidateSection /> */}
 
       {/* Frequently Asked Questions */}
       <FAQSection />
