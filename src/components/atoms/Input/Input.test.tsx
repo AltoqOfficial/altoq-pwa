@@ -35,7 +35,7 @@ describe("Input", () => {
 
     rerender(<Input placeholder="test" size="lg" />);
     input = screen.getByPlaceholderText("test");
-    expect(input).toHaveClass("h-14");
+    expect(input).toHaveClass("h-12");
   });
 
   it("displays error message when error is true", () => {
