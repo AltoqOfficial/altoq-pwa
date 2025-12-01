@@ -188,12 +188,23 @@ export function VolunteerForm() {
             {/* Left Side - Image */}
             <div className="flex items-center justify-center">
               <div className="relative h-[500px] w-full overflow-hidden rounded-2xl bg-neutral-200 shadow-xl lg:h-[600px]">
-                {/* TODO: Replace with actual volunteer image */}
+                {/* Mobile Image */}
                 <Image
-                  src="/images/volunteer-placeholder.jpg"
+                  src="/images/volunteer-placeholder.png"
                   alt="Persona trabajando en laptop"
                   fill
-                  className="object-cover"
+                  className="object-cover lg:hidden"
+                  onError={(e) => {
+                    // Fallback if image doesn't exist
+                    e.currentTarget.style.display = "none";
+                  }}
+                />
+                {/* Desktop Image */}
+                <Image
+                  src="/images/volunteer-placeholder-vertical.png"
+                  alt="Persona trabajando en laptop"
+                  fill
+                  className="hidden object-cover lg:block"
                   onError={(e) => {
                     // Fallback if image doesn't exist
                     e.currentTarget.style.display = "none";
