@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 
 import { HeroSection } from "@/components/organisms/HeroSection";
-import { CompareSection } from "@/components/organisms/CompareSection";
-import { IdealCandidateSection } from "@/components/organisms/IdealCandidateSection";
 import { FAQSection } from "@/components/organisms/FAQSection";
 import { SuggestionsSection } from "@/components/organisms/SuggestionsSection";
 
