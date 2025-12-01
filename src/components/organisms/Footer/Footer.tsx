@@ -59,7 +59,7 @@ export function Footer() {
                 Comparar candidatos
               </Link>
               <Link
-                href="/preguntas-frecuentes"
+                href="/#faq"
                 className="text-neutral-300 transition-colors hover:text-white"
               >
                 Preguntas Frecuentes
