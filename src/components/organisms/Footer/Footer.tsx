@@ -59,7 +59,7 @@ export function Footer() {
           </div>
 
           {/* Legal Links */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <Typography variant="h6" className="font-semibold">
               Legal
             </Typography>
@@ -77,7 +77,7 @@ export function Footer() {
                 Política de Privacidad
               </Link>
             </nav>
-          </div>
+          </div> */}
 
           {/* Social Media */}
           <div className="space-y-4">
@@ -120,8 +120,8 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 border-t border-neutral-800 pt-8">
-          <Typography variant="small" className="text-center text-neutral-400">
+        <div className="mt-8 border-t text-left md:text-center border-neutral-800 pt-8">
+          <Typography variant="small" className="text-neutral-400">
             © {new Date().getFullYear()} Altoq. All rights reserved.
           </Typography>
         </div>

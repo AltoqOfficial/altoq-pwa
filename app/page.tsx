@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 
 import { HeroSection } from "@/components/organisms/HeroSection";
-import { CompareSection } from "@/components/organisms/CompareSection";
-import { IdealCandidateSection } from "@/components/organisms/IdealCandidateSection";
 import { FAQSection } from "@/components/organisms/FAQSection";
 import { SuggestionsSection } from "@/components/organisms/SuggestionsSection";
 
@@ -30,10 +28,10 @@ export default function HomePage() {
       <HeroSection />
 
       {/* Candidate Comparison Preview */}
-      <CompareSection />
+      {/* <CompareSection /> */}
 
       {/* Ideal Candidate Feature */}
-      <IdealCandidateSection />
+      {/* <IdealCandidateSection /> */}
 
       {/* Frequently Asked Questions */}
       <FAQSection />

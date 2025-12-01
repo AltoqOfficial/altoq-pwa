@@ -10,7 +10,7 @@ export function JoinHeroSection() {
   return (
     <PageHero
       title="ÚNETE A NOSOTROS"
-      description="¡Hola! En Altoq estamos arrancando fuerte y, por ahora, buscamos colaboradores voluntarios que quieran aportar ideas, talento y energía. No hay pagos en esta fase, pero sí la oportunidad de formar parte del equipo inicial, aprender, crecer y ayudar a construir una plataforma que puede marcar la diferencia."
+      description="Altoq está en sus primeros pasos. Buscamos voluntarios que quieran sumarse y ganar: experiencia práctica y la oportunidad de crear una plataforma con propósito junto a personas apasionadas."
       backgroundColor="bg-white"
       titleColor="text-neutral-900"
       descriptionColor="text-neutral-600"
