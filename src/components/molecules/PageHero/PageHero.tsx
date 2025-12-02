@@ -101,87 +101,31 @@ export interface PageHeroProps {
 export function PageHero({
   title,
   description,
-  backgroundColor = "bg-white",
-  titleColor = "text-neutral-900",
-  descriptionColor = "text-neutral-600",
-  accentColor = "text-primary-600",
-  accentWords = [],
   className,
-  containerClassName,
-  titleClassName,
-  descriptionClassName,
-  paddingY = "lg",
-  maxWidth = "4xl",
   children,
 }: PageHeroProps) {
-  const paddingStyles = {
-    sm: "py-12",
-    md: "py-16",
-    lg: "py-20",
-    xl: "py-24",
-  };
-
-  const maxWidthStyles = {
-    sm: "max-w-sm",
-    md: "max-w-md",
-    lg: "max-w-lg",
-    xl: "max-w-xl",
-    "2xl": "max-w-2xl",
-    "3xl": "max-w-3xl",
-    "4xl": "max-w-4xl",
-  };
-
-  // Helper function to highlight accent words in title
-  const renderTitle = () => {
-    if (typeof title !== "string" || accentWords.length === 0) {
-      return title;
-    }
-
-    let result: React.ReactNode = title;
-
-    accentWords.forEach((word) => {
-      if (typeof result === "string") {
-        const parts = result.split(word);
-        result = parts.reduce<React.ReactNode[]>((acc, part, index) => {
-          if (index === 0) return [part];
-          return [
-            ...acc,
-            <span key={index} className={accentColor}>
-              {word}
-            </span>,
-            part,
-          ];
-        }, []);
-      }
-    });
-
-    return result;
-  };
-
   return (
-    <section
-      className={cn(backgroundColor, paddingStyles[paddingY], className)}
-    >
-      <div className={cn("container mx-auto px-4", containerClassName)}>
-        <div className={cn("mx-auto text-center", maxWidthStyles[maxWidth])}>
+    <section className={cn(className)}>
+      <div className="mx-auto px-4">
+        <div>
           {/* Main Title */}
           <Typography
             variant="h1"
-            className={cn("mb-6", titleColor, titleClassName)}
-            style={{ fontSize: "clamp(2.5rem, 8vw, 4rem)" }}
+            font="sohneSchmal"
+            className="text-[#FF2727]"
+            align="center"
           >
-            {renderTitle()}
+            {title}
           </Typography>
 
           {/* Description */}
           {description && (
             <Typography
-              variant="p"
-              className={cn(
-                "text-lg leading-relaxed",
-                descriptionColor,
-                descriptionClassName
-              )}
+              variant="span"
+              font="sohneBreit"
+              weight="400"
+              className="text-[#fefefe]"
+              align="center"
             >
               {description}
             </Typography>
