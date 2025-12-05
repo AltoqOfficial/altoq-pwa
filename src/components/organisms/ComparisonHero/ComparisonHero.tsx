@@ -325,7 +325,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="PerfilGeneral"
               title="PERFIL GENERAL"
-              barCount={1}
+              sectionId="PerfilGeneral"
             >
               <PerfilGeneralSection
                 leftCandidate={leftCandidate}
@@ -337,7 +337,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="ExperienciaPolitica"
               title="EXPERIENCIA POLÍTICA"
-              barCount={2}
+              sectionId="ExperienciaPolitica"
             >
               <ExperienciaPoliticaSection
                 leftCandidate={leftCandidate}
@@ -349,7 +349,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="ExperienciadeGestion"
               title="EXPERIENCIA DE GESTIÓN"
-              barCount={3}
+              sectionId="ExperienciadeGestion"
             >
               <ExperienciaGestionSection
                 leftCandidate={leftCandidate}
@@ -361,7 +361,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="IdeologiaPolitica"
               title="IDEOLOGÍA POLÍTICA"
-              barCount={3}
+              sectionId="IdeologiaPolitica"
             >
               <IdeologiaPoliticaSection
                 leftCandidate={leftCandidate}
@@ -373,7 +373,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="PropuestasPrincipales"
               title="PROPUESTAS PRINCIPALES"
-              barCount={3}
+              sectionId="PropuestasPrincipales"
             >
               <PropuestasPrincipalesSection
                 leftCandidate={leftCandidate}
@@ -385,7 +385,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="CoherenciaconelPlan"
               title="COHERENCIA CON EL PLAN"
-              barCount={3}
+              sectionId="CoherenciaconelPlan"
             >
               <CoherenciaConElPlanSection
                 leftCandidate={leftCandidate}
@@ -397,7 +397,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="Controversias"
               title="CONTROVERSIAS"
-              barCount={3}
+              sectionId="Controversias"
             >
               <ControversiasSection
                 leftCandidate={leftCandidate}
@@ -409,7 +409,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="Transparencia"
               title="TRANSPARENCIA"
-              barCount={3}
+              sectionId="Transparencia"
             >
               <TransparenciaSection
                 leftCandidate={leftCandidate}
@@ -421,7 +421,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="Competenciaspersonales"
               title="COMPETENCIAS PERSONALES"
-              barCount={3}
+              sectionId="Competenciaspersonales"
             >
               <CompetenciasPersonalesSection
                 leftCandidate={leftCandidate}
@@ -433,7 +433,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="PercepcionPublica"
               title="PERCEPCIÓN PÚBLICA"
-              barCount={3}
+              sectionId="PercepcionPublica"
             >
               <PercepcionPublicaSection
                 leftCandidate={leftCandidate}
@@ -445,7 +445,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="InnovacionyVision"
               title="INNOVACIÓN Y VISIÓN"
-              barCount={3}
+              sectionId="InnovacionyVision"
             >
               <InnovacionYVisionSection
                 leftCandidate={leftCandidate}
@@ -457,7 +457,7 @@ export function ComparisonHero() {
             <SectionWrapper
               id="HistorialLegislativo"
               title="HISTORIAL LEGISLATIVO"
-              barCount={3}
+              sectionId="HistorialLegislativo"
             >
               <HistorialLegislativoSection
                 leftCandidate={leftCandidate}
