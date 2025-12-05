@@ -1,23 +1,23 @@
 import { Typography } from "@/components/atoms";
+import { SECTION_ICONS } from "./SectionIcons";
 
 interface SectionHeaderProps {
   title: string;
-  barCount?: number;
+  sectionId: string;
 }
 
 /**
  * Section Header Component
- * Displays a section title with red indicator bars
+ * Displays a section title with roman numeral SVG indicator
  */
-export function SectionHeader({ title, barCount = 3 }: SectionHeaderProps) {
+export function SectionHeader({ title, sectionId }: SectionHeaderProps) {
+  // Normalize sectionId to match SECTION_ICONS keys (remove spaces and special chars)
+  const normalizedId = sectionId.replace(/[\s-]/g, "");
+  const icon = SECTION_ICONS[normalizedId];
+
   return (
-    <div className="flex gap-3 md:gap-4 lg:gap-6">
-      {Array.from({ length: barCount }).map((_, index) => (
-        <div
-          key={index}
-          className={`bg-[#FF2727] w-3 md:w-4 lg:w-5 ${index > 0 ? "-ml-2 md:-ml-3 lg:-ml-4" : ""}`}
-        />
-      ))}
+    <div className="flex gap-3 md:gap-4 lg:gap-6 items-center">
+      {icon && <div className="shrink-0">{icon}</div>}
       <div className="flex flex-col">
         <Typography
           font="sohneBreit"
