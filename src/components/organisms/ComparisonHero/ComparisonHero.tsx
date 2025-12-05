@@ -1,27 +1,38 @@
 "use client";
 
+import { useMemo } from "react";
 import { PageHero } from "@/components/molecules/PageHero";
 import Image from "next/image";
 import { Typography } from "@/components/atoms";
-import { useState } from "react";
+import { useCandidateSelection, useSectionNavigation } from "@/hooks";
+import {
+  SectionNavbar,
+  CandidateSelector,
+  SectionWrapper,
+  HorizontalSections,
+} from "./components";
+import {
+  getCandidateDataKey,
+  getCandidateById,
+} from "./components/CandidateSelector";
+import { NAV_ITEMS } from "./constants";
+import { getCandidateData } from "@/data";
 
-interface Candidate {
-  id: string;
-  src: string;
-  alt: string;
-}
-
-const candidates: Candidate[] = [
-  { id: "acuna", src: "/compara/acuña.webp", alt: "Acuña" },
-  { id: "nose", src: "/compara/nose.webp", alt: "Nose" },
-  { id: "alvarez", src: "/compara/alvarez.webp", alt: "Alvarez" },
-  { id: "philip", src: "/compara/philip.webp", alt: "Philip" },
-  { id: "keiko", src: "/compara/keiko.webp", alt: "Keiko" },
-  { id: "asd", src: "/compara/asd.webp", alt: "Asd" },
-  { id: "labubu", src: "/compara/labubu.webp", alt: "Labubu" },
-  { id: "xdxdxdxd", src: "/compara/xdxdxdxd.webp", alt: "Xdxdxdxd" },
-  { id: "lopez", src: "/compara/lopez.webp", alt: "Lopez" },
-];
+// Import all section components
+import {
+  PerfilGeneralSection,
+  ExperienciaPoliticaSection,
+  ExperienciaGestionSection,
+  IdeologiaPoliticaSection,
+  PropuestasPrincipalesSection,
+  CoherenciaConElPlanSection,
+  ControversiasSection,
+  TransparenciaSection,
+  CompetenciasPersonalesSection,
+  PercepcionPublicaSection,
+  InnovacionYVisionSection,
+  HistorialLegislativoSection,
+} from "./sections";
 
 /**
  * ComparisonHero Component (Organism)
@@ -31,203 +42,409 @@ const candidates: Candidate[] = [
  * Allows selecting two candidates to compare:
  * - First selection: Red background (#FF2727)
  * - Second selection: Blue background (#3E4692)
+ *
+ * Sections are displayed horizontally and slide left/right on navigation
+ * Content is dynamically loaded based on selected candidates
  */
 export function ComparisonHero() {
-  const [selectedCandidates, setSelectedCandidates] = useState<string[]>([]);
+  const { selectedCandidates, handleCandidateClick } = useCandidateSelection();
+  const {
+    activeNavIndex,
+    scrollDirection,
+    navContainerRef,
+    scrollNav,
+    handleNavClick,
+  } = useSectionNavigation({
+    sections: [...NAV_ITEMS],
+  });
 
-  const handleCandidateClick = (candidateId: string) => {
-    setSelectedCandidates((prev) => {
-      // Si ya está seleccionado, lo deseleccionamos
-      if (prev.includes(candidateId)) {
-        return prev.filter((id) => id !== candidateId);
-      }
-      // Si ya hay 2 seleccionados, reemplazamos el segundo
-      if (prev.length >= 2) {
-        return [prev[0], candidateId];
-      }
-      // Agregamos el nuevo candidato
-      return [...prev, candidateId];
-    });
-  };
+  // Get candidate data based on selection
+  const { leftCandidate, rightCandidate } = useMemo(() => {
+    const leftId = selectedCandidates[0];
+    const rightId = selectedCandidates[1];
 
-  const getSelectionStyle = (candidateId: string) => {
-    const index = selectedCandidates.indexOf(candidateId);
-    if (index === 0) return "bg-[#FF2727]";
-    if (index === 1) return "bg-[#3E4692]";
-    return "";
-  };
+    const leftDataKey = leftId ? getCandidateDataKey(leftId) : "";
+    const rightDataKey = rightId ? getCandidateDataKey(rightId) : "";
 
-  const getImageStyle = (candidateId: string) => {
-    const isSelected = selectedCandidates.includes(candidateId);
-    if (isSelected) return "grayscale-0 opacity-100";
-    return "grayscale opacity-40";
-  };
+    return {
+      leftCandidate: leftDataKey ? getCandidateData(leftDataKey) : null,
+      rightCandidate: rightDataKey ? getCandidateData(rightDataKey) : null,
+    };
+  }, [selectedCandidates]);
+
+  // Get candidate info for hero display (uses CANDIDATES data as fallback)
+  const leftCandidateInfo = useMemo(() => {
+    const leftId = selectedCandidates[0];
+    if (!leftId) return null;
+
+    // First try to get from full candidate data
+    if (leftCandidate) {
+      return {
+        name: leftCandidate.fullName,
+        image: leftCandidate.image,
+      };
+    }
+
+    // Fallback to CANDIDATES array
+    const candidate = getCandidateById(leftId);
+    if (candidate) {
+      return {
+        name: candidate.name,
+        image: candidate.src,
+      };
+    }
+
+    return null;
+  }, [selectedCandidates, leftCandidate]);
+
+  const rightCandidateInfo = useMemo(() => {
+    const rightId = selectedCandidates[1];
+    if (!rightId) return null;
+
+    // First try to get from full candidate data
+    if (rightCandidate) {
+      return {
+        name: rightCandidate.fullName,
+        image: rightCandidate.image,
+      };
+    }
+
+    // Fallback to CANDIDATES array
+    const candidate = getCandidateById(rightId);
+    if (candidate) {
+      return {
+        name: candidate.name,
+        image: candidate.src,
+      };
+    }
+
+    return null;
+  }, [selectedCandidates, rightCandidate]);
 
   return (
-    <div className="bg-neutral-500 flex justify-center flex-col items-center">
-      <div className="justify-center grid grid-cols-3 p-12">
-        <div className="relative">
-          <div className="absolute inset-0 bg-[linear-gradient(1deg,rgba(32,32,32,0)_36.95%,var(--PrimaryColor,#FF2727)_62.99%)] opacity-40"></div>
-          <Image
-            src="/candidatos/keikoFujimori.webp"
-            alt="Rafael López"
-            width={578}
-            height={80}
-            className="relative"
-          />
-        </div>
-        <div className="flex justify-center flex-col items-center gap-12">
-          <PageHero
-            title="A COMPARAR!"
-            description="Una comparación política basada en datos reales. Explora quién propone más, quién tiene resultados y quién aún no lo demuestra."
-            className="bg-neutral-500 max-w-[33rem]"
-          />
-          <div className="grid grid-cols-[200px_200px] gap-3">
-            {candidates.map((candidate) => (
-              <button
-                key={candidate.id}
-                onClick={() => handleCandidateClick(candidate.id)}
-                className={`relative cursor-pointer transition-all duration-300 overflow-hidden ${getSelectionStyle(candidate.id)}`}
-              >
-                <Image
-                  src={candidate.src}
-                  alt={candidate.alt}
-                  width={200}
-                  height={200}
-                  className={`relative z-10 transition-all duration-300 ${getImageStyle(candidate.id)}`}
-                />
-              </button>
-            ))}
-            <button className="w-[200px] h-[92px] border border-[#CECECE66] bg-neutral-400 flex items-center justify-center cursor-pointer hover:bg-neutral-300 transition-all duration-300 gap-2">
-              <Typography
-                variant="h4"
-                className="text-white font-bold text-lg opacity-70"
-                font="kenyan"
-              >
-                SIGUIENTE
-              </Typography>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21"
-                height="8"
-                viewBox="0 0 21 8"
-                fill="none"
-              >
-                <g opacity=".7" filter="url(#a)">
-                  <path
-                    d="M14.61 7.92q.3-.78.66-1.44.36-.69.81-1.29H0V2.73h16.08q-.42-.6-.78-1.26-.36-.69-.66-1.47h2.28Q18.78 2.19 21 3.33v1.29q-2.22 1.08-4.08 3.3z"
-                    fill="#fff"
-                  />
-                </g>
-                <defs>
-                  <filter
-                    id="a"
-                    x="0"
-                    y="0"
-                    width="21"
-                    height="7.92"
-                    filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
-                  >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feBlend
-                      in="SourceGraphic"
-                      in2="BackgroundImageFix"
-                      result="shape"
-                    />
-                    <feTurbulence
-                      type="fractalNoise"
-                      baseFrequency="0.90909087657928467 0.90909087657928467"
-                      stitchTiles="stitch"
-                      numOctaves="3"
-                      result="noise"
-                      seed="8991"
-                    />
-                    <feComponentTransfer in="noise" result="coloredNoise1">
-                      <feFuncR type="linear" slope="2" intercept="-.5" />
-                      <feFuncG type="linear" slope="2" intercept="-.5" />
-                      <feFuncB type="linear" slope="2" intercept="-.5" />
-                      <feFuncA
-                        type="discrete"
-                        tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
-                      />
-                    </feComponentTransfer>
-                    <feComposite
-                      operator="in"
-                      in2="shape"
-                      in="coloredNoise1"
-                      result="noise1Clipped"
-                    />
-                    <feComponentTransfer in="noise1Clipped" result="color1">
-                      <feFuncA type="table" tableValues="0 0.37" />
-                    </feComponentTransfer>
-                    <feMerge result="effect1_noise_1981_576">
-                      <feMergeNode in="shape" />
-                      <feMergeNode in="color1" />
-                    </feMerge>
-                  </filter>
-                </defs>
-              </svg>
-            </button>
+    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-8 md:space-y-12 lg:space-y-18">
+      {/* Hero Section */}
+      <div className="flex justify-center items-center flex-col w-full">
+        {/* Mobile/Tablet: Vertical layout, Desktop: 3-column grid */}
+        <div className="flex flex-col lg:grid lg:grid-cols-3 p-4 md:p-8 lg:p-12 gap-12 w-full max-w-7xl">
+          {/* Left Candidate - Mobile: smaller, centered */}
+          <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-[450px] h-[350px] md:h-[450px] lg:h-[600px] mx-auto lg:mx-0 order-2 lg:order-1 overflow-hidden">
+            {/* Red solid background square */}
+            <div
+              className={`absolute top-0 left-0 w-full h-full bg-[#FF2727] transition-all duration-500 ease-out ${
+                leftCandidateInfo
+                  ? "opacity-100 scale-100"
+                  : "opacity-70 scale-100"
+              }`}
+            ></div>
+            {/* Candidate image on top */}
+            {leftCandidateInfo ? (
+              <Image
+                src={leftCandidateInfo.image}
+                alt={leftCandidateInfo.name}
+                fill
+                className="relative object-cover object-top z-10 animate-candidate-appear"
+              />
+            ) : (
+              <div className="w-full h-full bg-neutral-600/50 relative flex items-center justify-center z-10">
+                <Typography
+                  color="white"
+                  variant="h5"
+                  className="opacity-50 md:text-xl lg:text-2xl"
+                >
+                  Selecciona candidato
+                </Typography>
+              </div>
+            )}
+          </div>
+          {/* Center Content - Selector */}
+          <div className="flex justify-center flex-col items-center gap-6 md:gap-8 lg:gap-12 order-1 lg:order-2">
+            <PageHero
+              title="A COMPARAR!"
+              description="Una comparación política basada en datos reales. Explora quién propone más, quién tiene resultados y quién aún no lo demuestra."
+              className="bg-neutral-500 max-w-xs md:max-w-md lg:max-w-129 text-center"
+            />
+            <CandidateSelector
+              selectedCandidates={selectedCandidates}
+              onCandidateClick={handleCandidateClick}
+            />
+          </div>
+          {/* Right Candidate */}
+          <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-[450px] h-[350px] md:h-[450px] lg:h-[600px] mx-auto lg:mx-0 order-3 overflow-hidden">
+            {/* Blue solid background square */}
+            <div
+              className={`absolute top-0 right-0 w-full h-full bg-[#3E4692] transition-all duration-500 ease-out ${
+                rightCandidateInfo
+                  ? "opacity-100 scale-100"
+                  : "opacity-70 scale-100"
+              }`}
+            ></div>
+            {/* Candidate image on top */}
+            {rightCandidateInfo ? (
+              <Image
+                src={rightCandidateInfo.image}
+                alt={rightCandidateInfo.name}
+                fill
+                className="relative object-cover object-top z-10 animate-candidate-appear"
+              />
+            ) : (
+              <div className="w-full h-full bg-neutral-600/50 relative flex items-center justify-center z-10">
+                <Typography
+                  color="white"
+                  variant="h5"
+                  className="opacity-50 md:text-xl lg:text-2xl"
+                >
+                  Selecciona candidato
+                </Typography>
+              </div>
+            )}
           </div>
         </div>
-        <div className="relative">
-          <div className="absolute inset-0 bg-[linear-gradient(1deg,rgba(32,32,32,0)_36.95%,var(--Secondary-100A,#3E4692)_62.99%)] opacity-40"></div>
-          <Image
-            src="/candidatos/rafaelLopez.webp"
-            alt="Rafael López"
-            width={2000}
-            height={100}
-            className="relative"
-          />
+        <button
+          onClick={() => {
+            const navbarElement = document.getElementById("comparison-navbar");
+            if (navbarElement) {
+              navbarElement.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="cursor-pointer hover:scale-110 transition-transform duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="17"
+            viewBox="0 0 45 17"
+            fill="none"
+          >
+            <path
+              d="M43 0L22.6852 13L2.5 0L0 2.02381L22.6852 17L45 2.02381L43 0Z"
+              fill="#FEFEFE"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* VS Section - Candidate Names */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-0 w-full max-w-7xl px-4 md:px-8 lg:px-12">
+        <div className="flex items-center justify-center md:justify-start gap-4 md:gap-6 lg:gap-12">
+          {leftCandidateInfo && (
+            <>
+              <Image
+                src={leftCandidateInfo.image}
+                alt={leftCandidateInfo.name}
+                width={140}
+                height={80}
+                className="w-16 h-auto md:w-24 lg:w-[140px] animate-slide-in-left"
+              />
+              <Typography
+                font="kenyan"
+                className="text-white font-bold text-2xl md:text-3xl lg:text-5xl animate-slide-in-left animation-delay-100"
+                variant="h1"
+              >
+                {leftCandidateInfo.name}
+              </Typography>
+            </>
+          )}
+          {!leftCandidateInfo && (
+            <Typography
+              font="kenyan"
+              className="text-white/50 font-bold text-xl md:text-2xl lg:text-4xl"
+              variant="h1"
+            >
+              Selecciona candidato
+            </Typography>
+          )}
+        </div>
+        <div className="flex items-center justify-center order-first md:order-0">
+          <Typography
+            font="kenyan"
+            color="primary"
+            align="center"
+            variant="h1"
+            weight="600"
+            className="text-3xl md:text-4xl lg:text-6xl"
+          >
+            VS
+          </Typography>
+        </div>
+        <div className="flex items-center justify-center md:justify-end gap-4 md:gap-6 lg:gap-12">
+          {rightCandidateInfo && (
+            <>
+              <Typography
+                font="kenyan"
+                className="text-white font-bold text-2xl md:text-3xl lg:text-5xl md:order-1 order-2 animate-slide-in-right animation-delay-100"
+                variant="h1"
+                align="right"
+              >
+                {rightCandidateInfo.name}
+              </Typography>
+              <Image
+                src={rightCandidateInfo.image}
+                alt={rightCandidateInfo.name}
+                width={140}
+                height={80}
+                className="w-16 h-auto md:w-24 lg:w-[140px] md:order-2 order-1 animate-slide-in-right"
+              />
+            </>
+          )}
+          {!rightCandidateInfo && (
+            <Typography
+              font="kenyan"
+              className="text-white/50 font-bold text-xl md:text-2xl lg:text-4xl"
+              variant="h1"
+              align="right"
+            >
+              Selecciona candidato
+            </Typography>
+          )}
         </div>
       </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="45"
-        height="17"
-        viewBox="0 0 45 17"
-        fill="none"
+
+      {/* Navigation Bar */}
+      <SectionNavbar
+        activeNavIndex={activeNavIndex}
+        navContainerRef={navContainerRef}
+        onNavClick={handleNavClick}
+        onScrollNav={scrollNav}
+      />
+
+      {/* Horizontal Sections Container */}
+      <HorizontalSections
+        activeIndex={activeNavIndex}
+        direction={scrollDirection}
       >
-        <path
-          d="M43 0L22.6852 13L2.5 0L0 2.02381L22.6852 17L45 2.02381L43 0Z"
-          fill="#FEFEFE"
-        />
-      </svg>
-      <div className="grid grid-cols-3">
-        <div className="flex items-center max-w-md gap-12">
-          <Image
-            src="/candidatos/keikoFujimori.webp"
-            alt="Rafael López"
-            width={140}
-            height={80}
+        {/* Perfil General Section */}
+        <SectionWrapper id="PerfilGeneral" title="PERFIL GENERAL" barCount={1}>
+          <PerfilGeneralSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
           />
-          <Typography
-            font="kenyan"
-            className="text-white font-bold"
-            variant="h1"
-          >
-            Keiko Fujimori
-          </Typography>
-        </div>
-        <div></div>
-        <div className="flex items-center max-w-lg gap-12">
-          <Typography
-            font="kenyan"
-            className="text-white font-bold"
-            variant="h1"
-            align="right"
-          >
-            Rafael López-Aliaga
-          </Typography>
-          <Image
-            src="/candidatos/rafaelLopez.webp"
-            alt="Rafael López"
-            width={140}
-            height={80}
+        </SectionWrapper>
+
+        {/* Experiencia Política Section */}
+        <SectionWrapper
+          id="ExperienciaPolitica"
+          title="EXPERIENCIA POLÍTICA"
+          barCount={2}
+        >
+          <ExperienciaPoliticaSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
           />
-        </div>
-      </div>
+        </SectionWrapper>
+
+        {/* Experiencia de Gestión Section */}
+        <SectionWrapper
+          id="ExperienciadeGestion"
+          title="EXPERIENCIA DE GESTIÓN"
+          barCount={3}
+        >
+          <ExperienciaGestionSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+
+        {/* Ideología Política Section */}
+        <SectionWrapper
+          id="IdeologiaPolitica"
+          title="IDEOLOGÍA POLÍTICA"
+          barCount={3}
+        >
+          <IdeologiaPoliticaSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+
+        {/* Propuestas Principales Section */}
+        <SectionWrapper
+          id="PropuestasPrincipales"
+          title="PROPUESTAS PRINCIPALES"
+          barCount={3}
+        >
+          <PropuestasPrincipalesSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+
+        {/* Coherencia con el Plan Section */}
+        <SectionWrapper
+          id="CoherenciaconelPlan"
+          title="COHERENCIA CON EL PLAN"
+          barCount={3}
+        >
+          <CoherenciaConElPlanSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+
+        {/* Controversias Section */}
+        <SectionWrapper id="Controversias" title="CONTROVERSIAS" barCount={3}>
+          <ControversiasSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+
+        {/* Transparencia Section */}
+        <SectionWrapper id="Transparencia" title="TRANSPARENCIA" barCount={3}>
+          <TransparenciaSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+
+        {/* Competencias Personales Section */}
+        <SectionWrapper
+          id="Competenciaspersonales"
+          title="COMPETENCIAS PERSONALES"
+          barCount={3}
+        >
+          <CompetenciasPersonalesSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+
+        {/* Percepción Pública Section */}
+        <SectionWrapper
+          id="PercepcionPublica"
+          title="PERCEPCIÓN PÚBLICA"
+          barCount={3}
+        >
+          <PercepcionPublicaSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+
+        {/* Innovación y Visión Section */}
+        <SectionWrapper
+          id="InnovacionyVision"
+          title="INNOVACIÓN Y VISIÓN"
+          barCount={3}
+        >
+          <InnovacionYVisionSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+
+        {/* Historial Legislativo Section */}
+        <SectionWrapper
+          id="HistorialLegislativo"
+          title="HISTORIAL LEGISLATIVO"
+          barCount={3}
+        >
+          <HistorialLegislativoSection
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+      </HorizontalSections>
     </div>
   );
 }

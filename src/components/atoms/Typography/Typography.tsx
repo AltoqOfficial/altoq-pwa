@@ -26,7 +26,7 @@ type FontFamily = "sohneBreit" | "sohneSchmal" | "kenyan";
  * Font weight options
  * Note: Use weights that are available for the selected font family
  */
-type FontWeight = "300" | "400" | "600" | "700" | "800";
+type FontWeight = "200" | "300" | "400" | "600" | "700" | "800";
 
 export interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
   /** HTML element variant (affects semantic HTML and default styling) */
@@ -113,6 +113,7 @@ export const Typography = React.forwardRef<HTMLElement, TypographyProps>(
 
     // Font weight styles (using numeric values for better control)
     const weightStyles: Record<FontWeight, string> = {
+      "200": "font-[200]",
       "300": "font-[300]",
       "400": "font-[400]",
       "600": "font-[600]",

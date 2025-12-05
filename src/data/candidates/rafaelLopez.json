@@ -1,0 +1,133 @@
+{
+  "id": "lopez",
+  "slug": "rafaelLopez",
+  "fullName": "Rafael López-Aliaga",
+  "shortName": "Rafael López-Aliaga",
+  "image": "/candidatos/8.webp",
+  "color": "#3E4692",
+  "party": "Renovación Popular",
+
+  "perfilGeneral": {
+    "edad": "63 años",
+    "nacimiento": "11/02/1961",
+    "lugar": "Chiclayo, Lambayeque",
+    "nivelEducativo": "Ingeniería Mecánica - Universidad Nacional de Ingeniería (UNI)",
+    "profesion": "Ingeniero / Empresario",
+    "partidoActual": "Renovación Popular",
+    "cambiosDePartido": "Solidaridad Nacional (hasta 2020) Renovación Popular (2020 - Actual)"
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": "12 Años en dirigencia política activa",
+    "cargosPrevios": [
+      "Regidor Metropolitano de Lima (2007-2010)",
+      "Presidente de Solidaridad Nacional (2019-2020)",
+      "Alcalde de Lima (2023-Actual)"
+    ],
+    "candidaturasPresidenciales": [
+      "2021 → 3er lugar en primera vuelta",
+      "2026 → Pre candidato"
+    ]
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 2,
+      "detalle": ["Alcalde de Lima (Gestión municipal)", "Regidor de Lima"]
+    },
+    "sectorPrivado": {
+      "cantidad": 2,
+      "detalle": [
+        "Presidente de PerúRail",
+        "Empresario hotelero (Hoteles San Agustín)"
+      ]
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": "Derecha conservadora - fuerte énfasis religioso",
+    "economia": "Liberal, anti-corrupción, reducción de impuestos",
+    "matrimonioIgualitario": "Rechaza",
+    "aborto": "Totalmente en contra",
+    "seguridad": "Mano dura total; propone cadena perpetua / trabajo forzado",
+    "ambiente": "Prioriza infraestructura",
+    "educacion": "Municipalización, apoyo a privados",
+    "reformaPolitica": "Recorte de sueldos del Estado, expulsión de corruptos"
+  },
+
+  "propuestasPrincipales": {
+    "economico": [
+      "Reducción de impuestos",
+      "Cero corrupción como motor económico"
+    ],
+    "social": ["Programas para mujeres y familias en pobreza"],
+    "ambiental": [
+      "No tiene desarrollo amplio; énfasis en obras y energía tradicional"
+    ],
+    "institucional": [
+      "Reingeniería del Estado",
+      "Expulsión inmediata de funcionarios corruptos"
+    ],
+    "educativo": [
+      "Crear 100 colegios municipales",
+      "Bachillerato técnico obligatorio"
+    ],
+    "salud": ["Hospitales de la Solidaridad ampliados"],
+    "seguridad": [
+      "Cárceles en islas flotantes",
+      "Patrullaje militar",
+      "Policía municipal armada"
+    ]
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": "Muy alta (su partido refleja su visión personal)",
+    "diferencias": "Infraestructura no detallada en plan original",
+    "cumplimientoPrevio": "Parcial - gestión en Lima Norte avances y críticas"
+  },
+
+  "controversias": {
+    "investigaciones": ["Investigado por deudas tributarias con SUNAT"],
+    "enCurso": [
+      "Mencionado en Panama Papers",
+      "Denuncias públicas por declaraciones violentas"
+    ]
+  },
+
+  "transparencia": [
+    "Declaración de bienes presentada",
+    "Alto nivel de autofinanciamiento"
+  ],
+
+  "competenciasPersonales": {
+    "liderazgo": "Muy alto (control total en RP)",
+    "comunicacion": "Directa, confrontacional",
+    "credibilidad": "Polarizante"
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 6,
+      "max": 12,
+      "descripcion": "Estadísticamente: De 6% a 12%"
+    },
+    "aprobacion": "Estimada: Media - Baja",
+    "redes": "Muy activo y alto alcance"
+  },
+
+  "innovacionYVision": [
+    "Gobierno digital municipal",
+    "No desarrolla agenda verde amplia"
+  ],
+
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "asistencia": {
+      "porcentaje": 0,
+      "label": "BAJA"
+    },
+    "proyectosPresentados": 0,
+    "proyectosAprobados": 0,
+    "nota": "No tiene historial legislativo (no fue congresista)"
+  }
+}

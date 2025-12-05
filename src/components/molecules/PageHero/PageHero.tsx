@@ -124,7 +124,7 @@ export function PageHero({
               variant="span"
               font="sohneBreit"
               weight="400"
-              className="text-[#fefefe]"
+              className="text-[#fefefe] text-center"
               align="center"
             >
               {description}
