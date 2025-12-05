@@ -1,0 +1,108 @@
+{
+  "id": "keiko",
+  "slug": "keikoFujimori",
+  "fullName": "Keiko Fujimori",
+  "shortName": "Keiko Fujimori",
+  "image": "/candidatos/5.webp",
+  "color": "#FF2727",
+  "party": "Fuerza Popular",
+
+  "perfilGeneral": {
+    "edad": "50 años",
+    "nacimiento": "25/05/1975",
+    "lugar": "Jesús María, Lima",
+    "nivelEducativo": "Maestría en Administración de Empresas (MBA) - Columbia University",
+    "profesion": "Administradora de Empresas / Política",
+    "partidoActual": "Fuerza Popular",
+    "cambiosDePartido": "Fuerza Popular"
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": "20",
+    "cargosPrevios": [
+      "Primera Dama (1994-2000)",
+      "Congresista del Perú (2006-2011)"
+    ],
+    "candidaturasPresidenciales": [
+      "2011 → Segunda vuelta",
+      "2016 → Segunda vuelta",
+      "2021 → Segunda vuelta"
+    ]
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 2,
+      "detalle": ["Primera Dama (Programas sociales)", "Congresista"]
+    },
+    "sectorPrivado": {
+      "cantidad": 0,
+      "detalle": ["No registra cargos relevantes formales"]
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": "Derecha - conservadora / liberalismo económico",
+    "economia": "Pro inversión privada",
+    "matrimonioIgualitario": "No apoya",
+    "aborto": "En contra (solo causales legales)",
+    "seguridad": "Mano dura, penas más altas",
+    "ambiente": "Prioriza crecimiento económico",
+    "educacion": "Alianzas público-privadas",
+    "reformaPolitica": "Gradual"
+  },
+
+  "propuestasPrincipales": {
+    "economico": ["Incentivar inversión privada"],
+    "social": ["Programas de apoyo familiar"],
+    "ambiental": ["Minería formal"],
+    "institucional": ["Reformas Anticorrupción"],
+    "educativo": ["APP en educación"],
+    "salud": ["Modernización de Hospitales"],
+    "seguridad": ["Cadena perpetua para delitos graves"]
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": "Alta",
+    "diferencias": "Más énfasis en seguridad",
+    "cumplimientoPrevio": "Limitado (no fue gobierno)"
+  },
+
+  "controversias": {
+    "investigaciones": ["Caso Cócteles - Lavado de activos"],
+    "enCurso": ["Financiamiento no declarado (IDL)"]
+  },
+
+  "transparencia": [
+    "Declaración de bienes presentada",
+    "Donaciones registradas parcialmente"
+  ],
+
+  "competenciasPersonales": {
+    "liderazgo": "Alto en su partido",
+    "comunicacion": "Moderado",
+    "credibilidad": "Polarizada"
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 8,
+      "max": 15,
+      "descripcion": "Estadísticamente: De 8% a 15%"
+    },
+    "aprobacion": "Estimada: Baja (Desaprobada)",
+    "redes": "Alto Engagement"
+  },
+
+  "innovacionYVision": ["Digitalización de trámites", "Poco énfasis ambiental"],
+
+  "historialLegislativo": {
+    "tieneHistorial": true,
+    "asistencia": {
+      "porcentaje": 85,
+      "label": "ALTA"
+    },
+    "proyectosPresentados": 20,
+    "proyectosAprobados": 6
+  }
+}
