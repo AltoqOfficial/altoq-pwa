@@ -374,6 +374,7 @@ export function ComparisonHero() {
               />
             ) : null}
           </div>
+          {/* Center Content - Selector */}
           <div className="flex justify-center flex-col items-center gap-6 md:gap-8 lg:gap-12 order-1 lg:order-2 lg:px-8 lg:py-12">
             <PageHero
               title="A COMPARAR!"

@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import { useMemo } from "react";
 import type { ApexOptions } from "apexcharts";
 
-// Dynamic import to avoid SSR issues
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 interface AttendanceChartProps {
@@ -15,16 +14,12 @@ interface AttendanceChartProps {
   projectsApproved?: number;
 }
 
-/**
- * Attendance Gauge Chart Component
- * Uses ApexCharts Radial Bar for semicircular gauge
- */
 export function AttendanceChart({
   percentage,
   label,
   color,
 }: AttendanceChartProps) {
-  const chartOptions = useMemo(
+  const chartOptions = useMemo<ApexOptions>(
     () => ({
       chart: {
         type: "radialBar" as const,
