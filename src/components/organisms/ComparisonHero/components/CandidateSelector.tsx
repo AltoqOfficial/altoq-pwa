@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useId } from "react";
-import { CANDIDATES, SELECTION_COLORS } from "../constants";
+import { CANDIDATES, SELECTION_COLORS, type Candidate } from "../constants";
 
 interface CandidateSelectorProps {
   selectedCandidates: string[];

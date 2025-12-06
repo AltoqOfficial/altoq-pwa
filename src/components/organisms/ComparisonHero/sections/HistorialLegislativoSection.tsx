@@ -63,6 +63,12 @@ export function HistorialLegislativoSection({
                 attendanceLabel={
                   leftCandidate.historialLegislativo.asistencia.label
                 }
+                projectsPresented={
+                  leftCandidate.historialLegislativo.proyectosPresentados
+                }
+                projectsApproved={
+                  leftCandidate.historialLegislativo.proyectosAprobados
+                }
                 note={leftCandidate.historialLegislativo.nota}
                 color={leftCandidate.color}
               />
@@ -110,6 +116,12 @@ export function HistorialLegislativoSection({
                 }
                 attendanceLabel={
                   rightCandidate.historialLegislativo.asistencia.label
+                }
+                projectsPresented={
+                  rightCandidate.historialLegislativo.proyectosPresentados
+                }
+                projectsApproved={
+                  rightCandidate.historialLegislativo.proyectosAprobados
                 }
                 note={rightCandidate.historialLegislativo.nota}
                 color={rightCandidate.color}

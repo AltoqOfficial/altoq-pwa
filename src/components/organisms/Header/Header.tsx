@@ -25,6 +25,7 @@ export function Header() {
   // Pages with light backgrounds use outline and header-nav
   const darkBackgroundPages = ["/", "/compara"];
   const isDarkBackground = darkBackgroundPages.includes(pathname);
+  const outlineVariant = isDarkBackground ? "outline-light" : "outline";
   const headerNavVariant = isDarkBackground ? "header-nav-dark" : "header-nav";
 
   return (
