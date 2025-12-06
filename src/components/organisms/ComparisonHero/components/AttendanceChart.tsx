@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useMemo } from "react";
+import type { ApexOptions } from "apexcharts";
 
 // Dynamic import to avoid SSR issues
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
@@ -10,8 +11,6 @@ interface AttendanceChartProps {
   percentage: number;
   label: string;
   color: string;
-  projectsPresented?: number;
-  projectsApproved?: number;
 }
 
 /**
@@ -22,13 +21,11 @@ export function AttendanceChart({
   percentage,
   label,
   color,
-  projectsPresented = 0,
-  projectsApproved = 0,
 }: AttendanceChartProps) {
-  const chartOptions = useMemo(
+  const chartOptions: ApexOptions = useMemo(
     () => ({
       chart: {
-        type: "radialBar",
+        type: "radialBar" as const,
         sparkline: {
           enabled: false,
         },

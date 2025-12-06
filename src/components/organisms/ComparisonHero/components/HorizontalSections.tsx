@@ -3,7 +3,6 @@ import React from "react";
 interface HorizontalSectionsProps {
   children: React.ReactNode;
   activeIndex: number;
-  direction: "left" | "right";
 }
 
 /**
@@ -13,7 +12,6 @@ interface HorizontalSectionsProps {
 export function HorizontalSections({
   children,
   activeIndex,
-  direction,
 }: HorizontalSectionsProps) {
   const childrenArray = React.Children.toArray(children);
 
