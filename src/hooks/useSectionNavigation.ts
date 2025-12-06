@@ -33,31 +33,34 @@ export function useSectionNavigation({
   }, []);
 
   // Handle section navigation click - horizontal slide
-  const handleNavClick = useCallback((index: number) => {
-    // Determine scroll direction based on previous and new index
-    const direction = index > previousIndexRef.current ? "right" : "left";
-    setScrollDirection(direction);
-    previousIndexRef.current = index;
-    setActiveNavIndex(index);
+  const handleNavClick = useCallback(
+    (index: number) => {
+      // Determine scroll direction based on previous and new index
+      const direction = index > previousIndexRef.current ? "right" : "left";
+      setScrollDirection(direction);
+      previousIndexRef.current = index;
+      setActiveNavIndex(index);
 
-    // Center the active nav item in the navbar
-    if (navContainerRef.current) {
-      const navButtons =
-        navContainerRef.current.querySelectorAll<HTMLButtonElement>("button");
-      const activeButton = navButtons[index];
-      if (activeButton) {
-        const containerWidth = navContainerRef.current.offsetWidth;
-        const buttonLeft = activeButton.offsetLeft;
-        const buttonWidth = activeButton.offsetWidth;
-        const scrollLeft = buttonLeft - containerWidth / 2 + buttonWidth / 2;
+      // Center the active nav item in the navbar
+      if (navContainerRef.current) {
+        const navButtons =
+          navContainerRef.current.querySelectorAll<HTMLButtonElement>("button");
+        const activeButton = navButtons[index];
+        if (activeButton) {
+          const containerWidth = navContainerRef.current.offsetWidth;
+          const buttonLeft = activeButton.offsetLeft;
+          const buttonWidth = activeButton.offsetWidth;
+          const scrollLeft = buttonLeft - containerWidth / 2 + buttonWidth / 2;
 
-        navContainerRef.current.scrollTo({
-          left: scrollLeft,
-          behavior: "smooth",
-        });
+          navContainerRef.current.scrollTo({
+            left: scrollLeft,
+            behavior: "smooth",
+          });
+        }
       }
-    }
-  }, []);
+    },
+    [sections]
+  );
 
   // Navigate to next section
   const goToNext = useCallback(() => {

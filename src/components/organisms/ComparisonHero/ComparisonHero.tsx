@@ -144,7 +144,7 @@ export function ComparisonHero() {
             x2="0%"
             y2="100%"
           >
-            <stop offset="0%" stopColor="#FF2727" />
+            <stop offset="0%" stopColor="#FF272780" />
             <stop offset="100%" stopColor="#202020" />
           </linearGradient>
 
@@ -156,7 +156,7 @@ export function ComparisonHero() {
             x2="0%"
             y2="100%"
           >
-            <stop offset="0%" stopColor="#3E4692" />
+            <stop offset="0%" stopColor="#3E469240" />
             <stop offset="100%" stopColor="#202020" />
           </linearGradient>
 
@@ -345,12 +345,12 @@ export function ComparisonHero() {
       {/* Hero Section */}
       <div className="flex justify-center items-center flex-col w-full">
         {/* Mobile/Tablet: Vertical layout, Desktop: 3-column grid */}
-        <div className="flex flex-col lg:grid lg:grid-cols-3 p-4 md:p-8 lg:p-12 gap-12 w-full max-w-[100rem]">
+        <div className="flex flex-col lg:flex-row p-4 md:p-8 lg:p-0 gap-12 w-full lg:h-[700px] lg:gap-0">
           {/* Left Candidate - Mobile: smaller, centered */}
-          <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-[450px] h-[350px] md:h-[450px] lg:h-[600px] mx-auto lg:mx-0 order-2 lg:order-1 overflow-hidden">
+          <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-none lg:flex-1 h-[350px] md:h-[450px] lg:h-full mx-auto lg:mx-0 order-2 lg:order-1 overflow-hidden">
             {/* Red gradient background square with noise */}
             <svg
-              className={`absolute top-0 left-0 w-full h-full transition-all duration-500 ease-out ${
+              className={`absolute top-0 left-auto lg:right-0 transition-all duration-500 ease-out lg:w-[450px] lg:h-full w-full h-full ${
                 leftCandidateInfo
                   ? "opacity-100 scale-100"
                   : "opacity-70 scale-100"
@@ -370,22 +370,11 @@ export function ComparisonHero() {
                 src={leftCandidateInfo.image}
                 alt={leftCandidateInfo.name}
                 fill
-                className="relative object-cover object-top z-10 animate-candidate-appear"
+                className="relative object-cover object-center lg:object-left z-10 animate-candidate-appear"
               />
-            ) : (
-              <div className="w-full h-full bg-neutral-600/50 relative flex items-center justify-center z-10">
-                <Typography
-                  color="white"
-                  variant="h5"
-                  className="opacity-50 md:text-xl lg:text-2xl"
-                >
-                  Selecciona candidato
-                </Typography>
-              </div>
-            )}
+            ) : null}
           </div>
-          {/* Center Content - Selector */}
-          <div className="flex justify-center flex-col items-center gap-6 md:gap-8 lg:gap-12 order-1 lg:order-2">
+          <div className="flex justify-center flex-col items-center gap-6 md:gap-8 lg:gap-12 order-1 lg:order-2 lg:px-8 lg:py-12">
             <PageHero
               title="A COMPARAR!"
               description="Una comparación política basada en datos reales. Explora quién propone más, quién tiene resultados y quién aún no lo demuestra."
@@ -397,10 +386,10 @@ export function ComparisonHero() {
             />
           </div>
           {/* Right Candidate */}
-          <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-[450px] h-[350px] md:h-[450px] lg:h-[600px] mx-auto lg:mx-0 order-3 overflow-hidden">
+          <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-none lg:flex-1 h-[350px] md:h-[450px] lg:h-full mx-auto lg:mx-0 order-3 overflow-hidden">
             {/* Blue gradient background square with noise */}
             <svg
-              className={`absolute top-0 right-0 w-full h-full transition-all duration-500 ease-out ${
+              className={`absolute top-0 right-auto lg:left-0 transition-all duration-500 ease-out lg:w-[450px] lg:h-full w-full h-full ${
                 rightCandidateInfo
                   ? "opacity-100 scale-100"
                   : "opacity-70 scale-100"
@@ -420,19 +409,9 @@ export function ComparisonHero() {
                 src={rightCandidateInfo.image}
                 alt={rightCandidateInfo.name}
                 fill
-                className="relative object-cover object-top z-10 animate-candidate-appear"
+                className="relative object-cover object-center lg:object-right z-10 animate-candidate-appear"
               />
-            ) : (
-              <div className="w-full h-full bg-neutral-600/50 relative flex items-center justify-center z-10">
-                <Typography
-                  color="white"
-                  variant="h5"
-                  className="opacity-50 md:text-xl lg:text-2xl"
-                >
-                  Selecciona candidato
-                </Typography>
-              </div>
-            )}
+            ) : null}
           </div>
         </div>
         {hasSelectedCandidates && (
@@ -561,7 +540,10 @@ export function ComparisonHero() {
           />
 
           {/* Horizontal Sections Container */}
-          <HorizontalSections activeIndex={activeNavIndex}>
+          <HorizontalSections
+            activeIndex={activeNavIndex}
+            direction={scrollDirection}
+          >
             {/* Perfil General Section */}
             <SectionWrapper
               id="PerfilGeneral"

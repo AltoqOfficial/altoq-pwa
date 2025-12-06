@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useId } from "react";
 import { CANDIDATES, SELECTION_COLORS, type Candidate } from "../constants";
+import { useMediaQuery } from "@/hooks";
 
 interface CandidateSelectorProps {
   selectedCandidates: string[];
@@ -19,6 +20,7 @@ export function CandidateSelector({
 }: CandidateSelectorProps) {
   const uniqueId = useId();
   const noiseFilterId = `noiseSelectorFilter${uniqueId}`;
+  const isLgScreen = useMediaQuery("(min-width: 1024px)");
 
   const getBackgroundColor = (candidateId: string) => {
     const index = selectedCandidates.indexOf(candidateId);
@@ -31,6 +33,19 @@ export function CandidateSelector({
     const isSelected = selectedCandidates.includes(candidateId);
     if (isSelected) return "grayscale-0";
     return "grayscale";
+  };
+
+  const getImageDimensions = (candidate: Candidate) => {
+    if (isLgScreen && candidate.imageWidthLg && candidate.imageHeightLg) {
+      return {
+        width: candidate.imageWidthLg,
+        height: candidate.imageHeightLg,
+      };
+    }
+    return {
+      width: candidate.imageWidth || 120,
+      height: candidate.imageHeight || 100,
+    };
   };
 
   return (
@@ -122,9 +137,14 @@ export function CandidateSelector({
             <Image
               src={candidate.src}
               alt={candidate.name}
-              width={120}
-              height={100}
-              className={`relative z-10 translate-y-4 md:translate-y-5 lg:translate-y-4.5 transition-all duration-300 object-cover w-[80%] md:w-[85%] lg:w-auto ${getImageStyle(candidate.id)}`}
+              width={getImageDimensions(candidate).width}
+              height={getImageDimensions(candidate).height}
+              className={`relative z-10 transition-all duration-300 object-cover ${getImageStyle(candidate.id)}`}
+              style={{
+                width: `${getImageDimensions(candidate).width}px`,
+                height: `${getImageDimensions(candidate).height}px`,
+                transform: `translate(${candidate.offsetX ?? 0}px, ${candidate.offsetY ?? 16}px)`,
+              }}
             />
           </button>
         ))}
