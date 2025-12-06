@@ -1,3 +1,6 @@
+"use client";
+
+import { useId } from "react";
 import { Typography } from "@/components/atoms";
 import { NAV_ITEMS } from "../constants";
 
@@ -18,12 +21,95 @@ export function SectionNavbar({
   onNavClick,
   onScrollNav,
 }: SectionNavbarProps) {
+  const uniqueId = useId();
+  const noiseFilterNavId = `noiseFilterNav${uniqueId}`;
+  const gradientNavId = `gradientNav${uniqueId}`;
+
   return (
-    <div
-      id="comparison-navbar"
-      className="bg-linear-to-r from-[#FF2727] to-[#2F356E] w-full sticky top-0 z-50"
-    >
-      <nav className="flex items-center">
+    <div id="comparison-navbar" className="w-full sticky top-0 z-50 relative">
+      {/* SVG Definitions for gradient and noise */}
+      <svg width="0" height="0" className="absolute">
+        <defs>
+          {/* Gradient for Nav background */}
+          <linearGradient id={gradientNavId} x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#FF2727" />
+            <stop offset="100%" stopColor="#2F356E" />
+          </linearGradient>
+
+          {/* Noise filter for Nav */}
+          <filter
+            id={noiseFilterNavId}
+            x="-20%"
+            y="-20%"
+            width="140%"
+            height="140%"
+            filterUnits="objectBoundingBox"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="1.25 1.25"
+              numOctaves={3}
+              result="noise"
+              seed={4254}
+              stitchTiles="stitch"
+            />
+            <feColorMatrix
+              in="noise"
+              type="luminanceToAlpha"
+              result="alphaNoise"
+            />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA
+                type="discrete"
+                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+              />
+            </feComponentTransfer>
+            <feComposite
+              operator="in"
+              in2="shape"
+              in="coloredNoise1"
+              result="noise1Clipped"
+            />
+            <feFlood
+              floodColor="rgba(255, 255, 255, 0.2)"
+              result="color1Flood"
+            />
+            <feComposite
+              operator="in"
+              in2="noise1Clipped"
+              in="color1Flood"
+              result="color1"
+            />
+            <feMerge result="effect1_noise">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+        </defs>
+      </svg>
+
+      {/* Gradient background with noise */}
+      <svg
+        className="absolute inset-0 w-full h-full"
+        preserveAspectRatio="none"
+      >
+        <rect
+          width="100%"
+          height="100%"
+          fill={`url(#${gradientNavId})`}
+          filter={`url(#${noiseFilterNavId})`}
+        />
+      </svg>
+
+      <nav className="flex items-center relative z-10">
         <button
           onClick={() => onScrollNav("left")}
           className="shrink-0 p-2 md:p-3 lg:p-4 cursor-pointer hover:opacity-70 transition-opacity"

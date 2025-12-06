@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useId } from "react";
 import { PageHero } from "@/components/molecules/PageHero";
 import Image from "next/image";
 import { Typography } from "@/components/atoms";
@@ -57,6 +57,13 @@ export function ComparisonHero() {
   } = useSectionNavigation({
     sections: [...NAV_ITEMS],
   });
+
+  // Unique IDs for SVG filters
+  const uniqueId = useId();
+  const noiseFilterRedId = `noiseFilterRed${uniqueId}`;
+  const noiseFilterBlueId = `noiseFilterBlue${uniqueId}`;
+  const noiseFilterVSId = `noiseFilterVS${uniqueId}`;
+  const gradientVSId = `gradientVS${uniqueId}`;
 
   // Get candidate data based on selection
   const { leftCandidate, rightCandidate } = useMemo(() => {
@@ -126,20 +133,237 @@ export function ComparisonHero() {
 
   return (
     <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-8 md:space-y-12 lg:space-y-18">
+      {/* SVG Filters for Noise Effect */}
+      <svg width="0" height="0" className="absolute">
+        <defs>
+          {/* Gradient for Red background */}
+          <linearGradient
+            id={`gradientRed${uniqueId}`}
+            x1="0%"
+            y1="0%"
+            x2="0%"
+            y2="100%"
+          >
+            <stop offset="0%" stopColor="#FF2727" />
+            <stop offset="100%" stopColor="#202020" />
+          </linearGradient>
+
+          {/* Gradient for Blue background */}
+          <linearGradient
+            id={`gradientBlue${uniqueId}`}
+            x1="0%"
+            y1="0%"
+            x2="0%"
+            y2="100%"
+          >
+            <stop offset="0%" stopColor="#3E4692" />
+            <stop offset="100%" stopColor="#202020" />
+          </linearGradient>
+
+          {/* Noise filter for Red */}
+          <filter
+            id={noiseFilterRedId}
+            x="-20%"
+            y="-20%"
+            width="140%"
+            height="140%"
+            filterUnits="objectBoundingBox"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="1.25 1.25"
+              numOctaves={3}
+              result="noise"
+              seed={4254}
+              stitchTiles="stitch"
+            />
+            <feColorMatrix
+              in="noise"
+              type="luminanceToAlpha"
+              result="alphaNoise"
+            />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA
+                type="discrete"
+                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+              />
+            </feComponentTransfer>
+            <feComposite
+              operator="in"
+              in2="shape"
+              in="coloredNoise1"
+              result="noise1Clipped"
+            />
+            <feFlood
+              floodColor="rgba(255, 255, 255, 0.2)"
+              result="color1Flood"
+            />
+            <feComposite
+              operator="in"
+              in2="noise1Clipped"
+              in="color1Flood"
+              result="color1"
+            />
+            <feMerge result="effect1_noise">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+
+          {/* Noise filter for Blue */}
+          <filter
+            id={noiseFilterBlueId}
+            x="-20%"
+            y="-20%"
+            width="140%"
+            height="140%"
+            filterUnits="objectBoundingBox"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="1.25 1.25"
+              numOctaves={3}
+              result="noise"
+              seed={4254}
+              stitchTiles="stitch"
+            />
+            <feColorMatrix
+              in="noise"
+              type="luminanceToAlpha"
+              result="alphaNoise"
+            />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA
+                type="discrete"
+                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+              />
+            </feComponentTransfer>
+            <feComposite
+              operator="in"
+              in2="shape"
+              in="coloredNoise1"
+              result="noise1Clipped"
+            />
+            <feFlood
+              floodColor="rgba(255, 255, 255, 0.2)"
+              result="color1Flood"
+            />
+            <feComposite
+              operator="in"
+              in2="noise1Clipped"
+              in="color1Flood"
+              result="color1"
+            />
+            <feMerge result="effect1_noise">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+
+          {/* Gradient for VS text */}
+          <linearGradient id={gradientVSId} x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stopColor="#A90003" />
+            <stop offset="100%" stopColor="#FF2F2F" />
+          </linearGradient>
+
+          {/* Noise filter for VS */}
+          <filter
+            id={noiseFilterVSId}
+            x="-20%"
+            y="-20%"
+            width="140%"
+            height="140%"
+            filterUnits="objectBoundingBox"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="1.25 1.25"
+              numOctaves={3}
+              result="noise"
+              seed={4254}
+              stitchTiles="stitch"
+            />
+            <feColorMatrix
+              in="noise"
+              type="luminanceToAlpha"
+              result="alphaNoise"
+            />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA
+                type="discrete"
+                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+              />
+            </feComponentTransfer>
+            <feComposite
+              operator="in"
+              in2="shape"
+              in="coloredNoise1"
+              result="noise1Clipped"
+            />
+            <feFlood
+              floodColor="rgba(255, 255, 255, 0.2)"
+              result="color1Flood"
+            />
+            <feComposite
+              operator="in"
+              in2="noise1Clipped"
+              in="color1Flood"
+              result="color1"
+            />
+            <feMerge result="effect1_noise">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+        </defs>
+      </svg>
+
       {/* Hero Section */}
       <div className="flex justify-center items-center flex-col w-full">
         {/* Mobile/Tablet: Vertical layout, Desktop: 3-column grid */}
         <div className="flex flex-col lg:grid lg:grid-cols-3 p-4 md:p-8 lg:p-12 gap-12 w-full max-w-[100rem]">
           {/* Left Candidate - Mobile: smaller, centered */}
           <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-[450px] h-[350px] md:h-[450px] lg:h-[600px] mx-auto lg:mx-0 order-2 lg:order-1 overflow-hidden">
-            {/* Red solid background square */}
-            <div
-              className={`absolute top-0 left-0 w-full h-full bg-[#FF2727] transition-all duration-500 ease-out ${
+            {/* Red gradient background square with noise */}
+            <svg
+              className={`absolute top-0 left-0 w-full h-full transition-all duration-500 ease-out ${
                 leftCandidateInfo
                   ? "opacity-100 scale-100"
                   : "opacity-70 scale-100"
               }`}
-            ></div>
+              preserveAspectRatio="none"
+            >
+              <rect
+                width="100%"
+                height="100%"
+                fill={`url(#gradientRed${uniqueId})`}
+                filter={`url(#${noiseFilterRedId})`}
+              />
+            </svg>
             {/* Candidate image on top */}
             {leftCandidateInfo ? (
               <Image
@@ -174,14 +398,22 @@ export function ComparisonHero() {
           </div>
           {/* Right Candidate */}
           <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-[450px] h-[350px] md:h-[450px] lg:h-[600px] mx-auto lg:mx-0 order-3 overflow-hidden">
-            {/* Blue solid background square */}
-            <div
-              className={`absolute top-0 right-0 w-full h-full bg-[#3E4692] transition-all duration-500 ease-out ${
+            {/* Blue gradient background square with noise */}
+            <svg
+              className={`absolute top-0 right-0 w-full h-full transition-all duration-500 ease-out ${
                 rightCandidateInfo
                   ? "opacity-100 scale-100"
                   : "opacity-70 scale-100"
               }`}
-            ></div>
+              preserveAspectRatio="none"
+            >
+              <rect
+                width="100%"
+                height="100%"
+                fill={`url(#gradientBlue${uniqueId})`}
+                filter={`url(#${noiseFilterBlueId})`}
+              />
+            </svg>
             {/* Candidate image on top */}
             {rightCandidateInfo ? (
               <Image
@@ -264,16 +496,28 @@ export function ComparisonHero() {
               )}
             </div>
             <div className="flex items-center justify-center order-first md:order-0">
-              <Typography
-                font="kenyan"
-                color="primary"
-                align="center"
-                variant="h1"
-                weight="600"
-                className="text-3xl md:text-4xl lg:text-6xl"
+              <svg
+                viewBox="0 0 120 80"
+                className="w-[100px] h-auto md:w-[140px] lg:w-[180px]"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="VS"
+                role="img"
               >
-                VS
-              </Typography>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominantBaseline="central"
+                  textAnchor="middle"
+                  fill={`url(#${gradientVSId})`}
+                  filter={`url(#${noiseFilterVSId})`}
+                  fontFamily="var(--font-kenyan-coffee)"
+                  fontWeight="600"
+                  fontSize="60"
+                >
+                  VS
+                </text>
+              </svg>
             </div>
             <div className="flex items-center justify-center md:justify-end gap-4 md:gap-6 lg:gap-12">
               {rightCandidateInfo && (
