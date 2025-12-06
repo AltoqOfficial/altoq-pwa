@@ -561,10 +561,7 @@ export function ComparisonHero() {
           />
 
           {/* Horizontal Sections Container */}
-          <HorizontalSections
-            activeIndex={activeNavIndex}
-            direction={scrollDirection}
-          >
+          <HorizontalSections activeIndex={activeNavIndex}>
             {/* Perfil General Section */}
             <SectionWrapper
               id="PerfilGeneral"
