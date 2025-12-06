@@ -23,8 +23,6 @@ export function AttendanceChart({
   percentage,
   label,
   color,
-  projectsPresented = 0,
-  projectsApproved = 0,
 }: AttendanceChartProps) {
   const chartOptions = useMemo(
     () => ({
