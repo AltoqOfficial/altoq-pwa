@@ -62,7 +62,7 @@ export function ControversiasSection({
           variant="h6"
           align="left"
           weight="200"
-          className="max-w-full md:max-w-[20rem] flex md:justify-center items-center md:mx-auto text-xs md:text-sm lg:text-base"
+          className="max-w-full md:max-w-[20rem] flex md:justify-center items-center md:mx-auto text-xs md:text-sm lg:text-base flex-col"
         >
           {renderList(candidate?.controversias.enCurso)}
         </Typography>

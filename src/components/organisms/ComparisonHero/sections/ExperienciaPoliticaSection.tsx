@@ -62,7 +62,7 @@ export function ExperienciaPoliticaSection({
           variant="h6"
           align="left"
           weight="200"
-          className="max-w-full md:max-w-[20rem] flex md:justify-center items-center md:mx-auto text-xs md:text-sm lg:text-base"
+          className="max-w-full md:max-w-[20rem] flex flex-col space-y-2 md:justify-center items-start md:items-center md:mx-auto text-xs md:text-sm lg:text-base"
         >
           {renderList(candidate?.experienciaPolitica.cargosPrevios)}
         </Typography>
@@ -82,7 +82,7 @@ export function ExperienciaPoliticaSection({
           variant="h6"
           align="left"
           weight="200"
-          className="max-w-full md:max-w-[20rem] flex md:justify-center items-center md:mx-auto text-xs md:text-sm lg:text-base"
+          className="max-w-full md:max-w-[20rem] flex md:justify-center items-start md:mx-auto text-xs md:text-sm lg:text-base flex-col space-y-2"
         >
           {candidate?.experienciaPolitica.candidaturasPresidenciales?.map(
             (item, index) => (
