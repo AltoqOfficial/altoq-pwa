@@ -29,7 +29,12 @@ export function Header() {
   const headerNavVariant = isDarkBackground ? "header-nav-dark" : "header-nav";
 
   return (
-    <header className="static top-0 z-50 w-full backdrop-blur-sm bg-[#202020]">
+    <header
+      className={cn(
+        "static top-0 z-50 w-full backdrop-blur-sm",
+        pathname === "/compara" && "bg-neutral-500"
+      )}
+    >
       {/* Mobile Layout */}
       <div className="container mx-auto flex md:hidden flex-col items-center px-4 py-4 gap-4">
         {/* Logo - Centered */}
@@ -79,7 +84,7 @@ export function Header() {
                 <span className="text-center leading-tight">
                   Comparar
                   <br />
-                  candidatos
+                  Candidatos
                 </span>
               </Link>
             </Button>
@@ -93,16 +98,13 @@ export function Header() {
         <Logo variant="default" asLink priority />
 
         {/* CTA Buttons */}
-        <div className="flex items-center gap-8">
-          <Link href="/unete" className="text-[#FEFEFE] text-lg font-bold">
-            Unirme como voluntario
-          </Link>
-          <Link
-            href="/compara"
-            className="text-[#FF2727] text-lg font-bold border-t-3 border-transparent hover:border-[#FF2727] transition-colors py-5"
-          >
-            Comparar Candidatos
-          </Link>
+        <div className="flex items-center gap-4">
+          <Button variant={outlineVariant} size="sm" asChild>
+            <Link href="/unete">Unirme como Voluntario</Link>
+          </Button>
+          <Button variant="primary" size="sm" asChild>
+            <Link href="/compara">Comparar Candidatos</Link>
+          </Button>
         </div>
       </div>
     </header>
