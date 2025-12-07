@@ -22,17 +22,33 @@ export function CandidateSelector({
   const noiseFilterId = `noiseSelectorFilter${uniqueId}`;
   const isLgScreen = useMediaQuery("(min-width: 1024px)");
 
-  const getBackgroundColor = (candidateId: string) => {
+  const isDisabled = (candidate: Candidate) => !candidate.dataKey;
+
+  const getBackgroundColor = (candidateId: string, candidate: Candidate) => {
+    if (isDisabled(candidate)) return "#2a2a2a";
     const index = selectedCandidates.indexOf(candidateId);
     if (index === 0) return SELECTION_COLORS.first;
     if (index === 1) return SELECTION_COLORS.second;
-    return "#484848";
+    return "#48484840";
   };
 
-  const getImageStyle = (candidateId: string) => {
-    const isSelected = selectedCandidates.includes(candidateId);
-    if (isSelected) return "grayscale-0";
-    return "grayscale";
+  const getImageFilter = (candidate: Candidate) => {
+    const brightness = (candidate.brightness ?? 1) * (candidate.shadows ?? 1);
+    const contrast = candidate.contrast ?? 1;
+    const saturate = candidate.saturate ?? 1;
+    const sepia = candidate.sepia ?? 0;
+
+    // Disabled candidates are always grayscale with reduced opacity
+    if (isDisabled(candidate)) {
+      return `grayscale(1) brightness(0.5) contrast(${contrast})`;
+    }
+
+    const isSelected = selectedCandidates.includes(candidate.id);
+    // Apply grayscale when not selected, full color filters when selected
+    if (isSelected) {
+      return `brightness(${brightness}) contrast(${contrast}) saturate(${saturate}) sepia(${sepia})`;
+    }
+    return `grayscale(1) brightness(${brightness}) contrast(${contrast})`;
   };
 
   const getImageDimensions = (candidate: Candidate) => {
@@ -114,40 +130,49 @@ export function CandidateSelector({
       </svg>
 
       <div className="grid grid-cols-2 gap-2 md:gap-3 w-full max-w-[280px] md:max-w-[350px] lg:max-w-[420px]">
-        {CANDIDATES.map((candidate) => (
-          <button
-            key={candidate.id}
-            onClick={() => onCandidateClick(candidate.id)}
-            className="relative cursor-pointer transition-all duration-300 overflow-hidden border-2 border-[#CECECE] w-full aspect-[2.2/1] md:h-18 lg:h-22 flex justify-center items-center group"
-          >
-            {/* Background with noise */}
-            <svg
-              className="absolute inset-0 w-full h-full"
-              preserveAspectRatio="none"
-              style={{ filter: `url(#${noiseFilterId})` }}
+        {CANDIDATES.map((candidate) => {
+          const disabled = isDisabled(candidate);
+          return (
+            <button
+              key={candidate.id}
+              onClick={() => !disabled && onCandidateClick(candidate.id)}
+              disabled={disabled}
+              className={`relative transition-all duration-300 overflow-hidden border-2 w-full aspect-[2.2/1] md:h-18 lg:h-22 flex justify-center items-center group ${
+                disabled
+                  ? "cursor-not-allowed border-[#555] opacity-60"
+                  : "cursor-pointer border-[#CECECE]"
+              }`}
             >
-              <rect
-                width="100%"
-                height="100%"
-                fill={getBackgroundColor(candidate.id)}
-              />
-            </svg>
+              {/* Background with noise */}
+              <svg
+                className="absolute inset-0 w-full h-full"
+                preserveAspectRatio="none"
+                style={{ filter: `url(#${noiseFilterId})` }}
+              >
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill={getBackgroundColor(candidate.id, candidate)}
+                />
+              </svg>
 
-            {/* Image on top */}
-            <Image
-              src={candidate.src}
-              alt={candidate.name}
-              width={getImageDimensions(candidate).width}
-              height={getImageDimensions(candidate).height}
-              className={`relative z-10 transition-all duration-300 object-cover ${getImageStyle(candidate.id)}`}
-              style={{
-                width: `${getImageDimensions(candidate).width}px`,
-                height: `${getImageDimensions(candidate).height}px`,
-                transform: `translate(${candidate.offsetX ?? 0}px, ${candidate.offsetY ?? 16}px)`,
-              }}
-            />
-          </button>
-        ))}
+              {/* Image on top */}
+              <Image
+                src={candidate.src}
+                alt={candidate.name}
+                width={getImageDimensions(candidate).width}
+                height={getImageDimensions(candidate).height}
+                className="relative z-10 transition-all duration-300 object-cover"
+                style={{
+                  width: `${getImageDimensions(candidate).width}px`,
+                  height: `${getImageDimensions(candidate).height}px`,
+                  transform: `translate(${candidate.offsetX ?? 0}px, ${candidate.offsetY ?? 16}px)`,
+                  filter: getImageFilter(candidate),
+                }}
+              />
+            </button>
+          );
+        })}
       </div>
     </>
   );

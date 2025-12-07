@@ -28,6 +28,12 @@ export interface Candidate {
   imageWidthLg?: number; // Image width on desktop/lg breakpoint
   offsetY?: number; // Y-axis offset in pixels (default: 16)
   offsetX?: number; // X-axis offset in pixels (default: 0)
+  // Image filters (CSS filter values)
+  brightness?: number; // Exposición/luces (default: 1, >1 más brillante, <1 más oscuro)
+  contrast?: number; // Contraste (default: 1, >1 más contraste)
+  saturate?: number; // Saturación (default: 1, >1 más saturado, <1 desaturado)
+  sepia?: number; // Temperatura/calidez (default: 0, 0.1-0.4 = cálido, 0 = neutral)
+  shadows?: number; // Sombras (default: 1, >1 = levanta sombras, <1 = oscurece sombras)
 }
 
 export const CANDIDATES: Candidate[] = [
@@ -42,6 +48,11 @@ export const CANDIDATES: Candidate[] = [
     imageWidth: 120,
     offsetY: 30,
     offsetX: 11,
+    brightness: 1,
+    contrast: 1.2,
+    saturate: 0.4,
+    sepia: 0.1,
+    shadows: 1,
   },
   {
     id: "cerron",
@@ -53,6 +64,11 @@ export const CANDIDATES: Candidate[] = [
     imageHeight: 110,
     imageWidth: 110,
     offsetY: 16,
+    brightness: 1,
+    contrast: 1.3,
+    saturate: 1,
+    sepia: 0,
+    shadows: 1,
   },
   {
     id: "x2",
@@ -64,6 +80,11 @@ export const CANDIDATES: Candidate[] = [
     imageHeight: 80,
     imageWidth: 80,
     offsetY: 2,
+    brightness: 1,
+    contrast: 1,
+    saturate: 1,
+    sepia: 0,
+    shadows: 1,
   },
   {
     id: "alvarez",
@@ -75,6 +96,11 @@ export const CANDIDATES: Candidate[] = [
     imageHeight: 140,
     imageWidth: 140,
     offsetY: 30,
+    brightness: 1,
+    contrast: 1,
+    saturate: 1,
+    sepia: 0,
+    shadows: 1,
   },
   {
     id: "keiko",
@@ -86,6 +112,11 @@ export const CANDIDATES: Candidate[] = [
     imageHeight: 80,
     imageWidth: 80,
     offsetY: 6,
+    brightness: 1.4,
+    contrast: 1.15,
+    saturate: 1.1,
+    sepia: 0,
+    shadows: 1,
   },
   {
     id: "asd",
@@ -97,6 +128,11 @@ export const CANDIDATES: Candidate[] = [
     imageHeight: 110,
     imageWidth: 110,
     offsetY: 20,
+    brightness: 1,
+    contrast: 1,
+    saturate: 1,
+    sepia: 0,
+    shadows: 1,
   },
   {
     id: "philip",
@@ -108,6 +144,11 @@ export const CANDIDATES: Candidate[] = [
     imageHeight: 140,
     imageWidth: 140,
     offsetY: 32,
+    brightness: 1,
+    contrast: 1,
+    saturate: 1,
+    sepia: 0,
+    shadows: 1,
   },
   {
     id: "niidea",
@@ -119,6 +160,11 @@ export const CANDIDATES: Candidate[] = [
     imageHeight: 120,
     imageWidth: 120,
     offsetY: 23,
+    brightness: 1,
+    contrast: 1,
+    saturate: 1,
+    sepia: 0,
+    shadows: 1,
   },
   {
     id: "lopez",
@@ -130,6 +176,11 @@ export const CANDIDATES: Candidate[] = [
     imageHeight: 90,
     imageWidth: 90,
     offsetY: 12,
+    brightness: 1,
+    contrast: 1,
+    saturate: 1,
+    sepia: 0,
+    shadows: 1,
   },
   {
     id: "adadada",
@@ -141,6 +192,11 @@ export const CANDIDATES: Candidate[] = [
     imageHeight: 110,
     imageWidth: 110,
     offsetY: 17,
+    brightness: 1,
+    contrast: 1,
+    saturate: 1,
+    sepia: 0,
+    shadows: 1,
   },
 ];
 

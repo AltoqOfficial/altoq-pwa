@@ -26,7 +26,7 @@ export function InnovacionYVisionSection({
         weight="200"
         className="text-xs md:text-sm lg:text-base"
       >
-        {index + 1}. {item}
+        {item}
       </Typography>
     ));
   };
@@ -34,11 +34,12 @@ export function InnovacionYVisionSection({
   return (
     <div className="gap-8 md:gap-16 lg:gap-32">
       <div className="w-full border-t border-white space-y-8 md:space-y-12 lg:space-y-16 py-8 md:py-12 lg:py-16">
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-0">
-          <div className="w-full space-y-4 md:space-y-6">
+        <div className="flex flex-col lg:grid lg:grid-cols-[1fr_1px_1fr] gap-8 md:gap-16 lg:gap-16 items-center">
+          <div className="w-full space-y-4 md:space-y-6  flex justify-center items-center flex-col">
             {renderList(leftCandidate?.innovacionYVision)}
           </div>
-          <div className="w-full space-y-4 md:space-y-6">
+          <div className="w-0.5 h-px lg:h-full my-8 bg-white/50" />
+          <div className="w-full space-y-4 md:space-y-6 flex justify-center items-center flex-col">
             {renderList(rightCandidate?.innovacionYVision)}
           </div>
         </div>

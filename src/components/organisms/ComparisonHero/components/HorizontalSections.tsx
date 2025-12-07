@@ -18,7 +18,7 @@ export function HorizontalSections({
   const childrenArray = React.Children.toArray(children);
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden h-auto">
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{

@@ -20,7 +20,7 @@ export function ExperienciaGestionSection({
     isLeft: boolean
   ) => {
     return (
-      <div className="w-full border-t border-white space-y-8 md:space-y-12 lg:space-y-16 py-8 md:py-12 lg:py-16">
+      <div className="w-full  space-y-8 md:space-y-12 lg:space-y-16 py-8 md:py-12 lg:py-16">
         <div className="grid grid-cols-3 items-center justify-center">
           <Typography
             font="kenyan"
@@ -101,8 +101,9 @@ export function ExperienciaGestionSection({
   };
 
   return (
-    <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-16 lg:gap-32">
+    <div className="flex flex-col lg:grid lg:grid-cols-[1fr_1px_1fr] gap-8 md:gap-16 lg:gap-16 border-t border-white">
       {renderCandidateColumn(leftCandidate, true)}
+      <div className="w-0.5 h-px lg:h-auto my-8 bg-white/50" />
       {renderCandidateColumn(rightCandidate, false)}
     </div>
   );

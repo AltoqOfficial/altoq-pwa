@@ -29,7 +29,7 @@ export function PropuestasPrincipalesSection({
     if (!proposals || proposals.length === 0) return "-";
     return proposals.map((item, index) => (
       <span key={index}>
-        {index + 1}. {item}
+        {item}
         {index < proposals.length - 1 && <br />}
       </span>
     ));

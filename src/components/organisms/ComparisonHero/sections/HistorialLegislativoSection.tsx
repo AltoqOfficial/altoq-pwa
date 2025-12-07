@@ -89,7 +89,7 @@ export function HistorialLegislativoSection({
 
         {/* Divider */}
         <div className="hidden md:flex justify-center items-center h-full">
-          <div className="w-px h-full min-h-[300px] md:min-h-[400px] bg-linear-to-b from-transparent via-white/30 to-transparent"></div>
+          <div className="w-0.5 h-px lg:h-full my-8 bg-white/50" />
         </div>
 
         {/* Right Candidate */}

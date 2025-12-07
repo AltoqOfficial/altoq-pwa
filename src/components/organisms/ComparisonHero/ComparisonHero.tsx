@@ -84,20 +84,32 @@ export function ComparisonHero() {
     const leftId = selectedCandidates[0];
     if (!leftId) return null;
 
+    // Get candidate from CANDIDATES array for filters
+    const candidateData = getCandidateById(leftId);
+
     // First try to get from full candidate data
     if (leftCandidate) {
       return {
         name: leftCandidate.fullName,
         image: leftCandidate.image,
+        brightness: candidateData?.brightness ?? 1,
+        contrast: candidateData?.contrast ?? 1,
+        saturate: candidateData?.saturate ?? 1,
+        sepia: candidateData?.sepia ?? 0,
+        shadows: candidateData?.shadows ?? 1,
       };
     }
 
     // Fallback to CANDIDATES array
-    const candidate = getCandidateById(leftId);
-    if (candidate) {
+    if (candidateData) {
       return {
-        name: candidate.name,
-        image: candidate.src,
+        name: candidateData.name,
+        image: candidateData.src,
+        brightness: candidateData.brightness ?? 1,
+        contrast: candidateData.contrast ?? 1,
+        saturate: candidateData.saturate ?? 1,
+        sepia: candidateData.sepia ?? 0,
+        shadows: candidateData.shadows ?? 1,
       };
     }
 
@@ -108,20 +120,32 @@ export function ComparisonHero() {
     const rightId = selectedCandidates[1];
     if (!rightId) return null;
 
+    // Get candidate from CANDIDATES array for filters
+    const candidateData = getCandidateById(rightId);
+
     // First try to get from full candidate data
     if (rightCandidate) {
       return {
         name: rightCandidate.fullName,
         image: rightCandidate.image,
+        brightness: candidateData?.brightness ?? 1,
+        contrast: candidateData?.contrast ?? 1,
+        saturate: candidateData?.saturate ?? 1,
+        sepia: candidateData?.sepia ?? 0,
+        shadows: candidateData?.shadows ?? 1,
       };
     }
 
     // Fallback to CANDIDATES array
-    const candidate = getCandidateById(rightId);
-    if (candidate) {
+    if (candidateData) {
       return {
-        name: candidate.name,
-        image: candidate.src,
+        name: candidateData.name,
+        image: candidateData.src,
+        brightness: candidateData.brightness ?? 1,
+        contrast: candidateData.contrast ?? 1,
+        saturate: candidateData.saturate ?? 1,
+        sepia: candidateData.sepia ?? 0,
+        shadows: candidateData.shadows ?? 1,
       };
     }
 
@@ -132,7 +156,7 @@ export function ComparisonHero() {
   const hasSelectedCandidates = leftCandidateInfo || rightCandidateInfo;
 
   return (
-    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-8 md:space-y-12 lg:space-y-18">
+    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-8 md:space-y-12 lg:space-y-18 min-h-[92vh] py-21">
       {/* SVG Filters for Noise Effect */}
       <svg width="0" height="0" className="absolute">
         <defs>
@@ -370,12 +394,15 @@ export function ComparisonHero() {
                 src={leftCandidateInfo.image}
                 alt={leftCandidateInfo.name}
                 fill
-                className="relative object-cover object-center lg:object-left z-10 animate-candidate-appear"
+                className="relative object-cover object-center lg:object-left z-10 animate-candidate-appear scale-108"
+                style={{
+                  filter: `brightness(${leftCandidateInfo.brightness * leftCandidateInfo.shadows}) contrast(${leftCandidateInfo.contrast}) saturate(${leftCandidateInfo.saturate}) sepia(${leftCandidateInfo.sepia})`,
+                }}
               />
             ) : null}
           </div>
           {/* Center Content - Selector */}
-          <div className="flex justify-center flex-col items-center gap-6 md:gap-8 lg:gap-12 order-1 lg:order-2 lg:px-8 lg:py-12">
+          <div className="flex justify-center flex-col items-center gap-6 md:gap-8 lg:gap-12 order-1 lg:order-2 lg:py-12">
             <PageHero
               title="A COMPARAR!"
               description="Una comparación política basada en datos reales. Explora quién propone más, quién tiene resultados y quién aún no lo demuestra."
@@ -410,7 +437,10 @@ export function ComparisonHero() {
                 src={rightCandidateInfo.image}
                 alt={rightCandidateInfo.name}
                 fill
-                className="relative object-cover object-center lg:object-right z-10 animate-candidate-appear"
+                className="relative object-cover object-center lg:object-right z-10 animate-candidate-appear scale-108"
+                style={{
+                  filter: `brightness(${rightCandidateInfo.brightness * rightCandidateInfo.shadows}) contrast(${rightCandidateInfo.contrast}) saturate(${rightCandidateInfo.saturate}) sepia(${rightCandidateInfo.sepia})`,
+                }}
               />
             ) : null}
           </div>
@@ -424,7 +454,7 @@ export function ComparisonHero() {
                 navbarElement.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in"
+            className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in pt-8"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
