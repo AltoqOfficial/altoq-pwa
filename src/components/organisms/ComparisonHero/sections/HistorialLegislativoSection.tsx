@@ -36,8 +36,8 @@ export function HistorialLegislativoSection({
   }
 
   return (
-    <div className="w-full border-t border-white py-8 md:py-12 lg:py-16">
-      <div className="relative flex justify-center md:grid md:grid-cols-2 gap-16 md:gap-8 items-start">
+    <div className="w-full border-t border-white py-8 md:py-12 lg:py-20">
+      <div className="relative flex justify-center md:grid md:grid-cols-2 gap-16 md:gap-8 lg:gap-16 items-start">
         {/* Left Candidate */}
         <div className="flex items-center">
           {leftCandidate && (

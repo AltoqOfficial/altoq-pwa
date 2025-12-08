@@ -390,19 +390,19 @@ export function ComparisonHero() {
           </filter>
         </defs>
       </svg>
-      <h1 className="font-sohne-schmal font-black text-6xl sm:text-7xl text-primary-600">
+      <h1 className="font-sohne-schmal font-black text-6xl sm:text-7xl text-primary-600 flex xl:hidden">
         A COMPARAR!
       </h1>
       {/* Hero Section */}
       <div className="w-full">
         <div className="flex justify-center items-center flex-col w-full  h-[220px] md:h-full">
           {/* Mobile/Tablet: Vertical layout, Desktop: 3-column grid */}
-          <div className="flex gap-2 h-full lg:gap-18 w-full xl:h-[700px] xl:gap-16">
+          <div className="flex gap-2 h-full xl:gap-18 w-full">
             {/* Left Candidate - Mobile: smaller, centered */}
             <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden ">
               {/* Red gradient background square with noise */}
               <svg
-                className={`absolute top-0 left-auto xl:right-0 transition-all duration-500 ease-out xl:w-[450px] xl:h-full w-full h-full hidden xl:block ${
+                className={`absolute top-0 left-auto xl:right-0 transition-all duration-500 ease-out xl:w-[450px] w-full h-full hidden xl:block ${
                   leftCandidateInfo
                     ? "opacity-100 scale-100"
                     : "opacity-40 scale-100"
@@ -418,7 +418,7 @@ export function ComparisonHero() {
               </svg>
               {/* Candidate image on top */}
               {leftCandidateInfo ? (
-                <div className="relative w-full h-[220px] sm:h-[220px] md:h-[300px] lg:h-[320px] xl:h-[430px] 2xl:h-full">
+                <div className="relative w-full h-[220px] sm:h-[220px] md:h-[300px] xl:h-[320px] xl:h-[430px] 2xl:h-full">
                   <Image
                     src={leftCandidateInfo.image}
                     alt={leftCandidateInfo.name}
@@ -433,11 +433,20 @@ export function ComparisonHero() {
             </div>
             <div className="flex  flex-col gap-6 xl:gap-12 order-1 xl:order-2 xl:py-12 max-w-sm mx-auto md:max-w-132">
               <div className="mx-auto px-1 sm:px-4 md:px-0">
+                <h1 className="font-sohne-schmal font-black text-6xl sm:text-7xl text-primary-600 hidden xl:block text-center">
+                  A COMPARAR!
+                </h1>
                 <span className="text-[#fefefe] font-sohne-breit text-xs sm:text-[12px] md:text-lg text-center block w-29 sm:w-40 md:w-100 mx-auto ">
                   Una comparación política basada en datos reales. Explora quién
                   propone más, quién tiene resultados y quién aún no los
                   demuestra.
                 </span>
+              </div>
+              <div className="hidden xl:flex">
+                <CandidateSelector
+                  selectedCandidates={selectedCandidates}
+                  onCandidateClick={handleCandidateClick}
+                />
               </div>
             </div>
             {/* Right Candidate */}
@@ -460,7 +469,7 @@ export function ComparisonHero() {
               </svg>
               {/* Candidate image on top */}
               {rightCandidateInfo ? (
-                <div className="relative w-full h-[220px] sm:h-[240px] md:h-[300px] lg:h-[320px] xl:h-[430px] 2xl:h-full ">
+                <div className="relative w-full h-[220px] sm:h-[240px] md:h-[300px] xl:h-[430px] 2xl:h-full ">
                   <Image
                     src={rightCandidateInfo.image}
                     alt={rightCandidateInfo.name}
@@ -483,7 +492,7 @@ export function ComparisonHero() {
                   navbarElement.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in pt-8 hidden lg:block"
+              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in pt-8 hidden xl:block"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -500,7 +509,7 @@ export function ComparisonHero() {
             </button>
           )}
         </div>
-        <div className="flex gap-4 justify-center items-center w-full lg:px-6 lg:hidden overflow-hidden">
+        <div className="flex gap-4 justify-center items-center w-full xl:px-6 xl:hidden overflow-hidden">
           <div className="relative flex items-center justify-center">
             {leftCandidateInfo && (
               <>
@@ -523,7 +532,7 @@ export function ComparisonHero() {
             {!leftCandidateInfo && (
               <Typography
                 font="kenyan"
-                className="text-white/50 font-bold text-xl xl:text-4xl"
+                className="text-white/50 font-bold text-xl xl:text-4xl px-8"
                 variant="h1"
               >
                 Selecciona candidato
@@ -580,7 +589,7 @@ export function ComparisonHero() {
             {!rightCandidateInfo && (
               <Typography
                 font="kenyan"
-                className="text-white/50 font-bold text-xl xl:text-4xl"
+                className="text-white/50 font-bold text-xl xl:text-4xl  px-8"
                 variant="h1"
                 align="right"
               >
@@ -590,13 +599,15 @@ export function ComparisonHero() {
           </div>
         </div>
       </div>
-      <CandidateSelector
-        selectedCandidates={selectedCandidates}
-        onCandidateClick={handleCandidateClick}
-      />
+      <div className="flex xl:hidden">
+        <CandidateSelector
+          selectedCandidates={selectedCandidates}
+          onCandidateClick={handleCandidateClick}
+        />
+      </div>
       {hasSelectedCandidates && (
         <>
-          <div className="hidden lg:flex gap-4 xl:gap-12 justify-center items-center w-full xl:max-w-336 px-4  xl:px-12">
+          <div className="hidden xl:flex gap-4 xl:gap-12 justify-center items-center w-full xl:max-w-336 px-4  xl:px-12">
             <div className="flex items-center justify-center xl:justify-start gap-4 xl:gap-12">
               {leftCandidateInfo && (
                 <>
@@ -605,7 +616,7 @@ export function ComparisonHero() {
                     alt={leftCandidateInfo.name}
                     width={140}
                     height={80}
-                    className="w-16 h-auto animate-slide-in-left hidden lg:block"
+                    className="w-16 h-auto animate-slide-in-left hidden md:block"
                   />
                   <h3 className="text-white font-bold text-4xl xl:text-5xl animate-slide-in-left animation-delay-100 font-kenyan">
                     {leftCandidateInfo.name}
@@ -622,7 +633,7 @@ export function ComparisonHero() {
                 </Typography>
               )}
             </div>
-            <div className="flex items-center justify-center xl:order-0">
+            <div className="flex items-center justify-center xl:order-0 xl:scale-80">
               <svg
                 viewBox="0 0 120 80"
                 className="w-[100px] h-auto md:w-[140px] xl:w-[180px]"
@@ -658,7 +669,7 @@ export function ComparisonHero() {
                     alt={rightCandidateInfo.name}
                     width={140}
                     height={80}
-                    className="w-16 h-auto xl:w-[140px] xl:order-2 order-1 animate-slide-in-right hidden lg:block"
+                    className="w-16 h-auto animate-slide-in-left hidden md:block"
                   />
                 </>
               )}

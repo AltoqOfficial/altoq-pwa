@@ -29,7 +29,7 @@ export function LegislativeHistoryChart({
   return (
     <div className="flex flex-col items-center w-full">
       <Typography
-        className="underline text-sm md:text-base lg:text-lg mb-2"
+        className="underline text-sm md:text-base lg:text-xl mb-2 lg:mb-4"
         color="primary"
         weight="600"
         variant="h5"
@@ -38,7 +38,7 @@ export function LegislativeHistoryChart({
         Asistencia
       </Typography>
 
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-2 lg:gap-4">
         {/* Chart */}
         <div className="flex-shrink-0">
           <AttendanceChart
@@ -51,7 +51,7 @@ export function LegislativeHistoryChart({
         </div>
 
         {/* Stats */}
-        <div className="space-y-1 md:space-y-2 text-center">
+        <div className="space-y-1 md:space-y-2 lg:space-y-3 text-center lg:mt-4">
           {hasHistory ? (
             <>
               <Typography
@@ -59,7 +59,7 @@ export function LegislativeHistoryChart({
                 variant="p"
                 align="center"
                 weight="200"
-                className="text-[10px] md:text-xs lg:text-sm"
+                className="text-[10px] md:text-xs lg:text-base"
               >
                 1. Proyectos presentados: {projectsPresented}
               </Typography>
@@ -68,7 +68,7 @@ export function LegislativeHistoryChart({
                 variant="p"
                 align="center"
                 weight="200"
-                className="text-[10px] md:text-xs lg:text-sm"
+                className="text-[10px] md:text-xs lg:text-base"
               >
                 2. Proyectos aprobados: {projectsApproved}
               </Typography>
@@ -79,7 +79,7 @@ export function LegislativeHistoryChart({
               variant="p"
               align="center"
               weight="200"
-              className="max-w-[150px] md:max-w-[180px] text-[10px] md:text-xs lg:text-sm"
+              className="max-w-[150px] md:max-w-[180px] lg:max-w-[220px] text-[10px] md:text-xs lg:text-base"
             >
               1. {note || "No tiene historial legislativo (no fue congresista)"}
             </Typography>
