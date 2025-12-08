@@ -395,7 +395,7 @@ export function ComparisonHero() {
       </h1>
       {/* Hero Section */}
       <div className="w-full">
-        <div className="flex justify-center items-center flex-col w-full  h-[220px]">
+        <div className="flex justify-center items-center flex-col w-full  h-[220px] md:h-full">
           {/* Mobile/Tablet: Vertical layout, Desktop: 3-column grid */}
           <div className="flex gap-2 h-full lg:gap-18 w-full xl:h-[700px] xl:gap-16">
             {/* Left Candidate - Mobile: smaller, centered */}
@@ -433,7 +433,7 @@ export function ComparisonHero() {
             </div>
             <div className="flex  flex-col gap-6 xl:gap-12 order-1 xl:order-2 xl:py-12 max-w-sm mx-auto md:max-w-132">
               <div className="mx-auto px-1 sm:px-4 md:px-0">
-                <span className="text-[#fefefe] font-sohne-breit text-xs sm:text-[12px] text-center block w-29 sm:w-40 md:w-100 mx-auto ">
+                <span className="text-[#fefefe] font-sohne-breit text-xs sm:text-[12px] md:text-lg text-center block w-29 sm:w-40 md:w-100 mx-auto ">
                   Una comparación política basada en datos reales. Explora quién
                   propone más, quién tiene resultados y quién aún no los
                   demuestra.
@@ -483,7 +483,7 @@ export function ComparisonHero() {
                   navbarElement.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in pt-8 hidden md:block"
+              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in pt-8 hidden lg:block"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -500,7 +500,7 @@ export function ComparisonHero() {
             </button>
           )}
         </div>
-        <div className="flex gap-4 justify-center items-center w-full px-6 md:hidden overflow-hidden">
+        <div className="flex gap-4 justify-center items-center w-full lg:px-6 lg:hidden overflow-hidden">
           <div className="relative flex items-center justify-center">
             {leftCandidateInfo && (
               <>
@@ -530,7 +530,7 @@ export function ComparisonHero() {
               </Typography>
             )}
           </div>
-          <div className="flex items-center justify-center xl:order-0 scale-150 w-1/2">
+          <div className="flex items-center justify-center xl:order-0 scale-150 md:scale-90 w-1/2">
             <svg
               viewBox="0 0 120 80"
               className="w-[100px] h-auto md:w-[140px] xl:w-[180px]"
@@ -590,14 +590,13 @@ export function ComparisonHero() {
           </div>
         </div>
       </div>
-      {/* VS Section, Navigation Bar and Comparison Sections - Only show when candidates are selected */}
       <CandidateSelector
         selectedCandidates={selectedCandidates}
         onCandidateClick={handleCandidateClick}
       />
       {hasSelectedCandidates && (
         <>
-          <div className="hidden md:flex gap-4 xl:gap-12 justify-center items-center w-full xl:max-w-336 px-4  xl:px-12">
+          <div className="hidden lg:flex gap-4 xl:gap-12 justify-center items-center w-full xl:max-w-336 px-4  xl:px-12">
             <div className="flex items-center justify-center xl:justify-start gap-4 xl:gap-12">
               {leftCandidateInfo && (
                 <>
@@ -606,7 +605,7 @@ export function ComparisonHero() {
                     alt={leftCandidateInfo.name}
                     width={140}
                     height={80}
-                    className="w-16 h-auto animate-slide-in-left hidden md:block"
+                    className="w-16 h-auto animate-slide-in-left hidden lg:block"
                   />
                   <h3 className="text-white font-bold text-4xl xl:text-5xl animate-slide-in-left animation-delay-100 font-kenyan">
                     {leftCandidateInfo.name}
@@ -659,7 +658,7 @@ export function ComparisonHero() {
                     alt={rightCandidateInfo.name}
                     width={140}
                     height={80}
-                    className="w-16 h-auto xl:w-[140px] xl:order-2 order-1 animate-slide-in-right hidden md:block"
+                    className="w-16 h-auto xl:w-[140px] xl:order-2 order-1 animate-slide-in-right hidden lg:block"
                   />
                 </>
               )}

@@ -177,7 +177,7 @@ export function CandidateSelector({
       </svg>
 
       {/* Mobile/SM: Grid 5x2 */}
-      <div className="grid grid-cols-5 grid-rows-2 gap-1.5 w-full max-w-[360px] sm:max-w-[420px] md:hidden mt-8 px-4 sm:px-0">
+      <div className="grid grid-cols-5 grid-rows-2 gap-1.5 w-full max-w-[360px] sm:max-w-[420px] lg:hidden mt-8 px-4 sm:px-0">
         {CANDIDATES.map((candidate) => {
           const disabled = isDisabled(candidate);
           const dimensions = getMobileDimensions(candidate);
@@ -226,7 +226,7 @@ export function CandidateSelector({
       </div>
 
       {/* MD and up: Grid 2 columns */}
-      <div className="hidden md:grid grid-cols-2 gap-3 w-full max-w-[350px] lg:max-w-[420px]">
+      <div className="hidden lg:grid grid-cols-2 gap-3 w-full max-w-[350px] lg:max-w-[420px]">
         {CANDIDATES.map((candidate) => {
           const disabled = isDisabled(candidate);
           const dimensions = getDesktopDimensions(candidate);
@@ -236,7 +236,7 @@ export function CandidateSelector({
               key={candidate.id}
               onClick={() => !disabled && onCandidateClick(candidate.id)}
               disabled={disabled}
-              className={`relative transition-all duration-300 overflow-hidden border-2 w-full md:h-18 lg:h-22 flex justify-center items-center group ${
+              className={`relative transition-all duration-300 overflow-hidden border-2 w-full lg:h-18 lg:h-22 flex justify-center items-center group ${
                 disabled
                   ? "cursor-not-allowed border-[#555] opacity-60"
                   : "cursor-pointer border-[#CECECE]"

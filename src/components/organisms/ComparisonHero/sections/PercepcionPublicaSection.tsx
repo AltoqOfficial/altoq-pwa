@@ -36,8 +36,8 @@ export function PercepcionPublicaSection({
   }
 
   return (
-    <div className="w-full border-t border-white py-8 md:py-12 lg:py-16">
-      <div className="relative flex md:grid md:grid-cols-3 gap-6 md:gap-8 items-start">
+    <div className="w-full border-t border-white py-8 lg:py-16 md:flex md:justify-center">
+      <div className="relative flex lg:grid lg:grid-cols-3 gap-6 lg:gap-8 items-start">
         {/* Left Candidate */}
         <div className="flex items-center">
           {leftCandidate && (
@@ -68,7 +68,7 @@ export function PercepcionPublicaSection({
         </div>
 
         {/* Divider - starts below the charts */}
-        <div className="absolute left-1/2 top-32 md:top-40 lg:top-48 bottom-0 w-0.5 bg-white/50 -translate-x-1/2" />
+        <div className="absolute left-1/2 top-32 lg:top-40 bottom-0 w-0.5 bg-white/50 -translate-x-1/2" />
 
         {/* Right Candidate */}
         <div className="flex items-center">
