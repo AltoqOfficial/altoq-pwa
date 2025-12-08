@@ -29,7 +29,7 @@ export function LegislativeHistoryChart({
   return (
     <div className="flex flex-col items-center w-full">
       <Typography
-        className="underline text-sm md:text-base lg:text-xl mb-2 lg:mb-4"
+        className="underline text-sm md:text-base lg:text-xl 2xl:text-2xl mb-2 lg:mb-4 2xl:mb-6"
         color="primary"
         weight="600"
         variant="h5"
@@ -38,9 +38,9 @@ export function LegislativeHistoryChart({
         Asistencia
       </Typography>
 
-      <div className="flex flex-col items-center gap-2 lg:gap-4">
+      <div className="flex flex-col items-center gap-0">
         {/* Chart */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 -mb-8 lg:-mb-12 2xl:-mb-14">
           <AttendanceChart
             percentage={attendancePercentage}
             label={attendanceLabel}
@@ -51,7 +51,7 @@ export function LegislativeHistoryChart({
         </div>
 
         {/* Stats */}
-        <div className="space-y-1 md:space-y-2 lg:space-y-3 text-center lg:mt-4">
+        <div className="space-y-1 md:space-y-2 lg:space-y-3 2xl:space-y-4 text-center">
           {hasHistory ? (
             <>
               <Typography
@@ -59,7 +59,7 @@ export function LegislativeHistoryChart({
                 variant="p"
                 align="center"
                 weight="200"
-                className="text-[10px] md:text-xs lg:text-base"
+                className="text-[10px] md:text-xs lg:text-base 2xl:text-lg"
               >
                 1. Proyectos presentados: {projectsPresented}
               </Typography>
@@ -68,7 +68,7 @@ export function LegislativeHistoryChart({
                 variant="p"
                 align="center"
                 weight="200"
-                className="text-[10px] md:text-xs lg:text-base"
+                className="text-[10px] md:text-xs lg:text-base 2xl:text-lg"
               >
                 2. Proyectos aprobados: {projectsApproved}
               </Typography>
@@ -79,7 +79,7 @@ export function LegislativeHistoryChart({
               variant="p"
               align="center"
               weight="200"
-              className="max-w-[150px] md:max-w-[180px] lg:max-w-[220px] text-[10px] md:text-xs lg:text-base"
+              className="max-w-[150px] md:max-w-[180px] lg:max-w-[220px] 2xl:max-w-[280px] text-[10px] md:text-xs lg:text-base 2xl:text-lg"
             >
               1. {note || "No tiene historial legislativo (no fue congresista)"}
             </Typography>

@@ -418,7 +418,7 @@ export function ComparisonHero() {
               </svg>
               {/* Candidate image on top */}
               {leftCandidateInfo ? (
-                <div className="relative w-full h-[220px] sm:h-[220px] md:h-[300px] xl:h-[320px] xl:h-[430px] 2xl:h-full">
+                <div className="relative w-full h-[220px] sm:h-[220px] md:h-[300px] xl:h-[430px] 2xl:h-[720px]">
                   <Image
                     src={leftCandidateInfo.image}
                     alt={leftCandidateInfo.name}
@@ -469,7 +469,7 @@ export function ComparisonHero() {
               </svg>
               {/* Candidate image on top */}
               {rightCandidateInfo ? (
-                <div className="relative w-full h-[220px] sm:h-[240px] md:h-[300px] xl:h-[430px] 2xl:h-full ">
+                <div className="relative w-full h-[220px] sm:h-[240px] md:h-[300px] xl:h-[430px] 2xl:h-[720px] ">
                   <Image
                     src={rightCandidateInfo.image}
                     alt={rightCandidateInfo.name}
@@ -524,7 +524,7 @@ export function ComparisonHero() {
                     filter={`url(#${noiseFilterRedId})`}
                   />
                 </svg>
-                <h3 className="relative text-white font-bold text-4xl animate-slide-in-left animation-delay-100 font-kenyan py-2">
+                <h3 className="relative text-white font-bold text-4xl animate-slide-in-left animation-delay-100 font-kenyan py-2 px-4">
                   {leftCandidateInfo.name}
                 </h3>
               </>
@@ -581,7 +581,7 @@ export function ComparisonHero() {
                     filter={`url(#${noiseFilterBlueId})`}
                   />
                 </svg>
-                <h3 className="relative text-white font-bold text-4xl animate-slide-in-right animation-delay-100 font-kenyan text-end py-2">
+                <h3 className="relative text-white font-bold text-4xl animate-slide-in-right animation-delay-100 font-kenyan text-end py-2 px-4">
                   {rightCandidateInfo.name}
                 </h3>
               </>
@@ -607,7 +607,7 @@ export function ComparisonHero() {
       </div>
       {hasSelectedCandidates && (
         <>
-          <div className="hidden xl:flex gap-4 xl:gap-12 justify-center items-center w-full xl:max-w-336 px-4  xl:px-12">
+          <div className="hidden xl:flex gap-4 xl:gap-12 justify-center 2xl:justify-between items-center w-full xl:max-w-336 2xl:max-w-500 px-4 xl:px-12">
             <div className="flex items-center justify-center xl:justify-start gap-4 xl:gap-12">
               {leftCandidateInfo && (
                 <>
@@ -616,9 +616,9 @@ export function ComparisonHero() {
                     alt={leftCandidateInfo.name}
                     width={140}
                     height={80}
-                    className="w-16 h-auto animate-slide-in-left hidden md:block"
+                    className="w-16 h-auto 2xl:w-[200px] 2xl:h-auto animate-slide-in-left hidden md:block"
                   />
-                  <h3 className="text-white font-bold text-4xl xl:text-5xl animate-slide-in-left animation-delay-100 font-kenyan">
+                  <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl text-start animate-slide-in-left animation-delay-100 font-kenyan">
                     {leftCandidateInfo.name}
                   </h3>
                 </>
@@ -633,7 +633,7 @@ export function ComparisonHero() {
                 </Typography>
               )}
             </div>
-            <div className="flex items-center justify-center xl:order-0 xl:scale-80">
+            <div className="flex items-center justify-center xl:order-0 xl:scale-80 2xl:scale-110  2xl:px-32 ">
               <svg
                 viewBox="0 0 120 80"
                 className="w-[100px] h-auto md:w-[140px] xl:w-[180px]"
@@ -661,7 +661,7 @@ export function ComparisonHero() {
             <div className="flex items-center justify-center xl:justify-end gap-4 xl:gap-12 ">
               {rightCandidateInfo && (
                 <>
-                  <h3 className="text-white font-bold text-4xl xl:text-5xl animate-slide-in-right animation-delay-100 font-kenyan text-end">
+                  <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl animate-slide-in-left animation-delay-100 font-kenyan text-end">
                     {rightCandidateInfo.name}
                   </h3>
                   <Image
@@ -669,7 +669,7 @@ export function ComparisonHero() {
                     alt={rightCandidateInfo.name}
                     width={140}
                     height={80}
-                    className="w-16 h-auto animate-slide-in-left hidden md:block"
+                    className="w-16 h-auto 2xl:w-[200px] 2xl:h-auto animate-slide-in-left hidden md:block"
                   />
                 </>
               )}

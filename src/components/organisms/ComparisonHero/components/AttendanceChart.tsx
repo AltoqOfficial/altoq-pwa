@@ -89,13 +89,13 @@ export function AttendanceChart({
   const series = [percentage];
 
   return (
-    <div className="flex flex-col items-center w-full max-w-[140px] md:max-w-[160px] lg:max-w-[220px]">
-      <div className="w-full lg:scale-125 lg:origin-center">
+    <div className="flex flex-col items-center w-full max-w-[160px] md:max-w-[180px] lg:max-w-[260px] 2xl:max-w-[320px]">
+      <div className="w-full lg:scale-110 2xl:scale-125 lg:origin-center">
         <Chart
           options={chartOptions}
           series={series}
           type="radialBar"
-          height={160}
+          height={200}
         />
       </div>
     </div>

@@ -37,7 +37,7 @@ export function PercepcionPublicaSection({
 
   return (
     <div className="w-full border-t border-white py-8 lg:py-16 md:flex md:justify-center">
-      <div className="relative  flex 2xl:grid 2xl:grid-cols-3 space-x-4 lg:space-x-24 xl:gap-8 items-start">
+      <div className="relative flex 2xl:grid 2xl:grid-cols-2 space-x-4 lg:space-x-24 xl:gap-8 2xl:gap-32 items-start 2xl:justify-items-center 2xl:mx-auto">
         {/* Left Candidate */}
         <div className="flex items-center">
           {leftCandidate && (

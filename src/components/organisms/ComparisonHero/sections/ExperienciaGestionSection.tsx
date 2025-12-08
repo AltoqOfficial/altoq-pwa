@@ -35,14 +35,14 @@ export function ExperienciaGestionSection({
     };
 
     return (
-      <div className="w-full flex flex-col space-y-8 lg:space-y-12 lg:space-y-16 py-8 lg:py-12 lg:py-16">
+      <div className="w-full flex flex-col space-y-8 lg:space-y-16 py-8 lg:py-16 2xl:flex-row">
         {/* Sector Público */}
-        <div className="max-w-full lg:max-w-sm mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-2">
+        <div className="max-w-full lg:max-w-sm mx-auto ">
+          <div className="flex 2xl:flex-col items-center justify-center gap-2 mb-2">
             <Typography
               font="kenyan"
               color={getNumberColor(publicCount)}
-              className={`text-2xl lg:text-3xl lg:text-5xl ${getNumberClass(publicCount)}`}
+              className={`text-2xl lg:text-5xl ${getNumberClass(publicCount)}`}
               variant="h1"
               align="center"
             >
@@ -53,7 +53,7 @@ export function ExperienciaGestionSection({
               variant="h6"
               weight="800"
               align="center"
-              className="text-[10px] lg:text-base lg:text-lg"
+              className="text-[10px] lg:text-4xl"
             >
               SECTOR PÚBLICO
             </Typography>
@@ -61,7 +61,7 @@ export function ExperienciaGestionSection({
           <Typography
             color="white"
             align="center"
-            className="text-[10px] lg:text-sm lg:text-base"
+            className="text-[10px] lg:text-sm"
           >
             {candidate?.experienciaGestion.sectorPublico.detalle?.map(
               (item, index) => (
@@ -77,13 +77,16 @@ export function ExperienciaGestionSection({
           </Typography>
         </div>
 
+        {/* Línea divisoria horizontal */}
+        <div className="w-24 h-0.5 bg-white/50 mx-auto 2xl:h-0.5 translate-y-9 hidden 2xl:block" />
+
         {/* Sector Privado */}
         <div className="max-w-full lg:max-w-sm mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <div className="flex  2xl:flex-col items-center justify-center gap-2 mb-2">
             <Typography
               font="kenyan"
               color={getNumberColor(privateCount)}
-              className={`text-2xl lg:text-3xl lg:text-5xl ${getNumberClass(privateCount)}`}
+              className={`text-2xl lg:text-3xl ${getNumberClass(privateCount)}`}
               variant="h1"
               align="center"
             >
@@ -94,7 +97,7 @@ export function ExperienciaGestionSection({
               variant="h6"
               weight="800"
               align="center"
-              className="text-[10px] lg:text-base lg:text-lg"
+              className="text-[10px] lg:text-sm"
             >
               SECTOR PRIVADO
             </Typography>
@@ -102,7 +105,7 @@ export function ExperienciaGestionSection({
           <Typography
             color="white"
             align="center"
-            className="text-[10px] lg:text-sm lg:text-base"
+            className="text-[10px] lg:text-base"
           >
             {candidate?.experienciaGestion.sectorPrivado.detalle?.map(
               (item, index) => (
@@ -118,7 +121,7 @@ export function ExperienciaGestionSection({
   };
 
   return (
-    <div className="relative flex lg:flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 lg:gap-16 border-t border-white">
+    <div className="relative flex lg:flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 border-t border-white">
       {renderCandidateColumn(leftCandidate, true)}
       {/* Línea divisoria central */}
       <div className=" absolute left-1/2 top-8 bottom-8 w-0.5 bg-white/50 -translate-x-1/2" />
