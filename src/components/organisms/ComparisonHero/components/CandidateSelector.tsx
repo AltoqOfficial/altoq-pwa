@@ -177,7 +177,7 @@ export function CandidateSelector({
       </svg>
 
       {/* Mobile/SM: Grid 5x2 */}
-      <div className="grid grid-cols-5 grid-rows-2 gap-1.5 w-full max-w-[360px] sm:max-w-[420px] md:hidden mt-8 px-4">
+      <div className="grid grid-cols-5 grid-rows-2 gap-1.5 w-full max-w-[360px] sm:max-w-[420px] md:hidden mt-8 px-4 sm:px-0">
         {CANDIDATES.map((candidate) => {
           const disabled = isDisabled(candidate);
           const dimensions = getMobileDimensions(candidate);

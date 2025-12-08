@@ -55,8 +55,8 @@ export const CANDIDATES: Candidate[] = [
     // Dimensions per breakpoint
     imageWidth: 110,
     imageHeight: 110,
-    imageWidthSm: 85,
-    imageHeightSm: 85,
+    imageWidthSm: 150,
+    imageHeightSm: 150,
     imageWidthMd: 120,
     imageHeightMd: 120,
     imageWidthLg: 145,
@@ -64,8 +64,8 @@ export const CANDIDATES: Candidate[] = [
     // Offsets per breakpoint
     offsetY: 25,
     offsetX: 5,
-    offsetYSm: 20,
-    offsetXSm: 8,
+    offsetYSm: 35,
+    offsetXSm: 5,
     offsetYMd: 30,
     offsetXMd: 11,
     // Filters
@@ -83,15 +83,15 @@ export const CANDIDATES: Candidate[] = [
     // Dimensions per breakpoint
     imageWidth: 110,
     imageHeight: 110,
-    imageWidthSm: 80,
-    imageHeightSm: 80,
+    imageWidthSm: 130,
+    imageHeightSm: 130,
     imageWidthMd: 110,
     imageHeightMd: 110,
     imageWidthLg: 135,
     imageHeightLg: 135,
     // Offsets per breakpoint
     offsetY: 18,
-    offsetYSm: 12,
+    offsetYSm: 22,
     offsetYMd: 16,
     // Filters
     brightness: 1,
@@ -108,8 +108,8 @@ export const CANDIDATES: Candidate[] = [
     // Dimensions per breakpoint
     imageWidth: 100,
     imageHeight: 100,
-    imageWidthSm: 60,
-    imageHeightSm: 60,
+    imageWidthSm: 130,
+    imageHeightSm: 130,
     imageWidthMd: 80,
     imageHeightMd: 80,
     imageWidthLg: 105,
@@ -133,15 +133,15 @@ export const CANDIDATES: Candidate[] = [
     // Dimensions per breakpoint
     imageWidth: 150,
     imageHeight: 150,
-    imageWidthSm: 100,
-    imageHeightSm: 100,
+    imageWidthSm: 150,
+    imageHeightSm: 150,
     imageWidthMd: 140,
     imageHeightMd: 140,
     imageWidthLg: 165,
     imageHeightLg: 165,
     // Offsets per breakpoint
     offsetY: 35,
-    offsetYSm: 20,
+    offsetYSm: 30,
     offsetYMd: 30,
     // Filters
     brightness: 1,
@@ -158,8 +158,8 @@ export const CANDIDATES: Candidate[] = [
     // Dimensions per breakpoint
     imageWidth: 90,
     imageHeight: 90,
-    imageWidthSm: 60,
-    imageHeightSm: 60,
+    imageWidthSm: 90,
+    imageHeightSm: 90,
     imageWidthMd: 80,
     imageHeightMd: 80,
     imageWidthLg: 105,
@@ -183,8 +183,8 @@ export const CANDIDATES: Candidate[] = [
     // Dimensions per breakpoint
     imageWidth: 100,
     imageHeight: 100,
-    imageWidthSm: 80,
-    imageHeightSm: 80,
+    imageWidthSm: 100,
+    imageHeightSm: 100,
     imageWidthMd: 110,
     imageHeightMd: 110,
     imageWidthLg: 135,
@@ -208,8 +208,8 @@ export const CANDIDATES: Candidate[] = [
     // Dimensions per breakpoint
     imageWidth: 120,
     imageHeight: 120,
-    imageWidthSm: 100,
-    imageHeightSm: 100,
+    imageWidthSm: 120,
+    imageHeightSm: 120,
     imageWidthMd: 140,
     imageHeightMd: 140,
     imageWidthLg: 165,
@@ -233,8 +233,8 @@ export const CANDIDATES: Candidate[] = [
     // Dimensions per breakpoint
     imageWidth: 110,
     imageHeight: 110,
-    imageWidthSm: 85,
-    imageHeightSm: 85,
+    imageWidthSm: 110,
+    imageHeightSm: 110,
     imageWidthMd: 120,
     imageHeightMd: 120,
     imageWidthLg: 145,
@@ -258,8 +258,8 @@ export const CANDIDATES: Candidate[] = [
     // Dimensions per breakpoint
     imageWidth: 85,
     imageHeight: 85,
-    imageWidthSm: 68,
-    imageHeightSm: 68,
+    imageWidthSm: 90,
+    imageHeightSm: 90,
     imageWidthMd: 90,
     imageHeightMd: 90,
     imageWidthLg: 115,
@@ -283,8 +283,8 @@ export const CANDIDATES: Candidate[] = [
     // Dimensions per breakpoint
     imageWidth: 115,
     imageHeight: 115,
-    imageWidthSm: 80,
-    imageHeightSm: 80,
+    imageWidthSm: 110,
+    imageHeightSm: 110,
     imageWidthMd: 110,
     imageHeightMd: 110,
     imageWidthLg: 135,

@@ -394,10 +394,10 @@ export function ComparisonHero() {
         A COMPARAR!
       </h1>
       {/* Hero Section */}
-      <div>
+      <div className="w-full">
         <div className="flex justify-center items-center flex-col w-full  h-[220px]">
           {/* Mobile/Tablet: Vertical layout, Desktop: 3-column grid */}
-          <div className="flex gap-2 lg:gap-18 w-full xl:h-[700px] xl:gap-16">
+          <div className="flex gap-2 h-full lg:gap-18 w-full xl:h-[700px] xl:gap-16">
             {/* Left Candidate - Mobile: smaller, centered */}
             <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden ">
               {/* Red gradient background square with noise */}
@@ -418,7 +418,7 @@ export function ComparisonHero() {
               </svg>
               {/* Candidate image on top */}
               {leftCandidateInfo ? (
-                <div className="relative w-full h-[220px] sm:h-[240px] md:h-[300px] lg:h-[320px] xl:h-[430px] 2xl:h-full">
+                <div className="relative w-full h-[220px] sm:h-[220px] md:h-[300px] lg:h-[320px] xl:h-[430px] 2xl:h-full">
                   <Image
                     src={leftCandidateInfo.image}
                     alt={leftCandidateInfo.name}
@@ -433,7 +433,7 @@ export function ComparisonHero() {
             </div>
             <div className="flex  flex-col gap-6 xl:gap-12 order-1 xl:order-2 xl:py-12 max-w-sm mx-auto md:max-w-132">
               <div className="mx-auto px-1 sm:px-4 md:px-0">
-                <span className="text-[#fefefe] font-sohne-breit text-[12px] sm:text-base text-center block w-29 sm:w-40 md:w-100 mx-auto ">
+                <span className="text-[#fefefe] font-sohne-breit text-xs sm:text-[12px] text-center block w-29 sm:w-40 md:w-100 mx-auto ">
                   Una comparación política basada en datos reales. Explora quién
                   propone más, quién tiene resultados y quién aún no los
                   demuestra.
@@ -530,7 +530,7 @@ export function ComparisonHero() {
               </Typography>
             )}
           </div>
-          <div className="flex items-center justify-center xl:order-0  scale-150">
+          <div className="flex items-center justify-center xl:order-0 scale-150 w-1/2">
             <svg
               viewBox="0 0 120 80"
               className="w-[100px] h-auto md:w-[140px] xl:w-[180px]"

@@ -8,7 +8,8 @@ interface HorizontalSectionsProps {
 
 /**
  * Horizontal Sections Container
- * Displays sections in a horizontal carousel with slide animations
+ * Displays only the active section with fade animation
+ * Each section has its own natural height based on content
  */
 export function HorizontalSections({
   children,
@@ -18,22 +19,33 @@ export function HorizontalSections({
   const childrenArray = React.Children.toArray(children);
 
   return (
-    <div className="w-full overflow-hidden h-auto">
-      <div
-        className="flex transition-transform duration-500 ease-in-out"
-        style={{
-          transform: `translateX(-${activeIndex * 100}%)`,
-        }}
-      >
-        {childrenArray.map((child, index) => (
-          <div
-            key={index}
-            className="w-full shrink-0"
-            style={{ minWidth: "100%" }}
-          >
-            {child}
-          </div>
-        ))}
+    <div className="w-full overflow-hidden">
+      <div className="relative w-full">
+        {childrenArray.map((child, index) => {
+          const isActive = index === activeIndex;
+          const isEntering = isActive;
+
+          // Determinar la dirección de la animación
+          const slideDirection = direction === "right" ? 1 : -1;
+
+          return (
+            <div
+              key={index}
+              className={`w-full transition-all duration-500 ease-in-out ${
+                isActive
+                  ? "relative opacity-100 translate-x-0"
+                  : "absolute top-0 left-0 opacity-0 pointer-events-none"
+              }`}
+              style={{
+                transform: isActive
+                  ? "translateX(0)"
+                  : `translateX(${slideDirection * 100}%)`,
+              }}
+            >
+              {child}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
