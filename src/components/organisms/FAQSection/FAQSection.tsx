@@ -82,7 +82,7 @@ export function FAQSection() {
         </div>
         {/* FAQ Grid */}
         <div className="mx-auto max-w-4xl order-last md:order-first">
-          <div className="grid grid-cols-1 gap-4 ">
+          <div className="grid grid-cols-1 gap-4">
             {/* Left Column */}
             <div className="space-y-4">
               {faqs
