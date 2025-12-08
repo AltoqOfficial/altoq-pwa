@@ -150,7 +150,7 @@ export function SectionNavbar({
                 weight="600"
                 variant="h4"
                 color="white"
-                className="uppercase whitespace-nowrap text-xs md:text-sm lg:text-base"
+                className="uppercase whitespace-nowrap text-4xl md:text-5xl lg:text-6xl"
               >
                 {item}
               </Typography>

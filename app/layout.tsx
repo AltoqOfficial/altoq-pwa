@@ -32,6 +32,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html
       lang="es-PE"
       className={`${testSohneBreit.variable} ${testSohneSchmal.variable} ${kenyanCoffee.variable}`}
+      suppressHydrationWarning
     >
       <head>
         {/* PWA Manifest */}
@@ -82,7 +83,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           content="/icons/icon-192x192.png"
         />
       </head>
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning>
         {/* PWA Registration */}
         <PWARegistration />
 

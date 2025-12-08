@@ -37,24 +37,11 @@ export function PercepcionPublicaSection({
 
   return (
     <div className="w-full border-t border-white py-8 md:py-12 lg:py-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
+      <div className="relative flex md:grid md:grid-cols-3 gap-6 md:gap-8 items-start">
         {/* Left Candidate */}
-        <div className="flex flex-col items-center">
+        <div className="flex items-center">
           {leftCandidate && (
             <>
-              <div
-                className="w-full max-w-[200px] md:max-w-xs mb-3 md:mb-4 py-1.5 md:py-2 px-3 md:px-4 rounded-full text-center"
-                style={{ backgroundColor: `${leftCandidate.color}30` }}
-              >
-                <Typography
-                  color="white"
-                  variant="h6"
-                  weight="600"
-                  className="text-sm md:text-base"
-                >
-                  {leftCandidate.shortName}
-                </Typography>
-              </div>
               <VoteIntentionChart
                 minVote={leftCandidate.percepcionPublica.intencionVoto.min}
                 maxVote={leftCandidate.percepcionPublica.intencionVoto.max}
@@ -80,28 +67,13 @@ export function PercepcionPublicaSection({
           )}
         </div>
 
-        {/* Divider */}
-        <div className="hidden md:flex justify-center items-center h-full">
-          <div className="w-0.5 h-px lg:h-full my-8 bg-white/50" />
-        </div>
+        {/* Divider - starts below the charts */}
+        <div className="absolute left-1/2 top-32 md:top-40 lg:top-48 bottom-0 w-0.5 bg-white/50 -translate-x-1/2" />
 
         {/* Right Candidate */}
-        <div className="flex flex-col items-center">
+        <div className="flex items-center">
           {rightCandidate && (
             <>
-              <div
-                className="w-full max-w-[200px] md:max-w-xs mb-3 md:mb-4 py-1.5 md:py-2 px-3 md:px-4 rounded-full text-center"
-                style={{ backgroundColor: `${rightCandidate.color}30` }}
-              >
-                <Typography
-                  color="white"
-                  variant="h6"
-                  weight="600"
-                  className="text-sm md:text-base"
-                >
-                  {rightCandidate.shortName}
-                </Typography>
-              </div>
               <VoteIntentionChart
                 minVote={rightCandidate.percepcionPublica.intencionVoto.min}
                 maxVote={rightCandidate.percepcionPublica.intencionVoto.max}

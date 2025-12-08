@@ -20,6 +20,10 @@ export function CandidateSelector({
 }: CandidateSelectorProps) {
   const uniqueId = useId();
   const noiseFilterId = `noiseSelectorFilter${uniqueId}`;
+
+  // Media queries for responsive dimensions
+  const isSmScreen = useMediaQuery("(min-width: 640px)");
+  const isMdScreen = useMediaQuery("(min-width: 768px)");
   const isLgScreen = useMediaQuery("(min-width: 1024px)");
 
   const isDisabled = (candidate: Candidate) => !candidate.dataKey;
@@ -51,16 +55,59 @@ export function CandidateSelector({
     return `grayscale(1) brightness(${brightness}) contrast(${contrast})`;
   };
 
-  const getImageDimensions = (candidate: Candidate) => {
-    if (isLgScreen && candidate.imageWidthLg && candidate.imageHeightLg) {
+  // Get dimensions for mobile grid (default and sm)
+  const getMobileDimensions = (candidate: Candidate) => {
+    if (isSmScreen) {
       return {
-        width: candidate.imageWidthLg,
-        height: candidate.imageHeightLg,
+        width: candidate.imageWidthSm ?? candidate.imageWidth ?? 60,
+        height: candidate.imageHeightSm ?? candidate.imageHeight ?? 60,
       };
     }
     return {
-      width: candidate.imageWidth || 120,
-      height: candidate.imageHeight || 100,
+      width: candidate.imageWidth ?? 50,
+      height: candidate.imageHeight ?? 50,
+    };
+  };
+
+  // Get offset for mobile grid (default and sm)
+  const getMobileOffset = (candidate: Candidate) => {
+    if (isSmScreen) {
+      return {
+        x: candidate.offsetXSm ?? candidate.offsetX ?? 0,
+        y: candidate.offsetYSm ?? candidate.offsetY ?? 8,
+      };
+    }
+    return {
+      x: candidate.offsetX ?? 0,
+      y: candidate.offsetY ?? 8,
+    };
+  };
+
+  // Get dimensions for md+ grid
+  const getDesktopDimensions = (candidate: Candidate) => {
+    if (isLgScreen) {
+      return {
+        width: candidate.imageWidthLg ?? candidate.imageWidthMd ?? 120,
+        height: candidate.imageHeightLg ?? candidate.imageHeightMd ?? 100,
+      };
+    }
+    return {
+      width: candidate.imageWidthMd ?? 120,
+      height: candidate.imageHeightMd ?? 100,
+    };
+  };
+
+  // Get offset for md+ grid
+  const getDesktopOffset = (candidate: Candidate) => {
+    if (isLgScreen) {
+      return {
+        x: candidate.offsetX ?? 0,
+        y: candidate.offsetY ?? 16,
+      };
+    }
+    return {
+      x: candidate.offsetXMd ?? candidate.offsetX ?? 0,
+      y: candidate.offsetYMd ?? candidate.offsetY ?? 16,
     };
   };
 
@@ -129,15 +176,18 @@ export function CandidateSelector({
         </defs>
       </svg>
 
-      <div className="grid grid-cols-2 gap-2 md:gap-3 w-full max-w-[280px] md:max-w-[350px] lg:max-w-[420px]">
+      {/* Mobile/SM: Grid 5x2 */}
+      <div className="grid grid-cols-5 grid-rows-2 gap-1.5 w-full max-w-[360px] sm:max-w-[420px] md:hidden mt-8 px-4">
         {CANDIDATES.map((candidate) => {
           const disabled = isDisabled(candidate);
+          const dimensions = getMobileDimensions(candidate);
+          const offset = getMobileOffset(candidate);
           return (
             <button
               key={candidate.id}
               onClick={() => !disabled && onCandidateClick(candidate.id)}
               disabled={disabled}
-              className={`relative transition-all duration-300 overflow-hidden border-2 w-full aspect-[2.2/1] md:h-18 lg:h-22 flex justify-center items-center group ${
+              className={`relative transition-all duration-300 overflow-hidden border w-full aspect-square flex justify-center items-center group ${
                 disabled
                   ? "cursor-not-allowed border-[#555] opacity-60"
                   : "cursor-pointer border-[#CECECE]"
@@ -160,13 +210,62 @@ export function CandidateSelector({
               <Image
                 src={candidate.src}
                 alt={candidate.name}
-                width={getImageDimensions(candidate).width}
-                height={getImageDimensions(candidate).height}
+                width={dimensions.width}
+                height={dimensions.height}
                 className="relative z-10 transition-all duration-300 object-cover"
                 style={{
-                  width: `${getImageDimensions(candidate).width}px`,
-                  height: `${getImageDimensions(candidate).height}px`,
-                  transform: `translate(${candidate.offsetX ?? 0}px, ${candidate.offsetY ?? 16}px)`,
+                  width: `${dimensions.width}px`,
+                  height: `${dimensions.height}px`,
+                  transform: `translate(${offset.x}px, ${offset.y}px)`,
+                  filter: getImageFilter(candidate),
+                }}
+              />
+            </button>
+          );
+        })}
+      </div>
+
+      {/* MD and up: Grid 2 columns */}
+      <div className="hidden md:grid grid-cols-2 gap-3 w-full max-w-[350px] lg:max-w-[420px]">
+        {CANDIDATES.map((candidate) => {
+          const disabled = isDisabled(candidate);
+          const dimensions = getDesktopDimensions(candidate);
+          const offset = getDesktopOffset(candidate);
+          return (
+            <button
+              key={candidate.id}
+              onClick={() => !disabled && onCandidateClick(candidate.id)}
+              disabled={disabled}
+              className={`relative transition-all duration-300 overflow-hidden border-2 w-full md:h-18 lg:h-22 flex justify-center items-center group ${
+                disabled
+                  ? "cursor-not-allowed border-[#555] opacity-60"
+                  : "cursor-pointer border-[#CECECE]"
+              }`}
+            >
+              {/* Background with noise */}
+              <svg
+                className="absolute inset-0 w-full h-full"
+                preserveAspectRatio="none"
+                style={{ filter: `url(#${noiseFilterId})` }}
+              >
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill={getBackgroundColor(candidate.id, candidate)}
+                />
+              </svg>
+
+              {/* Image on top */}
+              <Image
+                src={candidate.src}
+                alt={candidate.name}
+                width={dimensions.width}
+                height={dimensions.height}
+                className="relative z-10 transition-all duration-300 object-cover"
+                style={{
+                  width: `${dimensions.width}px`,
+                  height: `${dimensions.height}px`,
+                  transform: `translate(${offset.x}px, ${offset.y}px)`,
                   filter: getImageFilter(candidate),
                 }}
               />

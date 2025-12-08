@@ -47,10 +47,10 @@ export function AttendanceChart({
           dataLabels: {
             name: {
               show: true,
-              fontSize: "24px",
+              fontSize: "14px",
               fontWeight: 700,
               color: "#FEFEFE",
-              offsetY: 10,
+              offsetY: 0,
             },
             value: {
               show: false,
@@ -74,7 +74,7 @@ export function AttendanceChart({
               radialBar: {
                 dataLabels: {
                   name: {
-                    fontSize: "18px",
+                    fontSize: "12px",
                   },
                 },
               },
@@ -89,13 +89,13 @@ export function AttendanceChart({
   const series = [percentage];
 
   return (
-    <div className="flex flex-col items-center w-full max-w-[300px]">
+    <div className="flex flex-col items-center w-full max-w-[140px] md:max-w-[160px] lg:max-w-[180px]">
       <div className="w-full">
         <Chart
           options={chartOptions}
           series={series}
           type="radialBar"
-          height={320}
+          height={160}
         />
       </div>
     </div>

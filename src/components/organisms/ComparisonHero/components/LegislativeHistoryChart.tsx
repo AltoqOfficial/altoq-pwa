@@ -27,9 +27,9 @@ export function LegislativeHistoryChart({
   color,
 }: LegislativeHistoryChartProps) {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full">
       <Typography
-        className="underline text-sm md:text-base lg:text-lg"
+        className="underline text-sm md:text-base lg:text-lg mb-2"
         color="primary"
         weight="600"
         variant="h5"
@@ -38,49 +38,53 @@ export function LegislativeHistoryChart({
         Asistencia
       </Typography>
 
-      <div className="flex justify-center my-4 md:my-6">
-        <AttendanceChart
-          percentage={attendancePercentage}
-          label={attendanceLabel}
-          color={color}
-          projectsPresented={hasHistory ? projectsPresented : undefined}
-          projectsApproved={hasHistory ? projectsApproved : undefined}
-        />
-      </div>
+      <div className="flex flex-col items-center gap-2">
+        {/* Chart */}
+        <div className="flex-shrink-0">
+          <AttendanceChart
+            percentage={attendancePercentage}
+            label={attendanceLabel}
+            color={color}
+            projectsPresented={hasHistory ? projectsPresented : undefined}
+            projectsApproved={hasHistory ? projectsApproved : undefined}
+          />
+        </div>
 
-      <div className="space-y-1 md:space-y-2 text-center">
-        {hasHistory ? (
-          <>
+        {/* Stats */}
+        <div className="space-y-1 md:space-y-2 text-center">
+          {hasHistory ? (
+            <>
+              <Typography
+                color="white"
+                variant="p"
+                align="center"
+                weight="200"
+                className="text-[10px] md:text-xs lg:text-sm"
+              >
+                1. Proyectos presentados: {projectsPresented}
+              </Typography>
+              <Typography
+                color="white"
+                variant="p"
+                align="center"
+                weight="200"
+                className="text-[10px] md:text-xs lg:text-sm"
+              >
+                2. Proyectos aprobados: {projectsApproved}
+              </Typography>
+            </>
+          ) : (
             <Typography
               color="white"
               variant="p"
               align="center"
               weight="200"
-              className="text-xs md:text-sm lg:text-base"
+              className="max-w-[150px] md:max-w-[180px] text-[10px] md:text-xs lg:text-sm"
             >
-              1. Proyectos presentados: {projectsPresented}
+              1. {note || "No tiene historial legislativo (no fue congresista)"}
             </Typography>
-            <Typography
-              color="white"
-              variant="p"
-              align="center"
-              weight="200"
-              className="text-xs md:text-sm lg:text-base"
-            >
-              2. Proyectos aprobados: {projectsApproved}
-            </Typography>
-          </>
-        ) : (
-          <Typography
-            color="white"
-            variant="p"
-            align="center"
-            weight="200"
-            className="max-w-[200px] md:max-w-xs text-xs md:text-sm lg:text-base"
-          >
-            1. {note || "No tiene historial legislativo (no fue congresista)"}
-          </Typography>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

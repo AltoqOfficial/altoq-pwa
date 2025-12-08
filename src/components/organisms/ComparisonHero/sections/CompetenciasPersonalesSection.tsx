@@ -37,7 +37,7 @@ export function CompetenciasPersonalesSection({
                 {label}
               </Typography>
             </div>
-            <div className="flex flex-col md:grid md:grid-cols-3 items-center mt-2 md:mt-4 gap-2 md:gap-0">
+            <div className="grid grid-cols-3 items-center mt-2 md:mt-4 gap-2 md:gap-0">
               <Typography
                 color="white"
                 weight="600"
@@ -47,7 +47,7 @@ export function CompetenciasPersonalesSection({
               >
                 {leftCandidate?.competenciasPersonales[key] || "-"}
               </Typography>
-              <div className="hidden md:block w-0.5 h-16 md:h-20 lg:h-24 bg-white mx-auto"></div>
+              <div className=" w-0.5 h-16 md:h-20 lg:h-24 bg-white mx-auto"></div>
               <Typography
                 color="white"
                 weight="600"

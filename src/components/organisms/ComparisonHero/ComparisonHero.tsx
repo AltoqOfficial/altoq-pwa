@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useId } from "react";
-import { PageHero } from "@/components/molecules/PageHero";
 import Image from "next/image";
 import { Typography } from "@/components/atoms";
 import { useCandidateSelection, useSectionNavigation } from "@/hooks";
@@ -64,6 +63,8 @@ export function ComparisonHero() {
   const noiseFilterBlueId = `noiseFilterBlue${uniqueId}`;
   const noiseFilterVSId = `noiseFilterVS${uniqueId}`;
   const gradientVSId = `gradientVS${uniqueId}`;
+  const gradientLeftNameId = `gradientLeftName${uniqueId}`;
+  const gradientRightNameId = `gradientRightName${uniqueId}`;
 
   // Get candidate data based on selection
   const { leftCandidate, rightCandidate } = useMemo(() => {
@@ -156,7 +157,7 @@ export function ComparisonHero() {
   const hasSelectedCandidates = leftCandidateInfo || rightCandidateInfo;
 
   return (
-    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-8 md:space-y-12 lg:space-y-18 min-h-[92vh] py-21">
+    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 min-h-[92vh] py-10 md:py-21">
       {/* SVG Filters for Noise Effect */}
       <svg width="0" height="0" className="absolute">
         <defs>
@@ -182,6 +183,30 @@ export function ComparisonHero() {
           >
             <stop offset="0%" stopColor="#3E469240" />
             <stop offset="100%" stopColor="#202020" />
+          </linearGradient>
+
+          {/* Gradient for Left candidate name (horizontal) */}
+          <linearGradient
+            id={gradientLeftNameId}
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%"
+          >
+            <stop offset="0%" stopColor="#FF2727" />
+            <stop offset="100%" stopColor="transparent" />
+          </linearGradient>
+
+          {/* Gradient for Right candidate name (horizontal) */}
+          <linearGradient
+            id={gradientRightNameId}
+            x1="100%"
+            y1="0%"
+            x2="0%"
+            y2="0%"
+          >
+            <stop offset="0%" stopColor="#3E4692" />
+            <stop offset="100%" stopColor="transparent" />
           </linearGradient>
 
           {/* Noise filter for Red */}
@@ -365,118 +390,215 @@ export function ComparisonHero() {
           </filter>
         </defs>
       </svg>
-
+      <h1 className="font-sohne-schmal font-black text-6xl sm:text-7xl text-primary-600">
+        A COMPARAR!
+      </h1>
       {/* Hero Section */}
-      <div className="flex justify-center items-center flex-col w-full">
-        {/* Mobile/Tablet: Vertical layout, Desktop: 3-column grid */}
-        <div className="flex flex-col lg:flex-row p-4 md:p-8 lg:p-0 gap-12 w-full lg:h-[700px] lg:gap-0">
-          {/* Left Candidate - Mobile: smaller, centered */}
-          <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-none lg:flex-1 h-[350px] md:h-[450px] lg:h-full mx-auto lg:mx-0 order-2 lg:order-1 overflow-hidden">
-            {/* Red gradient background square with noise */}
-            <svg
-              className={`absolute top-0 left-auto lg:right-0 transition-all duration-500 ease-out lg:w-[450px] lg:h-full w-full h-full ${
-                leftCandidateInfo
-                  ? "opacity-100 scale-100"
-                  : "opacity-70 scale-100"
-              }`}
-              preserveAspectRatio="none"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill={`url(#gradientRed${uniqueId})`}
-                filter={`url(#${noiseFilterRedId})`}
-              />
-            </svg>
-            {/* Candidate image on top */}
-            {leftCandidateInfo ? (
-              <Image
-                src={leftCandidateInfo.image}
-                alt={leftCandidateInfo.name}
-                fill
-                className="relative object-cover object-center lg:object-left z-10 animate-candidate-appear scale-108"
-                style={{
-                  filter: `brightness(${leftCandidateInfo.brightness * leftCandidateInfo.shadows}) contrast(${leftCandidateInfo.contrast}) saturate(${leftCandidateInfo.saturate}) sepia(${leftCandidateInfo.sepia})`,
-                }}
-              />
-            ) : null}
+      <div>
+        <div className="flex justify-center items-center flex-col w-full  h-[220px]">
+          {/* Mobile/Tablet: Vertical layout, Desktop: 3-column grid */}
+          <div className="flex gap-2 lg:gap-18 w-full xl:h-[700px] xl:gap-16">
+            {/* Left Candidate - Mobile: smaller, centered */}
+            <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden ">
+              {/* Red gradient background square with noise */}
+              <svg
+                className={`absolute top-0 left-auto xl:right-0 transition-all duration-500 ease-out xl:w-[450px] xl:h-full w-full h-full hidden xl:block ${
+                  leftCandidateInfo
+                    ? "opacity-100 scale-100"
+                    : "opacity-40 scale-100"
+                }`}
+                preserveAspectRatio="none"
+              >
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill={`url(#gradientRed${uniqueId})`}
+                  filter={`url(#${noiseFilterRedId})`}
+                />
+              </svg>
+              {/* Candidate image on top */}
+              {leftCandidateInfo ? (
+                <div className="relative w-full h-[220px] sm:h-[240px] md:h-[300px] lg:h-[320px] xl:h-[430px] 2xl:h-full">
+                  <Image
+                    src={leftCandidateInfo.image}
+                    alt={leftCandidateInfo.name}
+                    fill
+                    className="object-cover object-right z-10 animate-candidate-appear xl:scale-108"
+                    style={{
+                      filter: `brightness(${leftCandidateInfo.brightness * leftCandidateInfo.shadows}) contrast(${leftCandidateInfo.contrast}) saturate(${leftCandidateInfo.saturate}) sepia(${leftCandidateInfo.sepia})`,
+                    }}
+                  />
+                </div>
+              ) : null}
+            </div>
+            <div className="flex  flex-col gap-6 xl:gap-12 order-1 xl:order-2 xl:py-12 max-w-sm mx-auto md:max-w-132">
+              <div className="mx-auto px-1 sm:px-4 md:px-0">
+                <span className="text-[#fefefe] font-sohne-breit text-[12px] sm:text-base text-center block w-29 sm:w-40 md:w-100 mx-auto ">
+                  Una comparación política basada en datos reales. Explora quién
+                  propone más, quién tiene resultados y quién aún no los
+                  demuestra.
+                </span>
+              </div>
+            </div>
+            {/* Right Candidate */}
+            <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-3 overflow-hidden">
+              {/* Blue gradient background square with noise */}
+              <svg
+                className={`absolute top-0 right-auto xl:left-0 transition-all duration-500 ease-out xl:w-[450px] xl:h-full w-full h-full hidden xl:block ${
+                  rightCandidateInfo
+                    ? "opacity-100 scale-100"
+                    : "opacity-70 scale-100"
+                }`}
+                preserveAspectRatio="none"
+              >
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill={`url(#gradientBlue${uniqueId})`}
+                  filter={`url(#${noiseFilterBlueId})`}
+                />
+              </svg>
+              {/* Candidate image on top */}
+              {rightCandidateInfo ? (
+                <div className="relative w-full h-[220px] sm:h-[240px] md:h-[300px] lg:h-[320px] xl:h-[430px] 2xl:h-full ">
+                  <Image
+                    src={rightCandidateInfo.image}
+                    alt={rightCandidateInfo.name}
+                    fill
+                    className="object-cover object-left z-10 animate-candidate-appear xl:scale-108"
+                    style={{
+                      filter: `brightness(${rightCandidateInfo.brightness * rightCandidateInfo.shadows}) contrast(${rightCandidateInfo.contrast}) saturate(${rightCandidateInfo.saturate}) sepia(${rightCandidateInfo.sepia})`,
+                    }}
+                  />
+                </div>
+              ) : null}
+            </div>
           </div>
-          {/* Center Content - Selector */}
-          <div className="flex justify-center flex-col items-center gap-6 md:gap-8 lg:gap-12 order-1 lg:order-2 lg:py-12">
-            <PageHero
-              title="A COMPARAR!"
-              description="Una comparación política basada en datos reales. Explora quién propone más, quién tiene resultados y quién aún no lo demuestra."
-              className="bg-neutral-500 text-center max-w-md md:max-w-lg"
-            />
-            <CandidateSelector
-              selectedCandidates={selectedCandidates}
-              onCandidateClick={handleCandidateClick}
-            />
-          </div>
-          {/* Right Candidate */}
-          <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-none lg:flex-1 h-[350px] md:h-[450px] lg:h-full mx-auto lg:mx-0 order-3 overflow-hidden">
-            {/* Blue gradient background square with noise */}
-            <svg
-              className={`absolute top-0 right-auto lg:left-0 transition-all duration-500 ease-out lg:w-[450px] lg:h-full w-full h-full ${
-                rightCandidateInfo
-                  ? "opacity-100 scale-100"
-                  : "opacity-70 scale-100"
-              }`}
-              preserveAspectRatio="none"
+          {hasSelectedCandidates && (
+            <button
+              onClick={() => {
+                const navbarElement =
+                  document.getElementById("comparison-navbar");
+                if (navbarElement) {
+                  navbarElement.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in pt-8 hidden md:block"
             >
-              <rect
-                width="100%"
-                height="100%"
-                fill={`url(#gradientBlue${uniqueId})`}
-                filter={`url(#${noiseFilterBlueId})`}
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="17"
+                viewBox="0 0 45 17"
+                fill="none"
+              >
+                <path
+                  d="M43 0L22.6852 13L2.5 0L0 2.02381L22.6852 17L45 2.02381L43 0Z"
+                  fill="#FEFEFE"
+                />
+              </svg>
+            </button>
+          )}
+        </div>
+        <div className="flex gap-4 justify-center items-center w-full px-6 md:hidden overflow-hidden">
+          <div className="relative flex items-center justify-center">
+            {leftCandidateInfo && (
+              <>
+                <svg
+                  className="absolute inset-0 -left-6 right-1/2 w-[calc(100%+1.5rem)] h-full opacity-80"
+                  preserveAspectRatio="none"
+                >
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill={`url(#${gradientLeftNameId})`}
+                    filter={`url(#${noiseFilterRedId})`}
+                  />
+                </svg>
+                <h3 className="relative text-white font-bold text-4xl animate-slide-in-left animation-delay-100 font-kenyan py-2">
+                  {leftCandidateInfo.name}
+                </h3>
+              </>
+            )}
+            {!leftCandidateInfo && (
+              <Typography
+                font="kenyan"
+                className="text-white/50 font-bold text-xl xl:text-4xl"
+                variant="h1"
+              >
+                Selecciona candidato
+              </Typography>
+            )}
+          </div>
+          <div className="flex items-center justify-center xl:order-0  scale-150">
+            <svg
+              viewBox="0 0 120 80"
+              className="w-[100px] h-auto md:w-[140px] xl:w-[180px]"
+              preserveAspectRatio="xMidYMid meet"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="VS"
+              role="img"
+            >
+              <text
+                x="50%"
+                y="50%"
+                dominantBaseline="central"
+                textAnchor="middle"
+                fill={`url(#${gradientVSId})`}
+                filter={`url(#${noiseFilterVSId})`}
+                fontFamily="var(--font-kenyan-coffee)"
+                fontWeight="600"
+                fontSize="60"
+              >
+                VS
+              </text>
             </svg>
-            {/* Candidate image on top */}
-            {rightCandidateInfo ? (
-              <Image
-                src={rightCandidateInfo.image}
-                alt={rightCandidateInfo.name}
-                fill
-                className="relative object-cover object-center lg:object-right z-10 animate-candidate-appear scale-108"
-                style={{
-                  filter: `brightness(${rightCandidateInfo.brightness * rightCandidateInfo.shadows}) contrast(${rightCandidateInfo.contrast}) saturate(${rightCandidateInfo.saturate}) sepia(${rightCandidateInfo.sepia})`,
-                }}
-              />
-            ) : null}
+          </div>
+          <div className="relative flex items-center justify-center xl:justify-end overflow-visible">
+            {rightCandidateInfo && (
+              <>
+                <svg
+                  className="absolute top-0 bottom-0 left-0 h-full"
+                  style={{
+                    width: "calc(100% + 1.5rem)",
+                    right: "-1.5rem",
+                  }}
+                  preserveAspectRatio="none"
+                >
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill={`url(#${gradientRightNameId})`}
+                    filter={`url(#${noiseFilterBlueId})`}
+                  />
+                </svg>
+                <h3 className="relative text-white font-bold text-4xl animate-slide-in-right animation-delay-100 font-kenyan text-end py-2">
+                  {rightCandidateInfo.name}
+                </h3>
+              </>
+            )}
+            {!rightCandidateInfo && (
+              <Typography
+                font="kenyan"
+                className="text-white/50 font-bold text-xl xl:text-4xl"
+                variant="h1"
+                align="right"
+              >
+                Selecciona candidato
+              </Typography>
+            )}
           </div>
         </div>
-        {hasSelectedCandidates && (
-          <button
-            onClick={() => {
-              const navbarElement =
-                document.getElementById("comparison-navbar");
-              if (navbarElement) {
-                navbarElement.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-            className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in pt-8"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="45"
-              height="17"
-              viewBox="0 0 45 17"
-              fill="none"
-            >
-              <path
-                d="M43 0L22.6852 13L2.5 0L0 2.02381L22.6852 17L45 2.02381L43 0Z"
-                fill="#FEFEFE"
-              />
-            </svg>
-          </button>
-        )}
       </div>
-
       {/* VS Section, Navigation Bar and Comparison Sections - Only show when candidates are selected */}
+      <CandidateSelector
+        selectedCandidates={selectedCandidates}
+        onCandidateClick={handleCandidateClick}
+      />
       {hasSelectedCandidates && (
         <>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-0 w-full max-w-7xl px-4 md:px-8 lg:px-12">
-            <div className="flex items-center justify-center md:justify-start gap-4 md:gap-6 lg:gap-12">
+          <div className="hidden md:flex gap-4 xl:gap-12 justify-center items-center w-full xl:max-w-336 px-4  xl:px-12">
+            <div className="flex items-center justify-center xl:justify-start gap-4 xl:gap-12">
               {leftCandidateInfo && (
                 <>
                   <Image
@@ -484,31 +606,27 @@ export function ComparisonHero() {
                     alt={leftCandidateInfo.name}
                     width={140}
                     height={80}
-                    className="w-16 h-auto md:w-24 lg:w-[140px] animate-slide-in-left"
+                    className="w-16 h-auto animate-slide-in-left hidden md:block"
                   />
-                  <Typography
-                    font="kenyan"
-                    className="text-white font-bold text-2xl md:text-3xl lg:text-5xl animate-slide-in-left animation-delay-100"
-                    variant="h1"
-                  >
+                  <h3 className="text-white font-bold text-4xl xl:text-5xl animate-slide-in-left animation-delay-100 font-kenyan">
                     {leftCandidateInfo.name}
-                  </Typography>
+                  </h3>
                 </>
               )}
               {!leftCandidateInfo && (
                 <Typography
                   font="kenyan"
-                  className="text-white/50 font-bold text-xl md:text-2xl lg:text-4xl"
+                  className="text-white/50 font-bold text-xl xl:text-4xl"
                   variant="h1"
                 >
                   Selecciona candidato
                 </Typography>
               )}
             </div>
-            <div className="flex items-center justify-center order-first md:order-0">
+            <div className="flex items-center justify-center xl:order-0">
               <svg
                 viewBox="0 0 120 80"
-                className="w-[100px] h-auto md:w-[140px] lg:w-[180px]"
+                className="w-[100px] h-auto md:w-[140px] xl:w-[180px]"
                 preserveAspectRatio="xMidYMid meet"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="VS"
@@ -529,30 +647,26 @@ export function ComparisonHero() {
                 </text>
               </svg>
             </div>
-            <div className="flex items-center justify-center md:justify-end gap-4 md:gap-6 lg:gap-12">
+
+            <div className="flex items-center justify-center xl:justify-end gap-4 xl:gap-12 ">
               {rightCandidateInfo && (
                 <>
-                  <Typography
-                    font="kenyan"
-                    className="text-white font-bold text-2xl md:text-3xl lg:text-5xl md:order-1 order-2 animate-slide-in-right animation-delay-100"
-                    variant="h1"
-                    align="right"
-                  >
+                  <h3 className="text-white font-bold text-4xl xl:text-5xl animate-slide-in-right animation-delay-100 font-kenyan text-end">
                     {rightCandidateInfo.name}
-                  </Typography>
+                  </h3>
                   <Image
                     src={rightCandidateInfo.image}
                     alt={rightCandidateInfo.name}
                     width={140}
                     height={80}
-                    className="w-16 h-auto md:w-24 lg:w-[140px] md:order-2 order-1 animate-slide-in-right"
+                    className="w-16 h-auto xl:w-[140px] xl:order-2 order-1 animate-slide-in-right hidden md:block"
                   />
                 </>
               )}
               {!rightCandidateInfo && (
                 <Typography
                   font="kenyan"
-                  className="text-white/50 font-bold text-xl md:text-2xl lg:text-4xl"
+                  className="text-white/50 font-bold text-xl xl:text-4xl"
                   variant="h1"
                   align="right"
                 >
