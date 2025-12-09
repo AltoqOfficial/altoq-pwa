@@ -1,6 +1,22 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useId } from "react";
+
+// Global state to track active tooltip and notify others to close
+let activeTooltipId: string | null = null;
+const tooltipListeners = new Set<(id: string | null) => void>();
+
+function setActiveTooltip(id: string | null) {
+  activeTooltipId = id;
+  tooltipListeners.forEach((listener) => listener(id));
+}
+
+function subscribeToTooltipChanges(listener: (id: string | null) => void) {
+  tooltipListeners.add(listener);
+  return () => {
+    tooltipListeners.delete(listener);
+  };
+}
 
 interface SourceTooltipProps {
   children: React.ReactNode;
@@ -14,17 +30,23 @@ interface SourceTooltipProps {
  * Wraps content and shows a tooltip with source link on hover (desktop) or click (mobile/tablet).
  * The tooltip appears as a speech bubble with "Fuente: {url}".
  * Uses span elements to be compatible inside Typography/p elements.
+ * Only one tooltip can be open at a time.
  */
 export function SourceTooltip({
   children,
   source,
   className = "",
 }: SourceTooltipProps) {
+  const tooltipId = useId();
   const [isVisible, setIsVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [position, setPosition] = useState<"top" | "bottom">("top");
+  const [horizontalOffset, setHorizontalOffset] = useState(0);
   const tooltipRef = useRef<HTMLSpanElement>(null);
   const contentRef = useRef<HTMLSpanElement>(null);
+  const tooltipContentRef = useRef<HTMLSpanElement>(null);
+  const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const showTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Detect mobile/tablet
   useEffect(() => {
@@ -36,6 +58,16 @@ export function SourceTooltip({
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
+
+  // Subscribe to global tooltip changes - close if another tooltip opens
+  useEffect(() => {
+    const unsubscribe = subscribeToTooltipChanges((activeId) => {
+      if (activeId !== tooltipId && isVisible) {
+        setIsVisible(false);
+      }
+    });
+    return unsubscribe;
+  }, [tooltipId, isVisible]);
 
   // Close tooltip when clicking outside
   useEffect(() => {
@@ -63,11 +95,60 @@ export function SourceTooltip({
   const calculatePosition = useCallback(() => {
     if (contentRef.current) {
       const rect = contentRef.current.getBoundingClientRect();
+      const viewportWidth = window.innerWidth;
+      const tooltipWidth = isMobile ? 200 : 280; // Approximate tooltip width
+
+      // Calculate horizontal offset to keep tooltip within viewport
+      const elementCenter = rect.left + rect.width / 2;
+      const tooltipLeft = elementCenter - tooltipWidth / 2;
+      const tooltipRight = elementCenter + tooltipWidth / 2;
+
+      let offset = 0;
+      const padding = 8; // Padding from viewport edges
+
+      if (tooltipLeft < padding) {
+        // Tooltip would overflow on the left
+        offset = padding - tooltipLeft;
+      } else if (tooltipRight > viewportWidth - padding) {
+        // Tooltip would overflow on the right
+        offset = viewportWidth - padding - tooltipRight;
+      }
+
+      setHorizontalOffset(offset);
+
       // If tooltip would go above viewport, show below
       return rect.top < 100 ? "bottom" : "top";
     }
     return "top";
+  }, [isMobile]);
+
+  // Clear all timeouts
+  const clearAllTimeouts = useCallback(() => {
+    if (hideTimeoutRef.current) {
+      clearTimeout(hideTimeoutRef.current);
+      hideTimeoutRef.current = null;
+    }
+    if (showTimeoutRef.current) {
+      clearTimeout(showTimeoutRef.current);
+      showTimeoutRef.current = null;
+    }
   }, []);
+
+  // Show tooltip with delay
+  const showTooltip = useCallback(() => {
+    const newPosition = calculatePosition();
+    setPosition(newPosition);
+    setIsVisible(true);
+    setActiveTooltip(tooltipId); // Notify other tooltips to close
+  }, [calculatePosition, tooltipId]);
+
+  // Hide tooltip
+  const hideTooltip = useCallback(() => {
+    setIsVisible(false);
+    if (activeTooltipId === tooltipId) {
+      setActiveTooltip(null);
+    }
+  }, [tooltipId]);
 
   // Handle click for mobile
   const handleClick = useCallback(
@@ -75,28 +156,50 @@ export function SourceTooltip({
       if (isMobile) {
         e.preventDefault();
         e.stopPropagation();
-        const newPosition = calculatePosition();
-        setPosition(newPosition);
-        setIsVisible((prev) => !prev);
+        if (isVisible) {
+          hideTooltip();
+        } else {
+          showTooltip();
+        }
       }
     },
-    [isMobile, calculatePosition]
+    [isMobile, isVisible, showTooltip, hideTooltip]
   );
 
   // Handle hover for desktop
   const handleMouseEnter = useCallback(() => {
     if (!isMobile) {
-      const newPosition = calculatePosition();
-      setPosition(newPosition);
-      setIsVisible(true);
+      // Cancel any pending hide timeout
+      clearAllTimeouts();
+
+      // Add delay before showing tooltip (prevents flicker when passing over multiple items)
+      showTimeoutRef.current = setTimeout(() => {
+        showTooltip();
+      }, 100); // 100ms delay before showing
     }
-  }, [isMobile, calculatePosition]);
+  }, [isMobile, clearAllTimeouts, showTooltip]);
 
   const handleMouseLeave = useCallback(() => {
     if (!isMobile) {
-      setIsVisible(false);
+      // Cancel any pending show timeout
+      clearAllTimeouts();
+
+      // Add delay before hiding to allow mouse to move to tooltip
+      hideTimeoutRef.current = setTimeout(() => {
+        hideTooltip();
+      }, 150); // 150ms delay before hiding
     }
-  }, [isMobile]);
+  }, [isMobile, clearAllTimeouts, hideTooltip]);
+
+  // Cleanup timeouts on unmount
+  useEffect(() => {
+    return () => {
+      clearAllTimeouts();
+      if (activeTooltipId === tooltipId) {
+        setActiveTooltip(null);
+      }
+    };
+  }, [clearAllTimeouts, tooltipId]);
 
   // If no source, just render children without tooltip
   if (!source) {
@@ -104,7 +207,7 @@ export function SourceTooltip({
   }
 
   // Truncate URL for display - shorter on mobile
-  const maxLength = isMobile ? 35 : 50;
+  const maxLength = isMobile ? 28 : 50;
   const displayUrl =
     source.length > maxLength ? source.substring(0, maxLength) + "..." : source;
 
@@ -113,7 +216,7 @@ export function SourceTooltip({
   return (
     <span
       ref={tooltipRef}
-      className={`relative inline-block cursor-pointer ${className}`}
+      className={`relative inline-block cursor-pointer  ${className}`}
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -123,44 +226,52 @@ export function SourceTooltip({
 
       {/* Tooltip */}
       <span
+        ref={tooltipContentRef}
         className={`
           absolute z-100
           transition-all duration-200 ease-out
           ${isVisible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
           ${isVisible ? (isTop ? "-translate-y-1" : "translate-y-1") : "translate-y-0"}
           ${isTop ? "bottom-full mb-2" : "top-full mt-2"}
-          left-1/2 -translate-x-1/2
+          left-1/2
         `}
         style={{
           width: "max-content",
-          maxWidth: "min(280px, 90vw)",
+          maxWidth: isMobile ? "min(200px, 85vw)" : "min(280px, 90vw)",
+          transform: `translateX(calc(-50% + ${horizontalOffset}px)) ${isVisible ? (isTop ? "translateY(-4px)" : "translateY(4px)") : ""}`,
         }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
-        <span className="relative block bg-white rounded-lg shadow-xl px-3 py-2 sm:px-3 sm:py-2.5">
-          <span className="text-neutral-600 text-[10px] sm:text-xs font-medium block">
-            <span className="text-neutral-400 block mb-0.5 text-[9px] sm:text-[10px]">
+        <span className="relative block bg-white rounded-lg shadow-xl px-2.5 py-1.5 sm:px-3 sm:py-2.5">
+          <span className="text-neutral-600 text-[9px] sm:text-xs font-medium block">
+            <span className="text-neutral-400 block mb-0.5 text-[8px] sm:text-[10px]">
               Fuente:
             </span>
             <a
               href={source}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-600 hover:text-primary-700 hover:underline wrap-break-word leading-snug block text-[10px] sm:text-xs"
+              className="text-primary-600 hover:text-primary-700 hover:underline wrap-break-word leading-snug block text-[9px] sm:text-xs"
               onClick={(e) => e.stopPropagation()}
             >
               {displayUrl}
             </a>
           </span>
 
-          {/* Arrow */}
+          {/* Arrow - offset inversely to keep it pointing at content */}
           <span
-            className={`absolute left-1/2 -translate-x-1/2 w-0 h-0 block
+            className={`absolute w-0 h-0 block
               ${
                 isTop
                   ? "top-full border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-white"
                   : "bottom-full border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-white"
               }
             `}
+            style={{
+              left: `calc(50% - ${horizontalOffset}px)`,
+              transform: "translateX(-50%)",
+            }}
           />
         </span>
       </span>
