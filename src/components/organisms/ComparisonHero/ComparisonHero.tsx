@@ -662,7 +662,6 @@ export function ComparisonHero() {
           <div className="relative flex items-center justify-center">
             {leftCandidateInfo && (
               <>
-                <div>{rightCandidate.fullName}</div>
                 <svg
                   className="absolute inset-0 -left-6 right-1/2 w-[calc(100%+1.5rem)] h-full opacity-80"
                   preserveAspectRatio="none"
