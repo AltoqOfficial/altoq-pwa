@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import { Typography } from "@/components/atoms/Typography";
 import { Select } from "@/components/atoms/Select";
 
 export interface Candidate {
@@ -29,9 +28,9 @@ export interface CandidateCardProps {
    */
   onChange: (id: string) => void;
   /**
-   * Size of the photo
+   * Whether the candidate is selected (for color effect)
    */
-  photoSize?: "sm" | "md" | "lg";
+  isSelected?: boolean;
   /**
    * Whether to show the dropdown selector
    */
@@ -44,18 +43,19 @@ export interface CandidateCardProps {
 
 /**
  * CandidateCard Component (Molecule)
- * Displays a candidate with photo, info, and optional selector
+ * Displays a candidate with photo in a rectangular card with border
  *
  * This molecule combines:
- * - Circular candidate photo with fallback
- * - Candidate name and party
+ * - Rectangular candidate photo with gray border
+ * - Grayscale effect when not selected
+ * - Color effect when selected
  * - Optional dropdown selector
  *
  * Features:
  * - Image error handling with fallback
- * - Multiple photo sizes
+ * - Grayscale/color transition on selection
+ * - Rectangular card design with border
  * - Optional selector dropdown
- * - Centered layout
  * - Responsive design
  *
  * @example
@@ -65,7 +65,7 @@ export interface CandidateCardProps {
  *   allCandidates={allCandidates}
  *   selectedId="keiko-fujimori"
  *   onChange={(id) => handleChange(id)}
- *   photoSize="lg"
+ *   isSelected={true}
  *   showSelector={true}
  * />
  *
@@ -74,6 +74,7 @@ export interface CandidateCardProps {
  *   allCandidates={[]}
  *   selectedId={null}
  *   onChange={() => {}}
+ *   isSelected={false}
  *   showSelector={false}
  * />
  * ```
@@ -83,65 +84,37 @@ export function CandidateCard({
   allCandidates,
   selectedId,
   onChange,
-  photoSize = "lg",
+  isSelected = false,
   showSelector = true,
   className,
 }: CandidateCardProps) {
-  const photoSizes = {
-    sm: "h-32 w-32",
-    md: "h-40 w-40",
-    lg: "h-48 w-48",
-  };
-
   return (
     <div className={className || "flex flex-col items-center"}>
-      {/* Candidate Photo */}
-      <div
-        className={`relative mb-6 overflow-hidden rounded-full border-4 border-neutral-200 bg-neutral-100 shadow-lg ${photoSizes[photoSize]}`}
-      >
+      {/* Candidate Photo Card */}
+      <div className="relative aspect-4/3 w-full max-w-[200px] overflow-hidden border-[6px] border-[#CECECE] bg-neutral-800 transition-all duration-300">
         {candidate ? (
           <Image
             src={candidate.photo}
             alt={candidate.name}
             fill
-            className="object-cover"
+            className={`object-cover transition-all duration-300 ${
+              isSelected ? "grayscale-0" : "grayscale"
+            }`}
             onError={(e) => {
               // Fallback if image doesn't exist
               e.currentTarget.style.display = "none";
             }}
           />
         ) : (
-          <div className="flex h-full items-center justify-center">
-            <Typography variant="h5" className="text-neutral-400">
-              ?
-            </Typography>
-          </div>
-        )}
-        {/* Fallback background if image fails */}
-        {candidate && (
-          <div className="absolute inset-0 -z-10 flex items-center justify-center bg-linear-to-br from-primary-100 to-primary-200">
-            <Typography variant="h2" className="text-primary-600">
-              {candidate.name.charAt(0)}
-            </Typography>
+          <div className="flex h-full items-center justify-center text-neutral-400 text-4xl">
+            ?
           </div>
         )}
       </div>
 
-      {/* Candidate Info */}
-      {candidate && (
-        <div className="mb-4 text-center">
-          <Typography variant="h4" className="mb-1">
-            {candidate.name}
-          </Typography>
-          <Typography variant="small" className="text-neutral-600">
-            {candidate.party}
-          </Typography>
-        </div>
-      )}
-
       {/* Dropdown Selector */}
       {showSelector && (
-        <div className="w-full max-w-xs">
+        <div className="mt-4 w-full max-w-[200px]">
           <Select
             value={selectedId || ""}
             onChange={(e) => onChange(e.target.value)}

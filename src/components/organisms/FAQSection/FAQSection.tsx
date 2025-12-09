@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import { Typography } from "@/components/atoms/Typography";
 import { cn } from "@/lib/utils";
@@ -58,32 +58,31 @@ const faqs: FAQItem[] = [
  * - Two-column layout (desktop)
  */
 export function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="bg-neutral-50 py-20">
-      <div className="container mx-auto px-4">
+    <section id="faq" className="bg-white py-20 faq">
+      <div className="container mx-auto px-4 md:grid md:grid-cols-2 gap-4 items-start">
         {/* Section Header */}
-        <div className="mb-16 text-center">
-          <Typography variant="h2" className="mb-4">
+        <div className="mb-16 flex justify-center items-center md:items-end flex-col px-2 md:px-0 order-first md:order-last">
+          <Typography variant="h3" className="mb-4" weight="600" align="right">
             Preguntas <span className="text-primary-600">Frecuentes</span>
           </Typography>
           <Typography
             variant="p"
-            className="mx-auto max-w-2xl text-neutral-600"
+            className="max-w-2xl text-neutral-600 md:text-right text-center"
           >
             ¿Tienes dudas? Aquí respondemos las preguntas más comunes sobre
             Altoq y cómo podemos ayudarte a votar informado.
           </Typography>
         </div>
-
         {/* FAQ Grid */}
-        <div className="mx-auto max-w-4xl">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="mx-auto max-w-4xl order-last md:order-first">
+          <div className="grid grid-cols-1 gap-4">
             {/* Left Column */}
             <div className="space-y-4">
               {faqs
@@ -134,24 +133,26 @@ interface FAQItemProps {
 }
 
 function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
+  const contentRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div className="overflow-hidden rounded-lg border border-neutral-200 bg-white transition-shadow hover:shadow-md">
+    <div className="overflow-hidden rounded-lg transition-all duration-300">
       <button
-        className="flex w-full items-start justify-between gap-4 p-6 text-left"
+        className="flex w-full items-start justify-between gap-4 p-6 text-left lg:w-3xl"
         onClick={onToggle}
         aria-expanded={isOpen}
       >
-        <Typography variant="h6" className="flex-1">
+        <Typography variant="p" weight="600" className="flex-1">
           {question}
         </Typography>
         <div
           className={cn(
-            "shrink-0 transition-transform",
+            "shrink-0 transition-transform duration-300 ease-in-out",
             isOpen && "rotate-180"
           )}
         >
           <svg
-            className="h-5 w-5 text-primary-600"
+            className="h-5 w-5 text-[#323232]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -166,13 +167,21 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
         </div>
       </button>
 
-      {isOpen && (
-        <div className="border-t border-neutral-200 px-6 pb-6 pt-4">
-          <Typography variant="p" className="text-neutral-600">
-            {answer}
-          </Typography>
+      <div
+        ref={contentRef}
+        className={cn(
+          "grid transition-all duration-300 ease-in-out",
+          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+        )}
+      >
+        <div className="overflow-hidden">
+          <div className="border-b border-neutral-200 px-6 pb-6 pt-4">
+            <Typography variant="p" className="text-[#868686]">
+              {answer}
+            </Typography>
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

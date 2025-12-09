@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 
 import { ComparisonHero } from "@/components/organisms/ComparisonHero";
-import { CandidateSelector } from "@/components/organisms/CandidateSelector";
-import { ComparisonTabs } from "@/components/organisms/ComparisonTabs";
 
 export const metadata: Metadata = {
   title: "Comparar Candidatos | Altoq",
@@ -30,12 +28,6 @@ export default function ComparePage() {
     <>
       {/* Hero Section */}
       <ComparisonHero />
-
-      {/* Candidate Selector */}
-      <CandidateSelector />
-
-      {/* Comparison Tabs */}
-      <ComparisonTabs />
     </>
   );
 }
