@@ -31,7 +31,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        "static top-0 z-50 w-full backdrop-blur-sm",
+        "static top-0 z-10 w-full backdrop-blur-sm",
         pathname === "/compara" && "bg-neutral-500"
       )}
     >
