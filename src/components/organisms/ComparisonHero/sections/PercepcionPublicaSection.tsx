@@ -3,6 +3,7 @@
 import type { CandidateComparisonData } from "@/data";
 import { VoteIntentionChart } from "../components/VoteIntentionChart";
 import { Typography } from "@/components/atoms";
+import { extractValue, extractSource } from "../components/shared";
 
 interface DynamicSectionProps {
   leftCandidate: CandidateComparisonData | null;
@@ -11,6 +12,7 @@ interface DynamicSectionProps {
 
 /**
  * Percepción Pública Section with Charts
+ * Custom layout using VoteIntentionChart component with source tooltips
  */
 export function PercepcionPublicaSection({
   leftCandidate,
@@ -35,96 +37,61 @@ export function PercepcionPublicaSection({
     );
   }
 
+  const renderCandidateChart = (candidate: CandidateComparisonData | null) => {
+    if (candidate) {
+      // Extract values and sources
+      const aprobacionValue =
+        (extractValue(candidate.percepcionPublica.aprobacion) as string) || "";
+      const aprobacionSource = extractSource(
+        candidate.percepcionPublica.aprobacion
+      );
+
+      const redesValue =
+        (extractValue(candidate.percepcionPublica.redes) as string) || "";
+      const redesSource = extractSource(candidate.percepcionPublica.redes);
+
+      return (
+        <VoteIntentionChart
+          minVote={candidate.percepcionPublica.intencionVoto.min}
+          maxVote={candidate.percepcionPublica.intencionVoto.max}
+          description={candidate.percepcionPublica.intencionVoto.descripcion}
+          color={candidate.color}
+          approval={aprobacionValue}
+          socialMedia={redesValue}
+          voteSource={candidate.percepcionPublica.intencionVoto.source}
+          approvalSource={aprobacionSource}
+          socialMediaSource={redesSource}
+        />
+      );
+    }
+
+    return (
+      <div className="w-full h-48 md:h-64 flex items-center justify-center bg-white/5 rounded-lg">
+        <Typography
+          color="white"
+          variant="p"
+          className="opacity-50 text-sm md:text-base"
+        >
+          Sin seleccionar
+        </Typography>
+      </div>
+    );
+  };
+
   return (
-    <div className="w-full border-t border-white py-8 md:py-12 lg:py-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
+    <div className="w-full border-t border-white py-8 lg:py-16 md:flex md:justify-center">
+      <div className="relative flex 2xl:grid 2xl:grid-cols-2 space-x-4 lg:space-x-24 xl:gap-8 2xl:gap-32 items-start 2xl:justify-items-center 2xl:mx-auto">
         {/* Left Candidate */}
-        <div className="flex flex-col items-center">
-          {leftCandidate && (
-            <>
-              <div
-                className="w-full max-w-[200px] md:max-w-xs mb-3 md:mb-4 py-1.5 md:py-2 px-3 md:px-4 rounded-full text-center"
-                style={{ backgroundColor: `${leftCandidate.color}30` }}
-              >
-                <Typography
-                  color="white"
-                  variant="h6"
-                  weight="600"
-                  className="text-sm md:text-base"
-                >
-                  {leftCandidate.shortName}
-                </Typography>
-              </div>
-              <VoteIntentionChart
-                minVote={leftCandidate.percepcionPublica.intencionVoto.min}
-                maxVote={leftCandidate.percepcionPublica.intencionVoto.max}
-                description={
-                  leftCandidate.percepcionPublica.intencionVoto.descripcion
-                }
-                color={leftCandidate.color}
-                approval={leftCandidate.percepcionPublica.aprobacion}
-                socialMedia={leftCandidate.percepcionPublica.redes}
-              />
-            </>
-          )}
-          {!leftCandidate && (
-            <div className="w-full h-48 md:h-64 flex items-center justify-center bg-white/5 rounded-lg">
-              <Typography
-                color="white"
-                variant="p"
-                className="opacity-50 text-sm md:text-base"
-              >
-                Sin seleccionar
-              </Typography>
-            </div>
-          )}
+        <div className="flex items-center">
+          {renderCandidateChart(leftCandidate)}
         </div>
 
         {/* Divider */}
-        <div className="hidden md:flex justify-center items-center h-full">
-          <div className="w-px h-full min-h-[250px] md:min-h-[300px] bg-linear-to-b from-transparent via-white/30 to-transparent"></div>
-        </div>
+        <div className="absolute left-1/2 top-32 lg:top-40 bottom-0 w-0.5 bg-white/50 -translate-x-1/2" />
 
         {/* Right Candidate */}
-        <div className="flex flex-col items-center">
-          {rightCandidate && (
-            <>
-              <div
-                className="w-full max-w-[200px] md:max-w-xs mb-3 md:mb-4 py-1.5 md:py-2 px-3 md:px-4 rounded-full text-center"
-                style={{ backgroundColor: `${rightCandidate.color}30` }}
-              >
-                <Typography
-                  color="white"
-                  variant="h6"
-                  weight="600"
-                  className="text-sm md:text-base"
-                >
-                  {rightCandidate.shortName}
-                </Typography>
-              </div>
-              <VoteIntentionChart
-                minVote={rightCandidate.percepcionPublica.intencionVoto.min}
-                maxVote={rightCandidate.percepcionPublica.intencionVoto.max}
-                description={
-                  rightCandidate.percepcionPublica.intencionVoto.descripcion
-                }
-                color={rightCandidate.color}
-                approval={rightCandidate.percepcionPublica.aprobacion}
-                socialMedia={rightCandidate.percepcionPublica.redes}
-              />
-            </>
-          )}
-          {!rightCandidate && (
-            <div className="w-full h-48 md:h-64 flex items-center justify-center bg-white/5 rounded-lg">
-              <Typography
-                color="white"
-                variant="p"
-                className="opacity-50 text-sm md:text-base"
-              >
-                Sin seleccionar
-              </Typography>
-            </div>
-          )}
+        <div className="flex items-center">
+          {renderCandidateChart(rightCandidate)}
         </div>
       </div>
     </div>

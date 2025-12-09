@@ -2,85 +2,110 @@
  * Types for Candidate Comparison Data
  */
 
+/**
+ * Value with optional source URL for citations
+ */
+export interface ValueWithSource {
+  value: string;
+  source?: string;
+}
+
+/**
+ * Array value with optional source URL
+ */
+export interface ArrayWithSource {
+  values: string[];
+  source?: string;
+}
+
+/**
+ * Type that can be either a plain value or a value with source
+ */
+export type SourceableString = string | ValueWithSource;
+export type SourceableArray = string[] | ArrayWithSource;
+
 export interface PerfilGeneral {
-  edad: string;
-  nacimiento: string;
-  lugar: string;
-  nivelEducativo: string;
-  profesion: string;
-  partidoActual: string;
-  cambiosDePartido: string;
+  edad: SourceableString;
+  nacimiento: SourceableString;
+  lugar: SourceableString;
+  nivelEducativo: SourceableString;
+  profesion: SourceableString;
+  partidoActual: SourceableString;
+  cambiosDePartido: SourceableString;
 }
 
 export interface ExperienciaPolitica {
-  anosExperiencia: string;
-  cargosPrevios: string[];
-  candidaturasPresidenciales: string[];
+  anosExperiencia: SourceableString;
+  cargosPrevios: SourceableArray;
+  candidaturasPresidenciales: SourceableArray;
 }
 
 export interface SectorExperiencia {
   cantidad: number;
-  detalle: string[];
+  detalle: SourceableArray;
 }
 
 export interface ExperienciaGestion {
   sectorPublico: SectorExperiencia;
   sectorPrivado: SectorExperiencia;
+  source?: string;
 }
 
 export interface IdeologiaPolitica {
-  posicion: string;
-  economia: string;
-  matrimonioIgualitario: string;
-  aborto: string;
-  seguridad: string;
-  ambiente: string;
-  educacion: string;
-  reformaPolitica: string;
+  posicion: SourceableString;
+  economia: SourceableString;
+  matrimonioIgualitario: SourceableString;
+  aborto: SourceableString;
+  seguridad: SourceableString;
+  ambiente: SourceableString;
+  educacion: SourceableString;
+  reformaPolitica: SourceableString;
 }
 
 export interface PropuestasPrincipales {
-  economico: string[];
-  social: string[];
-  ambiental: string[];
-  institucional: string[];
-  educativo: string[];
-  salud: string[];
-  seguridad: string[];
+  economico: SourceableArray;
+  social: SourceableArray;
+  ambiental: SourceableArray;
+  institucional: SourceableArray;
+  educativo: SourceableArray;
+  salud: SourceableArray;
+  seguridad: SourceableArray;
 }
 
 export interface CoherenciaConElPlan {
-  nivelDeAlineacion: string;
-  diferencias: string;
-  cumplimientoPrevio: string;
+  nivelDeAlineacion: SourceableString;
+  diferencias: SourceableString;
+  cumplimientoPrevio: SourceableString;
 }
 
 export interface Controversias {
-  investigaciones: string[];
-  enCurso: string[];
+  investigaciones: SourceableArray;
+  enCurso: SourceableArray;
 }
 
 export interface CompetenciasPersonales {
-  liderazgo: string;
-  comunicacion: string;
-  credibilidad: string;
+  liderazgo: SourceableString;
+  comunicacion: SourceableString;
+  credibilidad: SourceableString;
 }
 
 export interface IntencionVoto {
   min: number;
   max: number;
   descripcion: string;
+  source?: string;
 }
 
 export interface PercepcionPublica {
   intencionVoto: IntencionVoto;
-  aprobacion: string;
-  redes: string;
+  aprobacion: SourceableString;
+  redes: SourceableString;
 }
 
 export interface Asistencia {
   porcentaje: number;
   label: string;
+  source?: string;
 }
 
 export interface HistorialLegislativo {
@@ -89,6 +114,23 @@ export interface HistorialLegislativo {
   proyectosPresentados: number;
   proyectosAprobados: number;
   nota?: string;
+  source?: string;
+}
+
+/**
+ * Transparency with source
+ */
+export interface TransparenciaData {
+  items: string[];
+  source?: string;
+}
+
+/**
+ * Innovation with source
+ */
+export interface InnovacionData {
+  items: string[];
+  source?: string;
 }
 
 export interface CandidateComparisonData {
@@ -106,9 +148,9 @@ export interface CandidateComparisonData {
   propuestasPrincipales: PropuestasPrincipales;
   coherenciaConElPlan: CoherenciaConElPlan;
   controversias: Controversias;
-  transparencia: string[];
+  transparencia: string[] | TransparenciaData;
   competenciasPersonales: CompetenciasPersonales;
   percepcionPublica: PercepcionPublica;
-  innovacionYVision: string[];
+  innovacionYVision: string[] | InnovacionData;
   historialLegislativo: HistorialLegislativo;
 }

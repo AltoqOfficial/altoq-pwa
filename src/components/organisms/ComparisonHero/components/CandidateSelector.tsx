@@ -1,157 +1,352 @@
 "use client";
 
 import Image from "next/image";
-import { useId } from "react";
+import { memo, useCallback, useMemo } from "react";
 import { CANDIDATES, SELECTION_COLORS, type Candidate } from "../constants";
 import { useMediaQuery } from "@/hooks";
 
 interface CandidateSelectorProps {
   selectedCandidates: string[];
   onCandidateClick: (candidateId: string) => void;
+  /** If true, prevents deselecting already selected candidates */
+  lockSelection?: boolean;
 }
 
 /**
- * Candidate Selector Component
+ * Candidate button component - memoized for performance
+ */
+const CandidateButton = memo(function CandidateButton({
+  candidate,
+  isSelected,
+  isDisabled,
+  isLocked,
+  backgroundColor,
+  imageFilter,
+  dimensions,
+  offset,
+  onClick,
+}: {
+  candidate: Candidate;
+  isSelected: boolean;
+  isDisabled: boolean;
+  isLocked: boolean;
+  backgroundColor: string;
+  imageFilter: string;
+  dimensions: { width: number; height: number };
+  offset: { x: number; y: number };
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      disabled={isDisabled}
+      className={`relative transition-all duration-300 overflow-hidden border w-full aspect-square flex justify-center items-center group ${
+        isDisabled
+          ? "cursor-not-allowed border-[#555] opacity-60"
+          : isLocked
+            ? "cursor-default border-[#CECECE]"
+            : "cursor-pointer border-[#CECECE]"
+      }`}
+    >
+      {/* Background with simple color - no heavy SVG filter */}
+      <div
+        className="absolute inset-0 w-full h-full transition-colors duration-300"
+        style={{ backgroundColor }}
+      />
+
+      {/* Image on top */}
+      <Image
+        src={candidate.src}
+        alt={candidate.name}
+        width={dimensions.width}
+        height={dimensions.height}
+        loading="lazy"
+        className="relative z-10 transition-all duration-300 object-cover"
+        style={{
+          width: `${dimensions.width}px`,
+          height: `${dimensions.height}px`,
+          transform: `translate(${offset.x}px, ${offset.y}px)`,
+          filter: imageFilter,
+        }}
+      />
+    </button>
+  );
+});
+
+/**
+ * Desktop candidate button - memoized for performance
+ */
+const DesktopCandidateButton = memo(function DesktopCandidateButton({
+  candidate,
+  isDisabled,
+  isLocked,
+  backgroundColor,
+  imageFilter,
+  dimensions,
+  offset,
+  onClick,
+}: {
+  candidate: Candidate;
+  isDisabled: boolean;
+  isLocked: boolean;
+  backgroundColor: string;
+  imageFilter: string;
+  dimensions: { width: number; height: number };
+  offset: { x: number; y: number };
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      disabled={isDisabled}
+      className={`relative transition-all duration-300 overflow-hidden border-2 w-full xl:h-18 xl:h-22 flex justify-center items-center group ${
+        isDisabled
+          ? "cursor-not-allowed border-[#555] opacity-60"
+          : isLocked
+            ? "cursor-default border-[#CECECE]"
+            : "cursor-pointer border-[#CECECE]"
+      }`}
+    >
+      {/* Background with simple color */}
+      <div
+        className="absolute inset-0 w-full h-full transition-colors duration-300"
+        style={{ backgroundColor }}
+      />
+
+      {/* Image on top */}
+      <Image
+        src={candidate.src}
+        alt={candidate.name}
+        width={dimensions.width}
+        height={dimensions.height}
+        loading="lazy"
+        className="relative z-10 transition-all duration-300 object-cover"
+        style={{
+          width: `${dimensions.width}px`,
+          height: `${dimensions.height}px`,
+          transform: `translate(${offset.x}px, ${offset.y}px)`,
+          filter: imageFilter,
+        }}
+      />
+    </button>
+  );
+});
+
+/**
+ * Candidate Selector Component - Optimized
  * Grid of candidate images for selection with rectangular cards
  */
-export function CandidateSelector({
+export const CandidateSelector = memo(function CandidateSelector({
   selectedCandidates,
   onCandidateClick,
+  lockSelection = false,
 }: CandidateSelectorProps) {
-  const uniqueId = useId();
-  const noiseFilterId = `noiseSelectorFilter${uniqueId}`;
+  // Media queries for responsive dimensions
+  const isSmScreen = useMediaQuery("(min-width: 640px)");
   const isLgScreen = useMediaQuery("(min-width: 1024px)");
 
-  const getBackgroundColor = (candidateId: string) => {
-    const index = selectedCandidates.indexOf(candidateId);
-    if (index === 0) return SELECTION_COLORS.first;
-    if (index === 1) return SELECTION_COLORS.second;
-    return "#484848";
-  };
+  const isDisabled = useCallback(
+    (candidate: Candidate) => !candidate.dataKey,
+    []
+  );
 
-  const getImageStyle = (candidateId: string) => {
-    const isSelected = selectedCandidates.includes(candidateId);
-    if (isSelected) return "grayscale-0";
-    return "grayscale";
-  };
+  const isLocked = useCallback(
+    (candidateId: string) =>
+      lockSelection && selectedCandidates.includes(candidateId),
+    [lockSelection, selectedCandidates]
+  );
 
-  const getImageDimensions = (candidate: Candidate) => {
-    if (isLgScreen && candidate.imageWidthLg && candidate.imageHeightLg) {
+  const handleClick = useCallback(
+    (candidate: Candidate) => {
+      if (isDisabled(candidate)) return;
+      if (isLocked(candidate.id)) return;
+      onCandidateClick(candidate.id);
+    },
+    [isDisabled, isLocked, onCandidateClick]
+  );
+
+  const getBackgroundColor = useCallback(
+    (candidateId: string, candidate: Candidate) => {
+      if (isDisabled(candidate)) return "#2a2a2a";
+      const index = selectedCandidates.indexOf(candidateId);
+      if (index === 0) return SELECTION_COLORS.first;
+      if (index === 1) return SELECTION_COLORS.second;
+      return "#48484840";
+    },
+    [isDisabled, selectedCandidates]
+  );
+
+  const getImageFilter = useCallback(
+    (candidate: Candidate) => {
+      const brightness = (candidate.brightness ?? 1) * (candidate.shadows ?? 1);
+      const contrast = candidate.contrast ?? 1;
+      const saturate = candidate.saturate ?? 1;
+      const sepia = candidate.sepia ?? 0;
+
+      if (isDisabled(candidate)) {
+        return `grayscale(1) brightness(0.5) contrast(${contrast})`;
+      }
+
+      const isSelected = selectedCandidates.includes(candidate.id);
+      if (isSelected) {
+        return `brightness(${brightness}) contrast(${contrast}) saturate(${saturate}) sepia(${sepia})`;
+      }
+      return `grayscale(1) brightness(${brightness}) contrast(${contrast})`;
+    },
+    [isDisabled, selectedCandidates]
+  );
+
+  // Memoized dimension getters
+  const getMobileDimensions = useCallback(
+    (candidate: Candidate) => {
+      if (isSmScreen) {
+        return {
+          width: candidate.imageWidthSm ?? candidate.imageWidth ?? 60,
+          height: candidate.imageHeightSm ?? candidate.imageHeight ?? 60,
+        };
+      }
       return {
-        width: candidate.imageWidthLg,
-        height: candidate.imageHeightLg,
+        width: candidate.imageWidth ?? 50,
+        height: candidate.imageHeight ?? 50,
       };
-    }
-    return {
-      width: candidate.imageWidth || 120,
-      height: candidate.imageHeight || 100,
-    };
-  };
+    },
+    [isSmScreen]
+  );
+
+  const getMobileOffset = useCallback(
+    (candidate: Candidate) => {
+      if (isSmScreen) {
+        return {
+          x: candidate.offsetXSm ?? candidate.offsetX ?? 0,
+          y: candidate.offsetYSm ?? candidate.offsetY ?? 8,
+        };
+      }
+      return {
+        x: candidate.offsetX ?? 0,
+        y: candidate.offsetY ?? 8,
+      };
+    },
+    [isSmScreen]
+  );
+
+  const getDesktopDimensions = useCallback(
+    (candidate: Candidate) => {
+      if (isLgScreen) {
+        return {
+          width: candidate.imageWidthLg ?? candidate.imageWidthMd ?? 120,
+          height: candidate.imageHeightLg ?? candidate.imageHeightMd ?? 100,
+        };
+      }
+      return {
+        width: candidate.imageWidthMd ?? 120,
+        height: candidate.imageHeightMd ?? 100,
+      };
+    },
+    [isLgScreen]
+  );
+
+  const getDesktopOffset = useCallback(
+    (candidate: Candidate) => {
+      if (isLgScreen) {
+        return {
+          x: candidate.offsetX ?? 0,
+          y: candidate.offsetY ?? 16,
+        };
+      }
+      return {
+        x: candidate.offsetXMd ?? candidate.offsetX ?? 0,
+        y: candidate.offsetYMd ?? candidate.offsetY ?? 16,
+      };
+    },
+    [isLgScreen]
+  );
+
+  // Pre-compute candidate data for mobile grid
+  const mobileGridData = useMemo(
+    () =>
+      CANDIDATES.map((candidate) => ({
+        candidate,
+        isDisabled: isDisabled(candidate),
+        isSelected: selectedCandidates.includes(candidate.id),
+        isLocked: isLocked(candidate.id),
+        backgroundColor: getBackgroundColor(candidate.id, candidate),
+        imageFilter: getImageFilter(candidate),
+        dimensions: getMobileDimensions(candidate),
+        offset: getMobileOffset(candidate),
+      })),
+    [
+      selectedCandidates,
+      isDisabled,
+      isLocked,
+      getBackgroundColor,
+      getImageFilter,
+      getMobileDimensions,
+      getMobileOffset,
+    ]
+  );
+
+  // Pre-compute candidate data for desktop grid
+  const desktopGridData = useMemo(
+    () =>
+      CANDIDATES.map((candidate) => ({
+        candidate,
+        isDisabled: isDisabled(candidate),
+        isLocked: isLocked(candidate.id),
+        backgroundColor: getBackgroundColor(candidate.id, candidate),
+        imageFilter: getImageFilter(candidate),
+        dimensions: getDesktopDimensions(candidate),
+        offset: getDesktopOffset(candidate),
+      })),
+    [
+      selectedCandidates,
+      isDisabled,
+      isLocked,
+      getBackgroundColor,
+      getImageFilter,
+      getDesktopDimensions,
+      getDesktopOffset,
+    ]
+  );
 
   return (
     <>
-      {/* SVG Filters for Noise Effect */}
-      <svg width="0" height="0" className="absolute">
-        <defs>
-          {/* Noise filter for selector cards */}
-          <filter
-            id={noiseFilterId}
-            x="-20%"
-            y="-20%"
-            width="140%"
-            height="140%"
-            filterUnits="objectBoundingBox"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="1.25 1.25"
-              numOctaves={3}
-              result="noise"
-              seed={4254}
-              stitchTiles="stitch"
-            />
-            <feColorMatrix
-              in="noise"
-              type="luminanceToAlpha"
-              result="alphaNoise"
-            />
-            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
-              <feFuncA
-                type="discrete"
-                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
-              />
-            </feComponentTransfer>
-            <feComposite
-              operator="in"
-              in2="shape"
-              in="coloredNoise1"
-              result="noise1Clipped"
-            />
-            <feFlood
-              floodColor="rgba(255, 255, 255, 0.2)"
-              result="color1Flood"
-            />
-            <feComposite
-              operator="in"
-              in2="noise1Clipped"
-              in="color1Flood"
-              result="color1"
-            />
-            <feMerge result="effect1_noise">
-              <feMergeNode in="shape" />
-              <feMergeNode in="color1" />
-            </feMerge>
-          </filter>
-        </defs>
-      </svg>
+      {/* Mobile/SM: Grid 5x2 */}
+      <div className="grid grid-cols-5 grid-rows-2 gap-1.5 w-full max-w-[360px] sm:max-w-[420px] xl:hidden mt-8 px-4 sm:px-0">
+        {mobileGridData.map((data) => (
+          <CandidateButton
+            key={data.candidate.id}
+            candidate={data.candidate}
+            isSelected={data.isSelected}
+            isDisabled={data.isDisabled}
+            isLocked={data.isLocked}
+            backgroundColor={data.backgroundColor}
+            imageFilter={data.imageFilter}
+            dimensions={data.dimensions}
+            offset={data.offset}
+            onClick={() => handleClick(data.candidate)}
+          />
+        ))}
+      </div>
 
-      <div className="grid grid-cols-2 gap-2 md:gap-3 w-full max-w-[280px] md:max-w-[350px] lg:max-w-[420px]">
-        {CANDIDATES.map((candidate) => (
-          <button
-            key={candidate.id}
-            onClick={() => onCandidateClick(candidate.id)}
-            className="relative cursor-pointer transition-all duration-300 overflow-hidden border-2 border-[#CECECE] w-full aspect-[2.2/1] md:h-18 lg:h-22 flex justify-center items-center group"
-          >
-            {/* Background with noise */}
-            <svg
-              className="absolute inset-0 w-full h-full"
-              preserveAspectRatio="none"
-              style={{ filter: `url(#${noiseFilterId})` }}
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill={getBackgroundColor(candidate.id)}
-              />
-            </svg>
-
-            {/* Image on top */}
-            <Image
-              src={candidate.src}
-              alt={candidate.name}
-              width={getImageDimensions(candidate).width}
-              height={getImageDimensions(candidate).height}
-              className={`relative z-10 transition-all duration-300 object-cover ${getImageStyle(candidate.id)}`}
-              style={{
-                width: `${getImageDimensions(candidate).width}px`,
-                height: `${getImageDimensions(candidate).height}px`,
-                transform: `translate(${candidate.offsetX ?? 0}px, ${candidate.offsetY ?? 16}px)`,
-              }}
-            />
-          </button>
+      {/* MD and up: Grid 2 columns */}
+      <div className="hidden xl:grid grid-cols-2 gap-3 w-full max-w-[350px] xl:max-w-[420px]">
+        {desktopGridData.map((data) => (
+          <DesktopCandidateButton
+            key={data.candidate.id}
+            candidate={data.candidate}
+            isDisabled={data.isDisabled}
+            isLocked={data.isLocked}
+            backgroundColor={data.backgroundColor}
+            imageFilter={data.imageFilter}
+            dimensions={data.dimensions}
+            offset={data.offset}
+            onClick={() => handleClick(data.candidate)}
+          />
         ))}
       </div>
     </>
   );
-}
+});
 
 /**
  * Get candidate data key from selection

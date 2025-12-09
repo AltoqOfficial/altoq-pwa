@@ -24,7 +24,7 @@ export function AttendanceChart({
       chart: {
         type: "radialBar" as const,
         sparkline: {
-          enabled: false,
+          enabled: true,
         },
         toolbar: {
           show: false,
@@ -35,22 +35,16 @@ export function AttendanceChart({
         radialBar: {
           startAngle: -90,
           endAngle: 90,
-          size: "100%",
           hollow: {
-            size: "65%",
+            size: "55%",
           },
           track: {
             background: "rgba(254, 254, 254, 0.15)",
             strokeWidth: "100%",
-            margin: 5,
           },
           dataLabels: {
             name: {
-              show: true,
-              fontSize: "24px",
-              fontWeight: 700,
-              color: "#FEFEFE",
-              offsetY: 10,
+              show: false,
             },
             value: {
               show: false,
@@ -63,25 +57,6 @@ export function AttendanceChart({
         lineCap: "round",
       },
       labels: [label],
-      legend: {
-        show: false,
-      },
-      responsive: [
-        {
-          breakpoint: 768,
-          options: {
-            plotOptions: {
-              radialBar: {
-                dataLabels: {
-                  name: {
-                    fontSize: "18px",
-                  },
-                },
-              },
-            },
-          },
-        },
-      ],
     }),
     [color, label]
   );
@@ -89,14 +64,27 @@ export function AttendanceChart({
   const series = [percentage];
 
   return (
-    <div className="flex flex-col items-center w-full max-w-[300px]">
-      <div className="w-full">
+    <div className="flex flex-col items-center w-full">
+      {/* Chart Container */}
+      <div className="relative w-[120px] h-[70px] md:w-[160px] md:h-[90px] lg:w-[200px] lg:h-[110px] 2xl:w-[240px] 2xl:h-[130px]">
         <Chart
           options={chartOptions}
           series={series}
           type="radialBar"
-          height={320}
+          width="100%"
+          height="140%"
         />
+      </div>
+
+      {/* Legend */}
+      <div className="flex items-center justify-center gap-1.5 md:gap-2 mt-1 md:mt-2">
+        <span
+          className="w-2.5 h-2.5 md:w-3 md:h-3 lg:w-4 lg:h-4 rounded-full shrink-0"
+          style={{ backgroundColor: color }}
+        />
+        <span className="text-white text-xs md:text-sm lg:text-base 2xl:text-lg font-medium">
+          {label}: {percentage}%
+        </span>
       </div>
     </div>
   );
