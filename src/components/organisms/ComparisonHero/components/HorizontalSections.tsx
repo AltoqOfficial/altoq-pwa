@@ -23,7 +23,6 @@ export function HorizontalSections({
       <div className="relative w-full">
         {childrenArray.map((child, index) => {
           const isActive = index === activeIndex;
-          const isEntering = isActive;
 
           // Determinar la dirección de la animación
           const slideDirection = direction === "right" ? 1 : -1;

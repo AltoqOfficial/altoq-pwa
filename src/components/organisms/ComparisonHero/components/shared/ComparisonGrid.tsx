@@ -7,8 +7,10 @@ import type { SourceableValue } from "./utils";
 
 interface ComparisonGridProps {
   fields: FieldConfig[];
-  leftData: Record<string, SourceableValue> | null | undefined;
-  rightData: Record<string, SourceableValue> | null | undefined;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  leftData: Record<string, any> | null | undefined;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  rightData: Record<string, any> | null | undefined;
   className?: string;
 }
 

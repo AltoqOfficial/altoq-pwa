@@ -59,7 +59,8 @@ export function useSectionNavigation({
         }
       }
     },
-    [sections]
+
+    []
   );
 
   // Navigate to next section

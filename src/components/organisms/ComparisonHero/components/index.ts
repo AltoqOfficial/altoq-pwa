@@ -8,7 +8,7 @@ export { ComparisonRow } from "./ComparisonRow";
 export { HorizontalSections } from "./HorizontalSections";
 export { LegislativeHistoryChart } from "./LegislativeHistoryChart";
 export { SectionHeader } from "./SectionHeader";
-export { SectionIcons } from "./SectionIcons";
+export { SECTION_ICONS } from "./SectionIcons";
 export { SectionNavbar } from "./SectionNavbar";
 export { SectionWrapper } from "./SectionWrapper";
 export { VoteIntentionChart } from "./VoteIntentionChart";

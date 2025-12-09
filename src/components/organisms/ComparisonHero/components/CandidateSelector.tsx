@@ -26,7 +26,6 @@ export function CandidateSelector({
 
   // Media queries for responsive dimensions
   const isSmScreen = useMediaQuery("(min-width: 640px)");
-  const isMdScreen = useMediaQuery("(min-width: 768px)");
   const isLgScreen = useMediaQuery("(min-width: 1024px)");
 
   const isDisabled = (candidate: Candidate) => !candidate.dataKey;

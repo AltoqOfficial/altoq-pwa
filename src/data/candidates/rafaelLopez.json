@@ -240,12 +240,10 @@
     "tieneHistorial": false,
     "asistencia": {
       "porcentaje": 0,
-      "label": "BAJA",
-      "source": null
+      "label": "BAJA"
     },
     "proyectosPresentados": 0,
     "proyectosAprobados": 0,
-    "nota": "No tiene historial legislativo (no fue congresista)",
-    "source": null
+    "nota": "No tiene historial legislativo (no fue congresista)"
   }
 }
