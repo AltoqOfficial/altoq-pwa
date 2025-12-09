@@ -216,7 +216,7 @@ export function ComparisonHero() {
   );
 
   return (
-    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 min-h-[92vh] py-10 md:py-21">
+    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 min-h-screen py-2">
       {/* SVG Filters for Noise Effect */}
       <svg width="0" height="0" className="absolute">
         <defs>
@@ -560,7 +560,7 @@ export function ComparisonHero() {
               </svg>
               {/* Candidate image on top */}
               {leftCandidateInfo ? (
-                <div className="relative w-full h-[220px] sm:h-[220px] md:h-[300px] xl:h-[430px] 2xl:h-[720px]">
+                <div className="relative w-full h-[220px] sm:h-[220px] md:h-[300px] xl:h-[600px] 2xl:h-screen xl:translate-y-8">
                   <Image
                     src={leftCandidateInfo.image}
                     alt={leftCandidateInfo.name}
@@ -624,7 +624,7 @@ export function ComparisonHero() {
               </svg>
               {/* Candidate image on top */}
               {rightCandidateInfo ? (
-                <div className="relative w-full h-[220px] sm:h-[240px] md:h-[300px] xl:h-[430px] 2xl:h-[720px] ">
+                <div className="relative w-full h-[220px] sm:h-[240px] md:h-[300px] xl:h-[600px] 2xl:h-screen xl:translate-y-8">
                   <Image
                     src={rightCandidateInfo.image}
                     alt={rightCandidateInfo.name}
@@ -641,7 +641,7 @@ export function ComparisonHero() {
           {hasSelectedCandidates && (
             <button
               onClick={scrollToComparison}
-              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in pt-8 hidden xl:block"
+              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in  hidden xl:block -translate-y-30S"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -662,6 +662,7 @@ export function ComparisonHero() {
           <div className="relative flex items-center justify-center">
             {leftCandidateInfo && (
               <>
+                <div>{rightCandidate.fullName}</div>
                 <svg
                   className="absolute inset-0 -left-6 right-1/2 w-[calc(100%+1.5rem)] h-full opacity-80"
                   preserveAspectRatio="none"
