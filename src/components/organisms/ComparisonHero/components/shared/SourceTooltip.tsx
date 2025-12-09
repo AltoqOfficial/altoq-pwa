@@ -261,13 +261,7 @@ export function SourceTooltip({
 
           {/* Arrow - offset inversely to keep it pointing at content */}
           <span
-            className={`absolute w-0 h-0 block
-              ${
-                isTop
-                  ? "top-full border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-white"
-                  : "bottom-full border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-white"
-              }
-            `}
+            className={`absolute w-0 h-0 block ${isTop ? "top-full border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-white" : "bottom-full border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-white"}`}
             style={{
               left: `calc(50% - ${horizontalOffset}px)`,
               transform: "translateX(-50%)",

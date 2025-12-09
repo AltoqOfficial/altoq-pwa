@@ -13,6 +13,7 @@ export { SectionNavbar } from "./SectionNavbar";
 export { SectionWrapper } from "./SectionWrapper";
 export { VoteIntentionChart } from "./VoteIntentionChart";
 export { DynamicSection } from "./DynamicSection";
+export { SVGFilters, getFilterIds } from "./SVGFilters";
 
 // Shared components and utilities
 export * from "./shared";
