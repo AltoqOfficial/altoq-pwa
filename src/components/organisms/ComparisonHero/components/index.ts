@@ -1,9 +1,18 @@
-export { SectionHeader } from "./SectionHeader";
-export { SectionNavbar } from "./SectionNavbar";
+/**
+ * Component exports for ComparisonHero
+ */
+
+export { AttendanceChart } from "./AttendanceChart";
 export { CandidateSelector } from "./CandidateSelector";
 export { ComparisonRow } from "./ComparisonRow";
-export { SectionWrapper } from "./SectionWrapper";
 export { HorizontalSections } from "./HorizontalSections";
-export { VoteIntentionChart } from "./VoteIntentionChart";
-export { AttendanceChart } from "./AttendanceChart";
 export { LegislativeHistoryChart } from "./LegislativeHistoryChart";
+export { SectionHeader } from "./SectionHeader";
+export { SectionIcons } from "./SectionIcons";
+export { SectionNavbar } from "./SectionNavbar";
+export { SectionWrapper } from "./SectionWrapper";
+export { VoteIntentionChart } from "./VoteIntentionChart";
+export { DynamicSection } from "./DynamicSection";
+
+// Shared components and utilities
+export * from "./shared";

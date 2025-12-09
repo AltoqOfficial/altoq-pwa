@@ -2,6 +2,8 @@
 
 import { Typography } from "@/components/atoms";
 import type { CandidateComparisonData } from "@/data";
+import { CONTROVERSIAS_CONFIG } from "../config";
+import { renderValueWithSource } from "../components/shared";
 
 interface DynamicSectionProps {
   leftCandidate: CandidateComparisonData | null;
@@ -10,20 +12,13 @@ interface DynamicSectionProps {
 
 /**
  * Controversias Section
+ * Two-column split layout with source tooltips
  */
 export function ControversiasSection({
   leftCandidate,
   rightCandidate,
 }: DynamicSectionProps) {
-  const renderList = (items: string[] | undefined) => {
-    if (!items || items.length === 0) return "-";
-    return items.map((item, index) => (
-      <span key={index}>
-        {item}
-        {index < items.length - 1 && <br />}
-      </span>
-    ));
-  };
+  const fields = CONTROVERSIAS_CONFIG.fields!;
 
   const renderCandidateColumn = (
     candidate: CandidateComparisonData | null,
@@ -36,52 +31,40 @@ export function ControversiasSection({
       ? "items-end lg:items-center"
       : "items-start lg:items-center";
 
+    const data = candidate?.controversias;
+
     return (
       <div className="w-full space-y-8 lg:space-y-12 lg:space-y-16 py-8 lg:py-12 lg:py-16">
-        <div
-          className={`flex flex-col lg:grid lg:grid-cols-2 w-full gap-2 lg:gap-0 ${flexDirection}`}
-        >
-          <Typography
-            color="white"
-            variant="h6"
-            align={textAlign}
-            weight="600"
-            className="max-w-full lg:max-w-[18rem] text-sm lg:text-base lg:text-lg"
+        {fields.map(({ key, label }) => (
+          <div
+            key={key}
+            className={`flex flex-col lg:grid lg:grid-cols-2 w-full gap-2 lg:gap-0 ${flexDirection}`}
           >
-            INVESTIGACIONES
-          </Typography>
-          <Typography
-            color="white"
-            variant="h6"
-            align={textAlign}
-            weight="200"
-            className={`max-w-full lg:max-w-[18rem] flex lg:justify-center ${itemsAlign} lg:mx-auto text-xs lg:text-sm lg:text-base`}
-          >
-            {renderList(candidate?.controversias.investigaciones)}
-          </Typography>
-        </div>
-        <div
-          className={`flex flex-col lg:grid lg:grid-cols-2 w-full gap-2 lg:gap-0 ${flexDirection}`}
-        >
-          <Typography
-            color="white"
-            variant="h6"
-            align={textAlign}
-            weight="600"
-            className="max-w-full lg:max-w-[18rem] text-sm lg:text-base lg:text-lg"
-          >
-            EN CURSO
-          </Typography>
-          <Typography
-            color="white"
-            variant="h6"
-            align={textAlign}
-            weight="200"
-            className={`max-w-full lg:max-w-[20rem] flex lg:justify-center ${itemsAlign} lg:mx-auto text-xs lg:text-sm lg:text-base flex-col`}
-          >
-            {renderList(candidate?.controversias.enCurso)}
-          </Typography>
-        </div>
+            <Typography
+              color="white"
+              variant="h6"
+              align={textAlign}
+              weight="600"
+              className="max-w-full lg:max-w-[18rem] text-sm lg:text-base lg:text-lg"
+            >
+              {label}
+            </Typography>
+            <Typography
+              color="white"
+              variant="h6"
+              align={textAlign}
+              weight="200"
+              className={`max-w-full lg:max-w-[20rem] flex lg:justify-center ${itemsAlign} lg:mx-auto text-xs lg:text-sm lg:text-base flex-col`}
+            >
+              {renderValueWithSource(
+                data?.[key as keyof typeof data] as
+                  | { values: string[]; source?: string }
+                  | string[]
+                  | undefined
+              )}
+            </Typography>
+          </div>
+        ))}
       </div>
     );
   };

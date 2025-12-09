@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 
@@ -31,6 +34,9 @@ export function Logo({
   priority = false,
   quality = 100,
 }: LogoProps) {
+  const pathname = usePathname();
+  const isComparaPage = pathname === "/compara";
+
   const sizeConfig = {
     sm: { width: 96, height: 32, className: "w-24 h-8" },
     md: { width: 128, height: 42, className: "w-32 h-[42px]" },
@@ -43,6 +49,11 @@ export function Logo({
     red: "",
   };
 
+  // En /compara, forzar el logo a blanco
+  const appliedFilter = isComparaPage
+    ? "brightness-0 invert"
+    : filterClasses[variant];
+
   const logoContent = (
     <Image
       src="/images/logo/altoq.webp"
@@ -53,7 +64,7 @@ export function Logo({
       quality={quality}
       className={cn(
         sizeConfig[size].className,
-        filterClasses[variant],
+        appliedFilter,
         "object-contain",
         className
       )}

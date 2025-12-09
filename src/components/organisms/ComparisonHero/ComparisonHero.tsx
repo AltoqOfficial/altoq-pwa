@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useId } from "react";
+import { useMemo, useId, useCallback } from "react";
 import Image from "next/image";
 import { Typography } from "@/components/atoms";
 import { useCandidateSelection, useSectionNavigation } from "@/hooks";
@@ -16,6 +16,8 @@ import {
 } from "./components/CandidateSelector";
 import { NAV_ITEMS } from "./constants";
 import { getCandidateData } from "@/data";
+import type { CandidateComparisonData } from "@/data";
+import { ALL_SECTIONS_CONFIG } from "./config";
 
 // Import all section components
 import {
@@ -32,6 +34,30 @@ import {
   InnovacionYVisionSection,
   HistorialLegislativoSection,
 } from "./sections";
+
+/**
+ * Section component mapping for dynamic rendering
+ */
+const SECTION_COMPONENTS: Record<
+  string,
+  React.ComponentType<{
+    leftCandidate: CandidateComparisonData | null;
+    rightCandidate: CandidateComparisonData | null;
+  }>
+> = {
+  PerfilGeneral: PerfilGeneralSection,
+  ExperienciaPolitica: ExperienciaPoliticaSection,
+  ExperienciadeGestion: ExperienciaGestionSection,
+  IdeologiaPolitica: IdeologiaPoliticaSection,
+  PropuestasPrincipales: PropuestasPrincipalesSection,
+  CoherenciaconelPlan: CoherenciaConElPlanSection,
+  Controversias: ControversiasSection,
+  Transparencia: TransparenciaSection,
+  Competenciaspersonales: CompetenciasPersonalesSection,
+  PercepcionPublica: PercepcionPublicaSection,
+  InnovacionyVision: InnovacionYVisionSection,
+  HistorialLegislativo: HistorialLegislativoSection,
+};
 
 /**
  * ComparisonHero Component (Organism)
@@ -65,6 +91,8 @@ export function ComparisonHero() {
   const gradientVSId = `gradientVS${uniqueId}`;
   const gradientLeftNameId = `gradientLeftName${uniqueId}`;
   const gradientRightNameId = `gradientRightName${uniqueId}`;
+  const noiseFilterTitleId = `noiseFilterTitle${uniqueId}`;
+  const gradientTitleId = `gradientTitle${uniqueId}`;
 
   // Get candidate data based on selection
   const { leftCandidate, rightCandidate } = useMemo(() => {
@@ -155,6 +183,37 @@ export function ComparisonHero() {
 
   // Check if at least one candidate is selected
   const hasSelectedCandidates = leftCandidateInfo || rightCandidateInfo;
+
+  // Scroll to comparison navbar
+  const scrollToComparison = useCallback(() => {
+    const navbarElement = document.getElementById("comparison-navbar");
+    if (navbarElement) {
+      navbarElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
+  // Render a section dynamically based on config
+  const renderSection = useCallback(
+    (config: (typeof ALL_SECTIONS_CONFIG)[0]) => {
+      const SectionComponent = SECTION_COMPONENTS[config.id];
+      if (!SectionComponent) return null;
+
+      return (
+        <SectionWrapper
+          key={config.id}
+          id={config.id}
+          title={config.title}
+          sectionId={config.navId}
+        >
+          <SectionComponent
+            leftCandidate={leftCandidate}
+            rightCandidate={rightCandidate}
+          />
+        </SectionWrapper>
+      );
+    },
+    [leftCandidate, rightCandidate]
+  );
 
   return (
     <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 min-h-[92vh] py-10 md:py-21">
@@ -388,10 +447,93 @@ export function ComparisonHero() {
               <feMergeNode in="color1" />
             </feMerge>
           </filter>
+
+          {/* Gradient for Title */}
+          <linearGradient
+            id={gradientTitleId}
+            x1="50%"
+            y1="0%"
+            x2="50%"
+            y2="100%"
+          >
+            <stop offset="0%" stopColor="#A90003" />
+            <stop offset="100%" stopColor="#FF2F2F" />
+          </linearGradient>
+
+          {/* Noise filter for Title */}
+          <filter
+            id={noiseFilterTitleId}
+            x="-20%"
+            y="-20%"
+            width="140%"
+            height="140%"
+            filterUnits="objectBoundingBox"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="1.25 1.25"
+              numOctaves={3}
+              result="noise"
+              seed={4254}
+              stitchTiles="stitch"
+            />
+            <feColorMatrix
+              in="noise"
+              type="luminanceToAlpha"
+              result="alphaNoise"
+            />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA
+                type="discrete"
+                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+              />
+            </feComponentTransfer>
+            <feComposite
+              operator="in"
+              in2="shape"
+              in="coloredNoise1"
+              result="noise1Clipped"
+            />
+            <feFlood
+              floodColor="rgba(255, 255, 255, 0.2)"
+              result="color1Flood"
+            />
+            <feComposite
+              operator="in"
+              in2="noise1Clipped"
+              in="color1Flood"
+              result="color1"
+            />
+            <feMerge result="effect1_noise">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
         </defs>
       </svg>
-      <h1 className="font-sohne-schmal font-black text-6xl sm:text-7xl text-primary-600 flex xl:hidden">
-        A COMPARAR!
+
+      {/* Title for mobile/tablet/lg */}
+      <h1 className="xl:hidden font-sohne-schmal font-black text-5xl sm:text-6xl md:text-7xl text-center flex items-center justify-center relative">
+        <span className="bg-gradient-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent">
+          A COMPARAR
+        </span>
+        <span className="bg-gradient-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent text-[80px] sm:text-[100px] md:text-[120px] -translate-y-2 sm:-translate-y-3 md:-translate-y-4">
+          !
+        </span>
+        <span
+          className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-40"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+          }}
+        />
       </h1>
       {/* Hero Section */}
       <div className="w-full">
@@ -431,12 +573,24 @@ export function ComparisonHero() {
                 </div>
               ) : null}
             </div>
-            <div className="flex  flex-col gap-6 xl:gap-12 order-1 xl:order-2 xl:py-12 max-w-sm mx-auto md:max-w-132">
-              <div className="mx-auto px-1 sm:px-4 md:px-0">
-                <h1 className="font-sohne-schmal font-black text-6xl sm:text-7xl text-primary-600 hidden xl:block text-center">
-                  A COMPARAR!
+            <div className="flex flex-col gap-6 xl:gap-12 order-1 xl:order-2 xl:py-12 2xl:py-0 max-w-sm mx-auto md:max-w-132">
+              <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center">
+                {/* Title for xl+ */}
+                <h1 className="hidden xl:flex font-sohne-schmal font-black text-7xl 2xl:text-8xl text-center items-center justify-center relative">
+                  <span className="bg-gradient-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent">
+                    A COMPARAR
+                  </span>
+                  <span className="bg-gradient-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent text-[120px] 2xl:text-[140px] -translate-y-4 2xl:-translate-y-5">
+                    !
+                  </span>
+                  <span
+                    className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-40"
+                    style={{
+                      backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+                    }}
+                  />
                 </h1>
-                <span className="text-[#fefefe] font-sohne-breit text-xs sm:text-[12px] md:text-lg text-center block w-29 sm:w-40 md:w-100 mx-auto ">
+                <span className="text-[#fefefe] font-sohne-breit text-xs sm:text-[12px] md:text-lg text-center block w-29 sm:w-40 md:w-100 mx-auto">
                   Una comparación política basada en datos reales. Explora quién
                   propone más, quién tiene resultados y quién aún no los
                   demuestra.
@@ -446,6 +600,7 @@ export function ComparisonHero() {
                 <CandidateSelector
                   selectedCandidates={selectedCandidates}
                   onCandidateClick={handleCandidateClick}
+                  lockSelection={true}
                 />
               </div>
             </div>
@@ -485,13 +640,7 @@ export function ComparisonHero() {
           </div>
           {hasSelectedCandidates && (
             <button
-              onClick={() => {
-                const navbarElement =
-                  document.getElementById("comparison-navbar");
-                if (navbarElement) {
-                  navbarElement.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
+              onClick={scrollToComparison}
               className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in pt-8 hidden xl:block"
             >
               <svg
@@ -589,7 +738,7 @@ export function ComparisonHero() {
             {!rightCandidateInfo && (
               <Typography
                 font="kenyan"
-                className="text-white/50 font-bold text-xl xl:text-4xl  px-8"
+                className="text-white/50 font-bold text-xl xl:text-4xl px-8"
                 variant="h1"
                 align="right"
               >
@@ -603,6 +752,7 @@ export function ComparisonHero() {
         <CandidateSelector
           selectedCandidates={selectedCandidates}
           onCandidateClick={handleCandidateClick}
+          lockSelection={true}
         />
       </div>
       {hasSelectedCandidates && (
@@ -694,154 +844,12 @@ export function ComparisonHero() {
             onScrollNav={scrollNav}
           />
 
-          {/* Horizontal Sections Container */}
+          {/* Horizontal Sections Container - Rendered dynamically */}
           <HorizontalSections
             activeIndex={activeNavIndex}
             direction={scrollDirection}
           >
-            {/* Perfil General Section */}
-            <SectionWrapper
-              id="PerfilGeneral"
-              title="PERFIL GENERAL"
-              sectionId="PerfilGeneral"
-            >
-              <PerfilGeneralSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Experiencia Política Section */}
-            <SectionWrapper
-              id="ExperienciaPolitica"
-              title="EXPERIENCIA POLÍTICA"
-              sectionId="ExperienciaPolitica"
-            >
-              <ExperienciaPoliticaSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Experiencia de Gestión Section */}
-            <SectionWrapper
-              id="ExperienciadeGestion"
-              title="EXPERIENCIA DE GESTIÓN"
-              sectionId="ExperienciadeGestion"
-            >
-              <ExperienciaGestionSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Ideología Política Section */}
-            <SectionWrapper
-              id="IdeologiaPolitica"
-              title="IDEOLOGÍA POLÍTICA"
-              sectionId="IdeologiaPolitica"
-            >
-              <IdeologiaPoliticaSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Propuestas Principales Section */}
-            <SectionWrapper
-              id="PropuestasPrincipales"
-              title="PROPUESTAS PRINCIPALES"
-              sectionId="PropuestasPrincipales"
-            >
-              <PropuestasPrincipalesSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Coherencia con el Plan Section */}
-            <SectionWrapper
-              id="CoherenciaconelPlan"
-              title="COHERENCIA CON EL PLAN"
-              sectionId="CoherenciaconelPlan"
-            >
-              <CoherenciaConElPlanSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Controversias Section */}
-            <SectionWrapper
-              id="Controversias"
-              title="CONTROVERSIAS"
-              sectionId="Controversias"
-            >
-              <ControversiasSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Transparencia Section */}
-            <SectionWrapper
-              id="Transparencia"
-              title="TRANSPARENCIA"
-              sectionId="Transparencia"
-            >
-              <TransparenciaSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Competencias Personales Section */}
-            <SectionWrapper
-              id="Competenciaspersonales"
-              title="COMPETENCIAS PERSONALES"
-              sectionId="Competenciaspersonales"
-            >
-              <CompetenciasPersonalesSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Percepción Pública Section */}
-            <SectionWrapper
-              id="PercepcionPublica"
-              title="PERCEPCIÓN PÚBLICA"
-              sectionId="PercepcionPublica"
-            >
-              <PercepcionPublicaSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Innovación y Visión Section */}
-            <SectionWrapper
-              id="InnovacionyVision"
-              title="INNOVACIÓN Y VISIÓN"
-              sectionId="InnovacionyVision"
-            >
-              <InnovacionYVisionSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Historial Legislativo Section */}
-            <SectionWrapper
-              id="HistorialLegislativo"
-              title="HISTORIAL LEGISLATIVO"
-              sectionId="HistorialLegislativo"
-            >
-              <HistorialLegislativoSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
+            {ALL_SECTIONS_CONFIG.map(renderSection)}
           </HorizontalSections>
         </>
       )}

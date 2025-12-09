@@ -4,8 +4,12 @@ import { useState, useCallback } from "react";
  * Custom hook for managing candidate selection
  * Allows selecting up to 2 candidates for comparison
  */
-export function useCandidateSelection(maxSelections = 2) {
-  const [selectedCandidates, setSelectedCandidates] = useState<string[]>([]);
+export function useCandidateSelection(
+  maxSelections = 2,
+  initialSelection: string[] = ["keiko", "lopez"]
+) {
+  const [selectedCandidates, setSelectedCandidates] =
+    useState<string[]>(initialSelection);
 
   const handleCandidateClick = useCallback(
     (candidateId: string) => {

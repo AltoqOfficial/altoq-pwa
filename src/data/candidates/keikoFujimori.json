@@ -8,101 +8,222 @@
   "party": "Fuerza Popular",
 
   "perfilGeneral": {
-    "edad": "50 años",
-    "nacimiento": "25/05/1975",
-    "lugar": "Jesús María, Lima",
-    "nivelEducativo": "Maestría en Administración de Empresas (MBA) - Columbia University",
-    "profesion": "Administradora de Empresas / Política",
-    "partidoActual": "Fuerza Popular",
-    "cambiosDePartido": "Fuerza Popular"
+    "edad": {
+      "value": "50 años",
+      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    },
+    "nacimiento": {
+      "value": "25/05/1975",
+      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    },
+    "lugar": {
+      "value": "Jesús María, Lima",
+      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    },
+    "nivelEducativo": {
+      "value": "Maestría en Administración de Empresas (MBA) - Columbia University",
+      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    },
+    "profesion": {
+      "value": "Administradora de Empresas / Política",
+      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    },
+    "partidoActual": {
+      "value": "Fuerza Popular",
+      "source": "https://es.wikipedia.org/wiki/Fuerza_Popular"
+    },
+    "cambiosDePartido": {
+      "value": "Fuerza Popular",
+      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    }
   },
 
   "experienciaPolitica": {
-    "anosExperiencia": "20",
-    "cargosPrevios": [
-      "Primera Dama (1994-2000)",
-      "Congresista del Perú (2006-2011)"
-    ],
-    "candidaturasPresidenciales": [
-      "2011 → Segunda vuelta",
-      "2016 → Segunda vuelta",
-      "2021 → Segunda vuelta"
-    ]
+    "anosExperiencia": {
+      "value": "20",
+      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    },
+    "cargosPrevios": {
+      "values": [
+        "Primera Dama (1994-2000)",
+        "Congresista del Perú (2006-2011)"
+      ],
+      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    },
+    "candidaturasPresidenciales": {
+      "values": [
+        "2011 → Segunda vuelta",
+        "2016 → Segunda vuelta",
+        "2021 → Segunda vuelta"
+      ],
+      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    }
   },
 
   "experienciaGestion": {
     "sectorPublico": {
       "cantidad": 2,
-      "detalle": ["Primera Dama (Programas sociales)", "Congresista"]
+      "detalle": {
+        "values": ["Primera Dama (Programas sociales)", "Congresista"],
+        "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      }
     },
     "sectorPrivado": {
       "cantidad": 0,
-      "detalle": ["No registra cargos relevantes formales"]
-    }
+      "detalle": {
+        "values": ["No registra cargos relevantes formales"],
+        "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      }
+    },
+    "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
   },
 
   "ideologiaPolitica": {
-    "posicion": "Derecha - conservadora / liberalismo económico",
-    "economia": "Pro inversión privada",
-    "matrimonioIgualitario": "No apoya",
-    "aborto": "En contra (solo causales legales)",
-    "seguridad": "Mano dura, penas más altas",
-    "ambiente": "Prioriza crecimiento económico",
-    "educacion": "Alianzas público-privadas",
-    "reformaPolitica": "Gradual"
+    "posicion": {
+      "value": "Derecha - conservadora / liberalismo económico",
+      "source": "https://es.wikipedia.org/wiki/Fuerza_Popular"
+    },
+    "economia": {
+      "value": "Pro inversión privada",
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    },
+    "matrimonioIgualitario": {
+      "value": "No apoya",
+      "source": "https://larepublica.pe/politica"
+    },
+    "aborto": {
+      "value": "En contra (solo causales legales)",
+      "source": "https://larepublica.pe/politica"
+    },
+    "seguridad": {
+      "value": "Mano dura, penas más altas",
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    },
+    "ambiente": {
+      "value": "Prioriza crecimiento económico",
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    },
+    "educacion": {
+      "value": "Alianzas público-privadas",
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    },
+    "reformaPolitica": {
+      "value": "Gradual",
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    }
   },
 
   "propuestasPrincipales": {
-    "economico": ["Incentivar inversión privada"],
-    "social": ["Programas de apoyo familiar"],
-    "ambiental": ["Minería formal"],
-    "institucional": ["Reformas Anticorrupción"],
-    "educativo": ["APP en educación"],
-    "salud": ["Modernización de Hospitales"],
-    "seguridad": ["Cadena perpetua para delitos graves"]
+    "economico": {
+      "values": ["Incentivar inversión privada"],
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    },
+    "social": {
+      "values": ["Programas de apoyo familiar"],
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    },
+    "ambiental": {
+      "values": ["Minería formal"],
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    },
+    "institucional": {
+      "values": ["Reformas Anticorrupción"],
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    },
+    "educativo": {
+      "values": ["APP en educación"],
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    },
+    "salud": {
+      "values": ["Modernización de Hospitales"],
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    },
+    "seguridad": {
+      "values": ["Cadena perpetua para delitos graves"],
+      "source": "https://www.fuerzapopular.pe/propuestas"
+    }
   },
 
   "coherenciaConElPlan": {
-    "nivelDeAlineacion": "Alta",
-    "diferencias": "Más énfasis en seguridad",
-    "cumplimientoPrevio": "Limitado (no fue gobierno)"
+    "nivelDeAlineacion": {
+      "value": "Alta",
+      "source": "https://www.fuerzapopular.pe/plan-de-gobierno"
+    },
+    "diferencias": {
+      "value": "Más énfasis en seguridad",
+      "source": "https://www.fuerzapopular.pe/plan-de-gobierno"
+    },
+    "cumplimientoPrevio": {
+      "value": "Limitado (no fue gobierno)",
+      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    }
   },
 
   "controversias": {
-    "investigaciones": ["Caso Cócteles - Lavado de activos"],
-    "enCurso": ["Financiamiento no declarado (IDL)"]
+    "investigaciones": {
+      "values": ["Caso Cócteles - Lavado de activos"],
+      "source": "https://larepublica.pe/politica/caso-cocteles"
+    },
+    "enCurso": {
+      "values": ["Financiamiento no declarado (IDL)"],
+      "source": "https://idl-reporteros.pe"
+    }
   },
 
-  "transparencia": [
-    "Declaración de bienes presentada",
-    "Donaciones registradas parcialmente"
-  ],
+  "transparencia": {
+    "items": [
+      "Declaración de bienes presentada",
+      "Donaciones registradas parcialmente"
+    ],
+    "source": "https://www.jne.gob.pe/declaraciones"
+  },
 
   "competenciasPersonales": {
-    "liderazgo": "Alto en su partido",
-    "comunicacion": "Moderado",
-    "credibilidad": "Polarizada"
+    "liderazgo": {
+      "value": "Alto en su partido",
+      "source": "https://es.wikipedia.org/wiki/Fuerza_Popular"
+    },
+    "comunicacion": {
+      "value": "Moderado",
+      "source": "https://larepublica.pe/politica"
+    },
+    "credibilidad": {
+      "value": "Polarizada",
+      "source": "https://www.ipsos.com/es-pe"
+    }
   },
 
   "percepcionPublica": {
     "intencionVoto": {
       "min": 8,
       "max": 15,
-      "descripcion": "Estadísticamente: De 8% a 15%"
+      "descripcion": "Estadísticamente: De 8% a 15%",
+      "source": "https://www.ipsos.com/es-pe/encuestas"
     },
-    "aprobacion": "Estimada: Baja (Desaprobada)",
-    "redes": "Alto Engagement"
+    "aprobacion": {
+      "value": "Estimada: Baja (Desaprobada)",
+      "source": "https://www.ipsos.com/es-pe"
+    },
+    "redes": {
+      "value": "Alto Engagement",
+      "source": "https://www.socialblade.com"
+    }
   },
 
-  "innovacionYVision": ["Digitalización de trámites", "Poco énfasis ambiental"],
+  "innovacionYVision": {
+    "items": ["Digitalización de trámites", "Poco énfasis ambiental"],
+    "source": "https://www.fuerzapopular.pe/propuestas"
+  },
 
   "historialLegislativo": {
     "tieneHistorial": true,
     "asistencia": {
       "porcentaje": 85,
-      "label": "ALTA"
+      "label": "ALTA",
+      "source": "https://www.congreso.gob.pe/pleno/asistencia"
     },
     "proyectosPresentados": 20,
-    "proyectosAprobados": 6
+    "proyectosAprobados": 6,
+    "source": "https://www.congreso.gob.pe/congresistas/keiko-fujimori"
   }
 }

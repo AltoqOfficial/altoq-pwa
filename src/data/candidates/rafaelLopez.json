@@ -8,126 +8,244 @@
   "party": "Renovación Popular",
 
   "perfilGeneral": {
-    "edad": "63 años",
-    "nacimiento": "11/02/1961",
-    "lugar": "Chiclayo, Lambayeque",
-    "nivelEducativo": "Ingeniería Mecánica - Universidad Nacional de Ingeniería (UNI)",
-    "profesion": "Ingeniero / Empresario",
-    "partidoActual": "Renovación Popular",
-    "cambiosDePartido": "Solidaridad Nacional (hasta 2020) Renovación Popular (2020 - Actual)"
+    "edad": {
+      "value": "63 años",
+      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+    },
+    "nacimiento": {
+      "value": "11/02/1961",
+      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+    },
+    "lugar": {
+      "value": "Chiclayo, Lambayeque",
+      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+    },
+    "nivelEducativo": {
+      "value": "Ingeniería Mecánica - Universidad Nacional de Ingeniería (UNI)",
+      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+    },
+    "profesion": {
+      "value": "Ingeniero / Empresario",
+      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+    },
+    "partidoActual": {
+      "value": "Renovación Popular",
+      "source": "https://es.wikipedia.org/wiki/Renovación_Popular"
+    },
+    "cambiosDePartido": {
+      "value": "Solidaridad Nacional (hasta 2020) Renovación Popular (2020 - Actual)",
+      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+    }
   },
 
   "experienciaPolitica": {
-    "anosExperiencia": "12 Años en dirigencia política activa",
-    "cargosPrevios": [
-      "Regidor Metropolitano de Lima (2007-2010)",
-      "Presidente de Solidaridad Nacional (2019-2020)",
-      "Alcalde de Lima (2023-Actual)"
-    ],
-    "candidaturasPresidenciales": [
-      "2021 → 3er lugar en primera vuelta",
-      "2026 → Pre candidato"
-    ]
+    "anosExperiencia": {
+      "value": "12 Años en dirigencia política activa",
+      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+    },
+    "cargosPrevios": {
+      "values": [
+        "Regidor Metropolitano de Lima (2007-2010)",
+        "Presidente de Solidaridad Nacional (2019-2020)",
+        "Alcalde de Lima (2023-Actual)"
+      ],
+      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2021 → 3er lugar en primera vuelta", "2026 → Pre candidato"],
+      "source": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Perú_de_2021"
+    }
   },
 
   "experienciaGestion": {
     "sectorPublico": {
       "cantidad": 2,
-      "detalle": ["Alcalde de Lima (Gestión municipal)", "Regidor de Lima"]
+      "detalle": {
+        "values": ["Alcalde de Lima (Gestión municipal)", "Regidor de Lima"],
+        "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+      }
     },
     "sectorPrivado": {
       "cantidad": 2,
-      "detalle": [
-        "Presidente de PerúRail",
-        "Empresario hotelero (Hoteles San Agustín)"
-      ]
-    }
+      "detalle": {
+        "values": [
+          "Presidente de PerúRail",
+          "Empresario hotelero (Hoteles San Agustín)"
+        ],
+        "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+      }
+    },
+    "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
   },
 
   "ideologiaPolitica": {
-    "posicion": "Derecha conservadora - fuerte énfasis religioso",
-    "economia": "Liberal, anti-corrupción, reducción de impuestos",
-    "matrimonioIgualitario": "Rechaza",
-    "aborto": "Totalmente en contra",
-    "seguridad": "Mano dura total; propone cadena perpetua / trabajo forzado",
-    "ambiente": "Prioriza infraestructura",
-    "educacion": "Municipalización, apoyo a privados",
-    "reformaPolitica": "Recorte de sueldos del Estado, expulsión de corruptos"
+    "posicion": {
+      "value": "Derecha conservadora - fuerte énfasis religioso",
+      "source": "https://es.wikipedia.org/wiki/Renovación_Popular"
+    },
+    "economia": {
+      "value": "Liberal, anti-corrupción, reducción de impuestos",
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    },
+    "matrimonioIgualitario": {
+      "value": "Rechaza",
+      "source": "https://larepublica.pe/politica"
+    },
+    "aborto": {
+      "value": "Totalmente en contra",
+      "source": "https://larepublica.pe/politica"
+    },
+    "seguridad": {
+      "value": "Mano dura total; propone cadena perpetua / trabajo forzado",
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    },
+    "ambiente": {
+      "value": "Prioriza infraestructura",
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    },
+    "educacion": {
+      "value": "Municipalización, apoyo a privados",
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    },
+    "reformaPolitica": {
+      "value": "Recorte de sueldos del Estado, expulsión de corruptos",
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    }
   },
 
   "propuestasPrincipales": {
-    "economico": [
-      "Reducción de impuestos",
-      "Cero corrupción como motor económico"
-    ],
-    "social": ["Programas para mujeres y familias en pobreza"],
-    "ambiental": [
-      "No tiene desarrollo amplio; énfasis en obras y energía tradicional"
-    ],
-    "institucional": [
-      "Reingeniería del Estado",
-      "Expulsión inmediata de funcionarios corruptos"
-    ],
-    "educativo": [
-      "Crear 100 colegios municipales",
-      "Bachillerato técnico obligatorio"
-    ],
-    "salud": ["Hospitales de la Solidaridad ampliados"],
-    "seguridad": [
-      "Cárceles en islas flotantes",
-      "Patrullaje militar",
-      "Policía municipal armada"
-    ]
+    "economico": {
+      "values": [
+        "Reducción de impuestos",
+        "Cero corrupción como motor económico"
+      ],
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    },
+    "social": {
+      "values": ["Programas para mujeres y familias en pobreza"],
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    },
+    "ambiental": {
+      "values": [
+        "No tiene desarrollo amplio; énfasis en obras y energía tradicional"
+      ],
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    },
+    "institucional": {
+      "values": [
+        "Reingeniería del Estado",
+        "Expulsión inmediata de funcionarios corruptos"
+      ],
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    },
+    "educativo": {
+      "values": [
+        "Crear 100 colegios municipales",
+        "Bachillerato técnico obligatorio"
+      ],
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    },
+    "salud": {
+      "values": ["Hospitales de la Solidaridad ampliados"],
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    },
+    "seguridad": {
+      "values": [
+        "Cárceles en islas flotantes",
+        "Patrullaje militar",
+        "Policía municipal armada"
+      ],
+      "source": "https://www.renovacionpopular.pe/propuestas"
+    }
   },
 
   "coherenciaConElPlan": {
-    "nivelDeAlineacion": "Muy alta (su partido refleja su visión personal)",
-    "diferencias": "Infraestructura no detallada en plan original",
-    "cumplimientoPrevio": "Parcial - gestión en Lima Norte avances y críticas"
+    "nivelDeAlineacion": {
+      "value": "Muy alta (su partido refleja su visión personal)",
+      "source": "https://www.renovacionpopular.pe/plan-de-gobierno"
+    },
+    "diferencias": {
+      "value": "Infraestructura no detallada en plan original",
+      "source": "https://www.renovacionpopular.pe/plan-de-gobierno"
+    },
+    "cumplimientoPrevio": {
+      "value": "Parcial - gestión en Lima Norte avances y críticas",
+      "source": "https://larepublica.pe/politica"
+    }
   },
 
   "controversias": {
-    "investigaciones": ["Investigado por deudas tributarias con SUNAT"],
-    "enCurso": [
-      "Mencionado en Panama Papers",
-      "Denuncias públicas por declaraciones violentas"
-    ]
+    "investigaciones": {
+      "values": ["Investigado por deudas tributarias con SUNAT"],
+      "source": "https://larepublica.pe/politica"
+    },
+    "enCurso": {
+      "values": [
+        "Mencionado en Panama Papers",
+        "Denuncias públicas por declaraciones violentas"
+      ],
+      "source": "https://idl-reporteros.pe"
+    }
   },
 
-  "transparencia": [
-    "Declaración de bienes presentada",
-    "Alto nivel de autofinanciamiento"
-  ],
+  "transparencia": {
+    "items": [
+      "Declaración de bienes presentada",
+      "Alto nivel de autofinanciamiento"
+    ],
+    "source": "https://www.jne.gob.pe/declaraciones"
+  },
 
   "competenciasPersonales": {
-    "liderazgo": "Muy alto (control total en RP)",
-    "comunicacion": "Directa, confrontacional",
-    "credibilidad": "Polarizante"
+    "liderazgo": {
+      "value": "Muy alto (control total en RP)",
+      "source": "https://es.wikipedia.org/wiki/Renovación_Popular"
+    },
+    "comunicacion": {
+      "value": "Directa, confrontacional",
+      "source": "https://larepublica.pe/politica"
+    },
+    "credibilidad": {
+      "value": "Polarizante",
+      "source": "https://www.ipsos.com/es-pe"
+    }
   },
 
   "percepcionPublica": {
     "intencionVoto": {
       "min": 6,
       "max": 12,
-      "descripcion": "Estadísticamente: De 6% a 12%"
+      "descripcion": "Estadísticamente: De 6% a 12%",
+      "source": "https://www.ipsos.com/es-pe/encuestas"
     },
-    "aprobacion": "Estimada: Media - Baja",
-    "redes": "Muy activo y alto alcance"
+    "aprobacion": {
+      "value": "Estimada: Media - Baja",
+      "source": "https://www.ipsos.com/es-pe"
+    },
+    "redes": {
+      "value": "Muy activo y alto alcance",
+      "source": "https://www.socialblade.com"
+    }
   },
 
-  "innovacionYVision": [
-    "Gobierno digital municipal",
-    "No desarrolla agenda verde amplia"
-  ],
+  "innovacionYVision": {
+    "items": [
+      "Gobierno digital municipal",
+      "No desarrolla agenda verde amplia"
+    ],
+    "source": "https://www.renovacionpopular.pe/propuestas"
+  },
 
   "historialLegislativo": {
     "tieneHistorial": false,
     "asistencia": {
       "porcentaje": 0,
-      "label": "BAJA"
+      "label": "BAJA",
+      "source": null
     },
     "proyectosPresentados": 0,
     "proyectosAprobados": 0,
-    "nota": "No tiene historial legislativo (no fue congresista)"
+    "nota": "No tiene historial legislativo (no fue congresista)",
+    "source": null
   }
 }

@@ -8,6 +8,8 @@ import { useMediaQuery } from "@/hooks";
 interface CandidateSelectorProps {
   selectedCandidates: string[];
   onCandidateClick: (candidateId: string) => void;
+  /** If true, prevents deselecting already selected candidates */
+  lockSelection?: boolean;
 }
 
 /**
@@ -17,6 +19,7 @@ interface CandidateSelectorProps {
 export function CandidateSelector({
   selectedCandidates,
   onCandidateClick,
+  lockSelection = false,
 }: CandidateSelectorProps) {
   const uniqueId = useId();
   const noiseFilterId = `noiseSelectorFilter${uniqueId}`;
@@ -27,6 +30,16 @@ export function CandidateSelector({
   const isLgScreen = useMediaQuery("(min-width: 1024px)");
 
   const isDisabled = (candidate: Candidate) => !candidate.dataKey;
+
+  // Check if candidate is locked (selected and lockSelection is enabled)
+  const isLocked = (candidateId: string) =>
+    lockSelection && selectedCandidates.includes(candidateId);
+
+  const handleClick = (candidate: Candidate) => {
+    if (isDisabled(candidate)) return;
+    if (isLocked(candidate.id)) return; // Don't allow deselection when locked
+    onCandidateClick(candidate.id);
+  };
 
   const getBackgroundColor = (candidateId: string, candidate: Candidate) => {
     if (isDisabled(candidate)) return "#2a2a2a";
@@ -185,12 +198,14 @@ export function CandidateSelector({
           return (
             <button
               key={candidate.id}
-              onClick={() => !disabled && onCandidateClick(candidate.id)}
+              onClick={() => handleClick(candidate)}
               disabled={disabled}
               className={`relative transition-all duration-300 overflow-hidden border w-full aspect-square flex justify-center items-center group ${
                 disabled
                   ? "cursor-not-allowed border-[#555] opacity-60"
-                  : "cursor-pointer border-[#CECECE]"
+                  : isLocked(candidate.id)
+                    ? "cursor-default border-[#CECECE]"
+                    : "cursor-pointer border-[#CECECE]"
               }`}
             >
               {/* Background with noise */}
@@ -234,12 +249,14 @@ export function CandidateSelector({
           return (
             <button
               key={candidate.id}
-              onClick={() => !disabled && onCandidateClick(candidate.id)}
+              onClick={() => handleClick(candidate)}
               disabled={disabled}
               className={`relative transition-all duration-300 overflow-hidden border-2 w-full xl:h-18 xl:h-22 flex justify-center items-center group ${
                 disabled
                   ? "cursor-not-allowed border-[#555] opacity-60"
-                  : "cursor-pointer border-[#CECECE]"
+                  : isLocked(candidate.id)
+                    ? "cursor-default border-[#CECECE]"
+                    : "cursor-pointer border-[#CECECE]"
               }`}
             >
               {/* Background with noise */}

@@ -2,6 +2,11 @@
 
 import { Typography } from "@/components/atoms";
 import type { CandidateComparisonData } from "@/data";
+import {
+  SourceTooltip,
+  extractValue,
+  extractSource,
+} from "../components/shared";
 
 interface DynamicSectionProps {
   leftCandidate: CandidateComparisonData | null;
@@ -10,6 +15,7 @@ interface DynamicSectionProps {
 
 /**
  * Experiencia de Gestión Section
+ * Custom layout with sector counts and details with source tooltips
  */
 export function ExperienciaGestionSection({
   leftCandidate,
@@ -23,6 +29,7 @@ export function ExperienciaGestionSection({
       candidate?.experienciaGestion.sectorPublico.cantidad || 0;
     const privateCount =
       candidate?.experienciaGestion.sectorPrivado.cantidad || 0;
+    const sectionSource = candidate?.experienciaGestion.source;
 
     const getNumberColor = (count: number) => {
       if (count === 0) return "white";
@@ -34,10 +41,20 @@ export function ExperienciaGestionSection({
       return !isLeft ? "text-[#2F356E]" : "";
     };
 
+    // Extract public sector details
+    const publicDetalle = candidate?.experienciaGestion.sectorPublico.detalle;
+    const publicItems = (extractValue(publicDetalle) as string[]) || [];
+    const publicSource = extractSource(publicDetalle) || sectionSource;
+
+    // Extract private sector details
+    const privateDetalle = candidate?.experienciaGestion.sectorPrivado.detalle;
+    const privateItems = (extractValue(privateDetalle) as string[]) || [];
+    const privateSource = extractSource(privateDetalle) || sectionSource;
+
     return (
       <div className="w-full flex flex-col space-y-8 lg:space-y-16 py-8 lg:py-16 2xl:flex-row">
         {/* Sector Público */}
-        <div className="max-w-full lg:max-w-sm mx-auto ">
+        <div className="max-w-full lg:max-w-sm mx-auto">
           <div className="flex 2xl:flex-col items-center justify-center gap-2 mb-2">
             <Typography
               font="kenyan"
@@ -46,7 +63,9 @@ export function ExperienciaGestionSection({
               variant="h1"
               align="center"
             >
-              {publicCount}
+              <SourceTooltip source={sectionSource}>
+                {publicCount}
+              </SourceTooltip>
             </Typography>
             <Typography
               color="white"
@@ -63,17 +82,16 @@ export function ExperienciaGestionSection({
             align="center"
             className="text-[10px] lg:text-sm"
           >
-            {candidate?.experienciaGestion.sectorPublico.detalle?.map(
-              (item, index) => (
-                <span key={index}>
-                  {index + 1}. {item}
-                  {index <
-                    (candidate?.experienciaGestion.sectorPublico.detalle
-                      ?.length || 0) -
-                      1 && <br />}
-                </span>
-              )
-            ) || "-"}
+            <SourceTooltip source={publicSource}>
+              {publicItems.length > 0
+                ? publicItems.map((item, index) => (
+                    <span key={index}>
+                      {index + 1}. {item}
+                      {index < publicItems.length - 1 && <br />}
+                    </span>
+                  ))
+                : "-"}
+            </SourceTooltip>
           </Typography>
         </div>
 
@@ -82,7 +100,7 @@ export function ExperienciaGestionSection({
 
         {/* Sector Privado */}
         <div className="max-w-full lg:max-w-sm mx-auto">
-          <div className="flex  2xl:flex-col items-center justify-center gap-2 mb-2">
+          <div className="flex 2xl:flex-col items-center justify-center gap-2 mb-2">
             <Typography
               font="kenyan"
               color={getNumberColor(privateCount)}
@@ -90,7 +108,9 @@ export function ExperienciaGestionSection({
               variant="h1"
               align="center"
             >
-              {privateCount}
+              <SourceTooltip source={sectionSource}>
+                {privateCount}
+              </SourceTooltip>
             </Typography>
             <Typography
               color="white"
@@ -107,13 +127,15 @@ export function ExperienciaGestionSection({
             align="center"
             className="text-[10px] lg:text-base"
           >
-            {candidate?.experienciaGestion.sectorPrivado.detalle?.map(
-              (item, index) => (
-                <span key={index}>
-                  {index > 0 && <br />}- {item}
-                </span>
-              )
-            ) || "-"}
+            <SourceTooltip source={privateSource}>
+              {privateItems.length > 0
+                ? privateItems.map((item, index) => (
+                    <span key={index}>
+                      {index > 0 && <br />}- {item}
+                    </span>
+                  ))
+                : "-"}
+            </SourceTooltip>
           </Typography>
         </div>
       </div>
@@ -124,7 +146,7 @@ export function ExperienciaGestionSection({
     <div className="relative flex lg:flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 border-t border-white">
       {renderCandidateColumn(leftCandidate, true)}
       {/* Línea divisoria central */}
-      <div className=" absolute left-1/2 top-8 bottom-8 w-0.5 bg-white/50 -translate-x-1/2" />
+      <div className="absolute left-1/2 top-8 bottom-8 w-0.5 bg-white/50 -translate-x-1/2" />
       {renderCandidateColumn(rightCandidate, false)}
     </div>
   );

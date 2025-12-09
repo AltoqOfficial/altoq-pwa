@@ -2,6 +2,7 @@
 
 import { Typography } from "@/components/atoms";
 import { AttendanceChart } from "./AttendanceChart";
+import { SourceTooltip } from "./shared";
 
 interface LegislativeHistoryChartProps {
   hasHistory: boolean;
@@ -11,11 +12,14 @@ interface LegislativeHistoryChartProps {
   projectsApproved: number;
   note?: string;
   color: string;
+  source?: string | null;
+  attendanceSource?: string | null;
 }
 
 /**
  * Legislative History Chart Component
  * Displays attendance chart and legislative statistics
+ * Supports source tooltips on hover
  */
 export function LegislativeHistoryChart({
   hasHistory,
@@ -25,7 +29,12 @@ export function LegislativeHistoryChart({
   projectsApproved,
   note,
   color,
+  source,
+  attendanceSource,
 }: LegislativeHistoryChartProps) {
+  // Use attendanceSource if available, fallback to general source
+  const chartSource = attendanceSource || source || undefined;
+
   return (
     <div className="flex flex-col items-center w-full">
       <Typography
@@ -41,13 +50,15 @@ export function LegislativeHistoryChart({
       <div className="flex flex-col items-center gap-0">
         {/* Chart */}
         <div className="flex-shrink-0 -mb-8 lg:-mb-12 2xl:-mb-14">
-          <AttendanceChart
-            percentage={attendancePercentage}
-            label={attendanceLabel}
-            color={color}
-            projectsPresented={hasHistory ? projectsPresented : undefined}
-            projectsApproved={hasHistory ? projectsApproved : undefined}
-          />
+          <SourceTooltip source={chartSource}>
+            <AttendanceChart
+              percentage={attendancePercentage}
+              label={attendanceLabel}
+              color={color}
+              projectsPresented={hasHistory ? projectsPresented : undefined}
+              projectsApproved={hasHistory ? projectsApproved : undefined}
+            />
+          </SourceTooltip>
         </div>
 
         {/* Stats */}
@@ -61,7 +72,9 @@ export function LegislativeHistoryChart({
                 weight="200"
                 className="text-[10px] md:text-xs lg:text-base 2xl:text-lg"
               >
-                1. Proyectos presentados: {projectsPresented}
+                <SourceTooltip source={source || undefined}>
+                  1. Proyectos presentados: {projectsPresented}
+                </SourceTooltip>
               </Typography>
               <Typography
                 color="white"
@@ -70,7 +83,9 @@ export function LegislativeHistoryChart({
                 weight="200"
                 className="text-[10px] md:text-xs lg:text-base 2xl:text-lg"
               >
-                2. Proyectos aprobados: {projectsApproved}
+                <SourceTooltip source={source || undefined}>
+                  2. Proyectos aprobados: {projectsApproved}
+                </SourceTooltip>
               </Typography>
             </>
           ) : (
