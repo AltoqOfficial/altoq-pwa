@@ -13,7 +13,6 @@ interface HorizontalSectionsProps {
 export function HorizontalSections({
   children,
   activeIndex,
-  direction,
 }: HorizontalSectionsProps) {
   const childrenArray = React.Children.toArray(children);
 
