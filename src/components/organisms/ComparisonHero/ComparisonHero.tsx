@@ -120,6 +120,8 @@ export function ComparisonHero() {
     if (leftCandidate) {
       return {
         name: leftCandidate.fullName,
+        fullName: leftCandidate.fullName,
+        shortName: leftCandidate.shortName,
         image: leftCandidate.image,
         brightness: candidateData?.brightness ?? 1,
         contrast: candidateData?.contrast ?? 1,
@@ -156,6 +158,8 @@ export function ComparisonHero() {
     if (rightCandidate) {
       return {
         name: rightCandidate.fullName,
+        fullName: rightCandidate.fullName,
+        shortName: rightCandidate.shortName,
         image: rightCandidate.image,
         brightness: candidateData?.brightness ?? 1,
         contrast: candidateData?.contrast ?? 1,
@@ -216,7 +220,7 @@ export function ComparisonHero() {
   );
 
   return (
-    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 min-h-screen py-2">
+    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18  py-2">
       {/* SVG Filters for Noise Effect */}
       <svg width="0" height="0" className="absolute">
         <defs>
@@ -228,8 +232,8 @@ export function ComparisonHero() {
             x2="0%"
             y2="100%"
           >
-            <stop offset="0%" stopColor="#FF272780" />
-            <stop offset="100%" stopColor="#202020" />
+            <stop offset="0%" stopColor="#FF272790" stopOpacity="1" />
+            <stop offset="100%" stopColor="#202020" stopOpacity="0" />
           </linearGradient>
 
           {/* Gradient for Blue background */}
@@ -240,8 +244,8 @@ export function ComparisonHero() {
             x2="0%"
             y2="100%"
           >
-            <stop offset="0%" stopColor="#3E469240" />
-            <stop offset="100%" stopColor="#202020" />
+            <stop offset="0%" stopColor="#3E469270" stopOpacity="1" />
+            <stop offset="100%" stopColor="#202020" stopOpacity="0" />
           </linearGradient>
 
           {/* Gradient for Left candidate name (horizontal) */}
@@ -460,7 +464,6 @@ export function ComparisonHero() {
             <stop offset="100%" stopColor="#FF2F2F" />
           </linearGradient>
 
-          {/* Noise filter for Title */}
           <filter
             id={noiseFilterTitleId}
             x="-20%"
@@ -537,9 +540,9 @@ export function ComparisonHero() {
       </h1>
       {/* Hero Section */}
       <div className="w-full">
-        <div className="flex justify-center items-center flex-col w-full  h-[220px] md:h-full">
+        <div className="flex justify-center items-center flex-col w-full h-[220px] md:h-full">
           {/* Mobile/Tablet: Vertical layout, Desktop: 3-column grid */}
-          <div className="flex gap-2 h-full xl:gap-18 w-full">
+          <div className="flex gap-2 h-full xl:gap-15 2xl:gap-30 w-full">
             {/* Left Candidate - Mobile: smaller, centered */}
             <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden ">
               {/* Red gradient background square with noise */}
@@ -560,7 +563,7 @@ export function ComparisonHero() {
               </svg>
               {/* Candidate image on top */}
               {leftCandidateInfo ? (
-                <div className="relative w-full h-[220px] sm:h-[220px] md:h-[300px] xl:h-[600px] 2xl:h-screen xl:translate-y-8">
+                <div className="relative w-full h-[220px] sm:h-[220px] md:h-[300px] xl:h-[700px] 2xl:h-[86vh] xl:translate-y-20">
                   <Image
                     src={leftCandidateInfo.image}
                     alt={leftCandidateInfo.name}
@@ -570,17 +573,24 @@ export function ComparisonHero() {
                       filter: `brightness(${leftCandidateInfo.brightness * leftCandidateInfo.shadows}) contrast(${leftCandidateInfo.contrast}) saturate(${leftCandidateInfo.saturate}) sepia(${leftCandidateInfo.sepia})`,
                     }}
                   />
+                  {leftCandidateInfo && (
+                    <div className="absolute translate-y-160 translate-x-1/8 w-full bg-neutral-500 flex justify-center max-w-lg py-4 z-20">
+                      <span className="text-white text-xl font-semibold">
+                        {leftCandidateInfo.fullName}
+                      </span>
+                    </div>
+                  )}
                 </div>
               ) : null}
             </div>
-            <div className="flex flex-col gap-6 xl:gap-12 order-1 xl:order-2 xl:py-12 2xl:py-0 max-w-sm mx-auto md:max-w-132">
+            <div className="flex flex-col gap-6 xl:gap-12 order-1 xl:order-2 -mt-8 max-w-sm mx-auto md:max-w-132">
               <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center">
                 {/* Title for xl+ */}
                 <h1 className="hidden xl:flex font-sohne-schmal font-black text-7xl 2xl:text-8xl text-center items-center justify-center relative">
-                  <span className="bg-gradient-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent">
+                  <span className="bg-linear-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent">
                     A COMPARAR
                   </span>
-                  <span className="bg-gradient-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent text-[120px] 2xl:text-[140px] -translate-y-4 2xl:-translate-y-5">
+                  <span className="bg-linear-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent text-[120px] 2xl:text-[140px] -translate-y-4 2xl:-translate-y-5">
                     !
                   </span>
                   <span
@@ -590,7 +600,7 @@ export function ComparisonHero() {
                     }}
                   />
                 </h1>
-                <span className="text-[#fefefe] font-sohne-breit text-xs sm:text-[12px] md:text-lg text-center block w-29 sm:w-40 md:w-100 mx-auto">
+                <span className="text-[#fefefe] font-sohne-breit text-xs sm:text-[12px] md:text-lg lg:text-sm text-center block w-29 sm:w-40 md:w-100 mx-auto lg:-my-4">
                   Una comparación política basada en datos reales. Explora quién
                   propone más, quién tiene resultados y quién aún no los
                   demuestra.
@@ -624,7 +634,7 @@ export function ComparisonHero() {
               </svg>
               {/* Candidate image on top */}
               {rightCandidateInfo ? (
-                <div className="relative w-full h-[220px] sm:h-[240px] md:h-[300px] xl:h-[600px] 2xl:h-screen xl:translate-y-8">
+                <div className="relative w-full h-[220px] sm:h-60 md:h-[300px] xl:h-[700px] 2xl:h-[86vh] xl:translate-y-20">
                   <Image
                     src={rightCandidateInfo.image}
                     alt={rightCandidateInfo.name}
@@ -634,6 +644,13 @@ export function ComparisonHero() {
                       filter: `brightness(${rightCandidateInfo.brightness * rightCandidateInfo.shadows}) contrast(${rightCandidateInfo.contrast}) saturate(${rightCandidateInfo.saturate}) sepia(${rightCandidateInfo.sepia})`,
                     }}
                   />
+                  {rightCandidateInfo && (
+                    <div className="absolute translate-y-160 translate-x-1/6 w-full bg-neutral-500 flex justify-center max-w-lg py-4 z-20">
+                      <span className="text-white text-xl font-semibold">
+                        {rightCandidateInfo.fullName}
+                      </span>
+                    </div>
+                  )}
                 </div>
               ) : null}
             </div>
@@ -641,7 +658,7 @@ export function ComparisonHero() {
           {hasSelectedCandidates && (
             <button
               onClick={scrollToComparison}
-              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in  hidden xl:block -translate-y-30S"
+              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in  hidden xl:block xl:translate-y-8 2xl:-translate-y-11"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -674,7 +691,7 @@ export function ComparisonHero() {
                   />
                 </svg>
                 <h3 className="relative text-white font-bold text-4xl animate-slide-in-left animation-delay-100 font-kenyan py-2 px-4">
-                  {leftCandidateInfo.name}
+                  {leftCandidateInfo.shortName}
                 </h3>
               </>
             )}
@@ -731,7 +748,7 @@ export function ComparisonHero() {
                   />
                 </svg>
                 <h3 className="relative text-white font-bold text-4xl animate-slide-in-right animation-delay-100 font-kenyan text-end py-2 px-4">
-                  {rightCandidateInfo.name}
+                  {rightCandidateInfo.shortName}
                 </h3>
               </>
             )}
@@ -769,7 +786,7 @@ export function ComparisonHero() {
                     className="w-16 h-auto 2xl:w-[200px] 2xl:h-auto animate-slide-in-left hidden md:block"
                   />
                   <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl text-start animate-slide-in-left animation-delay-100 font-kenyan">
-                    {leftCandidateInfo.name}
+                    {leftCandidateInfo.shortName}
                   </h3>
                 </>
               )}
@@ -812,7 +829,7 @@ export function ComparisonHero() {
               {rightCandidateInfo && (
                 <>
                   <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl animate-slide-in-left animation-delay-100 font-kenyan text-end">
-                    {rightCandidateInfo.name}
+                    {rightCandidateInfo.shortName}
                   </h3>
                   <Image
                     src={rightCandidateInfo.image}

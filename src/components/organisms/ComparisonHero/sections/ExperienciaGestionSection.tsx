@@ -86,7 +86,7 @@ export function ExperienciaGestionSection({
               {publicItems.length > 0
                 ? publicItems.map((item, index) => (
                     <span key={index}>
-                      {index + 1}. {item}
+                      {item}
                       {index < publicItems.length - 1 && <br />}
                     </span>
                   ))
