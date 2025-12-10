@@ -9,6 +9,7 @@ import { Input } from "@/components/atoms/Input";
 import { Toast } from "@/components/atoms/Toast";
 import { cn } from "@/lib/utils";
 import { getDeviceInfo } from "@/lib/utils/deviceDetection";
+import { trackEvent } from "@/lib/analytics/gtag";
 
 export interface EmailSubscribeFormProps {
   /**
@@ -247,6 +248,9 @@ export function EmailSubscribeForm({
         setShowSuccessToast(true);
       }
 
+      // Rastrear evento de suscripción exitosa
+      trackEvent.emailSubscribe(email, accepted);
+
       // Iniciar cooldown después de envío exitoso
       startCooldown();
 
@@ -254,8 +258,15 @@ export function EmailSubscribeForm({
       setAccepted(false);
     } catch (error) {
       console.error("Error submitting form:", error);
-      setErrorMessage("Ocurrió un error. Por favor, intenta nuevamente.");
+      const errorMsg = "Ocurrió un error. Por favor, intenta nuevamente.";
+      setErrorMessage(errorMsg);
       setShowError(true);
+
+      // Rastrear error en Analytics
+      trackEvent.error(
+        error instanceof Error ? error.message : errorMsg,
+        "EmailSubscribeForm"
+      );
     } finally {
       setIsSubmitting(false);
     }

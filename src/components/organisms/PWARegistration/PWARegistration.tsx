@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { trackEvent } from "@/lib/analytics/gtag";
 
 /**
  * PWA Registration Component
@@ -47,6 +48,9 @@ export function PWARegistration() {
                 // New service worker available
                 console.log("[PWA] New version available");
                 setUpdateAvailable(true);
+
+                // Rastrear actualización de PWA disponible
+                trackEvent.pwaUpdate();
               }
             });
           }
@@ -57,6 +61,12 @@ export function PWARegistration() {
     };
 
     registerServiceWorker();
+
+    // Listen for PWA installation
+    window.addEventListener("appinstalled", () => {
+      console.log("[PWA] App was installed");
+      trackEvent.pwaInstall();
+    });
 
     // Listen for controller change (new SW activated)
     navigator.serviceWorker.addEventListener("controllerchange", () => {
