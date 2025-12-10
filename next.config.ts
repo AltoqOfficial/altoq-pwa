@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    qualities: [75, 90, 100], // Add 100 for high-quality logos
+    qualities: [100, 75], // 100 first for high-quality logos (default), 75 for general images
     minimumCacheTTL: 31536000, // 1 year for static assets
     remotePatterns: [
       {
