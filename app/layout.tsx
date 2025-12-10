@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { testSohneBreit, testSohneSchmal, kenyanCoffee } from "@/lib/fonts";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -7,6 +8,8 @@ import { generateMetadata as createMetadata } from "@/lib/config/seo";
 import { PWARegistration } from "@/components/organisms";
 import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
+import { GA_MEASUREMENT_ID } from "@/lib/analytics/gtag";
+import { Analytics } from "@/components/organisms/Analytics";
 
 export const metadata: Metadata = createMetadata();
 
@@ -35,6 +38,26 @@ export default function RootLayout({ children }: RootLayoutProps) {
       suppressHydrationWarning
     >
       <head>
+        {/* Google Analytics */}
+        {GA_MEASUREMENT_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_MEASUREMENT_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `}
+            </Script>
+          </>
+        )}
+
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.webmanifest" />
 
@@ -84,6 +107,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         />
       </head>
       <body className="antialiased" suppressHydrationWarning>
+        {/* Analytics - Track page views */}
+        <Analytics />
+
         {/* PWA Registration */}
         <PWARegistration />
 
