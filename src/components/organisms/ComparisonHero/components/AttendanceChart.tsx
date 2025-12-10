@@ -66,7 +66,7 @@ export function AttendanceChart({
   return (
     <div className="flex flex-col items-center w-full">
       {/* Chart Container */}
-      <div className="relative w-[120px] h-[70px] md:w-[160px] md:h-[90px] lg:w-[200px] lg:h-[110px] 2xl:w-[240px] 2xl:h-[130px]">
+      <div className="relative w-[120px] h-[70px] md:w-40 md:h-[90px] lg:w-[200px] lg:h-[110px] 2xl:w-60 2xl:h-[130px]">
         <Chart
           options={chartOptions}
           series={series}

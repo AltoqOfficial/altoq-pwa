@@ -3,7 +3,6 @@
 import { Typography } from "@/components/atoms";
 import type { FieldConfig } from "./types";
 import { renderValueWithSource } from "./utils";
-import type { SourceableValue } from "./utils";
 
 interface ComparisonGridProps {
   fields: FieldConfig[];
@@ -30,7 +29,11 @@ export function ComparisonGrid({
 }: ComparisonGridProps) {
   return (
     <div
-      className={`w-full border-t border-white space-y-12 lg:space-y-16 py-8 md:py-12 lg:py-16 ${className}`}
+      className={
+        className
+          ? `w-full border-t border-white space-y-12 lg:space-y-16 py-8 md:py-12 lg:py-16 ${className}`
+          : "w-full border-t border-white space-y-12 lg:space-y-16 py-8 md:py-12 lg:py-16"
+      }
     >
       {fields.map(({ key, label }) => (
         <div

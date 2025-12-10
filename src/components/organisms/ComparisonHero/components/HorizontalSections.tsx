@@ -14,6 +14,7 @@ interface HorizontalSectionsProps {
 export const HorizontalSections = memo(function HorizontalSections({
   children,
   activeIndex,
+  direction,
 }: HorizontalSectionsProps) {
   const childrenArray = useMemo(
     () => React.Children.toArray(children),

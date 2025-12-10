@@ -21,7 +21,7 @@ export function SectionWrapper({
   className,
 }: SectionWrapperProps) {
   return (
-    <div id={id} className={`w-full ${className || ""}`}>
+    <div id={id} className={className ? `w-full ${className}` : "w-full"}>
       <div className="px-4 md:px-12 space-y-4 md:space-y-6">
         <SectionHeader title={title} sectionId={sectionId} />
         {children}

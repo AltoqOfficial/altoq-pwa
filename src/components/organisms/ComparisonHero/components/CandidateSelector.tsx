@@ -99,7 +99,7 @@ const DesktopCandidateButton = memo(function DesktopCandidateButton({
     <button
       onClick={onClick}
       disabled={isDisabled}
-      className={`relative transition-all duration-300 overflow-hidden border-2 w-full xl:h-18 xl:h-22 flex justify-center items-center group ${
+      className={`relative transition-all duration-300 overflow-hidden border-2 w-full xl:h-18 flex justify-center items-center group ${
         isDisabled
           ? "cursor-not-allowed border-[#555] opacity-60"
           : isLocked
@@ -298,7 +298,6 @@ export const CandidateSelector = memo(function CandidateSelector({
         offset: getDesktopOffset(candidate),
       })),
     [
-      selectedCandidates,
       isDisabled,
       isLocked,
       getBackgroundColor,

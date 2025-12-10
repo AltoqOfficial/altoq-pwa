@@ -39,7 +39,7 @@ export function SourceTooltip({
 }: SourceTooltipProps) {
   const tooltipId = useId();
   const [isVisible, setIsVisible] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
   const [position, setPosition] = useState<"top" | "bottom">("top");
   const [horizontalOffset, setHorizontalOffset] = useState(0);
   const tooltipRef = useRef<HTMLSpanElement>(null);
@@ -71,7 +71,7 @@ export function SourceTooltip({
 
   // Close tooltip when clicking outside
   useEffect(() => {
-    if (!isVisible || !isMobile) return;
+    if (!isVisible || isMobile !== true) return;
 
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
       if (
@@ -96,7 +96,7 @@ export function SourceTooltip({
     if (contentRef.current) {
       const rect = contentRef.current.getBoundingClientRect();
       const viewportWidth = window.innerWidth;
-      const tooltipWidth = isMobile ? 200 : 280; // Approximate tooltip width
+      const tooltipWidth = isMobile === true ? 200 : 280; // Approximate tooltip width
 
       // Calculate horizontal offset to keep tooltip within viewport
       const elementCenter = rect.left + rect.width / 2;
@@ -153,7 +153,7 @@ export function SourceTooltip({
   // Handle click for mobile
   const handleClick = useCallback(
     (e: React.MouseEvent | React.TouchEvent) => {
-      if (isMobile) {
+      if (isMobile === true) {
         e.preventDefault();
         e.stopPropagation();
         if (isVisible) {
@@ -168,7 +168,7 @@ export function SourceTooltip({
 
   // Handle hover for desktop
   const handleMouseEnter = useCallback(() => {
-    if (!isMobile) {
+    if (isMobile === false) {
       // Cancel any pending hide timeout
       clearAllTimeouts();
 
@@ -180,7 +180,7 @@ export function SourceTooltip({
   }, [isMobile, clearAllTimeouts, showTooltip]);
 
   const handleMouseLeave = useCallback(() => {
-    if (!isMobile) {
+    if (isMobile === false) {
       // Cancel any pending show timeout
       clearAllTimeouts();
 
@@ -204,6 +204,11 @@ export function SourceTooltip({
   // If no source, just render children without tooltip
   if (!source) {
     return <>{children}</>;
+  }
+
+  // Don't render tooltip until we know if it's mobile or not (prevents hydration mismatch)
+  if (isMobile === null) {
+    return <span className={className}>{children}</span>;
   }
 
   // Truncate URL for display - shorter on mobile
