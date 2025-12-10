@@ -11,6 +11,7 @@ interface DynamicSectionProps {
 
 /**
  * Historial Legislativo Section with Charts
+ * Custom layout using LegislativeHistoryChart component with source tooltips
  */
 export function HistorialLegislativoSection({
   leftCandidate,
@@ -35,110 +36,54 @@ export function HistorialLegislativoSection({
     );
   }
 
+  const renderCandidateChart = (candidate: CandidateComparisonData | null) => {
+    if (candidate) {
+      return (
+        <LegislativeHistoryChart
+          hasHistory={candidate.historialLegislativo.tieneHistorial}
+          attendancePercentage={
+            candidate.historialLegislativo.asistencia.porcentaje
+          }
+          attendanceLabel={candidate.historialLegislativo.asistencia.label}
+          projectsPresented={
+            candidate.historialLegislativo.proyectosPresentados
+          }
+          projectsApproved={candidate.historialLegislativo.proyectosAprobados}
+          note={candidate.historialLegislativo.nota}
+          color={candidate.color}
+          source={candidate.historialLegislativo.source}
+          attendanceSource={candidate.historialLegislativo.asistencia.source}
+        />
+      );
+    }
+
+    return (
+      <div className="w-full h-48 md:h-64 flex items-center justify-center bg-white/5 rounded-lg">
+        <Typography
+          color="white"
+          variant="p"
+          className="opacity-50 text-sm md:text-base"
+        >
+          Sin seleccionar
+        </Typography>
+      </div>
+    );
+  };
+
   return (
-    <div className="w-full border-t border-white py-8 md:py-12 lg:py-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
+    <div className="w-full border-t border-white py-8 md:py-12 lg:py-20 2xl:py-28">
+      <div className="relative flex justify-center md:grid md:grid-cols-2 gap-16 md:gap-8 lg:gap-16 2xl:gap-32 items-start">
         {/* Left Candidate */}
-        <div className="flex flex-col items-center">
-          {leftCandidate && (
-            <>
-              <div
-                className="w-full max-w-[200px] md:max-w-xs mb-4 md:mb-6 py-1.5 md:py-2 px-3 md:px-4 rounded-full text-center"
-                style={{ backgroundColor: `${leftCandidate.color}30` }}
-              >
-                <Typography
-                  color="white"
-                  variant="h6"
-                  weight="600"
-                  className="text-sm md:text-base"
-                >
-                  {leftCandidate.shortName}
-                </Typography>
-              </div>
-              <LegislativeHistoryChart
-                hasHistory={leftCandidate.historialLegislativo.tieneHistorial}
-                attendancePercentage={
-                  leftCandidate.historialLegislativo.asistencia.porcentaje
-                }
-                attendanceLabel={
-                  leftCandidate.historialLegislativo.asistencia.label
-                }
-                projectsPresented={
-                  leftCandidate.historialLegislativo.proyectosPresentados
-                }
-                projectsApproved={
-                  leftCandidate.historialLegislativo.proyectosAprobados
-                }
-                note={leftCandidate.historialLegislativo.nota}
-                color={leftCandidate.color}
-              />
-            </>
-          )}
-          {!leftCandidate && (
-            <div className="w-full h-48 md:h-64 flex items-center justify-center bg-white/5 rounded-lg">
-              <Typography
-                color="white"
-                variant="p"
-                className="opacity-50 text-sm md:text-base"
-              >
-                Sin seleccionar
-              </Typography>
-            </div>
-          )}
+        <div className="flex items-center">
+          {renderCandidateChart(leftCandidate)}
         </div>
 
         {/* Divider */}
-        <div className="hidden md:flex justify-center items-center h-full">
-          <div className="w-px h-full min-h-[300px] md:min-h-[400px] bg-linear-to-b from-transparent via-white/30 to-transparent"></div>
-        </div>
+        <div className="absolute left-1/2 top-8 bottom-8 w-0.5 bg-white/50 -translate-x-1/2" />
 
         {/* Right Candidate */}
-        <div className="flex flex-col items-center">
-          {rightCandidate && (
-            <>
-              <div
-                className="w-full max-w-[200px] md:max-w-xs mb-4 md:mb-6 py-1.5 md:py-2 px-3 md:px-4 rounded-full text-center"
-                style={{ backgroundColor: `${rightCandidate.color}30` }}
-              >
-                <Typography
-                  color="white"
-                  variant="h6"
-                  weight="600"
-                  className="text-sm md:text-base"
-                >
-                  {rightCandidate.shortName}
-                </Typography>
-              </div>
-              <LegislativeHistoryChart
-                hasHistory={rightCandidate.historialLegislativo.tieneHistorial}
-                attendancePercentage={
-                  rightCandidate.historialLegislativo.asistencia.porcentaje
-                }
-                attendanceLabel={
-                  rightCandidate.historialLegislativo.asistencia.label
-                }
-                projectsPresented={
-                  rightCandidate.historialLegislativo.proyectosPresentados
-                }
-                projectsApproved={
-                  rightCandidate.historialLegislativo.proyectosAprobados
-                }
-                note={rightCandidate.historialLegislativo.nota}
-                color={rightCandidate.color}
-              />
-            </>
-          )}
-          {!rightCandidate && (
-            <div className="w-full h-48 md:h-64 flex items-center justify-center bg-white/5 rounded-lg">
-              <Typography
-                color="white"
-                variant="p"
-                className="opacity-50 text-sm md:text-base"
-              >
-                Sin seleccionar
-              </Typography>
-            </div>
-          )}
+        <div className="flex items-center">
+          {renderCandidateChart(rightCandidate)}
         </div>
       </div>
     </div>

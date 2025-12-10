@@ -26,7 +26,7 @@ export function SectionNavbar({
   const gradientNavId = `gradientNav${uniqueId}`;
 
   return (
-    <div id="comparison-navbar" className="w-full sticky top-0 z-50 relative">
+    <div id="comparison-navbar" className="w-full sticky top-0 z-50">
       {/* SVG Definitions for gradient and noise */}
       <svg width="0" height="0" className="absolute">
         <defs>
@@ -150,7 +150,7 @@ export function SectionNavbar({
                 weight="600"
                 variant="h4"
                 color="white"
-                className="uppercase whitespace-nowrap text-xs md:text-sm lg:text-base"
+                className="uppercase whitespace-nowrap text-4xl md:text-3xl lg:text-2xl"
               >
                 {item}
               </Typography>

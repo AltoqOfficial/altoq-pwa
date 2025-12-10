@@ -1,7 +1,6 @@
 "use client";
 
-import { useMemo, useId } from "react";
-import { PageHero } from "@/components/molecules/PageHero";
+import { useMemo, useId, useCallback, lazy, Suspense, memo } from "react";
 import Image from "next/image";
 import { Typography } from "@/components/atoms";
 import { useCandidateSelection, useSectionNavigation } from "@/hooks";
@@ -10,6 +9,8 @@ import {
   CandidateSelector,
   SectionWrapper,
   HorizontalSections,
+  SVGFilters,
+  getFilterIds,
 } from "./components";
 import {
   getCandidateDataKey,
@@ -17,34 +18,213 @@ import {
 } from "./components/CandidateSelector";
 import { NAV_ITEMS } from "./constants";
 import { getCandidateData } from "@/data";
+import type { CandidateComparisonData } from "@/data";
+import { ALL_SECTIONS_CONFIG } from "./config";
 
-// Import all section components
-import {
-  PerfilGeneralSection,
-  ExperienciaPoliticaSection,
-  ExperienciaGestionSection,
-  IdeologiaPoliticaSection,
-  PropuestasPrincipalesSection,
-  CoherenciaConElPlanSection,
-  ControversiasSection,
-  TransparenciaSection,
-  CompetenciasPersonalesSection,
-  PercepcionPublicaSection,
-  InnovacionYVisionSection,
-  HistorialLegislativoSection,
-} from "./sections";
+// Lazy load section components for better initial load performance
+const PerfilGeneralSection = lazy(() =>
+  import("./sections").then((m) => ({ default: m.PerfilGeneralSection }))
+);
+const ExperienciaPoliticaSection = lazy(() =>
+  import("./sections").then((m) => ({ default: m.ExperienciaPoliticaSection }))
+);
+const ExperienciaGestionSection = lazy(() =>
+  import("./sections").then((m) => ({ default: m.ExperienciaGestionSection }))
+);
+const IdeologiaPoliticaSection = lazy(() =>
+  import("./sections").then((m) => ({ default: m.IdeologiaPoliticaSection }))
+);
+const PropuestasPrincipalesSection = lazy(() =>
+  import("./sections").then((m) => ({
+    default: m.PropuestasPrincipalesSection,
+  }))
+);
+const CoherenciaConElPlanSection = lazy(() =>
+  import("./sections").then((m) => ({ default: m.CoherenciaConElPlanSection }))
+);
+const ControversiasSection = lazy(() =>
+  import("./sections").then((m) => ({ default: m.ControversiasSection }))
+);
+const TransparenciaSection = lazy(() =>
+  import("./sections").then((m) => ({ default: m.TransparenciaSection }))
+);
+const CompetenciasPersonalesSection = lazy(() =>
+  import("./sections").then((m) => ({
+    default: m.CompetenciasPersonalesSection,
+  }))
+);
+const PercepcionPublicaSection = lazy(() =>
+  import("./sections").then((m) => ({ default: m.PercepcionPublicaSection }))
+);
+const InnovacionYVisionSection = lazy(() =>
+  import("./sections").then((m) => ({ default: m.InnovacionYVisionSection }))
+);
+const HistorialLegislativoSection = lazy(() =>
+  import("./sections").then((m) => ({ default: m.HistorialLegislativoSection }))
+);
 
 /**
- * ComparisonHero Component (Organism)
+ * Section component mapping for dynamic rendering (lazy loaded)
+ */
+const SECTION_COMPONENTS: Record<
+  string,
+  React.LazyExoticComponent<
+    React.ComponentType<{
+      leftCandidate: CandidateComparisonData | null;
+      rightCandidate: CandidateComparisonData | null;
+    }>
+  >
+> = {
+  PerfilGeneral: PerfilGeneralSection,
+  ExperienciaPolitica: ExperienciaPoliticaSection,
+  ExperienciadeGestion: ExperienciaGestionSection,
+  IdeologiaPolitica: IdeologiaPoliticaSection,
+  PropuestasPrincipales: PropuestasPrincipalesSection,
+  CoherenciaconelPlan: CoherenciaConElPlanSection,
+  Controversias: ControversiasSection,
+  Transparencia: TransparenciaSection,
+  Competenciaspersonales: CompetenciasPersonalesSection,
+  PercepcionPublica: PercepcionPublicaSection,
+  InnovacionyVision: InnovacionYVisionSection,
+  HistorialLegislativo: HistorialLegislativoSection,
+};
+
+/**
+ * Loading fallback for lazy loaded sections
+ */
+const SectionLoadingFallback = memo(function SectionLoadingFallback() {
+  return (
+    <div className="flex items-center justify-center py-20">
+      <div className="animate-pulse flex flex-col items-center gap-4">
+        <div className="w-12 h-12 rounded-full bg-neutral-400/30" />
+        <div className="h-4 w-32 bg-neutral-400/30 rounded" />
+      </div>
+    </div>
+  );
+});
+
+/**
+ * Hero Title Component - Memoized for performance
+ */
+const HeroTitle = memo(function HeroTitle({
+  className = "",
+}: {
+  className?: string;
+}) {
+  return (
+    <h1
+      className={`font-sohne-schmal font-black text-center flex items-center justify-center relative ${className}`}
+    >
+      <span className="bg-linear-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent">
+        A COMPARAR
+      </span>
+      <span className="bg-linear-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent -translate-y-2 sm:-translate-y-3 md:-translate-y-4">
+        !
+      </span>
+    </h1>
+  );
+});
+
+/**
+ * VS Badge Component - Memoized
+ */
+const VSBadge = memo(function VSBadge({
+  gradientId,
+  filterId,
+  className = "",
+}: {
+  gradientId: string;
+  filterId: string;
+  className?: string;
+}) {
+  return (
+    <svg
+      viewBox="0 0 120 80"
+      className={className}
+      preserveAspectRatio="xMidYMid meet"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="VS"
+      role="img"
+    >
+      <text
+        x="50%"
+        y="50%"
+        dominantBaseline="central"
+        textAnchor="middle"
+        fill={`url(#${gradientId})`}
+        filter={`url(#${filterId})`}
+        fontFamily="var(--font-kenyan-coffee)"
+        fontWeight="600"
+        fontSize="60"
+      >
+        VS
+      </text>
+    </svg>
+  );
+});
+
+/**
+ * Candidate Image Component - Optimized with priority loading for hero images
+ */
+const CandidateImage = memo(function CandidateImage({
+  candidate,
+  side,
+  isHero = false,
+}: {
+  candidate: {
+    name: string;
+    fullName?: string;
+    image: string;
+    brightness: number;
+    contrast: number;
+    saturate: number;
+    sepia: number;
+    shadows: number;
+  };
+  side: "left" | "right";
+  isHero?: boolean;
+}) {
+  const filterStyle = `brightness(${candidate.brightness * candidate.shadows}) contrast(${candidate.contrast}) saturate(${candidate.saturate}) sepia(${candidate.sepia})`;
+
+  if (isHero) {
+    return (
+      <div
+        className={`relative w-full h-[220px] sm:h-[220px] md:h-[300px] xl:h-[700px] 2xl:h-[86vh] xl:translate-y-20`}
+      >
+        <Image
+          src={candidate.image}
+          alt={candidate.name}
+          fill
+          priority
+          className={`object-cover ${side === "left" ? "object-right" : "object-left"} z-10 animate-candidate-appear xl:scale-100 2xl:scale-108`}
+          style={{ filter: filterStyle }}
+        />
+        {candidate.fullName && (
+          <div className="absolute hidden xl:flex xl:top-[59vh] 2xl:top-[65vh] left-1/2 -translate-x-1/2 bg-neutral-500 justify-center px-6 py-4 z-20 whitespace-nowrap">
+            <span className="text-white xl:text-lg 2xl:text-xl font-semibold">
+              {candidate.fullName}
+            </span>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <Image
+      src={candidate.image}
+      alt={candidate.name}
+      width={140}
+      height={80}
+      loading="lazy"
+      className="w-16 h-auto 2xl:w-[200px] 2xl:h-auto animate-slide-in-left hidden md:block"
+    />
+  );
+});
+
+/**
+ * ComparisonHero Component (Organism) - Optimized
  * Hero section for the Compare Candidates page
- *
- * Uses PageHero molecule for consistent hero section pattern
- * Allows selecting two candidates to compare:
- * - First selection: Red background (#FF2727)
- * - Second selection: Blue background (#3E4692)
- *
- * Sections are displayed horizontally and slide left/right on navigation
- * Content is dynamically loaded based on selected candidates
  */
 export function ComparisonHero() {
   const { selectedCandidates, handleCandidateClick } = useCandidateSelection();
@@ -60,12 +240,9 @@ export function ComparisonHero() {
 
   // Unique IDs for SVG filters
   const uniqueId = useId();
-  const noiseFilterRedId = `noiseFilterRed${uniqueId}`;
-  const noiseFilterBlueId = `noiseFilterBlue${uniqueId}`;
-  const noiseFilterVSId = `noiseFilterVS${uniqueId}`;
-  const gradientVSId = `gradientVS${uniqueId}`;
+  const filterIds = useMemo(() => getFilterIds(uniqueId), [uniqueId]);
 
-  // Get candidate data based on selection
+  // Get candidate data based on selection - memoized
   const { leftCandidate, rightCandidate } = useMemo(() => {
     const leftId = selectedCandidates[0];
     const rightId = selectedCandidates[1];
@@ -79,25 +256,36 @@ export function ComparisonHero() {
     };
   }, [selectedCandidates]);
 
-  // Get candidate info for hero display (uses CANDIDATES data as fallback)
+  // Get candidate info for hero display - memoized
   const leftCandidateInfo = useMemo(() => {
     const leftId = selectedCandidates[0];
     if (!leftId) return null;
 
-    // First try to get from full candidate data
+    const candidateData = getCandidateById(leftId);
+
     if (leftCandidate) {
       return {
         name: leftCandidate.fullName,
+        fullName: leftCandidate.fullName,
+        shortName: leftCandidate.shortName,
         image: leftCandidate.image,
+        brightness: candidateData?.brightness ?? 1,
+        contrast: candidateData?.contrast ?? 1,
+        saturate: candidateData?.saturate ?? 1,
+        sepia: candidateData?.sepia ?? 0,
+        shadows: candidateData?.shadows ?? 1,
       };
     }
 
-    // Fallback to CANDIDATES array
-    const candidate = getCandidateById(leftId);
-    if (candidate) {
+    if (candidateData) {
       return {
-        name: candidate.name,
-        image: candidate.src,
+        name: candidateData.name,
+        image: candidateData.src,
+        brightness: candidateData.brightness ?? 1,
+        contrast: candidateData.contrast ?? 1,
+        saturate: candidateData.saturate ?? 1,
+        sepia: candidateData.sepia ?? 0,
+        shadows: candidateData.shadows ?? 1,
       };
     }
 
@@ -108,421 +296,303 @@ export function ComparisonHero() {
     const rightId = selectedCandidates[1];
     if (!rightId) return null;
 
-    // First try to get from full candidate data
+    const candidateData = getCandidateById(rightId);
+
     if (rightCandidate) {
       return {
         name: rightCandidate.fullName,
+        fullName: rightCandidate.fullName,
+        shortName: rightCandidate.shortName,
         image: rightCandidate.image,
+        brightness: candidateData?.brightness ?? 1,
+        contrast: candidateData?.contrast ?? 1,
+        saturate: candidateData?.saturate ?? 1,
+        sepia: candidateData?.sepia ?? 0,
+        shadows: candidateData?.shadows ?? 1,
       };
     }
 
-    // Fallback to CANDIDATES array
-    const candidate = getCandidateById(rightId);
-    if (candidate) {
+    if (candidateData) {
       return {
-        name: candidate.name,
-        image: candidate.src,
+        name: candidateData.name,
+        image: candidateData.src,
+        brightness: candidateData.brightness ?? 1,
+        contrast: candidateData.contrast ?? 1,
+        saturate: candidateData.saturate ?? 1,
+        sepia: candidateData.sepia ?? 0,
+        shadows: candidateData.shadows ?? 1,
       };
     }
 
     return null;
   }, [selectedCandidates, rightCandidate]);
 
-  // Check if at least one candidate is selected
   const hasSelectedCandidates = leftCandidateInfo || rightCandidateInfo;
 
+  // Scroll to comparison navbar
+  const scrollToComparison = useCallback(() => {
+    const navbarElement = document.getElementById("comparison-navbar");
+    if (navbarElement) {
+      navbarElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
+  // Render a section dynamically based on config - memoized
+  const renderSection = useCallback(
+    (config: (typeof ALL_SECTIONS_CONFIG)[0]) => {
+      const SectionComponent = SECTION_COMPONENTS[config.id];
+      if (!SectionComponent) return null;
+
+      return (
+        <SectionWrapper
+          key={config.id}
+          id={config.id}
+          title={config.title}
+          sectionId={config.navId}
+        >
+          <Suspense fallback={<SectionLoadingFallback />}>
+            <SectionComponent
+              leftCandidate={leftCandidate}
+              rightCandidate={rightCandidate}
+            />
+          </Suspense>
+        </SectionWrapper>
+      );
+    },
+    [leftCandidate, rightCandidate]
+  );
+
   return (
-    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-8 md:space-y-12 lg:space-y-18">
-      {/* SVG Filters for Noise Effect */}
-      <svg width="0" height="0" className="absolute">
-        <defs>
-          {/* Gradient for Red background */}
-          <linearGradient
-            id={`gradientRed${uniqueId}`}
-            x1="0%"
-            y1="0%"
-            x2="0%"
-            y2="100%"
-          >
-            <stop offset="0%" stopColor="#FF272780" />
-            <stop offset="100%" stopColor="#202020" />
-          </linearGradient>
+    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 py-2">
+      {/* Centralized SVG Filters - rendered once */}
+      <SVGFilters uniqueId={uniqueId} />
 
-          {/* Gradient for Blue background */}
-          <linearGradient
-            id={`gradientBlue${uniqueId}`}
-            x1="0%"
-            y1="0%"
-            x2="0%"
-            y2="100%"
-          >
-            <stop offset="0%" stopColor="#3E469240" />
-            <stop offset="100%" stopColor="#202020" />
-          </linearGradient>
-
-          {/* Noise filter for Red */}
-          <filter
-            id={noiseFilterRedId}
-            x="-20%"
-            y="-20%"
-            width="140%"
-            height="140%"
-            filterUnits="objectBoundingBox"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="1.25 1.25"
-              numOctaves={3}
-              result="noise"
-              seed={4254}
-              stitchTiles="stitch"
-            />
-            <feColorMatrix
-              in="noise"
-              type="luminanceToAlpha"
-              result="alphaNoise"
-            />
-            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
-              <feFuncA
-                type="discrete"
-                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
-              />
-            </feComponentTransfer>
-            <feComposite
-              operator="in"
-              in2="shape"
-              in="coloredNoise1"
-              result="noise1Clipped"
-            />
-            <feFlood
-              floodColor="rgba(255, 255, 255, 0.2)"
-              result="color1Flood"
-            />
-            <feComposite
-              operator="in"
-              in2="noise1Clipped"
-              in="color1Flood"
-              result="color1"
-            />
-            <feMerge result="effect1_noise">
-              <feMergeNode in="shape" />
-              <feMergeNode in="color1" />
-            </feMerge>
-          </filter>
-
-          {/* Noise filter for Blue */}
-          <filter
-            id={noiseFilterBlueId}
-            x="-20%"
-            y="-20%"
-            width="140%"
-            height="140%"
-            filterUnits="objectBoundingBox"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="1.25 1.25"
-              numOctaves={3}
-              result="noise"
-              seed={4254}
-              stitchTiles="stitch"
-            />
-            <feColorMatrix
-              in="noise"
-              type="luminanceToAlpha"
-              result="alphaNoise"
-            />
-            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
-              <feFuncA
-                type="discrete"
-                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
-              />
-            </feComponentTransfer>
-            <feComposite
-              operator="in"
-              in2="shape"
-              in="coloredNoise1"
-              result="noise1Clipped"
-            />
-            <feFlood
-              floodColor="rgba(255, 255, 255, 0.2)"
-              result="color1Flood"
-            />
-            <feComposite
-              operator="in"
-              in2="noise1Clipped"
-              in="color1Flood"
-              result="color1"
-            />
-            <feMerge result="effect1_noise">
-              <feMergeNode in="shape" />
-              <feMergeNode in="color1" />
-            </feMerge>
-          </filter>
-
-          {/* Gradient for VS text */}
-          <linearGradient id={gradientVSId} x1="50%" y1="0%" x2="50%" y2="100%">
-            <stop offset="0%" stopColor="#A90003" />
-            <stop offset="100%" stopColor="#FF2F2F" />
-          </linearGradient>
-
-          {/* Noise filter for VS */}
-          <filter
-            id={noiseFilterVSId}
-            x="-20%"
-            y="-20%"
-            width="140%"
-            height="140%"
-            filterUnits="objectBoundingBox"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="1.25 1.25"
-              numOctaves={3}
-              result="noise"
-              seed={4254}
-              stitchTiles="stitch"
-            />
-            <feColorMatrix
-              in="noise"
-              type="luminanceToAlpha"
-              result="alphaNoise"
-            />
-            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
-              <feFuncA
-                type="discrete"
-                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
-              />
-            </feComponentTransfer>
-            <feComposite
-              operator="in"
-              in2="shape"
-              in="coloredNoise1"
-              result="noise1Clipped"
-            />
-            <feFlood
-              floodColor="rgba(255, 255, 255, 0.2)"
-              result="color1Flood"
-            />
-            <feComposite
-              operator="in"
-              in2="noise1Clipped"
-              in="color1Flood"
-              result="color1"
-            />
-            <feMerge result="effect1_noise">
-              <feMergeNode in="shape" />
-              <feMergeNode in="color1" />
-            </feMerge>
-          </filter>
-        </defs>
-      </svg>
+      {/* Title for mobile/tablet/lg */}
+      <HeroTitle className="xl:hidden text-5xl sm:text-6xl md:text-7xl [&>span:last-child]:text-[80px] [&>span:last-child]:sm:text-[100px] [&>span:last-child]:md:text-[120px]" />
 
       {/* Hero Section */}
-      <div className="flex justify-center items-center flex-col w-full">
-        {/* Mobile/Tablet: Vertical layout, Desktop: 3-column grid */}
-        <div className="flex flex-col lg:flex-row p-4 md:p-8 lg:p-0 gap-12 w-full lg:h-[700px] lg:gap-0">
-          {/* Left Candidate - Mobile: smaller, centered */}
-          <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-none lg:flex-1 h-[350px] md:h-[450px] lg:h-full mx-auto lg:mx-0 order-2 lg:order-1 overflow-hidden">
-            {/* Red gradient background square with noise */}
-            <svg
-              className={`absolute top-0 left-auto lg:right-0 transition-all duration-500 ease-out lg:w-[450px] lg:h-full w-full h-full ${
-                leftCandidateInfo
-                  ? "opacity-100 scale-100"
-                  : "opacity-70 scale-100"
-              }`}
-              preserveAspectRatio="none"
+      <div className="w-full">
+        <div className="flex justify-center items-center flex-col w-full h-[220px] md:h-full">
+          <div className="flex gap-2 h-full xl:gap-15 2xl:gap-30 w-full">
+            {/* Left Candidate */}
+            <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden">
+              {/* Red gradient background with noise */}
+              <svg
+                className={`absolute top-0 left-auto xl:right-0 transition-all duration-500 ease-out xl:w-[450px] w-full h-full hidden xl:block ${
+                  leftCandidateInfo
+                    ? "opacity-100 scale-100"
+                    : "opacity-40 scale-100"
+                }`}
+                preserveAspectRatio="none"
+              >
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill={`url(#${filterIds.gradientRed})`}
+                  filter={`url(#${filterIds.noiseFilter})`}
+                />
+              </svg>
+              {leftCandidateInfo && (
+                <CandidateImage
+                  candidate={leftCandidateInfo}
+                  side="left"
+                  isHero
+                />
+              )}
+            </div>
+
+            {/* Center Content */}
+            <div className="flex flex-col gap-6 xl:gap-12 order-1 xl:order-2 -mt-8 max-w-sm mx-auto md:max-w-132">
+              <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center">
+                <HeroTitle className="hidden xl:flex text-7xl 2xl:text-8xl [&>span:last-child]:text-[120px] [&>span:last-child]:2xl:text-[140px] [&>span:last-child]:-translate-y-4 [&>span:last-child]:2xl:-translate-y-5" />
+                <span className="text-[#fefefe] font-sohne-breit text-xs sm:text-[12px] md:text-lg lg:text-sm text-center block w-29 sm:w-40 md:w-100 mx-auto lg:-my-4">
+                  Una comparación política basada en datos reales. Explora quién
+                  propone más, quién tiene resultados y quién aún no los
+                  demuestra.
+                </span>
+              </div>
+              <div className="hidden xl:flex">
+                <CandidateSelector
+                  selectedCandidates={selectedCandidates}
+                  onCandidateClick={handleCandidateClick}
+                  lockSelection={true}
+                />
+              </div>
+            </div>
+
+            {/* Right Candidate */}
+            <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-3 overflow-hidden">
+              <svg
+                className={`absolute top-0 right-auto xl:left-0 transition-all duration-500 ease-out xl:w-[450px] xl:h-full w-full h-full hidden xl:block ${
+                  rightCandidateInfo
+                    ? "opacity-100 scale-100"
+                    : "opacity-70 scale-100"
+                }`}
+                preserveAspectRatio="none"
+              >
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill={`url(#${filterIds.gradientBlue})`}
+                  filter={`url(#${filterIds.noiseFilter})`}
+                />
+              </svg>
+              {rightCandidateInfo && (
+                <CandidateImage
+                  candidate={rightCandidateInfo}
+                  side="right"
+                  isHero
+                />
+              )}
+            </div>
+          </div>
+
+          {hasSelectedCandidates && (
+            <button
+              onClick={scrollToComparison}
+              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in hidden xl:block xl:translate-y-8 2xl:-translate-y-11"
+              aria-label="Ir a comparación"
             >
-              <rect
-                width="100%"
-                height="100%"
-                fill={`url(#gradientRed${uniqueId})`}
-                filter={`url(#${noiseFilterRedId})`}
-              />
-            </svg>
-            {/* Candidate image on top */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="17"
+                viewBox="0 0 45 17"
+                fill="none"
+              >
+                <path
+                  d="M43 0L22.6852 13L2.5 0L0 2.02381L22.6852 17L45 2.02381L43 0Z"
+                  fill="#FEFEFE"
+                />
+              </svg>
+            </button>
+          )}
+        </div>
+
+        {/* Mobile candidate names */}
+        <div className="flex gap-4 justify-center items-center w-full xl:px-6 xl:hidden overflow-hidden">
+          <div className="relative flex items-center justify-center">
             {leftCandidateInfo ? (
-              <Image
-                src={leftCandidateInfo.image}
-                alt={leftCandidateInfo.name}
-                fill
-                className="relative object-cover object-center lg:object-left z-10 animate-candidate-appear"
-              />
-            ) : null}
+              <>
+                <svg
+                  className="absolute inset-0 -left-6 right-1/2 w-[calc(100%+1.5rem)] h-full opacity-80"
+                  preserveAspectRatio="none"
+                >
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill={`url(#${filterIds.gradientLeftName})`}
+                    filter={`url(#${filterIds.noiseFilter})`}
+                  />
+                </svg>
+                <h3 className="relative text-white font-bold text-4xl animate-slide-in-left animation-delay-100 font-kenyan py-2 px-4">
+                  {leftCandidateInfo.shortName}
+                </h3>
+              </>
+            ) : (
+              <Typography
+                font="kenyan"
+                className="text-white/50 font-bold text-xl xl:text-4xl px-8"
+                variant="h1"
+              >
+                Selecciona candidato
+              </Typography>
+            )}
           </div>
-          {/* Center Content - Selector */}
-          <div className="flex justify-center flex-col items-center gap-6 md:gap-8 lg:gap-12 order-1 lg:order-2 lg:px-8 lg:py-12">
-            <PageHero
-              title="A COMPARAR!"
-              description="Una comparación política basada en datos reales. Explora quién propone más, quién tiene resultados y quién aún no lo demuestra."
-              className="bg-neutral-500 text-center max-w-md md:max-w-lg"
-            />
-            <CandidateSelector
-              selectedCandidates={selectedCandidates}
-              onCandidateClick={handleCandidateClick}
+
+          <div className="flex items-center justify-center xl:order-0 scale-150 md:scale-90 w-1/2">
+            <VSBadge
+              gradientId={filterIds.gradientVS}
+              filterId={filterIds.noiseFilter}
+              className="w-[100px] h-auto md:w-[140px] xl:w-[180px]"
             />
           </div>
-          {/* Right Candidate */}
-          <div className="relative w-full max-w-[280px] md:max-w-[350px] lg:max-w-none lg:flex-1 h-[350px] md:h-[450px] lg:h-full mx-auto lg:mx-0 order-3 overflow-hidden">
-            {/* Blue gradient background square with noise */}
-            <svg
-              className={`absolute top-0 right-auto lg:left-0 transition-all duration-500 ease-out lg:w-[450px] lg:h-full w-full h-full ${
-                rightCandidateInfo
-                  ? "opacity-100 scale-100"
-                  : "opacity-70 scale-100"
-              }`}
-              preserveAspectRatio="none"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill={`url(#gradientBlue${uniqueId})`}
-                filter={`url(#${noiseFilterBlueId})`}
-              />
-            </svg>
-            {/* Candidate image on top */}
+
+          <div className="relative flex items-center justify-center xl:justify-end overflow-visible">
             {rightCandidateInfo ? (
-              <Image
-                src={rightCandidateInfo.image}
-                alt={rightCandidateInfo.name}
-                fill
-                className="relative object-cover object-center lg:object-right z-10 animate-candidate-appear"
-              />
-            ) : null}
+              <>
+                <svg
+                  className="absolute top-0 bottom-0 left-0 h-full"
+                  style={{ width: "calc(100% + 1.5rem)", right: "-1.5rem" }}
+                  preserveAspectRatio="none"
+                >
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill={`url(#${filterIds.gradientRightName})`}
+                    filter={`url(#${filterIds.noiseFilter})`}
+                  />
+                </svg>
+                <h3 className="relative text-white font-bold text-4xl animate-slide-in-right animation-delay-100 font-kenyan text-end py-2 px-4">
+                  {rightCandidateInfo.shortName}
+                </h3>
+              </>
+            ) : (
+              <Typography
+                font="kenyan"
+                className="text-white/50 font-bold text-xl xl:text-4xl px-8"
+                variant="h1"
+                align="right"
+              >
+                Selecciona candidato
+              </Typography>
+            )}
           </div>
         </div>
-        {hasSelectedCandidates && (
-          <button
-            onClick={() => {
-              const navbarElement =
-                document.getElementById("comparison-navbar");
-              if (navbarElement) {
-                navbarElement.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-            className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="45"
-              height="17"
-              viewBox="0 0 45 17"
-              fill="none"
-            >
-              <path
-                d="M43 0L22.6852 13L2.5 0L0 2.02381L22.6852 17L45 2.02381L43 0Z"
-                fill="#FEFEFE"
-              />
-            </svg>
-          </button>
-        )}
       </div>
 
-      {/* VS Section, Navigation Bar and Comparison Sections - Only show when candidates are selected */}
+      {/* Mobile Candidate Selector */}
+      <div className="flex xl:hidden">
+        <CandidateSelector
+          selectedCandidates={selectedCandidates}
+          onCandidateClick={handleCandidateClick}
+          lockSelection={true}
+        />
+      </div>
+
       {hasSelectedCandidates && (
         <>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-0 w-full max-w-7xl px-4 md:px-8 lg:px-12">
-            <div className="flex items-center justify-center md:justify-start gap-4 md:gap-6 lg:gap-12">
-              {leftCandidateInfo && (
+          {/* Desktop candidate names bar */}
+          <div className="hidden xl:flex gap-4 xl:gap-12 justify-center 2xl:justify-between items-center w-full xl:max-w-336 2xl:max-w-500 px-4 xl:px-12">
+            <div className="flex items-center justify-center xl:justify-start gap-4 xl:gap-12">
+              {leftCandidateInfo ? (
                 <>
-                  <Image
-                    src={leftCandidateInfo.image}
-                    alt={leftCandidateInfo.name}
-                    width={140}
-                    height={80}
-                    className="w-16 h-auto md:w-24 lg:w-[140px] animate-slide-in-left"
-                  />
-                  <Typography
-                    font="kenyan"
-                    className="text-white font-bold text-2xl md:text-3xl lg:text-5xl animate-slide-in-left animation-delay-100"
-                    variant="h1"
-                  >
-                    {leftCandidateInfo.name}
-                  </Typography>
+                  <CandidateImage candidate={leftCandidateInfo} side="left" />
+                  <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl text-start animate-slide-in-left animation-delay-100 font-kenyan">
+                    {leftCandidateInfo.shortName}
+                  </h3>
                 </>
-              )}
-              {!leftCandidateInfo && (
+              ) : (
                 <Typography
                   font="kenyan"
-                  className="text-white/50 font-bold text-xl md:text-2xl lg:text-4xl"
+                  className="text-white/50 font-bold text-xl xl:text-4xl"
                   variant="h1"
                 >
                   Selecciona candidato
                 </Typography>
               )}
             </div>
-            <div className="flex items-center justify-center order-first md:order-0">
-              <svg
-                viewBox="0 0 120 80"
-                className="w-[100px] h-auto md:w-[140px] lg:w-[180px]"
-                preserveAspectRatio="xMidYMid meet"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-label="VS"
-                role="img"
-              >
-                <text
-                  x="50%"
-                  y="50%"
-                  dominantBaseline="central"
-                  textAnchor="middle"
-                  fill={`url(#${gradientVSId})`}
-                  filter={`url(#${noiseFilterVSId})`}
-                  fontFamily="var(--font-kenyan-coffee)"
-                  fontWeight="600"
-                  fontSize="60"
-                >
-                  VS
-                </text>
-              </svg>
+
+            <div className="flex items-center justify-center xl:order-0 xl:scale-80 2xl:scale-110 2xl:px-32">
+              <VSBadge
+                gradientId={filterIds.gradientVS}
+                filterId={filterIds.noiseFilter}
+                className="w-[100px] h-auto md:w-[140px] xl:w-[180px]"
+              />
             </div>
-            <div className="flex items-center justify-center md:justify-end gap-4 md:gap-6 lg:gap-12">
-              {rightCandidateInfo && (
+
+            <div className="flex items-center justify-center xl:justify-end gap-4 xl:gap-12">
+              {rightCandidateInfo ? (
                 <>
-                  <Typography
-                    font="kenyan"
-                    className="text-white font-bold text-2xl md:text-3xl lg:text-5xl md:order-1 order-2 animate-slide-in-right animation-delay-100"
-                    variant="h1"
-                    align="right"
-                  >
-                    {rightCandidateInfo.name}
-                  </Typography>
-                  <Image
-                    src={rightCandidateInfo.image}
-                    alt={rightCandidateInfo.name}
-                    width={140}
-                    height={80}
-                    className="w-16 h-auto md:w-24 lg:w-[140px] md:order-2 order-1 animate-slide-in-right"
-                  />
+                  <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl animate-slide-in-left animation-delay-100 font-kenyan text-end">
+                    {rightCandidateInfo.shortName}
+                  </h3>
+                  <CandidateImage candidate={rightCandidateInfo} side="right" />
                 </>
-              )}
-              {!rightCandidateInfo && (
+              ) : (
                 <Typography
                   font="kenyan"
-                  className="text-white/50 font-bold text-xl md:text-2xl lg:text-4xl"
+                  className="text-white/50 font-bold text-xl xl:text-4xl"
                   variant="h1"
                   align="right"
                 >
@@ -540,154 +610,12 @@ export function ComparisonHero() {
             onScrollNav={scrollNav}
           />
 
-          {/* Horizontal Sections Container */}
+          {/* Horizontal Sections Container - Rendered dynamically with lazy loading */}
           <HorizontalSections
             activeIndex={activeNavIndex}
             direction={scrollDirection}
           >
-            {/* Perfil General Section */}
-            <SectionWrapper
-              id="PerfilGeneral"
-              title="PERFIL GENERAL"
-              sectionId="PerfilGeneral"
-            >
-              <PerfilGeneralSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Experiencia Política Section */}
-            <SectionWrapper
-              id="ExperienciaPolitica"
-              title="EXPERIENCIA POLÍTICA"
-              sectionId="ExperienciaPolitica"
-            >
-              <ExperienciaPoliticaSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Experiencia de Gestión Section */}
-            <SectionWrapper
-              id="ExperienciadeGestion"
-              title="EXPERIENCIA DE GESTIÓN"
-              sectionId="ExperienciadeGestion"
-            >
-              <ExperienciaGestionSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Ideología Política Section */}
-            <SectionWrapper
-              id="IdeologiaPolitica"
-              title="IDEOLOGÍA POLÍTICA"
-              sectionId="IdeologiaPolitica"
-            >
-              <IdeologiaPoliticaSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Propuestas Principales Section */}
-            <SectionWrapper
-              id="PropuestasPrincipales"
-              title="PROPUESTAS PRINCIPALES"
-              sectionId="PropuestasPrincipales"
-            >
-              <PropuestasPrincipalesSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Coherencia con el Plan Section */}
-            <SectionWrapper
-              id="CoherenciaconelPlan"
-              title="COHERENCIA CON EL PLAN"
-              sectionId="CoherenciaconelPlan"
-            >
-              <CoherenciaConElPlanSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Controversias Section */}
-            <SectionWrapper
-              id="Controversias"
-              title="CONTROVERSIAS"
-              sectionId="Controversias"
-            >
-              <ControversiasSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Transparencia Section */}
-            <SectionWrapper
-              id="Transparencia"
-              title="TRANSPARENCIA"
-              sectionId="Transparencia"
-            >
-              <TransparenciaSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Competencias Personales Section */}
-            <SectionWrapper
-              id="Competenciaspersonales"
-              title="COMPETENCIAS PERSONALES"
-              sectionId="Competenciaspersonales"
-            >
-              <CompetenciasPersonalesSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Percepción Pública Section */}
-            <SectionWrapper
-              id="PercepcionPublica"
-              title="PERCEPCIÓN PÚBLICA"
-              sectionId="PercepcionPublica"
-            >
-              <PercepcionPublicaSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Innovación y Visión Section */}
-            <SectionWrapper
-              id="InnovacionyVision"
-              title="INNOVACIÓN Y VISIÓN"
-              sectionId="InnovacionyVision"
-            >
-              <InnovacionYVisionSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
-
-            {/* Historial Legislativo Section */}
-            <SectionWrapper
-              id="HistorialLegislativo"
-              title="HISTORIAL LEGISLATIVO"
-              sectionId="HistorialLegislativo"
-            >
-              <HistorialLegislativoSection
-                leftCandidate={leftCandidate}
-                rightCandidate={rightCandidate}
-              />
-            </SectionWrapper>
+            {ALL_SECTIONS_CONFIG.map(renderSection)}
           </HorizontalSections>
         </>
       )}

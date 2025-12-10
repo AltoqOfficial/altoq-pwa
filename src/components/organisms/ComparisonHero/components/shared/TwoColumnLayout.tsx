@@ -2,27 +2,32 @@
 
 import { Typography } from "@/components/atoms";
 import type { CandidateComparisonData } from "@/data";
-import { EXPERIENCIA_POLITICA_CONFIG } from "../config";
-import {
-  renderValueWithSource,
-  renderBulletListWithSource,
-} from "../components/shared";
+import type { RenderableValue, FieldConfig } from "./types";
+import { renderValue, renderBulletList } from "./utils";
 
-interface DynamicSectionProps {
+interface TwoColumnLayoutProps {
   leftCandidate: CandidateComparisonData | null;
   rightCandidate: CandidateComparisonData | null;
+  fields: FieldConfig[];
+  dataKey: keyof CandidateComparisonData;
+  listStyle?: "none" | "bullet" | "numbered";
+  className?: string;
 }
 
 /**
- * Experiencia Política Section
- * Two-column split layout with source tooltips
+ * TwoColumnLayout Component
+ *
+ * Renders a split 2-column layout with a divider:
+ * [Left Candidate Data] | [Right Candidate Data]
  */
-export function ExperienciaPoliticaSection({
+export function TwoColumnLayout({
   leftCandidate,
   rightCandidate,
-}: DynamicSectionProps) {
-  const fields = EXPERIENCIA_POLITICA_CONFIG.fields!;
-
+  fields,
+  dataKey,
+  listStyle = "none",
+  className = "",
+}: TwoColumnLayoutProps) {
   const renderCandidateColumn = (
     candidate: CandidateComparisonData | null,
     align: "left" | "right" = "left"
@@ -34,7 +39,9 @@ export function ExperienciaPoliticaSection({
       ? "items-end md:items-center"
       : "items-start md:items-center";
 
-    const data = candidate?.experienciaPolitica;
+    const data = candidate?.[dataKey] as
+      | Record<string, RenderableValue>
+      | undefined;
 
     return (
       <div className="w-full space-y-16 grid lg:space-y-16 py-8 md:py-12 lg:py-16 items-center justify-center">
@@ -61,19 +68,9 @@ export function ExperienciaPoliticaSection({
                 type === "list" ? "flex-col space-y-2" : ""
               }`}
             >
-              {type === "list"
-                ? renderBulletListWithSource(
-                    data?.[key as keyof typeof data] as
-                      | { values: string[]; source?: string }
-                      | string[]
-                      | undefined
-                  )
-                : renderValueWithSource(
-                    data?.[key as keyof typeof data] as
-                      | { value: string; source?: string }
-                      | string
-                      | undefined
-                  )}
+              {type === "list" && listStyle === "bullet"
+                ? renderBulletList(data?.[key] as string[] | undefined)
+                : renderValue(data?.[key])}
             </Typography>
           </div>
         ))}
@@ -82,7 +79,9 @@ export function ExperienciaPoliticaSection({
   };
 
   return (
-    <div className="grid grid-cols-[1fr_1px_1fr] gap-2 md:gap-16 lg:gap-16 border-t border-white">
+    <div
+      className={`grid grid-cols-[1fr_1px_1fr] gap-2 md:gap-16 lg:gap-16 border-t border-white ${className}`}
+    >
       {renderCandidateColumn(leftCandidate, "left")}
       <div className="w-0.5 h-px lg:h-auto my-8 bg-white/50" />
       {renderCandidateColumn(rightCandidate, "right")}

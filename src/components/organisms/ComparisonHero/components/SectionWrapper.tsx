@@ -18,15 +18,14 @@ export function SectionWrapper({
   title,
   sectionId,
   children,
-  className = "",
+  className,
 }: SectionWrapperProps) {
   return (
-    <div
-      id={id}
-      className={`w-full shrink-0 px-4 md:px-12 lg:px-24 xl:px-36 space-y-4 md:space-y-6 ${className}`}
-    >
-      <SectionHeader title={title} sectionId={sectionId} />
-      {children}
+    <div id={id} className={className ? `w-full ${className}` : "w-full"}>
+      <div className="px-4 md:px-12 space-y-4 md:space-y-6">
+        <SectionHeader title={title} sectionId={sectionId} />
+        {children}
+      </div>
     </div>
   );
 }

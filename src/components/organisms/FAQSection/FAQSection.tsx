@@ -138,7 +138,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
   return (
     <div className="overflow-hidden rounded-lg transition-all duration-300">
       <button
-        className="flex w-full items-start justify-between gap-4 p-6 text-left lg:w-3xl"
+        className="flex w-full items-start justify-between gap-4 p-6 text-left"
         onClick={onToggle}
         aria-expanded={isOpen}
       >
