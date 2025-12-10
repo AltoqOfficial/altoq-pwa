@@ -12,8 +12,8 @@ interface LegislativeHistoryChartProps {
   projectsApproved: number;
   note?: string;
   color: string;
-  source?: string | null;
-  attendanceSource?: string | null;
+  source?: string | string[] | null;
+  attendanceSource?: string | string[] | null;
 }
 
 /**
