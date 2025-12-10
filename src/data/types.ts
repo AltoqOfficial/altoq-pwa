@@ -7,7 +7,7 @@
  */
 export interface ValueWithSource {
   value: string;
-  source?: string;
+  source?: string | string[];
 }
 
 /**
@@ -15,7 +15,7 @@ export interface ValueWithSource {
  */
 export interface ArrayWithSource {
   values: string[];
-  source?: string;
+  source?: string | string[];
 }
 
 /**

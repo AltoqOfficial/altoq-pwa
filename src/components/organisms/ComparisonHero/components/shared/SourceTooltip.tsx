@@ -20,7 +20,7 @@ function subscribeToTooltipChanges(listener: (id: string | null) => void) {
 
 interface SourceTooltipProps {
   children: React.ReactNode;
-  source?: string;
+  source?: string | string[];
   className?: string;
 }
 
@@ -96,7 +96,7 @@ export function SourceTooltip({
     if (contentRef.current) {
       const rect = contentRef.current.getBoundingClientRect();
       const viewportWidth = window.innerWidth;
-      const tooltipWidth = isMobile === true ? 200 : 280; // Approximate tooltip width
+      const tooltipWidth = isMobile === true ? 200 : 400; // Approximate tooltip width
 
       // Calculate horizontal offset to keep tooltip within viewport
       const elementCenter = rect.left + rect.width / 2;
@@ -211,10 +211,16 @@ export function SourceTooltip({
     return <span className={className}>{children}</span>;
   }
 
+  // Normalize source to array
+  const sources = Array.isArray(source) ? source : [source];
+  const hasMultipleSources = sources.length > 1;
+
   // Truncate URL for display - shorter on mobile
-  const maxLength = isMobile ? 28 : 50;
-  const displayUrl =
-    source.length > maxLength ? source.substring(0, maxLength) + "..." : source;
+  // Adjust for two-digit numbers (10+)
+  const hasTwoDigitNumbers = sources.length >= 10;
+  const maxLength = isMobile ? (hasTwoDigitNumbers ? 26 : 28) : 45;
+  const truncateUrl = (url: string) =>
+    url.length > maxLength ? url.substring(0, maxLength) + "..." : url;
 
   const isTop = position === "top";
 
@@ -242,26 +248,38 @@ export function SourceTooltip({
         `}
         style={{
           width: "max-content",
-          maxWidth: isMobile ? "min(200px, 85vw)" : "min(280px, 90vw)",
+          maxWidth: isMobile ? "min(200px, 85vw)" : "min(400px, 90vw)",
           transform: `translateX(calc(-50% + ${horizontalOffset}px)) ${isVisible ? (isTop ? "translateY(-4px)" : "translateY(4px)") : ""}`,
         }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <span className="relative block bg-white rounded-lg shadow-xl px-2.5 py-1.5 sm:px-3 sm:py-2.5">
-          <span className="text-neutral-600 text-[9px] sm:text-xs font-medium block">
-            <span className="text-neutral-400 block mb-0.5 text-[8px] sm:text-[10px]">
-              Fuente:
-            </span>
-            <a
-              href={source}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-600 hover:text-primary-700 hover:underline wrap-break-word leading-snug block text-[9px] sm:text-xs"
-              onClick={(e) => e.stopPropagation()}
+        <span
+          className={`relative block bg-white rounded-lg shadow-xl ${isMobile ? "px-3 py-2.5" : "px-4 py-3"}`}
+        >
+          <span className="text-neutral-600 font-medium block">
+            <span
+              className={`text-neutral-400 block ${isMobile ? "mb-1 text-[10px]" : "mb-2 text-xs"}`}
             >
-              {displayUrl}
-            </a>
+              {hasMultipleSources ? `Fuentes (${sources.length}):` : "Fuente:"}
+            </span>
+            <span
+              className={`block ${isMobile ? "space-y-0.5" : "space-y-2"} max-h-32 overflow-y-auto`}
+            >
+              {sources.map((src, idx) => (
+                <a
+                  key={idx}
+                  href={src}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-primary-600 hover:text-primary-700 hover:underline wrap-break-word block ${isMobile ? "text-[10px] leading-tight" : "text-sm leading-relaxed"}`}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {hasMultipleSources && `${idx + 1}. `}
+                  {truncateUrl(src)}
+                </a>
+              ))}
+            </span>
           </span>
 
           {/* Arrow - offset inversely to keep it pointing at content */}
@@ -283,7 +301,7 @@ export function SourceTooltip({
  */
 export interface ValueWithSource {
   value: string;
-  source?: string;
+  source?: string | string[];
 }
 
 /**
@@ -291,7 +309,7 @@ export interface ValueWithSource {
  */
 export interface ArrayValueWithSource {
   values: string[];
-  source?: string;
+  source?: string | string[];
 }
 
 /**
@@ -329,7 +347,7 @@ export function extractValue(
  */
 export function extractSource(
   value: string | string[] | ValueWithSource | ArrayValueWithSource | undefined
-): string | undefined {
+): string | string[] | undefined {
   if (!value || typeof value !== "object") return undefined;
 
   if ("source" in value) return value.source;

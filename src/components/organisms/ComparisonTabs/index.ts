@@ -1,1 +1,0 @@
-export { ComparisonTabs } from "./ComparisonTabs";

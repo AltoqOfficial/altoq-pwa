@@ -10,9 +10,9 @@ interface VoteIntentionChartProps {
   color: string;
   approval: string;
   socialMedia: string;
-  voteSource?: string;
-  approvalSource?: string;
-  socialMediaSource?: string;
+  voteSource?: string | string[];
+  approvalSource?: string | string[];
+  socialMediaSource?: string | string[];
 }
 
 /**
