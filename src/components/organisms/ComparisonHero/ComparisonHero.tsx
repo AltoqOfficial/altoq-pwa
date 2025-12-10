@@ -115,10 +115,10 @@ const HeroTitle = memo(function HeroTitle({
     <h1
       className={`font-sohne-schmal font-black text-center flex items-center justify-center relative ${className}`}
     >
-      <span className="bg-gradient-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent">
+      <span className="bg-linear-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent">
         A COMPARAR
       </span>
-      <span className="bg-gradient-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent -translate-y-2 sm:-translate-y-3 md:-translate-y-4">
+      <span className="bg-linear-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent -translate-y-2 sm:-translate-y-3 md:-translate-y-4">
         !
       </span>
     </h1>
