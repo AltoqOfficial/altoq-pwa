@@ -58,16 +58,21 @@ export interface EmailSubscribeFormProps {
    * Layout direction
    */
   layout?: "horizontal" | "vertical";
+  /**
+   * Cooldown duration in seconds (default: 60)
+   */
+  cooldownDuration?: number;
 }
 
 /**
  * EmailSubscribeForm Component (Molecule)
- * Reusable email subscription form with optional checkbox
+ * Reusable email subscription form with optional checkbox and cooldown protection
  *
  * This molecule combines:
  * - Email input field
  * - Submit button
  * - Optional terms acceptance checkbox
+ * - Cooldown timer to prevent spam
  *
  * Features:
  * - Customizable submit text and placeholder
@@ -76,6 +81,9 @@ export interface EmailSubscribeFormProps {
  * - Horizontal or vertical layout
  * - Form validation
  * - Loading state support
+ * - Cooldown timer with localStorage persistence
+ * - Real-time countdown display in button
+ * - Automatic form disable during cooldown
  *
  * @example
  * ```tsx
@@ -84,6 +92,7 @@ export interface EmailSubscribeFormProps {
  *   placeholder="tucorreo@ejemplo.com"
  *   showCheckbox={true}
  *   checkboxLabel="Acepto recibir novedades"
+ *   cooldownDuration={60}
  *   onSubmit={(email) => console.log(email)}
  * />
  *
@@ -92,9 +101,12 @@ export interface EmailSubscribeFormProps {
  *   inputVariant="outline"
  *   layout="vertical"
  *   showCheckbox={false}
+ *   cooldownDuration={120}
  * />
  * ```
  */
+const COOLDOWN_STORAGE_KEY = "altoq_email_subscribe_cooldown";
+
 export function EmailSubscribeForm({
   onSubmit,
   submitText = "Enviar",
@@ -106,6 +118,7 @@ export function EmailSubscribeForm({
   size = "lg",
   className,
   layout = "horizontal",
+  cooldownDuration = 60,
 }: EmailSubscribeFormProps) {
   const [email, setEmail] = React.useState("");
   const [accepted, setAccepted] = React.useState(false);
@@ -113,11 +126,69 @@ export function EmailSubscribeForm({
   const [showSuccessToast, setShowSuccessToast] = React.useState(false);
   const [errorMessage, setErrorMessage] = React.useState("");
   const [showError, setShowError] = React.useState(false);
+  const [cooldownSeconds, setCooldownSeconds] = React.useState(0);
+  const intervalRef = React.useRef<NodeJS.Timeout | null>(null);
+
+  // Inicializar cooldown desde localStorage
+  React.useEffect(() => {
+    const storedCooldownEnd = localStorage.getItem(COOLDOWN_STORAGE_KEY);
+    if (storedCooldownEnd) {
+      const endTime = parseInt(storedCooldownEnd, 10);
+      const now = Date.now();
+      const remaining = Math.max(0, Math.ceil((endTime - now) / 1000));
+
+      if (remaining > 0) {
+        setCooldownSeconds(remaining);
+      } else {
+        localStorage.removeItem(COOLDOWN_STORAGE_KEY);
+      }
+    }
+  }, []);
+
+  // Manejar el contador regresivo
+  React.useEffect(() => {
+    if (cooldownSeconds > 0) {
+      intervalRef.current = setInterval(() => {
+        setCooldownSeconds((prev) => {
+          const newValue = prev - 1;
+          if (newValue <= 0) {
+            localStorage.removeItem(COOLDOWN_STORAGE_KEY);
+            if (intervalRef.current) {
+              clearInterval(intervalRef.current);
+            }
+          }
+          return Math.max(0, newValue);
+        });
+      }, 1000);
+
+      return () => {
+        if (intervalRef.current) {
+          clearInterval(intervalRef.current);
+        }
+      };
+    }
+  }, [cooldownSeconds]);
+
+  // Iniciar cooldown después de envío exitoso
+  const startCooldown = React.useCallback(() => {
+    const endTime = Date.now() + cooldownDuration * 1000;
+    localStorage.setItem(COOLDOWN_STORAGE_KEY, endTime.toString());
+    setCooldownSeconds(cooldownDuration);
+  }, [cooldownDuration]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!email) {
+      return;
+    }
+
+    // Verificar si está en cooldown
+    if (cooldownSeconds > 0) {
+      setErrorMessage(
+        `Por favor espera ${cooldownSeconds} segundos antes de intentar nuevamente.`
+      );
+      setShowError(true);
       return;
     }
 
@@ -176,6 +247,9 @@ export function EmailSubscribeForm({
         setShowSuccessToast(true);
       }
 
+      // Iniciar cooldown después de envío exitoso
+      startCooldown();
+
       setEmail("");
       setAccepted(false);
     } catch (error) {
@@ -185,6 +259,21 @@ export function EmailSubscribeForm({
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const isDisabled = isSubmitting || cooldownSeconds > 0;
+
+  const getButtonText = () => {
+    if (isSubmitting) return "Enviando...";
+    if (cooldownSeconds > 0) {
+      const minutes = Math.floor(cooldownSeconds / 60);
+      const seconds = cooldownSeconds % 60;
+      if (minutes > 0) {
+        return `Espera ${minutes}:${seconds.toString().padStart(2, "0")}`;
+      }
+      return `Espera ${cooldownSeconds}s`;
+    }
+    return submitText;
   };
 
   return (
@@ -213,16 +302,18 @@ export function EmailSubscribeForm({
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            disabled={isSubmitting}
+            disabled={isDisabled}
           />
           <Button
             variant={buttonVariant}
             size={size}
             type="submit"
-            className="cursor-pointer"
-            disabled={isSubmitting}
+            className={cn(
+              cooldownSeconds > 0 ? "cursor-not-allowed" : "cursor-pointer"
+            )}
+            disabled={isDisabled}
           >
-            {isSubmitting ? "Enviando..." : submitText}
+            {getButtonText()}
           </Button>
         </div>
 
