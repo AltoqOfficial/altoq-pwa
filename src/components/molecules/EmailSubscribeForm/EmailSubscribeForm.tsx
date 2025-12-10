@@ -130,6 +130,11 @@ export function EmailSubscribeForm({
   const [cooldownSeconds, setCooldownSeconds] = React.useState(0);
   const intervalRef = React.useRef<NodeJS.Timeout | null>(null);
 
+  // Memoizar el callback del Toast para evitar recreaciones constantes
+  const handleDismissToast = React.useCallback(() => {
+    setShowSuccessToast(false);
+  }, []);
+
   // Inicializar cooldown desde localStorage
   React.useEffect(() => {
     const storedCooldownEnd = localStorage.getItem(COOLDOWN_STORAGE_KEY);
@@ -294,7 +299,7 @@ export function EmailSubscribeForm({
         type="success"
         duration={4000}
         show={showSuccessToast}
-        onDismiss={() => setShowSuccessToast(false)}
+        onDismiss={handleDismissToast}
       />
 
       <form onSubmit={handleSubmit} className={cn("w-full", className)}>
