@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import ReactDOM from "react-dom";
 
 import { cn } from "@/lib/utils";
 
@@ -57,7 +58,14 @@ export function Toast({
   show,
 }: ToastProps) {
   const [mounted, setMounted] = useState(show);
+  const [isBrowser, setIsBrowser] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Check if we're in the browser (for SSR compatibility)
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsBrowser(true);
+  }, []);
 
   // Mount/unmount with delay for exit animation
   useEffect(() => {
@@ -89,7 +97,7 @@ export function Toast({
     }
   }, [show, duration, onDismiss]);
 
-  if (!mounted) return null;
+  if (!mounted || !isBrowser) return null;
 
   const isExiting = !show;
 
@@ -147,12 +155,13 @@ export function Toast({
     info: "bg-blue-50 text-blue-800 border-blue-200",
   };
 
-  return (
+  const toastContent = (
     <div
       className={cn(
-        "fixed top-4 right-4 left-4 sm:left-auto sm:right-4 z-100",
+        "fixed top-4 right-4 left-4 sm:left-auto sm:right-4",
         isExiting ? "animate-toast-slide-out" : "animate-toast-slide-in"
       )}
+      style={{ zIndex: 9999 }}
     >
       <div
         className={cn(
@@ -186,4 +195,7 @@ export function Toast({
       </div>
     </div>
   );
+
+  // Use portal to render toast at the end of body, outside any stacking contexts
+  return ReactDOM.createPortal(toastContent, document.body);
 }
