@@ -83,7 +83,7 @@ export function SuggestionsSection() {
               <Button
                 size="lg"
                 variant="primary"
-                className="group relative w-full overflow-hidden px-8 py-4 text-base font-semibold shadow-lg shadow-primary-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/30 sm:w-auto sm:px-10"
+                className="group relative w-full overflow-hidden px-8 py-4 text-base font-semibold shadow-lg shadow-primary-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/30 sm:w-auto sm:px-10 cursor-pointer"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   Enviar sugerencia
