@@ -1,11 +1,9 @@
 "use client";
 
-import { useState, FormEvent } from "react";
 import Lottie from "lottie-react";
 
 import { Typography } from "@/components/atoms/Typography";
 import { Button } from "@/components/atoms/Button";
-import { FormField } from "@/components/molecules/FormField";
 import animationData from "@/../public/data.json";
 
 /**
@@ -20,16 +18,16 @@ import animationData from "@/../public/data.json";
  */
 export function SuggestionsSection() {
   return (
-    <section className="relative min-h-[500px] overflow-hidden bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950 py-16 sm:min-h-[550px] sm:py-20 md:min-h-[600px] lg:py-24">
+    <section className="relative min-h-[500px] overflow-hidden bg-linear-to-br from-neutral-950 via-neutral-900 to-neutral-950 py-16 sm:min-h-[550px] sm:py-20 md:min-h-[600px] lg:py-24">
       {/* Gradient overlays for depth */}
       <div className="pointer-events-none absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900/20 via-transparent to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-neutral-950 to-transparent" />
-        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-neutral-950 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-primary-900/20 via-transparent to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-neutral-950 to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-32 bg-linear-to-b from-neutral-950 to-transparent" />
       </div>
 
       {/* Lottie Animation Background */}
-      <div className="absolute inset-0 z-[1] flex items-center justify-center opacity-25 sm:opacity-30 md:opacity-40">
+      <div className="absolute inset-0 z-1 flex items-center justify-center opacity-25 sm:opacity-30 md:opacity-40">
         <div className="h-full w-full max-w-[1400px]">
           <Lottie
             animationData={animationData}
@@ -61,7 +59,7 @@ export function SuggestionsSection() {
               align="center"
             >
               Caja de{" "}
-              <span className="bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
                 Sugerencias
               </span>
             </Typography>
