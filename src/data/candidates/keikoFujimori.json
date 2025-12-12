@@ -10,45 +10,75 @@
   "perfilGeneral": {
     "edad": {
       "value": "50 años",
-      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h",
+        "https://www.swissinfo.ch/spa/keiko-fujimori-aspira-por-cuarta-vez-a-la-presidencia-de-per%C3%BA/90258740#:~:text=%C2%ABQuiero%20anunciar%20mi%20decisi%C3%B3n%20de,2026%E2%80%99%2C%20seg%C3%BAn%20im%C3%A1genes%20de%20la%C2%A0televisi%C3%B3n"
+      ]
     },
     "nacimiento": {
       "value": "25/05/1975",
-      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h",
+        "https://larepublica.pe/datos-lr/actualidad/2021/04/30/plan-de-gobierno-de-keiko-fujimori-2021-resumen-de-las-principales-propuestas-atmp#:~:text=Keiko%20Sof%C3%ADa%20Fujimori%20Higuchi%20naci%C3%B3,Sachi%20Marcela%20y%20Kenji%20Gerardo"
+      ]
     },
     "lugar": {
       "value": "Jesús María, Lima",
-      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      "source": [
+        "https://plataformahistorico.jne.gob.pe/OrganizacionesPoliticas/BusquedaAvanzada",
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=Keiko%20Sof%C3%ADa%20Fujimori%20Higuchi%20naci%C3%B3,finalmente%20se%20gradu%C3%B3%20en%201997"
+      ]
     },
     "nivelEducativo": {
       "value": "Maestría en Administración de Empresas (MBA) - Columbia University",
-      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      "source": [
+        "https://plataformahistorico.jne.gob.pe/OrganizacionesPoliticas/BusquedaAvanzada",
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=Entre%20el%202004%20y%20el,UU"
+      ]
     },
     "profesion": {
       "value": "Administradora de Empresas / Política",
-      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      "source": [
+        "https://plataformahistorico.jne.gob.pe/OrganizacionesPoliticas/BusquedaAvanzada",
+        "https://lanoticia.com.pe/un-profesor-contra-una-administradora-de-empresas/#:~:text=Es%20administradora%20de%20empresas%20con,Oportunidades%20Instituto%20para%20el%20Desarrollo"
+      ]
     },
     "partidoActual": {
       "value": "Fuerza Popular",
-      "source": "https://es.wikipedia.org/wiki/Fuerza_Popular"
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h",
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=Antes%20de%20terminar%20su%20periodo,las%20elecciones%20generales%20de%202011",
+        "https://fuerzapopular.com.pe/"
+      ]
     },
     "cambiosDePartido": {
       "value": "Fuerza Popular",
-      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h",
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=Antes%20de%20terminar%20su%20periodo,las%20elecciones%20generales%20de%202011"
+      ]
     }
   },
 
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "20",
-      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      "value": "31",
+      "source": [
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=El%20acercamiento%20de%20Keiko%20al,que%20la%20Fiscal%C3%ADa%20le%20imputa",
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=Entre%20el%2030%20de%20junio,la%20lista%20de%20congresistas%20electos"
+      ]
     },
     "cargosPrevios": {
       "values": [
         "Primera Dama (1994-2000)",
         "Congresista del Perú (2006-2011)"
       ],
-      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      "source": [
+        "https://lum.cultura.pe/cdi/fotografia/keiko-fujimori-higuchi#:~:text=Keiko%20Fujimori%20,y%20obteniendo%20el%20segundo%20lugar",
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=El%20acercamiento%20de%20Keiko%20al,que%20la%20Fiscal%C3%ADa%20le%20imputa",
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=Entre%20el%2030%20de%20junio,la%20lista%20de%20congresistas%20electos",
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_procesos-electorales_Q43AyhFWlVg=3h"
+      ]
     },
     "candidaturasPresidenciales": {
       "values": [
@@ -56,7 +86,12 @@
         "2016 → Segunda vuelta",
         "2021 → Segunda vuelta"
       ],
-      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_procesos-electorales_Q43AyhFWlVg=3h",
+        "https://lum.cultura.pe/cdi/fotografia/keiko-fujimori-higuchi#:~:text=Keiko%20Fujimori%20,y%20obteniendo%20el%20segundo%20lugar",
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=en%20la%20pol%C3%ADtica%20peruana,las%20elecciones%20generales%20de%202011",
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=Volvi%C3%B3%20a%20intentarlo%20en%202016,la%20posibilidad%20de%20un%20mandato"
+      ]
     }
   },
 
@@ -65,108 +100,167 @@
       "cantidad": 2,
       "detalle": {
         "values": ["Primera Dama (Programas sociales)", "Congresista"],
-        "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+        "source": [
+          "https://larepublica.pe/elecciones/2021/02/19/keiko-fujimori-perfil-de-la-candidata-presidencial-de-fuerza-popular-pltc#:~:text=Sus%20padres%20se%20divorciaron%20en,en%20la%20historia%20de%20Am%C3%A9rica",
+          "https://www.noticiasser.pe/keiko-la-primera-dama-de-las-esterilizaciones-forzadas#:~:text=carrera%20pol%C3%ADtica%20de%20K,y%20hombres%20del%20campo%E2%80%93%2C%20el"
+        ]
       }
     },
     "sectorPrivado": {
-      "cantidad": 0,
+      "cantidad": 2,
       "detalle": {
-        "values": ["No registra cargos relevantes formales"],
-        "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+        "values": [
+          "Presidenta de la ONG Instituto para el Desarrollo Oportunidades (2011–2013)",
+          "Lideresa y fundadora del partido Fuerza Popular (2010/2013–Presente)"
+        ],
+        "source": [
+          "https://elcomercio.pe/politica/gobierno/oportunidades-ong-donde-trabaja-keiko-fujimori-noticia-1585179/",
+          "https://larepublica.pe/elecciones/2021/02/19/keiko-fujimori-perfil-de-la-candidata-presidencial-de-fuerza-popular-pltc#:~:text=La%20candidata%20presidencial%20de%20Fuerza,el%202013%20hasta%20la%20actualidad",
+          "https://spanish.xinhuanet.com/2016-04/11/c_135267537.htm#:~:text=fuerza%202011,candidato%20Ollanta%20Humala",
+          "https://rpp.pe/politica/elecciones/ppk-sobre-keiko-fujimori-yo-no-se-cual-ha-sido-su-experiencia-laboral-noticia-966551"
+        ]
       }
-    },
-    "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+    }
   },
 
   "ideologiaPolitica": {
     "posicion": {
-      "value": "Derecha - conservadora / liberalismo económico",
-      "source": "https://es.wikipedia.org/wiki/Fuerza_Popular"
+      "value": ["Derecha - conservadora", "Liberalismo económico"],
+      "source": [
+        "https://fuerzapopular.com.pe/decalogo/",
+        "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=Dos%20candidatos%20enfrentados%20por%20sus,campa%C3%B1as%20conservadores%20en%20estos%20temas"
+      ]
     },
     "economia": {
-      "value": "Pro inversión privada",
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "value": ["Pro inversión privada", "Pro mercado"],
+      "source": [
+        "https://fuerzapopular.com.pe/decalogo/",
+        "https://rpp.pe/economia/economia/keiko-fujimori-cuales-son-las-propuestas-economicas-de-la-candidata-presidencial-elecciones-2021-el-poder-en-tus-manos-noticia-1331129#:~:text=Reactivaci%C3%B3n%20econ%C3%B3mica"
+      ]
     },
     "matrimonioIgualitario": {
-      "value": "No apoya",
-      "source": "https://larepublica.pe/politica"
+      "value": ["No apoya", "A favor de la unión patrimonial homosexual"],
+      "source": [
+        "https://rpp.pe/politica/elecciones/keiko-fujimori-deja-sentada-su-unica-posicion-sobre-la-union-civil-y-el-aborto-noticia-960494#:~:text=Formalizaci%C3%B3n",
+        "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=Dos%20candidatos%20enfrentados%20por%20sus,campa%C3%B1as%20conservadores%20en%20estos%20temas",
+        "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=%E2%80%9CRespecto%20a%20la%20familia%20,desde%20la%20perspectiva%20patrimonial%E2%80%9D%2C%20escribi%C3%B3"
+      ]
     },
     "aborto": {
-      "value": "En contra (solo causales legales)",
-      "source": "https://larepublica.pe/politica"
+      "value": [
+        "En contra incluso en casos de violación",
+        "A favor solo si la vida de la madre está en riesgo"
+      ],
+      "source": [
+        "https://fuerzapopular.com.pe/decalogo/",
+        "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=En%20marzo%2C%20en%20di%C3%A1logo%20con,estar%20en%20contra%20del%20aborto",
+        "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=En%20marzo%2C%20en%20di%C3%A1logo%20con,estar%20en%20contra%20del%20aborto",
+        "https://rpp.pe/politica/elecciones/keiko-fujimori-deja-sentada-su-unica-posicion-sobre-la-union-civil-y-el-aborto-noticia-960494#:~:text=en%20Harvard%20dijeron%20que%20yo,estaba%20a%20favor%20del%20aborto"
+      ]
     },
     "seguridad": {
-      "value": "Mano dura, penas más altas",
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "value": ["Mano dura, penas más altas", "Orden público rígido"],
+      "source": [
+        "https://rpp.pe/politica/actualidad/keiko-fujimori-a-delincuentes-reincidentes-ya-estan-advertidos-noticia-289164"
+      ]
     },
     "ambiente": {
-      "value": "Prioriza crecimiento económico",
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "value": [
+        "Cree en la coexistencia de la inversión y el cuidado del medio ambiente",
+        "Promueve la minería responsable"
+      ],
+      "source": "https://fuerzapopular.com.pe/decalogo"
     },
     "educacion": {
-      "value": "Alianzas público-privadas",
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "value": [
+        "Alianzas público-privadas",
+        "Rechaza enfoque de género en el currículo escolar"
+      ],
+      "source": [
+        "https://fuerzapopular.com.pe/decalogo",
+        "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=%E2%80%9CVoy%20a%20aprovechar%20este%20tiempo,de%20hombres%20y%20mujeres%E2%80%9D%2C%20sostuvo"
+      ]
     },
     "reformaPolitica": {
-      "value": "Gradual",
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "value": ["Gradual", "No alterar la Constitución de 1993"],
+      "source": "https://fuerzapopular.com.pe/decalogo/"
     }
   },
 
   "propuestasPrincipales": {
     "economico": {
-      "values": ["Incentivar inversión privada"],
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "values": [
+        "Incentivos para la formalización",
+        "Simplificación administrativa",
+        "Modernización y Competitividad",
+        "Integración Vertical (Petroperú)",
+        "Formalización de la minería artesanal",
+        "Reducción de ministerios",
+        "Generación de empleo para jóvenes"
+      ],
+      "source": "https://www.youtube.com/watch?v=ATuitIFJ9UU"
     },
     "social": {
-      "values": ["Programas de apoyo familiar"],
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "values": [
+        "Canon para el Pueblo",
+        "Apoyo a Comedores Populares y Vaso de Leche",
+        "Defensa de la Familia y Postura Conservadora"
+      ],
+      "source": [
+        "https://resourcegovernance.org/es/articles/peru-sobre-la-propuesta-para-repartir-el-40-del-canon-minero-la-poblacion",
+        "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/16490.pdf",
+        "https://fuerzapopular.com.pe/decalogo/"
+      ]
     },
     "ambiental": {
-      "values": ["Minería formal"],
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "values": ["Minería formal", "Hidrocarburos y Energía", "Petroperú"],
+      "source": "https://www.youtube.com/watch?v=ATuitIFJ9UU"
     },
     "institucional": {
-      "values": ["Reformas Anticorrupción"],
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "values": [
+        "Reducción de Ministerios",
+        "Nuevos Penales de Alta Seguridad",
+        "Facilitación para la Formalidad"
+      ],
+      "source": "https://www.youtube.com/watch?v=ATuitIFJ9UU"
     },
     "educativo": {
       "values": ["APP en educación"],
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "source": "https://www.fuerzapopular.pe"
     },
     "salud": {
       "values": ["Modernización de Hospitales"],
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "source": "https://www.fuerzapopular.pe"
     },
     "seguridad": {
       "values": ["Cadena perpetua para delitos graves"],
-      "source": "https://www.fuerzapopular.pe/propuestas"
+      "source": "https://www.fuerzapopular.pe"
     }
   },
 
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
       "value": "Alta",
-      "source": "https://www.fuerzapopular.pe/plan-de-gobierno"
+      "source": "https://fuerzapopular.com.pe/"
     },
     "diferencias": {
       "value": "Más énfasis en seguridad",
-      "source": "https://www.fuerzapopular.pe/plan-de-gobierno"
+      "source": "https://fuerzapopular.com.pe/"
     },
     "cumplimientoPrevio": {
       "value": "Limitado (no fue gobierno)",
-      "source": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+      "source": "https://fuerzapopular.com.pe/"
     }
   },
 
   "controversias": {
     "investigaciones": {
       "values": ["Caso Cócteles - Lavado de activos"],
-      "source": "https://larepublica.pe/politica/caso-cocteles"
+      "source": "https://fuerzapopular.com.pe/"
     },
     "enCurso": {
       "values": ["Financiamiento no declarado (IDL)"],
-      "source": "https://idl-reporteros.pe"
+      "source": "https://fuerzapopular.com.pe/"
     }
   },
 
@@ -175,21 +269,21 @@
       "Declaración de bienes presentada",
       "Donaciones registradas parcialmente"
     ],
-    "source": "https://www.jne.gob.pe/declaraciones"
+    "source": "hhttps://portal.jne.gob.pe/portal"
   },
 
   "competenciasPersonales": {
     "liderazgo": {
       "value": "Alto en su partido",
-      "source": "https://es.wikipedia.org/wiki/Fuerza_Popular"
+      "source": "https://fuerzapopular.com.pe/"
     },
     "comunicacion": {
       "value": "Moderado",
-      "source": "https://larepublica.pe/politica"
+      "source": "https://fuerzapopular.com.pe/"
     },
     "credibilidad": {
       "value": "Polarizada",
-      "source": "https://www.ipsos.com/es-pe"
+      "source": "https://fuerzapopular.com.pe/"
     }
   },
 
@@ -198,21 +292,21 @@
       "min": 8,
       "max": 15,
       "descripcion": "Estadísticamente: De 8% a 15%",
-      "source": "https://www.ipsos.com/es-pe/encuestas"
+      "source": "https://www.ipsos.com/es-pe/intencion-de-voto-noviembre-2025-encuesta-peru-21-ipsos"
     },
     "aprobacion": {
       "value": "Estimada: Baja (Desaprobada)",
-      "source": "https://www.ipsos.com/es-pe"
+      "source": "https://www.ipsos.com/es-pe/intencion-de-voto-noviembre-2025-encuesta-peru-21-ipsos"
     },
     "redes": {
       "value": "Alto Engagement",
-      "source": "https://www.socialblade.com"
+      "source": "https://www.ipsos.com/es-pe/intencion-de-voto-noviembre-2025-encuesta-peru-21-ipsos"
     }
   },
 
   "innovacionYVision": {
     "items": ["Digitalización de trámites", "Poco énfasis ambiental"],
-    "source": "https://www.fuerzapopular.pe/propuestas"
+    "source": "https://www.fuerzapopular.pe/"
   },
 
   "historialLegislativo": {
@@ -220,10 +314,10 @@
     "asistencia": {
       "porcentaje": 85,
       "label": "ALTA",
-      "source": "https://www.congreso.gob.pe/pleno/asistencia"
+      "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h"
     },
     "proyectosPresentados": 20,
     "proyectosAprobados": 6,
-    "source": "https://www.congreso.gob.pe/congresistas/keiko-fujimori"
+    "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h"
   }
 }
