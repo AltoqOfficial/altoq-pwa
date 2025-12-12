@@ -117,7 +117,6 @@ export function Footer() {
                 TikTok
               </a>
               <a
-                href={SOCIAL_LINKS.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-300 transition-colors hover:text-white flex items-center gap-4"
@@ -146,7 +145,6 @@ export function Footer() {
                 LinkedIn
               </a>
               <a
-                href={SOCIAL_LINKS.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-300 transition-colors hover:text-white flex items-center gap-4"
