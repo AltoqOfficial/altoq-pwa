@@ -5,4 +5,4 @@ Allow: /
 # Disallow admin pages if any
 # Disallow: /admin/
 
-Sitemap: https://altoq.pe/sitemap.xml
+Sitemap: https://altoqperu.com/sitemap.xml
