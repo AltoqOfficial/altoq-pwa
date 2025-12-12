@@ -26,7 +26,7 @@ bugfix/45-login-error
 release/1.0.0
 ```
 
-> El propósito es mantener vinculadas las ramas al *issue* correspondiente.  
+> El propósito es mantener vinculadas las ramas al _issue_ correspondiente.  
 > Toda rama debe crearse a partir de la rama `develop`.
 
 ---
@@ -118,11 +118,11 @@ Implemented authentication service using Spring Security and JWT.
 
 ## ✅ Buenas prácticas adicionales
 
-- Antes de hacer *push*, asegúrate de que el código **compila y pasa los tests**.
+- Antes de hacer _push_, asegúrate de que el código **compila y pasa los tests**.
 - Mantén las dependencias actualizadas.
 - Usa nombres claros y descriptivos en variables, funciones y clases.
 - No subas archivos innecesarios (.env, node_modules, etc.).
-- Utiliza *code reviews* como oportunidad de aprendizaje y mejora.
+- Utiliza _code reviews_ como oportunidad de aprendizaje y mejora.
 
 ---
 
