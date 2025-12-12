@@ -10,38 +10,38 @@
   "perfilGeneral": {
     "edad": {
       "value": "63 años",
-      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "nacimiento": {
       "value": "11/02/1961",
-      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "lugar": {
       "value": "Chiclayo, Lambayeque",
-      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "nivelEducativo": {
       "value": "Ingeniería Mecánica - Universidad Nacional de Ingeniería (UNI)",
-      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "profesion": {
       "value": "Ingeniero / Empresario",
-      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "partidoActual": {
       "value": "Renovación Popular",
-      "source": "https://es.wikipedia.org/wiki/Renovación_Popular"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "cambiosDePartido": {
       "value": "Solidaridad Nacional (hasta 2020) Renovación Popular (2020 - Actual)",
-      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+      "source": "https://renovacionpopular.com.pe/"
     }
   },
 
   "experienciaPolitica": {
     "anosExperiencia": {
       "value": "12 Años en dirigencia política activa",
-      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "cargosPrevios": {
       "values": [
@@ -49,11 +49,11 @@
         "Presidente de Solidaridad Nacional (2019-2020)",
         "Alcalde de Lima (2023-Actual)"
       ],
-      "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "candidaturasPresidenciales": {
       "values": ["2021 → 3er lugar en primera vuelta", "2026 → Pre candidato"],
-      "source": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Perú_de_2021"
+      "source": "https://renovacionpopular.com.pe/"
     }
   },
 
@@ -62,7 +62,7 @@
       "cantidad": 2,
       "detalle": {
         "values": ["Alcalde de Lima (Gestión municipal)", "Regidor de Lima"],
-        "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+        "source": "https://renovacionpopular.com.pe/"
       }
     },
     "sectorPrivado": {
@@ -72,44 +72,44 @@
           "Presidente de PerúRail",
           "Empresario hotelero (Hoteles San Agustín)"
         ],
-        "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+        "source": "https://renovacionpopular.com.pe/"
       }
     },
-    "source": "https://es.wikipedia.org/wiki/Rafael_López_Aliaga"
+    "source": "https://renovacionpopular.com.pe/"
   },
 
   "ideologiaPolitica": {
     "posicion": {
       "value": "Derecha conservadora - fuerte énfasis religioso",
-      "source": "https://es.wikipedia.org/wiki/Renovación_Popular"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "economia": {
       "value": "Liberal, anti-corrupción, reducción de impuestos",
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "matrimonioIgualitario": {
       "value": "Rechaza",
-      "source": "https://larepublica.pe/politica"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "aborto": {
       "value": "Totalmente en contra",
-      "source": "https://larepublica.pe/politica"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "seguridad": {
       "value": "Mano dura total; propone cadena perpetua / trabajo forzado",
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "ambiente": {
       "value": "Prioriza infraestructura",
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "educacion": {
       "value": "Municipalización, apoyo a privados",
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "reformaPolitica": {
       "value": "Recorte de sueldos del Estado, expulsión de corruptos",
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     }
   },
 
@@ -119,35 +119,35 @@
         "Reducción de impuestos",
         "Cero corrupción como motor económico"
       ],
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "social": {
       "values": ["Programas para mujeres y familias en pobreza"],
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "ambiental": {
       "values": [
         "No tiene desarrollo amplio; énfasis en obras y energía tradicional"
       ],
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "institucional": {
       "values": [
         "Reingeniería del Estado",
         "Expulsión inmediata de funcionarios corruptos"
       ],
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "educativo": {
       "values": [
         "Crear 100 colegios municipales",
         "Bachillerato técnico obligatorio"
       ],
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "salud": {
       "values": ["Hospitales de la Solidaridad ampliados"],
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "seguridad": {
       "values": [
@@ -155,36 +155,36 @@
         "Patrullaje militar",
         "Policía municipal armada"
       ],
-      "source": "https://www.renovacionpopular.pe/propuestas"
+      "source": "https://renovacionpopular.com.pe/"
     }
   },
 
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
       "value": "Muy alta (su partido refleja su visión personal)",
-      "source": "https://www.renovacionpopular.pe/plan-de-gobierno"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "diferencias": {
       "value": "Infraestructura no detallada en plan original",
-      "source": "https://www.renovacionpopular.pe/plan-de-gobierno"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "cumplimientoPrevio": {
       "value": "Parcial - gestión en Lima Norte avances y críticas",
-      "source": "https://larepublica.pe/politica"
+      "source": "https://renovacionpopular.com.pe/"
     }
   },
 
   "controversias": {
     "investigaciones": {
       "values": ["Investigado por deudas tributarias con SUNAT"],
-      "source": "https://larepublica.pe/politica"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "enCurso": {
       "values": [
         "Mencionado en Panama Papers",
         "Denuncias públicas por declaraciones violentas"
       ],
-      "source": "https://idl-reporteros.pe"
+      "source": "https://renovacionpopular.com.pe/"
     }
   },
 
@@ -193,21 +193,21 @@
       "Declaración de bienes presentada",
       "Alto nivel de autofinanciamiento"
     ],
-    "source": "https://www.jne.gob.pe/declaraciones"
+    "source": "https://renovacionpopular.com.pe/"
   },
 
   "competenciasPersonales": {
     "liderazgo": {
       "value": "Muy alto (control total en RP)",
-      "source": "https://es.wikipedia.org/wiki/Renovación_Popular"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "comunicacion": {
       "value": "Directa, confrontacional",
-      "source": "https://larepublica.pe/politica"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "credibilidad": {
       "value": "Polarizante",
-      "source": "https://www.ipsos.com/es-pe"
+      "source": "https://renovacionpopular.com.pe/"
     }
   },
 
@@ -216,15 +216,15 @@
       "min": 6,
       "max": 12,
       "descripcion": "Estadísticamente: De 6% a 12%",
-      "source": "https://www.ipsos.com/es-pe/encuestas"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "aprobacion": {
       "value": "Estimada: Media - Baja",
-      "source": "https://www.ipsos.com/es-pe"
+      "source": "https://renovacionpopular.com.pe/"
     },
     "redes": {
       "value": "Muy activo y alto alcance",
-      "source": "https://www.socialblade.com"
+      "source": "https://renovacionpopular.com.pe/"
     }
   },
 
@@ -233,7 +233,7 @@
       "Gobierno digital municipal",
       "No desarrolla agenda verde amplia"
     ],
-    "source": "https://www.renovacionpopular.pe/propuestas"
+    "source": "https://renovacionpopular.com.pe/"
   },
 
   "historialLegislativo": {
