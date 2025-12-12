@@ -41,11 +41,7 @@ export const ROUTES = {
 
 // Social Media Links
 export const SOCIAL_LINKS = {
-  tiktok: "https://tiktok.com/@altoq",
-  linkedin: "https://linkedin.com/company/altoq",
-  instagram: "https://instagram.com/altoq",
-  facebook: "https://facebook.com/altoq",
-  twitter: "https://twitter.com/altoq",
+  tiktok: "https://www.tiktok.com/@altoqperu",
 } as const;
 
 // Contact Information

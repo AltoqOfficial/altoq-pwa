@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { pageview } from "@/lib/analytics/gtag";
 
@@ -16,7 +16,7 @@ import { pageview } from "@/lib/analytics/gtag";
  * - Solo se ejecuta en el cliente
  * - Funciona con el App Router de Next.js 13+
  */
-export function Analytics() {
+function AnalyticsContent() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -32,4 +32,12 @@ export function Analytics() {
 
   // Este componente no renderiza nada
   return null;
+}
+
+export function Analytics() {
+  return (
+    <Suspense fallback={null}>
+      <AnalyticsContent />
+    </Suspense>
+  );
 }
