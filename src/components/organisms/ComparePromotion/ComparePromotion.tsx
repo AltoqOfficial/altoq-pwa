@@ -56,6 +56,7 @@ export function ComparePromotion() {
           </div>
         </div>
       </div>
+      <div></div>
     </div>
   );
 }
