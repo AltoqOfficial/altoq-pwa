@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { HeroSection } from "@/components/organisms/HeroSection";
 import { FAQSection } from "@/components/organisms/FAQSection";
 import { SuggestionsSection } from "@/components/organisms/SuggestionsSection";
+import { ComparePromotion } from "@/components/organisms/ComparePromotion";
 
 export const metadata: Metadata = {
   title: "Altoq - Vota Informado en las Elecciones 2026",
@@ -32,7 +33,7 @@ export default function HomePage() {
 
       {/* Ideal Candidate Feature */}
       {/* <IdealCandidateSection /> */}
-
+      <ComparePromotion />
       {/* Frequently Asked Questions */}
       <FAQSection />
 
