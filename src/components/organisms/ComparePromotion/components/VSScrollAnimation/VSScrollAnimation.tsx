@@ -154,6 +154,7 @@ function useScrollAnimations(scrollYProgress: MotionValue<number>) {
 }
 
 // ============ SUB-COMPONENTS ============
+
 interface CandidateImageProps {
   candidate: Candidate;
   opacity: MotionValue<number>;
@@ -257,9 +258,16 @@ export function VSScrollAnimation() {
 
           {/* Contenido central */}
           <div className="relative z-40 flex flex-col items-center justify-center text-center px-4 mt-64">
+            {/* Fondo oscuro para mejorar legibilidad en tablet/mobile */}
+            <motion.div
+              className="absolute -inset-x-8 -inset-y-4 -z-10 bg-black/30 rounded-3xl blur-xl lg:hidden"
+              style={{ opacity: bgOpacity }}
+              aria-hidden="true"
+            />
+
             {/* Contenido inicial */}
             <motion.div
-              className="absolute flex flex-col items-center gap-10 -top-64"
+              className="absolute flex flex-col items-center gap-10 -top-64 z-10"
               style={{ opacity: initialContentOpacity }}
             >
               <Typography
@@ -277,7 +285,7 @@ export function VSScrollAnimation() {
 
             {/* VS animado */}
             <motion.h1
-              className="font-kenyan font-extrabold leading-none select-none"
+              className="font-kenyan font-extrabold leading-none select-none z-10"
               style={{ color: vsColor, fontSize: vsFontSize }}
               aria-label="Versus"
             >
@@ -286,7 +294,7 @@ export function VSScrollAnimation() {
 
             {/* Contenido final */}
             <motion.div
-              className="flex flex-col items-center gap-4 mt-2"
+              className="flex flex-col items-center gap-4 mt-2 z-10"
               style={{ opacity: finalContentOpacity }}
             >
               <div className="w-64 h-0.5 bg-white mb-2" aria-hidden="true" />
