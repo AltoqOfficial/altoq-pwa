@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function AIPromotionSection() {
   return (
-    <div className="flex gap-12 justify-center items-center pt-12">
+    <div className="flex gap-12 justify-center items-center">
       <div>
         <Image
           src="/ia_promotion.webp"

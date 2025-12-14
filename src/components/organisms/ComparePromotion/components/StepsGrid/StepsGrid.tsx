@@ -27,7 +27,7 @@ const STEPS_DATA = [
 
 export function StepsGrid() {
   return (
-    <div className="grid grid-cols-3 grid-rows-1 gap-12">
+    <div className="grid grid-cols-3 grid-rows-1 gap-12 p-32">
       {STEPS_DATA.map((step) => (
         <StepCard
           key={step.stepNumber}
