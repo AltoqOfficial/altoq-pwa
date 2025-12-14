@@ -28,7 +28,7 @@
       "source": "https://plataformahistorico.jne.gob.pe/OrganizacionesPoliticas/BusquedaAvanzada"
     },
     "profesion": {
-      "value": "Ingeniero / Empresario",
+      "value": ["Ingeniero", "Empresario"],
       "source": "https://youtu.be/qmDtEY5XCK0"
     },
     "partidoActual": {
@@ -275,7 +275,7 @@
 
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Muy Alto / Centralista (Control vertical del partido)",
+      "value": ["Muy Alto", "Centralista (Control vertical del partido)"],
       "source": [
         "https://semanaeconomica.com/legal-politica/politica/renovacion-popular-candidatura-de-rafael-lopez-aliaga-se-definira-con-voto-universal",
         "http://www.scielo.org.pe/pdf/dds/n10/2617-2283-dds-10-67.pdf"

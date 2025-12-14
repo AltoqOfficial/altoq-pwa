@@ -31,7 +31,7 @@ export function ListComparisonLayout({
   // Handle both old format (string[]) and new format ({ items, source })
   const getListData = (
     candidate: CandidateComparisonData | null
-  ): string[] | { items: string[]; source?: string } | undefined => {
+  ): string[] | { items: string[]; source?: string | string[] } | undefined => {
     if (!candidate) return undefined;
     const data = candidate[dataKey];
 

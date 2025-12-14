@@ -202,7 +202,11 @@ export function SourceTooltip({
   }, [clearAllTimeouts, tooltipId]);
 
   // If no source, just render children without tooltip
-  if (!source) {
+  if (
+    !source ||
+    source === "" ||
+    (Array.isArray(source) && source.every((s) => !s || s === ""))
+  ) {
     return <>{children}</>;
   }
 
@@ -300,7 +304,7 @@ export function SourceTooltip({
  * Value with optional source
  */
 export interface ValueWithSource {
-  value: string;
+  value: string | string[];
   source?: string | string[];
 }
 
@@ -308,7 +312,7 @@ export interface ValueWithSource {
  * Array value with optional source
  */
 export interface ArrayValueWithSource {
-  values: string[];
+  values: string | string[];
   source?: string | string[];
 }
 

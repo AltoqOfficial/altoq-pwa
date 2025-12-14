@@ -41,7 +41,7 @@ export function PropuestasPrincipalesSection({
             variant="h6"
             align="center"
             weight="200"
-            className="max-w-full md:max-w-md mx-auto order-1 text-xs md:text-sm lg:text-base"
+            className="max-w-full md:max-w-md mx-auto order-1 text-xs md:text-sm lg:text-base flex justify-center items-center"
           >
             {renderValueWithSource(
               leftCandidate?.propuestasPrincipales[
@@ -56,7 +56,7 @@ export function PropuestasPrincipalesSection({
             variant="h6"
             align="center"
             weight="200"
-            className="order-2 text-xs md:text-sm lg:text-base"
+            className="order-2 text-xs md:text-sm lg:text-base flex justify-center items-center"
           >
             {renderValueWithSource(
               rightCandidate?.propuestasPrincipales[
