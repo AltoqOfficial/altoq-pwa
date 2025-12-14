@@ -6,7 +6,7 @@
  * Value with optional source URL for citations
  */
 export interface ValueWithSource {
-  value: string;
+  value: string | string[];
   source?: string | string[];
 }
 
@@ -14,14 +14,14 @@ export interface ValueWithSource {
  * Array value with optional source URL
  */
 export interface ArrayWithSource {
-  values: string[];
+  values: string | string[];
   source?: string | string[];
 }
 
 /**
  * Type that can be either a plain value or a value with source
  */
-export type SourceableString = string | ValueWithSource;
+export type SourceableString = string | string[] | ValueWithSource;
 export type SourceableArray = string[] | ArrayWithSource;
 
 export interface PerfilGeneral {
@@ -93,7 +93,7 @@ export interface IntencionVoto {
   min: number;
   max: number;
   descripcion: string;
-  source?: string;
+  source?: string | string[];
 }
 
 export interface PercepcionPublica {
@@ -122,7 +122,7 @@ export interface HistorialLegislativo {
  */
 export interface TransparenciaData {
   items: string[];
-  source?: string;
+  source?: string | string[];
 }
 
 /**
@@ -130,7 +130,7 @@ export interface TransparenciaData {
  */
 export interface InnovacionData {
   items: string[];
-  source?: string;
+  source?: string | string[];
 }
 
 export interface CandidateComparisonData {

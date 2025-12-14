@@ -9,51 +9,72 @@
 
   "perfilGeneral": {
     "edad": {
-      "value": "63 años",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "64 años (al 13/12/2025)",
+      "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-lópez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
     },
     "nacimiento": {
       "value": "11/02/1961",
-      "source": "https://renovacionpopular.com.pe/"
+      "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-lópez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
     },
     "lugar": {
-      "value": "Chiclayo, Lambayeque",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Cercado de Lima, Lima",
+      "source": "https://plataformahistorico.jne.gob.pe/OrganizacionesPoliticas/BusquedaAvanzada"
     },
     "nivelEducativo": {
-      "value": "Ingeniería Mecánica - Universidad Nacional de Ingeniería (UNI)",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": [
+        "Magíster en Administración - Universidad del Pacífico",
+        "Bachiller en Ingeniería Industrial - Universidad de Piura"
+      ],
+      "source": "https://plataformahistorico.jne.gob.pe/OrganizacionesPoliticas/BusquedaAvanzada"
     },
     "profesion": {
-      "value": "Ingeniero / Empresario",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": ["Ingeniero", "Empresario"],
+      "source": "https://youtu.be/qmDtEY5XCK0"
     },
     "partidoActual": {
       "value": "Renovación Popular",
       "source": "https://renovacionpopular.com.pe/"
     },
     "cambiosDePartido": {
-      "value": "Solidaridad Nacional (hasta 2020) Renovación Popular (2020 - Actual)",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": [
+        "Solidaridad Nacional (Secretario General y Presidente hasta 2020)",
+        "Renovación Popular (Fundador y Presidente, cambio de nombre en 2020)"
+      ],
+      "source": ["https://youtu.be/VPpNTERo9bo"]
     }
   },
 
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "12 Años en dirigencia política activa",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "19 años (Gestión pública desde 2007 como Regidor)",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO",
+        "https://andina.pe/agencia/noticia-elecciones-2021-conoce-perfil-rafael-lopez-aliaga-candidato-renovacion-popular-831866.aspx"
+      ]
     },
     "cargosPrevios": {
       "values": [
         "Regidor Metropolitano de Lima (2007-2010)",
-        "Presidente de Solidaridad Nacional (2019-2020)",
-        "Alcalde de Lima (2023-Actual)"
+        "Secretario General - Solidaridad Nacional (2019-2020)",
+        "Presidente - Renovación Popular (2020 - Presente)",
+        "Alcalde Metropolitano de Lima (Ene 2023 - Oct 2025)"
       ],
-      "source": "https://renovacionpopular.com.pe/"
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO",
+        "https://lpderecho.pe/rafael-lopez-aliaga-renunciara-alcaldia-lima-candidato-presidencial/",
+        "https://portal.jne.gob.pe/portal/Pagina/Nota/19016"
+      ]
     },
     "candidaturasPresidenciales": {
-      "values": ["2021 → 3er lugar en primera vuelta", "2026 → Pre candidato"],
-      "source": "https://renovacionpopular.com.pe/"
+      "values": [
+        "2021: 3er Lugar - 11.75% votos válidos (Renovación Popular)",
+        "2026: Candidato Presidencial (Renovación Popular)"
+      ],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO",
+        "https://resultadoshistorico.onpe.gob.pe/EG2021/ResumenGeneral/10/T",
+        "https://semanaeconomica.com/legal-politica/politica/rafael-lopez-aliaga-renunciara-a-la-alcaldia-de-lima-para-postular-a-la-presidencia-en-2026"
+      ]
     }
   },
 
@@ -61,189 +82,272 @@
     "sectorPublico": {
       "cantidad": 2,
       "detalle": {
-        "values": ["Alcalde de Lima (Gestión municipal)", "Regidor de Lima"],
-        "source": "https://renovacionpopular.com.pe/"
+        "values": [
+          "Alcalde de Lima (Ene 2023 - Oct 2025)",
+          "Regidor Metropolitano de Lima (2007-2010)"
+        ],
+        "source": [
+          "https://portal.jne.gob.pe/portal/Pagina/Nota/19016",
+          "https://andina.pe/agencia/noticia-elecciones-2021-conoce-perfil-rafael-lopez-aliaga-candidato-renovacion-popular-831866.aspx"
+        ]
       }
     },
     "sectorPrivado": {
-      "cantidad": 2,
+      "cantidad": 3,
       "detalle": {
         "values": [
-          "Presidente de PerúRail",
-          "Empresario hotelero (Hoteles San Agustín)"
+          "Presidente del Directorio - PeruRail (Transporte ferroviario)",
+          "Director - Peru Holding de Turismo S.A.A. (Hotelería/Belmond)",
+          "Presidente - Grupo Acres (Finanzas y Mercado de Valores)"
         ],
-        "source": "https://renovacionpopular.com.pe/"
+        "source": [
+          "https://www.smv.gob.pe/ConsultasP8/documento.aspx?vidDoc={00816085-0000-C617-B8ED-E9766E8C53F2}",
+          "https://andina.pe/agencia/noticia-elecciones-2021-conoce-perfil-rafael-lopez-aliaga-candidato-renovacion-popular-831866.aspx",
+          "https://rpp.pe/politica/elecciones/elecciones-2021-rafael-lopez-aliaga-el-exregidor-provincial-de-lima-que-quiere-llegar-a-palacio-perfil-el-poder-en-tus-manos-noticia-1308638",
+          "https://www.idl-reporteros.pe/la-investigacion-por-lavado-de-activos-que-afronta-lopez-aliaga/",
+          "https://plataformahistorico.jne.gob.pe/OrganizacionesPoliticas/BusquedaAvanzada"
+        ]
       }
-    },
-    "source": "https://renovacionpopular.com.pe/"
+    }
   },
 
   "ideologiaPolitica": {
     "posicion": {
-      "value": "Derecha conservadora - fuerte énfasis religioso",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": ["Derecha conservadora", "Fuerte énfasis religioso"],
+      "source": [
+        "https://www.swissinfo.ch/spa/l%C3%B3pez-aliaga-un-empresario-devoto-del-opus-dei-para-la-alcald%C3%ADa-de-lima/47989788",
+        "https://es-us.noticias.yahoo.com/candidato-opus-dei-llamado-porky-111034695.html"
+      ]
     },
     "economia": {
-      "value": "Liberal, anti-corrupción, reducción de impuestos",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Liberalismo ortodoxo (Libre mercado y Estado mínimo)",
+      "source": [
+        "https://ucsp.edu.pe/archivos/publicaciones/agenda-desarrollo-arequipa/planes-de-gobierno-elecciones-generales-2021.pdf",
+        "https://www.youtube.com/watch?v=5Ihf7MdJnAE",
+        "https://semanaeconomica.com/legal-politica/politica/cade-2025-rafael-lopez-aliaga-plantea-volver-al-congreso-unicameral-demandar-a-brookfield-y-libre-eleccion-para-jubilacion",
+        "https://es-us.noticias.yahoo.com/candidato-opus-dei-llamado-porky-111034695.html"
+      ]
     },
     "matrimonioIgualitario": {
-      "value": "Rechaza",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Conservadurismo social (Defensa de la familia tradicional)",
+      "source": [
+        "https://ojo-publico.com/politica/elecciones-2021/bancada-lopez-aliaga-se-opondra-enfoque-genero-y-derechos-lgtb",
+        "https://es-us.noticias.yahoo.com/empresario-conservador-opus-dei-lidera-121930940.html",
+        "https://www.youtube.com/watch?v=k9rzsQH-OPE",
+        "https://www.youtube.com/watch?v=_FvV0KH7rCc"
+      ]
     },
     "aborto": {
-      "value": "Totalmente en contra",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Pro-Vida absoluto (Desde la concepción)",
+      "source": [
+        "https://convoca.pe/convoca-verifica/reportaje/rafael-lopez-aliaga-dio-informacion-erronea-sobre-casos-de-violaciones-y",
+        "https://es-us.noticias.yahoo.com/empresario-conservador-opus-dei-lidera-121930940.html",
+        "https://www.youtube.com/watch?v=k9rzsQH-OPE",
+        "http://www.scielo.org.pe/pdf/dds/n10/2617-2283-dds-10-67.pdf#:~:text=Procede%20as%C3%AD%20cuando,%20rechazando%20el%20aborto"
+      ]
     },
     "seguridad": {
-      "value": "Mano dura total; propone cadena perpetua / trabajo forzado",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Punitivismo severo y soberanía nacional (Rechazo a injerencia externa)",
+      "source": [
+        "https://www.infobae.com/america/peru/2022/08/29/rafael-lopez-aliaga-propone-el-plan-bukele-para-combatir-la-delincuencia-al-estilo-de-el-salvador/",
+        "https://www.swissinfo.ch/spa/candidato-presidencial-l%C3%B3pez-aliaga-quiere-sacar-a-per%C3%BA-de-%22corte-de-derechos-inhumanos%22/90292549",
+        "https://www.youtube.com/watch?v=5Ihf7MdJnAE",
+        "https://caretas.pe/politica/lopez-aliaga-en-cade-propone-salida-de-corte-idh-congreso-unicameral-y-jueces-sin-rostro-para-peru/"
+      ]
     },
     "ambiente": {
-      "value": "Prioriza infraestructura",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Desarrollismo (Infraestructura utilitaria sobre conservacionismo)",
+      "source": [
+        "https://www.actualidadambiental.pe/cuales-son-las-propuestas-ambientales-del-partido-liderado-por-rafael-lopez-aliaga/",
+        "https://www.youtube.com/watch?v=I5PRbXuFSus"
+      ]
     },
     "educacion": {
-      "value": "Municipalización, apoyo a privados",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Libertad de enseñanza y valores cristianos (Anti-progresismo)",
+      "source": [
+        "https://larepublica.pe/sociedad/2025/06/19/gestion-de-lopez-aliaga-insiste-en-que-le-transfieran-colegios-y-postas-de-lima-metropolitana-hnews-530442",
+        "https://ojo-publico.com/politica/elecciones-2021/bancada-lopez-aliaga-se-opondra-enfoque-genero-y-derechos-lgtb"
+      ]
     },
     "reformaPolitica": {
-      "value": "Recorte de sueldos del Estado, expulsión de corruptos",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": [
+        "Recorte de sueldos del Estado, expulsión de corruptos",
+        "Austeridad radical y meritocracia corporativa"
+      ],
+      "source": [
+        "https://caretas.pe/politica/lopez-aliaga-en-cade-propone-salida-de-corte-idh-congreso-unicameral-y-jueces-sin-rostro-para-peru/",
+        "https://www.youtube.com/watch?v=C__hkW7SJcI",
+        "https://rpp.pe/lima/actualidad/rafael-lopez-aliaga-plantea-al-congreso-propuesta-de-reducir-ministerios-para-destinar-esos-recursos-a-obras-noticia-1657216"
+      ]
     }
   },
 
   "propuestasPrincipales": {
     "economico": {
-      "values": [
-        "Reducción de impuestos",
-        "Cero corrupción como motor económico"
-      ],
-      "source": "https://renovacionpopular.com.pe/"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "social": {
-      "values": ["Programas para mujeres y familias en pobreza"],
-      "source": "https://renovacionpopular.com.pe/"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "ambiental": {
-      "values": [
-        "No tiene desarrollo amplio; énfasis en obras y energía tradicional"
-      ],
-      "source": "https://renovacionpopular.com.pe/"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "institucional": {
-      "values": [
-        "Reingeniería del Estado",
-        "Expulsión inmediata de funcionarios corruptos"
-      ],
-      "source": "https://renovacionpopular.com.pe/"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "educativo": {
-      "values": [
-        "Crear 100 colegios municipales",
-        "Bachillerato técnico obligatorio"
-      ],
-      "source": "https://renovacionpopular.com.pe/"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "salud": {
-      "values": ["Hospitales de la Solidaridad ampliados"],
-      "source": "https://renovacionpopular.com.pe/"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "seguridad": {
-      "values": [
-        "Cárceles en islas flotantes",
-        "Patrullaje militar",
-        "Policía municipal armada"
-      ],
-      "source": "https://renovacionpopular.com.pe/"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     }
   },
 
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
-      "value": "Muy alta (su partido refleja su visión personal)",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "diferencias": {
-      "value": "Infraestructura no detallada en plan original",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "cumplimientoPrevio": {
-      "value": "Parcial - gestión en Lima Norte avances y críticas",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     }
   },
 
   "controversias": {
     "investigaciones": {
-      "values": ["Investigado por deudas tributarias con SUNAT"],
-      "source": "https://renovacionpopular.com.pe/"
+      "values": [
+        "Lavado de Activos (Panama Papers): Investigación ampliada hasta 2027",
+        "Caso Caja Metropolitana: Presuntas irregularidades financieras",
+        "Deuda Coactiva SUNAT: Empresas vinculadas deben aprox. S/ 35 millones"
+      ],
+      "source": [
+        "https://www.idl-reporteros.pe/la-investigacion-por-lavado-de-activos-que-afronta-lopez-aliaga/",
+        "https://rpp.pe/politica/judiciales/caso-panama-papers-pj-ordeno-ampliar-por-24-meses-plazo-de-la-investigacion-a-rafael-lopez-aliaga-noticia-1660195",
+        "https://caretas.pe/home_web/home_principal_secundario/pj-amplia-investigacion-contra-rafael-lopez-aliaga-por-presunto-lavado-de-activos-en-caso-panama-papers/",
+        "https://larepublica.pe/politica/2025/11/16/rafael-lopez-aliaga-asegura-no-deberle-a-sunat-pero-empresas-ligadas-a-el-acreditan-deudas-de-mas-de-19-millones-de-soles-hnews-1263136",
+        "https://www.infobae.com/peru/2024/05/28/rafael-lopez-aliaga-en-el-ojo-de-sunat-su-empresa-debe-s187-millones-pero-cotiza-en-la-bvl/"
+      ]
     },
     "enCurso": {
       "values": [
-        "Mencionado en Panama Papers",
-        "Denuncias públicas por declaraciones violentas"
+        "Demanda de Gustavo Gorriti: Difamación e incitación a la violencia (2025)",
+        "Endeudamiento de Lima: Emisión de bonos por S/ 3,500 millones",
+        "Violencia Verbal: Sanciones éticas por frases agresivas ('Muerte a...')",
+        "Gasto Municipal: Compra cuestionada de raciones importadas costosas (2025)"
       ],
-      "source": "https://renovacionpopular.com.pe/"
+      "source": [
+        "https://www.infobae.com/peru/2025/09/14/gustavo-gorriti-anuncia-acciones-legales-contra-rafael-lopez-aliaga-no-se-trata-solamente-de-la-exhortacion-a-un-posible-asesinato/",
+        "https://www.exitosanoticias.pe/actualidad/jne-llamo-atencion-rafael-lopez-aliaga-violencia-verbal-pedro-castillo-n51831",
+        "https://ojo-publico.com/5081/millonaria-deuda-lima-financia-obras-duplicadas-y-sin-expedientes",
+        "https://www.infobae.com/peru/2025/11/09/revelan-que-gestion-de-rafael-lopez-aliaga-compro-raciones-importadas-de-enchiladas-y-tacos-a-alto-costo-para-damnificados-de-lima/",
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
+      ]
     }
   },
 
   "transparencia": {
     "items": [
-      "Declaración de bienes presentada",
-      "Alto nivel de autofinanciamiento"
+      "Patrimonio declarado > S/ 20 millones (JNE)",
+      "Rendición de Cuentas Pública realizada (Oct 2025)",
+      "Campaña mayoritariamente autofinanciada (ONPE)"
     ],
-    "source": "https://renovacionpopular.com.pe/"
+    "source": [
+      "https://xn--alejandromuante-8qb.com/13408-2/",
+      "https://convoca.pe/agenda-propia/renovacion-popular-rafael-lopez-aliaga-aporto-mas-de-s-2-millones-campanas-de-su",
+      "https://peru21.pe/politica/elecciones-2021-las-empresas-de-lopez-aliaga-que-no-figuran-en-declaracion-ante-jne-noticia/"
+    ]
   },
 
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Muy alto (control total en RP)",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": ["Muy Alto", "Centralista (Control vertical del partido)"],
+      "source": [
+        "https://semanaeconomica.com/legal-politica/politica/renovacion-popular-candidatura-de-rafael-lopez-aliaga-se-definira-con-voto-universal",
+        "http://www.scielo.org.pe/pdf/dds/n10/2617-2283-dds-10-67.pdf"
+      ]
     },
     "comunicacion": {
-      "value": "Directa, confrontacional",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Confrontacional, directa y populista (Estilo 'Porky')",
+      "source": [
+        "https://ojo-publico.com/especiales/conspiracion-desinformacion-odio-en-discurso-de-rafael-lopez-aliaga/",
+        "https://www.youtube.com/watch?v=xubn4_oyk-M"
+      ]
     },
     "credibilidad": {
-      "value": "Polarizante",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Polarizante: Núcleo duro fiel vs. Alto rechazo (Desaprobación ~69%)",
+      "source": [
+        "https://semanaeconomica.com/legal-politica/politica/encuesta-del-poder-2025-el-69-de-los-encuestados-desaprueba-la-gestion-del-alcalde-rafael-lopez-aliaga",
+        "https://www.youtube.com/watch?v=n99ZYMDJSFo"
+      ]
     }
   },
 
   "percepcionPublica": {
     "intencionVoto": {
-      "min": 6,
-      "max": 12,
-      "descripcion": "Estadísticamente: De 6% a 12%",
-      "source": "https://renovacionpopular.com.pe/"
+      "min": 7,
+      "max": 10,
+      "descripcion": "Entre 7% y 10% (Disputa los primeros lugares según encuestadora)",
+      "source": [
+        "https://www.ipsos.com/es-pe/intencion-de-voto-noviembre-2025-encuesta-peru-21-ipsos",
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-11/25-001803INF_V1_07Nov25%20(INTENCIÓN%20DE%20VOTO).pdf",
+        "https://www.youtube.com/watch?v=S_44gYV8ouE",
+        "https://www.youtube.com/watch?v=jMunwU6bvHI"
+      ]
     },
     "aprobacion": {
-      "value": "Estimada: Media - Baja",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Baja: Aprobación ~30-36% vs. Desaprobación >60% (Gestión Municipal)",
+      "source": [
+        "https://www.ipsos.com/es-pe/aprobacion-de-autoridades-febrero-2025-encuesta-peru-21-ipsos",
+        "https://semanaeconomica.com/legal-politica/politica/encuesta-del-poder-2025-el-69-de-los-encuestados-desaprueba-la-gestion-del-alcalde-rafael-lopez-aliaga"
+      ]
     },
     "redes": {
-      "value": "Muy activo y alto alcance",
-      "source": "https://renovacionpopular.com.pe/"
+      "value": "Alto Engagement (Estrategia de personalización y polémica)",
+      "source": [
+        "https://tesis.pucp.edu.pe/items/c0d6def6-fba4-4b7e-a17b-580e6069242e",
+        "https://repositorio.utp.edu.pe/handle/20.500.12867/9962"
+      ]
     }
   },
 
   "innovacionYVision": {
     "items": [
-      "Gobierno digital municipal",
-      "No desarrolla agenda verde amplia"
+      "Criptomoneda Nacional: Propuesta de moneda digital respaldada en reservas de oro y litio (CADE 2025)",
+      "Seguridad con IA: 'Chuponeo legal' y reconocimiento facial masivo para captura en tiempo real",
+      "Shock Tecnológico Educativo: Tablets con internet satelital de alta velocidad (Starlink) para zonas rurales"
     ],
-    "source": "https://renovacionpopular.com.pe/"
+    "source": [
+      "https://www.youtube.com/watch?v=eoJ3gIxdmeY",
+      "https://www.infobae.com/peru/2025/11/06/rafael-lopez-aliaga-propone-crear-una-criptomoneda-peruana-y-una-empresa-estatal-para-exportar-autos-electricos-desde-puno/",
+      "https://panamericana.pe/locales/383731-mml-monitorea-ciudad-lima-4300-camaras-inteligencia-artificial-reconocimiento-facial"
+    ]
   },
 
   "historialLegislativo": {
     "tieneHistorial": false,
     "asistencia": {
       "porcentaje": 0,
-      "label": "BAJA"
+      "label": "N/A (No ha sido Congresista)",
+      "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
     },
     "proyectosPresentados": 0,
     "proyectosAprobados": 0,
-    "nota": "No tiene historial legislativo (no fue congresista)"
+    "nota": "No registra historial parlamentario nacional. Sus cargos electos han sido de ámbito municipal: Regidor (2007-2010) y Alcalde de Lima (2023-2025).",
+    "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
   }
 }
