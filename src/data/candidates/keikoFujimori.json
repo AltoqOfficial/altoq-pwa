@@ -37,7 +37,7 @@
       ]
     },
     "profesion": {
-      "value": "Administradora de Empresas / Política",
+      "value": ["Administradora de Empresas", "Política"],
       "source": [
         "https://plataformahistorico.jne.gob.pe/OrganizacionesPoliticas/BusquedaAvanzada",
         "https://lanoticia.com.pe/un-profesor-contra-una-administradora-de-empresas/#:~:text=Es%20administradora%20de%20empresas%20con,Oportunidades%20Instituto%20para%20el%20Desarrollo"
@@ -125,21 +125,21 @@
 
   "ideologiaPolitica": {
     "posicion": {
-      "value": "Derecha - conservadora / Liberalismo económico",
+      "value": ["Derecha - conservadora", "Liberalismo económico"],
       "source": [
         "https://fuerzapopular.com.pe/decalogo/",
         "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=Dos%20candidatos%20enfrentados%20por%20sus,campa%C3%B1as%20conservadores%20en%20estos%20temas"
       ]
     },
     "economia": {
-      "value": "Pro inversión privada / Pro mercado",
+      "value": ["Pro inversión privada", "Pro mercado"],
       "source": [
         "https://fuerzapopular.com.pe/decalogo/",
         "https://rpp.pe/economia/economia/keiko-fujimori-cuales-son-las-propuestas-economicas-de-la-candidata-presidencial-elecciones-2021-el-poder-en-tus-manos-noticia-1331129#:~:text=Reactivaci%C3%B3n%20econ%C3%B3mica"
       ]
     },
     "matrimonioIgualitario": {
-      "value": "No apoya / A favor de la unión patrimonial homosexual",
+      "value": ["No apoya", "A favor de la unión patrimonial homosexual"],
       "source": [
         "https://rpp.pe/politica/elecciones/keiko-fujimori-deja-sentada-su-unica-posicion-sobre-la-union-civil-y-el-aborto-noticia-960494#:~:text=Formalizaci%C3%B3n",
         "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=Dos%20candidatos%20enfrentados%20por%20sus,campa%C3%B1as%20conservadores%20en%20estos%20temas",
@@ -147,7 +147,10 @@
       ]
     },
     "aborto": {
-      "value": "En contra incluso en casos de violación / A favor solo si la vida de la madre está en riesgo",
+      "value": [
+        "En contra incluso en casos de violación",
+        "A favor solo si la vida de la madre está en riesgo"
+      ],
       "source": [
         "https://fuerzapopular.com.pe/decalogo/",
         "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=En%20marzo%2C%20en%20di%C3%A1logo%20con,estar%20en%20contra%20del%20aborto",
@@ -156,91 +159,77 @@
       ]
     },
     "seguridad": {
-      "value": "Mano dura, penas más altas / Orden público rígido",
+      "value": ["Mano dura, penas más altas", "Orden público rígido"],
       "source": [
         "https://rpp.pe/politica/actualidad/keiko-fujimori-a-delincuentes-reincidentes-ya-estan-advertidos-noticia-289164"
       ]
     },
     "ambiente": {
-      "value": "Cree en la coexistencia de la inversión y el cuidado del medio ambiente / Promueve la minería responsable",
+      "value": [
+        "Cree en la coexistencia de la inversión y el cuidado del medio ambiente",
+        "Promueve la minería responsable"
+      ],
       "source": "https://fuerzapopular.com.pe/decalogo"
     },
     "educacion": {
-      "value": "Alianzas público-privadas / Rechaza enfoque de género en el currículo escolar",
+      "value": [
+        "Alianzas público-privadas",
+        "Rechaza enfoque de género en el currículo escolar"
+      ],
       "source": [
         "https://fuerzapopular.com.pe/decalogo",
         "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=%E2%80%9CVoy%20a%20aprovechar%20este%20tiempo,de%20hombres%20y%20mujeres%E2%80%9D%2C%20sostuvo"
       ]
     },
     "reformaPolitica": {
-      "value": "Gradual / No alterar la Constitución de 1993",
+      "value": ["Gradual", "No alterar la Constitución de 1993"],
       "source": "https://fuerzapopular.com.pe/decalogo/"
     }
   },
 
   "propuestasPrincipales": {
     "economico": {
-      "values": [
-        "Incentivos para la formalización",
-        "Simplificación administrativa",
-        "Modernización y Competitividad",
-        "Integración Vertical (Petroperú)",
-        "Formalización de la minería artesanal",
-        "Reducción de ministerios",
-        "Generación de empleo para jóvenes"
-      ],
-      "source": "https://www.youtube.com/watch?v=ATuitIFJ9UU"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "social": {
-      "values": [
-        "Canon para el Pueblo",
-        "Apoyo a Comedores Populares y Vaso de Leche",
-        "Defensa de la Familia y Postura Conservadora"
-      ],
-      "source": [
-        "https://resourcegovernance.org/es/articles/peru-sobre-la-propuesta-para-repartir-el-40-del-canon-minero-la-poblacion",
-        "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/16490.pdf",
-        "https://fuerzapopular.com.pe/decalogo/"
-      ]
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "ambiental": {
-      "values": ["Minería formal", "Hidrocarburos y Energía", "Petroperú"],
-      "source": "https://www.youtube.com/watch?v=ATuitIFJ9UU"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "institucional": {
-      "values": [
-        "Reducción de Ministerios",
-        "Nuevos Penales de Alta Seguridad",
-        "Facilitación para la Formalidad"
-      ],
-      "source": "https://www.youtube.com/watch?v=ATuitIFJ9UU"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "educativo": {
-      "values": ["APP en educación"],
-      "source": "https://www.fuerzapopular.pe"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "salud": {
-      "values": ["Modernización de Hospitales"],
-      "source": "https://www.fuerzapopular.pe"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "seguridad": {
-      "values": ["Cadena perpetua para delitos graves"],
-      "source": "https://www.fuerzapopular.pe"
+      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     }
   },
 
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
-      "value": "Alta",
-      "source": "https://fuerzapopular.com.pe/"
+      "value": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "diferencias": {
-      "value": "Más énfasis en seguridad",
-      "source": "https://fuerzapopular.com.pe/"
+      "value": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     },
     "cumplimientoPrevio": {
-      "value": "Limitado (no fue gobierno)",
-      "source": "https://fuerzapopular.com.pe/"
+      "value": "SIN PLAN DE GOBIERNO FORMALIZADO",
+      "source": ""
     }
   },
 
