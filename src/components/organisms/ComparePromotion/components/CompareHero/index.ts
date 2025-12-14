@@ -1,1 +1,0 @@
-export { CompareHero } from "./CompareHero";

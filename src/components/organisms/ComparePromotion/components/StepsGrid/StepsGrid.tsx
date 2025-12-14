@@ -1,7 +1,15 @@
 import { StepCard } from "../StepCard";
 import { ProfileIcon, QuestionIcon, CandidatesIcon } from "../icons";
+import type { ReactNode } from "react";
 
-const STEPS_DATA = [
+interface StepData {
+  stepNumber: number;
+  icon: ReactNode;
+  title: string;
+  description: string;
+}
+
+const STEPS_DATA: StepData[] = [
   {
     stepNumber: 1,
     icon: <ProfileIcon />,
@@ -27,7 +35,7 @@ const STEPS_DATA = [
 
 export function StepsGrid() {
   return (
-    <div className="grid grid-cols-3 grid-rows-1 gap-12 p-32">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 px-8 py-16 md:px-16 lg:px-32">
       {STEPS_DATA.map((step) => (
         <StepCard
           key={step.stepNumber}
