@@ -34,6 +34,7 @@ export default function HomePage() {
       {/* Ideal Candidate Feature */}
       {/* <IdealCandidateSection /> */}
       <ComparePromotion />
+      <div className="h-0.5 w-[70%] mx-auto bg-[#484848] opacity-50"></div>
       {/* Frequently Asked Questions */}
       <FAQSection />
 
