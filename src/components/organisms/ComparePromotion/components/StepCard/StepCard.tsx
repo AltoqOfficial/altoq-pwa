@@ -20,12 +20,12 @@ export function StepCard({
         <span className="self-start">{stepNumber}</span>
         {icon}
         <div className="gap-2 flex-col flex items-center">
-          <Typography variant="h5" weight="600">
+          <Typography variant="h5" weight="600" align="center">
             {title}
           </Typography>
           <Typography
             variant="p"
-            className="max-w-[23rem] text-[#868686]"
+            className="max-w-92 text-[#868686]"
             align="center"
           >
             {description}

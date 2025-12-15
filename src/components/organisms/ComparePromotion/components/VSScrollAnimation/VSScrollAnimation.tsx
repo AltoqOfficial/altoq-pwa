@@ -503,7 +503,7 @@ export function VSScrollAnimation() {
               <Button
                 variant="secondary"
                 size="lg"
-                className="w-full max-w-64"
+                className="w-full max-w-64 cursor-pointer"
                 onClick={() => router.push("/compara")}
               >
                 Prueba la demo
@@ -543,7 +543,7 @@ export function VSScrollAnimation() {
               </p>
               <Button
                 variant="secondary"
-                className="invert mt-6"
+                className="invert mt-6 cursor-pointer"
                 size={isMobile ? MOBILE_CONFIG.buttonSize : undefined}
                 onClick={() => router.push("/compara")}
               >
