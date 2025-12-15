@@ -13,18 +13,9 @@ export function ComingSoonSection() {
       </Typography>
 
       <div className="w-full mx-auto flex flex-col items-center justify-center gap-3.5">
-        <Typography
-          as="h2"
-          align="center"
-          variant="h3"
-          className="flex gap-3"
-          weight="600"
-        >
-          Mi Candidato{" "}
-          <Typography as="span" variant="h3" color="primary">
-            Ideal
-          </Typography>
-        </Typography>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center">
+          Mi Candidato <span className="text-primary-600">Ideal</span>
+        </h2>
 
         <Typography variant="p" className="max-w-2xl" align="center">
           Si aún no te decides, ¡tranqui! Deja que la Inteligencia Artificial te
