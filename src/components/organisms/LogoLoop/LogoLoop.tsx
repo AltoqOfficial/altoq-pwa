@@ -60,7 +60,7 @@ export const LogoLoop = memo(function LogoLoop() {
       <div className="flex items-center justify-center">
         <div className="shrink-0 pr-8 z-10 text-center">
           <p className="text-[#A6A6A6] max-w-56 font-semibold">
-            Información imparcial sobre todos los partidos.
+            Información imparcial sobre todos los partidos
           </p>
         </div>
 
