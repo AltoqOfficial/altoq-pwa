@@ -1,0 +1,1 @@
+export { ComparePromotion } from "./ComparePromotion";
