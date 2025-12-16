@@ -65,7 +65,7 @@ export function FAQSection() {
   };
 
   return (
-    <section id="faq" className="bg-white py-20 faq">
+    <section id="faq" className="bg-white pb-20 faq">
       <div className="container mx-auto px-4 md:grid md:grid-cols-2 gap-4 items-start">
         {/* Section Header */}
         <div className="mb-16 flex justify-center items-center md:items-end flex-col px-2 md:px-0 order-first md:order-last">
