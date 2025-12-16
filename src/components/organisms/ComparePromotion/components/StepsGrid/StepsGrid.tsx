@@ -15,27 +15,27 @@ const STEPS_DATA: StepData[] = [
     icon: <ProfileIcon />,
     title: "Conoce tu perfil",
     description:
-      "Responde un breve cuestionario sobre tus intereses, valores y orientación política. Analizará tu perfil como ciudadano con total privacidad.",
+      "Responde un test corto sobre tus ideas y valores. No pedimos datos personales.",
   },
   {
     stepNumber: 2,
     icon: <QuestionIcon />,
-    title: "Define lo que te importa",
+    title: "Elige lo que te importa",
     description:
-      "Selecciona hasta 3 temas prioritarios como educación, seguridad, trabajo, igualdad, salud, ambiente, etc. La IA los usará para afinar tu coincidencia con las propuestas de los candidatos.",
+      "Escoge hasta 3 temas clave: educación, trabajo, seguridad, salud, ambiente y más.",
   },
   {
     stepNumber: 3,
     icon: <CandidatesIcon />,
-    title: "Sugerencia Final",
+    title: "Resultado con IA",
     description:
-      "Verás los 4 candidatos con mayor afinidad a tu perfil, analizados con IA según tus respuestas y prioridades. Cada uno con su porcentaje de coincidencia y explicación.",
+      "La IA compara tus respuestas con datos reales y te muestra los 4 candidatos más afines a ti.",
   },
 ];
 
 export function StepsGrid() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 px-8 py-16 md:px-16 lg:px-32">
+    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 px-8 md:px-16 lg:px-32">
       {STEPS_DATA.map((step) => (
         <StepCard
           key={step.stepNumber}

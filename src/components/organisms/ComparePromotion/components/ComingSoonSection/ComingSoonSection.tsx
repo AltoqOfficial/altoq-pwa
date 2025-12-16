@@ -18,8 +18,11 @@ export function ComingSoonSection() {
         </h2>
 
         <Typography variant="p" className="max-w-2xl" align="center">
-          Si aún no te decides, ¡tranqui! Deja que la Inteligencia Artificial te
-          conozca y te dirá qué candidatos se alinean más contigo.
+          Si aún no te decides, ¡tranqui! Deja que la{" "}
+          <Typography variant="span" className="text-primary-600">
+            Inteligencia Artificial
+          </Typography>{" "}
+          te conozca y te muestra qué candidatos se parecen más a ti.
         </Typography>
       </div>
     </article>
