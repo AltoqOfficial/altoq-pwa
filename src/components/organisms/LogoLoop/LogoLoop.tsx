@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 type PartidoLogo = {
   src: string;
@@ -28,68 +28,109 @@ const PARTIDO_LOGOS: PartidoLogo[] = [
   { src: "/partidos/verde.webp", alt: "Partido Verde" },
 ];
 
+const LOGOS_PER_PAGE = 6;
 const LOGO_HEIGHT = 56;
-const LOGO_WIDTH = 120;
-const GAP = 32;
-const ANIMATION_SECONDS = 40;
+const LOGO_WIDTH = 100;
+const TRANSITION_DELAY_MS = 150;
+const PAGE_DISPLAY_MS = 6000;
 
-const DUPLICATED_LOGOS: PartidoLogo[] = [...PARTIDO_LOGOS, ...PARTIDO_LOGOS];
-type CSSVars = React.CSSProperties & Record<string, string | number>;
-
-const STYLE_VARS: CSSVars = {
-  "--logo-height": `${LOGO_HEIGHT}px`,
-  "--logo-width": `${LOGO_WIDTH}px`,
-  "--logo-gap": `${GAP}px`,
-  "--logo-duration": `${ANIMATION_SECONDS}s`,
+const getLogoPages = (): PartidoLogo[][] => {
+  const pages: PartidoLogo[][] = [];
+  for (let i = 0; i < PARTIDO_LOGOS.length; i += LOGOS_PER_PAGE) {
+    pages.push(PARTIDO_LOGOS.slice(i, i + LOGOS_PER_PAGE));
+  }
+  return pages;
 };
 
+const LOGO_PAGES = getLogoPages();
+
 export const LogoLoop = React.memo(function LogoLoop() {
+  const [currentPage, setCurrentPage] = useState(0);
+  const [isAnimatingOut, setIsAnimatingOut] = useState(false);
+  const [isAnimatingIn, setIsAnimatingIn] = useState(true);
+
+  const nextPage = useCallback(() => {
+    setIsAnimatingOut(true);
+
+    setTimeout(
+      () => {
+        setCurrentPage((prev) => (prev + 1) % LOGO_PAGES.length);
+        setIsAnimatingOut(false);
+        setIsAnimatingIn(true);
+
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            setIsAnimatingIn(false);
+          });
+        });
+      },
+      LOGOS_PER_PAGE * TRANSITION_DELAY_MS + 300
+    );
+  }, []);
+
+  useEffect(() => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setIsAnimatingIn(false);
+      });
+    });
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(nextPage, PAGE_DISPLAY_MS);
+    return () => clearInterval(interval);
+  }, [nextPage]);
+
+  const currentLogos = LOGO_PAGES[currentPage];
+
+  const getScale = () => {
+    if (isAnimatingOut) return "scale(0)";
+    if (isAnimatingIn) return "scale(0)";
+    return "scale(1)";
+  };
+
   return (
-    <div className="relative w-full overflow-hidden py-6">
-      <div
-        className="flex w-max items-center animate-logo-marquee"
-        style={STYLE_VARS}
-        aria-label="Partidos políticos"
-      >
-        {DUPLICATED_LOGOS.map((logo, index) => (
-          <div
-            className="flex flex-none items-center justify-center"
-            style={{ minWidth: `var(--logo-width)` }}
-            key={`${logo.src}-${index}`}
-          >
-            <img
-              src={logo.src}
-              alt={logo.alt}
-              height={LOGO_HEIGHT}
-              className="select-none object-contain"
+    <div className="relative w-full flex items-center justify-center py-6">
+      <div className="flex items-center justify-center">
+        {/* Contenedor estático del texto */}
+        <div className="shrink-0 pr-8 z-10 text-center">
+          <p className="text-[#A6A6A6] max-w-56 font-semibold">
+            Información imparcial sobre todos los partidos.
+          </p>
+        </div>
+
+        {/* Contenedor de logos con animación de escala */}
+        <div
+          className="flex items-center justify-center gap-24"
+          aria-label="Partidos políticos"
+        >
+          {currentLogos.map((logo, index) => (
+            <div
+              key={`${currentPage}-${logo.src}-${index}`}
+              className="flex items-center justify-center transition-transform duration-300 ease-out"
               style={{
-                height: "var(--logo-height)",
-                width: "var(--logo-width)",
+                minWidth: LOGO_WIDTH,
+                transform: getScale(),
+                transitionDelay: `${index * TRANSITION_DELAY_MS}ms`,
               }}
-              loading="lazy"
-              decoding="async"
-              draggable={false}
-            />
-          </div>
-        ))}
+            >
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                height={LOGO_HEIGHT}
+                className="select-none object-contain"
+                style={{
+                  height: LOGO_HEIGHT,
+                  width: LOGO_WIDTH,
+                }}
+                loading="lazy"
+                decoding="async"
+                draggable={false}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-
-      <style jsx>{`
-        @keyframes logo-marquee {
-          from {
-            transform: translateX(-50%);
-          }
-          to {
-            transform: translateX(0);
-          }
-        }
-
-        .animate-logo-marquee {
-          animation: logo-marquee var(--logo-duration) linear infinite;
-          gap: var(--logo-gap);
-          will-change: transform;
-        }
-      `}</style>
     </div>
   );
 });
