@@ -15,17 +15,41 @@ export const LAUNCH_DATE = new Date("2026-01-10T00:00:00-05:00");
 // SEO Configuration
 export const SEO = {
   TITLE_TEMPLATE: "%s | Altoq",
-  DEFAULT_TITLE: "Altoq - Vota Informado",
+  DEFAULT_TITLE: "Altoq - Vota Informado en las Elecciones 2026",
   DESCRIPTION: APP_DESCRIPTION,
   KEYWORDS: [
-    "elecciones",
-    "perú",
-    "2026",
-    "candidatos",
-    "votar",
-    "democracia",
-    "política",
-    "informado",
+    // Brand keywords
+    "altoq",
+    "altoq peru",
+    "altoq perú",
+    "altoqperu",
+    // Election keywords
+    "elecciones 2026",
+    "elecciones generales 2026",
+    "elecciones perú 2026",
+    "elecciones peru",
+    "elecciones presidenciales perú",
+    // Candidate keywords
+    "candidatos presidenciales",
+    "candidatos 2026",
+    "candidatos peru",
+    "comparar candidatos",
+    "propuestas candidatos",
+    // Action keywords
+    "votar informado",
+    "vota informado",
+    "informarse para votar",
+    // General political keywords
+    "democracia perú",
+    "política peruana",
+    "partidos políticos perú",
+    "plan de gobierno",
+    "propuestas electorales",
+    // Related terms
+    "JNE",
+    "ONPE",
+    "voto consciente",
+    "ciudadanía informada",
   ],
 } as const;
 
