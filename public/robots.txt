@@ -1,8 +1,40 @@
 # https://www.robotstxt.org/robotstxt.html
+# Robots.txt for Altoq - Political Information Platform
+
+# Allow all crawlers
 User-agent: *
 Allow: /
 
-# Disallow admin pages if any
-# Disallow: /admin/
+# Disallow unnecessary paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
 
-Sitemap: https://altoqperu.com/sitemap.xml
+# Allow important assets
+Allow: /icons/
+Allow: /images/
+Allow: /candidatos/
+Allow: /partidos/
+
+# Googlebot specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Allow Google Image bot
+User-agent: Googlebot-Image
+Allow: /
+
+# Sitemap location
+Sitemap: https://altoq.pe/sitemap.xml
+
+# Host directive for canonical domain
+Host: https://altoq.pe

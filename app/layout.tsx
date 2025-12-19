@@ -4,7 +4,11 @@ import Script from "next/script";
 
 import "./globals.css";
 
-import { generateMetadata as createMetadata } from "@/lib/config/seo";
+import {
+  generateMetadata as createMetadata,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "@/lib/config/seo";
 import { PWARegistration } from "@/components/organisms";
 import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
@@ -18,7 +22,11 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#f17272",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f17272" },
+    { media: "(prefers-color-scheme: dark)", color: "#1a1a1a" },
+  ],
+  colorScheme: "light dark",
 };
 
 interface RootLayoutProps {
@@ -29,8 +37,13 @@ interface RootLayoutProps {
  * Root Layout
  * Main layout that wraps the entire application
  * Contains Header and Footer that persist across all pages
+ * Optimized for SEO with JSON-LD structured data
  */
 export default function RootLayout({ children }: RootLayoutProps) {
+  // Generate JSON-LD structured data for SEO
+  const organizationSchema = generateOrganizationSchema();
+  const websiteSchema = generateWebSiteSchema();
+
   return (
     <html
       lang="es-PE"
@@ -38,6 +51,34 @@ export default function RootLayout({ children }: RootLayoutProps) {
       suppressHydrationWarning
     >
       <head>
+        {/* Preconnect to external domains for performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+
+        {/* DNS Prefetch for third-party resources */}
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+        {/* JSON-LD Structured Data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+
         {/* Google Analytics */}
         {GA_MEASUREMENT_ID && (
           <>
@@ -52,6 +93,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 gtag('js', new Date());
                 gtag('config', '${GA_MEASUREMENT_ID}', {
                   page_path: window.location.pathname,
+                  anonymize_ip: true,
+                  cookie_flags: 'SameSite=None;Secure'
                 });
               `}
             </Script>
@@ -61,8 +104,20 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.webmanifest" />
 
-        {/* Standard Favicon */}
-        <link rel="icon" href="/icons/icon-192x192.png" />
+        {/* Favicons - Multiple sizes for different devices */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/icons/icon-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/icons/icon-512x512.png"
+        />
 
         {/* Apple Touch Icons (iOS) */}
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
@@ -74,17 +129,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link
           rel="apple-touch-icon"
           sizes="167x167"
-          href="/icons/apple-touch-icon-167x167.png"
+          href="/icons/apple-touch-icon.png"
         />
         <link
           rel="apple-touch-icon"
           sizes="152x152"
-          href="/icons/apple-touch-icon-152x152.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="120x120"
-          href="/icons/apple-touch-icon-120x120.png"
+          href="/icons/apple-touch-icon.png"
         />
 
         {/* Apple PWA Meta Tags */}
@@ -98,13 +148,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* Mobile Optimizations */}
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="Altoq" />
+        <meta name="format-detection" content="telephone=no" />
 
-        {/* Microsoft */}
+        {/* Microsoft Tiles */}
         <meta name="msapplication-TileColor" content="#f17272" />
         <meta
           name="msapplication-TileImage"
           content="/icons/icon-192x192.png"
         />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>
       <body className="antialiased" suppressHydrationWarning>
         {/* Analytics - Track page views */}
@@ -119,7 +171,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Header />
 
           {/* Main Content - Changes per page */}
-          <main className="flex-1">{children}</main>
+          <main className="flex-1" id="main-content" role="main">
+            {children}
+          </main>
 
           {/* Footer - Persists across all pages */}
           <Footer />

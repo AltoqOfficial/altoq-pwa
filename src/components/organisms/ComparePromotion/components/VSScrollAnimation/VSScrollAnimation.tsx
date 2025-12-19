@@ -1,10 +1,109 @@
 "use client";
 
-import { useRef, useMemo, useSyncExternalStore } from "react";
+import { useRef, useMemo, useSyncExternalStore, useId } from "react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Button, Typography } from "@/components/atoms";
+
+// ============ NOISE BACKGROUND COMPONENT ============
+interface NoiseBackgroundProps {
+  opacity: MotionValue<number>;
+}
+
+function NoiseBackground({ opacity }: NoiseBackgroundProps) {
+  const uniqueId = useId();
+  const filterId = `vsNoiseFilter${uniqueId}`;
+
+  return (
+    <motion.div
+      className="absolute inset-0"
+      style={{ opacity }}
+      aria-hidden="true"
+    >
+      {/* Fondo rojo sólido */}
+      <div className="absolute inset-0 bg-[#FF2727]" />
+
+      {/* SVG con noise overlay */}
+      <svg
+        className="absolute inset-0 w-full h-full"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid slice"
+        style={{ isolation: "isolate" }}
+      >
+        <defs>
+          {/* Noise filter - iOS WebKit compatible version */}
+          <filter
+            id={filterId}
+            x="0%"
+            y="0%"
+            width="100%"
+            height="100%"
+            filterUnits="objectBoundingBox"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="1.25 1.25"
+              numOctaves={3}
+              result="noise"
+              seed={4254}
+              stitchTiles="stitch"
+            />
+            <feColorMatrix
+              in="noise"
+              type="luminanceToAlpha"
+              result="alphaNoise"
+            />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA
+                type="discrete"
+                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+              />
+            </feComponentTransfer>
+            <feComposite
+              operator="in"
+              in2="shape"
+              in="coloredNoise1"
+              result="noise1Clipped"
+            />
+            <feFlood
+              floodColor="rgba(255, 255, 255, 0.15)"
+              result="color1Flood"
+            />
+            <feComposite
+              operator="in"
+              in2="noise1Clipped"
+              in="color1Flood"
+              result="color1"
+            />
+            <feMerge result="effect1_noise">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        {/* Rectángulo que cubre todo con el filtro de noise */}
+        <rect
+          x="0"
+          y="0"
+          width="100%"
+          height="100%"
+          fill="#FF2727"
+          filter={`url(#${filterId})`}
+        />
+      </svg>
+    </motion.div>
+  );
+}
 
 // ============ TYPES ============
 interface Candidate {
@@ -446,12 +545,8 @@ export function VSScrollAnimation() {
       style={{ height: SCROLL_HEIGHT }}
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden">
-        {/* Fondo rojo animado */}
-        <motion.div
-          className="absolute inset-0 bg-[#FF2727]"
-          style={{ opacity: bgOpacity }}
-          aria-hidden="true"
-        />
+        {/* Fondo rojo animado con noise texture */}
+        <NoiseBackground opacity={bgOpacity} />
 
         <div className="relative h-full w-full flex items-center justify-center">
           {/* Candidatos izquierda */}
