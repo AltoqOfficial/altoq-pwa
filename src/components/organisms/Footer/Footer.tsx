@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Logo } from "@/components/atoms/Logo/Logo";
 import { Typography } from "@/components/atoms/Typography/Typography";
-import { SOCIAL_LINKS, CONTACT } from "@/constants";
+import { SOCIAL_LINKS, CONTACT, EXTERNAL_LINKS } from "@/constants";
 
 /**
  * Footer Component (Organism)
@@ -46,12 +46,14 @@ export function Footer() {
               Enlaces Rápidos
             </Typography>
             <nav className="flex flex-col space-y-2">
-              <Link
-                href="/unete"
+              <a
+                href={EXTERNAL_LINKS.volunteerForm}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-neutral-300 transition-colors hover:text-white"
               >
                 Únete como voluntario
-              </Link>
+              </a>
               <Link
                 href="/compara"
                 className="text-neutral-300 transition-colors hover:text-white"

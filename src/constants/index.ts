@@ -10,9 +10,6 @@ export const APP_DESCRIPTION =
 export const APP_URL =
   process.env.NEXT_PUBLIC_APP_URL || "https://altoqperu.com";
 
-// Launch Date - January 12, 2026 at 00:00 Peru time (UTC-5)
-export const LAUNCH_DATE = new Date("2026-01-12T00:00:00-05:00");
-
 // SEO Configuration
 export const SEO = {
   TITLE_TEMPLATE: "%s | Altoq",
@@ -109,4 +106,9 @@ export const SOCIAL_LINKS = {
 // Contact Information
 export const CONTACT = {
   email: "contacto@altoqperu.com",
+} as const;
+
+// External Links
+export const EXTERNAL_LINKS = {
+  volunteerForm: "https://forms.gle/PLACEHOLDER", // TODO: Replace with actual Google Form URL
 } as const;
