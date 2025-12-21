@@ -16,8 +16,6 @@ export default defineConfig(({ mode }) => {
         // Pasar las variables de entorno a los tests
         NEXT_PUBLIC_SUPABASE_URL: env.NEXT_PUBLIC_SUPABASE_URL,
         NEXT_PUBLIC_SUPABASE_KEY: env.NEXT_PUBLIC_SUPABASE_KEY,
-        NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY:
-          env.NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY,
       },
     },
     resolve: {
