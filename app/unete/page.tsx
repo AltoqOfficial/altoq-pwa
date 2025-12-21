@@ -1,13 +1,22 @@
-import { Metadata } from "next";
-
 import { JoinHeroSection } from "@/components/organisms/JoinHeroSection";
 import { VolunteerForm } from "@/components/organisms/VolunteerForm";
+import { generateMetadata } from "@/lib/config/seo";
 
-export const metadata: Metadata = {
-  title: "Únete a Nosotros | Altoq",
+export const metadata = generateMetadata({
+  title: "Únete como Voluntario",
   description:
-    "Únete como voluntario a Altoq y ayuda a construir una plataforma que marca la diferencia",
-};
+    "Sé parte del equipo de Altoq. Únete como voluntario y ayuda a promover el voto informado en las Elecciones 2026 del Perú. Contribuye a la democracia y participación ciudadana.",
+  keywords: [
+    "voluntario altoq",
+    "voluntariado electoral",
+    "participación ciudadana",
+    "únete altoq",
+    "voluntario elecciones 2026",
+    "activismo político",
+  ],
+  path: "/unete",
+  type: "website",
+});
 
 /**
  * Join Us Page (Únete a Nosotros)
