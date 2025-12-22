@@ -24,7 +24,7 @@ export function Header() {
 
   // Pages with dark backgrounds use outline-light and header-nav-dark
   // Pages with light backgrounds use outline and header-nav
-  const darkBackgroundPages = ["/", "/compara"];
+  const darkBackgroundPages = ["/", "/compara", "/formulario-candidato"];
   const isDarkBackground = darkBackgroundPages.includes(pathname);
   const outlineVariant = isDarkBackground ? "outline-light" : "outline";
   const headerNavVariant = isDarkBackground ? "header-nav-dark" : "header-nav";
@@ -32,8 +32,9 @@ export function Header() {
   return (
     <header
       className={cn(
-        "static top-0 z-20 w-full backdrop-blur-sm",
-        pathname === "/compara" && "bg-neutral-500"
+        "static top-0 z-20 w-full backdrop-blur-sm transition-colors duration-300",
+        (pathname === "/compara" || pathname === "/formulario-candidato") &&
+          "bg-neutral-900/90 md:bg-neutral-900/80"
       )}
     >
       {/* Mobile Layout */}
@@ -44,23 +45,22 @@ export function Header() {
         {/* CTA Buttons - Horizontal with divider */}
         <div className="flex items-center gap-4 w-full justify-center">
           <div className="relative flex-1 max-w-[140px]">
+            {pathname === "/formulario-candidato" && (
+              <span className="absolute top-0 left-0 right-0 h-1 bg-primary-600 z-10" />
+            )}
             <Button
               variant={headerNavVariant}
               size="sm"
               asChild
               className="w-full rounded-none"
             >
-              <a
-                href={EXTERNAL_LINKS.volunteerForm}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="/formulario-candidato">
                 <span className="text-center leading-tight">
-                  Unirme como
+                  Mi Candidato
                   <br />
-                  Voluntario
+                  Ideal
                 </span>
-              </a>
+              </Link>
             </Button>
           </div>
 
@@ -100,16 +100,16 @@ export function Header() {
         <Logo variant="default" asLink priority />
 
         {/* CTA Buttons */}
-        <div className="flex items-center gap-4">
-          <Button variant={outlineVariant} size="sm" asChild>
-            <a
-              href={EXTERNAL_LINKS.volunteerForm}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Unirme como Voluntario
-            </a>
-          </Button>
+        <div className="flex items-center gap-8">
+          <Link
+            href="/formulario-candidato"
+            className={cn(
+              "text-sm font-bold font-sohne-breit transition-colors hover:opacity-80",
+              isDarkBackground ? "text-white" : "text-neutral-900"
+            )}
+          >
+            Mi Candidato Ideal
+          </Link>
           <Button variant="primary" size="sm" asChild>
             <Link href="/compara">Comparar Candidatos</Link>
           </Button>
