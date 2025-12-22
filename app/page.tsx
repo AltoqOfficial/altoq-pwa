@@ -1,70 +1,27 @@
-import { Metadata } from "next";
-
 import { HeroSection } from "@/components/organisms/HeroSection";
 import { FAQSection } from "@/components/organisms/FAQSection";
 import { SuggestionsSection } from "@/components/organisms/SuggestionsSection";
 import { ComparePromotion } from "@/components/organisms/ComparePromotion";
 import { LogoLoop } from "@/components/organisms/LogoLoop";
 import {
+  generateMetadata,
   generateFAQSchema,
   generateBreadcrumbSchema,
   generateWebPageSchema,
   generateSoftwareApplicationSchema,
 } from "@/lib/config/seo";
 import { faqs } from "@/data/faqs";
-import { APP_URL } from "@/constants";
 
 /**
  * Enhanced metadata for the home page
  * Optimized for search engines and social sharing
  */
-export const metadata: Metadata = {
-  title:
-    "Altoq - Vota Informado en las Elecciones 2026 | Compara Candidatos Perú",
+export const metadata = generateMetadata({
   description:
-    "Plataforma líder para conocer y comparar candidatos en las Elecciones Generales 2026 del Perú. Información verificada, propuestas, antecedentes y herramientas para votar informado.",
-  keywords: [
-    "altoq",
-    "elecciones 2026",
-    "elecciones perú",
-    "candidatos presidenciales",
-    "comparar candidatos",
-    "votar informado",
-    "elecciones generales peru",
-    "propuestas candidatos",
-    "JNE",
-    "democracia perú",
-  ],
-  alternates: {
-    canonical: APP_URL,
-  },
-  openGraph: {
-    title: "Altoq - Vota Informado en las Elecciones 2026",
-    description:
-      "Plataforma para conocer candidatos y comparar propuestas en las Elecciones Generales 2026 del Perú",
-    url: APP_URL,
-    siteName: "Altoq",
-    locale: "es_PE",
-    type: "website",
-    images: [
-      {
-        url: `${APP_URL}/og-image.png`,
-        width: 1200,
-        height: 630,
-        alt: "Altoq - Vota Informado",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Altoq - Vota Informado en las Elecciones 2026",
-    description:
-      "Plataforma para conocer candidatos y comparar propuestas en las Elecciones Generales 2026 del Perú",
-    images: [`${APP_URL}/og-image.png`],
-    creator: "@altoqperu",
-    site: "@altoqperu",
-  },
-};
+    "¿Cómo votar informado en las Elecciones 2026? Altoq es tu guía electoral: compara candidatos presidenciales, analiza propuestas, trayectorias y antecedentes. Plataforma gratuita para información electoral verificada en Perú.",
+  path: "",
+  type: "website",
+});
 
 /**
  * Home Page (Landing Page)

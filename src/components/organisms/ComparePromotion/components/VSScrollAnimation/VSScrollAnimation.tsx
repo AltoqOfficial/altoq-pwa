@@ -1,30 +1,75 @@
 "use client";
 
-import { useRef, useMemo, useSyncExternalStore, useId } from "react";
+import {
+  useRef,
+  useMemo,
+  useSyncExternalStore,
+  useId,
+  useCallback,
+  memo,
+} from "react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Button, Typography } from "@/components/atoms";
 
+// ============ PERFORMANCE UTILITIES ============
+// Debounce utility para optimizar el resize listener
+function debounce<T extends (...args: Parameters<T>) => void>(
+  func: T,
+  wait: number
+): (...args: Parameters<T>) => void {
+  let timeoutId: ReturnType<typeof setTimeout> | null = null;
+  return (...args: Parameters<T>) => {
+    if (timeoutId) clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => func(...args), wait);
+  };
+}
+
 // ============ NOISE BACKGROUND COMPONENT ============
 interface NoiseBackgroundProps {
   opacity: MotionValue<number>;
+  isMobile: boolean;
 }
 
-function NoiseBackground({ opacity }: NoiseBackgroundProps) {
+// Memoized NoiseBackground para evitar re-renders innecesarios
+// En mobile, deshabilitamos el SVG noise filter completamente para máximo rendimiento
+const NoiseBackground = memo(function NoiseBackground({
+  opacity,
+  isMobile,
+}: NoiseBackgroundProps) {
   const uniqueId = useId();
   const filterId = `vsNoiseFilter${uniqueId}`;
+
+  // En mobile, solo mostrar color sólido (sin SVG filter costoso)
+  if (isMobile) {
+    return (
+      <motion.div
+        className="absolute inset-0 bg-[#FF2727]"
+        style={{
+          opacity,
+          willChange: "opacity",
+          transform: "translateZ(0)",
+        }}
+        aria-hidden="true"
+      />
+    );
+  }
 
   return (
     <motion.div
       className="absolute inset-0"
-      style={{ opacity }}
+      style={{
+        opacity,
+        willChange: "opacity",
+        transform: "translateZ(0)",
+      }}
       aria-hidden="true"
     >
       {/* Fondo rojo sólido */}
       <div className="absolute inset-0 bg-[#FF2727]" />
 
-      {/* SVG con noise overlay */}
+      {/* SVG con noise overlay - solo en desktop */}
       <svg
         className="absolute inset-0 w-full h-full"
         xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +77,6 @@ function NoiseBackground({ opacity }: NoiseBackgroundProps) {
         style={{ isolation: "isolate" }}
       >
         <defs>
-          {/* Noise filter - iOS WebKit compatible version */}
           <filter
             id={filterId}
             x="0%"
@@ -103,7 +147,7 @@ function NoiseBackground({ opacity }: NoiseBackgroundProps) {
       </svg>
     </motion.div>
   );
-}
+});
 
 // ============ TYPES ============
 interface Candidate {
@@ -306,7 +350,12 @@ const RIGHT_CANDIDATES: Candidate[] = [
 ];
 
 // ============ HOOKS ============
-function useScrollAnimations(scrollYProgress: MotionValue<number>) {
+// Optimizado: en mobile, simplificamos las animaciones para mejor rendimiento
+// IMPORTANTE: Siempre llamamos los mismos hooks en el mismo orden (Reglas de Hooks)
+function useScrollAnimations(
+  scrollYProgress: MotionValue<number>,
+  isMobile: boolean
+) {
   const initialContentOpacity = useTransform(
     scrollYProgress,
     ANIMATION_TIMING.initialContent,
@@ -324,16 +373,18 @@ function useScrollAnimations(scrollYProgress: MotionValue<number>) {
     [0, 1]
   );
 
+  // En mobile: sin animación X (más performante)
+  // En desktop: animación normal de entrada horizontal
   const leftCandidatesX = useTransform(
     scrollYProgress,
     ANIMATION_TIMING.leftCandidates,
-    [-100, 0]
+    isMobile ? [0, 0] : [-100, 0]
   );
 
   const rightCandidatesX = useTransform(
     scrollYProgress,
     ANIMATION_TIMING.rightCandidates,
-    [100, 0]
+    isMobile ? [0, 0] : [100, 0]
   );
 
   const finalContentOpacity = useTransform(
@@ -343,34 +394,46 @@ function useScrollAnimations(scrollYProgress: MotionValue<number>) {
   );
 
   // Animación de posición hacia arriba para mobile - VS
-  // Comienza cuando el VS cambia de color y continúa hasta el final
   const mobileVSY = useTransform(
     scrollYProgress,
     [ANIMATION_TIMING.vsColor[0], 1],
-    [0, MOBILE_CONFIG.vsYOffset] // Se mueve hacia arriba durante el scroll
+    [0, MOBILE_CONFIG.vsYOffset]
   );
 
   // Animación de posición hacia arriba para mobile - Contenido final
-  // Comienza cuando el contenido final empieza a aparecer y continúa hasta el final
   const mobileContentY = useTransform(
     scrollYProgress,
     [ANIMATION_TIMING.finalContent[0], 1],
-    [0, MOBILE_CONFIG.contentYOffset] // Se mueve hacia arriba durante el scroll
+    [0, MOBILE_CONFIG.contentYOffset]
   );
 
-  // Opacidades de candidatos izquierda
-  const leftOpacities = [
-    useTransform(scrollYProgress, [0.2, 0.25], [0, 1]),
-    useTransform(scrollYProgress, [0.25, 0.3], [0, 1]),
-    useTransform(scrollYProgress, [0.3, 0.35], [0, 1]),
-  ];
+  // Opacidad unificada para mobile (todos aparecen juntos)
+  const allCandidatesOpacity = useTransform(
+    scrollYProgress,
+    [0.2, 0.3],
+    [0, 1]
+  );
 
-  // Opacidades de candidatos derecha
-  const rightOpacities = [
-    useTransform(scrollYProgress, [0.23, 0.28], [0, 1]),
-    useTransform(scrollYProgress, [0.28, 0.33], [0, 1]),
-    useTransform(scrollYProgress, [0.33, 0.38], [0, 1]),
-  ];
+  // SIEMPRE llamamos todos los hooks para mantener el orden estable
+  // Opacidades escalonadas para desktop
+  const leftOpacity0 = useTransform(scrollYProgress, [0.2, 0.25], [0, 1]);
+  const leftOpacity1 = useTransform(scrollYProgress, [0.25, 0.3], [0, 1]);
+  const leftOpacity2 = useTransform(scrollYProgress, [0.3, 0.35], [0, 1]);
+
+  const rightOpacity0 = useTransform(scrollYProgress, [0.23, 0.28], [0, 1]);
+  const rightOpacity1 = useTransform(scrollYProgress, [0.28, 0.33], [0, 1]);
+  const rightOpacity2 = useTransform(scrollYProgress, [0.33, 0.38], [0, 1]);
+
+  // Seleccionar qué opacidades usar basado en isMobile
+  // En mobile: usamos la misma opacidad para todos (menos cálculos)
+  // En desktop: usamos las opacidades escalonadas
+  const leftOpacities = isMobile
+    ? [allCandidatesOpacity, allCandidatesOpacity, allCandidatesOpacity]
+    : [leftOpacity0, leftOpacity1, leftOpacity2];
+
+  const rightOpacities = isMobile
+    ? [allCandidatesOpacity, allCandidatesOpacity, allCandidatesOpacity]
+    : [rightOpacity0, rightOpacity1, rightOpacity2];
 
   return {
     initialContentOpacity,
@@ -433,48 +496,48 @@ function getResponsiveScale(
 }
 
 // Hook para obtener el ancho de la ventana de forma segura para SSR
+// Optimizado con debounce para evitar re-renders excesivos en resize
+const windowWidthSubscribe = (callback: () => void) => {
+  if (typeof window === "undefined") return () => {};
+  // Debounce de 100ms para evitar que el resize cause demasiados re-renders
+  const debouncedCallback = debounce(callback, 100);
+  window.addEventListener("resize", debouncedCallback);
+  return () => window.removeEventListener("resize", debouncedCallback);
+};
+
+const windowWidthGetSnapshot = (): number | null => {
+  if (typeof window === "undefined") return null;
+  return window.innerWidth;
+};
+
+const windowWidthGetServerSnapshot = (): number | null => null;
+
 function useWindowWidth(): number | null {
-  const subscribe = (callback: () => void) => {
-    if (typeof window === "undefined") return () => {};
-    window.addEventListener("resize", callback);
-    return () => window.removeEventListener("resize", callback);
-  };
-
-  const getSnapshot = (): number | null => {
-    if (typeof window === "undefined") return null;
-    return window.innerWidth;
-  };
-
-  const getServerSnapshot = (): number | null => {
-    // En el servidor, retornar null para usar el valor default
-    return null;
-  };
-
-  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  return useSyncExternalStore(
+    windowWidthSubscribe,
+    windowWidthGetSnapshot,
+    windowWidthGetServerSnapshot
+  );
 }
 
-function CandidateImage({
+// Memoized CandidateImage para evitar re-renders innecesarios
+const CandidateImage = memo(function CandidateImage({
   candidate,
   opacity,
   xOffset,
   position,
   isPriority = false,
-}: CandidateImageProps) {
-  const windowWidth = useWindowWidth();
-
-  const size = useMemo(() => {
-    // Usar el ancho de la ventana (null en SSR, valor real después de hidratación)
+  windowWidth,
+}: CandidateImageProps & { windowWidth: number | null }) {
+  // Calcular valores responsivos una sola vez
+  const { size, offsetX, offsetY } = useMemo(() => {
     const scale = getResponsiveScale(candidate.scale, windowWidth);
-    return Math.round(BASE_SIZE * scale);
-  }, [candidate.scale, windowWidth]);
-
-  const offsetX = useMemo(() => {
-    return getResponsiveValue(candidate.offsetX, windowWidth, 0);
-  }, [candidate.offsetX, windowWidth]);
-
-  const offsetY = useMemo(() => {
-    return getResponsiveValue(candidate.offsetY, windowWidth, 0);
-  }, [candidate.offsetY, windowWidth]);
+    return {
+      size: Math.round(BASE_SIZE * scale),
+      offsetX: getResponsiveValue(candidate.offsetX, windowWidth, 0),
+      offsetY: getResponsiveValue(candidate.offsetY, windowWidth, 0),
+    };
+  }, [candidate.scale, candidate.offsetX, candidate.offsetY, windowWidth]);
 
   return (
     <motion.div
@@ -485,6 +548,8 @@ function CandidateImage({
         x: xOffset,
         translateX: offsetX,
         translateY: offsetY,
+        willChange: "transform, opacity",
+        transform: "translateZ(0)", // Force GPU layer
       }}
     >
       <Image
@@ -493,10 +558,11 @@ function CandidateImage({
         width={size}
         height={size}
         priority={isPriority}
+        loading={isPriority ? "eager" : "lazy"}
       />
     </motion.div>
   );
-}
+});
 
 // ============ MAIN COMPONENT ============
 export function VSScrollAnimation() {
@@ -521,7 +587,7 @@ export function VSScrollAnimation() {
     mobileContentY,
     leftOpacities,
     rightOpacities,
-  } = useScrollAnimations(scrollYProgress);
+  } = useScrollAnimations(scrollYProgress, isMobile);
 
   // Determinar qué tamaño de VS usar según el breakpoint
   const vsFontSizeConfig = useMemo(() => {
@@ -546,7 +612,7 @@ export function VSScrollAnimation() {
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         {/* Fondo rojo animado con noise texture */}
-        <NoiseBackground opacity={bgOpacity} />
+        <NoiseBackground opacity={bgOpacity} isMobile={isMobile} />
 
         <div className="relative h-full w-full flex items-center justify-center">
           {/* Candidatos izquierda */}
@@ -558,6 +624,7 @@ export function VSScrollAnimation() {
               xOffset={leftCandidatesX}
               position="left"
               isPriority={index === 0}
+              windowWidth={windowWidth}
             />
           ))}
 
@@ -570,6 +637,7 @@ export function VSScrollAnimation() {
               xOffset={rightCandidatesX}
               position="right"
               isPriority={index === 0}
+              windowWidth={windowWidth}
             />
           ))}
 
@@ -578,14 +646,22 @@ export function VSScrollAnimation() {
             {/* Fondo oscuro para mejorar legibilidad en tablet/mobile */}
             <motion.div
               className="absolute -inset-x-8 -inset-y-4 -z-10 bg-black/30 rounded-3xl blur-xl lg:hidden"
-              style={{ opacity: bgOpacity }}
+              style={{
+                opacity: bgOpacity,
+                willChange: "opacity",
+                transform: "translateZ(0)",
+              }}
               aria-hidden="true"
             />
 
             {/* Contenido inicial */}
             <motion.div
               className="absolute flex flex-col items-center gap-10 -top-64 z-10 mx-4 md:mx-0"
-              style={{ opacity: initialContentOpacity }}
+              style={{
+                opacity: initialContentOpacity,
+                willChange: "opacity",
+                transform: "translateZ(0)",
+              }}
             >
               <Typography
                 variant="h3"
@@ -613,6 +689,8 @@ export function VSScrollAnimation() {
                 color: vsColor,
                 fontSize: vsFontSizeResponsive,
                 y: isMobile ? mobileVSY : 0,
+                willChange: "transform, color, font-size",
+                transform: "translateZ(0)",
               }}
               aria-label="VS"
             >
@@ -625,6 +703,8 @@ export function VSScrollAnimation() {
               style={{
                 opacity: finalContentOpacity,
                 y: isMobile ? mobileContentY : 0,
+                willChange: "transform, opacity",
+                transform: "translateZ(0)",
               }}
             >
               <div className="w-64 h-0.5 bg-white mb-2" aria-hidden="true" />

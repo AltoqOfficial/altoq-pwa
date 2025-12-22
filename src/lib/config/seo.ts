@@ -400,31 +400,3 @@ export function generateSoftwareApplicationSchema() {
     },
   };
 }
-
-/**
- * Generates all schemas combined for the main page
- */
-export function generateAllSchemas(
-  faqs?: FAQItem[]
-): Record<string, unknown>[] {
-  const schemas: Record<string, unknown>[] = [
-    generateOrganizationSchema(),
-    generateWebSiteSchema(),
-    generateWebPageSchema({
-      title: `${APP_NAME} - Vota Informado en las Elecciones 2026`,
-      description: APP_DESCRIPTION,
-      path: "",
-    }),
-    generateSoftwareApplicationSchema(),
-    generateBreadcrumbSchema([
-      { name: "Inicio", url: "/" },
-      { name: "Comparar Candidatos", url: "/compara" },
-    ]),
-  ];
-
-  if (faqs && faqs.length > 0) {
-    schemas.push(generateFAQSchema(faqs));
-  }
-
-  return schemas;
-}

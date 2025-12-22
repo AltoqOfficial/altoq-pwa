@@ -7,10 +7,8 @@
 export const APP_NAME = "Altoq";
 export const APP_DESCRIPTION =
   "Plataforma para votar informado en las Elecciones Generales 2026 del Perú";
-export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://altoq.pe";
-
-// Launch Date - January 10, 2026 at 00:00 Peru time (UTC-5)
-export const LAUNCH_DATE = new Date("2026-01-10T00:00:00-05:00");
+export const APP_URL =
+  process.env.NEXT_PUBLIC_APP_URL || "https://altoqperu.com";
 
 // SEO Configuration
 export const SEO = {
@@ -23,33 +21,74 @@ export const SEO = {
     "altoq peru",
     "altoq perú",
     "altoqperu",
+    "altoque",
+    "altoque peru",
+    "altoque perú",
     // Election keywords
     "elecciones 2026",
     "elecciones generales 2026",
     "elecciones perú 2026",
     "elecciones peru",
     "elecciones presidenciales perú",
+    "elecciones presidenciales 2026",
     // Candidate keywords
     "candidatos presidenciales",
     "candidatos 2026",
     "candidatos peru",
+    "candidatos presidenciales peru",
     "comparar candidatos",
+    "comparar candidatos presidenciales",
+    "comparación de candidatos",
     "propuestas candidatos",
-    // Action keywords
+    "análisis candidatos",
+    "trayectoria candidatos",
+    "antecedentes candidatos",
+    "quien es el mejor candidato",
+    "quién es el mejor candidato",
+    // Action keywords - Votar Informado (CRÍTICO PARA TU OBJETIVO)
     "votar informado",
     "vota informado",
+    "vota bien",
+    "votar bien",
+    "cómo votar bien",
+    "votabien",
+    "votabienpe",
+    "como votar informado",
+    "cómo votar informado",
+    "donde votar informado",
+    "dónde votar informado",
     "informarse para votar",
+    "información para votar",
+    "información para votar bien",
+    "votar consciente",
+    "voto consciente",
+    "herramientas para votar",
+    "guía para votar",
+    "guía electoral",
+    "guía elecciones 2026",
+    // Platform & Tools keywords
+    "plataforma electoral",
+    "plataforma electoral perú",
+    "comparar planes de gobierno",
+    "planes de gobierno 2026",
+    "propuestas presidenciales",
+    "propuestas presidenciales 2026",
     // General political keywords
     "democracia perú",
     "política peruana",
     "partidos políticos perú",
     "plan de gobierno",
     "propuestas electorales",
-    // Related terms
+    // Electoral authorities
     "JNE",
     "ONPE",
-    "voto consciente",
+    "RENIEC",
     "ciudadanía informada",
+    "participación ciudadana",
+    // Debate & Campaign keywords
+    "debate electoral",
+    "debate presidencial",
+    "campaña electoral 2026",
   ],
 } as const;
 
@@ -57,10 +96,6 @@ export const SEO = {
 export const ROUTES = {
   HOME: "/",
   COMPARATOR: "/compara",
-  JOIN_US: "/unete",
-  ABOUT: "/about",
-  PRIVACY: "/privacy",
-  TERMS: "/terms",
 } as const;
 
 // Social Media Links
@@ -71,68 +106,9 @@ export const SOCIAL_LINKS = {
 // Contact Information
 export const CONTACT = {
   email: "contacto@altoqperu.com",
-  phone: "+51 999 999 999",
 } as const;
 
-// Political Parties (from the design)
-export const POLITICAL_PARTIES = [
-  {
-    id: "renovacion-popular",
-    name: "Renovación Popular",
-    logo: "/images/parties/renovacion-popular.png",
-  },
-  {
-    id: "fuerza-popular",
-    name: "Fuerza Popular",
-    logo: "/images/parties/fuerza-popular.png",
-  },
-  {
-    id: "peru-libre",
-    name: "Perú Libre",
-    logo: "/images/parties/peru-libre.png",
-  },
-  {
-    id: "peru-bicentenario",
-    name: "Perú Bicentenario",
-    logo: "/images/parties/peru-bicentenario.png",
-  },
-  {
-    id: "alianza-progreso",
-    name: "Alianza para el Progreso",
-    logo: "/images/parties/alianza-progreso.png",
-  },
-] as const;
-
-// Comparison Tabs
-export const COMPARISON_TABS = [
-  {
-    id: "perfil-general",
-    title: "I. Perfil General",
-    order: 1,
-  },
-  {
-    id: "trayectoria-politica",
-    title: "II. Trayectoria Política",
-    order: 2,
-  },
-  {
-    id: "antecedentes",
-    title: "III. Antecedentes e Investigaciones",
-    order: 3,
-  },
-  {
-    id: "propuestas",
-    title: "IV. Propuestas por Temas",
-    order: 4,
-  },
-  {
-    id: "coherencia",
-    title: "V. Coherencia con el Plan del Partido",
-    order: 5,
-  },
-  {
-    id: "financiamiento",
-    title: "VI. Financiamiento",
-    order: 6,
-  },
-] as const;
+// External Links
+export const EXTERNAL_LINKS = {
+  volunteerForm: "https://forms.gle/PLACEHOLDER", // TODO: Replace with actual Google Form URL
+} as const;

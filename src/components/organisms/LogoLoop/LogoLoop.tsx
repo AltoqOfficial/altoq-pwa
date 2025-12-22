@@ -89,7 +89,7 @@ export const LogoLoop = memo(function LogoLoop() {
       style={{ minHeight: containerHeight }}
       aria-label="Sección de partidos políticos"
     >
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-0">
+      <div className="flex flex-row items-center justify-center gap-4 sm:gap-0">
         {/* Static text section - responsive */}
         <div className="shrink-0 sm:pr-4 md:pr-6 lg:pr-8 z-10 text-center">
           <p className="text-[#A6A6A6] text-xs sm:text-sm md:text-base max-w-40 sm:max-w-44 md:max-w-52 lg:max-w-56 font-semibold">

@@ -1,40 +1,63 @@
 # https://www.robotstxt.org/robotstxt.html
 # Robots.txt for Altoq - Political Information Platform
+# Last updated: 2025-12-21
 
-# Allow all crawlers
+# Default rule - Allow all crawlers
 User-agent: *
 Allow: /
 
-# Disallow unnecessary paths
+# Disallow build and internal paths
 Disallow: /api/
-Disallow: /_next/
-Disallow: /static/
-Disallow: /*.json$
-Disallow: /*.js$
-Disallow: /*.css$
+Disallow: /_next/static/
+Disallow: /_next/image
 
-# Allow important assets
+# Allow important content directories
 Allow: /icons/
 Allow: /images/
 Allow: /candidatos/
 Allow: /partidos/
+Allow: /fonts/
+Allow: /promotion/
+Allow: /screenshots/
 
-# Googlebot specific rules
+# Allow manifest and service worker for PWA
+Allow: /manifest.json
+Allow: /sw.js
+Allow: /workbox-*.js
+
+# Googlebot specific rules (modern Googlebot renders JS/CSS)
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
+Allow: /_next/static/
+Allow: /*.js
+Allow: /*.css
+
+# Google Image bot
+User-agent: Googlebot-Image
+Allow: /
+Allow: /images/
+Allow: /candidatos/
+Allow: /partidos/
 
 # Bingbot specific rules
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 2
 
-# Allow Google Image bot
-User-agent: Googlebot-Image
-Allow: /
+# Block bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
 
 # Sitemap location
-Sitemap: https://altoq.pe/sitemap.xml
+Sitemap: https://altoqperu.com/sitemap.xml
 
 # Host directive for canonical domain
-Host: https://altoq.pe
+Host: https://altoqperu.com

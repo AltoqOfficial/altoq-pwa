@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     { path: "", priority: 1.0, changeFrequency: "daily" as const },
     { path: "/compara", priority: 0.9, changeFrequency: "daily" as const },
-    { path: "/unete", priority: 0.8, changeFrequency: "weekly" as const },
   ];
 
   // Generate sitemap entries

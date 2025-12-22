@@ -1,12 +1,23 @@
-import { Metadata } from "next";
-
 import { ComparisonHero } from "@/components/organisms/ComparisonHero";
+import { generateMetadata } from "@/lib/config/seo";
 
-export const metadata: Metadata = {
-  title: "Comparar Candidatos | Altoq",
+export const metadata = generateMetadata({
+  title: "Comparar Candidatos",
   description:
-    "Compara las propuestas y trayectorias de los candidatos presidenciales para las Elecciones 2026",
-};
+    "Compara candidatos presidenciales para las Elecciones 2026 en Perú. Analiza propuestas, trayectorias, antecedentes, planes de gobierno y financiamiento. Herramienta gratuita para votar informado.",
+  keywords: [
+    "comparar candidatos presidenciales",
+    "comparar candidatos 2026",
+    "comparación candidatos perú",
+    "propuestas presidenciales 2026",
+    "trayectoria candidatos",
+    "antecedentes candidatos",
+    "planes de gobierno 2026",
+    "análisis candidatos presidenciales",
+  ],
+  path: "/compara",
+  type: "website",
+});
 
 /**
  * Compare Page (Comparar Candidatos)

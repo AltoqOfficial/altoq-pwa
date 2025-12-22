@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Logo } from "@/components/atoms/Logo";
 import { Button } from "@/components/atoms/Button";
 import { cn } from "@/lib/utils";
+import { EXTERNAL_LINKS } from "@/constants";
 
 /**
  * Header Component (Organism)
@@ -43,22 +44,23 @@ export function Header() {
         {/* CTA Buttons - Horizontal with divider */}
         <div className="flex items-center gap-4 w-full justify-center">
           <div className="relative flex-1 max-w-[140px]">
-            {pathname === "/unete" && (
-              <span className="absolute top-0 left-0 right-0 h-1 bg-primary-600 z-10" />
-            )}
             <Button
               variant={headerNavVariant}
               size="sm"
               asChild
               className="w-full rounded-none"
             >
-              <Link href="/unete">
+              <a
+                href={EXTERNAL_LINKS.volunteerForm}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="text-center leading-tight">
                   Unirme como
                   <br />
                   Voluntario
                 </span>
-              </Link>
+              </a>
             </Button>
           </div>
 
@@ -100,7 +102,13 @@ export function Header() {
         {/* CTA Buttons */}
         <div className="flex items-center gap-4">
           <Button variant={outlineVariant} size="sm" asChild>
-            <Link href="/unete">Unirme como Voluntario</Link>
+            <a
+              href={EXTERNAL_LINKS.volunteerForm}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unirme como Voluntario
+            </a>
           </Button>
           <Button variant="primary" size="sm" asChild>
             <Link href="/compara">Comparar Candidatos</Link>
