@@ -55,7 +55,7 @@ export function DaysCountSVG() {
       {/* Inline SVG with dynamic text */}
       <svg
         viewBox="0 0 700 280"
-        className="w-full h-auto max-w-4xl mx-auto"
+        className="w-full h-auto max-w-xl lg:max-w-md xl:max-w-lg 2xl:max-w-6xl mx-auto"
         preserveAspectRatio="xMidYMid meet"
         xmlns="http://www.w3.org/2000/svg"
         aria-label={`${daysRemaining} ${displayText}`}
