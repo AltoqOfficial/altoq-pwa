@@ -81,7 +81,7 @@ export function HeroSection() {
         {/* Main Title - Days Count */}
         <DaysCountSVG />
 
-        <div className="mb-2 flex justify-center gap-2 lg:gap-3 group">
+        <div className="mb-2 flex justify-center items-center gap-2 lg:gap-3 group">
           {/* Subtitle with Animated Text */}
           <Typography
             variant="h3"
@@ -96,7 +96,7 @@ export function HeroSection() {
               restartDelay={2000}
             />
           </Typography>
-          <Logo size="sm" priority className="h-10 w-auto md:h-12 lg:h-16" />
+          <Logo size="sm" priority className="h-8 w-auto md:h-10 lg:h-16" />
         </div>
 
         {/* Description */}
