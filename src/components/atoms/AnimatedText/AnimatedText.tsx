@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 export interface AnimatedTextProps {
   words: string[];
   className?: string;
+  containerClassName?: string;
   changeDelay?: number;
   restartDelay?: number;
   hoverCycles?: number;
@@ -25,6 +26,7 @@ export interface AnimatedTextProps {
 export function AnimatedText({
   words,
   className,
+  containerClassName,
   changeDelay = 2000,
   restartDelay = 3000,
   hoverCycles = 2,
@@ -91,14 +93,23 @@ export function AnimatedText({
 
   return (
     <div
-      className="relative inline-grid overflow-hidden text-right"
+      className={cn(
+        "relative inline-grid overflow-hidden text-right",
+        "py-0.5 md:py-1 lg:py-1.5",
+        "leading-none md:leading-tight lg:leading-snug",
+        containerClassName
+      )}
       onMouseEnter={handleMouseEnter}
     >
       {/* Hidden words to reserve horizontal space for the longest word */}
       {words.map((word, index) => (
         <span
           key={index}
-          className={cn("invisible col-start-1 row-start-1", className)}
+          className={cn(
+            "invisible col-start-1 row-start-1",
+            "text-2xl sm:text-3xl md:text-4xl lg:text-5xl",
+            className
+          )}
           aria-hidden="true"
         >
           {word}
@@ -109,6 +120,7 @@ export function AnimatedText({
       <span
         className={cn(
           "col-start-1 row-start-1 inline-block transition-all duration-300 ease-in-out",
+          "text-xl sm:text-2xl md:text-3xl lg:text-5xl",
           isAnimating
             ? "-translate-y-full opacity-0"
             : "translate-y-0 opacity-100",
