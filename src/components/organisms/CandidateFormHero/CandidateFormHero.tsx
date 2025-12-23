@@ -13,7 +13,11 @@ import { cn } from "@/lib/utils";
  * - CTA button
  * - Gallery of candidates with artistic filters
  */
-export function CandidateFormHero() {
+interface CandidateFormHeroProps {
+  onStartClick: () => void;
+}
+
+export function CandidateFormHero({ onStartClick }: CandidateFormHeroProps) {
   const candidates = [
     { id: 1, image: "/candidatos/1.webp", overlayType: "lead" },
     { id: 2, image: "/candidatos/2.webp", overlayType: "red" },
@@ -50,6 +54,7 @@ export function CandidateFormHero() {
         <Button
           variant="primary"
           size="lg"
+          onClick={onStartClick}
           className="rounded-md px-10 h-10 w-full md:w-66 text-base md:text-lg hover:scale-105 transition-transform"
         >
           Probar Ahora

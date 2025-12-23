@@ -8,3 +8,4 @@ export { SuggestionsSection } from "./SuggestionsSection";
 export { ComparePromotion } from "./ComparePromotion";
 export { LogoLoop } from "./LogoLoop";
 export { IdealCandidateSection } from "./IdealCandidateSection";
+export { CandidateFormWizard } from "./CandidateFormWizard";

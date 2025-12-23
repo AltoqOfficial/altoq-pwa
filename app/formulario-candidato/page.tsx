@@ -1,26 +1,22 @@
-import { CandidateFormHero } from "@/components/organisms/CandidateFormHero";
-import { generateMetadata } from "@/lib/config/seo";
+"use client";
 
-/**
- * Candidate Form Page
- * Route: /formulario-candidato
- *
- * This page allows users to find their ideal candidate by answering a set of questions.
- */
-export const metadata = generateMetadata({
-  title: "Encuentra tu Candidato Ideal | Altoq",
-  description:
-    "Responde nuestro cuestionario y descubre qué candidato presidencial se alinea mejor con tus valores, intereses y prioridades políticas para las Elecciones 2026.",
-  path: "formulario-candidato",
-});
+import { useState } from "react";
+import { CandidateFormHero } from "@/components/organisms/CandidateFormHero";
+import { CandidateFormWizard } from "@/components/organisms/CandidateFormWizard";
 
 export default function CandidateFormPage() {
+  const [isWizardOpen, setIsWizardOpen] = useState(false);
+
   return (
     <>
-      {/* Hero Section with Candidate Gallery */}
-      <CandidateFormHero />
+      {!isWizardOpen && (
+        <CandidateFormHero onStartClick={() => setIsWizardOpen(true)} />
+      )}
 
-      {/* Main Form container will be added here later */}
+      <CandidateFormWizard
+        isOpen={isWizardOpen}
+        onClose={() => setIsWizardOpen(false)}
+      />
     </>
   );
 }
