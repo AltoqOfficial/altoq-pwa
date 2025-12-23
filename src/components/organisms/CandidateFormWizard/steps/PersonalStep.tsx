@@ -1,6 +1,6 @@
 import React from "react";
 import { useFormContext } from "react-hook-form";
-import { FormField } from "@/components/molecules/FormField";
+import { FormField } from "../../../molecules/FormField";
 import { CandidateFormData } from "../types";
 
 export const PersonalStep: React.FC = () => {

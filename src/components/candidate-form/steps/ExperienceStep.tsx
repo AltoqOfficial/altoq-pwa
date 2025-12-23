@@ -1,7 +1,7 @@
 import React from "react";
 import { useFormContext } from "react-hook-form";
-import { FormField } from "../../../molecules/FormField";
-import { CandidateFormData } from "../types";
+import { FormField } from "@/components/molecules/FormField";
+import { CandidateFormData } from "@/components/candidate-form/types";
 
 export const ExperienceStep: React.FC = () => {
   const {
