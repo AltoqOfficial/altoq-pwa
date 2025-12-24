@@ -26,7 +26,10 @@ export function SectionNavbar({
   const gradientNavId = `gradientNav${uniqueId}`;
 
   return (
-    <div id="comparison-navbar" className="w-full sticky top-0 z-50">
+    <div
+      id="comparison-navbar"
+      className="w-full sticky top-0 z-50 hidden md:block"
+    >
       {/* SVG Definitions for gradient and noise */}
       <svg width="0" height="0" className="absolute">
         <defs>

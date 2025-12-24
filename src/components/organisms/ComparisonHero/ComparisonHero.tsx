@@ -113,14 +113,9 @@ const HeroTitle = memo(function HeroTitle({
 }) {
   return (
     <h1
-      className={`font-sohne-schmal font-black text-center flex items-center justify-center relative ${className}`}
+      className={`font-sohne-schmal font-black text-center flex items-center justify-center relative text-[#FF2727] ${className}`}
     >
-      <span className="bg-linear-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent">
-        A COMPARAR
-      </span>
-      <span className="bg-linear-to-b from-[#A90003] to-[#FF2F2F] bg-clip-text text-transparent -translate-y-2 sm:-translate-y-3 md:-translate-y-4">
-        !
-      </span>
+      <span>A COMPARAR !</span>
     </h1>
   );
 });
@@ -256,76 +251,65 @@ export function ComparisonHero() {
     };
   }, [selectedCandidates]);
 
+  // Helper function to normalize candidate display data
+  const getCandidateDisplayInfo = useCallback(
+    (
+      candidateId: string | undefined,
+      fullCandidateData: CandidateComparisonData | null
+    ) => {
+      if (!candidateId) return null;
+
+      const candidateData = getCandidateById(candidateId);
+
+      if (fullCandidateData) {
+        return {
+          name: fullCandidateData.fullName,
+          fullName: fullCandidateData.fullName,
+          shortName: fullCandidateData.shortName,
+          image: fullCandidateData.image,
+          brightness: candidateData?.brightness ?? 1,
+          contrast: candidateData?.contrast ?? 1,
+          saturate: candidateData?.saturate ?? 1,
+          sepia: candidateData?.sepia ?? 0,
+          shadows: candidateData?.shadows ?? 1,
+        };
+      }
+
+      if (candidateData) {
+        return {
+          name: candidateData.name,
+          image: candidateData.src,
+          brightness: candidateData.brightness ?? 1,
+          contrast: candidateData.contrast ?? 1,
+          saturate: candidateData.saturate ?? 1,
+          sepia: candidateData.sepia ?? 0,
+          shadows: candidateData.shadows ?? 1,
+        };
+      }
+
+      return null;
+    },
+    []
+  );
+
   // Get candidate info for hero display - memoized
-  const leftCandidateInfo = useMemo(() => {
-    const leftId = selectedCandidates[0];
-    if (!leftId) return null;
-
-    const candidateData = getCandidateById(leftId);
-
-    if (leftCandidate) {
-      return {
-        name: leftCandidate.fullName,
-        fullName: leftCandidate.fullName,
-        shortName: leftCandidate.shortName,
-        image: leftCandidate.image,
-        brightness: candidateData?.brightness ?? 1,
-        contrast: candidateData?.contrast ?? 1,
-        saturate: candidateData?.saturate ?? 1,
-        sepia: candidateData?.sepia ?? 0,
-        shadows: candidateData?.shadows ?? 1,
-      };
-    }
-
-    if (candidateData) {
-      return {
-        name: candidateData.name,
-        image: candidateData.src,
-        brightness: candidateData.brightness ?? 1,
-        contrast: candidateData.contrast ?? 1,
-        saturate: candidateData.saturate ?? 1,
-        sepia: candidateData.sepia ?? 0,
-        shadows: candidateData.shadows ?? 1,
-      };
-    }
-
-    return null;
-  }, [selectedCandidates, leftCandidate]);
-
-  const rightCandidateInfo = useMemo(() => {
-    const rightId = selectedCandidates[1];
-    if (!rightId) return null;
-
-    const candidateData = getCandidateById(rightId);
-
-    if (rightCandidate) {
-      return {
-        name: rightCandidate.fullName,
-        fullName: rightCandidate.fullName,
-        shortName: rightCandidate.shortName,
-        image: rightCandidate.image,
-        brightness: candidateData?.brightness ?? 1,
-        contrast: candidateData?.contrast ?? 1,
-        saturate: candidateData?.saturate ?? 1,
-        sepia: candidateData?.sepia ?? 0,
-        shadows: candidateData?.shadows ?? 1,
-      };
-    }
-
-    if (candidateData) {
-      return {
-        name: candidateData.name,
-        image: candidateData.src,
-        brightness: candidateData.brightness ?? 1,
-        contrast: candidateData.contrast ?? 1,
-        saturate: candidateData.saturate ?? 1,
-        sepia: candidateData.sepia ?? 0,
-        shadows: candidateData.shadows ?? 1,
-      };
-    }
-
-    return null;
-  }, [selectedCandidates, rightCandidate]);
+  const { leftCandidateInfo, rightCandidateInfo } = useMemo(() => {
+    return {
+      leftCandidateInfo: getCandidateDisplayInfo(
+        selectedCandidates[0],
+        leftCandidate
+      ),
+      rightCandidateInfo: getCandidateDisplayInfo(
+        selectedCandidates[1],
+        rightCandidate
+      ),
+    };
+  }, [
+    selectedCandidates,
+    leftCandidate,
+    rightCandidate,
+    getCandidateDisplayInfo,
+  ]);
 
   const hasSelectedCandidates = leftCandidateInfo || rightCandidateInfo;
 
@@ -368,7 +352,7 @@ export function ComparisonHero() {
       <SVGFilters uniqueId={uniqueId} />
 
       {/* Title for mobile/tablet/lg */}
-      <HeroTitle className="xl:hidden text-5xl sm:text-6xl md:text-7xl [&>span:last-child]:text-[80px] [&>span:last-child]:sm:text-[100px] [&>span:last-child]:md:text-[120px]" />
+      <HeroTitle className="xl:hidden text-5xl sm:text-6xl md:text-7xl [&>span:last-child]:text-5xl [&>span:last-child]:sm:text-[100px] [&>span:last-child]:md:text-[120px]" />
 
       {/* Hero Section */}
       <div className="w-full">
@@ -405,7 +389,7 @@ export function ComparisonHero() {
             <div className="flex flex-col gap-6 xl:gap-12 order-1 xl:order-2 -mt-8 max-w-sm mx-auto md:max-w-132">
               <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center">
                 <HeroTitle className="hidden xl:flex text-7xl 2xl:text-8xl [&>span:last-child]:text-[120px] [&>span:last-child]:2xl:text-[140px] [&>span:last-child]:-translate-y-4 [&>span:last-child]:2xl:-translate-y-5" />
-                <span className="text-[#fefefe] font-sohne-breit text-xs sm:text-[12px] md:text-lg lg:text-sm text-center block w-29 sm:w-40 md:w-100 mx-auto lg:-my-4">
+                <span className="text-[#fefefe] font-sohne-breit text-xs pt-10 sm:text-[12px] md:text-lg lg:text-sm text-center block w-29 sm:w-40 md:w-100 mx-auto lg:-my-4">
                   Una comparación política basada en datos reales. Explora quién
                   propone más, quién tiene resultados y quién aún no los
                   demuestra.
@@ -485,8 +469,16 @@ export function ComparisonHero() {
                     filter={`url(#${filterIds.noiseFilter})`}
                   />
                 </svg>
-                <h3 className="relative text-white font-bold text-4xl animate-slide-in-left animation-delay-100 font-kenyan py-2 px-4">
-                  {leftCandidateInfo.shortName}
+                <h3 className="relative text-white font-bold text-[25px] sm:text-4xl animate-slide-in-left animation-delay-100 font-kenyan py-2 px-4 flex flex-col leading-none">
+                  <span>
+                    {(leftCandidateInfo.shortName || "").split(" ")[0]}
+                  </span>
+                  <span className="whitespace-nowrap">
+                    {(leftCandidateInfo.shortName || "")
+                      .split(" ")
+                      .slice(1)
+                      .join(" ")}
+                  </span>
                 </h3>
               </>
             ) : (
@@ -523,8 +515,16 @@ export function ComparisonHero() {
                     filter={`url(#${filterIds.noiseFilter})`}
                   />
                 </svg>
-                <h3 className="relative text-white font-bold text-4xl animate-slide-in-right animation-delay-100 font-kenyan text-end py-2 px-4">
-                  {rightCandidateInfo.shortName}
+                <h3 className="relative text-white font-bold text-[25px] sm:text-4xl animate-slide-in-right animation-delay-100 font-kenyan text-end py-2 px-4 flex flex-col items-end leading-none">
+                  <span>
+                    {(rightCandidateInfo.shortName || "").split(" ")[0]}
+                  </span>
+                  <span className="whitespace-nowrap">
+                    {(rightCandidateInfo.shortName || "")
+                      .split(" ")
+                      .slice(1)
+                      .join(" ")}
+                  </span>
                 </h3>
               </>
             ) : (
@@ -542,7 +542,7 @@ export function ComparisonHero() {
       </div>
 
       {/* Mobile Candidate Selector */}
-      <div className="flex xl:hidden">
+      <div className="flex xl:hidden pt-5 pb-10">
         <CandidateSelector
           selectedCandidates={selectedCandidates}
           onCandidateClick={handleCandidateClick}
@@ -558,8 +558,16 @@ export function ComparisonHero() {
               {leftCandidateInfo ? (
                 <>
                   <CandidateImage candidate={leftCandidateInfo} side="left" />
-                  <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl text-start animate-slide-in-left animation-delay-100 font-kenyan">
-                    {leftCandidateInfo.shortName}
+                  <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl text-start animate-slide-in-left animation-delay-100 font-kenyan flex flex-col leading-[0.9]">
+                    <span>
+                      {(leftCandidateInfo.shortName || "").split(" ")[0]}
+                    </span>
+                    <span>
+                      {(leftCandidateInfo.shortName || "")
+                        .split(" ")
+                        .slice(1)
+                        .join(" ")}
+                    </span>
                   </h3>
                 </>
               ) : (
@@ -584,8 +592,16 @@ export function ComparisonHero() {
             <div className="flex items-center justify-center xl:justify-end gap-4 xl:gap-12">
               {rightCandidateInfo ? (
                 <>
-                  <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl animate-slide-in-left animation-delay-100 font-kenyan text-end">
-                    {rightCandidateInfo.shortName}
+                  <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl animate-slide-in-left animation-delay-100 font-kenyan text-end flex flex-col items-end leading-[0.9]">
+                    <span>
+                      {(rightCandidateInfo.shortName || "").split(" ")[0]}
+                    </span>
+                    <span>
+                      {(rightCandidateInfo.shortName || "")
+                        .split(" ")
+                        .slice(1)
+                        .join(" ")}
+                    </span>
                   </h3>
                   <CandidateImage candidate={rightCandidateInfo} side="right" />
                 </>
