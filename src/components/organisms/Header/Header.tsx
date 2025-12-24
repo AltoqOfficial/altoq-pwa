@@ -37,9 +37,9 @@ export function Header() {
       )}
     >
       {/* Mobile Layout */}
-      <div className="container mx-auto flex md:hidden flex-col items-center px-4 py-4 gap-4">
+      <div className="container mx-auto flex md:hidden flex-col items-center px-4 py-10 gap-10">
         {/* Logo - Centered */}
-        <Logo variant="default" asLink priority />
+        <Logo variant="red" asLink priority />
 
         {/* CTA Buttons - Horizontal with divider */}
         <div className="flex items-center gap-4 w-full justify-center">
@@ -67,15 +67,12 @@ export function Header() {
           {/* Divider */}
           <div
             className={cn(
-              "h-12 w-px",
+              "h-10 w-0.5",
               isDarkBackground ? "bg-white/30" : "bg-neutral-400"
             )}
           ></div>
 
           <div className="relative flex-1 max-w-[140px]">
-            {pathname === "/compara" && (
-              <span className="absolute top-0 left-0 right-0 h-1 bg-primary-600 z-10" />
-            )}
             <Button
               variant={headerNavVariant}
               size="sm"
@@ -83,7 +80,12 @@ export function Header() {
               className="w-full rounded-none"
             >
               <Link href="/compara">
-                <span className="text-center leading-tight">
+                <span
+                  className={cn(
+                    "text-center leading-tight",
+                    pathname === "/compara" && "text-primary-600 underline"
+                  )}
+                >
                   Comparar
                   <br />
                   Candidatos
