@@ -22,6 +22,8 @@ export function CoherenciaConElPlanSection({
       fields={COHERENCIA_PLAN_CONFIG.fields!}
       leftData={leftCandidate?.coherenciaConElPlan}
       rightData={rightCandidate?.coherenciaConElPlan}
+      leftCandidate={leftCandidate}
+      rightCandidate={rightCandidate}
     />
   );
 }

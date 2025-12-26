@@ -5,6 +5,7 @@
   --font-sohne-breit: var(--font-sohne-breit);
   --font-sohne-schmal: var(--font-sohne-schmal);
   --font-kenyan: var(--font-kenyan-coffee);
+  --font-at-name-sans: var(--font-at-name-sans);
 
   /* Primary Colors (Red) */
   --color-primary-50: #ffe9e9;

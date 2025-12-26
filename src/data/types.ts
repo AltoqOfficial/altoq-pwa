@@ -133,6 +133,14 @@ export interface InnovacionData {
   source?: string | string[];
 }
 
+export interface SocialLinks {
+  instagram?: string;
+  tiktok?: string;
+  twitter?: string;
+  facebook?: string;
+  web?: string;
+}
+
 export interface CandidateComparisonData {
   id: string;
   slug: string;
@@ -141,6 +149,7 @@ export interface CandidateComparisonData {
   image: string;
   color: string;
   party: string;
+  socialLinks?: SocialLinks;
   perfilGeneral: PerfilGeneral;
   experienciaPolitica: ExperienciaPolitica;
   experienciaGestion: ExperienciaGestion;

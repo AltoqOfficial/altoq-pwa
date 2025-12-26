@@ -12,6 +12,8 @@ export * from "./utils";
 export { ComparisonGrid } from "./ComparisonGrid";
 export { TwoColumnLayout } from "./TwoColumnLayout";
 export { ListComparisonLayout } from "./ListComparisonLayout";
+export { MobileComparisonCard } from "./ComparisonCard";
+export { MobileComparisonView } from "./ComparisonView";
 
 // Tooltip
 export {

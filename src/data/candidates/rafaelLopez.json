@@ -6,6 +6,10 @@
   "image": "/candidatos/8.webp",
   "color": "#3E4692",
   "party": "Renovación Popular",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/rafaellopezaliagaoficial/",
+    "tiktok": "https://www.tiktok.com/@rafael_lopez_aliaga?lang=es-419"
+  },
 
   "perfilGeneral": {
     "edad": {

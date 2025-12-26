@@ -22,6 +22,8 @@ export function IdeologiaPoliticaSection({
       fields={IDEOLOGIA_POLITICA_CONFIG.fields!}
       leftData={leftCandidate?.ideologiaPolitica}
       rightData={rightCandidate?.ideologiaPolitica}
+      leftCandidate={leftCandidate}
+      rightCandidate={rightCandidate}
     />
   );
 }

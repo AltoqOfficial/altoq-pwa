@@ -6,6 +6,10 @@
   "image": "/candidatos/5.webp",
   "color": "#FF2727",
   "party": "Fuerza Popular",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/keikofujimorih/",
+    "tiktok": "https://www.tiktok.com/@keikofujimorih"
+  },
 
   "perfilGeneral": {
     "edad": {
@@ -37,7 +41,7 @@
       ]
     },
     "profesion": {
-      "value": ["Administradora de Empresas", "Política"],
+      "value": ["Administradora", "Política"],
       "source": [
         "https://plataformahistorico.jne.gob.pe/OrganizacionesPoliticas/BusquedaAvanzada",
         "https://lanoticia.com.pe/un-profesor-contra-una-administradora-de-empresas/#:~:text=Es%20administradora%20de%20empresas%20con,Oportunidades%20Instituto%20para%20el%20Desarrollo"

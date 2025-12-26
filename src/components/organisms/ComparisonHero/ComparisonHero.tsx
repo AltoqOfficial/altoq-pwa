@@ -16,6 +16,7 @@ import {
   getCandidateDataKey,
   getCandidateById,
 } from "./components/CandidateSelector";
+import { ComparisonProvider } from "./context";
 import { NAV_ITEMS } from "./constants";
 import { getCandidateData } from "@/data";
 import type { CandidateComparisonData } from "@/data";
@@ -347,222 +348,134 @@ export function ComparisonHero() {
   );
 
   return (
-    <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 py-2">
-      {/* Centralized SVG Filters - rendered once */}
-      <SVGFilters uniqueId={uniqueId} />
+    <ComparisonProvider value={{ activeNavIndex, onNavClick: handleNavClick }}>
+      <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 py-2">
+        {/* Centralized SVG Filters - rendered once */}
+        <SVGFilters uniqueId={uniqueId} />
 
-      {/* Title for mobile/tablet/lg */}
-      <HeroTitle className="xl:hidden text-5xl sm:text-6xl md:text-7xl [&>span:last-child]:text-5xl [&>span:last-child]:sm:text-[100px] [&>span:last-child]:md:text-[120px]" />
+        {/* Title for mobile/tablet/lg */}
+        <HeroTitle className="xl:hidden text-5xl sm:text-6xl md:text-7xl [&>span:last-child]:text-5xl [&>span:last-child]:sm:text-[100px] [&>span:last-child]:md:text-[120px]" />
 
-      {/* Hero Section */}
-      <div className="w-full">
-        <div className="flex justify-center items-center flex-col w-full h-[220px] md:h-full">
-          <div className="flex gap-2 h-full xl:gap-15 2xl:gap-30 w-full">
-            {/* Left Candidate */}
-            <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden">
-              {/* Red gradient background with noise */}
-              <svg
-                className={`absolute top-0 left-auto xl:right-0 transition-all duration-500 ease-out xl:w-[450px] w-full h-full hidden xl:block ${
-                  leftCandidateInfo
-                    ? "opacity-100 scale-100"
-                    : "opacity-40 scale-100"
-                }`}
-                preserveAspectRatio="none"
-              >
-                <rect
-                  width="100%"
-                  height="100%"
-                  fill={`url(#${filterIds.gradientRed})`}
-                  filter={`url(#${filterIds.noiseFilter})`}
-                />
-              </svg>
-              {leftCandidateInfo && (
-                <CandidateImage
-                  candidate={leftCandidateInfo}
-                  side="left"
-                  isHero
-                />
-              )}
-            </div>
-
-            {/* Center Content */}
-            <div className="flex flex-col gap-6 xl:gap-12 order-1 xl:order-2 -mt-8 max-w-sm mx-auto md:max-w-132">
-              <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center">
-                <HeroTitle className="hidden xl:flex text-7xl 2xl:text-8xl [&>span:last-child]:text-[120px] [&>span:last-child]:2xl:text-[140px] [&>span:last-child]:-translate-y-4 [&>span:last-child]:2xl:-translate-y-5" />
-                <span className="text-[#fefefe] font-sohne-breit text-xs pt-10 sm:text-[12px] md:text-lg lg:text-sm text-center block w-29 sm:w-40 md:w-100 mx-auto lg:-my-4">
-                  Una comparación política basada en datos reales. Explora quién
-                  propone más, quién tiene resultados y quién aún no los
-                  demuestra.
-                </span>
-              </div>
-              <div className="hidden xl:flex">
-                <CandidateSelector
-                  selectedCandidates={selectedCandidates}
-                  onCandidateClick={handleCandidateClick}
-                  lockSelection={true}
-                />
-              </div>
-            </div>
-
-            {/* Right Candidate */}
-            <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-3 overflow-hidden">
-              <svg
-                className={`absolute top-0 right-auto xl:left-0 transition-all duration-500 ease-out xl:w-[450px] xl:h-full w-full h-full hidden xl:block ${
-                  rightCandidateInfo
-                    ? "opacity-100 scale-100"
-                    : "opacity-70 scale-100"
-                }`}
-                preserveAspectRatio="none"
-              >
-                <rect
-                  width="100%"
-                  height="100%"
-                  fill={`url(#${filterIds.gradientBlue})`}
-                  filter={`url(#${filterIds.noiseFilter})`}
-                />
-              </svg>
-              {rightCandidateInfo && (
-                <CandidateImage
-                  candidate={rightCandidateInfo}
-                  side="right"
-                  isHero
-                />
-              )}
-            </div>
-          </div>
-
-          {hasSelectedCandidates && (
-            <button
-              onClick={scrollToComparison}
-              className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in hidden xl:block xl:translate-y-8 2xl:-translate-y-11"
-              aria-label="Ir a comparación"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="45"
-                height="17"
-                viewBox="0 0 45 17"
-                fill="none"
-              >
-                <path
-                  d="M43 0L22.6852 13L2.5 0L0 2.02381L22.6852 17L45 2.02381L43 0Z"
-                  fill="#FEFEFE"
-                />
-              </svg>
-            </button>
-          )}
-        </div>
-
-        {/* Mobile candidate names */}
-        <div className="flex gap-4 justify-center items-center w-full xl:px-6 xl:hidden overflow-hidden">
-          <div className="relative flex items-center justify-center">
-            {leftCandidateInfo ? (
-              <>
+        {/* Hero Section */}
+        <div className="w-full">
+          <div className="flex justify-center items-center flex-col w-full h-[220px] md:h-full">
+            <div className="flex gap-2 h-full xl:gap-15 2xl:gap-30 w-full">
+              {/* Left Candidate */}
+              <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden">
+                {/* Red gradient background with noise */}
                 <svg
-                  className="absolute inset-0 -left-6 right-1/2 w-[calc(100%+1.5rem)] h-full opacity-80"
+                  className={`absolute top-0 left-auto xl:right-0 transition-all duration-500 ease-out xl:w-[450px] w-full h-full hidden xl:block ${
+                    leftCandidateInfo
+                      ? "opacity-100 scale-100"
+                      : "opacity-40 scale-100"
+                  }`}
                   preserveAspectRatio="none"
                 >
                   <rect
                     width="100%"
                     height="100%"
-                    fill={`url(#${filterIds.gradientLeftName})`}
+                    fill={`url(#${filterIds.gradientRed})`}
                     filter={`url(#${filterIds.noiseFilter})`}
                   />
                 </svg>
-                <h3 className="relative text-white font-bold text-[25px] sm:text-4xl animate-slide-in-left animation-delay-100 font-kenyan py-2 px-4 flex flex-col leading-none">
-                  <span>
-                    {(leftCandidateInfo.shortName || "").split(" ")[0]}
-                  </span>
-                  <span className="whitespace-nowrap">
-                    {(leftCandidateInfo.shortName || "")
-                      .split(" ")
-                      .slice(1)
-                      .join(" ")}
-                  </span>
-                </h3>
-              </>
-            ) : (
-              <Typography
-                font="kenyan"
-                className="text-white/50 font-bold text-xl xl:text-4xl px-8"
-                variant="h1"
-              >
-                Selecciona candidato
-              </Typography>
-            )}
-          </div>
+                {leftCandidateInfo && (
+                  <CandidateImage
+                    candidate={leftCandidateInfo}
+                    side="left"
+                    isHero
+                  />
+                )}
+              </div>
 
-          <div className="flex items-center justify-center xl:order-0 scale-150 md:scale-90 w-1/2">
-            <VSBadge
-              gradientId={filterIds.gradientVS}
-              filterId={filterIds.noiseFilter}
-              className="w-[100px] h-auto md:w-[140px] xl:w-[180px]"
-            />
-          </div>
+              {/* Center Content */}
+              <div className="flex flex-col gap-6 xl:gap-12 order-1 xl:order-2 -mt-8 max-w-sm mx-auto md:max-w-132">
+                <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center">
+                  <HeroTitle className="hidden xl:flex text-7xl 2xl:text-8xl [&>span:last-child]:text-[120px] [&>span:last-child]:2xl:text-[140px] [&>span:last-child]:-translate-y-4 [&>span:last-child]:2xl:-translate-y-5" />
+                  <span className="text-[#fefefe] font-sohne-breit text-xs pt-10 sm:text-[12px] md:text-lg lg:text-sm text-center block w-29 sm:w-40 md:w-100 mx-auto lg:-my-4">
+                    Una comparación política basada en datos reales. Explora
+                    quién propone más, quién tiene resultados y quién aún no los
+                    demuestra.
+                  </span>
+                </div>
+                <div className="hidden xl:flex">
+                  <CandidateSelector
+                    selectedCandidates={selectedCandidates}
+                    onCandidateClick={handleCandidateClick}
+                    lockSelection={true}
+                  />
+                </div>
+              </div>
 
-          <div className="relative flex items-center justify-center xl:justify-end overflow-visible">
-            {rightCandidateInfo ? (
-              <>
+              {/* Right Candidate */}
+              <div className="relative w-full max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-3 overflow-hidden">
                 <svg
-                  className="absolute top-0 bottom-0 left-0 h-full"
-                  style={{ width: "calc(100% + 1.5rem)", right: "-1.5rem" }}
+                  className={`absolute top-0 right-auto xl:left-0 transition-all duration-500 ease-out xl:w-[450px] xl:h-full w-full h-full hidden xl:block ${
+                    rightCandidateInfo
+                      ? "opacity-100 scale-100"
+                      : "opacity-70 scale-100"
+                  }`}
                   preserveAspectRatio="none"
                 >
                   <rect
                     width="100%"
                     height="100%"
-                    fill={`url(#${filterIds.gradientRightName})`}
+                    fill={`url(#${filterIds.gradientBlue})`}
                     filter={`url(#${filterIds.noiseFilter})`}
                   />
                 </svg>
-                <h3 className="relative text-white font-bold text-[25px] sm:text-4xl animate-slide-in-right animation-delay-100 font-kenyan text-end py-2 px-4 flex flex-col items-end leading-none">
-                  <span>
-                    {(rightCandidateInfo.shortName || "").split(" ")[0]}
-                  </span>
-                  <span className="whitespace-nowrap">
-                    {(rightCandidateInfo.shortName || "")
-                      .split(" ")
-                      .slice(1)
-                      .join(" ")}
-                  </span>
-                </h3>
-              </>
-            ) : (
-              <Typography
-                font="kenyan"
-                className="text-white/50 font-bold text-xl xl:text-4xl px-8"
-                variant="h1"
-                align="right"
+                {rightCandidateInfo && (
+                  <CandidateImage
+                    candidate={rightCandidateInfo}
+                    side="right"
+                    isHero
+                  />
+                )}
+              </div>
+            </div>
+
+            {hasSelectedCandidates && (
+              <button
+                onClick={scrollToComparison}
+                className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in hidden xl:block xl:translate-y-8 2xl:-translate-y-11"
+                aria-label="Ir a comparación"
               >
-                Selecciona candidato
-              </Typography>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45"
+                  height="17"
+                  viewBox="0 0 45 17"
+                  fill="none"
+                >
+                  <path
+                    d="M43 0L22.6852 13L2.5 0L0 2.02381L22.6852 17L45 2.02381L43 0Z"
+                    fill="#FEFEFE"
+                  />
+                </svg>
+              </button>
             )}
           </div>
-        </div>
-      </div>
 
-      {/* Mobile Candidate Selector */}
-      <div className="flex xl:hidden pt-5 pb-10">
-        <CandidateSelector
-          selectedCandidates={selectedCandidates}
-          onCandidateClick={handleCandidateClick}
-          lockSelection={true}
-        />
-      </div>
-
-      {hasSelectedCandidates && (
-        <>
-          {/* Desktop candidate names bar */}
-          <div className="hidden xl:flex gap-4 xl:gap-12 justify-center 2xl:justify-between items-center w-full xl:max-w-336 2xl:max-w-500 px-4 xl:px-12">
-            <div className="flex items-center justify-center xl:justify-start gap-4 xl:gap-12">
+          {/* Mobile candidate names */}
+          <div className="flex gap-4 justify-center items-center w-full xl:px-6 xl:hidden overflow-hidden">
+            <div className="relative flex items-center justify-center">
               {leftCandidateInfo ? (
                 <>
-                  <CandidateImage candidate={leftCandidateInfo} side="left" />
-                  <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl text-start animate-slide-in-left animation-delay-100 font-kenyan flex flex-col leading-[0.9]">
+                  <svg
+                    className="absolute inset-0 -left-6 right-1/2 w-[calc(100%+1.5rem)] h-full opacity-80"
+                    preserveAspectRatio="none"
+                  >
+                    <rect
+                      width="100%"
+                      height="100%"
+                      fill={`url(#${filterIds.gradientLeftName})`}
+                      filter={`url(#${filterIds.noiseFilter})`}
+                    />
+                  </svg>
+                  <h3 className="relative text-white font-bold text-[25px] sm:text-4xl animate-slide-in-left animation-delay-100 font-kenyan py-2 px-4 flex flex-col leading-none">
                     <span>
                       {(leftCandidateInfo.shortName || "").split(" ")[0]}
                     </span>
-                    <span>
+                    <span className="whitespace-nowrap">
                       {(leftCandidateInfo.shortName || "")
                         .split(" ")
                         .slice(1)
@@ -573,7 +486,7 @@ export function ComparisonHero() {
               ) : (
                 <Typography
                   font="kenyan"
-                  className="text-white/50 font-bold text-xl xl:text-4xl"
+                  className="text-white/50 font-bold text-xl xl:text-4xl px-8"
                   variant="h1"
                 >
                   Selecciona candidato
@@ -581,7 +494,7 @@ export function ComparisonHero() {
               )}
             </div>
 
-            <div className="flex items-center justify-center xl:order-0 xl:scale-80 2xl:scale-110 2xl:px-32">
+            <div className="flex items-center justify-center xl:order-0 scale-150 md:scale-90 w-1/2">
               <VSBadge
                 gradientId={filterIds.gradientVS}
                 filterId={filterIds.noiseFilter}
@@ -589,26 +502,37 @@ export function ComparisonHero() {
               />
             </div>
 
-            <div className="flex items-center justify-center xl:justify-end gap-4 xl:gap-12">
+            <div className="relative flex items-center justify-center xl:justify-end overflow-visible">
               {rightCandidateInfo ? (
                 <>
-                  <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl animate-slide-in-left animation-delay-100 font-kenyan text-end flex flex-col items-end leading-[0.9]">
+                  <svg
+                    className="absolute top-0 bottom-0 left-0 h-full"
+                    style={{ width: "calc(100% + 1.5rem)", right: "-1.5rem" }}
+                    preserveAspectRatio="none"
+                  >
+                    <rect
+                      width="100%"
+                      height="100%"
+                      fill={`url(#${filterIds.gradientRightName})`}
+                      filter={`url(#${filterIds.noiseFilter})`}
+                    />
+                  </svg>
+                  <h3 className="relative text-white font-bold text-[25px] sm:text-4xl animate-slide-in-right animation-delay-100 font-kenyan text-end py-2 px-4 flex flex-col items-end leading-none">
                     <span>
                       {(rightCandidateInfo.shortName || "").split(" ")[0]}
                     </span>
-                    <span>
+                    <span className="whitespace-nowrap">
                       {(rightCandidateInfo.shortName || "")
                         .split(" ")
                         .slice(1)
                         .join(" ")}
                     </span>
                   </h3>
-                  <CandidateImage candidate={rightCandidateInfo} side="right" />
                 </>
               ) : (
                 <Typography
                   font="kenyan"
-                  className="text-white/50 font-bold text-xl xl:text-4xl"
+                  className="text-white/50 font-bold text-xl xl:text-4xl px-8"
                   variant="h1"
                   align="right"
                 >
@@ -617,24 +541,106 @@ export function ComparisonHero() {
               )}
             </div>
           </div>
+        </div>
 
-          {/* Navigation Bar */}
-          <SectionNavbar
-            activeNavIndex={activeNavIndex}
-            navContainerRef={navContainerRef}
-            onNavClick={handleNavClick}
-            onScrollNav={scrollNav}
+        {/* Mobile Candidate Selector */}
+        <div className="flex xl:hidden pt-5 pb-10">
+          <CandidateSelector
+            selectedCandidates={selectedCandidates}
+            onCandidateClick={handleCandidateClick}
+            lockSelection={true}
           />
+        </div>
 
-          {/* Horizontal Sections Container - Rendered dynamically with lazy loading */}
-          <HorizontalSections
-            activeIndex={activeNavIndex}
-            direction={scrollDirection}
-          >
-            {ALL_SECTIONS_CONFIG.map(renderSection)}
-          </HorizontalSections>
-        </>
-      )}
-    </div>
+        {hasSelectedCandidates && (
+          <>
+            {/* Desktop candidate names bar */}
+            <div className="hidden xl:flex gap-4 xl:gap-12 justify-center 2xl:justify-between items-center w-full xl:max-w-336 2xl:max-w-500 px-4 xl:px-12">
+              <div className="flex items-center justify-center xl:justify-start gap-4 xl:gap-12">
+                {leftCandidateInfo ? (
+                  <>
+                    <CandidateImage candidate={leftCandidateInfo} side="left" />
+                    <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl text-start animate-slide-in-left animation-delay-100 font-kenyan flex flex-col leading-[0.9]">
+                      <span>
+                        {(leftCandidateInfo.shortName || "").split(" ")[0]}
+                      </span>
+                      <span>
+                        {(leftCandidateInfo.shortName || "")
+                          .split(" ")
+                          .slice(1)
+                          .join(" ")}
+                      </span>
+                    </h3>
+                  </>
+                ) : (
+                  <Typography
+                    font="kenyan"
+                    className="text-white/50 font-bold text-xl xl:text-4xl"
+                    variant="h1"
+                  >
+                    Selecciona candidato
+                  </Typography>
+                )}
+              </div>
+
+              <div className="flex items-center justify-center xl:order-0 xl:scale-80 2xl:scale-110 2xl:px-32">
+                <VSBadge
+                  gradientId={filterIds.gradientVS}
+                  filterId={filterIds.noiseFilter}
+                  className="w-[100px] h-auto md:w-[140px] xl:w-[180px]"
+                />
+              </div>
+
+              <div className="flex items-center justify-center xl:justify-end gap-4 xl:gap-12">
+                {rightCandidateInfo ? (
+                  <>
+                    <h3 className="text-white font-bold text-4xl xl:text-5xl 2xl:text-7xl animate-slide-in-left animation-delay-100 font-kenyan text-end flex flex-col items-end leading-[0.9]">
+                      <span>
+                        {(rightCandidateInfo.shortName || "").split(" ")[0]}
+                      </span>
+                      <span>
+                        {(rightCandidateInfo.shortName || "")
+                          .split(" ")
+                          .slice(1)
+                          .join(" ")}
+                      </span>
+                    </h3>
+                    <CandidateImage
+                      candidate={rightCandidateInfo}
+                      side="right"
+                    />
+                  </>
+                ) : (
+                  <Typography
+                    font="kenyan"
+                    className="text-white/50 font-bold text-xl xl:text-4xl"
+                    variant="h1"
+                    align="right"
+                  >
+                    Selecciona candidato
+                  </Typography>
+                )}
+              </div>
+            </div>
+
+            {/* Navigation Bar */}
+            <SectionNavbar
+              activeNavIndex={activeNavIndex}
+              navContainerRef={navContainerRef}
+              onNavClick={handleNavClick}
+              onScrollNav={scrollNav}
+            />
+
+            {/* Horizontal Sections Container - Rendered dynamically with lazy loading */}
+            <HorizontalSections
+              activeIndex={activeNavIndex}
+              direction={scrollDirection}
+            >
+              {ALL_SECTIONS_CONFIG.map(renderSection)}
+            </HorizontalSections>
+          </>
+        )}
+      </div>
+    </ComparisonProvider>
   );
 }
