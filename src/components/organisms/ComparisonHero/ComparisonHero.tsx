@@ -349,7 +349,7 @@ export function ComparisonHero() {
 
   return (
     <ComparisonProvider value={{ activeNavIndex, onNavClick: handleNavClick }}>
-      <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 py-2">
+      <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 py-2 mt-20 md:mt-0 xl:pt-20">
         {/* Centralized SVG Filters - rendered once */}
         <SVGFilters uniqueId={uniqueId} />
 
@@ -388,16 +388,16 @@ export function ComparisonHero() {
               </div>
 
               {/* Center Content */}
-              <div className="flex flex-col gap-6 xl:gap-12 order-1 xl:order-2 -mt-8 max-w-sm mx-auto md:max-w-132">
+              <div className="flex flex-col justify-start xl:justify-center gap-6 order-1 xl:order-2 max-w-sm mx-auto xl:max-w-none xl:h-full pt-10 xl:pt-0">
                 <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center">
-                  <HeroTitle className="hidden xl:flex text-7xl 2xl:text-8xl [&>span:last-child]:text-[120px] [&>span:last-child]:2xl:text-[140px] [&>span:last-child]:-translate-y-4 [&>span:last-child]:2xl:-translate-y-5" />
-                  <span className="text-[#fefefe] font-sohne-breit text-xs pt-10 sm:text-[12px] md:text-lg lg:text-sm text-center block w-29 sm:w-40 md:w-100 mx-auto lg:-my-4">
+                  <HeroTitle className="hidden xl:flex text-7xl 2xl:text-8xl [&>span:last-child]:text-[60px] [&>span:last-child]:2xl:text-[60px] [&>span:last-child]:translate-y-0" />
+                  <span className="text-[#fefefe] font-sohne-breit text-xs pt-4 sm:text-[12px] md:text-lg lg:text-[12px] text-center block w-60 sm:w-40 md:w-100 mx-auto">
                     Una comparación política basada en datos reales. Explora
                     quién propone más, quién tiene resultados y quién aún no los
                     demuestra.
                   </span>
                 </div>
-                <div className="hidden xl:flex">
+                <div className="hidden xl:flex justify-center">
                   <CandidateSelector
                     selectedCandidates={selectedCandidates}
                     onCandidateClick={handleCandidateClick}
@@ -436,21 +436,24 @@ export function ComparisonHero() {
             {hasSelectedCandidates && (
               <button
                 onClick={scrollToComparison}
-                className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in hidden xl:block xl:translate-y-8 2xl:-translate-y-11"
+                className="cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in hidden xl:flex flex-col items-center justify-center"
                 aria-label="Ir a comparación"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="45"
-                  height="17"
-                  viewBox="0 0 45 17"
-                  fill="none"
-                >
-                  <path
-                    d="M43 0L22.6852 13L2.5 0L0 2.02381L22.6852 17L45 2.02381L43 0Z"
-                    fill="#FEFEFE"
-                  />
-                </svg>
+                <div className="animate-bounce">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#FEFEFE"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </div>
               </button>
             )}
           </div>

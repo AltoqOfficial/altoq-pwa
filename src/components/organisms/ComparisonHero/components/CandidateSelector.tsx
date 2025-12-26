@@ -325,7 +325,7 @@ export const CandidateSelector = memo(function CandidateSelector({
       </div>
 
       {/* MD and up: Grid 2 columns */}
-      <div className="hidden xl:grid grid-cols-2 gap-3 w-full max-w-[350px] xl:max-w-[420px]">
+      <div className="hidden xl:grid grid-cols-2 gap-1 w-fit mx-auto">
         {desktopGridData.map((data) => (
           <DesktopCandidateButton
             key={data.candidate.id}

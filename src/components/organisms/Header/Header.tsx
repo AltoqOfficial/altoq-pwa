@@ -101,20 +101,49 @@ export function Header() {
         {/* Logo */}
         <Logo variant="default" asLink priority />
 
-        {/* CTA Buttons */}
-        <div className="flex items-center gap-4">
-          <Button variant={outlineVariant} size="sm" asChild>
-            <a
-              href={EXTERNAL_LINKS.volunteerForm}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+        {/* CTA Links */}
+        <div className="flex items-center gap-12 h-full">
+          {/* Volunteer Link */}
+          <a
+            href={EXTERNAL_LINKS.volunteerForm}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative h-full flex items-center justify-center cursor-pointer transition-all duration-300"
+          >
+            {/* Red Bar on Top - Visible on Hover */}
+            <span className="absolute top-0 left-0 w-full h-1 bg-[#FF2727] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 transform origin-center" />
+
+            <span className="font-sohne-breit uppercase font-bold text-sm text-white group-hover:text-[#FF2727] transition-colors duration-300">
               Unirme como Voluntario
-            </a>
-          </Button>
-          <Button variant="primary" size="sm" asChild>
-            <Link href="/compara">Comparar Candidatos</Link>
-          </Button>
+            </span>
+          </a>
+
+          {/* Compare Link */}
+          <Link
+            href="/compara"
+            className="group relative h-full flex items-center justify-center cursor-pointer transition-all duration-300"
+          >
+            {/* Red Bar on Top - Visible on Hover or Active */}
+            <span
+              className={cn(
+                "absolute top-0 left-0 w-full h-1 bg-[#FF2727] transition-all duration-300 transform origin-center",
+                pathname === "/compara"
+                  ? "opacity-100 scale-x-100"
+                  : "opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100"
+              )}
+            />
+
+            <span
+              className={cn(
+                "font-sohne-breit uppercase font-bold text-sm transition-colors duration-300",
+                pathname === "/compara"
+                  ? "text-[#FF2727]"
+                  : "text-white group-hover:text-[#FF2727]"
+              )}
+            >
+              Comparar Candidatos
+            </span>
+          </Link>
         </div>
       </div>
     </header>
