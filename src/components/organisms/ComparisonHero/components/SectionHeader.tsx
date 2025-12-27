@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Typography } from "@/components/atoms";
-import { SECTION_ICONS } from "./SectionIcons";
+// import { SECTION_ICONS } from "./SectionIcons"; // Unused
 import { useComparisonContext } from "../context";
 import { NAV_ITEMS } from "../constants";
 import {
@@ -15,7 +15,8 @@ import {
 
 interface SectionHeaderProps {
   title: string;
-  sectionId: string;
+  // sectionId is no longer used for dynamic icons
+  sectionId?: string;
 }
 
 /**
@@ -23,19 +24,75 @@ interface SectionHeaderProps {
  * Displays a section title with roman numeral SVG indicator
  * On mobile, it acts as a sticky header with a hamburger menu
  */
-export function SectionHeader({ title, sectionId }: SectionHeaderProps) {
+export function SectionHeader({ title }: SectionHeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { onNavClick, activeNavIndex } = useComparisonContext();
 
-  // Normalize sectionId to match SECTION_ICONS keys (remove spaces and special chars)
-  const normalizedId = sectionId.replace(/[\s-]/g, "");
-  const icon = SECTION_ICONS[normalizedId];
+  // Static icon for all sections (Single Red Bar)
+  const SingleBarIcon = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="23"
+      height="72"
+      viewBox="0 0 23 72"
+      fill="none"
+      className="h-12 md:h-16 lg:h-[72px] w-auto shrink-0"
+    >
+      <g filter="url(#perfilGeneral-a)">
+        <path d="M22.7 0v71.8H0V0z" fill="#ff2727" />
+      </g>
+      <defs>
+        <filter
+          id="perfilGeneral-a"
+          x="0"
+          y="0"
+          width="22.699"
+          height="71.8"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.90909087657928467 0.90909087657928467"
+            stitchTiles="stitch"
+            numOctaves="3"
+            result="noise"
+            seed="8137"
+          />
+          <feComponentTransfer in="noise" result="coloredNoise1">
+            <feFuncR type="linear" slope="2" intercept="-.5" />
+            <feFuncG type="linear" slope="2" intercept="-.5" />
+            <feFuncB type="linear" slope="2" intercept="-.5" />
+            <feFuncA
+              type="discrete"
+              tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+            />
+          </feComponentTransfer>
+          <feComposite
+            operator="in"
+            in2="shape"
+            in="coloredNoise1"
+            result="noise1Clipped"
+          />
+          <feComponentTransfer in="noise1Clipped" result="color1">
+            <feFuncA type="table" tableValues="0 0.5" />
+          </feComponentTransfer>
+          <feMerge result="effect1_noise">
+            <feMergeNode in="shape" />
+            <feMergeNode in="color1" />
+          </feMerge>
+        </filter>
+      </defs>
+    </svg>
+  );
 
   return (
     <>
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full border-b-2 border-white pb-6">
         <div className="flex gap-3 md:gap-4 lg:gap-6 items-center">
-          {icon && <div className="shrink-0">{icon}</div>}
+          {SingleBarIcon}
           <div className="flex flex-col">
             <Typography
               font="sohneBreit"

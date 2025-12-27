@@ -64,6 +64,15 @@ body {
   font-weight: 400;
 }
 
+/* Scrollbar Hide Utility */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
 /* Clases de utilidad personalizadas */
 .bg-primary {
   background-color: var(--color-primary);
