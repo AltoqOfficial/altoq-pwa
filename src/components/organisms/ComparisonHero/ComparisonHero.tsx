@@ -349,7 +349,7 @@ export function ComparisonHero() {
 
   return (
     <ComparisonProvider value={{ activeNavIndex, onNavClick: handleNavClick }}>
-      <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 py-2 mt-20 md:mt-0 xl:pt-20">
+      <div className="bg-neutral-500 flex justify-center flex-col items-center space-y-6 xl:space-y-18 py-2 md:mt-0 xl:pt-20">
         {/* Centralized SVG Filters - rendered once */}
         <SVGFilters uniqueId={uniqueId} />
 

@@ -3,6 +3,15 @@ import { Typography } from "@/components/atoms";
 import { SECTION_ICONS } from "./SectionIcons";
 import { useComparisonContext } from "../context";
 import { NAV_ITEMS } from "../constants";
+import {
+  IdCard,
+  Landmark,
+  BriefcaseBusiness,
+  Globe,
+  Pin,
+  Glasses,
+  Scale,
+} from "lucide-react";
 
 interface SectionHeaderProps {
   title: string;
@@ -93,7 +102,7 @@ export function SectionHeader({ title, sectionId }: SectionHeaderProps) {
 
       {/* Full Screen Menu Overlay - Mobile Only */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-100 bg-[#1A1A1A] flex flex-col md:hidden animate-fade-in">
+        <div className="fixed inset-0 z-100 bg-neutral-500 flex flex-col md:hidden animate-fade-in">
           <div className="flex items-center justify-between px-4 py-6 border-b border-white/10">
             <Typography
               font="sohneBreit"
@@ -123,29 +132,127 @@ export function SectionHeader({ title, sectionId }: SectionHeaderProps) {
               </svg>
             </button>
           </div>
-          <div className="flex-1 overflow-y-auto py-4">
-            {NAV_ITEMS.map((item, index) => (
-              <button
-                key={item}
-                onClick={() => {
-                  onNavClick(index);
-                  setIsMenuOpen(false);
-                }}
-                className={`w-full text-left px-6 py-4 border-b border-white/5 last:border-0 ${
-                  activeNavIndex === index
-                    ? "bg-white/5 text-red-500"
-                    : "text-white hover:bg-white/5"
-                }`}
-              >
+          <div className="flex-1 overflow-y-auto py-8">
+            <div className="flex flex-col ml-10">
+              <div className="border-l border-white/10">
+                {NAV_ITEMS.map((item, index) => {
+                  const normalizedKey = item
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                    .replace(/[\s-]/g, "");
+
+                  // Mapping for Lucide icons
+                  const MENU_ICONS: Record<string, React.ReactNode> = {
+                    PerfilGeneral: (
+                      <IdCard className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                    ExperienciaPolitica: (
+                      <Landmark className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                    ExperienciadeGestion: (
+                      <BriefcaseBusiness
+                        className="w-6 h-6"
+                        strokeWidth={1.5}
+                      />
+                    ),
+                    IdeologiaPolitica: (
+                      <Globe className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                    PropuestasPrincipales: (
+                      <Pin className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                    CoherenciaconelPlan: (
+                      <Glasses className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                    Controversias: (
+                      <Scale className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                    // Extended mapping for remaining items
+                    Transparencia: (
+                      <Scale className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                    Competenciaspersonales: (
+                      <Glasses className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                    PercepcionPublica: (
+                      <Globe className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                    InnovacionyVision: (
+                      <Pin className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                    HistorialLegislativo: (
+                      <Landmark className="w-6 h-6" strokeWidth={1.5} />
+                    ),
+                  };
+
+                  const icon = MENU_ICONS[normalizedKey];
+                  const isActive = activeNavIndex === index;
+
+                  return (
+                    <button
+                      key={item}
+                      onClick={() => {
+                        onNavClick(index);
+                        setIsMenuOpen(false);
+                      }}
+                      className={`relative w-full flex items-center gap-5 text-left pl-8 py-5 transition-colors duration-300 ${
+                        isActive
+                          ? "text-[#FF2727]"
+                          : "text-white hover:text-white/80"
+                      }`}
+                    >
+                      {/* Active Indicator */}
+                      {isActive && (
+                        <div className="absolute -left-[2.5px] top-1/2 -translate-y-1/2 h-8 w-[4px] bg-[#FF2727]" />
+                      )}
+
+                      {icon && (
+                        <div className="shrink-0 flex justify-center">
+                          {icon}
+                        </div>
+                      )}
+
+                      <Typography
+                        variant="p"
+                        font="sohneBreit"
+                        weight="200"
+                        className="uppercase text-lg leading-none pt-1"
+                      >
+                        {item}
+                      </Typography>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Additional Menu Section */}
+              <div className="mt-10 mb-10">
                 <Typography
-                  variant="h4"
-                  font="kenyan"
-                  className="uppercase text-2xl"
+                  variant="p"
+                  font="sohneBreit"
+                  weight="400"
+                  className="text-white text-lg uppercase mb-6 pl-8"
                 >
-                  {item}
+                  ACERCA DE LOS PARTIDOS
                 </Typography>
-              </button>
-            ))}
+
+                <div className="border-l border-white/10">
+                  <button className="relative w-full flex items-center gap-5 text-left pl-8 py-2 text-white hover:text-white/80 transition-colors duration-300">
+                    <div className="shrink-0 flex justify-center">
+                      <Scale className="w-6 h-6" strokeWidth={1.5} />
+                    </div>
+                    <Typography
+                      variant="p"
+                      font="sohneBreit"
+                      weight="200"
+                      className="uppercase text-lg leading-none pt-1"
+                    >
+                      Proyectos de Ley
+                    </Typography>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
