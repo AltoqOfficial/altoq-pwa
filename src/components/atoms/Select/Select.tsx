@@ -2,8 +2,10 @@ import React from "react";
 
 import { cn } from "@/lib/utils";
 
-export interface SelectProps
-  extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, "size"> {
+export interface SelectProps extends Omit<
+  React.SelectHTMLAttributes<HTMLSelectElement>,
+  "size"
+> {
   /**
    * Visual variant of the select
    * - default: White background (for dark backgrounds)

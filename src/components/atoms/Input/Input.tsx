@@ -2,8 +2,10 @@ import React from "react";
 
 import { cn } from "@/lib/utils";
 
-export interface InputProps
-  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "size"> {
+export interface InputProps extends Omit<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  "size"
+> {
   /**
    * Visual variant of the input
    * - default: White background (for dark backgrounds)
