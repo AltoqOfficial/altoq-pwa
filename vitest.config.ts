@@ -17,10 +17,22 @@ export default defineConfig(({ mode }) => {
         NEXT_PUBLIC_SUPABASE_URL: env.NEXT_PUBLIC_SUPABASE_URL,
         NEXT_PUBLIC_SUPABASE_KEY: env.NEXT_PUBLIC_SUPABASE_KEY,
       },
-    },
-    resolve: {
-      alias: {
-        "@": path.resolve(__dirname, "./src"),
+      deps: {
+        optimizer: {
+          web: {
+            include: [
+              "jsdom",
+              "html-encoding-sniffer",
+              "@exodus/bytes",
+              "parse5",
+            ],
+          },
+        },
+      },
+      resolve: {
+        alias: {
+          "@": path.resolve(__dirname, "./src"),
+        },
       },
     },
   };
