@@ -10,10 +10,14 @@ import type {
 } from "@/types/auth";
 import { supabaseProfileRepository } from "@/repositories/profile/supabase-profile-repository";
 import { ApiError } from "@/types";
+import { supabaseAgeRangeRepository } from "@/repositories/age-range/age-range-supabase-repository";
+import { supabaseMotivationRepository } from "@/repositories/motivation/motivation-supabase-repository";
 
 const authService: AuthService = createAuthService(
   supabaseAuthRepository,
-  supabaseProfileRepository
+  supabaseProfileRepository,
+  supabaseMotivationRepository,
+  supabaseAgeRangeRepository
 );
 
 /**

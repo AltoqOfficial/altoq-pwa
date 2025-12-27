@@ -25,14 +25,12 @@ export type SignUpRequest = {
   email: string;
   password: string;
   fullName: string;
-  ageRangeId: number;
-  motivationId: number;
+  ageRangeCode: string;
+  motivationCode: string;
 };
 
 export type SignUpResponse = {
   email: string;
-  accessToken: string;
-  refreshToken: string;
 };
 
 export type SignupSuccessResponse = {

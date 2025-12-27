@@ -6,9 +6,14 @@ import { NextResponse } from "next/server";
 import { handleApiError } from "@/lib/api-error";
 import type { LogoutSuccessResponse } from "@/types/auth";
 import { supabaseProfileRepository } from "@/repositories/profile/supabase-profile-repository";
+import { supabaseAgeRangeRepository } from "@/repositories/age-range/age-range-supabase-repository";
+import { supabaseMotivationRepository } from "@/repositories/motivation/motivation-supabase-repository";
+
 const authService: AuthService = createAuthService(
   supabaseAuthRepository,
-  supabaseProfileRepository
+  supabaseProfileRepository,
+  supabaseMotivationRepository,
+  supabaseAgeRangeRepository
 );
 
 /**

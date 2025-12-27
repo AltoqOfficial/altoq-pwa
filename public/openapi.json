@@ -91,12 +91,12 @@
             "type": "string",
             "nullable": false
           },
-          "ageRangeId": {
-            "type": "number",
+          "ageRangeCode": {
+            "type": "string",
             "nullable": false
           },
-          "motivationId": {
-            "type": "number",
+          "motivationCode": {
+            "type": "string",
             "nullable": false
           }
         }
@@ -260,7 +260,7 @@
     "/auth/login": {
       "post": {
         "operationId": "post-auth-login",
-        "summary": "Login de usuario\r",
+        "summary": "Login de usuario",
         "description": "Inicia sesión con email y contraseña usando Supabase",
         "tags": ["Auth"],
         "parameters": [],
@@ -301,7 +301,7 @@
     "/auth/logout": {
       "post": {
         "operationId": "post-auth-logout",
-        "summary": "Logout de usuario\r",
+        "summary": "Logout de usuario",
         "description": "Cierra la sesión activa del usuario en Supabase",
         "tags": ["Auth"],
         "parameters": [],
@@ -333,7 +333,7 @@
     "/auth/reset-password": {
       "post": {
         "operationId": "post-auth-reset-password",
-        "summary": "Reset password\r",
+        "summary": "Reset password",
         "description": "Envía un correo de recuperación de contraseña al usuario",
         "tags": ["Auth"],
         "parameters": [],
@@ -369,7 +369,7 @@
     "/auth/signup": {
       "post": {
         "operationId": "post-auth-signup",
-        "summary": "Signup de usuario\r",
+        "summary": "Signup de usuario",
         "description": "Registra un nuevo usuario en Supabase con email, contraseña y perfil asociado",
         "tags": ["Auth"],
         "parameters": [],
@@ -405,7 +405,7 @@
     "/auth/update-password": {
       "post": {
         "operationId": "post-auth-update-password",
-        "summary": "Update password\r",
+        "summary": "Update password",
         "description": "Actualiza la contraseña del usuario autenticado en Supabase",
         "tags": ["Auth"],
         "parameters": [],

@@ -7,10 +7,14 @@ import { NextRequest, NextResponse } from "next/server";
 import { handleApiError } from "@/lib/api-error";
 import type { LoginBody, LoginResponse } from "@/types/auth";
 import { ApiError } from "@/types";
+import { supabaseAgeRangeRepository } from "@/repositories/age-range/age-range-supabase-repository";
+import { supabaseMotivationRepository } from "@/repositories/motivation/motivation-supabase-repository";
 
 const authService: AuthService = createAuthService(
   supabaseAuthRepository,
-  supabaseProfileRepository
+  supabaseProfileRepository,
+  supabaseMotivationRepository,
+  supabaseAgeRangeRepository
 );
 
 /**

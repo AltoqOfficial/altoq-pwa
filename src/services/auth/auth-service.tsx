@@ -10,10 +10,14 @@ import type {
   SignUpResponse,
 } from "@/types/auth";
 import { Profile } from "@/types/profile";
+import { MotivationRepository } from "@/repositories/motivation/motivation-repository-interface";
+import { AgeRangeRepository } from "@/repositories/age-range/age-range-repository-interface";
 
 export const createAuthService = (
   authRepository: AuthRepository,
-  profileRepository: ProfileRepository
+  profileRepository: ProfileRepository,
+  motivationRepository: MotivationRepository,
+  ageRangeRepository: AgeRangeRepository
 ): AuthService => ({
   login: async (email: string, password: string): Promise<LoginResponse> => {
     if (!authRepository.login) {
@@ -52,6 +56,21 @@ export const createAuthService = (
       } as ApiError;
     }
 
+    // Look up age range and motivation IDs based on provided codes
+    const ageRange = await ageRangeRepository.findByCode(body.ageRangeCode);
+    const motivation = await motivationRepository.findByCode(
+      body.motivationCode
+    );
+
+    // Validate that both age range and motivation were found
+    if (!ageRange || !motivation) {
+      throw {
+        message: "Rango de edad o motivación no válidos",
+        status: 400,
+        code: "invalid_age_range_or_motivation",
+      };
+    }
+
     // 1. Crear usuario en Supabase Auth
     const { user, session } = await authRepository.signup(
       body.email,
@@ -66,12 +85,11 @@ export const createAuthService = (
       };
     }
 
-    // 2. Crear perfil asociado con factory
     const profile = Profile.create({
       id: user.id,
       fullName: body.fullName,
-      ageRangeId: body.ageRangeId,
-      motivationId: body.motivationId,
+      ageRangeId: ageRange.id,
+      motivationId: motivation.id,
     });
 
     const maybeProfile = await profileRepository.create(profile);
@@ -86,8 +104,6 @@ export const createAuthService = (
     // 4. Respuesta simplificada: solo email y tokens
     return {
       email: user.email!,
-      accessToken: session?.access_token ?? "",
-      refreshToken: session?.refresh_token ?? "",
     };
   },
 

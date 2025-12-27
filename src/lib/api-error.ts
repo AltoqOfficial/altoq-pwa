@@ -7,12 +7,14 @@ type ExtendedError = Partial<AuthError & PostgrestError> & {
   reasons?: string[];
 };
 
-export function handleApiError(err: ExtendedError) {
+export function handleApiError(err: unknown) {
+  const errorObj = err as ExtendedError;
+
   const apiError: ApiError = {
-    message: err.message || "Internal Server Error",
-    code: err.code ?? "unknown_error",
-    status: err.status ?? 500,
-    reasons: err.reasons,
+    message: errorObj.message || "Internal Server Error",
+    code: errorObj.code ?? "unknown_error",
+    status: errorObj.status ?? 500,
+    reasons: errorObj.reasons,
   };
 
   return NextResponse.json(apiError, { status: apiError.status });
