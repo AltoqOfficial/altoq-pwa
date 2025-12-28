@@ -103,7 +103,7 @@
     "sectorPublico": {
       "cantidad": 2,
       "detalle": {
-        "values": ["Primera Dama (Programas sociales)", "Congresista"],
+        "values": ["Primera Dama (1994-2000)", "Congresista (2006-2011)"],
         "source": [
           "https://larepublica.pe/elecciones/2021/02/19/keiko-fujimori-perfil-de-la-candidata-presidencial-de-fuerza-popular-pltc#:~:text=Sus%20padres%20se%20divorciaron%20en,en%20la%20historia%20de%20Am%C3%A9rica",
           "https://www.noticiasser.pe/keiko-la-primera-dama-de-las-esterilizaciones-forzadas#:~:text=carrera%20pol%C3%ADtica%20de%20K,y%20hombres%20del%20campo%E2%80%93%2C%20el"
@@ -114,8 +114,8 @@
       "cantidad": 2,
       "detalle": {
         "values": [
-          "Presidenta de la ONG Instituto para el Desarrollo Oportunidades (2011–2013)",
-          "Lideresa y fundadora del partido Fuerza Popular (2010/2013–Presente)"
+          "Presidenta de la ONG Instituto para el Desarrollo Oportunidades (2011-2013)",
+          "Lideresa y fundadora del partido Fuerza Popular (2010-2026)"
         ],
         "source": [
           "https://elcomercio.pe/politica/gobierno/oportunidades-ong-donde-trabaja-keiko-fujimori-noticia-1585179/",

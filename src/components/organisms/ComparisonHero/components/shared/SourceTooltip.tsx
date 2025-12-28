@@ -231,7 +231,7 @@ export function SourceTooltip({
   return (
     <span
       ref={tooltipRef}
-      className={`relative inline-block cursor-pointer  ${className}`}
+      className={`relative w-full inline-block cursor-pointer  ${className}`}
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

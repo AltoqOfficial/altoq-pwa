@@ -206,7 +206,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
                     ExperienciaPolitica: (
                       <Landmark className="w-6 h-6" strokeWidth={1.5} />
                     ),
-                    ExperienciadeGestion: (
+                    ExperienciaProfesional: (
                       <BriefcaseBusiness
                         className="w-6 h-6"
                         strokeWidth={1.5}

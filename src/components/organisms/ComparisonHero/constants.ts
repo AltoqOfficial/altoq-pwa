@@ -5,7 +5,7 @@
 export const NAV_ITEMS = [
   "Perfil General",
   "Experiencia Política",
-  "Experiencia de Gestión",
+  "Experiencia Profesional",
   "Ideología Política",
   "Propuestas Principales",
   "Coherencia con el Plan",

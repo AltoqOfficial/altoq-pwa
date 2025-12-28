@@ -58,12 +58,12 @@ export const EXPERIENCIA_POLITICA_CONFIG: SectionDefinition = {
 };
 
 /**
- * Experiencia de Gestión Section Config
+ * Experiencia Profesional Section Config
  */
 export const EXPERIENCIA_GESTION_CONFIG: SectionDefinition = {
-  id: "ExperienciadeGestion",
-  navId: "ExperienciadeGestion",
-  title: "EXPERIENCIA DE GESTIÓN",
+  id: "ExperienciaProfesional",
+  navId: "ExperienciaProfesional",
+  title: "EXPERIENCIA PROFESIONAL",
   dataKey: "experienciaGestion",
   layout: "custom", // Uses custom component
 };

@@ -78,7 +78,7 @@ const SECTION_COMPONENTS: Record<
 > = {
   PerfilGeneral: PerfilGeneralSection,
   ExperienciaPolitica: ExperienciaPoliticaSection,
-  ExperienciadeGestion: ExperienciaGestionSection,
+  ExperienciaProfesional: ExperienciaGestionSection,
   IdeologiaPolitica: IdeologiaPoliticaSection,
   PropuestasPrincipales: PropuestasPrincipalesSection,
   CoherenciaconelPlan: CoherenciaConElPlanSection,
