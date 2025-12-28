@@ -2,7 +2,8 @@ import React from "react";
 
 import { cn } from "@/lib/utils";
 
-export interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+export interface TextareaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   /**
    * Visual variant of the textarea
    * - default: White background (for dark backgrounds)

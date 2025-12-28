@@ -7,6 +7,11 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
 
   return {
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
+    },
     test: {
       environment: "jsdom",
       globals: true,
@@ -27,11 +32,6 @@ export default defineConfig(({ mode }) => {
               "parse5",
             ],
           },
-        },
-      },
-      resolve: {
-        alias: {
-          "@": path.resolve(__dirname, "./src"),
         },
       },
     },
