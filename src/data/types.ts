@@ -62,14 +62,24 @@ export interface IdeologiaPolitica {
   reformaPolitica: SourceableString;
 }
 
+export interface ProposalData {
+  titulo?: string;
+  descripcion?: string;
+  viabilidad?: string;
+  respaldo?: string;
+  source?: string | string[];
+}
+
+export type ProposalField = SourceableArray | ProposalData[];
+
 export interface PropuestasPrincipales {
-  economico: SourceableArray;
-  social: SourceableArray;
-  ambiental: SourceableArray;
-  institucional: SourceableArray;
-  educativo: SourceableArray;
-  salud: SourceableArray;
-  seguridad: SourceableArray;
+  economico: ProposalField;
+  social: ProposalField;
+  ambiental: ProposalField;
+  institucional: ProposalField;
+  educativo: ProposalField;
+  salud: ProposalField;
+  seguridad: ProposalField;
 }
 
 export interface CoherenciaConElPlan {

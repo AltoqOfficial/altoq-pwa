@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import type { CandidateComparisonData } from "@/data";
+import type { CandidateComparisonData, ProposalData } from "@/data";
 import { Typography } from "@/components/atoms";
 
 interface DynamicSectionProps {
@@ -23,14 +23,6 @@ const CATEGORIES = [
 ] as const;
 
 type CategoryValue = (typeof CATEGORIES)[number]["value"];
-
-interface ProposalData {
-  titulo?: string;
-  descripcion?: string;
-  viabilidad?: string;
-  respaldo?: string;
-  source?: string | string[];
-}
 
 interface ProposalDetailProps {
   data: ProposalData;
