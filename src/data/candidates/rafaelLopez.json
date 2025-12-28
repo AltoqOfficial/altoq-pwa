@@ -6,6 +6,7 @@
   "image": "/candidatos/8.webp",
   "color": "#3E4692",
   "party": "Renovación Popular",
+  "partyIcon": "/partidos/renovacionPopularIcon.webp",
   "socialLinks": {
     "instagram": "https://www.instagram.com/rafaellopezaliagaoficial/",
     "tiktok": "https://www.tiktok.com/@rafael_lopez_aliaga?lang=es-419"
@@ -507,15 +508,45 @@
   },
 
   "historialLegislativo": {
-    "tieneHistorial": false,
+    "tieneHistorial": true,
+    "productivityLabel": "BAJA",
     "asistencia": {
       "porcentaje": 0,
-      "label": "N/A (No ha sido Congresista)",
-      "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
+      "label": "N/A",
+      "source": "https://infogob.jne.gob.pe/"
     },
-    "proyectosPresentados": 0,
-    "proyectosAprobados": 0,
-    "nota": "No registra historial parlamentario nacional. Sus cargos electos han sido de ámbito municipal: Regidor (2007-2010) y Alcalde de Lima (2023-2025).",
-    "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
+    "stats": {
+      "presentados": 3,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 1,
+      "otros": 2
+    },
+    "projects": [
+      {
+        "id": "1",
+        "code": "09102/2024-CR",
+        "title": "Reforma para que el senado y la cámara de diputados puedan ser elegidos en distritos uninominales",
+        "date": "13/10/2024",
+        "state": "Presentado"
+      },
+      {
+        "id": "2",
+        "code": "09102/2024-CR",
+        "title": "Reforma para que el senado y la cámara de diputados",
+        "date": "13/10/2024",
+        "state": "Presentado"
+      },
+      {
+        "id": "3",
+        "code": "09102/2024-CR",
+        "title": "Reforma para que el senado y la cámara de diputados",
+        "date": "13/10/2024",
+        "state": "Rechazado"
+      }
+    ],
+    "nota": "Historial basado en bancada parlamentaria (referencial)",
+    "source": "https://infogob.jne.gob.pe/"
   }
 }

@@ -129,11 +129,30 @@ export interface Asistencia {
   source?: string;
 }
 
+export interface LegislativeProject {
+  id: string;
+  code: string; // e.g., "09102/2024-CR"
+  title: string;
+  date: string;
+  url?: string;
+  state?: string; // e.g., "Presentado", "Aprobado", etc. - helpful for coloring if needed
+}
+
+export interface ProjectStats {
+  presentados: number;
+  aprobados: number;
+  enPleno: number;
+  enComision: number;
+  rechazados: number;
+  otros: number; // For any remainder
+}
+
 export interface HistorialLegislativo {
   tieneHistorial: boolean;
-  asistencia: Asistencia;
-  proyectosPresentados: number;
-  proyectosAprobados: number;
+  productivityLabel: "ALTA" | "MEDIA" | "BAJA" | "N/A";
+  asistencia: Asistencia; // Keeping for backward compat or if needed elsewhere, though not in this specific view
+  stats: ProjectStats;
+  projects: LegislativeProject[];
   nota?: string;
   source?: string;
 }
@@ -170,6 +189,7 @@ export interface CandidateComparisonData {
   image: string;
   color: string;
   party: string;
+  partyIcon?: string;
   socialLinks?: SocialLinks;
   perfilGeneral: PerfilGeneral;
   experienciaPolitica: ExperienciaPolitica;

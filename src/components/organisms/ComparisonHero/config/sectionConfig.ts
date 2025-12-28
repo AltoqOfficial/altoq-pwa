@@ -195,7 +195,7 @@ export const INNOVACION_VISION_CONFIG: SectionDefinition = {
 export const HISTORIAL_LEGISLATIVO_CONFIG: SectionDefinition = {
   id: "HistorialLegislativo",
   navId: "HistorialLegislativo",
-  title: "HISTORIAL LEGISLATIVO",
+  title: "PROYECTOS DE LEY",
   dataKey: "historialLegislativo",
   layout: "custom", // Uses LegislativeHistoryChart
 };

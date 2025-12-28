@@ -14,7 +14,7 @@ export const NAV_ITEMS = [
   "Competencias personales",
   "Percepción Pública",
   "Innovación y Visión",
-  "Historial Legislativo",
+  "Proyectos de Ley",
 ] as const;
 
 export interface Candidate {

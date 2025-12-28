@@ -1,8 +1,7 @@
 "use client";
 
 import type { CandidateComparisonData } from "@/data";
-import { LegislativeHistoryChart } from "../components/LegislativeHistoryChart";
-import { Typography } from "@/components/atoms";
+import { LegislativeProjectsChart } from "../components/LegislativeProjectsChart";
 
 interface DynamicSectionProps {
   leftCandidate: CandidateComparisonData | null;
@@ -19,72 +18,55 @@ export function HistorialLegislativoSection({
 }: DynamicSectionProps) {
   const hasData = leftCandidate || rightCandidate;
 
-  if (!hasData) {
-    return (
-      <div className="w-full border-t border-white py-8 md:py-12 lg:py-16">
-        <div className="text-center py-8 md:py-12">
-          <Typography
-            color="white"
-            variant="h5"
-            weight="200"
-            className="opacity-50 text-sm md:text-base lg:text-lg"
-          >
-            Selecciona candidatos para ver el historial legislativo
-          </Typography>
-        </div>
-      </div>
-    );
-  }
-
-  const renderCandidateChart = (candidate: CandidateComparisonData | null) => {
-    if (candidate) {
-      return (
-        <LegislativeHistoryChart
-          hasHistory={candidate.historialLegislativo.tieneHistorial}
-          attendancePercentage={
-            candidate.historialLegislativo.asistencia.porcentaje
-          }
-          attendanceLabel={candidate.historialLegislativo.asistencia.label}
-          projectsPresented={
-            candidate.historialLegislativo.proyectosPresentados
-          }
-          projectsApproved={candidate.historialLegislativo.proyectosAprobados}
-          note={candidate.historialLegislativo.nota}
-          color={candidate.color}
-          source={candidate.historialLegislativo.source}
-          attendanceSource={candidate.historialLegislativo.asistencia.source}
-        />
-      );
-    }
-
-    return (
-      <div className="w-full h-48 md:h-64 flex items-center justify-center bg-white/5 rounded-lg">
-        <Typography
-          color="white"
-          variant="p"
-          className="opacity-50 text-sm md:text-base"
-        >
-          Sin seleccionar
-        </Typography>
-      </div>
-    );
-  };
+  if (!hasData) return null;
 
   return (
-    <div className="w-full border-t border-white py-8 md:py-12 lg:py-20 2xl:py-28">
-      <div className="relative flex justify-center md:grid md:grid-cols-2 gap-16 md:gap-8 lg:gap-16 2xl:gap-32 items-start">
+    <div className="w-full py-8 md:py-12 lg:py-20 2xl:py-28 px-2 md:px-8">
+      <div className="grid grid-cols-2 gap-4 md:gap-8 lg:gap-16 items-start relative">
         {/* Left Candidate */}
-        <div className="flex items-center">
-          {renderCandidateChart(leftCandidate)}
+        <div className="flex justify-center md:justify-end md:pr-4 lg:pr-8">
+          {leftCandidate?.historialLegislativo && (
+            <div className="w-full max-w-sm">
+              <LegislativeProjectsChart
+                data={leftCandidate.historialLegislativo}
+                partyName={leftCandidate.party}
+                color={leftCandidate.color}
+                partyLogoLetter={
+                  leftCandidate.slug === "keikoFujimori"
+                    ? "K"
+                    : leftCandidate.party.charAt(0)
+                }
+                partyIcon={leftCandidate.partyIcon}
+              />
+            </div>
+          )}
         </div>
-
-        {/* Divider */}
-        <div className="absolute left-1/2 top-8 bottom-8 w-0.5 bg-white/50 -translate-x-1/2" />
 
         {/* Right Candidate */}
-        <div className="flex items-center">
-          {renderCandidateChart(rightCandidate)}
+        <div className="flex justify-center md:justify-start md:pl-4 lg:pl-8">
+          {rightCandidate?.historialLegislativo && (
+            <div className="w-full max-w-sm">
+              <LegislativeProjectsChart
+                data={rightCandidate.historialLegislativo}
+                partyName={rightCandidate.party}
+                color={rightCandidate.color}
+                partyLogoLetter={
+                  rightCandidate.slug === "rafaelLopez"
+                    ? "R"
+                    : rightCandidate.party.charAt(0)
+                }
+                partyIcon={rightCandidate.partyIcon}
+              />
+            </div>
+          )}
         </div>
+      </div>
+
+      {/* Show More Button - Unified for both columns */}
+      <div className="mt-8 md:mt-12 flex justify-center w-full">
+        <button className="w-full max-w-4xl py-3 border border-white/20 rounded hover:bg-white/10 transition text-sm font-medium text-white/80">
+          Mostrar más proyectos
+        </button>
       </div>
     </div>
   );
