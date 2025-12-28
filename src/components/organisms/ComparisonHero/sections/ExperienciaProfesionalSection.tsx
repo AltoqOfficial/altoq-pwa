@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Typography } from "@/components/atoms";
 import type { CandidateComparisonData } from "@/data";
 import {
@@ -159,11 +160,14 @@ export function ExperienciaGestionSection({
               className="w-16 h-16 lg:w-20 lg:h-20 rounded-full p-1 inline-block"
               style={{ backgroundColor: sectorColor }}
             >
-              <img
-                src={candidate.image}
-                alt={candidate.fullName}
-                className="w-full h-full rounded-full object-cover"
-              />
+              <div className="relative w-full h-full rounded-full overflow-hidden">
+                <Image
+                  src={candidate.image}
+                  alt={candidate.fullName}
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         )}
