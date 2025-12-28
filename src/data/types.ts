@@ -88,9 +88,20 @@ export interface CoherenciaConElPlan {
   cumplimientoPrevio: SourceableString;
 }
 
+export interface ControversyData {
+  titulo: string;
+  estado?: string;
+  source?: string | string[];
+}
+
 export interface Controversias {
-  investigaciones: SourceableArray;
-  enCurso: SourceableArray;
+  antecedentes?: ControversyData[];
+  procesosJudiciales?: ControversyData[];
+  declaraciones?: ControversyData[];
+  observaciones?: ControversyData[];
+  // Campos antiguos para compatibilidad temporal
+  investigaciones?: SourceableArray;
+  enCurso?: SourceableArray;
 }
 
 export interface CompetenciasPersonales {

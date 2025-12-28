@@ -373,14 +373,38 @@
   },
 
   "controversias": {
-    "investigaciones": {
-      "values": ["Caso Cócteles - Lavado de activos"],
-      "source": "https://fuerzapopular.com.pe/"
-    },
-    "enCurso": {
-      "values": ["Financiamiento no declarado (IDL)"],
-      "source": "https://fuerzapopular.com.pe/"
-    }
+    "antecedentes": [
+      {
+        "titulo": "Primera Dama (1994-2000)",
+        "estado": "Cargo Político",
+        "source": "https://www.congreso.gob.pe/"
+      },
+      {
+        "titulo": "Congresista de la República (2006-2011)",
+        "estado": "Cargo Político",
+        "source": "https://www.congreso.gob.pe/"
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "Caso Cócteles - Lavado de Activos y Organización Criminal",
+        "estado": "En curso",
+        "source": "https://rpp.pe/tema/caso-cocteles"
+      },
+      {
+        "titulo": "Investigación por Aportes de Campaña 2011 y 2016",
+        "estado": "En curso",
+        "source": "https://elcomercio.pe/"
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "Prisión Preventiva (Anulada posteriormente)",
+        "estado": "Archivado",
+        "source": "https://lp.com.pe/"
+      }
+    ],
+    "declaraciones": []
   },
 
   "transparencia": {

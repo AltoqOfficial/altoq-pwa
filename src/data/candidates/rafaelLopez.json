@@ -378,35 +378,54 @@
   },
 
   "controversias": {
-    "investigaciones": {
-      "values": [
-        "Lavado de Activos (Panama Papers): Investigación ampliada hasta 2027",
-        "Caso Caja Metropolitana: Presuntas irregularidades financieras",
-        "Deuda Coactiva SUNAT: Empresas vinculadas deben aprox. S/ 35 millones"
-      ],
-      "source": [
-        "https://www.idl-reporteros.pe/la-investigacion-por-lavado-de-activos-que-afronta-lopez-aliaga/",
-        "https://rpp.pe/politica/judiciales/caso-panama-papers-pj-ordeno-ampliar-por-24-meses-plazo-de-la-investigacion-a-rafael-lopez-aliaga-noticia-1660195",
-        "https://caretas.pe/home_web/home_principal_secundario/pj-amplia-investigacion-contra-rafael-lopez-aliaga-por-presunto-lavado-de-activos-en-caso-panama-papers/",
-        "https://larepublica.pe/politica/2025/11/16/rafael-lopez-aliaga-asegura-no-deberle-a-sunat-pero-empresas-ligadas-a-el-acreditan-deudas-de-mas-de-19-millones-de-soles-hnews-1263136",
-        "https://www.infobae.com/peru/2024/05/28/rafael-lopez-aliaga-en-el-ojo-de-sunat-su-empresa-debe-s187-millones-pero-cotiza-en-la-bvl/"
-      ]
-    },
-    "enCurso": {
-      "values": [
-        "Demanda de Gustavo Gorriti: Difamación e incitación a la violencia (2025)",
-        "Endeudamiento de Lima: Emisión de bonos por S/ 3,500 millones",
-        "Violencia Verbal: Sanciones éticas por frases agresivas ('Muerte a...')",
-        "Gasto Municipal: Compra cuestionada de raciones importadas costosas (2025)"
-      ],
-      "source": [
-        "https://www.infobae.com/peru/2025/09/14/gustavo-gorriti-anuncia-acciones-legales-contra-rafael-lopez-aliaga-no-se-trata-solamente-de-la-exhortacion-a-un-posible-asesinato/",
-        "https://www.exitosanoticias.pe/actualidad/jne-llamo-atencion-rafael-lopez-aliaga-violencia-verbal-pedro-castillo-n51831",
-        "https://ojo-publico.com/5081/millonaria-deuda-lima-financia-obras-duplicadas-y-sin-expedientes",
-        "https://www.infobae.com/peru/2025/11/09/revelan-que-gestion-de-rafael-lopez-aliaga-compro-raciones-importadas-de-enchiladas-y-tacos-a-alto-costo-para-damnificados-de-lima/",
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
-      ]
-    }
+    "antecedentes": [
+      {
+        "titulo": "Regidor Provincial de Lima (2007-2010)",
+        "estado": "Cargo Político",
+        "source": "https://infogob.jne.gob.pe/"
+      },
+      {
+        "titulo": "Alcalde Metropolitano de Lima (2023-Actualidad)",
+        "estado": "En ejercicio",
+        "source": "https://www.munlima.gob.pe/"
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "Investigación Lavado de Activos (Caso Panama Papers)",
+        "estado": "Archivado",
+        "source": "https://rpp.pe/politica/judiciales/caso-panama-papers-pj-ordeno-ampliar-por-24-meses-plazo-de-la-investigacion-a-rafael-lopez-aliaga-noticia-1660195"
+      },
+      {
+        "titulo": "Caso Caja Metropolitana",
+        "estado": "Archivado",
+        "source": "https://www.idl-reporteros.pe/"
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Frases polémicas y violencia verbal ('Muerte a...')",
+        "estado": "Sanción Ética JNE",
+        "source": "https://www.exitosanoticias.pe/"
+      },
+      {
+        "titulo": "Demanda de Gustavo Gorriti por Difamación",
+        "estado": "En curso (2025)",
+        "source": "https://www.infobae.com/"
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "Deuda Coactiva SUNAT (Empresas vinculadas)",
+        "estado": "Disputa Admin.",
+        "source": "https://larepublica.pe/"
+      },
+      {
+        "titulo": "Endeudamiento de Lima (Bonos S/ 3,500 mill)",
+        "estado": "Crítica Gestión",
+        "source": "https://ojo-publico.com/"
+      }
+    ]
   },
 
   "transparencia": {
