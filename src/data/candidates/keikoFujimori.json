@@ -192,34 +192,169 @@
   },
 
   "propuestasPrincipales": {
-    "economico": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "social": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "ambiental": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "institucional": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "educativo": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "salud": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "seguridad": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    }
+    "institucional": [
+      {
+        "titulo": "Reformas Anticorrupción Graduales",
+        "descripcion": "Fortalecimiento de la Contraloría, reformas graduales sin alterar la Constitución de 1993. Énfasis en transparencia y rendición de cuentas. No propone cambios radicales al sistema político actual.",
+        "viabilidad": "Alta. No requiere cambios constitucionales dramáticos.",
+        "respaldo": "Contraloría General de la República, Proética",
+        "source": [
+          "https://fuerzapopular.com.pe/decalogo/",
+          "https://rpp.pe/politica/elecciones/keiko-fujimori-deja-sentada-su-unica-posicion-sobre-la-union-civil-y-el-aborto-noticia-960494"
+        ]
+      },
+      {
+        "titulo": "Continuidad de la Constitución de 1993",
+        "descripcion": "Mantener la Constitución vigente sin alteraciones mayores. Protección del modelo económico y político actual. Rechazo a reformas constitucionales de fondo.",
+        "viabilidad": "Alta. Preserva el statu quo institucional.",
+        "respaldo": "Sectores empresariales, derecha tradicional",
+        "source": ["https://fuerzapopular.com.pe/decalogo/"]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Continuidad del Modelo Económico",
+        "descripcion": "Promoción de inversión privada, apertura de mercados, asociaciones público-privadas en infraestructura. Protección de la economía de mercado establecida en la Constitución de 1993. Reactivación económica post-pandemia.",
+        "viabilidad": "Alta. Continuidad con modelo actual vigente.",
+        "respaldo": "Confiep, sectores empresariales tradicionales",
+        "source": [
+          "https://fuerzapopular.com.pe/decalogo/",
+          "https://rpp.pe/economia/economia/keiko-fujimori-cuales-son-las-propuestas-economicas-de-la-candidata-presidencial-elecciones-2021-el-poder-en-tus-manos-noticia-1331129"
+        ]
+      },
+      {
+        "titulo": "Reactivación Económica con Inversión Privada",
+        "descripcion": "Generar condiciones para atraer inversión extranjera directa. Simplificación de trámites para empresas, estabilidad jurídica, incentivos tributarios a sectores productivos.",
+        "viabilidad": "Alta. Política económica ortodoxa con amplio consenso.",
+        "respaldo": "Cámara de Comercio, inversionistas privados",
+        "source": [
+          "https://rpp.pe/economia/economia/keiko-fujimori-cuales-son-las-propuestas-economicas-de-la-candidata-presidencial-elecciones-2021-el-poder-en-tus-manos-noticia-1331129"
+        ]
+      },
+      {
+        "titulo": "Formalización Empresarial",
+        "descripcion": "Programas de incentivos para formalización de pequeñas y medianas empresas. Reducción de carga tributaria inicial, asesoría técnica gratuita, acceso a créditos formales.",
+        "viabilidad": "Media-Alta. Requiere inversión en servicios de apoyo.",
+        "respaldo": "Gremios de MYPES, entidades financieras",
+        "source": [
+          "https://rpp.pe/economia/economia/keiko-fujimori-cuales-son-las-propuestas-economicas-de-la-candidata-presidencial-elecciones-2021-el-poder-en-tus-manos-noticia-1331129"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Familia Tradicional y Asistencialismo Focalizado",
+        "descripcion": "Defensa de la familia nuclear tradicional, rechazo al matrimonio igualitario (sí a unión patrimonial). Programas sociales focalizados, continuidad de programas exitosos del fujimorismo. Rechazo al enfoque de género.",
+        "viabilidad": "Media. Tensión con obligaciones internacionales de DDHH.",
+        "respaldo": "Sectores conservadores, iglesias cristianas",
+        "source": [
+          "https://rpp.pe/politica/elecciones/keiko-fujimori-deja-sentada-su-unica-posicion-sobre-la-union-civil-y-el-aborto-noticia-960494",
+          "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc"
+        ]
+      },
+      {
+        "titulo": "Programas de Alimentación Escolar",
+        "descripcion": "Expansión de programas de desayunos y almuerzos escolares gratuitos. Asegurar nutrición adecuada de estudiantes en zonas vulnerables. Modelo similar a Qali Warma mejorado.",
+        "viabilidad": "Alta. Programas con experiencia previa implementada.",
+        "respaldo": "Ministerio de Desarrollo Social, gobiernos locales",
+        "source": [
+          "https://larepublica.pe/elecciones/2021/04/30/plan-de-gobierno-de-keiko-fujimori-2021-resumen-de-las-principales-propuestas-atmp"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Desarrollo Compatible con Medio Ambiente",
+        "descripcion": "Coexistencia entre inversión privada y cuidado ambiental. Promoción de minería responsable con estándares internacionales. Balance entre desarrollo económico y conservación.",
+        "viabilidad": "Media-Alta. Requiere fiscalización efectiva.",
+        "respaldo": "Empresas mineras formales, SNMPE",
+        "source": ["https://fuerzapopular.com.pe/decalogo"]
+      },
+      {
+        "titulo": "Minería Responsable",
+        "descripcion": "Fortalecimiento de fiscalización ambiental en proyectos mineros. Certificaciones internacionales obligatorias, monitoreo ciudadano, fondos de compensación ambiental.",
+        "viabilidad": "Media. Requiere institucionalidad fuerte y voluntad política.",
+        "respaldo": "Organizaciones ambientales moderadas, minería formal",
+        "source": ["https://fuerzapopular.com.pe/decalogo"]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Alianzas Público-Privadas Educativas",
+        "descripcion": "Fortalecimiento de la educación mediante alianzas público-privadas. Mejora de infraestructura educativa, capacitación docente. Rechazo al enfoque de género en currículo escolar.",
+        "viabilidad": "Alta. Modelo compatible con sistema actual.",
+        "respaldo": "Colegios privados, gremios docentes conservadores",
+        "source": [
+          "https://fuerzapopular.com.pe/decalogo",
+          "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc"
+        ]
+      },
+      {
+        "titulo": "Mejora de Infraestructura Educativa",
+        "descripcion": "Construcción y refacción de colegios en zonas rurales y urbanas marginales. Equipamiento con tecnología, laboratorios, bibliotecas. Acceso a servicios básicos (agua, luz, internet).",
+        "viabilidad": "Media-Alta. Requiere presupuesto sostenido y gestión eficiente.",
+        "respaldo": "Gobiernos regionales y locales, sector construcción",
+        "source": [
+          "https://larepublica.pe/elecciones/2021/04/30/plan-de-gobierno-de-keiko-fujimori-2021-resumen-de-las-principales-propuestas-atmp"
+        ]
+      },
+      {
+        "titulo": "Capacitación y Meritocracia Docente",
+        "descripcion": "Programas intensivos de capacitación para maestros. Evaluaciones periódicas de desempeño, incentivos salariales por mérito, becas de especialización.",
+        "viabilidad": "Media. Resistencia de sindicatos docentes.",
+        "respaldo": "Ministerio de Educación, sectores académicos",
+        "source": ["https://fuerzapopular.com.pe/decalogo"]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Fortalecimiento del Sistema Mixto de Salud",
+        "descripcion": "Mejora de infraestructura hospitalaria mediante inversión público-privada. Fortalecimiento de EsSalud y SIS. Acceso a medicamentos genéricos. Respuesta efectiva ante emergencias sanitarias.",
+        "viabilidad": "Alta. Requiere inversión sostenida y gestión eficiente.",
+        "respaldo": "Colegio Médico del Perú, clínicas privadas",
+        "source": [
+          "https://larepublica.pe/elecciones/2021/04/30/plan-de-gobierno-de-keiko-fujimori-2021-resumen-de-las-principales-propuestas-atmp"
+        ]
+      },
+      {
+        "titulo": "Acceso Universal a Medicamentos Genéricos",
+        "descripcion": "Compra centralizada de medicamentos genéricos de calidad. Reducción de precios mediante compras corporativas estatales, eliminación de intermediarios, control de calidad estricto.",
+        "viabilidad": "Alta. Con voluntad política y transparencia en procesos.",
+        "respaldo": "Usuarios del sistema de salud, organizaciones de pacientes",
+        "source": [
+          "https://larepublica.pe/elecciones/2021/04/30/plan-de-gobierno-de-keiko-fujimori-2021-resumen-de-las-principales-propuestas-atmp"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Mano Dura contra el Crimen",
+        "descripcion": "Orden público rígido, penas más altas para delincuentes reincidentes, tolerancia cero. Fortalecimiento policial, tecnología de vigilancia. Advertencia severa a criminales.",
+        "viabilidad": "Media. Requiere reforma del código penal y recursos.",
+        "respaldo": "Policía Nacional, sectores que demandan seguridad",
+        "source": [
+          "https://rpp.pe/politica/actualidad/keiko-fujimori-a-delincuentes-reincidentes-ya-estan-advertidos-noticia-289164"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento Policial",
+        "descripcion": "Aumento de presupuesto para Policía Nacional, modernización de equipamiento, mejora salarial, capacitación especializada. Mayor presencia policial en calles.",
+        "viabilidad": "Media-Alta. Requiere recursos fiscales sostenidos.",
+        "respaldo": "Policía Nacional, asociaciones de vecinos",
+        "source": [
+          "https://rpp.pe/politica/actualidad/keiko-fujimori-a-delincuentes-reincidentes-ya-estan-advertidos-noticia-289164"
+        ]
+      },
+      {
+        "titulo": "Penas Severas para Reincidentes",
+        "descripcion": "Reforma del código penal para aumentar penas a delincuentes reincidentes. Creación de registros públicos de delincuentes, restricciones post-penales, cadena perpetua efectiva.",
+        "viabilidad": "Media. Debate jurídico sobre proporcionalidad de penas.",
+        "respaldo": "Víctimas de delitos, sectores conservadores",
+        "source": [
+          "https://rpp.pe/politica/actualidad/keiko-fujimori-a-delincuentes-reincidentes-ya-estan-advertidos-noticia-289164"
+        ]
+      }
+    ]
   },
 
   "coherenciaConElPlan": {

@@ -187,34 +187,179 @@
   },
 
   "propuestasPrincipales": {
-    "economico": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "social": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "ambiental": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "institucional": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "educativo": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "salud": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    },
-    "seguridad": {
-      "values": "SIN PLAN DE GOBIERNO FORMALIZADO",
-      "source": ""
-    }
+    "institucional": [
+      {
+        "titulo": "Reforma del Estado",
+        "descripcion": "Reducción del número de ministerios de 18 a 12, implementación de meritocracia en cargos públicos, y eliminación de burocracia. Propone congreso unicameral y recorte de privilegios estatales.",
+        "viabilidad": "Media. Requiere reforma constitucional y consenso político amplio para reducción de ministerios.",
+        "respaldo": "Renovación Popular, sectores empresariales conservadores",
+        "source": [
+          "https://caretas.pe/politica/lopez-aliaga-en-cade-propone-salida-de-corte-idh-congreso-unicameral-y-jueces-sin-rostro-para-peru/",
+          "https://rpp.pe/lima/actualidad/rafael-lopez-aliaga-plantea-al-congreso-propuesta-de-reducir-ministerios-para-destinar-esos-recursos-a-obras-noticia-1657216"
+        ]
+      },
+      {
+        "titulo": "Salida de Corte IDH",
+        "descripcion": "Retiro del Perú de la Corte Interamericana de Derechos Humanos para recuperar soberanía judicial nacional. Argumenta que limita decisiones del Estado peruano.",
+        "viabilidad": "Baja. Genera aislamiento internacional y conflictos con tratados.",
+        "respaldo": "Sectores nacionalistas conservadores",
+        "source": [
+          "https://www.swissinfo.ch/spa/candidato-presidencial-l%C3%B3pez-aliaga-quiere-sacar-a-per%C3%BA-de-%22corte-de-derechos-inhumanos%22/90292549",
+          "https://caretas.pe/politica/lopez-aliaga-en-cade-propone-salida-de-corte-idh-congreso-unicameral-y-jueces-sin-rostro-para-peru/"
+        ]
+      },
+      {
+        "titulo": "Austeridad Radical del Estado",
+        "descripcion": "Recorte drástico de sueldos de funcionarios públicos, eliminación de privilegios congresales, reducción de gasto corriente para destinar recursos a obras de infraestructura.",
+        "viabilidad": "Media. Genera resistencia del aparato estatal pero tiene apoyo popular.",
+        "respaldo": "Ciudadanía descontenta con corrupción",
+        "source": [
+          "https://www.youtube.com/watch?v=C__hkW7SJcI",
+          "https://rpp.pe/lima/actualidad/rafael-lopez-aliaga-plantea-al-congreso-propuesta-de-reducir-ministerios-para-destinar-esos-recursos-a-obras-noticia-1657216"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Liberalización Económica Total",
+        "descripcion": "Estado mínimo, libre mercado absoluto, reducción de impuestos empresariales, eliminación de trabas burocráticas. Propone criptomoneda nacional respaldada en oro y litio, y PPPs masivas en infraestructura.",
+        "viabilidad": "Alta en aspectos técnicos, baja aceptación social por recorte de programas.",
+        "respaldo": "Confiep, gremios empresariales, economistas liberales",
+        "source": [
+          "https://semanaeconomica.com/legal-politica/politica/cade-2025-rafael-lopez-aliaga-plantea-volver-al-congreso-unicameral-demandar-a-brookfield-y-libre-eleccion-para-jubilacion",
+          "https://www.infobae.com/peru/2025/11/06/rafael-lopez-aliaga-propone-crear-una-criptomoneda-peruana-y-una-empresa-estatal-para-exportar-autos-electricos-desde-puno/"
+        ]
+      },
+      {
+        "titulo": "Libre Elección de Sistema de Jubilación",
+        "descripcion": "Permitir a trabajadores elegir entre AFP privadas o sistema público (ONP). Eliminar obligatoriedad del sistema privado, devolver libertad de elección al trabajador.",
+        "viabilidad": "Media-Alta. Requiere reforma legal del sistema previsional.",
+        "respaldo": "Asociación de AFPs, economistas liberales",
+        "source": [
+          "https://semanaeconomica.com/legal-politica/politica/cade-2025-rafael-lopez-aliaga-plantea-volver-al-congreso-unicameral-demandar-a-brookfield-y-libre-eleccion-para-jubilacion"
+        ]
+      },
+      {
+        "titulo": "Exportación de Autos Eléctricos desde Puno",
+        "descripcion": "Creación de empresa estatal para fabricar y exportar autos eléctricos desde Puno, aprovechando reservas de litio. Industrialización de recursos minerales.",
+        "viabilidad": "Baja. Requiere inversión masiva, tecnología y mercado competitivo.",
+        "respaldo": "Sector minero, gobiernos regionales del sur",
+        "source": [
+          "https://www.infobae.com/peru/2025/11/06/rafael-lopez-aliaga-propone-crear-una-criptomoneda-peruana-y-una-empresa-estatal-para-exportar-autos-electricos-desde-puno/"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Valores Cristianos y Familia Tradicional",
+        "descripcion": "Defensa de la familia tradicional, rechazo al enfoque de género, políticas de asistencialismo focalizado basado en criterios religiosos. Promoción de valores conservadores en instituciones públicas.",
+        "viabilidad": "Baja. Contradice tratados internacionales de derechos humanos.",
+        "respaldo": "Opus Dei, iglesias evangélicas, sectores ultraconservadores",
+        "source": [
+          "https://ojo-publico.com/politica/elecciones-2021/bancada-lopez-aliaga-se-opondra-enfoque-genero-y-derechos-lgtb",
+          "https://www.swissinfo.ch/spa/l%C3%B3pez-aliaga-un-empresario-devoto-del-opus-dei-para-la-alcald%C3%ADa-de-lima/47989788"
+        ]
+      },
+      {
+        "titulo": "Prohibición Total del Aborto",
+        "descripcion": "Defensa de la vida desde la concepción, oposición absoluta al aborto incluso en casos de violación. Políticas pro-vida radicales sin excepciones.",
+        "viabilidad": "Muy Baja. Contradice derechos fundamentales y jurisprudencia internacional.",
+        "respaldo": "Iglesias cristianas conservadoras, grupos pro-vida",
+        "source": [
+          "https://convoca.pe/convoca-verifica/reportaje/rafael-lopez-aliaga-dio-informacion-erronea-sobre-casos-de-violaciones-y",
+          "https://www.youtube.com/watch?v=k9rzsQH-OPE"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Desarrollo Infraestructural Acelerado",
+        "descripcion": "Priorización de infraestructura y desarrollo económico sobre conservacionismo. Propone flexibilización de normativa ambiental para acelerar proyectos mineros y de construcción.",
+        "viabilidad": "Media-Alta, con riesgo de conflictos socioambientales.",
+        "respaldo": "Sector construcción, minería formal",
+        "source": [
+          "https://www.actualidadambiental.pe/cuales-son-las-propuestas-ambientales-del-partido-liderado-por-rafael-lopez-aliaga/",
+          "https://www.youtube.com/watch?v=I5PRbXuFSus"
+        ]
+      },
+      {
+        "titulo": "Megaproyectos de Infraestructura Vial",
+        "descripcion": "Construcción de carreteras, puentes y vías expresas priorizando conectividad y desarrollo económico. Reducción de tiempos de evaluación ambiental para acelerar obras.",
+        "viabilidad": "Alta. Con riesgo de impacto ambiental no mitigado.",
+        "respaldo": "Sector construcción, transporte",
+        "source": ["https://www.youtube.com/watch?v=I5PRbXuFSus"]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Libertad de Enseñanza y Tecnología",
+        "descripcion": "Transferencia de colegios a gestión municipal y privada, tablets con Starlink para zonas rurales, vouchers educativos. Énfasis en valores cristianos y rechazo al enfoque de género en currículo.",
+        "viabilidad": "Media. Requiere inversión alta y coordinación intergubernamental.",
+        "respaldo": "Colegios privados, sector tecnológico",
+        "source": [
+          "https://larepublica.pe/sociedad/2025/06/19/gestion-de-lopez-aliaga-insiste-en-que-le-transfieran-colegios-y-postas-de-lima-metropolitana-hnews-530442",
+          "https://ojo-publico.com/politica/elecciones-2021/bancada-lopez-aliaga-se-opondra-enfoque-genero-y-derechos-lgtb"
+        ]
+      },
+      {
+        "titulo": "Shock Tecnológico con Starlink",
+        "descripcion": "Equipar a todos los estudiantes de zonas rurales con tablets conectadas a internet satelital de alta velocidad (Starlink). Reducir brecha digital educativa.",
+        "viabilidad": "Media. Requiere inversión masiva y sostenibilidad del servicio.",
+        "respaldo": "Sector tecnológico, empresas de telecomunicaciones",
+        "source": ["https://www.youtube.com/watch?v=eoJ3gIxdmeY"]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Sistema de Salud Mixto Competitivo",
+        "descripcion": "Libre elección de sistema de salud (público/privado), vouchers de atención, transferencia de postas a gestión municipal. Fomento de seguros privados accesibles.",
+        "viabilidad": "Media. Requiere reforma del sistema de salud actual.",
+        "respaldo": "Clínicas privadas, aseguradoras",
+        "source": [
+          "https://larepublica.pe/sociedad/2025/06/19/gestion-de-lopez-aliaga-insiste-en-que-le-transfieran-colegios-y-postas-de-lima-metropolitana-hnews-530442"
+        ]
+      },
+      {
+        "titulo": "Municipalización de Postas",
+        "descripcion": "Transferir gestión de postas y centros de salud al gobierno municipal. Descentralización efectiva de servicios de salud primaria.",
+        "viabilidad": "Baja. Municipios carecen de capacidad de gestión sanitaria.",
+        "respaldo": "Municipalidades, sector privado de salud",
+        "source": [
+          "https://larepublica.pe/sociedad/2025/06/19/gestion-de-lopez-aliaga-insiste-en-que-le-transfieran-colegios-y-postas-de-lima-metropolitana-hnews-530442"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Plan Bukele - Tolerancia Cero",
+        "descripcion": "Régimen de excepción, jueces sin rostro, megacárceles, reconocimiento facial con IA ('chuponeo legal'), penas drásticas para delincuentes reincidentes. Salida de la Corte IDH.",
+        "viabilidad": "Baja. Contradice estándares internacionales de derechos humanos.",
+        "respaldo": "Policía Nacional, sectores que demandan mano dura",
+        "source": [
+          "https://www.infobae.com/america/peru/2022/08/29/rafael-lopez-aliaga-propone-el-plan-bukele-para-combatir-la-delincuencia-al-estilo-de-el-salvador/",
+          "https://www.swissinfo.ch/spa/candidato-presidencial-l%C3%B3pez-aliaga-quiere-sacar-a-per%C3%BA-de-%22corte-de-derechos-inhumanos%22/90292549",
+          "https://panamericana.pe/locales/383731-mml-monitorea-ciudad-lima-4300-camaras-inteligencia-artificial-reconocimiento-facial"
+        ]
+      },
+      {
+        "titulo": "Vigilancia con IA y Reconocimiento Facial",
+        "descripcion": "Implementación masiva de cámaras con inteligencia artificial y reconocimiento facial para captura en tiempo real. 'Chuponeo legal' de sospechosos.",
+        "viabilidad": "Media-Alta. Alto costo y riesgos de violación de privacidad.",
+        "respaldo": "Empresas de tecnología de vigilancia",
+        "source": [
+          "https://panamericana.pe/locales/383731-mml-monitorea-ciudad-lima-4300-camaras-inteligencia-artificial-reconocimiento-facial"
+        ]
+      },
+      {
+        "titulo": "Jueces sin Rostro",
+        "descripcion": "Implementar jueces con identidad reservada para casos de crimen organizado, similar al modelo anti-terrorismo de los 90. Protección de magistrados del sistema judicial.",
+        "viabilidad": "Baja. Contradice debido proceso y estándares internacionales.",
+        "respaldo": "Sectores conservadores, algunos magistrados",
+        "source": [
+          "https://caretas.pe/politica/lopez-aliaga-en-cade-propone-salida-de-corte-idh-congreso-unicameral-y-jueces-sin-rostro-para-peru/"
+        ]
+      }
+    ]
   },
 
   "coherenciaConElPlan": {
