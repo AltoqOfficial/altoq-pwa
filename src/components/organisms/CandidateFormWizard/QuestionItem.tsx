@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Question, AnswerValue } from "./types";
 import { cn } from "@/lib/utils";
 
@@ -17,8 +18,8 @@ export const QuestionItem: React.FC<QuestionItemProps> = ({
 }) => {
   return (
     <div className="mb-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
-      <h3 className="text-white text-lg md:text-xl font-bold mb-8 flex gap-3">
-        <span className="text-neutral-500">{index}.</span>
+      <h3 className="text-white text-lg md:text-xl font-bold mb-8 flex gap-2">
+        <span>{index}.</span>
         {question.text}
       </h3>
 
@@ -30,27 +31,48 @@ export const QuestionItem: React.FC<QuestionItemProps> = ({
               type="button"
               onClick={() => onChange(opt.value)}
               className={cn(
-                "flex flex-col items-center p-3 md:p-4 rounded-xl border-2 transition-all duration-300 group min-h-[160px] md:min-h-[200px]",
+                "flex flex-col items-center p-3 md:p-4 rounded-xl transition-all duration-300 group min-h-[160px] md:min-h-[200px] border-2",
                 selectedAnswer === opt.value
-                  ? "bg-white border-white text-neutral-900 shadow-[0_0_30px_rgba(255,255,255,0.2)]"
-                  : "bg-neutral-800/40 border-neutral-700/50 text-neutral-400 hover:border-neutral-500"
+                  ? "bg-[#E0E0E0] border-[#E0E0E0] text-black shadow-[0_0_20px_rgba(255,255,255,0.1)] scale-[1.02]"
+                  : "bg-[#2C2C2C] border-transparent text-white hover:border-neutral-500 hover:bg-[#353535]"
               )}
             >
               <div
                 className={cn(
-                  "w-full aspect-square rounded-lg mb-4 transition-colors relative overflow-hidden",
+                  "w-full aspect-square rounded-lg mb-4 transition-colors relative overflow-hidden flex items-center justify-center p-2",
                   selectedAnswer === opt.value
-                    ? "bg-neutral-900"
-                    : "bg-neutral-800 group-hover:bg-neutral-700"
+                    ? "bg-[#111111]"
+                    : "bg-[#202020] group-hover:bg-[#252525]"
                 )}
               >
-                <span className="absolute inset-0 flex items-center justify-center text-3xl opacity-10">
-                  {opt.value}
-                </span>
+                {opt.image ? (
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={opt.image}
+                      alt={opt.description}
+                      fill
+                      className="object-contain transition-all duration-300"
+                      sizes="(max-width: 768px) 100px, 150px"
+                    />
+                  </div>
+                ) : (
+                  <span className="absolute inset-0 flex items-center justify-center text-3xl opacity-10">
+                    {opt.value}
+                  </span>
+                )}
               </div>
-              <p className="text-[10px] md:text-sm font-bold leading-tight uppercase tracking-tight text-center">
-                {opt.value}) {opt.description}
-              </p>
+              <div className="text-center w-full">
+                <p
+                  className={cn(
+                    "text-[10px] md:text-sm font-normal leading-tight text-left",
+                    selectedAnswer === opt.value
+                      ? "text-black font-semibold"
+                      : "text-white"
+                  )}
+                >
+                  {opt.value}) {opt.description}
+                </p>
+              </div>
             </button>
           ))}
         </div>
@@ -62,13 +84,22 @@ export const QuestionItem: React.FC<QuestionItemProps> = ({
               type="button"
               onClick={() => onChange(opt.value)}
               className={cn(
-                "px-6 py-3 rounded-full text-sm font-medium border-2 transition-all duration-300",
+                "px-6 py-3 rounded-xl text-sm font-normal border-2 transition-all duration-300 text-left min-w-[200px]",
                 selectedAnswer === opt.value
-                  ? "bg-white border-white text-neutral-900"
-                  : "bg-neutral-800/50 border-neutral-700 text-neutral-400 hover:border-neutral-500 hover:bg-neutral-800"
+                  ? "bg-[#E0E0E0] border-[#E0E0E0] text-black shadow-lg scale-[1.02]"
+                  : "bg-[#2C2C2C] border-transparent text-white hover:border-neutral-500 hover:bg-[#353535]"
               )}
             >
-              {opt.label}
+              <span
+                className={cn(
+                  "font-bold mr-1",
+                  selectedAnswer === opt.value ? "text-black" : "text-white"
+                )}
+              >
+                {opt.value})
+              </span>
+              {opt.label.substring(3)}{" "}
+              {/* Removing the A) prefix if it exists in label, assuming generic label structure or just using description if safer */}
             </button>
           ))}
         </div>

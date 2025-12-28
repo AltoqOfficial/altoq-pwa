@@ -19,15 +19,15 @@ interface CandidateFormHeroProps {
 
 export function CandidateFormHero({ onStartClick }: CandidateFormHeroProps) {
   const candidates = [
-    { id: 1, image: "/candidatos/1.webp", overlayType: "lead" },
-    { id: 2, image: "/candidatos/2.webp", overlayType: "red" },
-    { id: 3, image: "/candidatos/3.webp", overlayType: "lead" },
-    { id: 4, image: "/candidatos/4.webp", overlayType: "red" },
-    { id: 5, image: "/candidatos/5.webp", overlayType: "lead" },
+    { id: 1, image: "/images/iconsForm/candidato1.png", overlayType: "lead" },
+    { id: 2, image: "/images/iconsForm/candidato2.png", overlayType: "red" },
+    { id: 3, image: "/images/iconsForm/candidato3.png", overlayType: "lead" },
+    { id: 4, image: "/images/iconsForm/candidato4.png", overlayType: "red" },
+    { id: 5, image: "/images/iconsForm/candidato5.png", overlayType: "lead" },
   ];
 
   return (
-    <section className="relative min-h-[90vh] md:min-h-[85vh] flex flex-col overflow-hidden bg-neutral-900 -mt-34.5 md:-mt-20 lg:-mt-34.5">
+    <section className="relative min-h-[90vh] md:min-h-[85vh] flex flex-col overflow-hidden bg-[#202020] -mt-34.5 md:-mt-20 lg:-mt-34.5">
       <div className="container relative z-10 mx-auto px-12 md:px-16 lg:px-24 text-left pt-40 md:pt-52 lg:pt-64 mb-20">
         <Typography
           variant="h3"
@@ -44,7 +44,7 @@ export function CandidateFormHero({ onStartClick }: CandidateFormHeroProps) {
           font="sohneBreit"
           weight="400"
           align="left"
-          className="mb-6 max-w-xs md:max-w-xl text-neutral-400 leading-relaxed text-sm md:text-base"
+          className="mb-6 max-w-md md:max-w-3xl text-white leading-relaxed text-sm md:text-base"
         >
           Descubre al candidato presidencial que realmente conecta con tus
           intereses políticos, valores y prioridades. Compara propuestas e
@@ -72,17 +72,17 @@ export function CandidateFormHero({ onStartClick }: CandidateFormHeroProps) {
               src={candidate.image}
               alt={`Candidato ${candidate.id}`}
               fill
-              className="object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110"
+              className="object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110 contrast-150 brightness-110"
               sizes="(max-width: 768px) 20vw, 20vw"
             />
 
-            {/* Alternating Overlay Filter (Red / Gray #868686) */}
+            {/* Alternating Overlay Filter (Pure Vibrant Red / Light Gray) */}
             <div
               className={cn(
-                "absolute inset-0 z-10 transition-opacity duration-500 group-hover:opacity-0 mix-blend-multiply",
+                "absolute inset-0 z-10 transition-opacity duration-500 group-hover:opacity-0 mix-blend-color",
                 candidate.overlayType === "red"
-                  ? "bg-[#FF2727]"
-                  : "bg-[#CFCFCF]"
+                  ? "bg-[#FF0000]"
+                  : "bg-[#E0E0E0]"
               )}
             />
           </div>

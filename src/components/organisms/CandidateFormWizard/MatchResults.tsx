@@ -136,12 +136,12 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
     currentCandidate.reasons[reasonIdx] || currentCandidate.reasons[0];
 
   return (
-    <div className="fixed inset-0 z-[110] bg-neutral-950 text-white selection:bg-primary-600/30 overflow-y-auto no-scrollbar">
+    <div className="fixed inset-0 z-[90] bg-[#202020] text-white selection:bg-primary-600/30 overflow-y-auto no-scrollbar">
       {/* Top Header - Replaces global header */}
-      <header className="flex items-center justify-between px-6 py-5 border-b border-neutral-800/50 bg-neutral-950/90 backdrop-blur-xl sticky top-0 z-50">
+      <header className="flex items-center justify-between px-6 py-5 border-b border-neutral-800/50 bg-[#202020]/90 backdrop-blur-xl sticky top-0 z-50">
         <button
           onClick={onClose}
-          className="flex items-center gap-2.5 text-neutral-400 hover:text-white transition-all group active:scale-95"
+          className="flex items-center gap-2.5 text-neutral-200 hover:text-white transition-all group active:scale-95"
         >
           <svg
             className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
@@ -163,7 +163,7 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
 
         <Logo variant="red" size="sm" className="h-7 sm:h-8 scale-110" />
 
-        <button className="p-2.5 bg-[#FF2727] rounded-lg hover:bg-red-700 transition-colors shadow-lg shadow-red-900/20">
+        <button className="p-2.5 bg-[#FF0000] rounded-none hover:bg-red-700 transition-colors shadow-lg shadow-red-900/20">
           <svg
             className="w-5 h-5 text-white"
             fill="none"
@@ -180,12 +180,12 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
         </button>
       </header>
 
-      <main className="max-w-7xl mx-auto p-6 space-y-8">
+      <main className="max-w-[95%] mx-auto p-6 space-y-8">
         {/* Hero Section */}
-        <section className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1.1fr] gap-4 xl:gap-8 items-center bg-neutral-900/40 rounded-[2rem] border border-white/5 p-6 md:p-10 lg:p-12 overflow-hidden">
+        <section className="relative grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 items-center bg-[#111111] rounded-none border border-white/5 p-6 md:p-10 lg:p-12 overflow-visible mt-12 min-h-[600px]">
           {/* Noise/Texture background */}
           <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay">
-            <svg width="100%" height="100%">
+            <svg width="80%" height="80%">
               <filter id="noise">
                 <feTurbulence
                   type="fractalNoise"
@@ -199,72 +199,87 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
           </div>
 
           {/* Left Content */}
-          <div className="relative z-10 flex flex-col justify-center">
-            <div className="mb-4">
-              <p className="text-white font-black text-lg md:text-xl uppercase tracking-tighter">
-                {selectedIdx === 0
-                  ? "1ER"
-                  : selectedIdx === 1
-                    ? "2DO"
-                    : selectedIdx === 2
-                      ? "3ER"
-                      : "4TO"}{" "}
-                PUESTO
-              </p>
-              <p className="text-neutral-500 text-xs font-bold uppercase tracking-wider">
-                Tu Candidato ideal es :
-              </p>
-            </div>
+          <div className="relative z-30 flex flex-col justify-center col-span-1 lg:col-span-4 w-full pointer-events-none">
+            <div className="pointer-events-auto">
+              <div className="mb-6">
+                <p className="text-white font-black text-lg md:text-xl uppercase tracking-tighter">
+                  {selectedIdx === 0
+                    ? "1ER"
+                    : selectedIdx === 1
+                      ? "2DO"
+                      : selectedIdx === 2
+                        ? "3ER"
+                        : "4TO"}{" "}
+                  PUESTO
+                </p>
+                <p className="text-white text-xs font-bold uppercase tracking-wider mt-2">
+                  Tu Candidato ideal es :
+                </p>
+              </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black font-sohne-breit leading-[0.85] text-primary-600 uppercase mb-6 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">
-              {currentCandidate.name.split(" ").map((word, i) => (
-                <span key={i} className="block">
-                  {word}
-                </span>
-              ))}
-            </h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black font-sohne-breit leading-[0.85] text-[#FF0000] uppercase mb-6">
+                {currentCandidate.name.split(" ").map((word, i) => (
+                  <span key={i} className="block">
+                    {word}
+                  </span>
+                ))}
+              </h1>
 
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 w-fit">
-              <p className="text-neutral-400 text-sm font-bold tracking-tight">
-                Compatibilidad -{" "}
-                <span className="text-white">
-                  {currentCandidate.score.toFixed(2)}%
-                </span>
-              </p>
+              <div className="mt-6">
+                <p className="text-white text-sm font-bold tracking-tight">
+                  Compatibilidad -{" "}
+                  <span className="text-white">
+                    {currentCandidate.score.toFixed(2)}%
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* Middle Candidate Image */}
-          <div className="relative h-[350px] md:h-[500px] lg:h-[550px] lg:w-[380px] xl:w-[420px] flex items-center justify-center">
+          {/* ====================================================================
+            CORRECCIÓN IMAGEN CANDIDATO (Middle Section)
+            ====================================================================
+          */}
+          <div className="relative col-span-1 lg:col-span-4 h-[400px] md:h-[500px] lg:h-full z-20 pointer-events-none flex items-end justify-center lg:-mb-12">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentCandidate.id}
-                initial={{ y: 20, opacity: 0 }}
+                initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -20, opacity: 0 }}
+                exit={{ y: 20, opacity: 0 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                className="relative w-full h-full"
+                /* FIX APLICADO:
+                   1. height: lg:h-[130%] -> Aumentado para que sobresalga mucho más.
+                   2. width: lg:w-auto -> Deja que el ancho se adapte.
+                   3. max-w-none (en la imagen abajo) -> Clave para que no se encoja.
+                */
+                className="relative lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-auto h-full lg:h-[130%] flex items-end justify-center"
               >
                 <Image
                   src={currentCandidate.image}
                   alt={currentCandidate.name}
-                  fill
-                  className="object-contain object-bottom z-10 scale-110 md:scale-125"
+                  width={1200}
+                  height={1400}
+                  /* FIX APLICADO:
+                    'max-w-none' permite que la imagen sea más ancha que su columna (col-span-4),
+                    evitando que se vea pequeña y aplastada.
+                  */
+                  className="w-auto h-full object-contain object-bottom drop-shadow-2xl max-w-none"
                   priority
                 />
                 {/* Neutral Glow */}
-                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-white/5 blur-[80px] -z-10 rounded-full" />
+                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-black/40 blur-[50px] -z-10 rounded-full scale-x-150" />
               </motion.div>
             </AnimatePresence>
           </div>
 
           {/* Right Content - Top 4 List */}
-          <div className="relative z-10 flex flex-col justify-center gap-6">
+          <div className="relative z-30 flex flex-col justify-center gap-6 col-span-1 lg:col-span-4 w-full">
             <div className="text-right">
               <p className="text-white font-black text-lg md:text-xl uppercase tracking-tighter">
                 TOP 4
               </p>
-              <p className="text-neutral-500 text-xs font-bold uppercase tracking-wider">
+              <p className="text-white text-xs font-bold uppercase tracking-wider">
                 Tu tops de candidatos ideales
               </p>
             </div>
@@ -277,7 +292,7 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                   className={cn(
                     "flex items-center justify-between gap-3 p-2.5 rounded-xl border transition-all duration-300 group text-left",
                     selectedIdx === idx
-                      ? "bg-neutral-200 text-neutral-950 border-white scale-102 shadow-[0_5px_20px_rgba(255,255,255,0.05)]"
+                      ? "bg-neutral-200 text-neutral-950 border-white scale-102 shadow-lg"
                       : "bg-neutral-800/50 text-white border-white/10 hover:border-white/30"
                   )}
                 >
@@ -290,16 +305,14 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                         className="object-cover"
                       />
                     </div>
-                    <span className="font-bold text-[11px] xl:text-xs tracking-tight truncate max-w-[100px] xl:max-w-[140px]">
+                    <span className="font-bold text-[11px] xl:text-xs tracking-tight truncate max-w-[100px] xl:max-w-[140px] text-white">
                       {candidate.name}
                     </span>
                   </div>
                   <span
                     className={cn(
                       "text-[10px] xl:text-xs font-black tabular-nums",
-                      selectedIdx === idx
-                        ? "text-primary-600"
-                        : "text-neutral-400"
+                      selectedIdx === idx ? "text-neutral-950" : "text-white"
                     )}
                   >
                     {candidate.score.toFixed(2)} %
@@ -311,20 +324,20 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
         </section>
 
         {/* Info Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           {/* Candidate Profile Info */}
-          <section className="bg-neutral-900/40 rounded-[2rem] border border-white/5 p-8">
-            <h3 className="text-neutral-400 text-sm font-bold uppercase tracking-widest mb-10">
+          <section className="bg-[#111111] rounded-none border border-white/5 p-8">
+            <h3 className="text-white text-sm font-bold uppercase tracking-widest mb-10">
               Información del candidato
             </h3>
 
             <div className="grid grid-cols-2 gap-8">
               <div className="flex flex-col items-center text-center gap-4">
-                <div className="w-20 h-20 bg-primary-600/10 border border-primary-600/20 rounded-full flex items-center justify-center p-4">
-                  <div className="relative w-full h-full">
-                    {/* Placeholder Logo Letter */}
-                    <span className="text-primary-600 text-4xl font-black">
-                      A
+                <div className="w-20 h-20 bg-neutral-950 border-4 border-[#FF0000] rounded-full flex items-center justify-center p-4 shadow-[0_0_20px_rgba(255,0,0,0.2)]">
+                  <div className="relative w-full h-full flex items-center justify-center">
+                    {/* Dynamic Logo Letter */}
+                    <span className="text-[#FF0000] text-5xl font-black mt-[-4px]">
+                      {currentCandidate.party.charAt(0)}
                     </span>
                   </div>
                 </div>
@@ -332,17 +345,15 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                   <p className="text-white font-bold text-xs uppercase tracking-widest mb-1">
                     PARTIDO POLÍTICO
                   </p>
-                  <p className="text-neutral-400 text-xs">
-                    {currentCandidate.party}
-                  </p>
+                  <p className="text-white text-xs">{currentCandidate.party}</p>
                 </div>
               </div>
 
               <div className="flex flex-col items-center text-center gap-4">
-                <div className="w-20 h-20 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center rotate-45">
-                  <div className=" -rotate-45">
+                <div className="w-20 h-20 bg-transparent flex items-center justify-center">
+                  <div className="transform transition-transform group-hover:scale-110">
                     <svg
-                      className="w-10 h-10 text-primary-600"
+                      className="w-16 h-16 text-[#FF0000] drop-shadow-[0_4px_10px_rgba(255,0,0,0.3)]"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -354,7 +365,7 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                   <p className="text-white font-bold text-xs uppercase tracking-widest mb-1">
                     IDEOLOGÍA
                   </p>
-                  <p className="text-neutral-400 text-xs">
+                  <p className="text-white text-xs">
                     {currentCandidate.ideology}
                   </p>
                 </div>
@@ -363,9 +374,9 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
           </section>
 
           {/* AI Recommendations */}
-          <section className="bg-neutral-900/40 rounded-[2rem] border border-white/5 p-8 flex flex-col">
+          <section className="bg-[#111111] rounded-none border border-white/5 p-8 flex flex-col">
             <div className="flex items-center justify-between mb-8">
-              <h3 className="text-neutral-400 text-sm font-bold uppercase tracking-widest">
+              <h3 className="text-white text-sm font-bold uppercase tracking-widest">
                 Por Qué la IA te Recomienda Este Candidato
               </h3>
               <div className="flex items-center gap-4">
@@ -422,10 +433,10 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                   exit={{ x: -20, opacity: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h4 className="text-3xl md:text-4xl font-black text-primary-600 uppercase leading-none mb-6">
+                  <h4 className="text-3xl md:text-4xl font-black text-[#FF0000] uppercase leading-none mb-6">
                     {currentReason.title}
                   </h4>
-                  <p className="text-neutral-400 text-sm md:text-base leading-relaxed">
+                  <p className="text-white text-sm md:text-base leading-relaxed">
                     {currentReason.description}
                   </p>
                 </motion.div>
@@ -437,8 +448,8 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
         {/* Dashboard Section */}
         <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-8">
           {/* Ranking Chart */}
-          <section className="bg-neutral-900/40 rounded-[2rem] border border-white/5 p-8 relative overflow-hidden">
-            <h3 className="text-neutral-400 text-sm font-bold uppercase tracking-widest mb-10">
+          <section className="bg-[#111111] rounded-none border border-white/5 p-8 relative overflow-hidden">
+            <h3 className="text-white text-sm font-bold uppercase tracking-widest mb-10">
               Dashboard Ranking de tus Candidatos
             </h3>
 
@@ -459,7 +470,7 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                     cy="50"
                     r="40"
                     fill="none"
-                    stroke="#FF2727"
+                    stroke="#FFFFFF"
                     strokeWidth="14"
                     strokeDasharray="125 251"
                   />
@@ -468,7 +479,7 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                     cy="50"
                     r="40"
                     fill="none"
-                    stroke="#A90003"
+                    stroke="#FF0000"
                     strokeWidth="14"
                     strokeDasharray="70 251"
                     strokeDashoffset="-125"
@@ -478,7 +489,7 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                     cy="50"
                     r="40"
                     fill="none"
-                    stroke="#660000"
+                    stroke="#990000"
                     strokeWidth="14"
                     strokeDasharray="40 251"
                     strokeDashoffset="-195"
@@ -493,10 +504,10 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                       height={40}
                       className="rounded-full mb-1 grayscale border border-white/10"
                     />
-                    <p className="text-[10px] font-bold uppercase text-neutral-500 leading-none">
+                    <p className="text-[10px] font-bold uppercase text-white leading-none">
                       {currentCandidate.name.split(" ").pop()}
                     </p>
-                    <p className="text-primary-600 font-black text-xs tabular-nums">
+                    <p className="text-[#FF0000] font-black text-xs tabular-nums">
                       {currentCandidate.score}%
                     </p>
                   </div>
@@ -507,10 +518,10 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
               <div className="flex-1 w-full overflow-x-auto">
                 <table className="w-full text-left text-[10px] md:text-xs">
                   <thead>
-                    <tr className="border-b border-white/5 text-neutral-500 font-bold uppercase">
-                      <th className="pb-3 pr-4">Candidato</th>
-                      <th className="pb-3 px-4">Compatibilidad%</th>
-                      <th className="pb-3 pl-4">Partido Político</th>
+                    <tr className="border-b border-white/5 text-white font-bold uppercase text-[10px] tracking-wider">
+                      <th className="pb-3 pr-2">CANDIDATO</th>
+                      <th className="pb-3 px-2 text-center">COMPATIBILIDAD%</th>
+                      <th className="pb-3 pl-2 text-right">PARTIDO POLÍTICO</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-white/5">
@@ -519,25 +530,18 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                         key={cand.id}
                         className="group hover:bg-white/5 transition-colors"
                       >
-                        <td className="py-4 pr-4">
-                          <div className="flex items-center gap-2">
-                            <div
-                              className={cn(
-                                "w-1.5 h-1.5 rounded-full",
-                                cand.id === currentCandidate.id
-                                  ? "bg-primary-600"
-                                  : "bg-primary-900"
-                              )}
-                            />
-                            <span className="font-bold text-white group-hover:text-primary-600 transition-colors">
+                        <td className="py-4 pr-2">
+                          <div className="flex items-start gap-3">
+                            <div className="w-1.5 h-1.5 rounded-none bg-[#FF0000] mt-1 shrink-0" />
+                            <span className="font-bold uppercase text-[10px] leading-tight block w-20 transition-colors text-white">
                               {cand.name}
                             </span>
                           </div>
                         </td>
-                        <td className="py-4 px-4 font-mono text-neutral-400">
+                        <td className="py-4 px-2 font-mono text-white text-center align-top pt-4">
                           {cand.score}%
                         </td>
-                        <td className="py-4 pl-4 text-neutral-500 uppercase font-black tracking-tighter">
+                        <td className="py-4 pl-2 text-white uppercase font-black tracking-tighter text-right align-top pt-4">
                           {cand.party
                             .split(" ")
                             .map((w) => w[0])
@@ -545,6 +549,28 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                         </td>
                       </tr>
                     ))}
+                    {/* Static User 'SiCreo' Row */}
+                    <tr className="group hover:bg-white/5 transition-colors text-white font-bold border-t border-white/5">
+                      <td className="py-3 pr-2 pl-2">
+                        <div className="flex items-center gap-2">
+                          <div className="w-1.5 h-1.5 rounded-none bg-white shrink-0" />
+                          <div className="flex flex-col">
+                            <span className="text-[10px] uppercase leading-none">
+                              CARLOS
+                            </span>
+                            <span className="text-[10px] uppercase leading-none">
+                              ESPÁ
+                            </span>
+                          </div>
+                        </div>
+                      </td>
+                      <td className="py-3 px-2 font-mono text-[10px] text-center">
+                        7%
+                      </td>
+                      <td className="py-3 pl-2 uppercase text-[10px] tracking-tighter text-right">
+                        SICREO
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -552,8 +578,8 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
           </section>
 
           {/* Convince vs Peru */}
-          <section className="bg-neutral-900/40 rounded-[2rem] border border-white/5 p-8 flex flex-col items-center text-center">
-            <h3 className="text-neutral-400 text-sm font-bold uppercase tracking-widest mb-10">
+          <section className="bg-[#111111] rounded-none border border-white/5 p-8 flex flex-col items-center text-center">
+            <h3 className="text-white text-sm font-bold uppercase tracking-widest mb-10">
               ¿Cuánto te Convence vs el Perú?
             </h3>
 
@@ -562,7 +588,7 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                 src={currentCandidate.image}
                 alt={currentCandidate.name}
                 fill
-                className="object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="object-contain object-bottom rounded-none transition-all duration-500 scale-110"
               />
               <button className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-black/50 rounded-full text-white/50 hover:text-white transition-colors">
                 <svg
@@ -597,12 +623,12 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
             </div>
 
             <div className="w-full">
-              <p className="text-white font-black text-sm uppercase tracking-widest mb-6">
+              <p className="text-white font-black text-sm uppercase tracking-widest mb-6 border-b border-white/10 pb-4">
                 1. {currentCandidate.name}
               </p>
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest">
-                  Tu Match
+                <span className="text-[10px] font-bold text-white uppercase tracking-widest">
+                  TU MATCH
                 </span>
                 <span className="text-[10px] font-black text-white">
                   {currentCandidate.score.toFixed(2)}%
@@ -612,8 +638,43 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: `${currentCandidate.score}%` }}
-                  className="h-full bg-primary-600"
+                  className="h-full bg-[#FF0000]"
                 />
+              </div>
+
+              {/* Added Stats */}
+              <div className="w-full mt-5">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[10px] font-bold text-white uppercase tracking-widest pt-1">
+                    INTENCIÓN DE VOTO NACIONAL
+                  </span>
+                  <span className="text-[10px] font-black text-white">
+                    2.00%
+                  </span>
+                </div>
+                <div className="w-full h-1.5 bg-neutral-800 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-[#FF0000]"
+                    style={{ width: "2%" }}
+                  />
+                </div>
+              </div>
+
+              <div className="w-full mt-5">
+                <div className="flex items-end justify-between mb-2 gap-4">
+                  <span className="text-[10px] font-bold text-white uppercase tracking-widest text-left leading-tight">
+                    RECHAZO/DESCONFIANZA GENERAL EN CANDIDATOS:
+                  </span>
+                  <span className="text-[10px] font-black text-white shrink-0">
+                    84.00%
+                  </span>
+                </div>
+                <div className="w-full h-1.5 bg-neutral-800 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-[#FF0000]"
+                    style={{ width: "84%" }}
+                  />
+                </div>
               </div>
             </div>
           </section>

@@ -7,6 +7,7 @@ export interface Question {
     label: string;
     value: AnswerValue;
     description: string;
+    image?: string;
   }[];
   layout: "cards" | "buttons";
 }

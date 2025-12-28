@@ -182,7 +182,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   return (
     <div
       ref={scrollContainerRef}
-      className="fixed inset-0 z-[100] bg-neutral-900 overflow-y-auto no-scrollbar selection:bg-primary-600/30"
+      className="fixed inset-0 z-[100] bg-[#202020] overflow-y-auto no-scrollbar selection:bg-primary-600/30"
     >
       {/* Top Progress Bar */}
       <div className="fixed top-0 left-0 w-full h-1 bg-neutral-800 z-[110]">
@@ -200,7 +200,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
               A
             </span>
             <div>
-              <p className="text-primary-600 font-bold text-sm md:text-base uppercase tracking-wider">
+              <p className="text-neutral-400 font-bold text-sm md:text-base uppercase tracking-wider">
                 Sección {step}/5 - {currentSection.title}
               </p>
               <h2 className="text-white text-xl md:text-2xl font-bold font-sohne-breit mt-1">
@@ -224,12 +224,12 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
         </div>
 
         {/* Navigation Footer */}
-        <div className="fixed bottom-0 left-0 w-full bg-neutral-900/80 backdrop-blur-md border-t border-neutral-800 p-6 z-[110]">
+        <div className="fixed bottom-0 left-0 w-full bg-[#202020]/90 backdrop-blur-md border-t border-neutral-800 p-6 z-[110]">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="order-2 md:order-1">
               <button
                 onClick={onClose}
-                className="text-neutral-500 hover:text-white transition-colors text-sm font-bold uppercase tracking-widest"
+                className="text-white hover:text-neutral-300 transition-colors text-sm font-bold uppercase tracking-widest"
               >
                 Cerrar
               </button>
@@ -247,7 +247,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
                     : "Enviar Respuestas"
                   : "Siguiente Paso"}
               </Button>
-              <p className="text-neutral-500 text-xs font-bold uppercase tracking-tighter mt-1">
+              <p className="text-neutral-300 text-xs font-bold uppercase tracking-tighter mt-1">
                 Página 0{step} de 05
               </p>
             </div>

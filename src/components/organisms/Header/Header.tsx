@@ -34,7 +34,7 @@ export function Header() {
       className={cn(
         "static top-0 z-20 w-full backdrop-blur-sm transition-colors duration-300",
         (pathname === "/compara" || pathname === "/formulario-candidato") &&
-          "bg-neutral-900/90 md:bg-neutral-900/80"
+          "bg-[#202020]/90 md:bg-[#202020]/80"
       )}
     >
       {/* Mobile Layout */}

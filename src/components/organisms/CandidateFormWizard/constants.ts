@@ -16,26 +16,31 @@ export const FORM_SECTIONS: Section[] = [
             value: "A",
             label: "A",
             description: "Es lo más importante de todo",
+            image: "/images/iconsForm/VectorImg 1.png",
           },
           {
             value: "B",
             label: "B",
             description: "Muy importante, casi lo principal",
+            image: "/images/iconsForm/VectorImg (1) 1.png",
           },
           {
             value: "C",
             label: "C",
             description: "Importante, pero hay otros temas igual de urgentes",
+            image: "/images/iconsForm/VectorImg (2) 1.png",
           },
           {
             value: "D",
             label: "D",
             description: "Importante, pero no la prioridad máxima",
+            image: "/images/iconsForm/VectorImg (3) 1.png",
           },
           {
             value: "E",
             label: "E",
             description: "Hay temas mucho más urgentes",
+            image: "/images/iconsForm/VectorImg (4) 1.png",
           },
         ],
       },
@@ -144,22 +149,39 @@ export const FORM_SECTIONS: Section[] = [
     questions: [
       {
         id: "q2_1",
-        text: "¿Cuál debería ser el enfoque principal para reducir la pobreza?",
+        text: "¿Qué propones respecto al Sueldo Mínimo Vital (RMV)?",
         layout: "cards",
         options: [
-          { value: "A", label: "A", description: "Inversión privada masiva" },
+          {
+            value: "A",
+            label: "A",
+            description: "Subir fuerte (a S/2000 o más)",
+            image: "/images/iconsForm/VectorImg (17) 1.png",
+          },
           {
             value: "B",
             label: "B",
-            description: "Programas sociales directos",
+            description: "Subir moderadamente (a S/1500-1800)",
+            image: "/images/iconsForm/image 44.png",
           },
-          { value: "C", label: "C", description: "Fortalecimiento de PYMES" },
+          {
+            value: "C",
+            label: "C",
+            description: "Subir solo un poco ajustado a inflación",
+            image: "/images/iconsForm/VectorImg (18) 1.png",
+          },
           {
             value: "D",
             label: "D",
-            description: "Control de precios estatales",
+            description: "Quedarse igual por ahora",
+            image: "/images/iconsForm/image 45.png",
           },
-          { value: "E", label: "E", description: "Industrialización nacional" },
+          {
+            value: "E",
+            label: "E",
+            description: "Congelarse o incluso bajar para generar empleo",
+            image: "/images/iconsForm/image 46.png",
+          },
         ],
       },
       {
@@ -267,14 +289,39 @@ export const FORM_SECTIONS: Section[] = [
     questions: [
       {
         id: "q3_1",
-        text: "¿Enfoque prioritario para la educación pública?",
+        text: "¿Cuál es tu posición sobre el matrimonio igualitario y la adopción?",
         layout: "cards",
         options: [
-          { value: "A", label: "A", description: "Infraestructura moderna" },
-          { value: "B", label: "B", description: "Mejores sueldos docentes" },
-          { value: "C", label: "C", description: "Contenidos tecnológicos" },
-          { value: "D", label: "D", description: "Vouchers educativos" },
-          { value: "E", label: "E", description: "Educación técnica rural" },
+          {
+            value: "A",
+            label: "A",
+            description: "Totalmente a favor de matrimonio y adopción",
+            image: "/images/iconsForm/VectorImg (12) 1.png",
+          },
+          {
+            value: "B",
+            label: "B",
+            description: "Unión civil sí, adopción sí",
+            image: "/images/iconsForm/VectorImg (15) 1.png",
+          },
+          {
+            value: "C",
+            label: "C",
+            description: "Unión civil sí, adopción no",
+            image: "/images/iconsForm/VectorImg (16) 1.png",
+          },
+          {
+            value: "D",
+            label: "D",
+            description: "Solo reconocimiento legal básico, sin adopción",
+            image: "/images/iconsForm/image 42.png",
+          },
+          {
+            value: "E",
+            label: "E",
+            description: "En contra de todo reconocimiento especial",
+            image: "/images/iconsForm/image 43.png",
+          },
         ],
       },
       {
@@ -382,25 +429,38 @@ export const FORM_SECTIONS: Section[] = [
     questions: [
       {
         id: "q4_1",
-        text: "Estrategia principal contra la delincuencia urbana:",
+        text: "¿Cuál es la mejor estrategia para combatir la inseguridad ciudadana?",
         layout: "cards",
         options: [
-          { value: "A", label: "A", description: "Militares en las calles" },
+          {
+            value: "A",
+            label: "A",
+            description: "Más policías en la calle y penas más duras",
+            image: "/images/iconsForm/VectorImg (5) 1.png",
+          },
           {
             value: "B",
             label: "B",
-            description: "Prevención y deporte social",
+            description: "Inteligencia policial y tecnología",
+            image: "/images/iconsForm/VectorImg (6) 1.png",
           },
-          { value: "C", label: "C", description: "Cámaras con IA y drones" },
+          {
+            value: "C",
+            label: "C",
+            description: "Intervención militar temporal en zonas críticas",
+            image: "/images/iconsForm/VectorImg (8) 1.png",
+          },
           {
             value: "D",
             label: "D",
-            description: "Potenciar las juntas vecinales",
+            description: "Atacar causas sociales (pobreza, educación) primero",
+            image: "/images/iconsForm/VectorImg (19) 1.png",
           },
           {
             value: "E",
             label: "E",
-            description: "Reforma total de la policía",
+            description: "Combinación de todo, pero con estado de emergencia",
+            image: "/images/iconsForm/VectorImg (9) 1.png",
           },
         ],
       },
@@ -504,34 +564,44 @@ export const FORM_SECTIONS: Section[] = [
   },
   {
     id: 5,
-    title: "Medio Ambiente y Recursos",
-    description: "Sostenibilidad y conflictos socio-ambientales",
+    title: "Reformas Políticas y Constitución",
+    description: "Institucionalidad y reglas de juego democráticas",
     questions: [
       {
         id: "q5_1",
-        text: "Desarrollo de proyectos mineros en cabeceras de cuenca:",
+        text: "¿Crees que se debe cambiar la Constitución de 1993?",
         layout: "cards",
         options: [
-          { value: "A", label: "A", description: "Prohibición absoluta" },
+          {
+            value: "A",
+            label: "A",
+            description:
+              "Cambiarla completamente con Asamblea Constituyente ya",
+            image: "/images/iconsForm/Rectangle 334.png",
+          },
           {
             value: "B",
             label: "B",
-            description: "Permitido con estándares suizos",
+            description: "Cambiarla con Asamblea pero con referéndum previo",
+            image: "/images/iconsForm/Rectangle 334 (1).png",
           },
           {
             value: "C",
             label: "C",
-            description: "Solo con licencia social total",
+            description: "Reformas puntuales vía Congreso",
+            image: "/images/iconsForm/Rectangle 334 (2).png",
           },
           {
             value: "D",
             label: "D",
-            description: "Prioridad a la inversión estatal",
+            description: "Mantenerla casi igual, solo arreglos menores",
+            image: "/images/iconsForm/Rectangle 334 (3).png",
           },
           {
             value: "E",
             label: "E",
-            description: "Relocalización de comunidades",
+            description: "Es perfecta, no tocar nada",
+            image: "/images/iconsForm/VectorImg (25) 1.png",
           },
         ],
       },
