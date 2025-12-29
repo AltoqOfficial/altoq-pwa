@@ -20,7 +20,12 @@ type TypographyVariant =
  * - sohneSchmal: Test Sohne Schmal (weight: 600)
  * - kenyan: Kenyan Coffee (weights: 400, 700)
  */
-type FontFamily = "sohneBreit" | "sohneSchmal" | "kenyan" | "atNameSans";
+type FontFamily =
+  | "sohneBreit"
+  | "sohneSchmal"
+  | "kenyan"
+  | "atNameSans"
+  | "sohneExtraFett";
 
 /**
  * Font weight options
@@ -38,9 +43,10 @@ export interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
   /** Text alignment */
   align?: "left" | "center" | "right" | "justify";
   /** Text color preset */
-  color?: "primary" | "secondary" | "muted" | "inherit" | "white";
+  color?: "primary" | "secondary" | "muted" | "inherit" | "white" | "noise";
   /** Custom line height */
   lineHeight?: "tight" | "snug" | "normal" | "relaxed" | "loose";
+
   /** Render as a different HTML element while keeping variant styles */
   as?: TypographyVariant;
   /** Letter spacing */
@@ -110,6 +116,7 @@ export const Typography = React.forwardRef<HTMLElement, TypographyProps>(
       sohneSchmal: "font-sohne-schmal",
       kenyan: "font-kenyan",
       atNameSans: "font-at-name-sans",
+      sohneExtraFett: "font-sohne-extrafett",
     };
 
     // Font weight styles (using numeric values for better control)
@@ -136,6 +143,7 @@ export const Typography = React.forwardRef<HTMLElement, TypographyProps>(
       secondary: "text-neutral-500",
       muted: "text-neutral-100",
       white: "text-white",
+      noise: "text-noise-red",
       inherit: "",
     };
 

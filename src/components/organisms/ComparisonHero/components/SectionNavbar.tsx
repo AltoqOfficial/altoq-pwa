@@ -26,6 +26,7 @@ interface SectionNavbarProps {
 export function SectionNavbar({
   activeNavIndex,
   onNavClick,
+  navContainerRef,
 }: SectionNavbarProps) {
   // Mapping for Lucide icons
   const MENU_ICONS: Record<string, React.ReactNode> = {
@@ -70,7 +71,11 @@ export function SectionNavbar({
   const projectsIndex = NAV_ITEMS.indexOf("Proyectos de Ley");
 
   return (
-    <nav className="flex flex-col w-full" id="comparison-navbar">
+    <nav
+      className="flex flex-col w-full"
+      id="comparison-navbar"
+      ref={navContainerRef}
+    >
       <div className="flex flex-col gap-1 w-full border-l border-white/10 pl-6">
         {NAV_ITEMS.map((item, index) => {
           if (item === "Proyectos de Ley") return null;

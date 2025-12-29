@@ -95,8 +95,8 @@ export function SectionHeader({ title }: SectionHeaderProps) {
           {SingleBarIcon}
           <div className="flex flex-col">
             <Typography
-              font="sohneBreit"
-              color="primary"
+              font="sohneExtraFett"
+              color="noise"
               weight="800"
               variant="h6"
               align="left"
@@ -105,7 +105,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
               SECCIÓN
             </Typography>
             <Typography
-              font="sohneBreit"
+              font="sohneExtraFett"
               color="white"
               weight="800"
               variant="h1"

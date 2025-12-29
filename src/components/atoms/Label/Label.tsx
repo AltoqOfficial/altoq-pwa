@@ -67,6 +67,7 @@ export const Label = React.forwardRef<HTMLLabelElement, LabelProps>(
     const variantStyles = {
       default: "text-neutral-900",
       light: "text-white",
+      noise: "text-noise-red",
     };
 
     return (

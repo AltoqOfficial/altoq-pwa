@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, lazy, Suspense, memo } from "react";
+import { useCallback, lazy, Suspense, memo, useRef } from "react";
 import { useSectionNavigation } from "@/hooks";
 import {
   SectionNavbar,
@@ -12,6 +12,7 @@ import { Header } from "../Header/Header";
 import type { CandidateComparisonData } from "@/data";
 import { ALL_SECTIONS_CONFIG } from "./config";
 import { NAV_ITEMS } from "./constants";
+import { ComparisonProvider } from "./context";
 
 // Lazy load section components
 const PerfilGeneralSection = lazy(() =>
@@ -144,6 +145,9 @@ export function ComparisonContent({
     sections: [...NAV_ITEMS],
   });
 
+  // Scroll container ref
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
   // Render a section dynamically based on config
   const renderSection = useCallback(
     (config: (typeof ALL_SECTIONS_CONFIG)[0]) => {
@@ -169,66 +173,73 @@ export function ComparisonContent({
     [leftCandidate, rightCandidate]
   );
 
+  const handleNavClickWrapper = useCallback(
+    (index: number) => {
+      handleNavClick(index);
+      if (scrollContainerRef.current) {
+        scrollContainerRef.current.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    },
+    [handleNavClick]
+  );
+
   return (
-    <>
-      <div className="sticky top-0 z-50 flex flex-col w-full shadow-lg">
-        <Header forceShow className="static shadow-none" />
-        <ComparisonHeader
-          leftCandidateInfo={leftCandidateInfo}
-          rightCandidateInfo={rightCandidateInfo}
-          filterIds={filterIds}
-          onBack={onBack}
-          className="static shadow-none"
-        />
-      </div>
-      <div
-        className="w-full relative min-h-screen bg-neutral-500"
-        id="comparison-start"
-      >
-        <div className="w-full flex flex-col xl:flex-row relative">
-          {/* Navigation Bar - Sidebar on Desktop - Totally Left & Rectangular */}
-          <div className="hidden xl:block w-72 shrink-0 sticky top-[185px] 2xl:top-[230px] self-start border-r border-white/10 bg-black/20 backdrop-blur-[20px] h-[calc(100vh-185px)] 2xl:h-[calc(100vh-230px)] overflow-hidden z-20">
+    <ComparisonProvider
+      value={{
+        activeNavIndex,
+        onNavClick: handleNavClickWrapper,
+      }}
+    >
+      <div className="flex flex-col h-dvh overflow-hidden bg-neutral-500">
+        {/* Fixed Header Area */}
+        <div className="flex-none z-50 flex flex-col w-full shadow-lg">
+          <Header forceShow className="static shadow-none" />
+          <ComparisonHeader
+            leftCandidateInfo={leftCandidateInfo}
+            rightCandidateInfo={rightCandidateInfo}
+            filterIds={filterIds}
+            onBack={onBack}
+            className="static shadow-none"
+          />
+        </div>
+
+        {/* Main Layout Area */}
+        <div className="flex flex-1 min-h-0 relative">
+          {/* Fixed Sidebar */}
+          <div className="hidden xl:block w-72 shrink-0 h-full border-r border-white/10 bg-black/20 backdrop-blur-[20px] overflow-hidden z-40">
             <SectionNavbar
               activeNavIndex={activeNavIndex}
               navContainerRef={navContainerRef}
-              onNavClick={(index) => {
-                handleNavClick(index);
-                const contentStart = document.getElementById(
-                  "comparison-content-start"
-                );
-                if (contentStart) {
-                  const offset = 140; // Header offset
-
-                  // Get element position relative to viewport + current scroll
-                  const elementTop =
-                    contentStart.getBoundingClientRect().top + window.scrollY;
-
-                  window.scrollTo({
-                    top: elementTop - offset,
-                    behavior: "smooth",
-                  });
-                }
-              }}
+              onNavClick={handleNavClickWrapper}
               onScrollNav={scrollNav}
             />
           </div>
 
-          {/* Horizontal Sections Container - Centered in remaining space */}
-          <div className="flex-1 w-full min-w-0 flex justify-center">
+          {/* Scrollable Content Area */}
+          <div
+            ref={scrollContainerRef}
+            className="flex-1 w-full min-w-0 overflow-y-auto overflow-x-hidden scroll-smooth"
+            id="comparison-content-scroll-container"
+          >
             <div
-              className="w-full xl:max-w-336 2xl:max-w-500 px-4 xl:px-12 pb-20"
+              className="w-full flex justify-center min-h-full"
               id="comparison-content-start"
             >
-              <HorizontalSections
-                activeIndex={activeNavIndex}
-                direction={scrollDirection}
-              >
-                {ALL_SECTIONS_CONFIG.map(renderSection)}
-              </HorizontalSections>
+              <div className="w-full max-w-[100vw] xl:max-w-336 2xl:max-w-500 px-4 xl:px-12 pb-20 pt-8">
+                <HorizontalSections
+                  activeIndex={activeNavIndex}
+                  direction={scrollDirection}
+                >
+                  {ALL_SECTIONS_CONFIG.map(renderSection)}
+                </HorizontalSections>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </ComparisonProvider>
   );
 }

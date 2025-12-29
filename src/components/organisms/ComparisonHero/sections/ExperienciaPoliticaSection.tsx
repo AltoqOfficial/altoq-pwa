@@ -4,7 +4,6 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Typography } from "@/components/atoms";
 import type { CandidateComparisonData } from "@/data";
-// useMemo removed
 
 interface DynamicSectionProps {
   leftCandidate: CandidateComparisonData | null;
@@ -150,7 +149,7 @@ export function ExperienciaPoliticaSection({
     const isRight = side === "right";
 
     return (
-      <div className="w-full py-8 px-4 md:px-8">
+      <div className="w-full max-w-full py-8 px-4 md:px-8">
         {/* Header: Avatar & Years */}
         <div
           className={`flex justify-between items-start mb-12 ${isRight ? "flex-row-reverse" : "flex-row"}`}
@@ -193,7 +192,7 @@ export function ExperienciaPoliticaSection({
           <div className="absolute top-[57px] left-0 w-full h-0.5 bg-white" />
 
           {/* Single Horizontal Scroll Container */}
-          <div className="flex gap-10 md:gap-32 overflow-x-auto pt-12 pb-4 scrollbar-hide px-4 w-full">
+          <div className="flex gap-10 md:gap-32 overflow-x-auto pt-12 pb-4 scrollbar-hide px-4 w-full max-w-full">
             {/* Cargos Publicos Group */}
             {cargos.length > 0 && (
               <div className="flex gap-4 shrink-0 relative">
@@ -241,14 +240,14 @@ export function ExperienciaPoliticaSection({
   };
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full max-w-full xl:max-w-[calc(100vw-40rem)] overflow-hidden">
       {/* Top Candidate (Red/Left) */}
-      <div className="w-full border-b border-white/20 pb-8">
+      <div className="w-full max-w-full border-b border-white/20 pb-8">
         {renderTimeline(leftCandidate, "left")}
       </div>
 
       {/* Bottom Candidate (Blue/Right) */}
-      <div className="w-full pt-8">
+      <div className="w-full max-w-full pt-8">
         {renderTimeline(rightCandidate, "right")}
       </div>
     </div>
