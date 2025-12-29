@@ -1,8 +1,8 @@
 "use client";
 
-import { memo } from "react";
+import { memo, ReactNode } from "react";
 import Image from "next/image";
-import { Typography, Button, Input } from "@/components/atoms";
+import { Typography } from "@/components/atoms";
 
 // Constantes de configuración
 const NOISE_FILTER_ID = "authNoiseFilter";
@@ -133,65 +133,26 @@ const GradientOverlay = memo(function GradientOverlay() {
   );
 });
 
-/**
- * Formulario de autenticación
- */
-const AuthForm = memo(function AuthForm() {
-  return (
-    <div className="bg-[#FEFEFE] w-[30%] min-w-80 p-10 rounded-2xl flex flex-col mx-auto">
-      <div className="w-full flex justify-center">
-        <Image
-          src="/images/logo/altoq.webp"
-          alt="Altoq Logo"
-          width={120}
-          height={50}
-          className="py-2 mb-8"
-        />
-      </div>
-
-      <form className="space-y-6 mb-5">
-        <Input type="email" placeholder="Correo" size="lg" />
-        <Input type="password" placeholder="Contraseña" size="lg" />
-      </form>
-
-      <a
-        href="/forgot-password"
-        className="text-[#FF2727] text-lg flex justify-end hover:underline transition-all cursor-pointer"
-      >
-        ¿Olvidaste tu contraseña?
-      </a>
-
-      <Button size="lg" className="mt-5">
-        Iniciar sesión
-      </Button>
-
-      <div className="flex justify-center gap-4 mt-5 flex-wrap">
-        <Typography>¿No tienes una cuenta?</Typography>
-        <a
-          href="/register"
-          className="text-[#FF2727] underline text-lg hover:opacity-80 transition-opacity cursor-pointer"
-        >
-          Registrarse
-        </a>
-      </div>
-    </div>
-  );
-});
+interface RegisterLayoutProps {
+  children: ReactNode;
+}
 
 /**
- * Auth Component (Organism)
+ * RegisterLayout Component
  *
- * Página de autenticación con fondo de ruido, imágenes de candidatos,
- * degradado y formulario de login.
+ * Layout compartido para las páginas de autenticación (login, register).
+ * Incluye el fondo con ruido, imágenes de candidatos y degradado.
  *
  * @example
  * ```tsx
- * <Auth />
+ * <RegisterLayout>
+ *   <LoginForm />
+ * </RegisterLayout>
  * ```
  */
-export function Auth() {
+export function RegisterLayout({ children }: RegisterLayoutProps) {
   return (
-    <section className="bg-[#FF2727] min-h-screen w-full flex items-center justify-center relative overflow-hidden">
+    <section className="bg-[#FF2727] min-h-[120vh] w-full flex items-center justify-center relative overflow-hidden">
       {/* Capas de fondo */}
       <NoiseBackground />
       <CandidatesBackground />
@@ -202,21 +163,22 @@ export function Auth() {
         {/* Título y subtítulo */}
         <header className="text-center">
           <Typography
-            font="sohneSchmal"
-            variant="h3"
+            variant="h5"
             color="white"
             align="center"
+            className="max-w-[1200px]"
+            weight="600"
           >
-            &quot;NO SE PUEDE AMAR LO QUE NO SE CONOCE.&quot; - JOSÉ MARÍA
-            ARGUEDAS
+            &quot;LA LIBERTAD DE OPINIÓN ES UNA FARSA SI NO SE GARANTIZA LA
+            INFORMACIÓN&quot; - HANNAH ARENDT
           </Typography>
           <Typography color="white" variant="h6" weight="200" align="center">
-            Conoce antes de decidir.
+            Aquí empieza la información.
           </Typography>
         </header>
 
-        {/* Formulario */}
-        <AuthForm />
+        {/* Contenido (formulario) */}
+        {children}
       </div>
     </section>
   );
