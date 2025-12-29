@@ -10,10 +10,10 @@ export const NAV_ITEMS = [
   "Propuestas Principales",
   "Coherencia con el Plan",
   "Controversias",
-  "Transparencia",
+  /*   "Transparencia",
   "Competencias personales",
   "Percepción Pública",
-  "Innovación y Visión",
+  "Innovación y Visión", */
   "Proyectos de Ley",
 ] as const;
 

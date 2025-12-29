@@ -19,7 +19,12 @@ import { EXTERNAL_LINKS } from "@/constants";
  * - Responsive design with different layouts for mobile and desktop
  * - Dynamic outline button variant based on page background
  */
-export function Header() {
+interface HeaderProps {
+  forceShow?: boolean;
+  className?: string;
+}
+
+export function Header({ forceShow, className }: HeaderProps) {
   const pathname = usePathname();
 
   // Pages with dark backgrounds use outline-light and header-nav-dark
@@ -28,15 +33,21 @@ export function Header() {
   const isDarkBackground = darkBackgroundPages.includes(pathname);
   const headerNavVariant = isDarkBackground ? "header-nav-dark" : "header-nav";
 
+  // Hide header on comparison page unless forced (to allow custom placement/behavior)
+  if (pathname === "/compara" && !forceShow) {
+    return null;
+  }
+
   return (
     <header
       className={cn(
-        "static top-0 z-20 w-full backdrop-blur-sm",
-        pathname === "/compara" && "bg-neutral-500"
+        "sticky top-0 z-20 w-full backdrop-blur-sm",
+        pathname === "/compara" && "bg-neutral-500",
+        className
       )}
     >
       {/* Mobile Layout */}
-      <div className="container mx-auto flex md:hidden flex-col items-center px-4 py-10 gap-10">
+      <div className="container mx-auto flex md:hidden flex-col items-center px-4 gap-10">
         {/* Logo - Centered */}
         <Logo variant="red" asLink priority />
 

@@ -90,7 +90,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
 
   return (
     <>
-      <div className="flex items-center justify-between w-full border-b-2 border-white pb-6">
+      <div className="sticky top-0 z-30 bg-neutral-500 flex items-center justify-between w-full border-b-2 border-white pb-6 pt-4 shadow-md">
         <div className="flex gap-3 md:gap-4 lg:gap-6 items-center">
           {SingleBarIcon}
           <div className="flex flex-col">
@@ -100,7 +100,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
               weight="800"
               variant="h6"
               align="left"
-              className="text-xs md:text-sm lg:text-base"
+              className="text-[12px] lg:text-[16px]"
             >
               SECCIÓN
             </Typography>
@@ -110,7 +110,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
               weight="800"
               variant="h1"
               align="left"
-              className="text-xl md:text-2xl lg:text-4xl"
+              className="text-[20px] lg:text-[32px]"
             >
               {title}
             </Typography>
