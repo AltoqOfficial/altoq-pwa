@@ -402,6 +402,16 @@ body {
   animation-delay: 200ms;
 }
 
-.animation-delay-300 {
-  animation-delay: 300ms;
+/* Profile Card Gradient */
+.bg-profile-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(161, 161, 161, 0.2) 42%,
+    rgba(32, 32, 32, 0.05) 100%
+  );
+}
+
+/* Semantic Noise Pattern (Transparent, Multi, Size 1.1, Opacity 50%) */
+.bg-noise-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='3' stitchTiles='stitch' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.5' /%3E%3C/svg%3E");
 }

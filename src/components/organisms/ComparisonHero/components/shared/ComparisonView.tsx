@@ -53,7 +53,7 @@ export function MobileComparisonView({
             <Typography
               font="kenyan"
               variant="h3"
-              className="text-4xl text-[#FF2727] drop-shadow-lg"
+              className="text-4xl text-noise-red drop-shadow-lg"
             >
               VS
             </Typography>

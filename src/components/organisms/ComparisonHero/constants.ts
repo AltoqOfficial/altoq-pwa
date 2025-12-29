@@ -8,7 +8,7 @@ export const NAV_ITEMS = [
   "Experiencia Profesional",
   "Ideología Política",
   "Propuestas Principales",
-  "Coherencia con el Plan",
+  /*   "Coherencia con el Plan", */
   "Controversias",
   /*   "Transparencia",
   "Competencias personales",

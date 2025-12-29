@@ -189,7 +189,7 @@ export function ExperienciaPoliticaSection({
         {/* Timeline Area */}
         <div className="relative mt-8">
           {/* Main Horizontal Line - Fixed to viewport width to create the track effect */}
-          <div className="absolute top-[57px] left-0 w-full h-0.5 bg-white" />
+          <div className="absolute top-[57px] left-0 w-full h-0.5 bg-white bg-noise-pattern" />
 
           {/* Single Horizontal Scroll Container */}
           <div className="flex gap-10 md:gap-32 overflow-x-auto pt-12 pb-4 scrollbar-hide px-4 w-full max-w-full">

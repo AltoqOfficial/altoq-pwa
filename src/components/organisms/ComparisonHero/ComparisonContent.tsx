@@ -209,7 +209,7 @@ export function ComparisonContent({
         {/* Main Layout Area */}
         <div className="flex flex-1 min-h-0 relative">
           {/* Fixed Sidebar */}
-          <div className="hidden xl:block w-72 shrink-0 h-full border-r border-white/10 bg-black/20 backdrop-blur-[20px] overflow-hidden z-40">
+          <div className="hidden xl:block w-72 shrink-0 h-full border-r border-white/10 bg-black/20 backdrop-blur-[20px] overflow-y-auto scrollbar-hide z-40 pb-32">
             <SectionNavbar
               activeNavIndex={activeNavIndex}
               navContainerRef={navContainerRef}
@@ -228,7 +228,7 @@ export function ComparisonContent({
               className="w-full flex justify-center min-h-full"
               id="comparison-content-start"
             >
-              <div className="w-full max-w-[100vw] xl:max-w-336 2xl:max-w-500 px-4 xl:px-12 pb-20 pt-8">
+              <div className="w-full max-w-[100vw] xl:max-w-336 2xl:max-w-500 px-4 xl:px-12 pb-32 pt-4">
                 <HorizontalSections
                   activeIndex={activeNavIndex}
                   direction={scrollDirection}

@@ -32,11 +32,11 @@ export function MobileComparisonCard({
   // User asked for "Card Format".
 
   return (
-    <div className="w-full bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg  relative p-6 md:p-8 flex flex-col items-center gap-4 md:gap-6">
+    <div className="w-full bg-profile-gradient rounded-xl overflow-hidden shadow-lg  relative p-6 md:p-8 flex flex-col items-center gap-4 md:gap-6">
       {fields.find((f) => f.key === "profesion") && (
         <Typography
-          variant="h6"
-          className="text-white/80 uppercase text-center text-xs md:text-sm"
+          font="atNameSans"
+          className="text-white/80 uppercase text-center text-xs md:text-[16px]"
         >
           {(() => {
             const raw = data?.profesion;
@@ -51,9 +51,10 @@ export function MobileComparisonCard({
                   <span key={index}>
                     {item}
                     {index < val.length - 1 && (
-                      <span className="mx-2" style={{ color }}>
-                        |
-                      </span>
+                      <span
+                        className="mx-2 inline-block h-[12px] w-0.5 opacity-80"
+                        style={{ backgroundColor: color }}
+                      />
                     )}
                   </span>
                 ));
@@ -89,16 +90,15 @@ export function MobileComparisonCard({
       {/* Party Name */}
       <div className=" flex flex-col items-center text-center">
         <Typography
-          variant="h4"
           font="atNameSans"
-          className="text-white text-2xl md:text-4xl font-light"
+          className="text-white text-[13px] md:text-[20px] font-light"
         >
           {candidate.party || "Partido"}
         </Typography>
         <Typography
           variant="p"
           font="atNameSans"
-          className="text-white text-xs md:text-sm font-black mt-1"
+          className="text-white text-[7px] md:text-[12px] font-black mt-1"
         >
           PARTIDO ACTUAL
         </Typography>
@@ -148,7 +148,7 @@ export function MobileComparisonCard({
         <div className="flex gap-3">
           {/* Vertical Bar */}
           <div
-            className="w-1.5 rounded-full"
+            className="w-1.5 rounded-full bg-noise-pattern"
             style={{
               backgroundColor: color,
             }}
@@ -162,7 +162,6 @@ export function MobileComparisonCard({
               POSICIÓN
             </Typography>
             <Typography
-              variant="h3"
               font="atNameSans"
               className="text-white text-xl md:text-3xl font-light leading-tight"
             >
@@ -189,7 +188,7 @@ export function MobileComparisonCard({
             {[1, 2, 3, 4].map((i) => (
               <div
                 key={i}
-                className="w-6 h-2 rounded-full opacity-80"
+                className="w-6 h-2 rounded-full opacity-80 relative overflow-hidden"
                 style={{
                   background:
                     i === 4
@@ -197,7 +196,9 @@ export function MobileComparisonCard({
                       : `repeating-linear-gradient(45deg, ${color}, ${color} 2px, transparent 2px, transparent 4px)`,
                   backgroundColor: i === 4 ? "rgba(255,255,255,0.1)" : color,
                 }}
-              />
+              >
+                <div className="absolute inset-0 bg-noise-pattern" />
+              </div>
             ))}
           </div>
 
@@ -251,15 +252,14 @@ export function MobileComparisonCard({
                     className="flex flex-col items-start text-left w-full"
                   >
                     <Typography
-                      variant="h3"
+                      variant="h6"
                       font="atNameSans"
-                      className="text-white text-xl md:text-3xl font-light leading-none"
+                      className="text-white text-xl md:text-2xl font-light leading-none"
                     >
                       {title}
                     </Typography>
                     <SourceTooltip source={src}>
                       <Typography
-                        variant="p"
                         font="atNameSans"
                         className="text-white/70 text-sm md:text-base font-light leading-tight text-left mt-1"
                       >
@@ -268,7 +268,7 @@ export function MobileComparisonCard({
                     </SourceTooltip>
 
                     {index < items.length - 1 && (
-                      <div className="w-full h-px bg-white/20 mt-3" />
+                      <div className="w-full h-px bg-white/20 mt-3 bg-noise-pattern" />
                     )}
                   </div>
                 );
@@ -280,7 +280,7 @@ export function MobileComparisonCard({
         {/* INTENCIÓN DE VOTO */}
         <div className="w-full">
           <Typography
-            variant="p"
+            variant="small"
             font="atNameSans"
             className="text-white text-[10px] font-black uppercase tracking-wider mb-2 text-left"
           >
@@ -300,7 +300,7 @@ export function MobileComparisonCard({
           >
             {/* Progress Bar */}
             <div
-              className="h-full relative"
+              className="h-full relative bg-noise-pattern"
               style={{
                 width: `${candidate.percepcionPublica?.intencionVoto?.max || 0}%`,
                 backgroundColor: color === "#FF2727" ? "#C62928" : color,
@@ -309,7 +309,7 @@ export function MobileComparisonCard({
             {/* Text Overlay - Centered or on bar? Image has it centered in bar area */}
             <div className="absolute inset-0 flex items-center justify-center">
               <Typography
-                variant="h4"
+                variant="small"
                 font="atNameSans"
                 className="text-white text-lg md:text-2xl font-normal drop-shadow-md"
               >

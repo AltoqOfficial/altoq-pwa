@@ -66,7 +66,7 @@ export function IdeologiaPoliticaSection({
       {/* Lista de temas con línea vertical */}
       <div className="relative space-y-8 lg:space-y-12">
         {/* Línea vertical central que va desde el primer al último punto */}
-        <div className="absolute left-1/2 top-4 bottom-4 lg:top-8 lg:bottom-[-10px] w-[2px] bg-white -translate-x-1/2" />
+        <div className="absolute left-1/2 top-4 bottom-4 lg:top-8 lg:bottom-[-10px] w-[2px] bg-white bg-noise-pattern -translate-x-1/2" />
 
         {fields?.map((field: FieldConfig) => (
           <div key={field.key} className="relative flex items-center">
