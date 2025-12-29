@@ -66,19 +66,18 @@ export function IdeologiaPoliticaSection({
       {/* Lista de temas con línea vertical */}
       <div className="relative space-y-8 lg:space-y-12">
         {/* Línea vertical central que va desde el primer al último punto */}
-        <div className="absolute left-1/2 top-4 bottom-4 lg:top-8 lg:bottom-[-10px] w-[2px] bg-white bg-noise-pattern -translate-x-1/2" />
+        <div className="absolute left-1/2 top-4 bottom-4 lg:top-8 lg:bottom-[-10px] w-[2px] bg-white -translate-x-1/2" />
 
         {fields?.map((field: FieldConfig) => (
           <div key={field.key} className="relative flex items-center">
             {/* Punto central */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white z-10" />
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white z-10 bg-noise-pattern" />
 
             {/* Lado Izquierdo */}
             <div className="flex-1 text-right pr-3 lg:pr-4">
               <Typography
-                color="white"
-                className="text-[9px] text-right lg:text-sm font-atName font-black uppercase mb-1 tracking-wider"
-                style={{ color: "#FF2727" }}
+                className="text-[9px] text-right lg:text-sm font-atName font-black uppercase mb-1 tracking-wider bg-noise-pattern bg-clip-text text-transparent"
+                style={{ backgroundColor: "#FF2727" }}
               >
                 {field.label}
               </Typography>
@@ -96,9 +95,8 @@ export function IdeologiaPoliticaSection({
             {/* Lado Derecho */}
             <div className="flex-1 text-left pl-3 lg:pl-4">
               <Typography
-                color="white"
-                className="text-[9px] lg:text-sm font-atName font-black uppercase mb-1 tracking-wider"
-                style={{ color: "#4E58B4" }}
+                className="text-[9px] lg:text-sm font-atName font-black uppercase mb-1 tracking-wider bg-noise-pattern bg-clip-text text-transparent"
+                style={{ backgroundColor: "#4E58B4" }}
               >
                 {field.label}
               </Typography>

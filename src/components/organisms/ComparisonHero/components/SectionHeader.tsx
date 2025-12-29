@@ -98,7 +98,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
               font="sohneExtraFett"
               color="noise"
               weight="800"
-              variant="h6"
+              variant="small"
               align="left"
               className="text-[12px] lg:text-[16px]"
             >
@@ -108,7 +108,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
               font="sohneExtraFett"
               color="white"
               weight="800"
-              variant="h1"
+              variant="h6"
               align="left"
               className="text-[20px] lg:text-[32px]"
             >
@@ -193,6 +193,8 @@ export function SectionHeader({ title }: SectionHeaderProps) {
             <div className="flex flex-col ml-10">
               <div className="border-l border-white/10">
                 {NAV_ITEMS.map((item, index) => {
+                  if (item === "Proyectos de Ley") return null;
+
                   const normalizedKey = item
                     .normalize("NFD")
                     .replace(/[\u0300-\u036f]/g, "")
@@ -294,7 +296,25 @@ export function SectionHeader({ title }: SectionHeaderProps) {
                 </Typography>
 
                 <div className="border-l border-white/10">
-                  <button className="relative w-full flex items-center gap-5 text-left pl-8 py-2 text-white hover:text-white/80 transition-colors duration-300">
+                  <button
+                    onClick={() => {
+                      const projectsIndex =
+                        NAV_ITEMS.indexOf("Proyectos de Ley");
+                      if (projectsIndex !== -1) {
+                        onNavClick(projectsIndex);
+                        setIsMenuOpen(false);
+                      }
+                    }}
+                    className={`relative w-full flex items-center gap-5 text-left pl-8 py-2 transition-colors duration-300 ${
+                      activeNavIndex === NAV_ITEMS.indexOf("Proyectos de Ley")
+                        ? "text-[#FF2727]"
+                        : "text-white hover:text-white/80"
+                    }`}
+                  >
+                    {activeNavIndex ===
+                      NAV_ITEMS.indexOf("Proyectos de Ley") && (
+                      <div className="absolute -left-[2.5px] top-1/2 -translate-y-1/2 h-8 w-[4px] bg-[#FF2727]" />
+                    )}
                     <div className="shrink-0 flex justify-center">
                       <Scale className="w-6 h-6" strokeWidth={1.5} />
                     </div>

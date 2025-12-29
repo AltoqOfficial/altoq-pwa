@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Typography } from "@/components/atoms";
 import { VSBadge, CandidateImage } from "./shared";
 import { cn } from "@/lib/utils";
@@ -44,27 +43,13 @@ export function ComparisonHeader({
   onBack,
   className,
 }: ComparisonHeaderProps) {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Show button when scrolled comfortably past the hero area (approx 400px)
-      if (window.scrollY > 400) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // State for scroll top button visibility removed as it is now always visible
 
   return (
     <>
       <div
         className={cn(
-          "flex gap-2 xl:gap-12 justify-between items-center w-full bg-gradient-noise-candidates py-2 sticky top-0 shadow-md transition-all duration-300",
+          "flex gap-2 xl:gap-12 justify-between items-center w-full bg-gradient-noise-candidates md:mt-0 sticky top-0 shadow-md transition-all duration-300",
           className
         )}
       >
@@ -143,12 +128,8 @@ export function ComparisonHeader({
           window.scrollTo({ top: 0, behavior: "smooth" });
           onBack();
         }}
-        className={`fixed bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-noise-red hover:scale-105 text-white shadow-lg transition-all duration-300 transform ${
-          showScrollTop
-            ? "translate-y-0 opacity-100"
-            : "translate-y-20 opacity-0"
-        }`}
-        aria-label="Volver arriba"
+        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-noise-red hover:scale-105 text-white shadow-lg transition-all duration-300 transform translate-y-0 opacity-100"
+        aria-label="Volver al inicio"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

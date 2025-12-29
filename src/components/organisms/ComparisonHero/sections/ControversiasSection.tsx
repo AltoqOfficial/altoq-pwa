@@ -34,7 +34,10 @@ function ControversyDetail({
   return (
     <div className="flex flex-row items-stretch gap-0 w-full">
       {/* Barra lateral de color siempre a la izquierda */}
-      <div className="border-l-[6px]" style={{ borderColor: color }} />
+      <div
+        className="w-[6px] shrink-0 bg-noise-pattern"
+        style={{ backgroundColor: color }}
+      />
 
       {/* Contenido */}
       <div className="flex flex-col text-left pl-3 w-full">
@@ -129,7 +132,10 @@ export function ControversiasSection({
           </div>
 
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 mt-1 pointer-events-none">
-            <Typography className="font-kenyan font-bold text-[30px] lg:text-[40px] leading-none text-[#FF2727]">
+            <Typography
+              className="font-kenyan font-bold text-[30px] lg:text-[40px] leading-none bg-noise-pattern bg-clip-text text-transparent"
+              style={{ backgroundColor: "#FF2727" }}
+            >
               VS
             </Typography>
           </div>

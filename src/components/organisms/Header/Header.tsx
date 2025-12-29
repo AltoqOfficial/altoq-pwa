@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { Logo } from "@/components/atoms/Logo";
-import { Button } from "@/components/atoms/Button";
+
 import { cn } from "@/lib/utils";
 import { EXTERNAL_LINKS } from "@/constants";
 
@@ -31,7 +31,6 @@ export function Header({ forceShow, className }: HeaderProps) {
   // Pages with light backgrounds use outline and header-nav
   const darkBackgroundPages = ["/", "/compara"];
   const isDarkBackground = darkBackgroundPages.includes(pathname);
-  const headerNavVariant = isDarkBackground ? "header-nav-dark" : "header-nav";
 
   // Hide header on comparison page unless forced (to allow custom placement/behavior)
   if (pathname === "/compara" && !forceShow) {
@@ -47,62 +46,45 @@ export function Header({ forceShow, className }: HeaderProps) {
       )}
     >
       {/* Mobile Layout */}
-      <div className="container mx-auto flex md:hidden flex-col items-center px-4 gap-10">
-        {/* Logo - Centered */}
-        <Logo variant="red" asLink priority />
+      {/* Mobile Layout */}
+      <div className="container mx-auto flex md:hidden h-16 items-center justify-between px-4 border-b border-white/10">
+        {/* Logo */}
+        <Logo
+          variant={isDarkBackground ? "default" : "red"}
+          asLink
+          priority
+          size="sm"
+        />
 
-        {/* CTA Buttons - Horizontal with divider */}
-        <div className="flex items-center gap-4 w-full justify-center">
-          <div className="relative flex-1 max-w-[140px]">
-            <Button
-              variant={headerNavVariant}
-              size="sm"
-              asChild
-              className="w-full rounded-none"
-            >
-              <a
-                href={EXTERNAL_LINKS.volunteerForm}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="text-center leading-tight">
-                  Unirme como
-                  <br />
-                  Voluntario
-                </span>
-              </a>
-            </Button>
-          </div>
-
-          {/* Divider */}
-          <div
+        {/* CTA Links */}
+        <div className="flex items-center gap-6">
+          <a
+            href={EXTERNAL_LINKS.volunteerForm}
+            target="_blank"
+            rel="noopener noreferrer"
             className={cn(
-              "h-10 w-0.5",
-              isDarkBackground ? "bg-white/30" : "bg-neutral-400"
+              "font-sohne-breit uppercase font-bold text-[10px] transition-colors duration-300",
+              isDarkBackground
+                ? "text-white hover:text-[#FF2727]"
+                : "text-black hover:text-[#FF2727]"
             )}
-          ></div>
+          >
+            Ser Voluntario
+          </a>
 
-          <div className="relative flex-1 max-w-[140px]">
-            <Button
-              variant={headerNavVariant}
-              size="sm"
-              asChild
-              className="w-full rounded-none"
-            >
-              <Link href="/compara">
-                <span
-                  className={cn(
-                    "text-center leading-tight",
-                    pathname === "/compara" && "text-primary-600 underline"
-                  )}
-                >
-                  Comparar
-                  <br />
-                  Candidatos
-                </span>
-              </Link>
-            </Button>
-          </div>
+          <Link
+            href="/compara"
+            className={cn(
+              "font-sohne-breit uppercase font-bold text-[10px] transition-colors duration-300",
+              pathname === "/compara"
+                ? "text-[#FF2727]"
+                : isDarkBackground
+                  ? "text-white hover:text-[#FF2727]"
+                  : "text-black hover:text-[#FF2727]"
+            )}
+          >
+            Comparar
+          </Link>
         </div>
       </div>
 

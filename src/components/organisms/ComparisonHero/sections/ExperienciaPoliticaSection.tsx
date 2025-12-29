@@ -97,7 +97,7 @@ const TimelineItem = ({
   <div className="flex flex-col relative pt-6 shrink-0 w-32 md:w-64">
     {/* Dot on line */}
     <div
-      className="absolute top-0 left-0 w-5 h-5 rounded-full z-10"
+      className="absolute top-0 left-0 w-5 h-5 rounded-full z-10 bg-noise-pattern"
       style={{ backgroundColor: color }}
     />
     <Typography
@@ -196,11 +196,17 @@ export function ExperienciaPoliticaSection({
             {/* Cargos Publicos Group */}
             {cargos.length > 0 && (
               <div className="flex gap-4 shrink-0 relative">
-                <div
-                  className="absolute -top-10 left-0 text-xs md:text-sm font-bold uppercase flex items-center gap-2 mb-4 whitespace-nowrap"
-                  style={{ color: themeColor }}
-                >
-                  CARGOS PÚBLICOS <ArrowRight className="w-5 h-5 ml-1" />
+                <div className="absolute -top-10 left-0 text-xs md:text-sm font-bold uppercase flex items-center gap-2 mb-4 whitespace-nowrap">
+                  <span
+                    className="text-transparent bg-clip-text bg-noise-pattern"
+                    style={{ backgroundColor: themeColor }}
+                  >
+                    CARGOS PÚBLICOS
+                  </span>
+                  <ArrowRight
+                    style={{ color: themeColor }}
+                    className="w-5 h-5 ml-1 "
+                  />
                 </div>
                 {cargos.map((item, idx) => (
                   <TimelineItem
@@ -216,12 +222,17 @@ export function ExperienciaPoliticaSection({
             {/* Candidaturas Group */}
             {candidaturas.length > 0 && (
               <div className="flex gap-4 shrink-0 relative">
-                <div
-                  className="absolute -top-10 left-0 text-xs md:text-sm font-bold uppercase flex items-center gap-2 mb-4 whitespace-nowrap"
-                  style={{ color: themeColor }}
-                >
-                  CANDIDATURAS PRESIDENCIALES{" "}
-                  <ArrowRight className="w-5 h-5 ml-1" />
+                <div className="absolute -top-10 left-0 text-xs md:text-sm font-bold uppercase flex items-center gap-2 mb-4 whitespace-nowrap">
+                  <span
+                    className="text-transparent bg-clip-text bg-noise-pattern"
+                    style={{ backgroundColor: themeColor }}
+                  >
+                    CANDIDATURAS PRESIDENCIALES
+                  </span>
+                  <ArrowRight
+                    style={{ color: themeColor }}
+                    className="w-5 h-5 ml-1"
+                  />
                 </div>
                 {candidaturas.map((item, idx) => (
                   <TimelineItem

@@ -199,14 +199,14 @@ export function LegislativeProjectsChart({
           >
             {/* Color Bar */}
             <div
-              className="w-1 md:w-2 shrink-0"
+              className="w-1 md:w-2 shrink-0 bg-noise-pattern"
               style={{ backgroundColor: color }}
             />
 
             <div className="flex flex-col py-2 px-2 md:py-3 md:px-4 gap-0.5 md:gap-1 w-full group-hover:border-transparent">
               <div
-                className="text-xs md:text-base font-bold font-atName"
-                style={{ color: color }}
+                className="text-xs md:text-base font-bold font-atName bg-noise-pattern bg-clip-text text-transparent"
+                style={{ backgroundColor: color }}
               >
                 {project.code}
               </div>
@@ -220,7 +220,10 @@ export function LegislativeProjectsChart({
                     size={12}
                     className="text-gray-400 hidden md:block"
                   />
-                  <span className="text-[9px] md:text-xs text-gray-400">
+                  <span
+                    className="text-[9px] md:text-xs font-bold bg-noise-pattern bg-clip-text text-transparent"
+                    style={{ backgroundColor: color }}
+                  >
                     {project.date}
                   </span>
                 </div>

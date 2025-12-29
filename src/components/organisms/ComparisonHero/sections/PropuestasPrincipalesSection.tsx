@@ -42,9 +42,8 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
       {/* Descripción */}
       <div>
         <Typography
-          color="white"
-          className={`text-[9px] lg:text-xs font-atName font-black uppercase mb-2 ${textAlign}`}
-          style={{ color }}
+          className={`text-[9px] lg:text-xs font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
+          style={{ backgroundColor: color }}
         >
           DESCRIPCIÓN
         </Typography>
@@ -59,9 +58,8 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
       {/* Viabilidad */}
       <div>
         <Typography
-          color="white"
-          className={`text-[9px] lg:text-xs font-atName font-black uppercase mb-2 ${textAlign}`}
-          style={{ color }}
+          className={`text-[9px] lg:text-xs font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
+          style={{ backgroundColor: color }}
         >
           VIABILIDAD
         </Typography>
@@ -76,9 +74,8 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
       {/* Respaldado por */}
       <div>
         <Typography
-          color="white"
-          className={`text-[9px] lg:text-xs font-atName font-black uppercase mb-2 ${textAlign}`}
-          style={{ color }}
+          className={`text-[9px] lg:text-xs font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
+          style={{ backgroundColor: color }}
         >
           RESPALDADO POR
         </Typography>
@@ -253,20 +250,19 @@ export function PropuestasPrincipalesSection({
 
               {/* Layout horizontal: Título izq - Círculo - Título der */}
               {/* Usamos items-start para alineación predecible */}
-              <div className="flex items-start justify-between gap-4">
+              <div className="relative flex items-start justify-between min-h-8 lg:min-h-10">
                 {/* Título candidato izquierda */}
-                <div className="flex-1 flex justify-end pr-4">
+                <div className="flex-1 flex justify-end pr-8 lg:pr-10">
                   <div className="text-right">
                     <Typography
-                      color="white"
-                      className="text-[10px] lg:text-sm font-atName font-semibold uppercase tracking-wider text-right"
+                      className="text-[10px] lg:text-sm font-atName font-semibold uppercase tracking-wider text-right bg-noise-pattern bg-clip-text text-transparent"
+                      style={{ backgroundColor: "#FFFFFF" }}
                     >
                       {leftProposal.titulo || "—"}
                     </Typography>
                     <Typography
-                      color="white"
-                      className="text-[8px] lg:text-xs font-atName font-black text-right mt-1"
-                      style={{ color: "#FF2727" }}
+                      className="text-[8px] lg:text-xs font-atName font-black text-right mt-1 bg-noise-pattern bg-clip-text text-transparent"
+                      style={{ backgroundColor: "#FF2727" }}
                     >
                       {leftProposal.titulo ? "PROPUESTA" : ""}
                     </Typography>
@@ -276,7 +272,7 @@ export function PropuestasPrincipalesSection({
                 {/* Círculo central sobre la línea */}
                 <button
                   onClick={() => toggleProposal(proposalKey)}
-                  className="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors z-20 shrink-0"
+                  className="absolute left-1/2 -translate-x-1/2 top-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors z-20"
                   aria-label={
                     expandedProposals[proposalKey]
                       ? "Colapsar propuesta"
@@ -292,7 +288,7 @@ export function PropuestasPrincipalesSection({
                 </button>
 
                 {/* Título candidato derecha */}
-                <div className="flex-1 flex justify-start pl-4">
+                <div className="flex-1 flex justify-start pl-8 lg:pl-10">
                   <div className="text-left">
                     <Typography
                       color="white"
@@ -301,9 +297,8 @@ export function PropuestasPrincipalesSection({
                       {rightProposal.titulo || "—"}
                     </Typography>
                     <Typography
-                      color="white"
-                      className="text-[8px] lg:text-xs font-atName font-black text-left mt-1"
-                      style={{ color: "#4E58B4" }}
+                      className="text-[8px] lg:text-xs font-atName font-black text-left mt-1 bg-noise-pattern bg-clip-text text-transparent"
+                      style={{ backgroundColor: "#4E58B4" }}
                     >
                       {rightProposal.titulo ? "PROPUESTA" : ""}
                     </Typography>

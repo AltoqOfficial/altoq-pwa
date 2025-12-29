@@ -39,7 +39,7 @@ function TimelineItem({
     >
       {/* Punto circular con color del candidato */}
       <div
-        className="w-3 h-3 rounded-full shrink-0 z-10"
+        className="w-3 h-3 rounded-full shrink-0 z-10 bg-noise-pattern"
         style={{ backgroundColor: dotColor }}
       />
 
@@ -157,7 +157,7 @@ export function ExperienciaGestionSection({
         {candidate?.image && (
           <div className="px-4 lg:px-8">
             <div
-              className="w-16 h-16 lg:w-20 lg:h-20 rounded-full p-1 inline-block"
+              className="w-16 h-16 lg:w-20 lg:h-20 rounded-full p-1 inline-block bg-noise-pattern"
               style={{ backgroundColor: sectorColor }}
             >
               <div className="relative w-full h-full rounded-full overflow-hidden">
@@ -175,12 +175,11 @@ export function ExperienciaGestionSection({
         {/* Sector Público */}
         <div className="w-full px-4 lg:px-8">
           <Typography
-            color="white"
             variant="h6"
             weight="800"
             align="left"
-            className="text-sm lg:text-lg mb-6 lg:mb-8"
-            style={{ color: sectorColor }}
+            className="text-sm lg:text-lg mb-6 lg:mb-8 bg-noise-pattern bg-clip-text text-transparent"
+            style={{ backgroundColor: sectorColor }}
           >
             SECTOR PÚBLICO
           </Typography>
@@ -220,12 +219,11 @@ export function ExperienciaGestionSection({
         {/* Sector Privado */}
         <div className="w-full px-4 lg:px-8">
           <Typography
-            color="white"
             variant="h6"
             weight="800"
             align="left"
-            className="text-sm lg:text-lg mb-6 lg:mb-8"
-            style={{ color: sectorColor }}
+            className="text-sm lg:text-lg mb-6 lg:mb-8 bg-noise-pattern bg-clip-text text-transparent"
+            style={{ backgroundColor: sectorColor }}
           >
             SECTOR PRIVADO
           </Typography>
