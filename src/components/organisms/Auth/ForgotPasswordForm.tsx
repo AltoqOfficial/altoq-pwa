@@ -49,8 +49,15 @@ export const ForgotPasswordForm = memo(function ForgotPasswordForm() {
     reset();
 
     // Execute reset password mutation
+    // redirectTo points to the update password page
+    const redirectUrl =
+      typeof window !== "undefined"
+        ? `${window.location.origin}/forgot-password`
+        : "/forgot-password";
+
     resetPassword({
       email: email.trim(),
+      redirectTo: redirectUrl,
     });
   };
 

@@ -210,15 +210,12 @@ export const SuccessAlert = memo(function SuccessAlert({
   description,
 }: SuccessAlertProps) {
   return (
-    <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-      <div className="flex items-start gap-3">
-        <div className="shrink-0 mt-0.5">
-          <SuccessIcon />
-        </div>
-        <div className="flex-1">
-          <h4 className="text-green-800 font-flexo-bold text-sm">{title}</h4>
-          <p className="text-green-700 text-sm mt-0.5">{description}</p>
-        </div>
+    <div className="p-4">
+      <div className="flex flex-col items-center gap-3">
+        <h4 className="text-[#B3261E] font-flexo-bold text-sm">{title}</h4>
+        <p className="text-[#B3261E] text-sm mt-0.5 text-center">
+          {description}
+        </p>
       </div>
     </div>
   );
