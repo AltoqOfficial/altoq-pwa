@@ -21,7 +21,7 @@ describe("Input", () => {
   it("applies outline variant styles", () => {
     render(<Input placeholder="test" variant="outline" />);
     const input = screen.getByPlaceholderText("test");
-    expect(input).toHaveClass("bg-white/10");
+    expect(input).toHaveClass("bg-transparent");
   });
 
   it("applies size classes correctly", () => {

@@ -72,10 +72,7 @@ export const createAuthService = (
     }
 
     // 1. Crear usuario en Supabase Auth
-    const { user, session } = await authRepository.signup(
-      body.email,
-      body.password
-    );
+    const { user } = await authRepository.signup(body.email, body.password);
 
     if (!user) {
       throw {
