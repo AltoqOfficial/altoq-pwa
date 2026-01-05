@@ -1,5 +1,387 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Bilbo Swash Caps";
+  src: url("/fonts/bilbo/BilboSwashCaps-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-bilbo {
+  font-family: "Bilbo Swash Caps", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-ThinIt.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Flexo Light */
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-LightIt.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Flexo Regular */
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-It.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Flexo Medium */
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-MediumIt.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Flexo Demi (Semi-Bold) */
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-Demi.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-DemiIt.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Flexo Bold */
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-BoldIt.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Flexo Heavy */
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-HeavyIt.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Flexo Black */
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Flexo";
+  src: url("/fonts/flexo/Flexo-BlackIt.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+.font-flexo {
+  font-family: "Flexo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-flexo-thin {
+  font-family: "Flexo", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.font-flexo-thin-italic {
+  font-family: "Flexo", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.font-flexo-light {
+  font-family: "Flexo", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-flexo-light-italic {
+  font-family: "Flexo", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.font-flexo-regular {
+  font-family: "Flexo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-flexo-italic {
+  font-family: "Flexo", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.font-flexo-medium {
+  font-family: "Flexo", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-flexo-medium-italic {
+  font-family: "Flexo", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.font-flexo-demi {
+  font-family: "Flexo", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-flexo-demi-italic {
+  font-family: "Flexo", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.font-flexo-bold {
+  font-family: "Flexo", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-flexo-bold-italic {
+  font-family: "Flexo", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.font-flexo-heavy {
+  font-family: "Flexo", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.font-flexo-heavy-italic {
+  font-family: "Flexo", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.font-flexo-black {
+  font-family: "Flexo", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.font-flexo-black-italic {
+  font-family: "Flexo", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("/fonts/big_shoulder/BigShouldersDisplay-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Big Shoulders Display Light */
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("/fonts/big_shoulder/BigShouldersDisplay-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Big Shoulders Display Regular */
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("/fonts/big_shoulder/BigShouldersDisplay-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Big Shoulders Display Medium */
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("/fonts/big_shoulder/BigShouldersDisplay-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Big Shoulders Display SemiBold */
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("/fonts/big_shoulder/BigShouldersDisplay-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Big Shoulders Display Bold */
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("/fonts/big_shoulder/BigShouldersDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Big Shoulders Display ExtraBold */
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("/fonts/big_shoulder/BigShouldersDisplay-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Big Shoulders Display Black */
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("/fonts/big_shoulder/BigShouldersDisplay-Black.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-bigshoulders {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-bigshoulders-thin {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.font-bigshoulders-light {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-bigshoulders-regular {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-bigshoulders-medium {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-bigshoulders-semibold {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-bigshoulders-bold {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-bigshoulders-extrabold {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.font-bigshoulders-black {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 @theme {
   /* Font families */
   --font-sohne-breit: var(--font-sohne-breit);

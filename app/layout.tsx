@@ -14,6 +14,7 @@ import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
 import { GA_MEASUREMENT_ID } from "@/lib/analytics/gtag";
 import { Analytics } from "@/components/organisms/Analytics";
+import { QueryProvider } from "@/lib/providers/QueryProvider";
 
 export const metadata: Metadata = createMetadata();
 
@@ -159,25 +160,27 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>
       <body className="antialiased" suppressHydrationWarning>
-        {/* Analytics - Track page views */}
-        <Analytics />
+        <QueryProvider>
+          {/* Analytics - Track page views */}
+          <Analytics />
 
-        {/* PWA Registration */}
-        <PWARegistration />
+          {/* PWA Registration */}
+          <PWARegistration />
 
-        {/* Main App Structure */}
-        <div className="flex min-h-screen flex-col">
-          {/* Header - Persists across all pages */}
-          <Header />
+          {/* Main App Structure */}
+          <div className="flex min-h-screen flex-col">
+            {/* Header - Persists across all pages */}
+            <Header />
 
-          {/* Main Content - Changes per page */}
-          <main className="flex-1" id="main-content" role="main">
-            {children}
-          </main>
+            {/* Main Content - Changes per page */}
+            <main className="flex-1" id="main-content" role="main">
+              {children}
+            </main>
 
-          {/* Footer - Persists across all pages */}
-          <Footer />
-        </div>
+            {/* Footer - Persists across all pages */}
+            <Footer />
+          </div>
+        </QueryProvider>
       </body>
     </html>
   );

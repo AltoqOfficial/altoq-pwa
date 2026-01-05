@@ -92,7 +92,7 @@ const NoiseBackground = memo(function NoiseBackground() {
  */
 const CandidatesBackground = memo(function CandidatesBackground() {
   const sharedClasses =
-    "absolute bottom-0 z-2 object-contain h-full max-h-[90vh] w-auto select-none pointer-events-none";
+    "absolute bottom-0 z-2 object-contain w-auto select-none pointer-events-none hidden md:block md:max-h-[50vh] lg:max-h-[90vh]";
 
   return (
     <>
@@ -159,21 +159,30 @@ export function LoginLayout({ children }: LoginLayoutProps) {
       <GradientOverlay />
 
       {/* Contenido principal */}
-      <div className="space-y-14 w-full flex flex-col items-center justify-center relative z-10 px-4">
+      <div className="space-y-6 md:space-y-10 lg:space-y-14 w-full flex flex-col items-center justify-center relative z-10 px-4 py-8 md:py-10">
         {/* Título y subtítulo */}
-        <header className="text-center">
+        <header className="text-center max-w-[90%] md:max-w-[80%] lg:max-w-none">
           <Typography
-            font="sohneSchmal"
-            variant="h3"
+            font="bigShoulders"
+            variant="h2"
             color="white"
             align="center"
+            className="text-xl md:text-3xl lg:text-4xl"
           >
-            &quot;NO SE PUEDE AMAR LO QUE NO SE CONOCE.&quot; - JOSÉ MARÍA
-            ARGUEDAS
+            &quot;NO SE PUEDE AMAR LO QUE NO SE CONOCE.&quot;
           </Typography>
-          <Typography color="white" variant="h6" weight="200" align="center">
+          <Typography
+            font="bilbo"
+            variant="h3"
+            color="white"
+            align="right"
+            className="text-lg md:text-2xl lg:text-3xl"
+          >
+            José María Arguedas
+          </Typography>
+          <span className="border border-[#FEFEFE80] text-sm md:text-lg lg:text-xl font-flexo-bold text-[#FEFEFE] px-3 py-1.5 md:px-5 md:py-2.5 rounded-lg inline-block mt-2">
             Conoce antes de decidir.
-          </Typography>
+          </span>
         </header>
 
         {/* Contenido (formulario) */}

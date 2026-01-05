@@ -80,7 +80,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
       default:
         "bg-white text-neutral-900 placeholder:text-neutral-200 border border-neutral-200 focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20",
       outline:
-        "bg-white/10 text-white placeholder:text-neutral-400 border border-neutral-700 focus:border-primary-600 focus:ring-2 focus:ring-primary-600/50 backdrop-blur-sm",
+        "bg-transparent font-flexo rounded-[18px] text-black placeholder:text-neutral-400 border border-[#202020] backdrop-blur-sm focus:border-[#202020] focus:ring-1 focus:ring-[#202020]",
     };
 
     const sizeStyles = {

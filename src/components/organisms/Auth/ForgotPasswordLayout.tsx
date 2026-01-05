@@ -11,7 +11,6 @@ const NOISE_TABLE_VALUES =
 
 /**
  * Componente SVG de ruido para el fondo
- * Memoizado para evitar re-renders innecesarios
  */
 const NoiseBackground = memo(function NoiseBackground() {
   return (
@@ -133,24 +132,24 @@ const GradientOverlay = memo(function GradientOverlay() {
   );
 });
 
-interface RegisterLayoutProps {
+interface ForgotPasswordLayoutProps {
   children: ReactNode;
 }
 
 /**
- * RegisterLayout Component
+ * ForgotPasswordLayout Component
  *
- * Layout compartido para las páginas de autenticación (login, register).
+ * Layout para la página de recuperación de contraseña.
  * Incluye el fondo con ruido, imágenes de candidatos y degradado.
  *
  * @example
  * ```tsx
- * <RegisterLayout>
- *   <LoginForm />
- * </RegisterLayout>
+ * <ForgotPasswordLayout>
+ *   <ForgotPasswordForm />
+ * </ForgotPasswordLayout>
  * ```
  */
-export function RegisterLayout({ children }: RegisterLayoutProps) {
+export function ForgotPasswordLayout({ children }: ForgotPasswordLayoutProps) {
   return (
     <section className="bg-[#FF2727] min-h-screen w-full flex items-center justify-center relative overflow-hidden py-10">
       {/* Capas de fondo */}

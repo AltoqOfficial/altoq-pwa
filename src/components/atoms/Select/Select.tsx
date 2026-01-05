@@ -94,7 +94,7 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
       default:
         "bg-white text-neutral-900 border border-neutral-200 focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20",
       outline:
-        "bg-white/10 text-white border border-neutral-700 focus:border-primary-600 focus:ring-2 focus:ring-primary-600/50 backdrop-blur-sm",
+        "bg-transparent font-flexo rounded-[18px] text-black border border-[#202020] focus:border-primary-600 focus:ring-2 focus:ring-primary-600/50 backdrop-blur-sm",
     };
 
     const sizeStyles = {
@@ -108,7 +108,8 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
       : "";
 
     // Custom arrow icon inline
-    const arrowIconColor = variant === "outline" ? "white" : "rgb(23 23 23)"; // neutral-900
+    const arrowIconColor =
+      variant === "outline" ? "rgb(32 32 32)" : "rgb(23 23 23)"; // neutral-900
     const backgroundImage = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='${encodeURIComponent(arrowIconColor)}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")`;
 
     return (
