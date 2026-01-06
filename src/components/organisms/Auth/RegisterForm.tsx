@@ -87,7 +87,7 @@ const StepHeader = memo(function StepHeader({
       <button
         type="button"
         onClick={onBack}
-        className="text-2xl text-[#202020] hover:opacity-70 transition-opacity mt-1"
+        className="text-2xl text-[#202020] hover:opacity-70 transition-opacity mt-1 cursor-pointer"
         aria-label="Volver al paso anterior"
       >
         ‹
@@ -330,14 +330,14 @@ export const RegisterForm = memo(function RegisterForm() {
           className="py-2 md:py-4 mb-1"
           style={{ filter: "grayscale(1) brightness(0)" }}
         />
-        <h3 className="font-flexo-bold text-2xl md:text-3xl lg:text-4xl text-center leading-tight max-w-60">
+        <h3 className="font-flexo-bold text-2xl md:text-3xl lg:text-4xl text-center leading-8 max-w-60 mb-4">
           Regístrate para votar informado
         </h3>
       </div>
 
       <div className="space-y-6">
         <Input
-          variant="outline"
+          variant="google"
           type="email"
           placeholder="Dirección de correo electrónico"
           size="lg"
@@ -351,7 +351,7 @@ export const RegisterForm = memo(function RegisterForm() {
           variant="secondary"
           type="button"
           size="lg"
-          className="w-full"
+          className="w-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
           onClick={handleNextFromEmail}
         >
           Siguiente
@@ -382,10 +382,10 @@ export const RegisterForm = memo(function RegisterForm() {
         onBack={handleBack}
       />
 
-      <div className="space-y-4">
+      <div className="space-y-8">
         <div className="relative">
           <Input
-            variant="outline"
+            variant="google"
             type={showPassword ? "text" : "password"}
             placeholder="Contraseña"
             size="lg"
@@ -464,7 +464,7 @@ export const RegisterForm = memo(function RegisterForm() {
           variant="secondary"
           type="button"
           size="lg"
-          className="w-full mt-4"
+          className="w-full mt-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
           onClick={handleNextFromPassword}
           disabled={!isPasswordValid}
         >
@@ -484,9 +484,9 @@ export const RegisterForm = memo(function RegisterForm() {
         onBack={handleBack}
       />
 
-      <div className="space-y-4">
+      <div className="space-y-8">
         <Input
-          variant="outline"
+          variant="google"
           type="text"
           placeholder="Nombre"
           size="lg"
@@ -495,7 +495,7 @@ export const RegisterForm = memo(function RegisterForm() {
         />
 
         <Select
-          variant="outline"
+          variant="google"
           placeholder="Edad"
           size="lg"
           value={formData.ageRangeCode}
@@ -509,7 +509,7 @@ export const RegisterForm = memo(function RegisterForm() {
           variant="secondary"
           type="button"
           size="lg"
-          className="w-full mt-4"
+          className="w-full mt-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
           onClick={handleNextFromProfile}
         >
           Siguiente
@@ -528,9 +528,9 @@ export const RegisterForm = memo(function RegisterForm() {
         onBack={handleBack}
       />
 
-      <div className="space-y-4">
+      <div className="space-y-8">
         <Select
-          variant="outline"
+          variant="google"
           placeholder="¿Qué te motiva a informarte sobre política?"
           size="lg"
           value={formData.motivationCode}
@@ -540,7 +540,7 @@ export const RegisterForm = memo(function RegisterForm() {
         />
 
         <Select
-          variant="outline"
+          variant="google"
           placeholder="¿Con qué perfil te identificas?"
           size="lg"
           value={formData.profileCode}
@@ -555,7 +555,7 @@ export const RegisterForm = memo(function RegisterForm() {
           variant="secondary"
           type="button"
           size="lg"
-          className="w-full mt-4"
+          className="w-full mt-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
           onClick={handleSubmit}
           disabled={isPending}
         >

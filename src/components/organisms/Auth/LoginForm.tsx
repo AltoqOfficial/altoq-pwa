@@ -29,6 +29,7 @@ export const LoginForm = memo(function LoginForm() {
     email: "",
     password: "",
   });
+  const [showPassword, setShowPassword] = useState(false);
   const [resendStatus, setResendStatus] = useState<"idle" | "sending" | "sent">(
     "idle"
   );
@@ -95,7 +96,7 @@ export const LoginForm = memo(function LoginForm() {
 
       <form className="space-y-6 mb-5" onSubmit={handleSubmit}>
         <Input
-          variant="outline"
+          variant="google"
           type="email"
           placeholder="Correo"
           size="lg"
@@ -103,15 +104,61 @@ export const LoginForm = memo(function LoginForm() {
           onChange={(e) => handleInputChange("email", e.target.value)}
           disabled={isPending}
         />
-        <Input
-          variant="outline"
-          type="password"
-          placeholder="Contraseña"
-          size="lg"
-          value={formData.password}
-          onChange={(e) => handleInputChange("password", e.target.value)}
-          disabled={isPending}
-        />
+        <div className="relative">
+          <Input
+            variant="google"
+            type={showPassword ? "text" : "password"}
+            placeholder="Contraseña"
+            size="lg"
+            value={formData.password}
+            onChange={(e) => handleInputChange("password", e.target.value)}
+            disabled={isPending}
+          />
+          <button
+            type="button"
+            onClick={() => setShowPassword(!showPassword)}
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-[#202020]"
+            aria-label={
+              showPassword ? "Ocultar contraseña" : "Mostrar contraseña"
+            }
+          >
+            {showPassword ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="19"
+                viewBox="0 0 22 19"
+                fill="none"
+              >
+                <path
+                  d="M11 4c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C9.74 4.13 10.35 4 11 4M1 1.27l2.28 2.28.46.46A11.8 11.8 0 0 0 0 9c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L18.73 19 20 17.73 2.27 0zM6.53 6.8l1.55 1.55C8.03 8.56 8 8.78 8 9c0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2m4.31-.78 3.15 3.15.02-.16c0-1.66-1.34-3-3-3z"
+                  fill="#202020"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
 
         {/* Error message display */}
         {error && (
@@ -146,7 +193,7 @@ export const LoginForm = memo(function LoginForm() {
           variant="secondary"
           type="submit"
           size="lg"
-          className="w-full mt-5"
+          className="w-full mt-5 cursor-pointer hover:opacity-80 transition-opacity duration-300"
           disabled={isPending}
         >
           {isPending ? (

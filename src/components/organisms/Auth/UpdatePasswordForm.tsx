@@ -356,7 +356,7 @@ export const UpdatePasswordForm = memo(function UpdatePasswordForm() {
           {/* Password input */}
           <div className="relative">
             <Input
-              variant="outline"
+              variant="google"
               type={showPassword ? "text" : "password"}
               placeholder="Contraseña"
               size="lg"
@@ -444,7 +444,7 @@ export const UpdatePasswordForm = memo(function UpdatePasswordForm() {
             variant="secondary"
             type="submit"
             size="lg"
-            className="w-full mt-4"
+            className="w-full mt-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
             disabled={status === "submitting" || !isPasswordValid}
           >
             {status === "submitting" ? (

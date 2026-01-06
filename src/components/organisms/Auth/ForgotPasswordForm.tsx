@@ -118,7 +118,7 @@ export const ForgotPasswordForm = memo(function ForgotPasswordForm() {
         // Form state
         <form className="space-y-6" onSubmit={handleSubmit}>
           <Input
-            variant="outline"
+            variant="google"
             type="email"
             placeholder="Correo electrónico"
             size="lg"
@@ -133,7 +133,7 @@ export const ForgotPasswordForm = memo(function ForgotPasswordForm() {
             variant="secondary"
             type="submit"
             size="lg"
-            className="w-full"
+            className="w-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
             disabled={isPending}
           >
             {isPending ? (
