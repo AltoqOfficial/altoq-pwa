@@ -74,7 +74,7 @@ export const ForgotPasswordForm = memo(function ForgotPasswordForm() {
   // Render error component
   const renderError = () => {
     if (error) {
-      return <ErrorAlert error={error} context="login" />;
+      return <ErrorAlert error={error} context="forgot" />;
     }
     if (validationError) {
       return (

@@ -3,7 +3,11 @@
 import { memo } from "react";
 import Link from "next/link";
 import type { ErrorResponse } from "../types/auth.types";
-import { getFriendlyError, type FriendlyError } from "../utils/errorUtils";
+import {
+  getFriendlyError,
+  type FriendlyError,
+  type ErrorContext,
+} from "../utils/errorUtils";
 
 // ==================== Types ====================
 
@@ -11,7 +15,7 @@ interface ErrorAlertProps {
   /** The error response from the API */
   error: ErrorResponse;
   /** Context for default error messages */
-  context?: "login" | "register";
+  context?: ErrorContext;
   /** Callback when resend email is clicked */
   onResendEmail?: () => void;
   /** Whether the resend email action is in progress */
@@ -139,6 +143,17 @@ const ErrorActions = memo(function ErrorActions({
         className="text-[#b3261e] font-flexo-bold text-sm underline hover:opacity-80 transition-opacity ml-1"
       >
         Iniciar sesión
+      </Link>
+    );
+  }
+
+  if (action === "forgot") {
+    return (
+      <Link
+        href="/forgot"
+        className="text-[#b3261e] font-flexo-bold text-sm underline hover:opacity-80 transition-opacity ml-1"
+      >
+        Solicitar nuevo enlace
       </Link>
     );
   }

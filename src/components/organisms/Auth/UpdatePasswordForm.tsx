@@ -297,7 +297,7 @@ export const UpdatePasswordForm = memo(function UpdatePasswordForm() {
               error: apiError || "Error desconocido",
               code: "session_error",
             }}
-            context="login"
+            context="update"
           />
           <Link
             href="/forgot"
@@ -435,7 +435,7 @@ export const UpdatePasswordForm = memo(function UpdatePasswordForm() {
           {apiError && (
             <ErrorAlert
               error={{ error: apiError, code: "update_error" }}
-              context="login"
+              context="update"
             />
           )}
           {validationError && <InlineError message={validationError} />}
