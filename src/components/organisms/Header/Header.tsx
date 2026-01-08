@@ -111,7 +111,7 @@ export function Header() {
             </a>
           </Button>
           <Button variant="primary" size="sm" asChild>
-            <Link href="/compara">Comparar Candidatos</Link>
+            <Link href="/login">Iniciar sesión</Link>
           </Button>
         </div>
       </div>
