@@ -21,7 +21,7 @@ describe("Input", () => {
   it("applies outline variant styles", () => {
     render(<Input placeholder="test" variant="outline" />);
     const input = screen.getByPlaceholderText("test");
-    expect(input).toHaveClass("bg-white/10");
+    expect(input).toHaveClass("bg-transparent");
   });
 
   it("applies size classes correctly", () => {
@@ -35,7 +35,7 @@ describe("Input", () => {
 
     rerender(<Input placeholder="test" size="lg" />);
     input = screen.getByPlaceholderText("test");
-    expect(input).toHaveClass("h-12");
+    expect(input).toHaveClass("h-14");
   });
 
   it("displays error message when error is true", () => {

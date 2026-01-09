@@ -17,7 +17,6 @@ interface CandidateSelectorProps {
  */
 const CandidateButton = memo(function CandidateButton({
   candidate,
-  isSelected,
   isDisabled,
   isLocked,
   backgroundColor,
@@ -27,7 +26,6 @@ const CandidateButton = memo(function CandidateButton({
   onClick,
 }: {
   candidate: Candidate;
-  isSelected: boolean;
   isDisabled: boolean;
   isLocked: boolean;
   backgroundColor: string;
@@ -267,7 +265,6 @@ export const CandidateSelector = memo(function CandidateSelector({
       CANDIDATES.map((candidate) => ({
         candidate,
         isDisabled: isDisabled(candidate),
-        isSelected: selectedCandidates.includes(candidate.id),
         isLocked: isLocked(candidate.id),
         backgroundColor: getBackgroundColor(candidate.id, candidate),
         imageFilter: getImageFilter(candidate),
@@ -315,7 +312,6 @@ export const CandidateSelector = memo(function CandidateSelector({
           <CandidateButton
             key={data.candidate.id}
             candidate={data.candidate}
-            isSelected={data.isSelected}
             isDisabled={data.isDisabled}
             isLocked={data.isLocked}
             backgroundColor={data.backgroundColor}

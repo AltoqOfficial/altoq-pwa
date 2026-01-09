@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  useRef,
-  useMemo,
-  useSyncExternalStore,
-  useId,
-  useCallback,
-  memo,
-} from "react";
+import { useRef, useMemo, useSyncExternalStore, useId, memo } from "react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
