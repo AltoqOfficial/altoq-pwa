@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback, useId } from "react";
+import { createPortal } from "react-dom";
 
 // Global state to track active tooltip and notify others to close
 let activeTooltipId: string | null = null;
@@ -21,6 +22,7 @@ function subscribeToTooltipChanges(listener: (id: string | null) => void) {
 interface SourceTooltipProps {
   children: React.ReactNode;
   source?: string | string[];
+  description?: string;
   className?: string;
 }
 
@@ -28,23 +30,24 @@ interface SourceTooltipProps {
  * SourceTooltip Component
  *
  * Wraps content and shows a tooltip with source link on hover (desktop) or click (mobile/tablet).
- * The tooltip appears as a speech bubble with "Fuente: {url}".
- * Uses span elements to be compatible inside Typography/p elements.
- * Only one tooltip can be open at a time.
+ * The tooltip appears as a speech bubble with a description (if provided) and source tags.
  */
 export function SourceTooltip({
   children,
   source,
+  description,
   className = "",
 }: SourceTooltipProps) {
   const tooltipId = useId();
   const [isVisible, setIsVisible] = useState(false);
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
+  // Position state now stores absolute coordinates
+  const [coords, setCoords] = useState({ top: 0, left: 0 });
   const [position, setPosition] = useState<"top" | "bottom">("top");
   const [horizontalOffset, setHorizontalOffset] = useState(0);
   const tooltipRef = useRef<HTMLSpanElement>(null);
   const contentRef = useRef<HTMLSpanElement>(null);
-  const tooltipContentRef = useRef<HTMLSpanElement>(null);
+  const tooltipContentRef = useRef<HTMLDivElement>(null);
   const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const showTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -75,6 +78,12 @@ export function SourceTooltip({
 
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
       if (
+        tooltipContentRef.current &&
+        tooltipContentRef.current.contains(event.target as Node)
+      ) {
+        return;
+      }
+      if (
         tooltipRef.current &&
         !tooltipRef.current.contains(event.target as Node)
       ) {
@@ -91,33 +100,55 @@ export function SourceTooltip({
     };
   }, [isVisible, isMobile]);
 
-  // Calculate position to avoid overflow
+  // Calculate position to avoid overflow - specialized for Portal
   const calculatePosition = useCallback(() => {
     if (contentRef.current) {
       const rect = contentRef.current.getBoundingClientRect();
       const viewportWidth = window.innerWidth;
-      const tooltipWidth = isMobile === true ? 200 : 400; // Approximate tooltip width
+      const scrollY = window.scrollY;
+      const tooltipWidth = isMobile === true ? 240 : 320; // Approximate tooltip width
 
-      // Calculate horizontal offset to keep tooltip within viewport
+      // Calculate horizontal position (centered on element)
       const elementCenter = rect.left + rect.width / 2;
-      const tooltipLeft = elementCenter - tooltipWidth / 2;
-      const tooltipRight = elementCenter + tooltipWidth / 2;
 
       let offset = 0;
-      const padding = 8; // Padding from viewport edges
+      const padding = 12; // Padding from viewport edges
 
-      if (tooltipLeft < padding) {
-        // Tooltip would overflow on the left
-        offset = padding - tooltipLeft;
-      } else if (tooltipRight > viewportWidth - padding) {
-        // Tooltip would overflow on the right
-        offset = viewportWidth - padding - tooltipRight;
+      // Check boundaries
+      const tooltipHalfWidth = tooltipWidth / 2;
+
+      if (elementCenter - tooltipHalfWidth < padding) {
+        // Overflow left
+        offset = padding - (elementCenter - tooltipHalfWidth);
+        // Shift left calculation is handled by the transform in styles + offset,
+        // but here we just pass the offset to the arrow/box translate logic.
+        // Actually for Portal, we can just position the container at `left` and transform -50%.
+      } else if (elementCenter + tooltipHalfWidth > viewportWidth - padding) {
+        // Overflow right
+        offset = viewportWidth - padding - (elementCenter + tooltipHalfWidth);
       }
 
       setHorizontalOffset(offset);
 
-      // If tooltip would go above viewport, show below
-      return rect.top < 100 ? "bottom" : "top";
+      // Vertical position
+      // Check if there is space above
+      const spaceAbove = rect.top;
+      const tooltipHeight = 150; // Approximated max height
+
+      const newPosition = spaceAbove < tooltipHeight + 20 ? "bottom" : "top";
+
+      // Calculate absolute top/left for the portal container
+      // The container will be placed at (left, top) corresponding to the element center
+
+      let top = 0;
+      if (newPosition === "top") {
+        top = rect.top + scrollY - 8; // 8px spacing
+      } else {
+        top = rect.bottom + scrollY + 8;
+      }
+
+      setCoords({ top, left: elementCenter });
+      return newPosition;
     }
     return "top";
   }, [isMobile]);
@@ -191,6 +222,22 @@ export function SourceTooltip({
     }
   }, [isMobile, clearAllTimeouts, hideTooltip]);
 
+  // Update position on scroll/resize if visible
+  useEffect(() => {
+    if (isVisible) {
+      const updatePos = () => {
+        const newPos = calculatePosition();
+        setPosition(newPos);
+      };
+      window.addEventListener("scroll", updatePos, true);
+      window.addEventListener("resize", updatePos);
+      return () => {
+        window.removeEventListener("scroll", updatePos, true);
+        window.removeEventListener("resize", updatePos);
+      };
+    }
+  }, [isVisible, calculatePosition]);
+
   // Cleanup timeouts on unmount
   useEffect(() => {
     return () => {
@@ -217,103 +264,149 @@ export function SourceTooltip({
 
   // Normalize source to array
   const sources = Array.isArray(source) ? source : [source];
-  const hasMultipleSources = sources.length > 1;
 
-  // Truncate URL for display - shorter on mobile
-  // Adjust for two-digit numbers (10+)
-  const hasTwoDigitNumbers = sources.length >= 10;
-  const maxLength = isMobile ? (hasTwoDigitNumbers ? 26 : 28) : 45;
-  const truncateUrl = (url: string) =>
-    url.length > maxLength ? url.substring(0, maxLength) + "..." : url;
+  // Helper to extract clean domain name for tags
+  const getSourceLabel = (url: string) => {
+    try {
+      const hostname = new URL(url).hostname;
+      // Remove www.
+      const name = hostname.replace(/^www\./, "");
+      // Get main domain part (e.g. infogob.jne.gob.pe -> infogob)
+      // Special cases for known news sites could be added here
+      if (name.includes("infogob")) return "INFOGOB";
+      if (name.includes("rpp")) return "RPP";
+      if (name.includes("elcomercio")) return "EL COMERCIO";
+      if (name.includes("larepublica")) return "LA REPÚBLICA";
+      if (name.includes("ipsos")) return "IPSOS";
+      if (name.includes("swissinfo")) return "SWISSINFO";
+
+      return name.split(".")[0].toUpperCase();
+    } catch {
+      return "FUENTE";
+    }
+  };
 
   const isTop = position === "top";
 
   return (
-    <span
-      ref={tooltipRef}
-      className={`relative w-full inline-block cursor-pointer  ${className}`}
-      onClick={handleClick}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      {/* Content - no underline */}
-      <span ref={contentRef}>{children}</span>
-
-      {/* Tooltip */}
+    <>
       <span
-        ref={tooltipContentRef}
-        className={`
-          absolute z-100
-          transition-all duration-200 ease-out
-          ${isVisible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
-          ${isVisible ? (isTop ? "-translate-y-1" : "translate-y-1") : "translate-y-0"}
-          ${isTop ? "bottom-full mb-2" : "top-full mt-2"}
-          left-1/2
-        `}
-        style={{
-          width: "max-content",
-          maxWidth: isMobile ? "min(200px, 85vw)" : "min(400px, 90vw)",
-          transform: `translateX(calc(-50% + ${horizontalOffset}px)) ${isVisible ? (isTop ? "translateY(-4px)" : "translateY(4px)") : ""}`,
-        }}
+        ref={tooltipRef}
+        className={`relative w-full inline-block cursor-pointer ${className}`}
+        onClick={handleClick}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <span
-          className={`relative block bg-white rounded-lg shadow-xl ${isMobile ? "px-3 py-2.5" : "px-4 py-3"}`}
-        >
-          <span className="text-neutral-600 font-medium block">
-            <span
-              className={`text-neutral-400 block ${isMobile ? "mb-1 text-[10px]" : "mb-2 text-xs"}`}
-            >
-              {hasMultipleSources ? `Fuentes (${sources.length}):` : "Fuente:"}
-            </span>
-            <span
-              className={`block ${isMobile ? "space-y-0.5" : "space-y-2"} max-h-32 overflow-y-auto`}
-            >
-              {sources.map((src, idx) => (
-                <a
-                  key={idx}
-                  href={src}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`text-primary-600 hover:text-primary-700 hover:underline wrap-break-word block ${isMobile ? "text-[10px] leading-tight" : "text-sm leading-relaxed"}`}
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  {hasMultipleSources && `${idx + 1}. `}
-                  {truncateUrl(src)}
-                </a>
-              ))}
-            </span>
-          </span>
-
-          {/* Arrow - offset inversely to keep it pointing at content */}
-          <span
-            className={`absolute w-0 h-0 block ${isTop ? "top-full border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-white" : "bottom-full border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-white"}`}
-            style={{
-              left: `calc(50% - ${horizontalOffset}px)`,
-              transform: "translateX(-50%)",
-            }}
-          />
+        {/* Content - keep it relatively positioned to anchor tooltip */}
+        <span ref={contentRef} className="">
+          {children}
         </span>
       </span>
-    </span>
+
+      {/* Portal Tooltip */}
+      {isVisible &&
+        typeof document !== "undefined" &&
+        createPortal(
+          <div
+            ref={tooltipContentRef}
+            className={`
+              absolute z-9999
+              transition-all duration-200 ease-out
+              ${isVisible ? "opacity-100 pointer-events-auto scale-100" : "opacity-0 pointer-events-none scale-95"}
+              left-0 top-0
+            `}
+            style={{
+              position: "absolute",
+              top: coords.top,
+              left: coords.left,
+              width: "max-content",
+              maxWidth: isMobile ? "240px" : "320px",
+              // Transform: centering + horizontalOffset correction + slight vertical push for animation usually but here we set absolute top
+              transform: `translate(calc(-50% + ${horizontalOffset}px), ${isTop ? "-100%" : "0"})`,
+            }}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <span
+              className={`
+                relative block bg-white rounded-2xl shadow-xl
+                text-[#333333]
+                ${isMobile ? "p-3" : "p-4"}
+                text-left
+              `}
+            >
+              {/* Content Wrapper for inline flow */}
+              <span className="font-atNameSans font-light text-sm leading-relaxed tracking-wide inline">
+                {description ? (
+                  <>
+                    {description}
+                    {/* Spacer before tags if description exists */}
+                    <span className="inline-block w-1"></span>
+                  </>
+                ) : (
+                  "Información verificada: "
+                )}
+
+                {/* Inline Source Tags */}
+                {sources.map((src, idx) => (
+                  <a
+                    key={idx}
+                    href={src}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="
+                      inline-flex items-center justify-center
+                      bg-[#666666] hover:bg-black
+                      text-white text-[8px] font-sohne-breit font-bold uppercase
+                      px-2.5 py-0.5 rounded-full
+                      transition-colors duration-200
+                      mx-1 align-middle my-0.5
+                      no-underline
+                    "
+                    style={{ verticalAlign: "2px" }}
+                  >
+                    {getSourceLabel(src)}
+                  </a>
+                ))}
+              </span>
+
+              {/* Tail - pointing to content */}
+              <span
+                className={`absolute w-0 h-0 block ${
+                  isTop
+                    ? "top-full border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"
+                    : "bottom-full border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-white"
+                }`}
+                style={{
+                  left: `calc(50% - ${horizontalOffset}px)`,
+                  transform: "translateX(-50%)",
+                }}
+              />
+            </span>
+          </div>,
+          document.body
+        )}
+    </>
   );
 }
 
 /**
- * Value with optional source
+ * Value with optional source and description
  */
 export interface ValueWithSource {
   value: string | string[];
   source?: string | string[];
+  description?: string;
 }
 
 /**
- * Array value with optional source
+ * Array value with optional source and description
  */
 export interface ArrayValueWithSource {
   values: string | string[];
   source?: string | string[];
+  description?: string;
 }
 
 /**
@@ -339,8 +432,8 @@ export function extractValue(
   if (Array.isArray(value)) return value;
 
   if (typeof value === "object") {
-    if ("value" in value) return value.value;
-    if ("values" in value) return value.values;
+    if ("value" in value) return value.value as string | string[];
+    if ("values" in value) return value.values as string | string[];
   }
 
   return undefined;
@@ -354,7 +447,22 @@ export function extractSource(
 ): string | string[] | undefined {
   if (!value || typeof value !== "object") return undefined;
 
-  if ("source" in value) return value.source;
+  if ("source" in value && !Array.isArray(value))
+    return (value as ValueWithSource | ArrayValueWithSource).source;
+
+  return undefined;
+}
+
+/**
+ * Extract the description from a potentially sourced value
+ */
+export function extractDescription(
+  value: string | string[] | ValueWithSource | ArrayValueWithSource | undefined
+): string | undefined {
+  if (!value || typeof value !== "object") return undefined;
+
+  if ("description" in value && !Array.isArray(value))
+    return (value as ValueWithSource | ArrayValueWithSource).description;
 
   return undefined;
 }

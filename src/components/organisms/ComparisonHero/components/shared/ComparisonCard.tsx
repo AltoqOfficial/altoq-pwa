@@ -3,7 +3,12 @@
 import Image from "next/image";
 import { Typography } from "@/components/atoms";
 import { FieldConfig } from "./types";
-import { SourceTooltip, extractValue, extractSource } from "./SourceTooltip";
+import {
+  SourceTooltip,
+  extractValue,
+  extractSource,
+  extractDescription,
+} from "./SourceTooltip";
 import type { CandidateComparisonData, SocialLinks } from "@/data";
 
 interface MobileComparisonCardProps {
@@ -32,7 +37,7 @@ export function MobileComparisonCard({
   // User asked for "Card Format".
 
   return (
-    <div className="w-full bg-profile-gradient rounded-xl overflow-hidden shadow-lg  relative p-6 md:p-8 flex flex-col items-center gap-4 md:gap-6">
+    <div className="w-full bg-profile-gradient rounded-xl shadow-lg  relative p-6 md:p-8 flex flex-col items-center gap-4 md:gap-6">
       {fields.find((f) => f.key === "profesion") && (
         <Typography
           font="atNameSans"
@@ -42,6 +47,7 @@ export function MobileComparisonCard({
             const raw = data?.profesion;
             const val = extractValue(raw);
             const src = extractSource(raw);
+            const desc = extractDescription(raw);
 
             let content: React.ReactNode = "-";
             if (Array.isArray(val)) {
@@ -64,7 +70,9 @@ export function MobileComparisonCard({
             }
 
             return src ? (
-              <SourceTooltip source={src}>{content}</SourceTooltip>
+              <SourceTooltip source={src} description={desc}>
+                {content}
+              </SourceTooltip>
             ) : (
               content
             );
@@ -169,10 +177,13 @@ export function MobileComparisonCard({
                 const raw = candidate.ideologiaPolitica?.posicion;
                 const val = extractValue(raw);
                 const src = extractSource(raw);
+                const desc = extractDescription(raw);
                 const content = Array.isArray(val) ? val[0] : val || "-";
 
                 return src ? (
-                  <SourceTooltip source={src}>{content}</SourceTooltip>
+                  <SourceTooltip source={src} description={desc}>
+                    {content}
+                  </SourceTooltip>
                 ) : (
                   content
                 );
@@ -207,6 +218,7 @@ export function MobileComparisonCard({
               const raw = candidate.perfilGeneral?.nivelEducativo;
               const val = extractValue(raw);
               const src = extractSource(raw);
+              const desc = extractDescription(raw);
               const items = Array.isArray(val)
                 ? val
                 : [val as string].filter(Boolean);
@@ -258,7 +270,7 @@ export function MobileComparisonCard({
                     >
                       {title}
                     </Typography>
-                    <SourceTooltip source={src}>
+                    <SourceTooltip source={src} description={desc}>
                       <Typography
                         font="atNameSans"
                         className="text-white/70 text-sm md:text-base font-light leading-tight text-left mt-1"
@@ -279,13 +291,30 @@ export function MobileComparisonCard({
 
         {/* INTENCIÓN DE VOTO */}
         <div className="w-full">
-          <Typography
-            variant="small"
-            font="atNameSans"
-            className="text-white text-[10px] font-black uppercase tracking-wider mb-2 text-left"
-          >
-            INTENCIÓN DE VOTO
-          </Typography>
+          {(() => {
+            const intencion = candidate.percepcionPublica?.intencionVoto;
+            const source = intencion?.source;
+            const description = intencion?.descripcion;
+
+            const label = (
+              <Typography
+                variant="small"
+                font="atNameSans"
+                className="text-white text-[10px] font-black uppercase tracking-wider mb-2 text-left"
+              >
+                INTENCIÓN DE VOTO
+              </Typography>
+            );
+
+            if (source) {
+              return (
+                <SourceTooltip source={source} description={description}>
+                  {label}
+                </SourceTooltip>
+              );
+            }
+            return label;
+          })()}
 
           <div
             className="relative w-full h-8 md:h-10 overflow-hidden"

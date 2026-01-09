@@ -6,7 +6,6 @@ import {
   SectionNavbar,
   SectionWrapper,
   HorizontalSections,
-  ComparisonHeader,
 } from "./components";
 import { Header } from "../Header/Header";
 import type { CandidateComparisonData } from "@/data";
@@ -108,32 +107,14 @@ interface CandidateDisplayInfo {
   shadows: number;
 }
 
-interface FilterIds {
-  noiseFilter: string;
-  gradientRed: string;
-  gradientBlue: string;
-  gradientLeftName: string;
-  gradientRightName: string;
-  gradientVS: string;
-  gradientTitle: string;
-}
-
 interface ComparisonContentProps {
-  leftCandidateInfo: CandidateDisplayInfo;
-  rightCandidateInfo: CandidateDisplayInfo;
   leftCandidate: CandidateComparisonData | null;
   rightCandidate: CandidateComparisonData | null;
-  filterIds: FilterIds;
-  onBack: () => void;
 }
 
 export function ComparisonContent({
-  leftCandidateInfo,
-  rightCandidateInfo,
   leftCandidate,
   rightCandidate,
-  filterIds,
-  onBack,
 }: ComparisonContentProps) {
   const {
     activeNavIndex,
@@ -193,17 +174,10 @@ export function ComparisonContent({
         onNavClick: handleNavClickWrapper,
       }}
     >
-      <div className="flex flex-col h-dvh overflow-hidden bg-neutral-500">
+      <div className="flex flex-col h-dvh overflow-hidden bg-neutral-500 w-full">
         {/* Fixed Header Area */}
         <div className="flex-none z-50 flex flex-col w-full shadow-lg">
           <Header forceShow className="static shadow-none" />
-          <ComparisonHeader
-            leftCandidateInfo={leftCandidateInfo}
-            rightCandidateInfo={rightCandidateInfo}
-            filterIds={filterIds}
-            onBack={onBack}
-            className="static shadow-none"
-          />
         </div>
 
         {/* Main Layout Area */}
@@ -221,14 +195,14 @@ export function ComparisonContent({
           {/* Scrollable Content Area */}
           <div
             ref={scrollContainerRef}
-            className="flex-1 w-full min-w-0 overflow-y-auto overflow-x-hidden scroll-smooth"
+            className="flex-1 w-full min-w-0 overflow-y-auto overflow-x-hidden scroll-smooth xl:[&::-webkit-scrollbar]:hidden xl:[scrollbar-width:none]"
             id="comparison-content-scroll-container"
           >
             <div
               className="w-full flex justify-center min-h-full"
               id="comparison-content-start"
             >
-              <div className="w-full max-w-[100vw] xl:max-w-336 2xl:max-w-500 px-4 xl:px-12 pb-32 pt-4">
+              <div className="w-full max-w-[100vw] px-4 xl:px-12 pb-32 pt-4">
                 <HorizontalSections
                   activeIndex={activeNavIndex}
                   direction={scrollDirection}

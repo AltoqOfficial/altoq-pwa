@@ -15,6 +15,7 @@
   "perfilGeneral": {
     "edad": {
       "value": "50 años",
+      "description": "Nacida el 25 de mayo de 1975, actualmente tiene 50 años.",
       "source": [
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h",
         "https://www.swissinfo.ch/spa/keiko-fujimori-aspira-por-cuarta-vez-a-la-presidencia-de-per%C3%BA/90258740#:~:text=%C2%ABQuiero%20anunciar%20mi%20decisi%C3%B3n%20de,2026%E2%80%99%2C%20seg%C3%BAn%20im%C3%A1genes%20de%20la%C2%A0televisi%C3%B3n"
@@ -43,6 +44,7 @@
     },
     "profesion": {
       "value": ["Administradora", "Política"],
+      "description": "Keiko Fujimori es administradora de empresas por la Universidad de Boston y cuenta con un MBA de la Universidad de Columbia.",
       "source": [
         "https://plataformahistorico.jne.gob.pe/OrganizacionesPoliticas/BusquedaAvanzada",
         "https://lanoticia.com.pe/un-profesor-contra-una-administradora-de-empresas/#:~:text=Es%20administradora%20de%20empresas%20con,Oportunidades%20Instituto%20para%20el%20Desarrollo"
@@ -131,6 +133,7 @@
   "ideologiaPolitica": {
     "posicion": {
       "value": ["Derecha - conservadora", "Liberalismo económico"],
+      "description": "Su postura política se define como de derecha conservadora, promoviendo el liberalismo económico y los valores tradicionales.",
       "source": [
         "https://fuerzapopular.com.pe/decalogo/",
         "https://larepublica.pe/elecciones/2021/05/03/elecciones-2021-pedro-castillo-y-keiko-fujimori-dos-candidatos-conservadores-pltc#:~:text=Dos%20candidatos%20enfrentados%20por%20sus,campa%C3%B1as%20conservadores%20en%20estos%20temas"

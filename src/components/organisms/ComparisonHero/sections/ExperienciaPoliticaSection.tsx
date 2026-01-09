@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Typography } from "@/components/atoms";
 import type { CandidateComparisonData } from "@/data";
+import { SourceTooltip } from "../components/shared/SourceTooltip";
 
 interface DynamicSectionProps {
   leftCandidate: CandidateComparisonData | null;
@@ -51,6 +52,17 @@ const getArrayValue = (item: SourceableData): string[] => {
 };
 
 /**
+ * Helper to get source from SourceableData
+ */
+const getSource = (item: SourceableData): string | string[] | undefined => {
+  if (!item) return undefined;
+  if (typeof item === "object" && "source" in item) {
+    return item.source;
+  }
+  return undefined;
+};
+
+/**
  * Helper to parse "Title (YYYY-YYYY)" string.
  * Also handles "YYYY - YYYY Title" or "YYYY: Title"
  */
@@ -89,10 +101,12 @@ const TimelineItem = ({
   year,
   title,
   color,
+  source,
 }: {
   year: string;
   title: string;
   color: string;
+  source?: string | string[];
 }) => (
   <div className="flex flex-col relative pt-6 shrink-0 w-32 md:w-64">
     {/* Dot on line */}
@@ -107,13 +121,17 @@ const TimelineItem = ({
     >
       {year}
     </Typography>
-    <Typography
-      variant="p"
-      weight="200"
-      className="text-gray-300 text-xs md:text-sm leading-tight"
-    >
-      {title}
-    </Typography>
+    <div className="relative">
+      <SourceTooltip source={source}>
+        <Typography
+          variant="p"
+          weight="200"
+          className="text-gray-300 text-xs md:text-sm leading-tight hover:text-white transition-colors cursor-help"
+        >
+          {title}
+        </Typography>
+      </SourceTooltip>
+    </div>
   </div>
 );
 
@@ -140,10 +158,12 @@ export function ExperienciaPoliticaSection({
 
     // Parse cargos
     const cargosRaw = getArrayValue(data.cargosPrevios);
+    const cargosSource = getSource(data.cargosPrevios);
     const cargos = cargosRaw.map(parseRole);
 
     // Parse candidaturas
     const candidaturasRaw = getArrayValue(data.candidaturasPresidenciales);
+    const candidaturasSource = getSource(data.candidaturasPresidenciales);
     const candidaturas = candidaturasRaw.map(parseCandidacy);
 
     const isRight = side === "right";
@@ -192,7 +212,7 @@ export function ExperienciaPoliticaSection({
           <div className="absolute top-[57px] left-0 w-full h-0.5 bg-white bg-noise-pattern" />
 
           {/* Single Horizontal Scroll Container */}
-          <div className="flex gap-10 md:gap-32 overflow-x-auto pt-12 pb-4 scrollbar-hide px-4 w-full max-w-full">
+          <div className="flex gap-10 md:gap-32 overflow-x-auto pt-12 pb-4 scrollbar-hide pl-0 pr-4 w-full max-w-full">
             {/* Cargos Publicos Group */}
             {cargos.length > 0 && (
               <div className="flex gap-4 shrink-0 relative">
@@ -214,6 +234,7 @@ export function ExperienciaPoliticaSection({
                     year={item.year}
                     title={item.title}
                     color={themeColor}
+                    source={cargosSource}
                   />
                 ))}
               </div>
@@ -240,6 +261,7 @@ export function ExperienciaPoliticaSection({
                     year={item.year}
                     title={item.title}
                     color={themeColor}
+                    source={candidaturasSource}
                   />
                 ))}
               </div>

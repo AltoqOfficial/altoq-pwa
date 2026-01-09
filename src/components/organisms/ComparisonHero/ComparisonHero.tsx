@@ -45,8 +45,7 @@ const HeroTitle = memo(function HeroTitle({
  * Hero section for the Compare Candidates page
  */
 export function ComparisonHero() {
-  const { selectedCandidates, handleCandidateClick, clearSelection } =
-    useCandidateSelection();
+  const { selectedCandidates, handleCandidateClick } = useCandidateSelection();
 
   // Unique IDs for SVG filters
   const uniqueId = useId();
@@ -411,12 +410,8 @@ export function ComparisonHero() {
         {/* Show sections only when BOTH candidates are selected */}
         {!showHero && (
           <ComparisonContent
-            leftCandidateInfo={leftCandidateInfo!}
-            rightCandidateInfo={rightCandidateInfo!}
             leftCandidate={leftCandidate}
             rightCandidate={rightCandidate}
-            filterIds={filterIds}
-            onBack={clearSelection}
           />
         )}
       </div>
