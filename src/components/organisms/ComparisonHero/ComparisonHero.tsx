@@ -182,7 +182,7 @@ export function ComparisonHero() {
     <ComparisonProvider value={{ activeNavIndex: 0, onNavClick: () => {} }}>
       <div
         className={`bg-neutral-500 relative flex justify-center flex-col items-center md:mt-0 ${
-          showHero ? "space-y-6 xl:space-y-18 py-2" : ""
+          showHero ? "py-2" : ""
         }`}
       >
         {/* Centralized SVG Filters - rendered once */}
@@ -192,7 +192,7 @@ export function ComparisonHero() {
           <>
             <Header
               forceShow={true}
-              className="hidden md:flex absolute top-0 w-full z-50 border-none"
+              className="hidden md:flex absolute top-0 w-full z-50 mb-4"
             />
             {/* Hero Section */}
             <div className="w-full">
@@ -244,7 +244,7 @@ export function ComparisonHero() {
                   <div className="relative z-10 flex flex-col justify-start xl:justify-center gap-6 order-1 xl:order-2 max-w-sm mx-auto xl:max-w-none xl:h-full w-full xl:w-auto pointer-events-none xl:pointer-events-auto">
                     <Header
                       forceShow={true}
-                      className="md:hidden static! bg-transparent! p-0! py-4! pointer-events-auto"
+                      className="md:hidden static! bg-transparent! p-0! py-2! pointer-events-auto"
                     />
                     <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center pointer-events-auto">
                       <HeroTitle className="flex text-5xl sm:text-6xl md:text-7xl xl:text-7xl 2xl:text-8xl [&>span:last-child]:text-5xl [&>span:last-child]:sm:text-[100px] [&>span:last-child]:md:text-[120px] [&>span:last-child]:xl:text-[60px] [&>span:last-child]:2xl:text-[60px] [&>span:last-child]:xl:translate-y-0" />

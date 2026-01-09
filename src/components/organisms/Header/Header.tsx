@@ -89,7 +89,7 @@ export function Header({ forceShow, className }: HeaderProps) {
       </div>
 
       {/* Desktop Layout */}
-      <div className="container mx-auto hidden md:flex h-20 items-center justify-between px-6 border-b border-white/10">
+      <div className="container mx-auto hidden md:flex h-20 items-center justify-between px-6">
         {/* Logo */}
         <Logo variant="default" asLink priority />
 
