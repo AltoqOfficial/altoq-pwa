@@ -7,7 +7,7 @@ import {
   SectionWrapper,
   HorizontalSections,
 } from "./components";
-import { Header } from "../Header/Header";
+
 import type { CandidateComparisonData } from "@/data";
 import { ALL_SECTIONS_CONFIG } from "./config";
 import { NAV_ITEMS } from "./constants";
@@ -95,26 +95,16 @@ const SectionLoadingFallback = memo(function SectionLoadingFallback() {
   );
 });
 
-interface CandidateDisplayInfo {
-  name: string;
-  fullName?: string;
-  shortName?: string;
-  image: string;
-  brightness: number;
-  contrast: number;
-  saturate: number;
-  sepia: number;
-  shadows: number;
-}
-
 interface ComparisonContentProps {
   leftCandidate: CandidateComparisonData | null;
   rightCandidate: CandidateComparisonData | null;
+  onBack: () => void;
 }
 
 export function ComparisonContent({
   leftCandidate,
   rightCandidate,
+  onBack,
 }: ComparisonContentProps) {
   const {
     activeNavIndex,
@@ -175,15 +165,12 @@ export function ComparisonContent({
       }}
     >
       <div className="flex flex-col h-dvh overflow-hidden bg-neutral-500 w-full">
-        {/* Fixed Header Area */}
-        <div className="flex-none z-50 flex flex-col w-full shadow-lg">
-          <Header forceShow className="static shadow-none" />
-        </div>
+        {/* Fixed Header Area - Removed as per request */}
 
         {/* Main Layout Area */}
         <div className="flex flex-1 min-h-0 relative">
           {/* Fixed Sidebar */}
-          <div className="hidden xl:block w-72 shrink-0 h-full border-r border-white/10 bg-black/20 backdrop-blur-[20px] overflow-y-auto scrollbar-hide z-40 pb-32">
+          <div className="hidden xl:block w-72 shrink-0 h-full border-r border-white/10 bg-[#202020] shadow-[10px_0_30px_-10px_rgba(0,0,0,3)] overflow-y-auto scrollbar-hide z-40 pb-32">
             <SectionNavbar
               activeNavIndex={activeNavIndex}
               navContainerRef={navContainerRef}
@@ -213,6 +200,29 @@ export function ComparisonContent({
             </div>
           </div>
         </div>
+        {/* Floating Scroll to Top / Back Button */}
+        <button
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            onBack();
+          }}
+          className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-[#FF2727] hover:scale-105 text-white shadow-lg transition-all duration-300 transform translate-y-0 opacity-100"
+          aria-label="Volver al inicio"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="m18 15-6-6-6 6" />
+          </svg>
+        </button>
       </div>
     </ComparisonProvider>
   );

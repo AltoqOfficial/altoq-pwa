@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography } from "@/components/atoms";
+import { Typography, Logo } from "@/components/atoms";
 import { NAV_ITEMS } from "../constants";
 import {
   IdCard,
@@ -10,6 +10,7 @@ import {
   Pin,
   Glasses,
   Scale,
+  HatGlasses,
 } from "lucide-react";
 
 interface SectionNavbarProps {
@@ -49,7 +50,7 @@ export function SectionNavbar({
       <Glasses className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
     ),
     Controversias: (
-      <Scale className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+      <HatGlasses className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
     ),
     Transparencia: (
       <Scale className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
@@ -68,14 +69,17 @@ export function SectionNavbar({
     ),
   };
 
-  const projectsIndex = NAV_ITEMS.indexOf("Proyectos de Ley");
-
   return (
     <nav
-      className="flex flex-col w-full"
+      className="flex flex-col w-full pl-6 pr-6"
       id="comparison-navbar"
       ref={navContainerRef}
     >
+      {/* Logo Section */}
+      <div className="pl-6 py-6 w-full mb-4 mt-6">
+        <Logo variant="default" asLink priority />
+      </div>
+
       <div className="flex flex-col gap-1 w-full border-l border-white/10 pl-6">
         {NAV_ITEMS.map((item, index) => {
           if (item === "Proyectos de Ley") return null;
@@ -124,7 +128,7 @@ export function SectionNavbar({
       </div>
 
       {/* Additional Menu Section - Projects */}
-      <div className="mt-8">
+      {/* <div className="mt-8">
         <Typography
           variant="p"
           font="sohneBreit"
@@ -164,7 +168,7 @@ export function SectionNavbar({
             </Typography>
           </button>
         </div>
-      </div>
+      </div> */}
     </nav>
   );
 }

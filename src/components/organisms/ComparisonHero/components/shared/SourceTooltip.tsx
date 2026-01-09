@@ -44,6 +44,7 @@ export function SourceTooltip({
   // Position state now stores absolute coordinates
   const [coords, setCoords] = useState({ top: 0, left: 0 });
   const [position, setPosition] = useState<"top" | "bottom">("top");
+  const [alignment, setAlignment] = useState<"left" | "right">("left");
   const [horizontalOffset, setHorizontalOffset] = useState(0);
   const tooltipRef = useRef<HTMLSpanElement>(null);
   const contentRef = useRef<HTMLSpanElement>(null);
@@ -108,38 +109,48 @@ export function SourceTooltip({
       const scrollY = window.scrollY;
       const tooltipWidth = isMobile === true ? 240 : 320; // Approximate tooltip width
 
-      // Calculate horizontal position (centered on element)
+      // Determine horizontal alignment based on screen side
       const elementCenter = rect.left + rect.width / 2;
+      const isLeftScreen = elementCenter < viewportWidth / 2;
+      const newAlignment = isLeftScreen ? "left" : "right";
 
+      let anchorPoint = 0;
       let offset = 0;
       const padding = 12; // Padding from viewport edges
+      const ARROW_OFFSET = 24; // Distance from edge (not too close)
 
-      // Check boundaries
-      const tooltipHalfWidth = tooltipWidth / 2;
+      if (newAlignment === "left") {
+        // Points to start of text
+        anchorPoint = rect.left + Math.min(rect.width / 2, 20);
+        // Box starts at anchorPoint - ARROW_OFFSET
+        const idealLeft = anchorPoint - ARROW_OFFSET;
+        const idealRight = idealLeft + tooltipWidth;
 
-      if (elementCenter - tooltipHalfWidth < padding) {
-        // Overflow left
-        offset = padding - (elementCenter - tooltipHalfWidth);
-        // Shift left calculation is handled by the transform in styles + offset,
-        // but here we just pass the offset to the arrow/box translate logic.
-        // Actually for Portal, we can just position the container at `left` and transform -50%.
-      } else if (elementCenter + tooltipHalfWidth > viewportWidth - padding) {
-        // Overflow right
-        offset = viewportWidth - padding - (elementCenter + tooltipHalfWidth);
+        if (idealRight > viewportWidth - padding) {
+          offset = viewportWidth - padding - idealRight;
+        }
+      } else {
+        // Points to end of text
+        anchorPoint = rect.right - Math.min(rect.width / 2, 20);
+        // Box ends at anchorPoint + ARROW_OFFSET
+        // So Left is anchorPoint + ARROW_OFFSET - tooltipWidth
+        const idealRight = anchorPoint + ARROW_OFFSET;
+        const idealLeft = idealRight - tooltipWidth;
+
+        if (idealLeft < padding) {
+          offset = padding - idealLeft;
+        }
       }
 
       setHorizontalOffset(offset);
+      setAlignment(newAlignment);
 
       // Vertical position
-      // Check if there is space above
       const spaceAbove = rect.top;
       const tooltipHeight = 150; // Approximated max height
-
       const newPosition = spaceAbove < tooltipHeight + 20 ? "bottom" : "top";
 
       // Calculate absolute top/left for the portal container
-      // The container will be placed at (left, top) corresponding to the element center
-
       let top = 0;
       if (newPosition === "top") {
         top = rect.top + scrollY - 8; // 8px spacing
@@ -147,7 +158,7 @@ export function SourceTooltip({
         top = rect.bottom + scrollY + 8;
       }
 
-      setCoords({ top, left: elementCenter });
+      setCoords({ top, left: anchorPoint });
       return newPosition;
     }
     return "top";
@@ -287,6 +298,16 @@ export function SourceTooltip({
   };
 
   const isTop = position === "top";
+  const ARROW_POS = "24px"; // Consistent with calculation
+
+  // Transforms:
+  // Left Align: anchor is at ARROW_POS from left. So we shift Left by -ARROW_POS.
+  // Right Align: anchor is at ARROW_POS from right. So we shift Left by -100% + ARROW_POS.
+  const transformX =
+    alignment === "left"
+      ? `calc(-${ARROW_POS} + ${horizontalOffset}px)`
+      : `calc(-100% + ${ARROW_POS} + ${horizontalOffset}px)`;
+  const transformY = isTop ? "-100%" : "0";
 
   return (
     <>
@@ -321,15 +342,14 @@ export function SourceTooltip({
               left: coords.left,
               width: "max-content",
               maxWidth: isMobile ? "240px" : "320px",
-              // Transform: centering + horizontalOffset correction + slight vertical push for animation usually but here we set absolute top
-              transform: `translate(calc(-50% + ${horizontalOffset}px), ${isTop ? "-100%" : "0"})`,
+              transform: `translate(${transformX}, ${transformY})`,
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
             <span
               className={`
-                relative block bg-white rounded-2xl shadow-xl
+                relative block bg-white rounded-2xl drop-shadow-xl
                 text-[#333333]
                 ${isMobile ? "p-3" : "p-4"}
                 text-left
@@ -371,16 +391,19 @@ export function SourceTooltip({
                 ))}
               </span>
 
-              {/* Tail - pointing to content */}
               <span
                 className={`absolute w-0 h-0 block ${
                   isTop
-                    ? "top-full border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"
-                    : "bottom-full border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-white"
+                    ? "top-[calc(100%-1px)] border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"
+                    : "bottom-[calc(100%-1px)] border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-white"
                 }`}
                 style={{
-                  left: `calc(50% - ${horizontalOffset}px)`,
-                  transform: "translateX(-50%)",
+                  left: alignment === "left" ? ARROW_POS : "auto",
+                  right: alignment === "right" ? ARROW_POS : "auto",
+                  transform:
+                    alignment === "left"
+                      ? "translateX(-50%)"
+                      : "translateX(50%)",
                 }}
               />
             </span>

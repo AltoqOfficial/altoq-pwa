@@ -11,6 +11,7 @@ import {
   Pin,
   Glasses,
   Scale,
+  HatGlasses,
 } from "lucide-react";
 
 interface SectionHeaderProps {
@@ -224,7 +225,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
                       <Glasses className="w-6 h-6" strokeWidth={1.5} />
                     ),
                     Controversias: (
-                      <Scale className="w-6 h-6" strokeWidth={1.5} />
+                      <HatGlasses className="w-6 h-6" strokeWidth={1.5} />
                     ),
                     // Extended mapping for remaining items
                     Transparencia: (
@@ -285,7 +286,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
               </div>
 
               {/* Additional Menu Section */}
-              <div className="mt-10 mb-10">
+              {/* <div className="mt-10 mb-10">
                 <Typography
                   variant="p"
                   font="sohneBreit"
@@ -328,7 +329,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
                     </Typography>
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

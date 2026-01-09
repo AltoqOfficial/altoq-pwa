@@ -30,7 +30,8 @@ function TimelineItem({
   description,
   dotColor,
   isLast,
-}: TimelineItemProps & { isLast: boolean }) {
+  source,
+}: TimelineItemProps & { isLast: boolean; source?: string | string[] }) {
   return (
     <div
       className={`relative flex flex-col items-start shrink-0 lg:flex-1 ${
@@ -58,7 +59,7 @@ function TimelineItem({
             color="white"
             variant="p"
             weight="700"
-            className="text-[10px] lg:text-xs"
+            className="text-xs lg:text-base"
           >
             {startYear}
           </Typography>
@@ -66,7 +67,7 @@ function TimelineItem({
             color="white"
             variant="p"
             weight="700"
-            className="text-[10px] lg:text-xs opacity-50"
+            className="text-xs lg:text-base opacity-50"
           >
             -
           </Typography>
@@ -74,19 +75,21 @@ function TimelineItem({
             color="white"
             variant="p"
             weight="700"
-            className="text-[10px] lg:text-xs"
+            className="text-xs lg:text-base"
           >
             {endYear}
           </Typography>
         </div>
-        <Typography
-          color="white"
-          variant="p"
-          align="left"
-          className="text-[9px] lg:text-[10px] opacity-90 leading-tight"
-        >
-          {description}
-        </Typography>
+        <SourceTooltip source={source}>
+          <Typography
+            color="white"
+            variant="p"
+            align="left"
+            className="text-xs lg:text-sm opacity-90 leading-tight hover:text-white transition-colors cursor-help"
+          >
+            {description}
+          </Typography>
+        </SourceTooltip>
       </div>
     </div>
   );
@@ -116,7 +119,6 @@ export function ExperienciaGestionSection({
 
     const sectorColor = isLeft ? "#FF2727" : "#4E58B4";
 
-    // Función para parsear items de experiencia
     const parseExperienceItems = (items: string[]) => {
       return items.map((item) => {
         // Intentar extraer cargo y años (formato: "Primera Dama (1994-2000)")
@@ -184,36 +186,35 @@ export function ExperienciaGestionSection({
             SECTOR PÚBLICO
           </Typography>
 
-          <SourceTooltip source={publicSource}>
-            {publicExperiences.length > 0 ? (
-              <div className="relative mt-8">
-                {/* Línea horizontal fija */}
-                <div className="absolute top-[6px] left-0 w-full h-[2px] bg-white" />
+          {publicExperiences.length > 0 ? (
+            <div className="relative mt-8">
+              {/* Línea horizontal fija */}
+              <div className="absolute top-[6px] left-0 w-full h-[2px] bg-white" />
 
-                {/* Contenedor con scroll horizontal */}
-                <div className="flex gap-6 overflow-x-auto lg:justify-between lg:overflow-x-visible pb-4 scrollbar-hide">
-                  {publicExperiences.map((exp, index) => (
-                    <TimelineItem
-                      key={index}
-                      startYear={exp.startYear}
-                      endYear={exp.endYear}
-                      description={exp.description}
-                      dotColor={sectorColor}
-                      isLast={index === publicExperiences.length - 1}
-                    />
-                  ))}
-                </div>
+              {/* Contenedor con scroll horizontal */}
+              <div className="flex gap-6 overflow-x-auto lg:justify-between lg:overflow-x-visible pb-4 scrollbar-hide">
+                {publicExperiences.map((exp, index) => (
+                  <TimelineItem
+                    key={index}
+                    startYear={exp.startYear}
+                    endYear={exp.endYear}
+                    description={exp.description}
+                    dotColor={sectorColor}
+                    isLast={index === publicExperiences.length - 1}
+                    source={publicSource}
+                  />
+                ))}
               </div>
-            ) : (
-              <Typography
-                color="white"
-                align="left"
-                className="text-xs lg:text-sm opacity-70"
-              >
-                Sin información disponible
-              </Typography>
-            )}
-          </SourceTooltip>
+            </div>
+          ) : (
+            <Typography
+              color="white"
+              align="left"
+              className="text-xs lg:text-sm opacity-70"
+            >
+              Sin información disponible
+            </Typography>
+          )}
         </div>
 
         {/* Sector Privado */}
@@ -228,36 +229,35 @@ export function ExperienciaGestionSection({
             SECTOR PRIVADO
           </Typography>
 
-          <SourceTooltip source={privateSource}>
-            {privateExperiences.length > 0 ? (
-              <div className="relative mt-8">
-                {/* Línea horizontal fija */}
-                <div className="absolute top-[6px] left-0 w-full h-[2px] bg-white" />
+          {privateExperiences.length > 0 ? (
+            <div className="relative mt-8">
+              {/* Línea horizontal fija */}
+              <div className="absolute top-[6px] left-0 w-full h-[2px] bg-white" />
 
-                {/* Contenedor con scroll horizontal */}
-                <div className="flex gap-6 overflow-x-auto lg:justify-between lg:overflow-x-visible pb-4 scrollbar-hide">
-                  {privateExperiences.map((exp, index) => (
-                    <TimelineItem
-                      key={index}
-                      startYear={exp.startYear}
-                      endYear={exp.endYear}
-                      description={exp.description}
-                      dotColor={sectorColor}
-                      isLast={index === privateExperiences.length - 1}
-                    />
-                  ))}
-                </div>
+              {/* Contenedor con scroll horizontal */}
+              <div className="flex gap-6 overflow-x-auto lg:justify-between lg:overflow-x-visible pb-4 scrollbar-hide">
+                {privateExperiences.map((exp, index) => (
+                  <TimelineItem
+                    key={index}
+                    startYear={exp.startYear}
+                    endYear={exp.endYear}
+                    description={exp.description}
+                    dotColor={sectorColor}
+                    isLast={index === privateExperiences.length - 1}
+                    source={privateSource}
+                  />
+                ))}
               </div>
-            ) : (
-              <Typography
-                color="white"
-                align="left"
-                className="text-xs lg:text-sm opacity-70"
-              >
-                Sin información disponible
-              </Typography>
-            )}
-          </SourceTooltip>
+            </div>
+          ) : (
+            <Typography
+              color="white"
+              align="left"
+              className="text-xs lg:text-sm opacity-70"
+            >
+              Sin información disponible
+            </Typography>
+          )}
         </div>
       </div>
     );
