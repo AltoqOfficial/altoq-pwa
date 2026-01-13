@@ -25,9 +25,13 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
     "@supabase/supabase-js": "^2.87.0",
+    "@tanstack/react-query": "^5.90.16",
+    "@types/swagger-ui-react": "^5.18.0",
     "apexcharts": "^5.3.6",
+    "axios": "^1.13.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.24",
+    "html-encoding-sniffer": "^6.0.0",
     "lottie-react": "^2.4.1",
     "next": "16.0.10",
     "nodemailer": "^7.0.11",
@@ -37,6 +41,7 @@
     "react-hook-form": "^7.69.0",
     "recharts": "^3.5.1",
     "sharp": "^0.34.5",
+    "swagger-ui-react": "^5.31.0",
     "zustand": "^5.0.8"
   },
   "devDependencies": {
@@ -56,13 +61,13 @@
     "eslint-config-next": "^16.0.3",
     "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
-    "jsdom": "^27.2.0",
+    "jsdom": "^27.4.0",
     "lint-staged": "^16.2.7",
     "prettier": "^3.6.2",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vite": "^7.2.7",
-    "vitest": "^4.0.12"
+    "vitest": "^4.0.16"
   },
   "engines": {
     "node": ">=22.0.0",

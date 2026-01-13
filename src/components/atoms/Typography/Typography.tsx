@@ -20,7 +20,12 @@ type TypographyVariant =
  * - sohneSchmal: Test Sohne Schmal (weight: 600)
  * - kenyan: Kenyan Coffee (weights: 400, 700)
  */
-type FontFamily = "sohneBreit" | "sohneSchmal" | "kenyan";
+type FontFamily =
+  | "sohneBreit"
+  | "sohneSchmal"
+  | "kenyan"
+  | "bigShoulders"
+  | "bilbo";
 
 /**
  * Font weight options
@@ -109,6 +114,8 @@ export const Typography = React.forwardRef<HTMLElement, TypographyProps>(
       sohneBreit: "font-sohne-breit",
       sohneSchmal: "font-sohne-schmal",
       kenyan: "font-kenyan",
+      bigShoulders: "font-bigshoulders-black",
+      bilbo: "font-bilbo",
     };
 
     // Font weight styles (using numeric values for better control)
