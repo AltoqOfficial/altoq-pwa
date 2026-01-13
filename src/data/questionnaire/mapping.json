@@ -1,0 +1,769 @@
+{
+  "plans": [
+    {
+      "plan_id": 1,
+      "party": "Ahora Nación (AN)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 2,
+      "party": "Alianza Electoral Venceremos",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 3,
+      "party": "Alianza Unidad Nacional",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 4,
+      "party": "Alianza para el Progreso (APP)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 5,
+      "party": "Avanza País",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 6,
+      "party": "Cooperación Popular",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 7,
+      "party": "Fe en el Perú",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 8,
+      "party": "Frente de la Esperanza",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 9,
+      "party": "Fuerza Popular",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 10,
+      "party": "Fuerza y Libertad",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 11,
+      "party": "Integridad Democrática",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 12,
+      "party": "Juntos por el Perú (JP)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 13,
+      "party": "Libertad Popular",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 14,
+      "party": "Partido Aprista Peruano (PAP)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 15,
+      "party": "Partido Cívico Obras",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 16,
+      "party": "Partido Democrático Somos Perú",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 17,
+      "party": "Partido Demócrata Unido Perú",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 18,
+      "party": "Partido Demócrata Verde",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 19,
+      "party": "Partido Morado (PM)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 20,
+      "party": "Partido Patriótico del Perú (PPP)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 21,
+      "party": "Partido Político Prin (PRIN)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 22,
+      "party": "Partido de los Trabajadores y Emprendedores (PTE)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 23,
+      "party": "Partido del Buen Gobierno (PBG)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 24,
+      "party": "País para Todos",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 25,
+      "party": "Perú Acción",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 26,
+      "party": "Perú Libre (PL)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 27,
+      "party": "Perú Moderno",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 28,
+      "party": "Perú Primero",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 29,
+      "party": "Podemos Perú",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 30,
+      "party": "Progresemos",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 31,
+      "party": "Renovación Popular (RP)",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 32,
+      "party": "Salvemos al Perú",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 33,
+      "party": "SíCreo",
+      "candidate_display_name": "",
+      "url": ""
+    },
+    {
+      "plan_id": 34,
+      "party": "Un camino diferente (UD)",
+      "candidate_display_name": "",
+      "url": ""
+    }
+  ],
+  "question_option_mappings": [
+    {
+      "question_id": 1,
+      "option_mappings": [
+        {
+          "option_key": "A",
+          "evidences": [
+            {
+              "plan_id": 1,
+              "label": "Concurso Público y Perfil Técnico",
+              "summary": "Propone asignar cargos directivos por concurso público y evaluación técnica de perfiles.",
+              "explanation": "Este plan se compromete a garantizar que la totalidad de los cargos directivos sean asignados mediante concurso público, priorizando perfiles técnicos con capacidades de gestión comprobadas.",
+              "pages": ["124", "131"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 2,
+              "label": "Profesionalización del Estado",
+              "summary": "Busca recuperar el Estado para el pueblo con una reforma profunda y profesionalismo.",
+              "explanation": "Propone una reforma integral del Estado para recuperar la soberanía popular, enfatizando el alto profesionalismo y las calidades técnicas de los servidores públicos.",
+              "pages": ["14", "51"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 3,
+              "label": "Escuela Nacional de la Magistratura",
+              "summary": "Impulsa la carrera judicial meritocrática a través de una escuela especializada.",
+              "explanation": "Plantea la creación de la Escuela Nacional de la Magistratura para asegurar una carrera judicial y fiscal basada estrictamente en la meritocracia y la estabilidad institucional.",
+              "pages": ["15", "45"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 4,
+              "label": "Meritocracia Certificada para Directivos",
+              "summary": "Plantea que los directivos sean seleccionados por meritocracia certificada y perfil técnico.",
+              "explanation": "Su estrategia se centra en la meritocracia certificada para directivos del sector público y la cobertura de puestos críticos mediante profesionales especializados y acreditados.",
+              "pages": ["40", "41"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 5,
+              "label": "Alta Dirección Pública Meritocrática",
+              "summary": "Modifica la Ley del Servicio Civil para priorizar logros y experiencia sobre títulos.",
+              "explanation": "Impulsa la profesionalización de la gestión pública mediante la Alta Dirección Pública, priorizando la experiencia y los resultados de gestión sobre los logros académicos formales.",
+              "pages": ["17", "108"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 6,
+              "label": "Restauración de la Meritocracia",
+              "summary": "Propone luchar contra la corrupción mediante la restauración de la meritocracia estatal.",
+              "explanation": "Busca combatir la corrupción sistémica mediante la restauración de la meritocracia y el uso de tecnologías para asegurar la transparencia en las funciones del Estado.",
+              "pages": ["11"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 7,
+              "label": "Fortalecimiento de Capacidades",
+              "summary": "Estrategia para fortalecer capacidades de gestión mediante asistencia técnica coordinada.",
+              "explanation": "Se enfoca en fortalecer las capacidades de gestión de los gobiernos subnacionales y la coordinación intergubernamental para elevar la calidad de los servicios públicos brindados.",
+              "pages": ["28", "4"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 8,
+              "label": "Carrera del Funcionariado Público",
+              "summary": "Propone una Ley de Remuneraciones meritocrática y crear la carrera pública universitaria.",
+              "explanation": "Propone una nueva Ley de Remuneraciones que elimine las \"planillas doradas\" y la creación de una carrera pública universitaria para formalizar al funcionariado estatal.",
+              "pages": ["6"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 9,
+              "label": "Modernización Meritocrática SERVIR",
+              "summary": "Plantea modernizar el sistema meritocrático y certificar competencias bajo supervisión.",
+              "explanation": "Apuesta por la modernización del sistema meritocrático liderado por SERVIR y la creación de un sistema acreditado de formación para certificar competencias en la gestión pública.",
+              "pages": ["26"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 10,
+              "label": "Carrera Pública Profesional Estable",
+              "summary": "Fortalece la carrera pública con capacitación permanente y estabilidad directiva.",
+              "explanation": "Defiende la Carrera Pública Profesional como eje de estabilidad, promoviendo la certificación obligatoria de competencias y limitando la remoción arbitraria de directores técnicos.",
+              "pages": ["293", "328"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 11,
+              "label": "Asignación por Competencias",
+              "summary": "Defiende que la asignación de cargos se base en méritos y competencias profesionales.",
+              "explanation": "Sostiene que la asignación de cargos públicos debe basarse exclusivamente en los méritos y competencias profesionales de los candidatos para asegurar un Estado eficiente.",
+              "pages": ["9"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 12,
+              "label": "Mérito y Probidad Comprobada",
+              "summary": "Propone que la elección de cargos se base en mérito, antigüedad y probidad.",
+              "explanation": "Plantea que la elección de autoridades en el sistema de justicia debe basarse en la antigüedad y probidad comprobada, instalando contrapesos ciudadanos al poder político.",
+              "pages": ["13"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 13,
+              "label": "Reglamento Único de Selección",
+              "summary": "Propone un reglamento de selección para evitar direccionamientos y evaluar el desempeño.",
+              "explanation": "Propone un reglamento único para la selección de cargos técnicos para evitar el direccionamiento político y una evaluación periódica de desempeño vinculada a incentivos reales.",
+              "pages": ["42"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 14,
+              "label": "Meritocracia como Principio Rector",
+              "summary": "Instaura la meritocracia para la selección de funcionarios mediante procesos competitivos.",
+              "explanation": "Instaura la meritocracia como principio rector de la administración, mediante procesos de selección competitivos que aseguren igualdad de acceso a la representación política.",
+              "pages": ["32"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 15,
+              "label": "Fortalecimiento de Instituciones",
+              "summary": "Busca fortalecer las instituciones del Estado y la independencia de poderes.",
+              "explanation": "Considera necesario realizar reformas estructurales encaminadas al fortalecimiento de las instituciones y la independencia de poderes para proteger los derechos ciudadanos.",
+              "pages": ["6"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 16,
+              "label": "Servicio Civil Íntegro 2031",
+              "summary": "Meta de lograr que el 100% de entidades estén en régimen meritocrático para el 2031.",
+              "explanation": "Establece como meta para 2031 que el 100% de las entidades públicas operen bajo un régimen de servicio civil meritocrático, con concursos públicos obligatorios para cada cargo.",
+              "pages": ["94"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 17,
+              "label": "Profesionalización del Sector Público",
+              "summary": "Establece la profesionalización del sector público y la rotación de funcionarios.",
+              "explanation": "Plantea la profesionalización del sector público y la rotación obligatoria de funcionarios para evitar el enquistamiento de redes de corrupción en las instituciones.",
+              "pages": ["1", "3"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 18,
+              "label": "Carrera Pública Directiva",
+              "summary": "Propone que los directivos sean elegidos por concurso público con estabilidad técnica.",
+              "explanation": "Propone consolidar un servicio civil profesional donde los directivos sean elegidos por concurso público y gocen de estabilidad técnica frente a cambios políticos.",
+              "pages": ["24"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 19,
+              "label": "Nueva Carrera Pública Meritocrática",
+              "summary": "Transición hacia un régimen único de carrera con evaluación y salarios competitivos.",
+              "explanation": "Impulsa una transición gradual hacia una nueva Carrera Pública Meritocrática con examen práctico anónimo y evaluación quinquenal de calidad de sentencias y productividad.",
+              "pages": ["61", "48"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 20,
+              "label": "Perfil Idóneo para Cargos",
+              "summary": "Exige que los asesores y funcionarios cumplan con un perfil idóneo para el cargo.",
+              "explanation": "Propone que los asesores de funcionarios sean contratados estrictamente bajo un perfil idóneo al cargo y que los ascensos policiales dependan de resultados tangibles.",
+              "pages": ["22", "3"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 21,
+              "label": "Meritocracia en Todos los Niveles",
+              "summary": "Establece como meta fortalecer la meritocracia en todos los niveles de gobierno.",
+              "explanation": "Se compromete a fortalecer la meritocracia en todos los niveles de gobierno para contar con una misión de Estado enfocada en el desarrollo social y económico.",
+              "pages": ["49", "52"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 22,
+              "label": "Reestructuración de Carrera Pública",
+              "summary": "Propone reestructurar la carrera pública para mejorar la eficiencia institucional.",
+              "explanation": "Su plan contempla reestructurar la carrera pública y las entidades estatales para alcanzar un índice de eficiencia institucional superior en un 30%.",
+              "pages": ["1"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 23,
+              "label": "Carrera Directiva Pública Obligatoria",
+              "summary": "Plantea una carrera directiva obligatoria para eliminar la rotación política en cargos.",
+              "explanation": "Propone la Carrera Directiva Pública obligatoria y la evaluación anual de capacidades para eliminar la rotación política en cargos operativos del Estado.",
+              "pages": ["89", "90"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 24,
+              "label": "Servicio Civil Meritocrático Real",
+              "summary": "Reforma para un Estado profesional con meritocracia real y evaluación de desempeño.",
+              "explanation": "Busca transformar el servicio civil mediante la meritocracia real, la evaluación constante y la sanción al mal desempeño, utilizando la digitalización para reducir la discrecionalidad.",
+              "pages": ["51"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 25,
+              "label": "Escalafón Meritocrático Nacional",
+              "summary": "Propone un escalafón meritocrático anual para jueces y fiscales según resultados.",
+              "explanation": "Propone instaurar una evaluación anual para jueces y fiscales que permita crear un escalafón meritocrático y eliminar los nombramientos de carácter provisional o supernumerario.",
+              "pages": ["21"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 26,
+              "label": "Régimen Meritocrático Digital",
+              "summary": "Plantea incorporar funcionarios a regímenes meritocráticos con evaluación de desempeño.",
+              "explanation": "Considera el fortalecimiento de la meritocracia como parte del desmontaje del andamiaje legal previo, incorporando a los funcionarios en regímenes evaluados por desempeño.",
+              "pages": ["24"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 27,
+              "label": "Gestión basada en SERVIR",
+              "summary": "Defiende la meritocracia a través de la presencia de SERVIR en las instituciones.",
+              "explanation": "Defiende la presencia de SERVIR en la gestión de todas las instituciones del Estado para asegurar la profesionalización y la eficiencia como pilares contra la corrupción.",
+              "pages": ["20"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 28,
+              "label": "Estado Moderno y Meritocrático",
+              "summary": "Busca un Estado capaz de brindar servicios eficientes mediante la meritocracia.",
+              "explanation": "Plantea un Estado moderno y meritocrático que brinde servicios públicos eficientes, basándose en un Pacto Nacional por la Reforma del Estado con participación académica.",
+              "pages": ["113"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 29,
+              "label": "Empleo Meritocrático y con Derechos",
+              "summary": "Define el empleo meritocrático como el mejor programa social para el progreso.",
+              "explanation": "Considera que el empleo meritocrático y con derechos es la base de la justicia social, proponiendo una gestión hospitalaria basada en directores elegidos por concurso.",
+              "pages": ["14", "17"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 30,
+              "label": "Examen Nacional de Servicio Público",
+              "summary": "Implementa un examen nacional para asignar plazas estatales por concurso de méritos.",
+              "explanation": "Implementará el Examen Nacional de Servicio Público para asegurar que todas las plazas estatales se asignen por concurso de méritos, alejándolas de influencias políticas.",
+              "pages": ["47", "48"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 31,
+              "label": "Carreras Públicas Especializadas",
+              "summary": "Plantea fortalecer las carreras públicas especializadas para la actividad agraria.",
+              "explanation": "Propone fortalecer la capacidad institucional mediante carreras públicas especializadas y centros de desarrollo para la gestión del trato humanizado en servicios esenciales.",
+              "pages": ["19", "8"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 32,
+              "label": "Evaluación Meritocrática de Operadores",
+              "summary": "Busca que jueces y fiscales sean evaluados bajo criterios meritocráticos certificados.",
+              "explanation": "Plantea que los jueces y fiscales sean seleccionados y evaluados bajo criterios meritocráticos estrictos, con capacitación continua certificada y procesos concursales abiertos.",
+              "pages": ["56", "57"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 33,
+              "label": "Inteligencia y Meritocracia",
+              "summary": "Considera la meritocracia como pilar contra la corrupción en el programa de Inteligencia.",
+              "explanation": "Identifica la meritocracia como un componente central de su programa de Inteligencia y Gobierno Digital contra la corrupción para asegurar que el presupuesto sirva al ciudadano.",
+              "pages": ["31"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 34,
+              "label": "Evaluación de Idoneidad y Confianza",
+              "summary": "Fortalece la justicia mediante mecanismos periódicos de evaluación de idoneidad.",
+              "explanation": "Propone fortalecer el sistema de justicia mediante mecanismos periódicos de evaluación de idoneidad e integridad para magistrados y operadores judiciales.",
+              "pages": ["30"],
+              "strength": 0.5
+            }
+          ]
+        },
+        {
+          "option_key": "B",
+          "evidences": [
+            {
+              "plan_id": 1,
+              "label": "Servidores Profesionalizados",
+              "summary": "Busca instaurar un Estado integrado por servidores profesionalmente valiosos y ejemplares.",
+              "explanation": "Propone un Estado conformado por servidores públicos que sean profesionalmente valiosos y ejemplares, garantizando la eficiencia y la integridad en la gestión pública.",
+              "pages": ["10"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 2,
+              "label": "Recuperación de la Democracia",
+              "summary": "Plantea reconstruir el Estado para ponerlo al servicio de la mayoría y la soberanía popular.",
+              "explanation": "Propone recuperar la democracia y reconstruir el Estado para ponerlo al servicio de la mayoría popular. Busca que la nueva Constitución garantice una transformación profunda de la patria.",
+              "pages": ["12", "14"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 3,
+              "label": "Fortaleza Institucional",
+              "summary": "Sostiene que la estabilidad de las instituciones es clave para el desarrollo y la inversión.",
+              "explanation": "El plan enfatiza que la estabilidad jurídica es fundamental para asegurar condiciones de inversión y trabajo. Considera que el fortalecimiento institucional es un factor clave para la inclusión.",
+              "pages": ["15", "3"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 4,
+              "label": "Representación de la Autoridad",
+              "summary": "Propone transformar leyes para que los ciudadanos estén mejor representados por sus autoridades.",
+              "explanation": "Busca transformar las instituciones para que los ciudadanos estén mejor representados por sus autoridades electas. Las leyes deben cambiar para asegurar el bienestar de los más vulnerables.",
+              "pages": ["3", "4"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 5,
+              "label": "Elección Legislativa de Reguladores",
+              "summary": "Plantea que los directorios de organismos reguladores sean elegidos por el Congreso.",
+              "explanation": "Plantea explícitamente que los directorios de los organismos reguladores sean elegidos por el Poder Legislativo a propuesta del Ejecutivo. Esto busca fortalecer el equilibrio de poderes.",
+              "pages": ["10", "11"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 6,
+              "label": "Equilibrio de Poderes",
+              "summary": "Propone reformas constitucionales para restituir el equilibrio entre los poderes del Estado.",
+              "explanation": "Su objetivo es fortalecer el Estado y sus instituciones para garantizar una gestión pública orientada a resultados. Busca reformas para restituir el equilibrio entre los poderes del Estado.",
+              "pages": ["5", "12"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 7,
+              "label": "Confianza en la Democracia",
+              "summary": "Enfocado en recuperar la confianza ciudadana en las instituciones democráticas vigentes.",
+              "explanation": "Se enfoca en recuperar la confianza ciudadana en las instituciones democráticas mediante una gestión con impacto directo. El Estado debe establecer reglas claras que garanticen derechos.",
+              "pages": ["4", "5"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 8,
+              "label": "Censura Ciudadana a Funcionarios",
+              "summary": "Plantea la censura ciudadana a ministros y altos cargos para asegurar probidad en la gestión.",
+              "explanation": "Propone la censura ciudadana a ministros y altos funcionarios para asegurar la probidad en el ejercicio público. Busca rescatar la democracia de la corrupción en todos los niveles.",
+              "pages": ["1"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 9,
+              "label": "Gobernabilidad Democrática",
+              "summary": "Busca fortalecer la gobernabilidad democrática para asegurar el bienestar de los peruanos.",
+              "explanation": "Busca consolidar un entorno de confianza y estabilidad mediante el fortalecimiento de las instituciones públicas. Su visión al 2031 incluye un Estado que recupere su rol de garante.",
+              "pages": ["2", "7"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 10,
+              "label": "Gobernanza Participativa",
+              "summary": "Promueve un gobierno que escucha y responde con eficiencia a las demandas sociales.",
+              "explanation": "Defiende una gestión pública moderna y descentralizada que escuche y responda con eficiencia a los ciudadanos. Considera la participación ciudadana como un valor de gestión pública.",
+              "pages": ["7", "10"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 11,
+              "label": "Independencia de Poderes",
+              "summary": "Busca robustecer la democracia, la independencia y el equilibrio efectivo de los poderes.",
+              "explanation": "Plantea robustecer la democracia estimulando la participación ciudadana en los procesos de toma de decisiones políticas. Busca afianzar la independencia y el equilibrio de poderes.",
+              "pages": ["10", "11"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 12,
+              "label": "Democracia Popular Sustantiva",
+              "summary": "Plantea una democracia donde las mayorías tengan voz y poder real de decisión política.",
+              "explanation": "Propone una democracia sustantiva y popular donde las mayorías históricamente excluidas tengan voz y poder de decisión. El Estado debe recuperar su capacidad de intervención.",
+              "pages": ["15", "16"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 13,
+              "label": "Límites a la Politización",
+              "summary": "Establece límites claros a la politización en los procesos de elección de entes autónomos.",
+              "explanation": "Establece límites a la politización en la selección de autoridades en entes como el Tribunal Constitucional. Propone elevar los requisitos de idoneidad para cargos de alta dirección.",
+              "pages": ["38", "39"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 14,
+              "label": "Democracia Funcional",
+              "summary": "Incorpora activamente a profesionales y productores en la toma de decisiones públicas.",
+              "explanation": "Impulsa la democracia funcional, donde productores y profesionales participen activamente en la formulación de políticas. Defiende una representación política que sea efectiva.",
+              "pages": ["5"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 15,
+              "label": "Independencia Institucional",
+              "summary": "Busca fortalecer las instituciones del Estado y la independencia de sus poderes autónomos.",
+              "explanation": "Considera necesario realizar cambios estructurales para fortalecer las instituciones y la independencia de poderes. Busca proteger la libertad de expresión y la propiedad privada.",
+              "pages": ["4", "6"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 16,
+              "label": "Audiencias en el Senado",
+              "summary": "Propone reformar la elección de altos funcionarios mediante audiencias en el Senado.",
+              "explanation": "Propone reformar la elección de altos funcionarios estableciendo audiencias públicas televisadas en el Senado. Esto incluye veeduría internacional para asegurar el mérito.",
+              "pages": ["91"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 17,
+              "label": "Reingeniería del Estado",
+              "summary": "Promueve una reorganización y reingeniería total del Estado para proteger al pueblo.",
+              "explanation": "Promueve una reorganización y reingeniería total del Estado para que este proteja los derechos fundamentales. Busca eliminar privilegios y profesionalizar el sector público.",
+              "pages": ["1"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 18,
+              "label": "Democracia Representativa",
+              "summary": "Potencializa el manejo del Estado mediante el ejercicio de la democracia representativa.",
+              "explanation": "Busca potencializar el manejo del Estado mediante la democracia representativa y la participación ciudadana. Propone un Estado transparente cercano a la sociedad.",
+              "pages": ["11", "12"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 19,
+              "label": "Balance de Organismos Autónomos",
+              "summary": "Propone reformar el nombramiento de organismos autónomos bajo mayoría calificada.",
+              "explanation": "Propone restaurar el balance de poderes mediante mayorías calificadas en el Congreso para nombrar autoridades de organismos autónomos. Exige requisitos técnicos estrictos y verificables.",
+              "pages": ["95"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 20,
+              "label": "Descentralización Política",
+              "summary": "Descentralizará ministerios para asegurar la presencia efectiva del Estado en regiones.",
+              "explanation": "Propone descentralizar cinco ministerios hacia las regiones para asegurar que el Estado atienda las necesidades locales. Busca rescatar el principio de autoridad en el gobierno.",
+              "pages": ["2", "9"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 21,
+              "label": "Visión de Estado Compartida",
+              "summary": "Fortalecerá los poderes del Estado para alinearlos a una misión de desarrollo económico.",
+              "explanation": "Se compromete a fortalecer los poderes del Estado para que compartan una única misión de desarrollo social. Busca empoderar a la ciudadanía en la fiscalización de instituciones.",
+              "pages": ["50"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 22,
+              "label": "Eficiencia Institucional",
+              "summary": "Propone reestructurar entidades estatales para elevar la eficiencia en la gestión.",
+              "explanation": "Propone reestructurar la carrera pública y las entidades estatales para mejorar la eficiencia institucional en un 30%. Busca un nuevo pacto social nacional inclusivo.",
+              "pages": ["1"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 23,
+              "label": "Mandatos Escalonados en Reguladores",
+              "summary": "Plantea que los entes reguladores sean elegidos con mandatos escalonados por el Senado.",
+              "explanation": "Plantea reformar la gobernanza de la SBS instaurando un Directorio Colegiado con mandatos escalonados. Busca que los miembros sean elegidos de forma disociada al ciclo presidencial.",
+              "pages": ["39"],
+              "strength": 1.0
+            },
+            {
+              "plan_id": 24,
+              "label": "Pesos y Contrapesos",
+              "summary": "Busca mejores pesos y contrapesos políticos para que el sistema genere resultados.",
+              "explanation": "Busca un sistema político con mejores pesos y contrapesos para que el ciudadano sienta que su voto decide resultados. Propone reformas para una representación política sólida.",
+              "pages": ["50"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 25,
+              "label": "Rendición de Cuentas Parlamentaria",
+              "summary": "Propone una revolución parlamentaria para mejorar la representatividad y rendición de cuentas.",
+              "explanation": "Propone una revolución parlamentaria para mejorar la representatividad política y la rendición de cuentas del Congreso. Plantea elecciones de medio término para renovar el parlamento.",
+              "pages": ["22"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 26,
+              "label": "Participación Regional en el Poder",
+              "summary": "Busca un Estado que garantice la participación directa de las regiones en las decisiones.",
+              "explanation": "Busca descentralizar efectivamente el poder político para que las regiones participen directamente en la toma de decisiones. Propone un Estado plurinacional con participación popular.",
+              "pages": ["22"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 27,
+              "label": "Liderazgo Ético",
+              "summary": "Promueve líderes preparados que estén comprometidos genuinamente con el bien común.",
+              "explanation": "Promueve una política ética con líderes preparados que trabajen bajo una misión de servicio al ciudadano. Busca devolver al país la gobernabilidad y la confianza institucional.",
+              "pages": ["14"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 28,
+              "label": "Pacto por la Gobernanza",
+              "summary": "Plantea un pacto nacional con partidos y academia para fortalecer la gobernanza.",
+              "explanation": "Plantea un Pacto Nacional por la Reforma del Estado con participación de partidos, gremios profesionales y la academia. Busca fortalecer la institucionalidad y la gobernanza.",
+              "pages": ["113"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 29,
+              "label": "Modernización de la Democracia",
+              "summary": "Busca modernizar la estructura estatal y ampliar los mecanismos de democracia representativa.",
+              "explanation": "Busca modernizar la estructura del Estado para ampliar los mecanismos de democracia representativa nacional. Propone transformar la estructura gubernamental para ganar transparencia.",
+              "pages": ["15", "6"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 30,
+              "label": "Representación Macrorregional",
+              "summary": "Considera la bicameralidad como vía para ampliar la representación de los departamentos.",
+              "explanation": "Identifica la transición hacia la bicameralidad como una oportunidad para amplificar la representación regional en el Parlamento. Busca recuperar el liderazgo democrático del Estado.",
+              "pages": ["11"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 31,
+              "label": "Directorios Sociales Participativos",
+              "summary": "Incorpora a representantes de la población organizada en los directorios de apoyo social.",
+              "explanation": "Propone incorporar a representantes de la población organizada en los directorios de los programas de apoyo social. Busca descentralizar programas sociales con control ciudadano.",
+              "pages": ["5"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 32,
+              "label": "Justicia con Participación",
+              "summary": "Propone fortalecer la justicia y la gestión pública con participación ciudadana activa.",
+              "explanation": "Propone afianzar un Estado íntegro y eficaz con descentralización efectiva y datos abiertos para rendir cuentas. Busca fortalecer la justicia y la seguridad con participación.",
+              "pages": ["47"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 33,
+              "label": "Soberanía y Balances",
+              "summary": "Afirma el principio de separación de poderes con balances y contrapesos efectivos.",
+              "explanation": "Afirma el principio de separación de poderes en el Estado con sistemas de balances y contrapesos adecuados. Sostiene que el Estado debe tener mecanismos de fiscalización efectivos.",
+              "pages": ["3"],
+              "strength": 0.5
+            },
+            {
+              "plan_id": 34,
+              "label": "Descentralización del Poder Central",
+              "summary": "Plantea descentralizar el poder trasladando sedes de ministerios al interior del país.",
+              "explanation": "Plantea realizar una reforma estructural para descentralizar el poder trasladando el Congreso a Puno y la Presidencia a Trujillo. Busca llevar los ministerios al interior del país.",
+              "pages": ["1"],
+              "strength": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

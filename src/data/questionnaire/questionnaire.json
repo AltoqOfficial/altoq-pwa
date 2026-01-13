@@ -1,0 +1,614 @@
+{
+  "id": "mi_candidato_ideal_v1",
+  "version": "1.0.0",
+  "language": "es-PE",
+  "title": "Mi Candidato Ideal",
+  "description": "Cuestionario breve para perfilar preferencias ciudadanas y recomendar candidatos según coincidencia con planes de gobierno.",
+  "estimated_time_minutes": { "min": 5, "max": 7 },
+  "response_scale": {
+    "type": "single_choice",
+    "options": [
+      { "key": "A", "label": "A" },
+      { "key": "B", "label": "B" },
+      { "key": "C", "label": "C" },
+      { "key": "D", "label": "D" },
+      { "key": "E", "label": "E" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Corrupción y Reforma del Estado",
+      "intro": "Estas preguntas buscan conocer cómo crees que el Estado debería organizarse y sancionar la corrupción.",
+      "questions": [
+        {
+          "id": "Q1",
+          "text": "Para reducir la corrupción en el Estado, ¿qué crees que es más importante?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Que los altos funcionarios sean seleccionados por mérito técnico y no cambien con cada gobierno"
+            },
+            {
+              "key": "B",
+              "text": "Que el Congreso tenga mayor control político sobre los altos cargos"
+            },
+            {
+              "key": "C",
+              "text": "Que los funcionarios tengan estabilidad mínima para asegurar continuidad"
+            },
+            {
+              "key": "D",
+              "text": "Que se eliminen los cargos de confianza y solo exista carrera pública"
+            },
+            {
+              "key": "E",
+              "text": "Que el Ejecutivo tenga mayor control para tomar decisiones rápidas"
+            }
+          ],
+          "tags": [
+            "corrupcion",
+            "reforma_estado",
+            "servicio_civil",
+            "gobernanza"
+          ]
+        },
+        {
+          "id": "Q2",
+          "text": "En las obras públicas (carreteras, hospitales, colegios), ¿qué medida ayudaría más a evitar corrupción?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Castigos muy severos cuando se detecten irregularidades"
+            },
+            {
+              "key": "B",
+              "text": "Publicar en línea y en tiempo real toda la información de contratos y obras"
+            },
+            {
+              "key": "C",
+              "text": "Usar tecnología para detectar sobrecostos y patrones sospechosos"
+            },
+            {
+              "key": "D",
+              "text": "Centralizar las grandes obras en una sola entidad especializada"
+            },
+            {
+              "key": "E",
+              "text": "Permitir que ciudadanos y comunidades fiscalicen directamente las obras"
+            }
+          ],
+          "tags": [
+            "contrataciones",
+            "transparencia",
+            "control",
+            "infraestructura"
+          ]
+        },
+        {
+          "id": "Q3",
+          "text": "Cuando un trámite del Estado es lento o burocrático, ¿qué solución debería priorizarse?",
+          "choices": [
+            { "key": "A", "text": "Reducir trámites y requisitos al mínimo" },
+            {
+              "key": "B",
+              "text": "Que el ciudadano no sea perjudicado por la demora del Estado"
+            },
+            {
+              "key": "C",
+              "text": "Digitalizar todos los trámites y que las entidades compartan información"
+            },
+            {
+              "key": "D",
+              "text": "Mejorar la atención presencial con ventanillas únicas"
+            },
+            {
+              "key": "E",
+              "text": "Reducir el tamaño del Estado eliminando entidades innecesarias"
+            }
+          ],
+          "tags": [
+            "burocracia",
+            "digitalizacion",
+            "simplificacion",
+            "servicios_publicos"
+          ]
+        },
+        {
+          "id": "Q4",
+          "text": "¿Qué sanción debería ser prioritaria para funcionarios condenados por corrupción grave?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Prohibición permanente de volver a trabajar en el Estado"
+            },
+            {
+              "key": "B",
+              "text": "Penas de prisión más largas y sin beneficios"
+            },
+            {
+              "key": "C",
+              "text": "Devolver el dinero robado y pagar fuertes multas"
+            },
+            {
+              "key": "D",
+              "text": "Inhabilitación temporal, con posibilidad de reintegrarse luego"
+            },
+            {
+              "key": "E",
+              "text": "Control político estricto antes que sanción judicial"
+            }
+          ],
+          "tags": ["sanciones", "corrupcion", "justicia", "inhabilitacion"]
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Seguridad Ciudadana y Orden Público",
+      "intro": "Estas preguntas buscan conocer cómo crees que el Estado debería enfrentar la delincuencia y garantizar el orden.",
+      "questions": [
+        {
+          "id": "Q5",
+          "text": "Para enfrentar delitos graves como extorsión y sicariato, ¿qué debería priorizar el Estado?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Estados de emergencia y presencia militar en zonas críticas"
+            },
+            {
+              "key": "B",
+              "text": "Inteligencia policial y persecución del dinero del crimen"
+            },
+            {
+              "key": "C",
+              "text": "Programas sociales y preventivos para jóvenes"
+            },
+            {
+              "key": "D",
+              "text": "Endurecer fuertemente las penas para estos delitos"
+            },
+            {
+              "key": "E",
+              "text": "Juicios rápidos y jueces especializados para reducir la impunidad"
+            }
+          ],
+          "tags": [
+            "seguridad",
+            "crimen_organizado",
+            "justicia_penal",
+            "prevencion"
+          ]
+        },
+        {
+          "id": "Q6",
+          "text": "Respecto a las cárceles, ¿cuál debería ser su objetivo principal?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Que los internos trabajen obligatoriamente para cubrir los costos del sistema"
+            },
+            {
+              "key": "B",
+              "text": "Aislar estrictamente a los delincuentes más peligrosos"
+            },
+            {
+              "key": "C",
+              "text": "Rehabilitar y reinsertar a los internos mediante educación y trabajo"
+            },
+            {
+              "key": "D",
+              "text": "Usar tecnología (como grilletes) para reducir el hacinamiento"
+            },
+            {
+              "key": "E",
+              "text": "Mantener un régimen estricto con control policial o militar"
+            }
+          ],
+          "tags": ["penales", "rehabilitacion", "control", "hacinamiento"]
+        },
+        {
+          "id": "Q7",
+          "text": "Para mejorar la confianza y eficacia de la Policía, ¿qué medida es más importante?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Aumentar la cantidad de policías en las calles"
+            },
+            {
+              "key": "B",
+              "text": "Dividir la policía en cuerpos especializados de investigación"
+            },
+            {
+              "key": "C",
+              "text": "Mejorar sueldos, comisarías y respaldo legal al policía"
+            },
+            {
+              "key": "D",
+              "text": "Hacer más rigurosa la selección y formación policial"
+            },
+            {
+              "key": "E",
+              "text": "Usar cámaras corporales para fiscalizar las intervenciones"
+            }
+          ],
+          "tags": ["pnp", "reforma_policial", "transparencia", "capacitacion"]
+        },
+        {
+          "id": "Q8",
+          "text": "En las fronteras del país, ¿qué enfoque debería priorizarse?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Control militar y mayor vigilancia para evitar ingresos ilegales"
+            },
+            {
+              "key": "B",
+              "text": "Reglas estrictas de ingreso y expulsión para migrantes que delinquen"
+            },
+            {
+              "key": "C",
+              "text": "Cooperación e inteligencia conjunta con países vecinos"
+            },
+            {
+              "key": "D",
+              "text": "Mayor inversión del Estado en las zonas de frontera"
+            },
+            {
+              "key": "E",
+              "text": "Eliminar subsidios que faciliten actividades ilegales en frontera"
+            }
+          ],
+          "tags": ["fronteras", "migracion", "seguridad", "cooperacion"]
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Política Social",
+      "intro": "Estas preguntas buscan conocer cómo crees que el Estado debería garantizar servicios básicos y reducir desigualdades.",
+      "questions": [
+        {
+          "id": "Q9",
+          "text": "Para que todas las personas puedan acceder a una atención de salud oportuna y continua, ¿qué debería priorizarse?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Separar claramente quién financia y quién brinda el servicio de salud, pagando por resultados"
+            },
+            {
+              "key": "B",
+              "text": "Integrar todos los sistemas de salud en uno solo bajo dirección del Estado"
+            },
+            {
+              "key": "C",
+              "text": "Implementar una historia clínica digital única en todo el país"
+            },
+            {
+              "key": "D",
+              "text": "Aumentar de forma sostenida el presupuesto público en salud"
+            },
+            {
+              "key": "E",
+              "text": "Descentralizar hospitales y servicios especializados fuera de la capital"
+            }
+          ],
+          "tags": ["salud", "sistema_salud", "digitalizacion", "financiamiento"]
+        },
+        {
+          "id": "Q10",
+          "text": "Para mejorar la calidad de la educación escolar y su conexión con el empleo, ¿qué enfoque debería priorizarse?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Reforzar educación cívica, valores y formación ciudadana"
+            },
+            {
+              "key": "B",
+              "text": "Dar mayor peso a la educación técnica y práctica desde el colegio"
+            },
+            {
+              "key": "C",
+              "text": "Priorizar comprensión lectora y matemáticas con evaluaciones periódicas"
+            },
+            {
+              "key": "D",
+              "text": "Eliminar contenidos que contradigan valores familiares tradicionales"
+            },
+            {
+              "key": "E",
+              "text": "Fortalecer el aprendizaje de idiomas (inglés y lenguas originarias)"
+            }
+          ],
+          "tags": ["educacion", "curriculo", "empleabilidad", "valores"]
+        },
+        {
+          "id": "Q11",
+          "text": "Para reducir la anemia y desnutrición infantil, ¿qué acción tendría mayor impacto?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Garantizar agua potable y saneamiento en hogares vulnerables"
+            },
+            {
+              "key": "B",
+              "text": "Seguimiento obligatorio en salud y suplementación nutricional"
+            },
+            {
+              "key": "C",
+              "text": "Asegurar alimentación escolar de calidad comprando a productores locales"
+            },
+            {
+              "key": "D",
+              "text": "Promover producción y consumo de alimentos nutritivos nacionales"
+            },
+            {
+              "key": "E",
+              "text": "Otorgar apoyos económicos condicionados a controles de salud y asistencia escolar"
+            }
+          ],
+          "tags": [
+            "nutricion",
+            "infancia",
+            "salud_publica",
+            "programas_sociales"
+          ]
+        },
+        {
+          "id": "Q12",
+          "text": "Para mejorar la eficiencia del sistema público de salud, ¿qué debería priorizarse?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Fortalecer postas y centros de salud para resolver la mayoría de casos"
+            },
+            {
+              "key": "B",
+              "text": "Invertir más en hospitales especializados y de alta complejidad"
+            },
+            {
+              "key": "C",
+              "text": "Designar directores de hospitales por mérito y resultados"
+            },
+            {
+              "key": "D",
+              "text": "Ampliar horarios de atención en centros de salud"
+            },
+            {
+              "key": "E",
+              "text": "Incorporar al sector privado en la gestión de servicios de salud"
+            }
+          ],
+          "tags": ["salud", "gestion", "atencion_primaria", "hospitales"]
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "Economía, Empleo e Ingresos",
+      "intro": "Estas preguntas buscan conocer cómo crees que el Estado debería manejar la economía, el empleo y los ingresos de las personas.",
+      "questions": [
+        {
+          "id": "Q13",
+          "text": "Para reducir la informalidad de pequeños negocios y emprendimientos, ¿qué debería hacer primero el Estado?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Simplificar trámites y permitir formalizarse de manera rápida y digital"
+            },
+            {
+              "key": "B",
+              "text": "Ofrecer impuestos bajos o exoneraciones temporales al inicio"
+            },
+            {
+              "key": "C",
+              "text": "Facilitar créditos accesibles con respaldo del Estado"
+            },
+            {
+              "key": "D",
+              "text": "Dar prioridad a pequeños negocios en las compras públicas"
+            },
+            {
+              "key": "E",
+              "text": "Brindar capacitación gratuita en gestión y tecnología"
+            }
+          ],
+          "tags": ["informalidad", "mypes", "formalizacion", "emprendimiento"]
+        },
+        {
+          "id": "Q14",
+          "text": "Para que agricultores y pequeños empresarios accedan a créditos, ¿qué rol debería tener el Estado?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Crear bancos públicos que presten directamente a tasas bajas"
+            },
+            {
+              "key": "B",
+              "text": "Respaldar préstamos privados con garantías del Estado"
+            },
+            { "key": "C", "text": "Poner límites a las tasas de interés" },
+            {
+              "key": "D",
+              "text": "Usar pagos digitales como historial crediticio"
+            },
+            {
+              "key": "E",
+              "text": "Ofrecer seguros agrarios y microseguros subsidiados"
+            }
+          ],
+          "tags": ["credito", "inclusion_financiera", "agro", "mypes"]
+        },
+        {
+          "id": "Q15",
+          "text": "Para financiar el desarrollo del país, ¿qué enfoque tributario te parece más adecuado?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Cobrar más impuestos a grandes empresas y eliminar exoneraciones"
+            },
+            {
+              "key": "B",
+              "text": "Simplificar impuestos para pequeños negocios y ampliar la base tributaria"
+            },
+            {
+              "key": "C",
+              "text": "Reducir impuestos para incentivar consumo e inversión"
+            },
+            {
+              "key": "D",
+              "text": "Crear impuestos específicos a grandes fortunas o sobreganancias"
+            },
+            {
+              "key": "E",
+              "text": "Mantener disciplina fiscal evitando subir impuestos o gastos"
+            }
+          ],
+          "tags": [
+            "tributos",
+            "politica_fiscal",
+            "recaudacion",
+            "disciplina_fiscal"
+          ]
+        },
+        {
+          "id": "Q16",
+          "text": "Para facilitar el acceso al empleo formal, especialmente de jóvenes, ¿qué medida debería priorizarse?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Un régimen laboral más simple y flexible para pequeños negocios"
+            },
+            {
+              "key": "B",
+              "text": "Aumentar progresivamente el salario mínimo"
+            },
+            {
+              "key": "C",
+              "text": "Fortalecer la fiscalización laboral con enfoque orientador"
+            },
+            {
+              "key": "D",
+              "text": "Programas de primer empleo con incentivos a empresas"
+            },
+            {
+              "key": "E",
+              "text": "Seguridad social flexible para trabajadores independientes"
+            }
+          ],
+          "tags": ["empleo", "formalidad", "juventud", "derechos_laborales"]
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "Visión de País y Modelo de Desarrollo",
+      "intro": "Estas preguntas buscan conocer qué tipo de país imaginas a mediano y largo plazo.",
+      "questions": [
+        {
+          "id": "Q17",
+          "text": "Respecto al rol del Estado en la economía, ¿cuál de estas visiones se acerca más a la tuya?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Un Estado que planifica, regula y participa directamente en sectores estratégicos"
+            },
+            {
+              "key": "B",
+              "text": "Un Estado que interviene solo cuando el mercado no llega"
+            },
+            {
+              "key": "C",
+              "text": "Un Estado principalmente regulador, sin participar en la producción"
+            },
+            {
+              "key": "D",
+              "text": "Un Estado que impulsa inversión y garantiza servicios básicos"
+            },
+            {
+              "key": "E",
+              "text": "Un Estado que debe cambiar profundamente las reglas actuales para intervenir más"
+            }
+          ],
+          "tags": ["modelo_estado", "economia", "intervencion", "mercado"]
+        },
+        {
+          "id": "Q18",
+          "text": "Para integrar mejor el país y reducir brechas territoriales, ¿qué inversión debería ser prioridad nacional?",
+          "choices": [
+            { "key": "A", "text": "Carreteras y mantenimiento vial" },
+            { "key": "B", "text": "Trenes de carga y pasajeros" },
+            { "key": "C", "text": "Puertos y aeropuertos para el comercio" },
+            { "key": "D", "text": "Conectividad digital y fibra óptica" },
+            { "key": "E", "text": "Transporte público masivo en ciudades" }
+          ],
+          "tags": [
+            "infraestructura",
+            "integracion",
+            "conectividad",
+            "transporte"
+          ]
+        },
+        {
+          "id": "Q19",
+          "text": "Para diversificar la economía y no depender solo de materias primas, ¿qué estrategia debería impulsarse más?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Industrialización y manufactura con valor agregado"
+            },
+            {
+              "key": "B",
+              "text": "Inversión fuerte en ciencia, tecnología e innovación"
+            },
+            {
+              "key": "C",
+              "text": "Zonas económicas especiales para atraer inversión"
+            },
+            { "key": "D", "text": "Economía circular y energías renovables" },
+            { "key": "E", "text": "Modernización agrícola con valor agregado" }
+          ],
+          "tags": [
+            "diversificacion",
+            "industria",
+            "innovacion",
+            "sostenibilidad"
+          ]
+        },
+        {
+          "id": "Q20",
+          "text": "Para proteger el ambiente y enfrentar el cambio climático, ¿qué política debería priorizar el Estado?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Infraestructura hídrica y riego tecnificado"
+            },
+            {
+              "key": "B",
+              "text": "Combate frontal a actividades ilegales que dañan el ambiente"
+            },
+            { "key": "C", "text": "Transición a energías renovables" },
+            { "key": "D", "text": "Ordenamiento territorial obligatorio" },
+            {
+              "key": "E",
+              "text": "Impuestos verdes y eliminación de subsidios contaminantes"
+            }
+          ],
+          "tags": [
+            "ambiente",
+            "cambio_climatico",
+            "energia",
+            "ordenamiento_territorial"
+          ]
+        }
+      ]
+    }
+  ],
+  "ui_hints": {
+    "progress_indicator": true,
+    "show_section_intro": true,
+    "shuffle_questions": false,
+    "shuffle_choices": false,
+    "require_all_answers": true
+  }
+}

@@ -1,0 +1,36 @@
+ID - Plan de gobierno
+
+1 - Ahora Nación (AN)
+2 - Alianza Electoral Venceremos
+3 - Alianza Unidad Nacional
+4 - Alianza para el Progreso (APP)
+5 - Avanza País
+6 - Cooperación Popular
+7 - Fe en el Perú
+8 - Frente de la Esperanza
+9 - Fuerza Popular
+10 - Fuerza y Libertad
+11 - Integridad Democrática
+12 - Juntos por el Perú (JP)
+13 - Libertad Popular
+14 - Partido Aprista Peruano (PAP)
+15 - Partido Cívico Obras
+16 - Partido Democrático Somos Perú
+17 - Partido Demócrata Unido Perú
+18 - Partido Demócrata Verde
+19 - Partido Morado (PM)
+20 - Partido Patriótico del Perú (PPP)
+21 - Partido Político Prin (PRIN)
+22 - Partido de los Trabajadores y Emprendedores (PTE)
+23 - Partido del Buen Gobierno (PBG)
+24 - País para Todos
+25 - Perú Acción
+26 - Perú Libre (PL)
+27 - Perú Moderno
+28 - Perú Primero
+29 - Podemos Perú
+30 - Progresemos
+31 - Renovación Popular (RP)
+32 - Salvemos al Perú
+33 - SíCreo
+34 - Un camino diferente (UD)
