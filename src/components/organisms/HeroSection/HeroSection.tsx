@@ -15,12 +15,12 @@ import { Button } from "@/components/atoms/Button";
 export function HeroSection() {
   return (
     <section className="relative flex items-center justify-center min-h-auto lg:min-h-[85vh] w-full px-4 container mx-auto mb-10 mt-24 md:mt-28 lg:mt-0">
-      <div className="w-full bg-primary-50 rounded-3xl md:rounded-[2.5rem] p-6 sm:p-8 md:p-12 lg:p-20 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20 overflow-hidden shadow-sm">
+      <div className="w-full bg-primary-50/50 rounded-3xl md:rounded-[2.5rem] p-6 sm:p-8 md:p-12 lg:p-20 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20 overflow-hidden shadow-sm">
         {/* Left Content */}
         <div className="flex-1 max-w-2xl space-y-6 md:space-y-8 z-10 text-center lg:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[5rem] font-bold tracking-tight text-neutral-900 leading-[1.1] lg:leading-[0.95] lg:-ml-1">
+          <h1 className="font-bigshoulders-black text-3xl sm:text-4xl md:text-2xl lg:text-[5rem] font-bold tracking-tight text-neutral-900 leading-[1.1] lg:leading-[0.95] lg:-ml-1">
             Entérate, compara y decide mejor con{" "}
-            <span className="text-primary-600">Altoq</span>
+            <span className="ml-1 text-primary-600">Altoq</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-xl leading-relaxed font-medium mx-auto lg:mx-0">

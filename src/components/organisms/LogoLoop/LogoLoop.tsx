@@ -32,7 +32,9 @@ const LogoItem = memo(function LogoItem({
         height,
         transform: isScaledDown ? "scale(0)" : "scale(1)",
         transitionDelay: `${index * transitionDelay}ms`,
-        transition: "transform 300ms ease-out",
+        transitionProperty: "transform",
+        transitionDuration: "300ms",
+        transitionTimingFunction: "ease-out",
       }}
     >
       <Image
