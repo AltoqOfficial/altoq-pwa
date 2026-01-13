@@ -170,7 +170,7 @@ export function ComparisonContent({
         {/* Main Layout Area */}
         <div className="flex flex-1 min-h-0 relative">
           {/* Fixed Sidebar */}
-          <div className="hidden xl:block w-72 shrink-0 h-full border-r border-white/10 bg-[#202020] shadow-[10px_0_30px_-10px_rgba(0,0,0,3)] overflow-y-auto scrollbar-hide z-40 pb-32">
+          <div className="hidden xl:block w-72 shrink-0 h-full border-r border-white/10 bg-neutral-500 shadow-[10px_0_30px_-10px_rgba(0,0,0,3)] overflow-y-auto scrollbar-hide z-40 pb-32">
             <SectionNavbar
               activeNavIndex={activeNavIndex}
               navContainerRef={navContainerRef}

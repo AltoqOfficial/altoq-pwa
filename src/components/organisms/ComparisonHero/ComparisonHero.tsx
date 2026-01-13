@@ -253,7 +253,7 @@ export function ComparisonHero() {
           />
           {/* Hero Content */}
           <div className="w-full">
-            <div className="relative flex justify-center items-start flex-col w-full h-[380px] md:h-[calc(100vh-80px)] min-h-[600px] pt-4 md:pt-8">
+            <div className="relative flex justify-center items-start flex-col w-full h-[380px] md:h-[calc(100vh-80px)] min-h-[600px] pt-4 md:pt-8 overflow-hidden">
               <div className="flex gap-2 h-full xl:gap-15 2xl:gap-30 w-full relative">
                 {/* Left Candidate */}
                 <div className="absolute left-0 bottom-0 h-1/2 w-[35%] sm:w-[40%] xl:relative xl:w-auto max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden xl:overflow-visible z-1 xl:flex xl:justify-end">
@@ -274,7 +274,7 @@ export function ComparisonHero() {
                     />
                   </svg>
                   {leftCandidateInfo ? (
-                    <div className="relative z-20 w-[600px] flex justify-end">
+                    <div className="relative z-20 w-full xl:w-[600px] flex justify-end">
                       <CandidateImage
                         candidate={leftCandidateInfo}
                         side="left"
@@ -286,7 +286,7 @@ export function ComparisonHero() {
                       <div
                         onClick={() => handleCandidateClick("keiko")}
                         title="Seleccionar Keiko Fujimori"
-                        className="cursor-pointer relative z-20 w-[600px] flex justify-end"
+                        className="cursor-pointer relative z-20 w-full xl:w-[600px] flex justify-end"
                       >
                         <CandidateImage
                           candidate={placeholders.left}
@@ -343,7 +343,7 @@ export function ComparisonHero() {
                     />
                   </svg>
                   {rightCandidateInfo ? (
-                    <div className="relative z-20 w-[600px] flex justify-start">
+                    <div className="relative z-20 w-full xl:w-[600px] flex justify-start">
                       <CandidateImage
                         candidate={rightCandidateInfo}
                         side="right"
@@ -355,7 +355,7 @@ export function ComparisonHero() {
                       <div
                         onClick={() => handleCandidateClick("lopez")}
                         title="Seleccionar Rafael López Aliaga"
-                        className="cursor-pointer relative z-20 w-[600px] flex justify-start"
+                        className="cursor-pointer relative z-20 w-full xl:w-[600px] flex justify-start"
                       >
                         <CandidateImage
                           candidate={placeholders.right}
