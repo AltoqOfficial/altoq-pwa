@@ -7,3 +7,4 @@ export * from "./useCountdown";
 export * from "./useMediaQuery";
 export * from "./useCandidateSelection";
 export * from "./useSectionNavigation";
+export * from "./useUserProfile";

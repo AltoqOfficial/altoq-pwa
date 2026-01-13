@@ -441,7 +441,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sohne-breit), sans-serif;
+  font-family: "Flexo", sans-serif;
   font-weight: 400;
 }
 

@@ -29,7 +29,7 @@ const STEPS_DATA: StepData[] = [
     icon: <CandidatesIcon />,
     title: "Resultado con IA",
     description:
-      "La IA compara tus respuestas con datos reales y te muestra los 4 candidatos más afines a ti.",
+      "La IA compara tus preferencias con las propuestas de los planes de gobierno y te muestra los candidatos con mayor coincidencia.",
   },
 ];
 

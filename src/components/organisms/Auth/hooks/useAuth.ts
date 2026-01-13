@@ -93,7 +93,8 @@ export function useSignup() {
 /**
  * Hook for user logout
  *
- * On success: clears cookies and redirects to home
+ * On success/error: clears cookies and redirects to home
+ * Always clears cookies even if API fails to ensure user is logged out
  *
  * @example
  * ```tsx
@@ -102,17 +103,36 @@ export function useSignup() {
  * ```
  */
 export function useLogout() {
-  const router = useRouter();
+  const clearSessionAndRedirect = () => {
+    // Clear tokens
+    clearCookie("accessToken");
+    clearCookie("refreshToken");
+
+    // Clear any Supabase stored data
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("sb-access-token");
+      localStorage.removeItem("sb-refresh-token");
+    }
+
+    // Force redirect to home
+    window.location.href = "/";
+  };
 
   return useMutation<MessageResponse, ErrorResponse, void>({
-    mutationFn: authService.logout,
+    mutationFn: async () => {
+      try {
+        return await authService.logout();
+      } catch {
+        // Even if API fails, we still want to clear cookies
+        return { message: "Sesión cerrada localmente" };
+      }
+    },
     onSuccess: () => {
-      // Clear tokens
-      clearCookie("accessToken");
-      clearCookie("refreshToken");
-
-      // Redirect to home
-      router.push("/");
+      clearSessionAndRedirect();
+    },
+    onError: () => {
+      // Always clear session even on error
+      clearSessionAndRedirect();
     },
   });
 }
