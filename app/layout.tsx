@@ -14,6 +14,7 @@ import { ConditionalLayout } from "@/components/organisms/ConditionalLayout";
 import { GA_MEASUREMENT_ID } from "@/lib/analytics/gtag";
 import { Analytics } from "@/components/organisms/Analytics";
 import { QueryProvider } from "@/lib/providers/QueryProvider";
+import { ThemeProvider } from "@/contexts";
 
 export const metadata: Metadata = createMetadata();
 
@@ -159,16 +160,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>
       <body className="antialiased" suppressHydrationWarning>
-        <QueryProvider>
-          {/* Analytics - Track page views */}
-          <Analytics />
+        <ThemeProvider defaultTheme="system">
+          <QueryProvider>
+            {/* Analytics - Track page views */}
+            <Analytics />
 
-          {/* PWA Registration */}
-          <PWARegistration />
+            {/* PWA Registration */}
+            <PWARegistration />
 
-          {/* Conditional Layout - Shows Header/Footer for public pages, custom layout for dashboard */}
-          <ConditionalLayout>{children}</ConditionalLayout>
-        </QueryProvider>
+            {/* Conditional Layout - Shows Header/Footer for public pages, custom layout for dashboard */}
+            <ConditionalLayout>{children}</ConditionalLayout>
+          </QueryProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

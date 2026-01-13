@@ -8,9 +8,11 @@ import type {
   SignupRequest,
   ResetPasswordRequest,
   UpdatePasswordRequest,
+  CheckEmailRequest,
   AuthResponse,
   SignupResponse,
   MessageResponse,
+  CheckEmailResponse,
   ErrorResponse,
 } from "../types/auth.types";
 
@@ -174,5 +176,22 @@ export function useUpdatePassword() {
       // Redirect to login after password update
       router.push("/login?passwordUpdated=true");
     },
+  });
+}
+
+/**
+ * Hook for checking if email already exists
+ *
+ * Used during registration to validate email before proceeding
+ *
+ * @example
+ * ```tsx
+ * const { mutate: checkEmail, isPending, data } = useCheckEmail();
+ * checkEmail({ email: 'user@example.com' });
+ * ```
+ */
+export function useCheckEmail() {
+  return useMutation<CheckEmailResponse, ErrorResponse, CheckEmailRequest>({
+    mutationFn: authService.checkEmail,
   });
 }

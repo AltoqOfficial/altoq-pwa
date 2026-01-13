@@ -4,7 +4,7 @@ import { memo, useState, useMemo, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Typography, Button, Input, Select } from "@/components/atoms";
-import { useSignup } from "./hooks/useAuth";
+import { useSignup, useCheckEmail } from "./hooks/useAuth";
 import { ErrorAlert, InlineError } from "./components/AuthAlerts";
 import type { SignupFormState } from "./types/auth.types";
 
@@ -43,11 +43,11 @@ const MOTIVATION_OPTIONS = [
 ];
 
 const PROFILE_OPTIONS = [
-  { value: "student", label: "Estudiante" },
-  { value: "professional", label: "Profesional" },
-  { value: "entrepreneur", label: "Emprendedor" },
-  { value: "retired", label: "Jubilado" },
-  { value: "other", label: "Otro" },
+  { value: "student", label: "Estudiante Universitario" },
+  { value: "city_changer", label: "Ciudadano con ganas del cambio" },
+  { value: "journalist", label: "Periodista" },
+  { value: "first_time_voter", label: "Mi primera vez votando" },
+  { value: "none", label: "Ninguno" },
 ];
 
 // ==================== Sub-Components ====================
@@ -211,8 +211,10 @@ export const RegisterForm = memo(function RegisterForm() {
     profileCode: "",
   });
   const [validationError, setValidationError] = useState<string | null>(null);
+  const [isCheckingEmail, setIsCheckingEmail] = useState(false);
 
   const { mutate: signup, isPending, error, reset } = useSignup();
+  const { mutateAsync: checkEmail } = useCheckEmail();
 
   // Password validation
   const passwordValidation = useMemo<PasswordValidation>(
@@ -253,7 +255,7 @@ export const RegisterForm = memo(function RegisterForm() {
     goToStep(stepMap[currentStep]);
   }, [currentStep, goToStep]);
 
-  const handleNextFromEmail = useCallback(() => {
+  const handleNextFromEmail = useCallback(async () => {
     if (!formData.email.trim()) {
       setValidationError("El correo es requerido");
       return;
@@ -262,8 +264,29 @@ export const RegisterForm = memo(function RegisterForm() {
       setValidationError("Ingresa un correo válido");
       return;
     }
-    goToStep("password");
-  }, [formData.email, goToStep]);
+
+    // Verificar si el correo ya existe
+    setIsCheckingEmail(true);
+    try {
+      const result = await checkEmail({ email: formData.email.trim() });
+      if (result.exists) {
+        setValidationError(
+          "Este correo ya está registrado. Intenta iniciar sesión o usa otro correo."
+        );
+        return;
+      }
+      goToStep("password");
+    } catch (err) {
+      // Mostrar error si no se puede verificar el correo
+      const errorMessage =
+        err instanceof Error
+          ? err.message
+          : "No se pudo verificar el correo. Intenta de nuevo.";
+      setValidationError(errorMessage);
+    } finally {
+      setIsCheckingEmail(false);
+    }
+  }, [formData.email, goToStep, checkEmail]);
 
   const handleNextFromPassword = useCallback(() => {
     if (!isPasswordValid) {
@@ -343,6 +366,7 @@ export const RegisterForm = memo(function RegisterForm() {
           size="lg"
           value={formData.email}
           onChange={(e) => handleInputChange("email", e.target.value)}
+          disabled={isCheckingEmail}
         />
 
         {renderError()}
@@ -353,8 +377,35 @@ export const RegisterForm = memo(function RegisterForm() {
           size="lg"
           className="w-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
           onClick={handleNextFromEmail}
+          disabled={isCheckingEmail}
         >
-          Siguiente
+          {isCheckingEmail ? (
+            <span className="flex items-center justify-center gap-2">
+              <svg
+                className="animate-spin h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                />
+              </svg>
+              Verificando...
+            </span>
+          ) : (
+            "Siguiente"
+          )}
         </Button>
       </div>
 

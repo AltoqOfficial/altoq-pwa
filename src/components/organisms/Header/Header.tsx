@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { Logo } from "@/components/atoms/Logo";
@@ -9,20 +10,26 @@ import { cn } from "@/lib/utils";
 import { useUserProfile } from "@/hooks/useUserProfile";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
 
+// Rutas que tienen fondo oscuro
+const DARK_BACKGROUND_ROUTES = ["/formulario-candidato"];
+
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const userMenuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
   const { user, isLoading } = useUserProfile();
   const { mutate: logout, isPending: isLoggingOut } = useLogout();
 
   const isAuthenticated = !!user && !isLoading;
+  const isDarkBackground = DARK_BACKGROUND_ROUTES.some((route) =>
+    pathname.startsWith(route)
+  );
 
   const navLinks = [
     { href: "/compara", label: "Comparar" },
     { href: "/formulario-candidato", label: "Candidato Ideal" },
     { href: "/#como-funciona", label: "¿Cómo funciona?" },
-    { href: "/sugerencias", label: "Sugerencias" },
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -58,7 +65,11 @@ export function Header() {
     <header className="relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         {/* Logo */}
-        <Logo variant="default" asLink priority />
+        <Logo
+          variant={isDarkBackground ? "white" : "default"}
+          asLink
+          priority
+        />
 
         {/* Desktop Navigation - Center */}
         <nav className="hidden md:flex items-center gap-8">
@@ -67,8 +78,10 @@ export function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary-600",
-                "text-neutral-900"
+                "text-sm font-medium transition-colors",
+                isDarkBackground
+                  ? "text-white hover:text-white/80"
+                  : "text-neutral-900 hover:text-primary-600"
               )}
             >
               {link.label}
@@ -86,13 +99,21 @@ export function Header() {
             <div className="relative" ref={userMenuRef}>
               <button
                 onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
-                className="flex items-center gap-3 px-4 py-2 rounded-2xl hover:bg-gray-100 transition-colors"
+                className={cn(
+                  "flex items-center gap-3 px-4 py-2 rounded-2xl transition-colors",
+                  isDarkBackground ? "hover:bg-white/10" : "hover:bg-gray-100"
+                )}
               >
                 {/* Avatar */}
                 <div className="w-9 h-9 rounded-full bg-[#FF2727] flex items-center justify-center text-white font-bold text-sm">
                   {userInitial}
                 </div>
-                <span className="text-sm font-medium text-gray-900 max-w-[120px] truncate">
+                <span
+                  className={cn(
+                    "text-sm font-medium max-w-[120px] truncate",
+                    isDarkBackground ? "text-white" : "text-gray-900"
+                  )}
+                >
                   {displayName}
                 </span>
                 {/* Arrow */}
@@ -107,7 +128,8 @@ export function Header() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className={cn(
-                    "text-gray-500 transition-transform duration-200",
+                    "transition-transform duration-200",
+                    isDarkBackground ? "text-white/70" : "text-gray-500",
                     isUserMenuOpen ? "rotate-180" : ""
                   )}
                 >
@@ -196,18 +218,29 @@ export function Header() {
             animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
             className={cn(
               "w-6 h-0.5 block transition-colors",
-              isOpen ? "bg-neutral-900" : "bg-neutral-900"
+              isOpen
+                ? "bg-neutral-900"
+                : isDarkBackground
+                  ? "bg-white"
+                  : "bg-neutral-900"
             )}
           />
           <motion.span
             animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="w-6 h-0.5 block bg-neutral-900 transition-colors"
+            className={cn(
+              "w-6 h-0.5 block transition-colors",
+              isDarkBackground ? "bg-white" : "bg-neutral-900"
+            )}
           />
           <motion.span
             animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
             className={cn(
               "w-6 h-0.5 block transition-colors",
-              isOpen ? "bg-neutral-900" : "bg-neutral-900"
+              isOpen
+                ? "bg-neutral-900"
+                : isDarkBackground
+                  ? "bg-white"
+                  : "bg-neutral-900"
             )}
           />
         </button>

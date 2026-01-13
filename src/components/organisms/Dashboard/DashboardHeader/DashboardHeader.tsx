@@ -2,18 +2,35 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "@/contexts";
+import { cn } from "@/lib/utils";
 
 interface DashboardHeaderProps {
   onMenuClick: () => void;
 }
 
 export function DashboardHeader({ onMenuClick }: DashboardHeaderProps) {
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
+
   return (
-    <header className="sticky top-0 z-30 flex items-center justify-between h-16 px-4 bg-white border-b border-gray-100 lg:hidden">
+    <header
+      className={cn(
+        "sticky top-0 z-30 flex items-center justify-between h-16 px-4 lg:hidden transition-colors",
+        isDark
+          ? "bg-[#1a1a1a] border-b border-white/10"
+          : "bg-white border-b border-gray-100"
+      )}
+    >
       {/* Menu Button */}
       <button
         onClick={onMenuClick}
-        className="p-2 -ml-2 text-gray-600 hover:text-gray-900 transition-colors"
+        className={cn(
+          "p-2 -ml-2 transition-colors",
+          isDark
+            ? "text-white/60 hover:text-white"
+            : "text-gray-600 hover:text-gray-900"
+        )}
         aria-label="Abrir menú"
       >
         <svg
@@ -40,7 +57,7 @@ export function DashboardHeader({ onMenuClick }: DashboardHeaderProps) {
           alt="Altoq"
           width={70}
           height={28}
-          className="h-7 w-auto"
+          className={cn("h-7 w-auto", isDark && "brightness-0 invert")}
         />
       </Link>
 

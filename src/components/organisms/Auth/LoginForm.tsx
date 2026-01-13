@@ -3,6 +3,7 @@
 import { memo, useState, type FormEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Typography, Button, Input } from "@/components/atoms";
 import { useLogin } from "./hooks/useAuth";
 import {
@@ -33,8 +34,15 @@ export const LoginForm = memo(function LoginForm() {
   const [resendStatus, setResendStatus] = useState<"idle" | "sending" | "sent">(
     "idle"
   );
+  const [dismissedRegisteredMessage, setDismissedRegisteredMessage] =
+    useState(false);
 
+  const searchParams = useSearchParams();
   const { mutate: login, isPending, error, reset } = useLogin();
+
+  // Derivar si mostrar mensaje de registro exitoso
+  const showRegisteredMessage =
+    searchParams.get("registered") === "true" && !dismissedRegisteredMessage;
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -57,10 +65,13 @@ export const LoginForm = memo(function LoginForm() {
 
   const handleInputChange = (field: keyof LoginFormState, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
-    // Clear error when user starts typing
+    // Clear messages when user starts typing
     if (error) {
       reset();
       setResendStatus("idle");
+    }
+    if (showRegisteredMessage) {
+      setDismissedRegisteredMessage(true);
     }
   };
 
@@ -93,6 +104,14 @@ export const LoginForm = memo(function LoginForm() {
           ¡Hola de Nuevo!
         </h3>
       </div>
+
+      {/* Mensaje de registro exitoso */}
+      {showRegisteredMessage && (
+        <SuccessAlert
+          title="¡Registro exitoso!"
+          description="Se envió un correo de confirmación a tu email. Revisa tu bandeja de entrada y confirma tu cuenta para poder iniciar sesión."
+        />
+      )}
 
       <form className="space-y-6 mb-5" onSubmit={handleSubmit}>
         <Input

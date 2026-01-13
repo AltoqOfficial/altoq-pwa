@@ -8,3 +8,4 @@ export {
 export { DashboardIcon, CompareIcon, SettingsIcon, UserIcon } from "./icons";
 export { DashboardHeader } from "./DashboardHeader";
 export { DashboardLayout } from "./DashboardLayout";
+export { SettingsModal } from "./SettingsModal";
