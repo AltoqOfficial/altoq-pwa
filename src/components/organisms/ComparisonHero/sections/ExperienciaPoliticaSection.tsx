@@ -110,10 +110,14 @@ const TimelineItem = ({
 }) => (
   <div className="flex flex-col relative pt-6 shrink-0 w-32 md:w-64">
     {/* Dot on line */}
-    <div
-      className="absolute top-0 left-0 w-5 h-5 rounded-full z-10 bg-noise-pattern"
-      style={{ backgroundColor: color }}
-    />
+    <div className="absolute top-0 left-0 w-5 h-5 z-10">
+      <SourceTooltip source={source} className="block w-full h-full">
+        <div
+          className="w-full h-full rounded-full bg-noise-pattern"
+          style={{ backgroundColor: color }}
+        />
+      </SourceTooltip>
+    </div>
     <Typography
       variant="h6"
       weight="700"

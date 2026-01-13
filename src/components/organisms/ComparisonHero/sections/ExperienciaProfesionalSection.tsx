@@ -39,10 +39,12 @@ function TimelineItem({
       }`}
     >
       {/* Punto circular con color del candidato */}
-      <div
-        className="w-3 h-3 rounded-full shrink-0 z-10 bg-noise-pattern"
-        style={{ backgroundColor: dotColor }}
-      />
+      <SourceTooltip source={source} className="shrink-0 z-10 w-5! h-5!">
+        <div
+          className="w-full h-full rounded-full bg-noise-pattern"
+          style={{ backgroundColor: dotColor }}
+        />
+      </SourceTooltip>
 
       {/* Contenido: años y cargo debajo del punto */}
       <div
@@ -189,7 +191,7 @@ export function ExperienciaGestionSection({
           {publicExperiences.length > 0 ? (
             <div className="relative mt-8">
               {/* Línea horizontal fija */}
-              <div className="absolute top-[6px] left-0 w-full h-[2px] bg-white" />
+              <div className="absolute top-[10px] left-0 w-full h-[2px] bg-white" />
 
               {/* Contenedor con scroll horizontal */}
               <div className="flex gap-6 overflow-x-auto lg:justify-between lg:overflow-x-visible pb-4 scrollbar-hide">
@@ -232,7 +234,7 @@ export function ExperienciaGestionSection({
           {privateExperiences.length > 0 ? (
             <div className="relative mt-8">
               {/* Línea horizontal fija */}
-              <div className="absolute top-[6px] left-0 w-full h-[2px] bg-white" />
+              <div className="absolute top-[10px] left-0 w-full h-[2px] bg-white" />
 
               {/* Contenedor con scroll horizontal */}
               <div className="flex gap-6 overflow-x-auto lg:justify-between lg:overflow-x-visible pb-4 scrollbar-hide">

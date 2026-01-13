@@ -46,7 +46,19 @@
         "Renovación Popular (Fundador y Presidente, cambio de nombre en 2020)"
       ],
       "source": ["https://youtu.be/VPpNTERo9bo"]
-    }
+    },
+    "historialPartidos": [
+      {
+        "ano": "2020",
+        "partido": "Solidaridad Nacional",
+        "icono": "/partidos/solidaridadNacionalIcon.webp"
+      },
+      {
+        "ano": "2020",
+        "partido": "Renovación Popular",
+        "icono": "/partidos/renovacionPopularIcon.webp"
+      }
+    ]
   },
 
   "experienciaPolitica": {

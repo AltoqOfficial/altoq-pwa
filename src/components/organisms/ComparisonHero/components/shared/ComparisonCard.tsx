@@ -348,6 +348,62 @@ export function MobileComparisonCard({
             </div>
           </div>
         </div>
+
+        {/* HISTORIAL DE PARTIDOS */}
+        {candidate.perfilGeneral?.historialPartidos &&
+          candidate.perfilGeneral.historialPartidos.length > 0 && (
+            <div className="w-full mt-4">
+              <Typography
+                variant="small"
+                font="atNameSans"
+                className="text-white text-[10px] font-black uppercase tracking-wider mb-3 text-left"
+              >
+                HISTORIAL DE PARTIDOS
+              </Typography>
+              {/* Timeline Container */}
+              <div className="relative pl-6">
+                {/* Vertical Line with Noise Effect */}
+                <div
+                  className="absolute left-[9px] top-0 bottom-0 w-[3px] rounded-full bg-noise-pattern"
+                  style={{ backgroundColor: color }}
+                />
+
+                {/* Timeline Items */}
+                <div className="flex flex-col gap-4">
+                  {candidate.perfilGeneral.historialPartidos.map(
+                    (partido, index) => (
+                      <div
+                        key={index}
+                        className="relative flex items-start gap-3"
+                      >
+                        {/* Circle */}
+                        <div
+                          className="absolute -left-6 top-0.5 w-4 h-4 md:w-5 md:h-5 rounded-full shrink-0 bg-noise-pattern"
+                          style={{ backgroundColor: color }}
+                        />
+
+                        {/* Content */}
+                        <div className="flex flex-col items-start pt-0.5">
+                          <Typography
+                            font="atNameSans"
+                            className="text-white text-[11px] md:text-xs font-bold leading-none"
+                          >
+                            {partido.ano}
+                          </Typography>
+                          <Typography
+                            font="atNameSans"
+                            className="text-white/90 text-sm md:text-base font-light leading-tight"
+                          >
+                            {partido.partido}
+                          </Typography>
+                        </div>
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
       </div>
     </div>
   );

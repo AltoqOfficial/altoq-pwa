@@ -42,14 +42,14 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
       {/* Descripción */}
       <div>
         <Typography
-          className={`text-[9px] lg:text-xs font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
+          className={`text-sm lg:text-md font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
           style={{ backgroundColor: color }}
         >
           DESCRIPCIÓN
         </Typography>
         <Typography
           color="white"
-          className={`text-[8px] lg:text-[11px] font-atName font-light leading-tight ${textAlign}`}
+          className={`text-xs lg:text-sm font-atName font-light leading-tight ${textAlign}`}
         >
           {data.descripcion || "Sin información disponible"}
         </Typography>
@@ -58,14 +58,14 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
       {/* Viabilidad */}
       <div>
         <Typography
-          className={`text-[9px] lg:text-xs font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
+          className={`text-sm lg:text-md font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
           style={{ backgroundColor: color }}
         >
           VIABILIDAD
         </Typography>
         <Typography
           color="white"
-          className={`text-[8px] lg:text-[11px] font-atName font-light leading-tight ${textAlign}`}
+          className={`text-sm lg:text-md font-atName font-light leading-tight ${textAlign}`}
         >
           {data.viabilidad || "Sin información disponible"}
         </Typography>
@@ -74,14 +74,14 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
       {/* Respaldado por */}
       <div>
         <Typography
-          className={`text-[9px] lg:text-xs font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
+          className={`text-s lg:text-md font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
           style={{ backgroundColor: color }}
         >
           RESPALDADO POR
         </Typography>
         <Typography
           color="white"
-          className={`text-[8px] lg:text-[11px] font-atName font-light leading-tight ${textAlign}`}
+          className={`text-xs lg:text-sm font-atName font-light leading-tight ${textAlign}`}
         >
           {data.respaldo || "Sin información disponible"}
         </Typography>
@@ -100,15 +100,12 @@ export function PropuestasPrincipalesSection({
 }: DynamicSectionProps) {
   const [selectedCategory, setSelectedCategory] =
     useState<CategoryValue>("institucional");
-  const [expandedProposals, setExpandedProposals] = useState<{
-    [key: string]: boolean;
-  }>({});
+  // Solo una propuesta abierta a la vez (acordeón exclusivo)
+  const [expandedProposal, setExpandedProposal] = useState<string | null>(null);
 
   const toggleProposal = (key: string) => {
-    setExpandedProposals((prev) => ({
-      ...prev,
-      [key]: !prev[key],
-    }));
+    // Si la propuesta ya está abierta, la cerramos; si no, la abrimos y cerramos las demás
+    setExpandedProposal((prev) => (prev === key ? null : key));
   };
 
   // Obtener propuestas de la categoría seleccionada (pueden ser arrays o objetos)
@@ -234,7 +231,7 @@ export function PropuestasPrincipalesSection({
               )}
 
               {/* Línea INFERIOR: Conecta con el fondo del ítem actual */}
-              {(!isLast || expandedProposals[proposalKey]) && (
+              {(!isLast || expandedProposal === proposalKey) && (
                 <div
                   className="absolute left-1/2 -translate-x-1/2 w-[2px] bg-white bottom-0 z-0"
                   style={{
@@ -274,13 +271,13 @@ export function PropuestasPrincipalesSection({
                   onClick={() => toggleProposal(proposalKey)}
                   className="absolute left-1/2 -translate-x-1/2 top-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors z-20"
                   aria-label={
-                    expandedProposals[proposalKey]
+                    expandedProposal === proposalKey
                       ? "Colapsar propuesta"
                       : "Expandir propuesta"
                   }
                   disabled={!leftProposal.titulo && !rightProposal.titulo}
                 >
-                  {expandedProposals[proposalKey] ? (
+                  {expandedProposal === proposalKey ? (
                     <ChevronUp className="w-4 h-4 lg:w-5 lg:h-5 text-black" />
                   ) : (
                     <ChevronDown className="w-4 h-4 lg:w-5 lg:h-5 text-black" />
@@ -307,7 +304,7 @@ export function PropuestasPrincipalesSection({
               </div>
 
               {/* Contenido expandible */}
-              {expandedProposals[proposalKey] && (
+              {expandedProposal === proposalKey && (
                 <div className="grid grid-cols-2 gap-4 lg:gap-12 mt-8">
                   {/* Contenido izquierda */}
                   <ProposalDetail

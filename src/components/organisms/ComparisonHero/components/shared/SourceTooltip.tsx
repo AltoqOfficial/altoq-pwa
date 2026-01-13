@@ -330,12 +330,7 @@ export function SourceTooltip({
         createPortal(
           <div
             ref={tooltipContentRef}
-            className={`
-              absolute z-9999
-              transition-all duration-200 ease-out
-              ${isVisible ? "opacity-100 pointer-events-auto scale-100" : "opacity-0 pointer-events-none scale-95"}
-              left-0 top-0
-            `}
+            className="absolute z-9999 left-0 top-0"
             style={{
               position: "absolute",
               top: coords.top,
@@ -353,6 +348,7 @@ export function SourceTooltip({
                 text-[#333333]
                 ${isMobile ? "p-3" : "p-4"}
                 text-left
+                animate-tooltip-in
               `}
             >
               {/* Content Wrapper for inline flow */}
@@ -394,8 +390,8 @@ export function SourceTooltip({
               <span
                 className={`absolute w-0 h-0 block ${
                   isTop
-                    ? "top-[calc(100%-1px)] border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"
-                    : "bottom-[calc(100%-1px)] border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-white"
+                    ? "top-[calc(100%-1px)] border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-white"
+                    : "bottom-[calc(100%-1px)] border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-white"
                 }`}
                 style={{
                   left: alignment === "left" ? ARROW_POS : "auto",

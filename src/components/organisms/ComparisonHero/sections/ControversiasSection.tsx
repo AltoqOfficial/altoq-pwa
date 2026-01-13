@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import type { CandidateComparisonData, ControversyData } from "@/data";
 import { Typography } from "@/components/atoms";
+import { SourceTooltip } from "../components/shared";
 
 interface DynamicSectionProps {
   leftCandidate: CandidateComparisonData | null;
@@ -59,13 +60,15 @@ function ControversyDetail({
           </div>
         )}
 
-        {/* Título/Descripción */}
-        <Typography
-          color="white"
-          className="text-xs lg:text-sm font-atName font-medium leading-tight"
-        >
-          {data.titulo}
-        </Typography>
+        {/* Título/Descripción con SourceTooltip */}
+        <SourceTooltip source={data.source}>
+          <Typography
+            color="white"
+            className="text-sm lg:text-base font-atName font-medium leading-tight"
+          >
+            {data.titulo}
+          </Typography>
+        </SourceTooltip>
       </div>
     </div>
   );
@@ -75,21 +78,14 @@ export function ControversiasSection({
   leftCandidate,
   rightCandidate,
 }: DynamicSectionProps) {
-  // Inicialmente todas expandidas para mejor visibilidad
-  const [expandedCategories, setExpandedCategories] = useState<{
-    [key: string]: boolean;
-  }>({
-    antecedentes: true,
-    procesosJudiciales: true,
-    declaraciones: true,
-    observaciones: true,
-  });
+  // Solo una categoría abierta a la vez (acordeón exclusivo)
+  const [expandedCategory, setExpandedCategory] = useState<string | null>(
+    "antecedentes"
+  );
 
   const toggleCategory = (key: string) => {
-    setExpandedCategories((prev) => ({
-      ...prev,
-      [key]: !prev[key],
-    }));
+    // Si la categoría ya está abierta, la cerramos; si no, la abrimos y cerramos las demás
+    setExpandedCategory((prev) => (prev === key ? null : key));
   };
 
   return (
@@ -144,7 +140,7 @@ export function ControversiasSection({
 
       <div className="relative space-y-8 px-4 lg:px-8">
         {CATEGORIES.map((category, index) => {
-          const isExpanded = expandedCategories[category.key];
+          const isExpanded = expandedCategory === category.key;
           const isFirst = index === 0;
           const isLast = index === CATEGORIES.length - 1;
           const showBadge = category.key === "procesosJudiciales";
@@ -164,14 +160,6 @@ export function ControversiasSection({
 
           return (
             <div key={category.key} className="relative pl-6 lg:pl-12">
-              {/* Línea SUPERIOR para conectar categorías (Alineada a la IZQUIERDA) */}
-              {!isFirst && (
-                <div
-                  className="absolute left-[11px] lg:left-[19px] -top-8 w-[2px] bg-white z-0"
-                  style={{ height: "2rem" }}
-                />
-              )}
-
               <div className="flex flex-col gap-6">
                 {/* HEADLINE DE CATEGORÍA */}
                 <div className="flex items-center relative z-10 box-border">

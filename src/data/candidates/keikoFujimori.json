@@ -64,7 +64,14 @@
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h",
         "https://rpp.pe/politica/judiciales/keiko-fujimori-de-casi-presidenta-de-la-republica-a-investigada-en-prision-por-el-caso-odebrecht-noticia-1160312#:~:text=Antes%20de%20terminar%20su%20periodo,las%20elecciones%20generales%20de%202011"
       ]
-    }
+    },
+    "historialPartidos": [
+      {
+        "ano": "2010",
+        "partido": "Fuerza Popular",
+        "icono": "/partidos/fuerzaPopulaIconr.webp"
+      }
+    ]
   },
 
   "experienciaPolitica": {

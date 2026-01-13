@@ -24,6 +24,12 @@ export interface ArrayWithSource {
 export type SourceableString = string | string[] | ValueWithSource;
 export type SourceableArray = string[] | ArrayWithSource;
 
+export interface PartidoHistorico {
+  ano: string;
+  partido: string;
+  icono?: string;
+}
+
 export interface PerfilGeneral {
   edad: SourceableString;
   nacimiento: SourceableString;
@@ -32,6 +38,7 @@ export interface PerfilGeneral {
   profesion: SourceableString;
   partidoActual: SourceableString;
   cambiosDePartido: SourceableString;
+  historialPartidos?: PartidoHistorico[];
 }
 
 export interface ExperienciaPolitica {
