@@ -1,12 +1,12 @@
 import {
   ForgotPasswordLayout,
-  ForgotPasswordForm,
+  UpdatePasswordForm,
 } from "@/components/organisms/Auth";
 
-export default function ForgotPasswordPage() {
+export default function UpdatePasswordPage() {
   return (
     <ForgotPasswordLayout>
-      <ForgotPasswordForm />
+      <UpdatePasswordForm />
     </ForgotPasswordLayout>
   );
 }
