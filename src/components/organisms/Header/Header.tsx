@@ -1,23 +1,58 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { Logo } from "@/components/atoms/Logo";
 import { cn } from "@/lib/utils";
+import { useUserProfile } from "@/hooks/useUserProfile";
+import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const userMenuRef = useRef<HTMLDivElement>(null);
+  const { user, isLoading } = useUserProfile();
+  const { mutate: logout, isPending: isLoggingOut } = useLogout();
+
+  const isAuthenticated = !!user && !isLoading;
 
   const navLinks = [
     { href: "/compara", label: "Comparar" },
-    { href: "/candidato-ideal", label: "Candidato Ideal" },
+    { href: "/formulario-candidato", label: "Candidato Ideal" },
     { href: "/#como-funciona", label: "¿Cómo funciona?" },
     { href: "/sugerencias", label: "Sugerencias" },
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  // Close user menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        userMenuRef.current &&
+        !userMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsUserMenuOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleLogout = () => {
+    setIsUserMenuOpen(false);
+    setIsOpen(false);
+    logout();
+  };
+
+  // Get first name or initial
+  const displayName = user?.fullName?.split(" ")[0] || "Usuario";
+  const userInitial = displayName.charAt(0).toUpperCase();
 
   return (
     <header className="relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300">
@@ -41,14 +76,114 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Login Button - Right Desktop */}
+        {/* Right Section - Desktop */}
         <div className="hidden md:block">
-          <Link
-            href="/login"
-            className="inline-block bg-[#FF2727] hover:bg-[#E82323] text-white font-bold rounded-2xl px-6 py-3 transition-colors"
-          >
-            Iniciar sesión
-          </Link>
+          {isLoading ? (
+            // Loading state
+            <div className="w-24 h-10 bg-gray-200 rounded-2xl animate-pulse" />
+          ) : isAuthenticated ? (
+            // Authenticated - Show user menu
+            <div className="relative" ref={userMenuRef}>
+              <button
+                onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
+                className="flex items-center gap-3 px-4 py-2 rounded-2xl hover:bg-gray-100 transition-colors"
+              >
+                {/* Avatar */}
+                <div className="w-9 h-9 rounded-full bg-[#FF2727] flex items-center justify-center text-white font-bold text-sm">
+                  {userInitial}
+                </div>
+                <span className="text-sm font-medium text-gray-900 max-w-[120px] truncate">
+                  {displayName}
+                </span>
+                {/* Arrow */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className={cn(
+                    "text-gray-500 transition-transform duration-200",
+                    isUserMenuOpen ? "rotate-180" : ""
+                  )}
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+
+              {/* Dropdown Menu */}
+              <AnimatePresence>
+                {isUserMenuOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute right-0 top-full mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden z-50"
+                  >
+                    <Link
+                      href="/dashboard"
+                      className="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                      onClick={() => setIsUserMenuOpen(false)}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <rect width="7" height="9" x="3" y="3" rx="1" />
+                        <rect width="7" height="5" x="14" y="3" rx="1" />
+                        <rect width="7" height="9" x="14" y="12" rx="1" />
+                        <rect width="7" height="5" x="3" y="16" rx="1" />
+                      </svg>
+                      Dashboard
+                    </Link>
+                    <div className="h-px bg-gray-100" />
+                    <button
+                      onClick={handleLogout}
+                      disabled={isLoggingOut}
+                      className="flex items-center gap-3 w-full px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF2727] transition-colors disabled:opacity-50"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                        <polyline points="16 17 21 12 16 7" />
+                        <line x1="21" y1="12" x2="9" y2="12" />
+                      </svg>
+                      {isLoggingOut ? "Cerrando..." : "Cerrar sesión"}
+                    </button>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          ) : (
+            // Not authenticated - Show login button
+            <Link
+              href="/login"
+              className="inline-block bg-[#FF2727] hover:bg-[#E82323] text-white font-bold rounded-2xl px-6 py-3 transition-colors"
+            >
+              Iniciar sesión
+            </Link>
+          )}
         </div>
 
         {/* Mobile Menu Trigger */}
@@ -98,13 +233,45 @@ export function Header() {
                 </Link>
               ))}
               <div className="w-full h-px bg-neutral-100 my-2" />
-              <Link
-                href="/login"
-                className="w-full text-center bg-[#FF2727] hover:bg-[#E82323] text-white font-bold rounded-2xl px-6 py-3 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Iniciar sesión
-              </Link>
+
+              {isAuthenticated ? (
+                // Authenticated mobile menu
+                <>
+                  {/* User info */}
+                  <div className="flex items-center gap-3 py-2">
+                    <div className="w-10 h-10 rounded-full bg-[#FF2727] flex items-center justify-center text-white font-bold">
+                      {userInitial}
+                    </div>
+                    <div>
+                      <p className="font-medium text-gray-900">{displayName}</p>
+                      <p className="text-sm text-gray-500">{user?.email}</p>
+                    </div>
+                  </div>
+                  <Link
+                    href="/dashboard"
+                    className="w-full text-center bg-[#FF2727] hover:bg-[#E82323] text-white font-bold rounded-2xl px-6 py-3 transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Ir al Dashboard
+                  </Link>
+                  <button
+                    onClick={handleLogout}
+                    disabled={isLoggingOut}
+                    className="w-full text-center border-2 border-gray-300 text-gray-700 font-bold rounded-2xl px-6 py-3 transition-colors hover:border-[#FF2727] hover:text-[#FF2727] disabled:opacity-50"
+                  >
+                    {isLoggingOut ? "Cerrando sesión..." : "Cerrar sesión"}
+                  </button>
+                </>
+              ) : (
+                // Not authenticated mobile menu
+                <Link
+                  href="/login"
+                  className="w-full text-center bg-[#FF2727] hover:bg-[#E82323] text-white font-bold rounded-2xl px-6 py-3 transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Iniciar sesión
+                </Link>
+              )}
             </motion.div>
           )}
         </AnimatePresence>

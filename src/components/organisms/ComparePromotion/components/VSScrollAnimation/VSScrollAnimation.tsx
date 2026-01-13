@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Button, Typography } from "@/components/atoms";
+import { useUserProfile } from "@/hooks/useUserProfile";
 
 // ============ PERFORMANCE UTILITIES ============
 // Debounce utility para optimizar el resize listener
@@ -563,6 +564,11 @@ export function VSScrollAnimation() {
   const windowWidth = useWindowWidth();
   const isMobile = windowWidth !== null && windowWidth < 768; // Tailwind md breakpoint
   const router = useRouter();
+  const { user } = useUserProfile();
+  const isAuthenticated = !!user;
+
+  // Get the appropriate href based on authentication status
+  const getDemoHref = () => (isAuthenticated ? "/dashboard" : "/compara");
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -668,9 +674,9 @@ export function VSScrollAnimation() {
                 variant="secondary"
                 size="lg"
                 className="w-full max-w-64 cursor-pointer"
-                onClick={() => router.push("/compara")}
+                onClick={() => router.push(getDemoHref())}
               >
-                Prueba la demo
+                {isAuthenticated ? "Ir al Dashboard" : "Prueba la demo"}
               </Button>
             </motion.div>
 
@@ -713,9 +719,9 @@ export function VSScrollAnimation() {
                 variant="secondary"
                 className="invert mt-6 cursor-pointer"
                 size={isMobile ? MOBILE_CONFIG.buttonSize : undefined}
-                onClick={() => router.push("/compara")}
+                onClick={() => router.push(getDemoHref())}
               >
-                Prueba la demo
+                {isAuthenticated ? "Ir al Dashboard" : "Prueba la demo"}
               </Button>
             </motion.div>
           </div>

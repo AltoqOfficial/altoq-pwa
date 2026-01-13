@@ -10,8 +10,7 @@ import {
   generateWebSiteSchema,
 } from "@/lib/config/seo";
 import { PWARegistration } from "@/components/organisms";
-import { Header } from "@/components/organisms/Header";
-import { Footer } from "@/components/organisms/Footer";
+import { ConditionalLayout } from "@/components/organisms/ConditionalLayout";
 import { GA_MEASUREMENT_ID } from "@/lib/analytics/gtag";
 import { Analytics } from "@/components/organisms/Analytics";
 import { QueryProvider } from "@/lib/providers/QueryProvider";
@@ -167,19 +166,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           {/* PWA Registration */}
           <PWARegistration />
 
-          {/* Main App Structure */}
-          <div className="flex min-h-screen flex-col">
-            {/* Header - Persists across all pages */}
-            <Header />
-
-            {/* Main Content - Changes per page */}
-            <main className="flex-1" id="main-content" role="main">
-              {children}
-            </main>
-
-            {/* Footer - Persists across all pages */}
-            <Footer />
-          </div>
+          {/* Conditional Layout - Shows Header/Footer for public pages, custom layout for dashboard */}
+          <ConditionalLayout>{children}</ConditionalLayout>
         </QueryProvider>
       </body>
     </html>

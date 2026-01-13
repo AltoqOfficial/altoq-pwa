@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/atoms/Button";
+import { useUserProfile } from "@/hooks/useUserProfile";
 
 /**
  * HeroSection Component (Organism)
@@ -13,6 +16,14 @@ import { Button } from "@/components/atoms/Button";
  * - Right: "Match" result card with candidate placeholder and obfuscated identity
  */
 export function HeroSection() {
+  const { user } = useUserProfile();
+  const isAuthenticated = !!user;
+
+  // Redirect to dashboard if authenticated, otherwise to the original path
+  const getHref = (defaultHref: string) => {
+    return isAuthenticated ? "/dashboard" : defaultHref;
+  };
+
   return (
     <section className="relative flex items-center justify-center min-h-auto lg:min-h-[85vh] w-full px-4 container mx-auto mb-10 mt-24 md:mt-28 lg:mt-0">
       <div className="w-full bg-primary-50/50 rounded-3xl md:rounded-[2.5rem] p-6 sm:p-8 md:p-12 lg:p-20 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20 overflow-hidden shadow-sm">
@@ -29,12 +40,14 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 pt-2 md:pt-4 justify-center lg:justify-start">
-            <Button className="rounded-full bg-primary-600 hover:bg-primary-700 text-white px-8 py-6 md:py-7 h-auto text-base md:text-lg w-full sm:w-auto shadow-xl shadow-primary-600/20 transition-all hover:scale-105">
-              ¿Cómo funciona?
-            </Button>
+            <Link href={getHref("/#como-funciona")}>
+              <Button className="font-flexo-bold rounded-full bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 md:py-4 h-auto text-base md:text-lg w-full sm:w-auto shadow-xl shadow-primary-600/20 transition-all hover:scale-105">
+                {isAuthenticated ? "Ir al Dashboard" : "¿Cómo funciona?"}
+              </Button>
+            </Link>
 
             <Link
-              href="/compara"
+              href={getHref("/compara")}
               className="px-6 py-4 font-bold text-neutral-900 hover:text-primary-600 transition-colors text-base md:text-lg"
             >
               Comparar candidatos
