@@ -199,7 +199,6 @@ export function ComparisonHero() {
 
   // Trigger delayed transition when selection is complete
   useEffect(() => {
-    let timer: NodeJS.Timeout;
     if (hasSelectedCandidates) {
       // Delay to allow user to see the selection/match (800ms)
       const timer = setTimeout(() => {

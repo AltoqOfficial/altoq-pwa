@@ -47,8 +47,6 @@ export function SourceTooltip({
   // Position state now stores absolute coordinates
   const [coords, setCoords] = useState({ top: 0, left: 0 });
   const [position, setPosition] = useState<"top" | "bottom">("top");
-  const [alignment, setAlignment] = useState<"left" | "right">("left");
-  const [horizontalOffset, setHorizontalOffset] = useState(0);
   const tooltipRef = useRef<HTMLSpanElement>(null);
   const contentRef = useRef<HTMLSpanElement>(null);
   const tooltipContentRef = useRef<HTMLDivElement>(null);
@@ -110,7 +108,6 @@ export function SourceTooltip({
       const rect = contentRef.current.getBoundingClientRect();
       const viewportWidth = window.innerWidth;
       const scrollY = window.scrollY;
-      const tooltipWidth = 320; // Max tooltip width
 
       // Determine which side - use prop if provided, otherwise detect from element position
       let isLeftSide: boolean;
@@ -136,9 +133,6 @@ export function SourceTooltip({
       }
 
       // Set alignment based on which side
-      setHorizontalOffset(0);
-      setAlignment("left"); // Always align tooltip to the left of anchor point
-
       // Vertical position
       const spaceAbove = rect.top;
       const tooltipHeight = 150; // Approximated max height

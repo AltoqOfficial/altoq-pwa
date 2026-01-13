@@ -141,7 +141,6 @@ export function ControversiasSection({
       <div className="relative space-y-8 px-4 lg:px-8">
         {CATEGORIES.map((category, index) => {
           const isExpanded = expandedCategory === category.key;
-          const isFirst = index === 0;
           const isLast = index === CATEGORIES.length - 1;
           const showBadge = category.key === "procesosJudiciales";
 
