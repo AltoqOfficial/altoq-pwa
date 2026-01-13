@@ -25,8 +25,10 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
     "@supabase/supabase-js": "^2.87.0",
+    "@tanstack/react-query": "^5.90.16",
     "@types/swagger-ui-react": "^5.18.0",
     "apexcharts": "^5.3.6",
+    "axios": "^1.13.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.24",
     "html-encoding-sniffer": "^6.0.0",
@@ -36,6 +38,7 @@
     "react": "19.2.3",
     "react-apexcharts": "^1.9.0",
     "react-dom": "19.2.3",
+    "react-hook-form": "^7.69.0",
     "recharts": "^3.5.1",
     "sharp": "^0.34.5",
     "swagger-ui-react": "^5.31.0",

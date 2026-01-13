@@ -42,7 +42,7 @@ export function Button({
 
   const variantStyles = {
     primary: "bg-primary-600 text-white hover:bg-primary-700",
-    secondary: "bg-neutral-900 text-white hover:bg-neutral-800",
+    secondary: "font-flexo-bold bg-neutral-900 text-white hover:bg-neutral-800",
     outline:
       "border-[0.5px] border-neutral-900 bg-white/90 text-neutral-900 hover:bg-neutral-900 hover:text-white hover:border-neutral-900",
     "outline-light":
