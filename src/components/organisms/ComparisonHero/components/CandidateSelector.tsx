@@ -272,7 +272,6 @@ export const CandidateSelector = memo(function CandidateSelector({
         offset: getMobileOffset(candidate),
       })),
     [
-      selectedCandidates,
       isDisabled,
       isLocked,
       getBackgroundColor,

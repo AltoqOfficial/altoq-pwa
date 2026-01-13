@@ -103,8 +103,6 @@ export function useSignup() {
  * ```
  */
 export function useLogout() {
-  const router = useRouter();
-
   const clearSessionAndRedirect = () => {
     // Clear tokens
     clearCookie("accessToken");

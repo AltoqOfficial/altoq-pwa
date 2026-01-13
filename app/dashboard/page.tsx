@@ -17,9 +17,5 @@ export const metadata: Metadata = {
  * - Electoral news
  */
 export default function DashboardPage() {
-  // TODO: Get user data from session/context
-  // For now, using placeholder
-  const userName = "{nombre}";
-
-  return <DashboardContent userName={userName} />;
+  return <DashboardContent />;
 }
