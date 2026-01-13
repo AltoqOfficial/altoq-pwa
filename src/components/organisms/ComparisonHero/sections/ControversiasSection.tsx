@@ -200,51 +200,82 @@ export function ControversiasSection({
                     )}
                     {/* Si es el último, la línea termina en el botón (no hay línea bajando) */}
 
-                    {hasContent ? (
-                      <div className="flex flex-col gap-8 lg:gap-10 pl-2 lg:pl-4">
-                        {Array.from({ length: maxItems }).map((_, i) => {
-                          const lItem = leftItems[i];
-                          const rItem = rightItems[i];
-                          return (
-                            <div
-                              key={i}
-                              className="grid grid-cols-2 gap-4 lg:gap-16 relative z-10"
+                    {/* Mostrar contenido o mensaje de sin evidencia por cada lado */}
+                    <div className="flex flex-col gap-8 lg:gap-10 pl-2 lg:pl-4">
+                      {/* Si ambos lados no tienen datos, mostrar mensaje en ambos */}
+                      {!hasContent ? (
+                        <div className="grid grid-cols-2 gap-4 lg:gap-16 relative z-10">
+                          <div className="flex justify-start pr-2 lg:pr-4">
+                            <Typography
+                              color="white"
+                              className="text-xs font-atName opacity-50"
                             >
-                              <div className="flex justify-start pr-2 lg:pr-4">
-                                {/* Alineación forzada a izquierda para ambos */}
-                                {lItem && (
-                                  <ControversyDetail
-                                    data={lItem}
-                                    color="#FF2727"
-                                    showBadge={showBadge}
-                                    // align="left" // Removed as per new ControversyDetail
-                                  />
-                                )}
+                              NO SE ENCONTRÓ EVIDENCIA
+                            </Typography>
+                          </div>
+                          <div className="flex justify-start pl-2 lg:pl-4">
+                            <Typography
+                              color="white"
+                              className="text-xs font-atName opacity-50"
+                            >
+                              NO SE ENCONTRÓ EVIDENCIA
+                            </Typography>
+                          </div>
+                        </div>
+                      ) : (
+                        <>
+                          {/* Renderizar los items - mostrando mensaje en primera fila si un lado está vacío */}
+                          {Array.from({ length: maxItems }).map((_, i) => {
+                            const lItem = leftItems[i];
+                            const rItem = rightItems[i];
+                            const showLeftEmptyMessage =
+                              i === 0 && leftItems.length === 0;
+                            const showRightEmptyMessage =
+                              i === 0 && rightItems.length === 0;
+
+                            return (
+                              <div
+                                key={i}
+                                className="grid grid-cols-2 gap-4 lg:gap-16 relative z-10"
+                              >
+                                <div className="flex justify-start pr-2 lg:pr-4">
+                                  {lItem ? (
+                                    <ControversyDetail
+                                      data={lItem}
+                                      color="#FF2727"
+                                      showBadge={showBadge}
+                                    />
+                                  ) : showLeftEmptyMessage ? (
+                                    <Typography
+                                      color="white"
+                                      className="text-xs font-atName opacity-50"
+                                    >
+                                      NO SE ENCONTRÓ EVIDENCIA
+                                    </Typography>
+                                  ) : null}
+                                </div>
+                                <div className="flex justify-start pl-2 lg:pl-4">
+                                  {rItem ? (
+                                    <ControversyDetail
+                                      data={rItem}
+                                      color="#4E58B4"
+                                      showBadge={showBadge}
+                                    />
+                                  ) : showRightEmptyMessage ? (
+                                    <Typography
+                                      color="white"
+                                      className="text-xs font-atName opacity-50"
+                                    >
+                                      NO SE ENCONTRÓ EVIDENCIA
+                                    </Typography>
+                                  ) : null}
+                                </div>
                               </div>
-                              <div className="flex justify-start pl-2 lg:pl-4">
-                                {rItem && (
-                                  <ControversyDetail
-                                    data={rItem}
-                                    color="#4E58B4"
-                                    showBadge={showBadge}
-                                    // align="right" // Removed as per new ControversyDetail
-                                  />
-                                )}
-                              </div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    ) : (
-                      <div className="text-center py-4 relative z-10 mx-auto max-w-md">
-                        <Typography
-                          color="white"
-                          className="text-xs font-atName opacity-50"
-                        >
-                          Sin controversias registradas
-                        </Typography>
-                      </div>
-                    )}
+                            );
+                          })}
+                        </>
+                      )}
+                    </div>
                   </div>
                 )}
 

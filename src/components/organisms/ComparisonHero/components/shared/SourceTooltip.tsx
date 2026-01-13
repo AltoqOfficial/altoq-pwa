@@ -24,6 +24,8 @@ interface SourceTooltipProps {
   source?: string | string[];
   description?: string;
   className?: string;
+  /** Force tooltip to appear on a specific side: 'left' centers in left half, 'right' centers in right half */
+  side?: "left" | "right";
 }
 
 /**
@@ -37,6 +39,7 @@ export function SourceTooltip({
   source,
   description,
   className = "",
+  side,
 }: SourceTooltipProps) {
   const tooltipId = useId();
   const [isVisible, setIsVisible] = useState(false);
@@ -101,49 +104,40 @@ export function SourceTooltip({
     };
   }, [isVisible, isMobile]);
 
-  // Calculate position to avoid overflow - specialized for Portal
+  // Calculate position to avoid overflow - specialized for Portal (aligned to text edge)
   const calculatePosition = useCallback(() => {
     if (contentRef.current) {
       const rect = contentRef.current.getBoundingClientRect();
       const viewportWidth = window.innerWidth;
       const scrollY = window.scrollY;
-      const tooltipWidth = isMobile === true ? 240 : 320; // Approximate tooltip width
+      const tooltipWidth = 320; // Max tooltip width
 
-      // Determine horizontal alignment based on screen side
-      const elementCenter = rect.left + rect.width / 2;
-      const isLeftScreen = elementCenter < viewportWidth / 2;
-      const newAlignment = isLeftScreen ? "left" : "right";
-
-      let anchorPoint = 0;
-      let offset = 0;
-      const padding = 12; // Padding from viewport edges
-      const ARROW_OFFSET = 24; // Distance from edge (not too close)
-
-      if (newAlignment === "left") {
-        // Points to start of text
-        anchorPoint = rect.left + Math.min(rect.width / 2, 20);
-        // Box starts at anchorPoint - ARROW_OFFSET
-        const idealLeft = anchorPoint - ARROW_OFFSET;
-        const idealRight = idealLeft + tooltipWidth;
-
-        if (idealRight > viewportWidth - padding) {
-          offset = viewportWidth - padding - idealRight;
-        }
+      // Determine which side - use prop if provided, otherwise detect from element position
+      let isLeftSide: boolean;
+      if (side) {
+        // Use explicit side prop
+        isLeftSide = side === "left";
       } else {
-        // Points to end of text
-        anchorPoint = rect.right - Math.min(rect.width / 2, 20);
-        // Box ends at anchorPoint + ARROW_OFFSET
-        // So Left is anchorPoint + ARROW_OFFSET - tooltipWidth
-        const idealRight = anchorPoint + ARROW_OFFSET;
-        const idealLeft = idealRight - tooltipWidth;
-
-        if (idealLeft < padding) {
-          offset = padding - idealLeft;
-        }
+        // Auto-detect from element position
+        const elementCenter = rect.left + rect.width / 2;
+        isLeftSide = elementCenter < viewportWidth / 2;
       }
 
-      setHorizontalOffset(offset);
-      setAlignment(newAlignment);
+      // Position the tooltip at the opposite edge of the text
+      // Left side text (right-aligned): tooltip appears at the LEFT edge of the text
+      // Right side text (left-aligned): tooltip appears at the LEFT edge of the text (where it starts)
+      let anchorX: number;
+      if (isLeftSide) {
+        // Left candidate: tooltip at the LEFT edge of the content (far left of their text)
+        anchorX = Math.max(20, rect.left);
+      } else {
+        // Right candidate: tooltip at the LEFT edge of their text (where text starts)
+        anchorX = Math.max(20, rect.left);
+      }
+
+      // Set alignment based on which side
+      setHorizontalOffset(0);
+      setAlignment("left"); // Always align tooltip to the left of anchor point
 
       // Vertical position
       const spaceAbove = rect.top;
@@ -158,11 +152,12 @@ export function SourceTooltip({
         top = rect.bottom + scrollY + 8;
       }
 
-      setCoords({ top, left: anchorPoint });
+      // Use the anchor position
+      setCoords({ top, left: anchorX });
       return newPosition;
     }
     return "top";
-  }, [isMobile]);
+  }, [side]);
 
   // Clear all timeouts
   const clearAllTimeouts = useCallback(() => {
@@ -298,22 +293,16 @@ export function SourceTooltip({
   };
 
   const isTop = position === "top";
-  const ARROW_POS = "24px"; // Consistent with calculation
 
-  // Transforms:
-  // Left Align: anchor is at ARROW_POS from left. So we shift Left by -ARROW_POS.
-  // Right Align: anchor is at ARROW_POS from right. So we shift Left by -100% + ARROW_POS.
-  const transformX =
-    alignment === "left"
-      ? `calc(-${ARROW_POS} + ${horizontalOffset}px)`
-      : `calc(-100% + ${ARROW_POS} + ${horizontalOffset}px)`;
+  // Transform: Align tooltip to anchor point and position vertically
+  const transformX = "0"; // Align left edge of tooltip to anchor point
   const transformY = isTop ? "-100%" : "0";
 
   return (
     <>
       <span
         ref={tooltipRef}
-        className={`relative w-full inline-block cursor-pointer ${className}`}
+        className={`relative inline-block cursor-pointer ${className}`}
         onClick={handleClick}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -394,12 +383,8 @@ export function SourceTooltip({
                     : "bottom-[calc(100%-1px)] border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-white"
                 }`}
                 style={{
-                  left: alignment === "left" ? ARROW_POS : "auto",
-                  right: alignment === "right" ? ARROW_POS : "auto",
-                  transform:
-                    alignment === "left"
-                      ? "translateX(-50%)"
-                      : "translateX(50%)",
+                  left: "24px",
+                  transform: "translateX(-50%)",
                 }}
               />
             </span>

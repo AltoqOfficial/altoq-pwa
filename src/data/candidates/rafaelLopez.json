@@ -51,12 +51,14 @@
       {
         "ano": "2020",
         "partido": "Solidaridad Nacional",
-        "icono": "/partidos/solidaridadNacionalIcon.webp"
+        "icono": "/partidos/solidaridadNacionalIcon.webp",
+        "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-lópez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
       },
       {
         "ano": "2020",
         "partido": "Renovación Popular",
-        "icono": "/partidos/renovacionPopularIcon.webp"
+        "icono": "/partidos/renovacionPopularIcon.webp",
+        "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-lópez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
       }
     ]
   },

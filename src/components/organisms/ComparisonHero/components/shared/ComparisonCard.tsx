@@ -361,10 +361,10 @@ export function MobileComparisonCard({
                 HISTORIAL DE PARTIDOS
               </Typography>
               {/* Timeline Container */}
-              <div className="relative pl-6">
+              <div className="relative">
                 {/* Vertical Line with Noise Effect */}
                 <div
-                  className="absolute left-[9px] top-0 bottom-0 w-[3px] rounded-full bg-noise-pattern"
+                  className="absolute left-[7px] md:left-[9px] top-0 bottom-0 w-[3px] rounded-full bg-noise-pattern"
                   style={{ backgroundColor: color }}
                 />
 
@@ -372,18 +372,17 @@ export function MobileComparisonCard({
                 <div className="flex flex-col gap-4">
                   {candidate.perfilGeneral.historialPartidos.map(
                     (partido, index) => (
-                      <div
-                        key={index}
-                        className="relative flex items-start gap-3"
-                      >
-                        {/* Circle */}
-                        <div
-                          className="absolute -left-6 top-0.5 w-4 h-4 md:w-5 md:h-5 rounded-full shrink-0 bg-noise-pattern"
-                          style={{ backgroundColor: color }}
-                        />
+                      <div key={index} className="flex items-start gap-3">
+                        {/* Circle with Tooltip */}
+                        <SourceTooltip source={partido.source}>
+                          <div
+                            className="w-4 h-4 md:w-5 md:h-5 rounded-full shrink-0 bg-noise-pattern cursor-pointer mt-0.5"
+                            style={{ backgroundColor: color }}
+                          />
+                        </SourceTooltip>
 
                         {/* Content */}
-                        <div className="flex flex-col items-start pt-0.5">
+                        <div className="flex flex-col items-start">
                           <Typography
                             font="atNameSans"
                             className="text-white text-[11px] md:text-xs font-bold leading-none"

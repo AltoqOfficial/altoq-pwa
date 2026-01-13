@@ -28,6 +28,7 @@ export interface PartidoHistorico {
   ano: string;
   partido: string;
   icono?: string;
+  source?: string | string[];
 }
 
 export interface PerfilGeneral {

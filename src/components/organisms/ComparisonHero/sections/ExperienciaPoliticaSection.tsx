@@ -1,10 +1,67 @@
 "use client";
 
+import { useRef, useCallback, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Typography } from "@/components/atoms";
 import type { CandidateComparisonData } from "@/data";
 import { SourceTooltip } from "../components/shared/SourceTooltip";
+
+/**
+ * Custom hook for drag-to-scroll functionality
+ */
+function useDragScroll() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    if (!containerRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - containerRef.current.offsetLeft);
+    setScrollLeft(containerRef.current.scrollLeft);
+    containerRef.current.style.cursor = "grabbing";
+  }, []);
+
+  const handleMouseUp = useCallback(() => {
+    setIsDragging(false);
+    if (containerRef.current) {
+      containerRef.current.style.cursor = "grab";
+    }
+  }, []);
+
+  const handleMouseMove = useCallback(
+    (e: React.MouseEvent) => {
+      if (!isDragging || !containerRef.current) return;
+      e.preventDefault();
+      const x = e.pageX - containerRef.current.offsetLeft;
+      const walk = (x - startX) * 1.5; // Scroll speed multiplier
+      containerRef.current.scrollLeft = scrollLeft - walk;
+    },
+    [isDragging, startX, scrollLeft]
+  );
+
+  const handleMouseLeave = useCallback(() => {
+    if (isDragging) {
+      setIsDragging(false);
+      if (containerRef.current) {
+        containerRef.current.style.cursor = "grab";
+      }
+    }
+  }, [isDragging]);
+
+  return {
+    containerRef,
+    isDragging,
+    handlers: {
+      onMouseDown: handleMouseDown,
+      onMouseUp: handleMouseUp,
+      onMouseMove: handleMouseMove,
+      onMouseLeave: handleMouseLeave,
+    },
+  };
+}
 
 interface DynamicSectionProps {
   leftCandidate: CandidateComparisonData | null;
@@ -140,6 +197,30 @@ const TimelineItem = ({
 );
 
 /**
+ * Scrollable Timeline Container with drag support
+ */
+const TimelineScrollContainer = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  const { containerRef, isDragging, handlers } = useDragScroll();
+
+  return (
+    <div
+      ref={containerRef}
+      className={`flex gap-10 md:gap-32 overflow-x-auto pt-12 pb-4 scrollbar-hide pl-0 pr-4 w-full max-w-full cursor-grab select-none ${
+        isDragging ? "cursor-grabbing" : ""
+      }`}
+      style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+      {...handlers}
+    >
+      {children}
+    </div>
+  );
+};
+
+/**
  * Experiencia Política Section - Timeline Layout
  */
 export function ExperienciaPoliticaSection({
@@ -215,8 +296,8 @@ export function ExperienciaPoliticaSection({
           {/* Main Horizontal Line - Fixed to viewport width to create the track effect */}
           <div className="absolute top-[57px] left-0 w-full h-0.5 bg-white bg-noise-pattern" />
 
-          {/* Single Horizontal Scroll Container */}
-          <div className="flex gap-10 md:gap-32 overflow-x-auto pt-12 pb-4 scrollbar-hide pl-0 pr-4 w-full max-w-full">
+          {/* Single Horizontal Scroll Container with drag support */}
+          <TimelineScrollContainer>
             {/* Cargos Publicos Group */}
             {cargos.length > 0 && (
               <div className="flex gap-4 shrink-0 relative">
@@ -270,14 +351,14 @@ export function ExperienciaPoliticaSection({
                 ))}
               </div>
             )}
-          </div>
+          </TimelineScrollContainer>
         </div>
       </div>
     );
   };
 
   return (
-    <div className="flex flex-col w-full max-w-full xl:max-w-[calc(100vw-40rem)] overflow-hidden">
+    <div className="flex flex-col w-full max-w-full overflow-hidden">
       {/* Top Candidate (Red/Left) */}
       <div className="w-full max-w-full border-b border-white/20 pb-8">
         {renderTimeline(leftCandidate, "left")}

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import type { CandidateComparisonData, ProposalData } from "@/data";
 import { Typography } from "@/components/atoms";
+import { SourceTooltip } from "../components/shared";
 
 interface DynamicSectionProps {
   leftCandidate: CandidateComparisonData | null;
@@ -47,15 +48,29 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
         >
           DESCRIPCIÓN
         </Typography>
-        <Typography
-          color="white"
-          className={`text-xs lg:text-sm font-atName font-light leading-tight ${textAlign}`}
-        >
-          {data.descripcion || "Sin información disponible"}
-        </Typography>
+        {data.source ? (
+          <SourceTooltip
+            source={data.source}
+            side={align === "left" ? "left" : "right"}
+          >
+            <Typography
+              color="white"
+              className={`text-xs lg:text-sm font-atName font-light leading-tight ${textAlign} cursor-help`}
+            >
+              {data.descripcion || "NO SE ENCONTRÓ EVIDENCIA"}
+            </Typography>
+          </SourceTooltip>
+        ) : (
+          <Typography
+            color="white"
+            className={`text-xs lg:text-sm font-atName font-light leading-tight ${textAlign} opacity-50`}
+          >
+            {data.descripcion || "NO SE ENCONTRÓ EVIDENCIA"}
+          </Typography>
+        )}
       </div>
 
-      {/* Viabilidad */}
+      {/* Viabilidad - Comentado temporalmente
       <div>
         <Typography
           className={`text-sm lg:text-md font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
@@ -67,11 +82,12 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
           color="white"
           className={`text-sm lg:text-md font-atName font-light leading-tight ${textAlign}`}
         >
-          {data.viabilidad || "Sin información disponible"}
+          {data.viabilidad || "NO SE ENCONTRÓ EVIDENCIA"}
         </Typography>
       </div>
+      */}
 
-      {/* Respaldado por */}
+      {/* Respaldado por - Comentado temporalmente
       <div>
         <Typography
           className={`text-s lg:text-md font-atName font-black uppercase mb-2 ${textAlign} bg-noise-pattern bg-clip-text text-transparent`}
@@ -83,9 +99,10 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
           color="white"
           className={`text-xs lg:text-sm font-atName font-light leading-tight ${textAlign}`}
         >
-          {data.respaldo || "Sin información disponible"}
+          {data.respaldo || "NO SE ENCONTRÓ EVIDENCIA"}
         </Typography>
       </div>
+      */}
     </div>
   );
 }
