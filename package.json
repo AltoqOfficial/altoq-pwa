@@ -38,6 +38,7 @@
     "react": "19.2.3",
     "react-apexcharts": "^1.9.0",
     "react-dom": "19.2.3",
+    "react-hook-form": "^7.69.0",
     "recharts": "^3.5.1",
     "sharp": "^0.34.5",
     "swagger-ui-react": "^5.31.0",

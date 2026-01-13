@@ -96,6 +96,7 @@ export const SEO = {
 export const ROUTES = {
   HOME: "/",
   COMPARATOR: "/compara",
+  FORMULARIO_CANDIDATO: "/formulario-candidato",
 } as const;
 
 // Social Media Links
