@@ -1,10 +1,6 @@
 "use client";
-
-import Lottie from "lottie-react";
-
 import { Typography } from "@/components/atoms/Typography";
 import { Button } from "@/components/atoms/Button";
-import animationData from "@/../public/data.json";
 
 /**
  * SuggestionsSection Component (Organism)
@@ -24,17 +20,6 @@ export function SuggestionsSection() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-primary-900/20 via-transparent to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-neutral-950 to-transparent" />
         <div className="absolute inset-x-0 top-0 h-32 bg-linear-to-b from-neutral-950 to-transparent" />
-      </div>
-
-      {/* Lottie Animation Background */}
-      <div className="absolute inset-0 z-1 flex items-center justify-center opacity-25 sm:opacity-30 md:opacity-40">
-        <div className="h-full w-full max-w-[1400px]">
-          <Lottie
-            animationData={animationData}
-            loop={true}
-            className="h-full w-full"
-          />
-        </div>
       </div>
 
       {/* Content */}

@@ -263,7 +263,12 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
                 className
               )}
             >
-              <span className={cn(!hasValue && "text-transparent")}>
+              <span
+                className={cn(
+                  "block truncate pr-6",
+                  !hasValue && "text-transparent"
+                )}
+              >
                 {selectedOption?.label || placeholder}
               </span>
             </button>
@@ -315,7 +320,7 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
                       index === options.length - 1 && "rounded-b-[8px]"
                     )}
                   >
-                    {option.label}
+                    <span className="block truncate">{option.label}</span>
                   </button>
                 ))}
               </div>
@@ -383,7 +388,12 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
               className
             )}
           >
-            <span className={cn(!hasValue && "text-neutral-400")}>
+            <span
+              className={cn(
+                "block truncate pr-6",
+                !hasValue && "text-neutral-400"
+              )}
+            >
               {selectedOption?.label || placeholder}
             </span>
           </button>
@@ -446,7 +456,7 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
                       (variant === "outline" ? "rounded-b-[16px]" : "rounded-b")
                   )}
                 >
-                  {option.label}
+                  <span className="block truncate">{option.label}</span>
                 </button>
               ))}
             </div>

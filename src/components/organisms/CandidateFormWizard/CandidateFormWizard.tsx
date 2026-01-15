@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/atoms/Button";
 import { Logo } from "@/components/atoms/Logo";
 import { motion } from "framer-motion";
@@ -8,8 +9,18 @@ import { FormStep, AnswerValue } from "./types";
 import { FORM_SECTIONS } from "./constants";
 import { QuestionItem } from "./QuestionItem";
 import { MatchResults } from "./MatchResults";
+import { useUserProfile } from "@/hooks/useUserProfile";
 
 const FORM_STORAGE_KEY = "altoq_candidate_form_v2";
+
+// Loading messages that cycle during progress
+const LOADING_MESSAGES = [
+  "Estudiando tus respuestas...",
+  "Analizando tus preferencias...",
+  "Comparando con propuestas...",
+  "Procesando información...",
+  "Casi listo...",
+];
 
 export interface CandidateFormWizardProps {
   isOpen: boolean;
@@ -20,6 +31,10 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   isOpen,
   onClose,
 }) => {
+  const router = useRouter();
+  const { user, isLoading: isLoadingUser } = useUserProfile();
+  const isAuthenticated = !!user && !isLoadingUser;
+
   const [responses, setResponses] = useState<Record<string, AnswerValue>>(
     () => {
       if (typeof window !== "undefined") {
@@ -54,6 +69,12 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   const [isSuccess, setIsSuccess] = useState(false);
   const [progress, setProgress] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // Compute loading message based on progress (derived state, no useEffect needed)
+  const loadingMessage =
+    LOADING_MESSAGES[
+      Math.min(Math.floor(progress / 20), LOADING_MESSAGES.length - 1)
+    ];
 
   // Scroll to top when step changes
   useEffect(() => {
@@ -113,11 +134,20 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
       });
     }, interval);
 
-    // Backend simulation
-    console.log("Submitting final responses:", responses);
+    // Wait for progress to complete
     await new Promise((r) => setTimeout(r, duration + 500));
-
     clearInterval(timer);
+
+    // Check authentication status
+    if (!isAuthenticated) {
+      // Redirect unauthenticated users to login with message
+      setIsSubmitting(false);
+      router.push("/login?formPending=true");
+      return;
+    }
+
+    // Authenticated users see results
+    console.log("Submitting final responses:", responses);
     setIsSubmitting(false);
     setIsSuccess(true);
     localStorage.removeItem(FORM_STORAGE_KEY);
@@ -143,11 +173,12 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
         </motion.div>
 
         <motion.h2
+          key={loadingMessage}
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           className="text-white text-2xl md:text-3xl font-bold font-sohne-breit uppercase tracking-wider mb-4"
         >
-          Estudiando tus respuestas
+          {loadingMessage}
         </motion.h2>
 
         <motion.p

@@ -44,6 +44,9 @@ export const LoginForm = memo(function LoginForm() {
   const showRegisteredMessage =
     searchParams.get("registered") === "true" && !dismissedRegisteredMessage;
 
+  // Derivar si mostrar mensaje de formulario pendiente
+  const showFormPendingMessage = searchParams.get("formPending") === "true";
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -104,6 +107,19 @@ export const LoginForm = memo(function LoginForm() {
           ¡Hola de Nuevo!
         </h3>
       </div>
+
+      {/* Mensaje de formulario pendiente */}
+      {showFormPendingMessage && (
+        <div className="mb-6 p-5 bg-primary-50 border border-primary-200 rounded-2xl text-center">
+          <h4 className="font-flexo-bold text-xl text-primary-600 mb-2">
+            ¡Ya casi terminas!
+          </h4>
+          <p className="font-flexo text-sm text-neutral-600 leading-relaxed">
+            Inicia sesión o regístrate para completar tu Match Político y ver
+            los resultados.
+          </p>
+        </div>
+      )}
 
       {/* Mensaje de registro exitoso */}
       {showRegisteredMessage && (

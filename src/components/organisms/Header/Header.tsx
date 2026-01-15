@@ -27,8 +27,8 @@ export function Header() {
   );
 
   const navLinks = [
-    { href: "/compara", label: "Comparar" },
-    { href: "/formulario-candidato", label: "Candidato Ideal" },
+    { href: "/compara", label: "Comparar Candidatos" },
+    { href: "/formulario-candidato", label: "Match Político" },
     { href: "/#como-funciona", label: "¿Cómo funciona?" },
   ];
 
@@ -77,7 +77,7 @@ export function Header() {
         />
 
         {/* Desktop Navigation - Center */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-12">
           {navLinks.map((link) => (
             <Link
               key={link.href}

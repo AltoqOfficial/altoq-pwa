@@ -24,7 +24,7 @@ export function FAQSection() {
 
   return (
     <section id="faq" className="bg-white pb-20 faq">
-      <div className="container mx-auto px-4 md:grid md:grid-cols-2 gap-4 items-start">
+      <div className="container mx-auto px-8 md:px-16 lg:px-24 md:grid md:grid-cols-2 gap-4 items-start">
         {/* Section Header */}
         <div className="mb-16 flex justify-center items-center md:items-end flex-col px-2 md:px-0 order-first md:order-last">
           <Typography variant="h3" className="mb-4" weight="600" align="right">

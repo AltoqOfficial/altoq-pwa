@@ -27,7 +27,7 @@ export function IdealCandidateSection() {
     },
     {
       number: "3",
-      title: "Encuentra tu candidato ideal",
+      title: "Haz tu Match Político",
       description:
         "Te mostraremos qué candidatos se alinean mejor con tus valores y prioridades con base en sus propuestas.",
     },

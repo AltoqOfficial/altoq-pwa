@@ -358,7 +358,13 @@ export const RegisterForm = memo(function RegisterForm() {
         </h3>
       </div>
 
-      <div className="space-y-6">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleNextFromEmail();
+        }}
+        className="space-y-6"
+      >
         <Input
           variant="google"
           type="email"
@@ -373,10 +379,9 @@ export const RegisterForm = memo(function RegisterForm() {
 
         <Button
           variant="secondary"
-          type="button"
+          type="submit"
           size="lg"
           className="w-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
-          onClick={handleNextFromEmail}
           disabled={isCheckingEmail}
         >
           {isCheckingEmail ? (
@@ -407,7 +412,7 @@ export const RegisterForm = memo(function RegisterForm() {
             "Siguiente"
           )}
         </Button>
-      </div>
+      </form>
 
       <div className="flex flex-col items-center gap-2 mt-6">
         <Typography className="font-flexo text-base text-[#202020]">
@@ -433,7 +438,13 @@ export const RegisterForm = memo(function RegisterForm() {
         onBack={handleBack}
       />
 
-      <div className="space-y-8">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleNextFromPassword();
+        }}
+        className="space-y-8"
+      >
         <div className="relative">
           <Input
             variant="google"
@@ -513,15 +524,14 @@ export const RegisterForm = memo(function RegisterForm() {
 
         <Button
           variant="secondary"
-          type="button"
+          type="submit"
           size="lg"
           className="w-full mt-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
-          onClick={handleNextFromPassword}
           disabled={!isPasswordValid}
         >
           Siguiente
         </Button>
-      </div>
+      </form>
     </>
   );
 
@@ -535,7 +545,13 @@ export const RegisterForm = memo(function RegisterForm() {
         onBack={handleBack}
       />
 
-      <div className="space-y-8">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleNextFromProfile();
+        }}
+        className="space-y-8"
+      >
         <Input
           variant="google"
           type="text"
@@ -558,14 +574,13 @@ export const RegisterForm = memo(function RegisterForm() {
 
         <Button
           variant="secondary"
-          type="button"
+          type="submit"
           size="lg"
           className="w-full mt-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
-          onClick={handleNextFromProfile}
         >
           Siguiente
         </Button>
-      </div>
+      </form>
     </>
   );
 
@@ -579,7 +594,13 @@ export const RegisterForm = memo(function RegisterForm() {
         onBack={handleBack}
       />
 
-      <div className="space-y-8">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSubmit();
+        }}
+        className="space-y-8"
+      >
         <Select
           variant="google"
           placeholder="¿Qué te motiva a informarte sobre política?"
@@ -604,15 +625,14 @@ export const RegisterForm = memo(function RegisterForm() {
 
         <Button
           variant="secondary"
-          type="button"
+          type="submit"
           size="lg"
           className="w-full mt-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
-          onClick={handleSubmit}
           disabled={isPending}
         >
           {isPending ? <LoadingSpinner /> : "Siguiente"}
         </Button>
-      </div>
+      </form>
     </>
   );
 

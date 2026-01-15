@@ -36,7 +36,7 @@ export function CandidateFormHero({ onStartClick }: CandidateFormHeroProps) {
           align="left"
           className="mb-6 max-w-4xl text-white"
         >
-          Encuentra tu candidato ideal
+          Haz tu Match Político
         </Typography>
 
         <Typography
@@ -46,9 +46,8 @@ export function CandidateFormHero({ onStartClick }: CandidateFormHeroProps) {
           align="left"
           className="mb-6 max-w-md md:max-w-3xl text-white leading-relaxed text-sm md:text-base"
         >
-          Descubre al candidato presidencial que realmente conecta con tus
-          intereses políticos, valores y prioridades. Compara propuestas e
-          identifica afinidades clave.
+          Descubre qué candidatos coinciden más con tus preferencias al comparar
+          tus prioridades con las propuestas de sus planes de gobierno.
         </Typography>
 
         <Button
@@ -57,7 +56,7 @@ export function CandidateFormHero({ onStartClick }: CandidateFormHeroProps) {
           onClick={onStartClick}
           className="rounded-md px-10 h-10 w-full md:w-66 text-base md:text-lg hover:scale-105 transition-transform"
         >
-          Probar Ahora
+          Iniciar ahora
         </Button>
       </div>
 
