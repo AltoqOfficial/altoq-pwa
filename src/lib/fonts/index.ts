@@ -75,3 +75,26 @@ export const kenyanCoffee = localFont({
   variable: "--font-kenyan-coffee",
   display: "swap",
 });
+
+/**
+ * AT Name Sans Display Font Family
+ * Weights available:
+ * - Light
+ * - Black
+ */
+export const atNameSans = localFont({
+  src: [
+    {
+      path: "../../../public/fonts/AT-NameSansDisplay-Light.Trial.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../../public/fonts/AT-NameSansDisplay-Black.Trial.ttf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-at-name-sans",
+  display: "swap",
+});

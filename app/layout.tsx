@@ -1,5 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { testSohneBreit, testSohneSchmal, kenyanCoffee } from "@/lib/fonts";
+import {
+  testSohneBreit,
+  testSohneSchmal,
+  kenyanCoffee,
+  atNameSans,
+} from "@/lib/fonts";
 import Script from "next/script";
 
 import "./globals.css";
@@ -47,7 +52,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="es-PE"
-      className={`${testSohneBreit.variable} ${testSohneSchmal.variable} ${kenyanCoffee.variable}`}
+      className={`${testSohneBreit.variable} ${testSohneSchmal.variable} ${kenyanCoffee.variable} ${atNameSans.variable}`}
       suppressHydrationWarning
     >
       <head>

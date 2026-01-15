@@ -49,10 +49,11 @@ export function Logo({
     red: "",
   };
 
-  // En /compara, forzar el logo a blanco
-  const appliedFilter = isComparaPage
-    ? "brightness-0 invert"
-    : filterClasses[variant];
+  // En /compara, forzar el logo a blanco, a menos que se especifique rojo explícitamente
+  const appliedFilter =
+    isComparaPage && variant !== "red"
+      ? "brightness-0 invert"
+      : filterClasses[variant];
 
   const logoContent = (
     <Image

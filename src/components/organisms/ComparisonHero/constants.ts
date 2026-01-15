@@ -5,16 +5,16 @@
 export const NAV_ITEMS = [
   "Perfil General",
   "Experiencia Política",
-  "Experiencia de Gestión",
+  "Experiencia Profesional",
   "Ideología Política",
   "Propuestas Principales",
-  "Coherencia con el Plan",
+  /*   "Coherencia con el Plan", */
   "Controversias",
-  "Transparencia",
+  /*   "Transparencia",
   "Competencias personales",
   "Percepción Pública",
-  "Innovación y Visión",
-  "Historial Legislativo",
+  "Innovación y Visión", */
+  "Proyectos de Ley",
 ] as const;
 
 export interface Candidate {

@@ -9,12 +9,32 @@ import { cn } from "@/lib/utils";
 import { useUserProfile } from "@/hooks/useUserProfile";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
 
-export function Header() {
+interface HeaderProps {
+  className?: string;
+  forceShow?: boolean;
+  variant?: "default" | "transparent";
+}
+
+export function Header({
+  className,
+  forceShow,
+  variant = "default",
+}: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const userMenuRef = useRef<HTMLDivElement>(null);
   const { user, isLoading } = useUserProfile();
   const { mutate: logout, isPending: isLoggingOut } = useLogout();
+
+  // TODO: Restore auth hooks once modules are available
+  // const { user, isLoading } = useUserProfile();
+
+  // const user: any = null;
+  // const isLoading = false;
+
+  // const { mutate: logout, isPending: isLoggingOut } = useLogout();
+  // const logout = () => {};
+  // const isLoggingOut = false;
 
   const isAuthenticated = !!user && !isLoading;
 
@@ -55,7 +75,12 @@ export function Header() {
   const userInitial = displayName.charAt(0).toUpperCase();
 
   return (
-    <header className="relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300">
+    <header
+      className={cn(
+        "relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300",
+        className
+      )}
+    >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Logo variant="default" asLink priority />
@@ -68,7 +93,7 @@ export function Header() {
               href={link.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary-600",
-                "text-neutral-900"
+                variant === "transparent" ? "text-white" : "text-neutral-900"
               )}
             >
               {link.label}
@@ -86,13 +111,23 @@ export function Header() {
             <div className="relative" ref={userMenuRef}>
               <button
                 onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
-                className="flex items-center gap-3 px-4 py-2 rounded-2xl hover:bg-gray-100 transition-colors"
+                className={cn(
+                  "flex items-center gap-3 px-4 py-2 rounded-2xl transition-colors",
+                  variant === "transparent"
+                    ? "hover:bg-white/10 text-white"
+                    : "hover:bg-gray-100 text-gray-900"
+                )}
               >
                 {/* Avatar */}
                 <div className="w-9 h-9 rounded-full bg-[#FF2727] flex items-center justify-center text-white font-bold text-sm">
                   {userInitial}
                 </div>
-                <span className="text-sm font-medium text-gray-900 max-w-[120px] truncate">
+                <span
+                  className={cn(
+                    "text-sm font-medium max-w-[120px] truncate",
+                    variant === "transparent" ? "text-white" : "text-gray-900"
+                  )}
+                >
                   {displayName}
                 </span>
                 {/* Arrow */}
@@ -107,7 +142,8 @@ export function Header() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className={cn(
-                    "text-gray-500 transition-transform duration-200",
+                    "transition-transform duration-200",
+                    variant === "transparent" ? "text-white" : "text-gray-500",
                     isUserMenuOpen ? "rotate-180" : ""
                   )}
                 >
@@ -196,18 +232,27 @@ export function Header() {
             animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
             className={cn(
               "w-6 h-0.5 block transition-colors",
-              isOpen ? "bg-neutral-900" : "bg-neutral-900"
+              isOpen || variant === "transparent"
+                ? "bg-white"
+                : "bg-neutral-900"
             )}
           />
           <motion.span
             animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="w-6 h-0.5 block bg-neutral-900 transition-colors"
+            className={cn(
+              "w-6 h-0.5 block transition-colors",
+              isOpen || variant === "transparent"
+                ? "bg-white"
+                : "bg-neutral-900"
+            )}
           />
           <motion.span
             animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
             className={cn(
               "w-6 h-0.5 block transition-colors",
-              isOpen ? "bg-neutral-900" : "bg-neutral-900"
+              isOpen || variant === "transparent"
+                ? "bg-white"
+                : "bg-neutral-900"
             )}
           />
         </button>

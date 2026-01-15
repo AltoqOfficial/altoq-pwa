@@ -1,6 +1,5 @@
 import Link from "next/link";
-
-import { Logo } from "@/components/atoms/Logo/Logo";
+import Image from "next/image";
 import { Typography } from "@/components/atoms/Typography/Typography";
 import { SOCIAL_LINKS, CONTACT, EXTERNAL_LINKS } from "@/constants";
 
@@ -22,7 +21,14 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
           <div className="space-y-4 col-span-2 text-center flex flex-col items-center lg:col-span-1 lg:text-left lg:items-start lg:block">
-            <Logo variant="white" />
+            <div className="relative h-8 w-28 mb-6 lg:mb-10">
+              <Image
+                src="/images/logo/altoq.webp"
+                alt="Altoque"
+                fill
+                className="object-contain object-center lg:object-left"
+              />
+            </div>
             <Typography
               variant="h6"
               weight="400"
@@ -34,7 +40,7 @@ export function Footer() {
             <Typography
               variant="span"
               color="white"
-              className="text-neutral-400 opacity-70 hover:underline hover:cursor-pointer"
+              className="text-neutral-400 opacity-70 underline hover:cursor-pointer"
             >
               {CONTACT.email}
             </Typography>
@@ -42,65 +48,38 @@ export function Footer() {
           <div className="hidden lg:block"></div>
           {/* Quick Links */}
           <div className="space-y-4 mx-auto lg:mx-0">
-            <Typography variant="h6" className="font-semibold">
-              Enlaces Rápidos
-            </Typography>
             <nav className="flex flex-col space-y-2">
               <a
                 href={EXTERNAL_LINKS.volunteerForm}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-300 transition-colors hover:text-white"
+                className="text-white transition-colors hover:text-neutral-300"
               >
                 Únete como voluntario
               </a>
               <Link
                 href="/compara"
-                className="text-neutral-300 transition-colors hover:text-white"
+                className="text-white transition-colors hover:text-neutral-300"
               >
                 Comparar candidatos
               </Link>
               <Link
                 href="/#faq"
-                className="text-neutral-300 transition-colors hover:text-white"
+                className="text-white transition-colors hover:text-neutral-300"
               >
                 Preguntas Frecuentes
               </Link>
             </nav>
           </div>
 
-          {/* Legal Links */}
-          {/* <div className="space-y-4">
-            <Typography variant="h6" className="font-semibold">
-              Legal
-            </Typography>
-            <nav className="flex flex-col space-y-2">
-              <Link
-                href="/terminos"
-                className="text-sm text-neutral-300 transition-colors hover:text-white"
-              >
-                Términos y Condiciones
-              </Link>
-              <Link
-                href="/privacidad"
-                className="text-sm text-neutral-300 transition-colors hover:text-white"
-              >
-                Política de Privacidad
-              </Link>
-            </nav>
-          </div> */}
-
           {/* Social Media */}
           <div className="space-y-4 mx-auto lg:mx-0">
-            <Typography variant="h6" className="font-semibold">
-              Síguenos
-            </Typography>
             <div className="flex flex-col gap-1">
               <a
                 href={SOCIAL_LINKS.tiktok}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-300 transition-colors hover:text-white flex items-center gap-4"
+                className="text-white transition-colors hover:text-neutral-300 flex items-center gap-4"
                 aria-label="TikTok"
               >
                 <svg
@@ -121,7 +100,7 @@ export function Footer() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-300 transition-colors hover:text-white flex items-center gap-4"
+                className="text-white transition-colors hover:text-neutral-300 flex items-center gap-4"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -149,7 +128,7 @@ export function Footer() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-300 transition-colors hover:text-white flex items-center gap-4"
+                className="text-white transition-colors hover:text-neutral-300 flex items-center gap-4"
                 aria-label="Instagram"
               >
                 <svg
@@ -177,8 +156,8 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 border-t text-center border-neutral-800 pt-8">
-          <Typography variant="small" className="text-neutral-400">
+        <div className="mt-8 text-center pt-8">
+          <Typography variant="small" className="text-white">
             © {new Date().getFullYear()} Altoq. All rights reserved.
           </Typography>
         </div>

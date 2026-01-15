@@ -6,7 +6,7 @@ import { useState, useCallback } from "react";
  */
 export function useCandidateSelection(
   maxSelections = 2,
-  initialSelection: string[] = ["keiko", "lopez"]
+  initialSelection: string[] = []
 ) {
   const [selectedCandidates, setSelectedCandidates] =
     useState<string[]>(initialSelection);
