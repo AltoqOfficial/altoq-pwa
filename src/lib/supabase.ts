@@ -9,4 +9,14 @@ if (!supabaseUrl || !supabaseKey) {
   );
 }
 
-export const supabase = createClient(supabaseUrl, supabaseKey);
+export const supabase = createClient(supabaseUrl, supabaseKey, {
+  auth: {
+    // Disable auto-detecting auth tokens from URL to prevent
+    // unwanted password recovery flows on page load
+    detectSessionInUrl: false,
+    // Persist session in localStorage
+    persistSession: true,
+    // Auto refresh token before expiry
+    autoRefreshToken: true,
+  },
+});

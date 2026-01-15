@@ -24,8 +24,8 @@ type FontFamily =
   | "sohneBreit"
   | "sohneSchmal"
   | "kenyan"
-  | "atNameSans"
-  | "sohneExtraFett";
+  | "bigShoulders"
+  | "bilbo";
 
 /**
  * Font weight options
@@ -115,8 +115,8 @@ export const Typography = React.forwardRef<HTMLElement, TypographyProps>(
       sohneBreit: "font-sohne-breit",
       sohneSchmal: "font-sohne-schmal",
       kenyan: "font-kenyan",
-      atNameSans: "font-at-name-sans",
-      sohneExtraFett: "font-sohne-extrafett",
+      bigShoulders: "font-bigshoulders-black",
+      bilbo: "font-bilbo",
     };
 
     // Font weight styles (using numeric values for better control)

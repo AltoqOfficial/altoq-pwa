@@ -16,8 +16,8 @@ import { SOCIAL_LINKS, CONTACT, EXTERNAL_LINKS } from "@/constants";
  */
 export function Footer() {
   return (
-    <footer className="bg-noise-footer text-white">
-      <div className="container mx-auto px-6 py-12 md:px-40">
+    <footer className="border-t border-neutral-200 bg-[#202020] text-white">
+      <div className="container mx-auto px-6 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
           <div className="space-y-4 col-span-2 text-center flex flex-col items-center lg:col-span-1 lg:text-left lg:items-start lg:block">

@@ -265,7 +265,6 @@ export const CandidateSelector = memo(function CandidateSelector({
       CANDIDATES.map((candidate) => ({
         candidate,
         isDisabled: isDisabled(candidate),
-        isSelected: selectedCandidates.includes(candidate.id),
         isLocked: isLocked(candidate.id),
         backgroundColor: getBackgroundColor(candidate.id, candidate),
         imageFilter: getImageFilter(candidate),
@@ -273,7 +272,6 @@ export const CandidateSelector = memo(function CandidateSelector({
         offset: getMobileOffset(candidate),
       })),
     [
-      selectedCandidates,
       isDisabled,
       isLocked,
       getBackgroundColor,

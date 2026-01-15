@@ -1,3 +1,23 @@
 export { Header } from "./Header";
 export { PWARegistration } from "./PWARegistration";
 export { Footer } from "./Footer";
+export { CandidateFormHero } from "./CandidateFormHero";
+export { HeroSection } from "./HeroSection";
+export { FAQSection } from "./FAQSection";
+export { SuggestionsSection } from "./SuggestionsSection";
+export { ComparePromotion } from "./ComparePromotion";
+export { LogoLoop } from "./LogoLoop";
+export { IdealCandidateSection } from "./IdealCandidateSection";
+export { CandidateFormWizard } from "./CandidateFormWizard";
+export { ConditionalLayout } from "./ConditionalLayout";
+export {
+  Sidebar,
+  DashboardContent,
+  FeatureCard,
+  PoliticalPartiesCard,
+  ElectoralNewsCard,
+  DashboardIcon,
+  CompareIcon,
+  SettingsIcon,
+  UserIcon,
+} from "./Dashboard";
