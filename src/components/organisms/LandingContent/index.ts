@@ -1,0 +1,1 @@
+export { LandingContent } from "./LandingContent";

@@ -21,7 +21,7 @@ export function HeroSection() {
 
   // Redirect to dashboard if authenticated, otherwise to the original path
   const getHref = (defaultHref: string) => {
-    return isAuthenticated ? "/" : defaultHref;
+    return isAuthenticated ? "/dashboard" : defaultHref;
   };
 
   return (

@@ -23,11 +23,11 @@ export const metadata = generateMetadata({
  * Home Page
  * Route: /
  *
- * Shows:
- * - Landing page for unauthenticated users
- * - Dashboard for authenticated users
+ * Conditional rendering:
+ * - Unauthenticated users: Landing page with hero, logo loop, compare, FAQ, suggestions
+ * - Authenticated users: Dashboard with sidebar and content
  *
- * SEO Optimized with JSON-LD structured data
+ * SEO preserved with JSON-LD structured data
  */
 export default function HomePage() {
   // Generate JSON-LD structured data for the page
@@ -73,7 +73,7 @@ export default function HomePage() {
         }}
       />
 
-      {/* Conditional Content based on auth state */}
+      {/* Conditional Content: Landing or Dashboard */}
       <ConditionalHome />
     </>
   );

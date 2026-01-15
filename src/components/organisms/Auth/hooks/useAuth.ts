@@ -45,7 +45,7 @@ function clearCookie(name: string): void {
 /**
  * Hook for user login
  *
- * On success: stores tokens in cookies and redirects to /dashboard
+ * On success: stores tokens in cookies and redirects to /
  *
  * @example
  * ```tsx
@@ -63,7 +63,7 @@ export function useLogin() {
       setCookie("accessToken", data.accessToken);
       setCookie("refreshToken", data.refreshToken);
 
-      // Redirect to dashboard
+      // Redirect to home (shows dashboard for authenticated users)
       router.push("/");
     },
   });

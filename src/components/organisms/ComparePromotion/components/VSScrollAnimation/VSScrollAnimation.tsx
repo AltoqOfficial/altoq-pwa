@@ -568,7 +568,7 @@ export function VSScrollAnimation() {
   const isAuthenticated = !!user;
 
   // Get the appropriate href based on authentication status
-  const getDemoHref = () => (isAuthenticated ? "/" : "/compara");
+  const getDemoHref = () => (isAuthenticated ? "/dashboard" : "/compara");
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
