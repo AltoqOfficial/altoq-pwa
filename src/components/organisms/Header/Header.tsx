@@ -9,12 +9,27 @@ import { cn } from "@/lib/utils";
 import { useUserProfile } from "@/hooks/useUserProfile";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
 
-export function Header() {
+interface HeaderProps {
+  className?: string;
+  forceShow?: boolean;
+}
+
+export function Header({ className, forceShow }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const userMenuRef = useRef<HTMLDivElement>(null);
   const { user, isLoading } = useUserProfile();
   const { mutate: logout, isPending: isLoggingOut } = useLogout();
+
+  // TODO: Restore auth hooks once modules are available
+  // const { user, isLoading } = useUserProfile();
+
+  // const user: any = null;
+  // const isLoading = false;
+
+  // const { mutate: logout, isPending: isLoggingOut } = useLogout();
+  // const logout = () => {};
+  // const isLoggingOut = false;
 
   const isAuthenticated = !!user && !isLoading;
 
@@ -55,7 +70,12 @@ export function Header() {
   const userInitial = displayName.charAt(0).toUpperCase();
 
   return (
-    <header className="relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300">
+    <header
+      className={cn(
+        "relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300",
+        className
+      )}
+    >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Logo variant="default" asLink priority />

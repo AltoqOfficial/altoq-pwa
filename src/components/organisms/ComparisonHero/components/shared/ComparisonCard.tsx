@@ -40,7 +40,7 @@ export function MobileComparisonCard({
     <div className="w-full bg-profile-gradient rounded-xl shadow-lg  relative p-6 md:p-8 flex flex-col items-center gap-4 md:gap-6">
       {fields.find((f) => f.key === "profesion") && (
         <Typography
-          font="atNameSans"
+          font="bigShoulders"
           className="text-white/80 uppercase text-center text-xs md:text-[16px]"
         >
           {(() => {
@@ -98,14 +98,14 @@ export function MobileComparisonCard({
       {/* Party Name */}
       <div className=" flex flex-col items-center text-center">
         <Typography
-          font="atNameSans"
+          font="bigShoulders"
           className="text-white text-[13px] md:text-[20px] font-light"
         >
           {candidate.party || "Partido"}
         </Typography>
         <Typography
           variant="p"
-          font="atNameSans"
+          font="bigShoulders"
           className="text-white text-[7px] md:text-[12px] font-black mt-1"
         >
           PARTIDO ACTUAL
@@ -164,13 +164,13 @@ export function MobileComparisonCard({
           <div className="flex flex-col items-start text-left">
             <Typography
               variant="p"
-              font="atNameSans"
+              font="bigShoulders"
               className="text-white text-[10px] md:text-xs font-black uppercase tracking-wider mb-0.5"
             >
               POSICIÓN
             </Typography>
             <Typography
-              font="atNameSans"
+              font="bigShoulders"
               className="text-white text-xl md:text-3xl font-light leading-tight"
             >
               {(() => {
@@ -265,14 +265,14 @@ export function MobileComparisonCard({
                   >
                     <Typography
                       variant="h6"
-                      font="atNameSans"
+                      font="bigShoulders"
                       className="text-white text-xl md:text-2xl font-light leading-none"
                     >
                       {title}
                     </Typography>
                     <SourceTooltip source={src} description={desc}>
                       <Typography
-                        font="atNameSans"
+                        font="bigShoulders"
                         className="text-white/70 text-sm md:text-base font-light leading-tight text-left mt-1"
                       >
                         {subtitle}
@@ -299,7 +299,7 @@ export function MobileComparisonCard({
             const label = (
               <Typography
                 variant="small"
-                font="atNameSans"
+                font="bigShoulders"
                 className="text-white text-[10px] font-black uppercase tracking-wider mb-2 text-left"
               >
                 INTENCIÓN DE VOTO
@@ -339,7 +339,7 @@ export function MobileComparisonCard({
             <div className="absolute inset-0 flex items-center justify-center">
               <Typography
                 variant="small"
-                font="atNameSans"
+                font="bigShoulders"
                 className="text-white text-lg md:text-2xl font-normal drop-shadow-md"
               >
                 {candidate.percepcionPublica?.intencionVoto?.max || 0}
@@ -355,7 +355,7 @@ export function MobileComparisonCard({
             <div className="w-full mt-4">
               <Typography
                 variant="small"
-                font="atNameSans"
+                font="bigShoulders"
                 className="text-white text-[10px] font-black uppercase tracking-wider mb-3 text-left"
               >
                 HISTORIAL DE PARTIDOS
@@ -384,13 +384,13 @@ export function MobileComparisonCard({
                         {/* Content */}
                         <div className="flex flex-col items-start">
                           <Typography
-                            font="atNameSans"
+                            font="bigShoulders"
                             className="text-white text-[11px] md:text-xs font-bold leading-none"
                           >
                             {partido.ano}
                           </Typography>
                           <Typography
-                            font="atNameSans"
+                            font="bigShoulders"
                             className="text-white/90 text-sm md:text-base font-light leading-tight"
                           >
                             {partido.partido}
