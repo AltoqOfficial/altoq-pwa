@@ -183,15 +183,13 @@ const TimelineItem = ({
       {year}
     </Typography>
     <div className="relative">
-      <SourceTooltip source={source}>
-        <Typography
-          variant="p"
-          weight="200"
-          className="text-gray-300 text-xs md:text-sm leading-tight hover:text-white transition-colors cursor-help"
-        >
-          {title}
-        </Typography>
-      </SourceTooltip>
+      <Typography
+        variant="p"
+        weight="200"
+        className="text-gray-300 text-xs md:text-sm leading-tight hover:text-white transition-colors"
+      >
+        {title}
+      </Typography>
     </div>
   </div>
 );
