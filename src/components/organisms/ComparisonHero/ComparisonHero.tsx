@@ -248,14 +248,15 @@ export function ComparisonHero() {
         >
           <Header
             forceShow={true}
+            variant="transparent"
             className="hidden md:flex absolute top-0 w-full z-50 mb-4 pointer-events-auto"
           />
           {/* Hero Content */}
           <div className="w-full">
-            <div className="relative flex justify-center items-start flex-col w-full h-[380px] md:h-[calc(100vh-80px)] min-h-[600px] pt-4 md:pt-8 overflow-hidden">
-              <div className="flex gap-2 h-full xl:gap-15 2xl:gap-30 w-full relative">
+            <div className="relative flex justify-center items-start flex-col w-full h-[420px] sm:h-[540px] md:h-[calc(100vh-80px)] md:min-h-[500px] pt-4 md:pt-8 overflow-hidden">
+              <div className="flex gap-2 h-full xl:gap-4 2xl:gap-8 w-full relative">
                 {/* Left Candidate */}
-                <div className="absolute left-0 bottom-0 h-1/2 w-[35%] sm:w-[40%] xl:relative xl:w-auto max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden xl:overflow-visible z-1 xl:flex xl:justify-end">
+                <div className="absolute left-0 bottom-0 h-[65%] md:h-[85%] w-[32%] sm:w-[36%] md:w-[36%] lg:w-[40%] xl:relative xl:w-auto max-w-[300px] md:max-w-[500px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden xl:overflow-visible z-1 xl:flex xl:justify-end">
                   {/* Red gradient background with noise */}
                   <svg
                     className={`absolute top-0 left-auto xl:right-0 transition-all duration-500 ease-out xl:w-[450px] w-full h-full hidden xl:block ${
@@ -273,7 +274,7 @@ export function ComparisonHero() {
                     />
                   </svg>
                   {leftCandidateInfo ? (
-                    <div className="relative z-20 w-full xl:w-[600px] flex justify-end">
+                    <div className="relative z-20 w-full h-full xl:w-full xl:max-w-[600px] flex justify-end">
                       <CandidateImage
                         candidate={leftCandidateInfo}
                         side="left"
@@ -285,7 +286,7 @@ export function ComparisonHero() {
                       <div
                         onClick={() => handleCandidateClick("keiko")}
                         title="Seleccionar Keiko Fujimori"
-                        className="cursor-pointer relative z-20 w-full xl:w-[600px] flex justify-end"
+                        className="cursor-pointer relative z-20 w-full h-full xl:w-full xl:max-w-[600px] flex justify-end"
                       >
                         <CandidateImage
                           candidate={placeholders.left}
@@ -299,23 +300,23 @@ export function ComparisonHero() {
                 </div>
 
                 {/* Center Content */}
-                <div className="relative z-10 flex flex-col justify-start gap-6 order-1 xl:order-2 max-w-sm mx-auto xl:max-w-none xl:h-full w-full xl:w-auto pointer-events-none xl:pointer-events-auto">
+                <div className="relative z-10 flex flex-col justify-start gap-2 xl:gap-2 order-1 xl:order-2 max-w-sm mx-auto xl:max-w-none xl:h-full w-full xl:w-auto pointer-events-none xl:pointer-events-auto">
                   <Header
                     forceShow={true}
                     className="md:hidden static! bg-transparent! p-0! py-2! pointer-events-auto"
                   />
                   <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center pointer-events-auto">
                     <HeroTitle
-                      className="flex text-5xl sm:text-6xl md:text-7xl xl:text-9xl 2xl:text-[180px]"
+                      className="flex text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-8xl"
                       noiseFilterId={filterIds.noiseFilter}
                     />
-                    <span className="text-[#fefefe] font-sohne-breit text-xs pt-4 sm:text-[12px] md:text-lg lg:text-[12px] text-center block w-40 sm:w-40 md:w-100 mx-auto drop-shadow-md">
+                    <span className="text-[#fefefe] font-sohne-breit text-[11px] pt-2 pb-4  sm:text-[12px] md:text-base lg:text-lg xl:text-xl text-center block w-32 sm:w-60 md:w-72 lg:w-[380px] xl:w-[480px] mx-auto drop-shadow-md">
                       Una comparación política basada en datos reales. Explora
                       quién propone más, quién tiene resultados y quién aún no
                       los demuestra.
                     </span>
                   </div>
-                  <div className="hidden xl:flex justify-center pointer-events-auto">
+                  <div className="hidden xl:flex justify-center pointer-events-auto scale-100 xl:scale-75 2xl:scale-100 origin-top -mt-4 2xl:mt-0">
                     <CandidateSelector
                       selectedCandidates={selectedCandidates}
                       onCandidateClick={handleCandidateClick}
@@ -325,7 +326,7 @@ export function ComparisonHero() {
                 </div>
 
                 {/* Right Candidate */}
-                <div className="absolute right-0 bottom-0 h-1/2 w-[35%] sm:w-[40%] xl:relative xl:w-auto max-w-[280px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-3 overflow-hidden xl:overflow-visible z-0 xl:flex xl:justify-start">
+                <div className="absolute right-0 bottom-0 h-[65%] md:h-[85%] w-[32%] sm:w-[36%] md:w-[36%] lg:w-[40%] xl:relative xl:w-auto max-w-[300px] md:max-w-[500px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-3 overflow-hidden xl:overflow-visible z-0 xl:flex xl:justify-start">
                   <svg
                     className={`absolute top-0 right-auto xl:left-0 transition-all duration-500 ease-out xl:w-[450px] xl:h-full w-full h-full hidden xl:block ${
                       rightCandidateInfo
@@ -342,7 +343,7 @@ export function ComparisonHero() {
                     />
                   </svg>
                   {rightCandidateInfo ? (
-                    <div className="relative z-20 w-full xl:w-[600px] flex justify-start">
+                    <div className="relative z-20 w-full h-full xl:w-full xl:max-w-[600px] flex justify-start">
                       <CandidateImage
                         candidate={rightCandidateInfo}
                         side="right"
@@ -354,7 +355,7 @@ export function ComparisonHero() {
                       <div
                         onClick={() => handleCandidateClick("lopez")}
                         title="Seleccionar Rafael López Aliaga"
-                        className="cursor-pointer relative z-20 w-full xl:w-[600px] flex justify-start"
+                        className="cursor-pointer relative z-20 w-full h-full xl:w-full xl:max-w-[600px] flex justify-start"
                       >
                         <CandidateImage
                           candidate={placeholders.right}
@@ -461,7 +462,7 @@ export function ComparisonHero() {
 
             {/* Mobile Candidate Selector */}
           </div>
-          <div className="flex xl:hidden pt-5 pb-10">
+          <div className="flex xl:hidden pt-5 pb-10 justify-center w-full">
             <CandidateSelector
               selectedCandidates={selectedCandidates}
               onCandidateClick={handleCandidateClick}

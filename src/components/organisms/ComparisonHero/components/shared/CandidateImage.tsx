@@ -36,19 +36,17 @@ export const CandidateImage = memo(function CandidateImage({
 
   if (isHero) {
     return (
-      <div
-        className={`relative w-full h-[220px] sm:h-[220px] md:h-[300px] xl:h-[700px] 2xl:h-[86vh] xl:translate-y-20`}
-      >
+      <div className={`relative w-full h-full`}>
         <Image
           src={candidate.image}
           alt={candidate.name}
           fill
           priority
-          className={heroImageClasses}
+          className={`${heroImageClasses.replace("object-cover", "object-contain object-bottom")}`}
           style={isPlaceholder ? undefined : { filter: filterStyle }}
         />
         {candidate.fullName && (
-          <div className="absolute hidden xl:flex xl:top-[59vh] 2xl:top-[65vh] left-1/2 -translate-x-1/2 bg-neutral-500 justify-center px-6 py-4 z-20 whitespace-nowrap">
+          <div className="absolute hidden xl:flex bottom-[18%] left-1/2 -translate-x-1/2 bg-neutral-500 justify-center px-6 py-4 z-20 whitespace-nowrap shadow-lg">
             <span className="text-white xl:text-lg 2xl:text-xl font-semibold">
               {candidate.fullName}
             </span>

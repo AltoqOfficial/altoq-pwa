@@ -306,7 +306,7 @@ export const CandidateSelector = memo(function CandidateSelector({
   return (
     <>
       {/* Mobile/SM: Grid 5x2 */}
-      <div className="grid grid-cols-5 grid-rows-2 gap-1.5 w-full max-w-[360px] sm:max-w-[420px] xl:hidden mt-8 px-4 sm:px-0">
+      <div className="grid grid-cols-5 grid-rows-2 gap-1.5 w-full max-w-[360px] sm:max-w-[420px] xl:hidden mt-4 mx-auto px-4 sm:px-0">
         {mobileGridData.map((data) => (
           <CandidateButton
             key={data.candidate.id}
