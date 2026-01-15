@@ -13,9 +13,13 @@ export const supabaseAuthRepository: AuthRepository = {
       supabase.auth.signInWithPassword({ email, password })
     ),
 
-  signup: async (email, password) =>
+  signup: async (email, password, emailRedirectTo?) =>
     handleSupabase<AuthResponse["data"]>(
-      supabase.auth.signUp({ email, password })
+      supabase.auth.signUp({
+        email,
+        password,
+        options: emailRedirectTo ? { emailRedirectTo } : undefined,
+      })
     ),
 
   logout: async (): Promise<void> =>

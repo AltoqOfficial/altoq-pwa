@@ -3,33 +3,38 @@
 import { usePathname } from "next/navigation";
 import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
+import { useUserProfile } from "@/hooks/useUserProfile";
 
 interface ConditionalLayoutProps {
   children: React.ReactNode;
 }
 
-// Routes that should NOT show the landing page Header/Footer
-const dashboardRoutes = ["/dashboard"];
-
 /**
  * ConditionalLayout
- * Conditionally renders Header and Footer based on current route
- * Dashboard routes have their own layout and don't need the landing page chrome
+ * Conditionally renders Header and Footer based on current route and auth state
+ *
+ * - Unauthenticated users on "/" see Header/Footer (landing page)
+ * - Authenticated users on "/" see dashboard (no Header/Footer)
+ * - All other routes show Header/Footer
  */
 export function ConditionalLayout({ children }: ConditionalLayoutProps) {
   const pathname = usePathname();
+  const { user, isLoading } = useUserProfile();
 
-  // Check if current route is a dashboard route
-  const isDashboardRoute = dashboardRoutes.some(
-    (route) => pathname === route || pathname.startsWith(`${route}/`)
-  );
-
-  // Dashboard routes render children directly (they have their own layout)
-  if (isDashboardRoute) {
+  // While loading, show a minimal layout to avoid flash
+  if (isLoading) {
     return <>{children}</>;
   }
 
-  // Public routes render with Header and Footer
+  // Check if user is authenticated and on the home page (dashboard view)
+  const isAuthenticatedOnHome = !!user && pathname === "/";
+
+  // Authenticated users on "/" get their dashboard layout (no landing Header/Footer)
+  if (isAuthenticatedOnHome) {
+    return <>{children}</>;
+  }
+
+  // All other cases: show Header and Footer
   return (
     <div className="flex min-h-screen flex-col">
       <Header />

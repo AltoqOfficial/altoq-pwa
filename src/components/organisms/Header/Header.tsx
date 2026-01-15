@@ -11,7 +11,7 @@ import { useUserProfile } from "@/hooks/useUserProfile";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
 
 // Rutas que tienen fondo oscuro
-const DARK_BACKGROUND_ROUTES = ["/formulario-candidato"];
+const DARK_BACKGROUND_ROUTES = ["/formulario-candidato", "/compara"];
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +62,12 @@ export function Header() {
   const userInitial = displayName.charAt(0).toUpperCase();
 
   return (
-    <header className="relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300">
+    <header
+      className={cn(
+        "relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300",
+        isDarkBackground && "bg-[#202020]"
+      )}
+    >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Logo
@@ -80,7 +85,7 @@ export function Header() {
               className={cn(
                 "text-sm font-medium transition-colors",
                 isDarkBackground
-                  ? "text-white hover:text-white/80"
+                  ? "text-white hover:text-primary-600"
                   : "text-neutral-900 hover:text-primary-600"
               )}
             >
@@ -148,7 +153,7 @@ export function Header() {
                     className="absolute right-0 top-full mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden z-50"
                   >
                     <Link
-                      href="/dashboard"
+                      href="/"
                       className="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
                       onClick={() => setIsUserMenuOpen(false)}
                     >
@@ -281,11 +286,11 @@ export function Header() {
                     </div>
                   </div>
                   <Link
-                    href="/dashboard"
+                    href="/"
                     className="w-full text-center bg-[#FF2727] hover:bg-[#E82323] text-white font-bold rounded-2xl px-6 py-3 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
-                    Ir al Dashboard
+                    Ir al Inicio
                   </Link>
                   <button
                     onClick={handleLogout}

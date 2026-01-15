@@ -64,7 +64,7 @@ export function useLogin() {
       setCookie("refreshToken", data.refreshToken);
 
       // Redirect to dashboard
-      router.push("/dashboard");
+      router.push("/");
     },
   });
 }

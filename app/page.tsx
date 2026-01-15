@@ -1,8 +1,4 @@
-import { HeroSection } from "@/components/organisms/HeroSection";
-import { FAQSection } from "@/components/organisms/FAQSection";
-import { SuggestionsSection } from "@/components/organisms/SuggestionsSection";
-import { ComparePromotion } from "@/components/organisms/ComparePromotion";
-import { LogoLoop } from "@/components/organisms/LogoLoop";
+import { ConditionalHome } from "@/components/organisms/ConditionalHome";
 import {
   generateMetadata,
   generateFAQSchema,
@@ -24,21 +20,14 @@ export const metadata = generateMetadata({
 });
 
 /**
- * Home Page (Landing Page)
+ * Home Page
  * Route: /
  *
- * SEO Optimized with:
- * - Semantic HTML structure
- * - JSON-LD structured data for FAQs
- * - Breadcrumb schema
- * - WebPage schema
+ * Shows:
+ * - Landing page for unauthenticated users
+ * - Dashboard for authenticated users
  *
- * Sections:
- * 1. Hero Section - Countdown timer + hero message
- * 2. Logo Loop - Partner/media logos
- * 3. Compare Section - Preview of comparison feature (VS)
- * 4. FAQ Section - Preguntas Frecuentes with JSON-LD
- * 5. Suggestions Section - Caja de sugerencias
+ * SEO Optimized with JSON-LD structured data
  */
 export default function HomePage() {
   // Generate JSON-LD structured data for the page
@@ -84,26 +73,8 @@ export default function HomePage() {
         }}
       />
 
-      {/* Hero Section with Countdown */}
-      <HeroSection />
-
-      {/* Partner/Media Logo Loop */}
-      <LogoLoop />
-
-      {/* Candidate Comparison Promotion */}
-      <ComparePromotion />
-
-      {/* Visual Separator */}
-      <div
-        className="h-0.5 w-[70%] mx-auto bg-[#484848] opacity-50 my-32"
-        aria-hidden="true"
-      />
-
-      {/* Frequently Asked Questions - with FAQ Schema */}
-      <FAQSection />
-
-      {/* Suggestions Box */}
-      <SuggestionsSection />
+      {/* Conditional Content based on auth state */}
+      <ConditionalHome />
     </>
   );
 }

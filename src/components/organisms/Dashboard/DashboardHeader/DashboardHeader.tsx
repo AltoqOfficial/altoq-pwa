@@ -51,7 +51,7 @@ export function DashboardHeader({ onMenuClick }: DashboardHeaderProps) {
       </button>
 
       {/* Logo */}
-      <Link href="/dashboard">
+      <Link href="/">
         <Image
           src="/images/logo/altoq.webp"
           alt="Altoq"

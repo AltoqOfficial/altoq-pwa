@@ -19,7 +19,7 @@ interface NavItem {
 
 const mainNavItems: NavItem[] = [
   {
-    href: "/dashboard",
+    href: "/",
     label: "Dashboard",
     icon: DashboardIcon,
   },
@@ -57,8 +57,8 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const isDark = resolvedTheme === "dark";
 
   const isActive = (href: string) => {
-    if (href === "/dashboard") {
-      return pathname === "/dashboard";
+    if (href === "/") {
+      return pathname === "/";
     }
     return pathname.startsWith(href);
   };
