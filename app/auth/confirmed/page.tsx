@@ -1,36 +1,25 @@
 "use client";
 
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { Logo } from "@/components/atoms/Logo";
-
-const FORM_STORAGE_KEY = "altoq_candidate_form_v2";
 
 /**
  * Auth Confirmed Page
- * Client-side page that checks for pending form after email confirmation
- * Redirects to:
- * - /formulario-candidato?showResults=true if there's a pending form
- * - / (home/dashboard) otherwise
+ * Client-side page shown after email confirmation
+ * Uses window.location.href to force full page reload
+ * This ensures the Header re-reads cookies and shows logged-in state
+ * Always redirects to home page (/)
  */
 export default function AuthConfirmedPage() {
-  const router = useRouter();
-
   useEffect(() => {
-    // Check for pending form in localStorage
-    const pendingForm = localStorage.getItem(FORM_STORAGE_KEY);
-
     // Small delay for visual feedback
     const timer = setTimeout(() => {
-      if (pendingForm) {
-        router.replace("/formulario-candidato?showResults=true");
-      } else {
-        router.replace("/");
-      }
+      // Full page reload to ensure Header updates
+      window.location.href = "/";
     }, 500);
 
     return () => clearTimeout(timer);
-  }, [router]);
+  }, []);
 
   return (
     <div className="fixed inset-0 bg-neutral-900 flex flex-col items-center justify-center">
