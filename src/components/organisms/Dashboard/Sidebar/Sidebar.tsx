@@ -32,11 +32,11 @@ const mainNavItems: NavItem[] = [
 
 const externalLinks = [
   {
-    href: "https://twitter.com/altoqperu",
+    href: "https://www.tiktok.com/@altoqperu",
     label: "Redes sociales",
   },
   {
-    href: "/unete",
+    href: "/",
     label: "Únete a nosotros",
   },
 ];
