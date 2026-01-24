@@ -7,11 +7,11 @@ import type { ApexOptions } from "apexcharts";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 interface AttendanceChartProps {
-  percentage: number;
+  percentage: number | null;
   label: string;
   color: string;
-  projectsPresented?: number;
-  projectsApproved?: number;
+  projectsPresented?: number | null;
+  projectsApproved?: number | null;
 }
 
 export function AttendanceChart({
@@ -61,7 +61,7 @@ export function AttendanceChart({
     [color, label]
   );
 
-  const series = [percentage];
+  const series = [percentage ?? 0];
 
   return (
     <div className="flex flex-col items-center w-full">
@@ -83,7 +83,7 @@ export function AttendanceChart({
           style={{ backgroundColor: color }}
         />
         <span className="text-white text-xs md:text-sm lg:text-base 2xl:text-lg font-medium">
-          {label}: {percentage}%
+          {label}: {percentage ?? "N/A"}%
         </span>
       </div>
     </div>

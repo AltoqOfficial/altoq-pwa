@@ -6,8 +6,8 @@
  * Value with optional source URL for citations
  */
 export interface ValueWithSource {
-  value: string | string[];
-  source?: string | string[];
+  value: string | string[] | null;
+  source?: string | string[] | null;
 }
 
 /**
@@ -15,13 +15,13 @@ export interface ValueWithSource {
  */
 export interface ArrayWithSource {
   values: string | string[];
-  source?: string | string[];
+  source?: string | string[] | null;
 }
 
 /**
  * Type that can be either a plain value or a value with source
  */
-export type SourceableString = string | string[] | ValueWithSource;
+export type SourceableString = string | string[] | null | ValueWithSource;
 export type SourceableArray = string[] | ArrayWithSource;
 
 export interface PerfilGeneral {
@@ -41,7 +41,7 @@ export interface ExperienciaPolitica {
 }
 
 export interface SectorExperiencia {
-  cantidad: number;
+  cantidad: number | null;
   detalle: SourceableArray;
 }
 
@@ -90,10 +90,10 @@ export interface CompetenciasPersonales {
 }
 
 export interface IntencionVoto {
-  min: number;
-  max: number;
+  min: number | null;
+  max: number | null;
   descripcion: string;
-  source?: string | string[];
+  source?: string | string[] | null;
 }
 
 export interface PercepcionPublica {
@@ -103,18 +103,18 @@ export interface PercepcionPublica {
 }
 
 export interface Asistencia {
-  porcentaje: number;
+  porcentaje: number | null;
   label: string;
-  source?: string;
+  source?: string | string[] | null;
 }
 
 export interface HistorialLegislativo {
   tieneHistorial: boolean;
-  asistencia: Asistencia;
-  proyectosPresentados: number;
-  proyectosAprobados: number;
+  asistencia: Asistencia | null;
+  proyectosPresentados: number | null;
+  proyectosAprobados: number | null;
   nota?: string;
-  source?: string;
+  source?: string | string[] | null;
 }
 
 /**

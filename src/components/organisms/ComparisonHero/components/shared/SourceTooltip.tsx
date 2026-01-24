@@ -20,7 +20,7 @@ function subscribeToTooltipChanges(listener: (id: string | null) => void) {
 
 interface SourceTooltipProps {
   children: React.ReactNode;
-  source?: string | string[];
+  source?: string | string[] | null;
   className?: string;
 }
 
@@ -304,8 +304,8 @@ export function SourceTooltip({
  * Value with optional source
  */
 export interface ValueWithSource {
-  value: string | string[];
-  source?: string | string[];
+  value: string | string[] | null;
+  source?: string | string[] | null;
 }
 
 /**
@@ -313,7 +313,7 @@ export interface ValueWithSource {
  */
 export interface ArrayValueWithSource {
   values: string | string[];
-  source?: string | string[];
+  source?: string | string[] | null;
 }
 
 /**
@@ -330,8 +330,14 @@ export function hasSource(
  * Extract the display value from a potentially sourced value
  */
 export function extractValue(
-  value: string | string[] | ValueWithSource | ArrayValueWithSource | undefined
-): string | string[] | undefined {
+  value:
+    | string
+    | string[]
+    | null
+    | ValueWithSource
+    | ArrayValueWithSource
+    | undefined
+): string | string[] | null | undefined {
   if (value === undefined || value === null) return undefined;
 
   if (typeof value === "string") return value;
@@ -350,8 +356,14 @@ export function extractValue(
  * Extract the source URL from a potentially sourced value
  */
 export function extractSource(
-  value: string | string[] | ValueWithSource | ArrayValueWithSource | undefined
-): string | string[] | undefined {
+  value:
+    | string
+    | string[]
+    | null
+    | ValueWithSource
+    | ArrayValueWithSource
+    | undefined
+): string | string[] | null | undefined {
   if (!value || typeof value !== "object") return undefined;
 
   if ("source" in value) return value.source;

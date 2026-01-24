@@ -1,0 +1,326 @@
+{
+  "id": "george_forsyth",
+  "slug": "georgeForsyth",
+  "fullName": "George Patrick Forsyth Sommer",
+  "shortName": "George Forsyth",
+  "image": "/candidatos/george-forsyth.webp",
+  "color": "#0052A5",
+  "party": "Partido Democrático Somos Perú",
+
+  "perfilGeneral": {
+    "edad": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "nacimiento": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "lugar": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "nivelEducativo": {
+      "value": [
+        "Bachiller en Administración de Empresas – UPC (2021)",
+        "Ingeniería Industrial – USMP (inconcluso)",
+        "Magíster en Administración – Universidad del Pacífico (2023)"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://repositorioacademico.upc.edu.pe/handle/10757/658293",
+        "https://www.linkedin.com/in/george-forsyth-a5139135b/"
+      ]
+    },
+    "profesion": {
+      "value": [
+        "Administrador de empresas",
+        "Exfutbolista profesional",
+        "Oficial de Reserva del Ejército"
+      ],
+      "source": ["https://www.linkedin.com/in/george-forsyth-a5139135b/"]
+    },
+    "partidoActual": {
+      "value": "Partido Democrático Somos Perú",
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "cambiosDePartido": {
+      "value": [
+        "Partido Popular Cristiano",
+        "Restauración Nacional / Victoria Nacional"
+      ],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/george-patrick-forsyth-sommer_historialpartidario"
+      ]
+    }
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "5 años y 9 meses",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/george-patrick-forsyth-sommer_procesos-electorales"
+      ]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Regidor Distrital de La Victoria (2011–2014) – PPC",
+        "Alcalde Distrital de La Victoria (2019–2020) – Somos Perú"
+      ],
+      "source": [
+        "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": [
+        "2021 → Candidato presidencial (excluido temporalmente)",
+        "2026 → Candidato presidencial (Somos Perú)"
+      ],
+      "source": [
+        "https://www.infobae.com/america/america-latina/2021/02/11/george-forsyth"
+      ]
+    }
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 2,
+      "detalle": {
+        "values": [
+          "Alcalde Distrital de La Victoria",
+          "Oficial de Reserva – Ejército del Perú"
+        ],
+        "source": ["https://elcomercio.pe", "https://larepublica.pe"]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 3,
+      "detalle": {
+        "values": [
+          "Gerente General – Los M S.A.C.",
+          "Gerente General – Alhambra Inversiones S.R.L.",
+          "Futbolista profesional (Alianza Lima, Borussia Dortmund II, Atalanta B.C.)"
+        ],
+        "source": ["https://www.linkedin.com/in/george-forsyth-a5139135b/"]
+      }
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": [
+        "Centro / Centro-derecha",
+        "Rechazo al populismo y énfasis en economía social de mercado"
+      ],
+      "source": [
+        "https://www.infobae.com/america/america-latina/2021/04/03/george-forsyth"
+      ]
+    },
+    "economia": {
+      "value": "Economía social de mercado, competitiva y abierta",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "aborto": {
+      "value": "Restricción con excepciones (violación o riesgo de vida de la madre)",
+      "source": ["https://canaln.pe/actualidad/george-forsyth-sobre-aborto"]
+    },
+    "seguridad": {
+      "value": "Gestión territorial, fortalecimiento policial y rendición de cuentas",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "ambiente": {
+      "value": "Conservación de biodiversidad y adaptación climática",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "educacion": {
+      "value": "Acceso universal, infraestructura y mejora de calidad educativa",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "reformaPolitica": {
+      "value": "Fortalecimiento institucional, meritocracia y transparencia",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    }
+  },
+
+  "propuestasPrincipales": {
+    "economico": {
+      "values": [
+        "Hub logístico del Pacífico Sur",
+        "Red ferroviaria interurbana",
+        "Formalización de MYPES",
+        "Potencia agroexportadora"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "social": {
+      "values": [
+        "ANEMIA CERO",
+        "PERÚ ALIMENTA",
+        "IGUALDAD ENTRE MUJERES Y HOMBRES"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "ambiental": {
+      "values": ["PERÚ PREPARADO", "AGUA PARA VIVIR", "RECICLA PERÚ"],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "institucional": {
+      "values": [
+        "PERÚ DEMOCRÁTICO",
+        "PERÚ ÍNTEGRO – Tolerancia cero a la corrupción"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "educativo": {
+      "values": ["PERÚ EDUCA", "Educación digital y oficios del futuro"],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "salud": {
+      "values": ["Salud digna para todos", "PADOMI Universal"],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "seguridad": {
+      "values": [
+        "CIUDADANÍA SEGURA",
+        "Evaluación por resultados y patrullaje integrado"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    }
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Por evaluar",
+      "source": []
+    },
+    "diferencias": {
+      "value": "Por evaluar",
+      "source": []
+    },
+    "cumplimientoPrevio": {
+      "value": "Gestión como Alcalde de La Victoria (2019-2020)",
+      "source": [
+        "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico"
+      ]
+    }
+  },
+
+  "controversias": {
+    "investigaciones": {
+      "values": [
+        "Denuncia por violencia familiar (2019)",
+        "Investigación fiscal por presuntas irregularidades en La Victoria"
+      ],
+      "source": ["https://rpp.pe", "https://canalb.pe"]
+    },
+    "enCurso": {
+      "values": [
+        "Investigación ampliada por presunta colusión en gestión municipal"
+      ],
+      "source": [
+        "https://canalb.pe/noticias/judiciales/poder-judicial-extiende-investigacion"
+      ]
+    }
+  },
+
+  "transparencia": {
+    "items": [
+      "Declaración jurada presentada ante el JNE",
+      "Plan de gobierno disponible públicamente",
+      "Información patrimonial declarada"
+    ],
+    "source": [
+      "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+      "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+    ]
+  },
+
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Perfil mediático con experiencia en gestión municipal",
+      "source": [
+        "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico"
+      ]
+    },
+    "comunicacion": {
+      "value": "Alto perfil mediático, comunicación directa",
+      "source": []
+    },
+    "credibilidad": {
+      "value": "Cuestionada por investigaciones en curso",
+      "source": [
+        "https://canalb.pe/noticias/judiciales/poder-judicial-extiende-investigacion"
+      ]
+    }
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 3,
+      "max": 5,
+      "descripcion": "Entre 3% y 5% según encuestas recientes",
+      "source": ["https://www.ipsos.com"]
+    },
+    "aprobacion": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "redes": {
+      "value": "Alta presencia en redes sociales",
+      "source": []
+    }
+  },
+
+  "innovacionYVision": {
+    "items": [
+      "Hub logístico del Pacífico Sur",
+      "Red ferroviaria interurbana",
+      "Educación digital y oficios del futuro",
+      "PADOMI Universal"
+    ],
+    "source": [
+      "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+    ]
+  },
+
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "asistencia": {
+      "porcentaje": 0,
+      "label": "N/A (No ha sido Congresista)",
+      "source": []
+    },
+    "proyectosPresentados": 0,
+    "proyectosAprobados": 0,
+    "nota": "No registra historial parlamentario. Su experiencia política es como Regidor (2011-2014) y Alcalde de La Victoria (2019-2020).",
+    "source": []
+  }
+}

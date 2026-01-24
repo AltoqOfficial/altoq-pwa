@@ -1,0 +1,279 @@
+{
+  "id": "mario-vizcarra",
+  "slug": "marioVizcarra",
+  "fullName": "Mario Enrique Vizcarra Cornejo",
+  "shortName": "Mario Vizcarra",
+  "image": "/candidatos/mario-vizcarra.webp",
+  "color": "#B22222",
+  "party": "Partido Político Perú Primero",
+
+  "perfilGeneral": {
+    "edad": { "value": "Sin información disponible", "source": [] },
+    "nacimiento": { "value": "Sin información disponible", "source": [] },
+    "lugar": { "value": "Sin información disponible", "source": [] },
+    "nivelEducativo": {
+      "value": [
+        "Bachiller en Ingeniería Industrial - UNI (1978)",
+        "Magíster en Administración - ESAN (2003)"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.youtube.com/watch?v=0pp_EkaFO7Q&t=352s"
+      ]
+    },
+    "profesion": {
+      "value": ["Ingeniero Industrial", "Administrador"],
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "partidoActual": {
+      "value": "Partido Político Perú Primero",
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "cambiosDePartido": {
+      "value": "Sin cambios registrados",
+      "source": []
+    }
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "Aproximadamente 6 meses",
+      "source": [
+        "https://lanoticia.com.pe/mario-vizcarra-tambien-es-corrupto-y-busca-llegar-al-poder-para-delinquir/"
+      ]
+    },
+    "cargosPrevios": {
+      "values": ["Presidente del CTAR Moquegua (2005)"],
+      "source": [
+        "https://lanoticia.com.pe/mario-vizcarra-tambien-es-corrupto-y-busca-llegar-al-poder-para-delinquir/"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2026 → Candidato"],
+      "source": [
+        "https://andina.pe/agencia/noticia-elecciones-2026-mario-vizcarra-es-elegido-candidato-presidencial-peru-primero-1054860.aspx"
+      ]
+    }
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 1,
+      "detalle": {
+        "values": ["Presidente del CTAR Moquegua"],
+        "source": [
+          "https://lanoticia.com.pe/mario-vizcarra-tambien-es-corrupto-y-busca-llegar-al-poder-para-delinquir/"
+        ]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 2,
+      "detalle": {
+        "values": [
+          "Gerente Administrativo - CyM Vizcarra SAC (1993–2017)",
+          "Propietario y Gerente General - Agrotécnica Estuquiña SAC (1998–2025)"
+        ],
+        "source": [
+          "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+          "https://peru21.pe/politica/mario-vizcarra-el-plan-b-de-su-hermano-el-expresidente-martin-vizcarra/"
+        ]
+      }
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": ["Centro", "Centro económico con enfoque social"],
+      "source": [
+        "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911"
+      ]
+    },
+    "economia": {
+      "value": "Inversión privada con regulación estatal",
+      "source": [
+        "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": "A favor",
+      "source": [
+        "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
+      ]
+    },
+    "aborto": {
+      "value": "A favor (pro-elección)",
+      "source": [
+        "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
+      ]
+    },
+    "seguridad": {
+      "value": "Reforma penitenciaria y control territorial",
+      "source": ["https://youtu.be/N4JdYD_U7j8?t=2359"]
+    },
+    "ambiente": {
+      "value": "Protección ambiental con enfoque social",
+      "source": ["https://youtu.be/0pp_EkaFO7Q?t=608"]
+    },
+    "educacion": {
+      "value": "Alianza público-privada para mejorar la calidad educativa",
+      "source": ["https://youtu.be/0pp_EkaFO7Q?t=1884"]
+    },
+    "reformaPolitica": {
+      "value": "Reforma del INPE y de la Policía Nacional",
+      "source": ["https://youtu.be/0pp_EkaFO7Q?t=1576"]
+    }
+  },
+
+  "propuestasPrincipales": {
+    "economico": {
+      "values": [
+        "Reactivación de la inversión público-privada",
+        "Reforma tributaria integral",
+        "Fortalecimiento de la regla fiscal"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+      ]
+    },
+    "social": {
+      "values": ["Vivienda social sostenible", "Agua potable universal"],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+      ]
+    },
+    "ambiental": {
+      "values": ["Agricultura familiar sostenible", "Cambio climático"],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+      ]
+    },
+    "institucional": {
+      "values": ["Reorganización del MIDAGRI", "Carrera pública meritocrática"],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+      ]
+    },
+    "educativo": {
+      "values": ["Cierre de brechas educativas", "Capacitación docente"],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+      ]
+    },
+    "salud": {
+      "values": ["Redes Integradas de Salud", "Salud mental comunitaria"],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+      ]
+    },
+    "seguridad": {
+      "values": [
+        "Formalización económica",
+        "Reforma del sistema penitenciario"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+      ]
+    }
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Por evaluar",
+      "source": []
+    },
+    "diferencias": {
+      "value": "Por evaluar",
+      "source": []
+    },
+    "cumplimientoPrevio": {
+      "value": "Sin información disponible",
+      "source": []
+    }
+  },
+
+  "controversias": {
+    "investigaciones": {
+      "values": ["Condena por peculado (2005)"],
+      "source": [
+        "https://altavoz.pe/politica/mario-vizcarra-registra-una-condena-por-corrupcion/"
+      ]
+    },
+    "enCurso": {
+      "values": ["Sin investigaciones en curso conocidas"],
+      "source": []
+    }
+  },
+
+  "transparencia": {
+    "items": [
+      "Declaración jurada presentada ante el JNE",
+      "Plan de gobierno disponible públicamente"
+    ],
+    "source": [
+      "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+      "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+    ]
+  },
+
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Perfil empresarial con experiencia en gestión privada",
+      "source": [
+        "https://peru21.pe/politica/mario-vizcarra-el-plan-b-de-su-hermano-el-expresidente-martin-vizcarra/"
+      ]
+    },
+    "comunicacion": {
+      "value": "Moderado",
+      "source": []
+    },
+    "credibilidad": {
+      "value": "Cuestionada por antecedentes judiciales",
+      "source": [
+        "https://altavoz.pe/politica/mario-vizcarra-registra-una-condena-por-corrupcion/"
+      ]
+    }
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 5,
+      "max": 5,
+      "descripcion": "5% de intención de voto",
+      "source": [
+        "https://www.ipsos.com/es-pe/intencion-de-voto-diciembre-2025-encuesta-america-tv-ipsos"
+      ]
+    },
+    "aprobacion": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "redes": {
+      "value": "Alta presencia en redes sociales",
+      "source": ["https://www.instagram.com/mariovizcarrac"]
+    }
+  },
+
+  "innovacionYVision": {
+    "items": [
+      "Agricultura familiar sostenible",
+      "Redes Integradas de Salud",
+      "Formalización económica integral"
+    ],
+    "source": [
+      "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+    ]
+  },
+
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "asistencia": {
+      "porcentaje": 0,
+      "label": "N/A (No ha sido Congresista)",
+      "source": []
+    },
+    "proyectosPresentados": 0,
+    "proyectosAprobados": 0,
+    "nota": "No registra historial parlamentario. Su único cargo público fue Presidente del CTAR Moquegua en 2005.",
+    "source": []
+  }
+}

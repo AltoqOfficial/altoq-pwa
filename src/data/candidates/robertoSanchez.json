@@ -1,0 +1,254 @@
+{
+  "id": "roberto-sanchez-palomino",
+  "slug": "robertoSanchezPalomino",
+  "fullName": "Roberto Helbert Sánchez Palomino",
+  "shortName": "Roberto Sánchez",
+  "image": "/candidatos/roberto-sanchez.webp",
+  "color": "#D32F2F",
+  "party": "Juntos por el Perú",
+
+  "perfilGeneral": {
+    "edad": {
+      "value": null,
+      "source": []
+    },
+    "nacimiento": {
+      "value": null,
+      "source": []
+    },
+    "lugar": {
+      "value": "Lambayeque, Perú",
+      "source": ["https://plataformaelectoral.jne.gob.pe"]
+    },
+    "nivelEducativo": {
+      "value": "Educación universitaria",
+      "source": ["https://plataformaelectoral.jne.gob.pe"]
+    },
+    "profesion": {
+      "value": ["Ingeniero", "Docente universitario"],
+      "source": ["Documento académico del candidato"]
+    },
+    "partidoActual": {
+      "value": "Juntos por el Perú",
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe",
+        "https://www.infobae.com"
+      ]
+    },
+    "cambiosDePartido": {
+      "value": [],
+      "source": []
+    }
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "5 años",
+      "source": ["https://infogob.jne.gob.pe"]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Congresista de la República (2021–2026)",
+        "Ministro de Comercio Exterior y Turismo (2021–2022)"
+      ],
+      "source": [
+        "https://www.congreso.gob.pe",
+        "https://plataformaelectoral.jne.gob.pe"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": [],
+      "source": []
+    }
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 3,
+      "detalle": {
+        "values": [
+          "Congresista de la República",
+          "Ministro de Comercio Exterior y Turismo",
+          "Gerente de Desarrollo Social – Municipalidad Provincial de Huaral"
+        ],
+        "source": ["https://www.congreso.gob.pe", "https://www.gob.pe/mincetur"]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": null,
+      "detalle": {
+        "values": [],
+        "source": []
+      }
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": [
+        "Izquierda",
+        "Enfoque progresista, rol activo del Estado y justicia social"
+      ],
+      "source": ["https://youtu.be/XLkolkxOJYw"]
+    },
+    "economia": {
+      "value": "Crítica al modelo económico y énfasis en intervención estatal",
+      "source": ["https://mpesije.jne.gob.pe"]
+    },
+    "matrimonioIgualitario": {
+      "value": null,
+      "source": []
+    },
+    "aborto": {
+      "value": "A favor de la despenalización en casos de violación",
+      "source": ["https://www.congreso.gob.pe"]
+    },
+    "seguridad": {
+      "value": "Prevención del delito con enfoque social",
+      "source": ["Plan de Gobierno Juntos por el Perú"]
+    },
+    "ambiente": {
+      "value": "Protección de recursos naturales y adaptación climática",
+      "source": ["https://mpesije.jne.gob.pe"]
+    },
+    "educacion": {
+      "value": "Estado garante de la educación pública",
+      "source": ["https://mpesije.jne.gob.pe"]
+    },
+    "reformaPolitica": {
+      "value": "Nueva Constitución y fortalecimiento institucional",
+      "source": ["https://mpesije.jne.gob.pe"]
+    }
+  },
+
+  "propuestasPrincipales": {
+    "economico": {
+      "values": [
+        "Ruptura con el modelo primario-exportador",
+        "Desarrollo de industria nacional con valor agregado"
+      ],
+      "source": ["https://mpesije.jne.gob.pe"]
+    },
+    "social": {
+      "values": [
+        "Reducción de desigualdades",
+        "Fortalecimiento de derechos sociales"
+      ],
+      "source": ["Plan de Gobierno JPP"]
+    },
+    "ambiental": {
+      "values": ["Protección del agua y biodiversidad"],
+      "source": ["https://mpesije.jne.gob.pe"]
+    },
+    "institucional": {
+      "values": ["Reforma del Estado y lucha contra la corrupción"],
+      "source": ["Plan de Gobierno JPP"]
+    },
+    "educativo": {
+      "values": ["Educación pública, gratuita e intercultural"],
+      "source": ["https://mpesije.jne.gob.pe"]
+    },
+    "salud": {
+      "values": ["Sistema de salud público, universal e integrado"],
+      "source": ["https://mpesije.jne.gob.pe"]
+    },
+    "seguridad": {
+      "values": [
+        "Prevención social del delito y fortalecimiento institucional"
+      ],
+      "source": ["Plan de Gobierno JPP"]
+    }
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": ["Plan de Gobierno JPP"]
+    },
+    "diferencias": {
+      "value": "No se identifican contradicciones relevantes",
+      "source": []
+    },
+    "cumplimientoPrevio": {
+      "value": "Historial previo limitado para evaluación completa",
+      "source": []
+    }
+  },
+
+  "controversias": {
+    "investigaciones": {
+      "values": [
+        "Investigación preliminar por hechos del 7 de diciembre de 2022"
+      ],
+      "source": ["https://img.lpderecho.pe"]
+    },
+    "enCurso": {
+      "values": [
+        "Procedimiento administrativo-electoral por neutralidad (JEE, 2025)"
+      ],
+      "source": ["https://rpp.pe"]
+    }
+  },
+
+  "transparencia": {
+    "items": [
+      "Información disponible en JNE",
+      "Registro de cargos públicos",
+      "Fuentes oficiales verificables"
+    ],
+    "source": ["https://plataformaelectoral.jne.gob.pe"]
+  },
+
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Liderazgo político y partidario",
+      "source": ["Documento académico del candidato"]
+    },
+    "comunicacion": {
+      "value": "Discurso técnico con enfoque social",
+      "source": []
+    },
+    "credibilidad": {
+      "value": "Percepción positiva en su base partidaria",
+      "source": []
+    }
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": null,
+      "max": null,
+      "descripcion": "Aparece agrupado en la categoría 'Otros' (12%)",
+      "source": ["https://www.ipsos.com"]
+    },
+    "aprobacion": {
+      "value": null,
+      "source": []
+    },
+    "redes": {
+      "value": "Presencia digital activa",
+      "source": ["https://www.instagram.com/robertosanchp"]
+    }
+  },
+
+  "innovacionYVision": {
+    "items": [
+      "Reforma estructural del Estado",
+      "Desarrollo regional sostenible"
+    ],
+    "source": ["Plan de Gobierno JPP"]
+  },
+
+  "historialLegislativo": {
+    "tieneHistorial": true,
+    "asistencia": {
+      "porcentaje": null,
+      "label": "MEDIA",
+      "source": []
+    },
+    "proyectosPresentados": null,
+    "proyectosAprobados": null,
+    "nota": "Información legislativa parcial disponible",
+    "source": ["https://www.congreso.gob.pe"]
+  }
+}

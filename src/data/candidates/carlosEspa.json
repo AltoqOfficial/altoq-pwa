@@ -1,0 +1,284 @@
+{
+  "id": "carlos-espa",
+  "slug": "carlosEspa",
+  "fullName": "Alfonso Carlos Espá Garcés-Alvear",
+  "shortName": "Carlos Espá",
+  "image": "/candidatos/carlos-espa.webp",
+  "color": "#1E3A8A",
+  "party": "SíCreo",
+
+  "perfilGeneral": {
+    "edad": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "nacimiento": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "lugar": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "nivelEducativo": {
+      "value": "Bachiller en Derecho (PUCP) / Magíster en Ciencia Política (The American University)",
+      "source": [
+        "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
+      ]
+    },
+    "profesion": {
+      "value": ["Abogado", "Periodista", "Politólogo"],
+      "source": [
+        "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
+      ]
+    },
+    "partidoActual": {
+      "value": "SíCreo",
+      "source": [
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Sintesis-PARTIDO-SICREO-II.pdf"
+      ]
+    },
+    "cambiosDePartido": {
+      "value": "Sin cambios registrados",
+      "source": []
+    }
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "3",
+      "source": [
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
+      ]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Presidente y Fundador del Partido SíCreo (2022 - Actualidad)"
+      ],
+      "source": [
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Sintesis-PARTIDO-SICREO-II.pdf",
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2026 → Candidato presidencial"],
+      "source": ["https://votaxmi.com/candidato/38/carlos-espa"]
+    }
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 1,
+      "detalle": {
+        "values": [
+          "Especialista en medios – Embajada de Estados Unidos en el Perú"
+        ],
+        "source": [
+          "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
+        ]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 1,
+      "detalle": {
+        "values": ["Director y Conductor de Cuarto Poder – América Televisión"],
+        "source": [
+          "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/"
+        ]
+      }
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": [
+        "Derecha liberal y conservadora",
+        "Estado pequeño, libertad individual, defensa de la vida y la familia"
+      ],
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "economia": {
+      "value": "Pro inversión privada y libre mercado",
+      "source": ["https://www.youtube.com/watch?v=OCCJEdwrkwI"]
+    },
+    "matrimonioIgualitario": {
+      "value": "No apoya, pero respalda la no discriminación",
+      "source": ["https://youtu.be/QIBo3MeAiik?t=5018"]
+    },
+    "aborto": {
+      "value": "En contra, salvo causales legales",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "seguridad": {
+      "value": "Firmeza, autoridad y fortalecimiento policial",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "ambiente": {
+      "value": "Desarrollo sostenible con minería formal",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "educacion": {
+      "value": "Educación centrada en la familia y libertad de elección",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "reformaPolitica": {
+      "value": "Reforma gradual del Estado",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    }
+  },
+
+  "propuestasPrincipales": {
+    "economico": {
+      "values": ["Shock de desregulación y eliminación de trabas burocráticas"],
+      "source": [
+        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+      ]
+    },
+    "social": {
+      "values": [
+        "Libertad individual y respeto irrestricto a la propiedad privada"
+      ],
+      "source": [
+        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+      ]
+    },
+    "ambiental": {
+      "values": ["Minería responsable y lucha contra actividades ilegales"],
+      "source": [
+        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+      ]
+    },
+    "institucional": {
+      "values": ["Estado eficiente, descentralizado y sin clientelismo"],
+      "source": [
+        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+      ]
+    },
+    "educativo": {
+      "values": [
+        "Competencia educativa y libertad de elección de las familias"
+      ],
+      "source": [
+        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+      ]
+    },
+    "salud": {
+      "values": [
+        "Modernización del sistema de salud con tecnología y alianzas público-privadas"
+      ],
+      "source": [
+        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+      ]
+    },
+    "seguridad": {
+      "values": [
+        "Fortalecimiento de la PNP y FF.AA. para combatir el crimen organizado"
+      ],
+      "source": [
+        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+      ]
+    }
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Por evaluar",
+      "source": []
+    },
+    "diferencias": {
+      "value": "Por evaluar",
+      "source": []
+    },
+    "cumplimientoPrevio": {
+      "value": "Sin cargos ejecutivos previos para evaluar",
+      "source": []
+    }
+  },
+
+  "controversias": {
+    "investigaciones": {
+      "values": [
+        "Cuestionamientos sobre la viabilidad legal de reabrir el penal El Frontón"
+      ],
+      "source": ["https://www.youtube.com/watch?v=_RLRJeCoP1Y"]
+    },
+    "enCurso": {
+      "values": ["Sin investigaciones en curso conocidas"],
+      "source": []
+    }
+  },
+
+  "transparencia": {
+    "items": [
+      "No registra antecedentes policiales",
+      "No registra antecedentes penales",
+      "No registra sentencias judiciales vigentes",
+      "No presenta deudas coactivas con SUNAT"
+    ],
+    "source": [
+      "https://plataformahistorico.jne.gob.pe/",
+      "https://infogob.jne.gob.pe/"
+    ]
+  },
+
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Perfil outsider con liderazgo ideológico",
+      "source": ["https://www.youtube.com/watch?v=OCCJEdwrkwI"]
+    },
+    "comunicacion": {
+      "value": "Estilo directo, formativo y confrontacional",
+      "source": ["https://www.youtube.com/watch?v=OCCJEdwrkwI"]
+    },
+    "credibilidad": {
+      "value": "Sustentada en trayectoria periodística y discurso anticorrupción",
+      "source": [
+        "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/"
+      ]
+    }
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 2,
+      "max": 2,
+      "descripcion": "2% de intención de voto a nivel nacional",
+      "source": [
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones.pdf"
+      ]
+    },
+    "aprobacion": {
+      "value": "Baja intención de voto según encuestas nacionales",
+      "source": ["https://www.ipsos.com"]
+    },
+    "redes": {
+      "value": "Presencia activa en TikTok, Instagram y YouTube",
+      "source": [
+        "https://www.tiktok.com/@carlosespaoficial",
+        "https://www.instagram.com/carlosespaoficial/",
+        "https://www.youtube.com/@CarlosEspaOficial"
+      ]
+    }
+  },
+
+  "innovacionYVision": {
+    "items": [
+      "Estado mínimo y digital",
+      "Desburocratización total del aparato público"
+    ],
+    "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+  },
+
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "asistencia": {
+      "porcentaje": 0,
+      "label": "N/A (No ha sido Congresista)",
+      "source": []
+    },
+    "proyectosPresentados": 0,
+    "proyectosAprobados": 0,
+    "nota": "No ha ejercido cargos legislativos. Su experiencia es principalmente como periodista y fundador del partido SíCreo.",
+    "source": []
+  }
+}

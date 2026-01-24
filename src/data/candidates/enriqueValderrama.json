@@ -1,0 +1,268 @@
+{
+  "id": "enrique_valderrama_pena",
+  "slug": "enriqueValderrama",
+  "fullName": "Pitter Enrique Valderrama Peña",
+  "shortName": "Enrique Valderrama",
+  "image": "/candidatos/enrique-valderrama.webp",
+  "color": "#C4122F",
+  "party": "Partido Aprista Peruano",
+
+  "perfilGeneral": {
+    "edad": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "nacimiento": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "lugar": {
+      "value": "Perú",
+      "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+    },
+    "nivelEducativo": {
+      "value": "Bachiller en Derecho – Universidad de San Martín de Porres; Maestría (inconclusa) – Universidad de La Rioja",
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.linkedin.com/in/enrique-valderrama-pe%C3%B1a"
+      ]
+    },
+    "profesion": {
+      "value": ["Abogado"],
+      "source": "https://larepublica.pe/politica/2025/12/01/enrique-valderrama-quien-es-el-joven-abogado-que-representara-al-apra-en-las-elecciones-2026-hnews-28412"
+    },
+    "partidoActual": {
+      "value": "Partido Aprista Peruano",
+      "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+    },
+    "cambiosDePartido": {
+      "value": "Sin cambios registrados",
+      "source": []
+    }
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "15",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/pitter-enrique-valderrama-pe%C3%B1a",
+        "https://larepublica.pe/politica/2025/12/01/enrique-valderrama-quien-es-el-joven-abogado-que-representara-al-apra-en-las-elecciones-2026-hnews-28412"
+      ]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Militante del APRA (2010–2021)",
+        "Miembro de la Comisión Política Nacional del APRA (2021)",
+        "Fundador del APRA (desde 2022)",
+        "Miembro de la Comisión Política Nacional (2025–actualidad)"
+      ],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/pitter-enrique-valderrama-pe%C3%B1a",
+        "https://rpp.pe/politica/elecciones/elecciones-2026-conoce-a-enrique-valderrama-el-candidato-presidencial-del-apra-tras-ganar-las-primarias-noticia-1666053"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2026 → Candidato presidencial (APRA)"],
+      "source": "https://lpderecho.pe/enrique-valderrama-convierte-oficialmente-candidato-presidencial-apra/"
+    }
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 1,
+      "detalle": {
+        "values": ["Gerente General – Programa Mi Vivienda"],
+        "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/pitter-enrique-valderrama-pe%C3%B1a"
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 4,
+      "detalle": {
+        "values": [
+          "Gerente General – Contratistas Generales Saalino S.A.C.",
+          "Gerente General – Global Security Law S.A.C.",
+          "Subgerente / Apoderado – PS Innova S.A.C.",
+          "Analista Global – Global Security Law S.A.C."
+        ],
+        "source": [
+          "https://www.linkedin.com/in/enrique-valderrama-pe%C3%B1a",
+          "https://www.datosperu.org"
+        ]
+      }
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": ["Centro-izquierda", "Izquierda democrática"],
+      "source": "https://willax.pe/politica/enrique-valderrama-apra-izquierda-democratica-willax"
+    },
+    "economia": {
+      "value": "Economía social de mercado con rol activo del Estado",
+      "source": "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+    },
+    "matrimonioIgualitario": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "aborto": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "seguridad": {
+      "value": "Revisión de normas pro-crimen, deshacinamiento penitenciario",
+      "source": [
+        "https://rpp.pe/politica/elecciones/enrique-valderrama-candidato-presidencial-del-apra-nosotros-vamos-a-revisar-todas-las-normas-pro-crimen-noticia-1668917",
+        "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+      ]
+    },
+    "ambiente": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "educacion": {
+      "value": "Educación pública gratuita, inclusiva y universal",
+      "source": "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+    },
+    "reformaPolitica": {
+      "value": "Sin información disponible",
+      "source": []
+    }
+  },
+
+  "propuestasPrincipales": {
+    "economico": {
+      "values": [
+        "Reforma tributaria con eliminación progresiva de exoneraciones",
+        "Impuesto a sobreganancias mineras",
+        "Facturación electrónica universal"
+      ],
+      "source": "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+    },
+    "social": {
+      "values": "Sin información detallada disponible",
+      "source": []
+    },
+    "ambiental": {
+      "values": "Sin información detallada disponible",
+      "source": []
+    },
+    "institucional": {
+      "values": "Sin información detallada disponible",
+      "source": []
+    },
+    "educativo": {
+      "values": ["Educación pública gratuita, inclusiva y universal"],
+      "source": "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+    },
+    "salud": {
+      "values": "Sin información detallada disponible",
+      "source": []
+    },
+    "seguridad": {
+      "values": [
+        "Revisión integral de normas pro-crimen",
+        "Deshacinamiento penitenciario y control interno de penales"
+      ],
+      "source": [
+        "https://rpp.pe/politica/elecciones/enrique-valderrama-candidato-presidencial-del-apra-nosotros-vamos-a-revisar-todas-las-normas-pro-crimen-noticia-1668917",
+        "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+      ]
+    }
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Por evaluar",
+      "source": []
+    },
+    "diferencias": {
+      "value": "Por evaluar",
+      "source": []
+    },
+    "cumplimientoPrevio": {
+      "value": "Sin cargos ejecutivos previos para evaluar",
+      "source": []
+    }
+  },
+
+  "controversias": {
+    "investigaciones": {
+      "values": [
+        "Denuncia policial en 2012 por presunto hurto (sin sentencia penal)"
+      ],
+      "source": "https://larepublica.pe/politica/2025/12/01/enrique-valderrama-candidato-del-apra-fue-acusado-en-el-hurto-de-una-laptop-y-un-televisor-en-el-2012-hnews-11717"
+    },
+    "enCurso": {
+      "values": ["Sin investigaciones en curso conocidas"],
+      "source": []
+    }
+  },
+
+  "transparencia": {
+    "items": [
+      "Declaración jurada presentada ante el JNE",
+      "Plan de gobierno disponible públicamente"
+    ],
+    "source": [
+      "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+      "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+    ]
+  },
+
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Perfil joven con trayectoria en el partido",
+      "source": [
+        "https://larepublica.pe/politica/2025/12/01/enrique-valderrama-quien-es-el-joven-abogado-que-representara-al-apra-en-las-elecciones-2026-hnews-28412"
+      ]
+    },
+    "comunicacion": {
+      "value": "Moderado",
+      "source": []
+    },
+    "credibilidad": {
+      "value": "En construcción - primer candidato presidencial",
+      "source": []
+    }
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 0,
+      "max": 2,
+      "descripcion": "Agrupado en la categoría 'Otros' (12%) – Ipsos diciembre 2025",
+      "source": "https://www.ipsos.com"
+    },
+    "aprobacion": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "redes": {
+      "value": "Sin información disponible",
+      "source": []
+    }
+  },
+
+  "innovacionYVision": {
+    "items": [
+      "Facturación electrónica universal",
+      "Reforma tributaria progresiva",
+      "Deshacinamiento penitenciario"
+    ],
+    "source": "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+  },
+
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "asistencia": {
+      "porcentaje": 0,
+      "label": "N/A (No ha sido Congresista)",
+      "source": []
+    },
+    "proyectosPresentados": 0,
+    "proyectosAprobados": 0,
+    "nota": "No registra historial parlamentario. Su experiencia es principalmente en el sector privado y como dirigente del APRA.",
+    "source": []
+  }
+}

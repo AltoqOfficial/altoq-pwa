@@ -1,0 +1,292 @@
+{
+  "id": "fernando-olivera",
+  "slug": "fernandoOlivera",
+  "fullName": "Luis Fernando Olivera Vega",
+  "shortName": "Fernando Olivera",
+  "image": "/candidatos/fernando-olivera.webp",
+  "color": "#2C7BE5",
+  "party": "Frente de la Esperanza 2021",
+
+  "perfilGeneral": {
+    "edad": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "nacimiento": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "lugar": {
+      "value": "Lima, Perú",
+      "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+    },
+    "nivelEducativo": {
+      "value": "Bachiller en Administración de Empresas – Universidad del Pacífico",
+      "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario"
+    },
+    "profesion": {
+      "value": ["Administrador de Empresas", "Político", "Consultor"],
+      "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario"
+    },
+    "partidoActual": {
+      "value": "Frente de la Esperanza 2021",
+      "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario"
+    },
+    "cambiosDePartido": {
+      "value": [
+        "Partido Popular Cristiano (1977–1986)",
+        "Convergencia Democrática",
+        "Frente Independiente Moralizador",
+        "Frente Esperanza",
+        "Frente de la Esperanza 2021"
+      ],
+      "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario"
+    }
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "Más de 30 años",
+      "source": "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera"
+    },
+    "cargosPrevios": {
+      "values": [
+        "Congresista de la República (1985–2001)",
+        "Ministro de Justicia (2001–2002)",
+        "Embajador del Perú en España (2002–2005)",
+        "Ministro de Relaciones Exteriores (2005)"
+      ],
+      "source": [
+        "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera",
+        "https://infogob.jne.gob.pe"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": [
+        "2016 → Candidato presidencial",
+        "2021 → Candidato presidencial (excluido)",
+        "2026 → Precandidato presidencial"
+      ],
+      "source": "https://infogob.jne.gob.pe"
+    }
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 4,
+      "detalle": {
+        "values": [
+          "Secretario General del Ministerio Público",
+          "Congresista de la República",
+          "Ministro de Justicia",
+          "Ministro de Relaciones Exteriores"
+        ],
+        "source": "https://www.congreso.gob.pe"
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 2,
+      "detalle": {
+        "values": ["Subgerente en Proinstesa", "Consultor independiente"],
+        "source": "https://infogob.jne.gob.pe"
+      }
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": [
+        "Centro Reformista",
+        "Anti-establishment con énfasis refundacional"
+      ],
+      "source": "http://www.partidofrentedelaesperanza2021.pe/DOCUMENTOS/ideario.pdf"
+    },
+    "economia": {
+      "value": "Economía Social de Mercado con fuerte intervención estatal",
+      "source": "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+    },
+    "matrimonioIgualitario": {
+      "value": "Conservador social",
+      "source": "https://www.instagram.com/p/DTLHwF4Eb9S/"
+    },
+    "aborto": {
+      "value": "En contra",
+      "source": "https://www.instagram.com/p/DTLHwF4Eb9S/"
+    },
+    "seguridad": {
+      "value": "Mano dura, acumulación de penas y reforma policial",
+      "source": "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+    },
+    "ambiente": {
+      "value": "Desarrollismo verde y canje de deuda por conservación",
+      "source": "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+    },
+    "educacion": {
+      "value": "Humanista, anti-lucro y vinculada al aparato productivo",
+      "source": "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+    },
+    "reformaPolitica": {
+      "value": "Refundacional, plebiscitaria y radical",
+      "source": "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+    }
+  },
+
+  "propuestasPrincipales": {
+    "economico": {
+      "values": [
+        "Reducción del IGV al 10%",
+        "Eliminación del IR de quinta categoría",
+        "Formalización de MYPES con régimen único"
+      ],
+      "source": "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+    },
+    "social": {
+      "values": [
+        "Cero anemia y desnutrición infantil",
+        "Programas de alimentación escolar",
+        "Vivienda Joven"
+      ],
+      "source": "https://mpesije.jne.gob.pe"
+    },
+    "ambiental": {
+      "values": [
+        "Canje de deuda por conservación",
+        "Protección de cabeceras de cuenca"
+      ],
+      "source": "https://mpesije.jne.gob.pe"
+    },
+    "institucional": {
+      "values": [
+        "Ley Patriota",
+        "Eliminación de inmunidad",
+        "Revocatoria de autoridades"
+      ],
+      "source": "https://mpesije.jne.gob.pe"
+    },
+    "educativo": {
+      "values": [
+        "Ministerio de Ciencia",
+        "Nutrición escolar garantizada",
+        "Educación bilingüe e idiomas"
+      ],
+      "source": "https://mpesije.jne.gob.pe"
+    },
+    "salud": {
+      "values": [
+        "Programa Mi Médico de Cabecera",
+        "Droguería Nacional",
+        "Cobertura SIS universal"
+      ],
+      "source": "https://mpesije.jne.gob.pe"
+    },
+    "seguridad": {
+      "values": [
+        "Reforma policial",
+        "Trabajo obligatorio para presos",
+        "Bloqueo total en penales"
+      ],
+      "source": "https://mpesije.jne.gob.pe"
+    }
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Por evaluar",
+      "source": []
+    },
+    "diferencias": {
+      "value": "Por evaluar",
+      "source": []
+    },
+    "cumplimientoPrevio": {
+      "value": "Trayectoria como Ministro de Justicia y Canciller",
+      "source": [
+        "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera"
+      ]
+    }
+  },
+
+  "controversias": {
+    "investigaciones": {
+      "values": [
+        "Controversias durante gestión como Ministro de Justicia",
+        "Cuestionamientos por declaraciones públicas"
+      ],
+      "source": ["https://elcomercio.pe"]
+    },
+    "enCurso": {
+      "values": ["Sin investigaciones en curso conocidas"],
+      "source": []
+    }
+  },
+
+  "transparencia": {
+    "items": [
+      "Declaración jurada presentada ante el JNE",
+      "Plan de gobierno disponible públicamente",
+      "Trayectoria política documentada"
+    ],
+    "source": [
+      "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+      "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+    ]
+  },
+
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Experiencia prolongada en cargos de alto nivel",
+      "source": [
+        "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera"
+      ]
+    },
+    "comunicacion": {
+      "value": "Estilo confrontacional y mediático",
+      "source": []
+    },
+    "credibilidad": {
+      "value": "Figura política polarizante",
+      "source": []
+    }
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 1,
+      "max": 2,
+      "descripcion": "Aproximadamente 1.2%",
+      "source": "https://www.datum.com.pe"
+    },
+    "aprobacion": {
+      "value": "Baja, candidato minoritario",
+      "source": "https://elcomercio.pe"
+    },
+    "redes": {
+      "value": "Presencia activa pero bajo alcance",
+      "source": "https://www.facebook.com/FerOliveraVega/"
+    }
+  },
+
+  "innovacionYVision": {
+    "items": [
+      "Ley Patriota para reforma institucional",
+      "Ministerio de Ciencia y Tecnología",
+      "Droguería Nacional para medicamentos accesibles"
+    ],
+    "source": "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+  },
+
+  "historialLegislativo": {
+    "tieneHistorial": true,
+    "asistencia": {
+      "porcentaje": 80,
+      "label": "ALTA",
+      "source": [
+        "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera"
+      ]
+    },
+    "proyectosPresentados": 0,
+    "proyectosAprobados": 0,
+    "nota": "Congresista durante múltiples periodos (1985-2001). Fundador del Frente Independiente Moralizador (FIM).",
+    "source": ["https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera"]
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "cesar-acuna",
+  "slug": "cesarAcuna",
+  "fullName": "César Acuña Peralta",
+  "shortName": "César Acuña",
+  "image": "/candidatos/cesar-acuna.webp",
+  "color": "#E30613",
+  "party": "Alianza para el Progreso",
+
+  "perfilGeneral": {
+    "edad": {
+      "value": "72 años",
+      "source": ["Documento César Acuña"]
+    },
+    "nacimiento": {
+      "value": "12/08/1952",
+      "source": "Documento César Acuña"
+    },
+    "lugar": {
+      "value": "Virú, La Libertad",
+      "source": "Documento César Acuña"
+    },
+    "nivelEducativo": {
+      "value": "Doctor en Educación",
+      "source": "Documento César Acuña"
+    },
+    "profesion": {
+      "value": ["Docente", "Empresario"],
+      "source": "Documento César Acuña"
+    },
+    "partidoActual": {
+      "value": "Alianza para el Progreso",
+      "source": "Documento César Acuña"
+    },
+    "cambiosDePartido": {
+      "value": [],
+      "source": "Documento César Acuña"
+    }
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "Más de 20 años",
+      "source": "Documento César Acuña"
+    },
+    "cargosPrevios": {
+      "values": [
+        "Congresista de la República (2001-2006)",
+        "Alcalde de Trujillo (2007-2014)",
+        "Gobernador Regional de La Libertad (2015-2018)"
+      ],
+      "source": ["Documento César Acuña"]
+    },
+    "candidaturasPresidenciales": {
+      "values": [
+        "2016 → Excluido del proceso electoral",
+        "2021 → Cuarto lugar"
+      ],
+      "source": "Documento César Acuña"
+    }
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 3,
+      "detalle": {
+        "values": [
+          "Congresista de la República",
+          "Alcalde Provincial de Trujillo",
+          "Gobernador Regional de La Libertad"
+        ],
+        "source": "Documento César Acuña"
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 1,
+      "detalle": {
+        "values": ["Fundador y directivo de la Universidad César Vallejo"],
+        "source": "Documento César Acuña"
+      }
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": ["Centro", "Pragmatismo político con enfoque social"],
+      "source": "Documento César Acuña"
+    },
+    "economia": {
+      "value": "Economía social de mercado",
+      "source": "Documento César Acuña"
+    },
+    "matrimonioIgualitario": {
+      "value": null,
+      "source": "No especificado en el documento"
+    },
+    "aborto": {
+      "value": null,
+      "source": "No especificado en el documento"
+    },
+    "seguridad": {
+      "value": "Fortalecimiento institucional y lucha contra la criminalidad",
+      "source": "Documento César Acuña"
+    },
+    "ambiente": {
+      "value": "Desarrollo sostenible",
+      "source": "Documento César Acuña"
+    },
+    "educacion": {
+      "value": "Prioridad nacional y acceso universal",
+      "source": "Documento César Acuña"
+    },
+    "reformaPolitica": {
+      "value": "Reformas graduales",
+      "source": "Documento César Acuña"
+    }
+  },
+
+  "propuestasPrincipales": {
+    "economico": {
+      "values": [
+        "Impulso a la inversión privada",
+        "Descentralización económica"
+      ],
+      "source": "Documento César Acuña"
+    },
+    "social": {
+      "values": ["Reducción de la pobreza", "Inclusión social"],
+      "source": "Documento César Acuña"
+    },
+    "ambiental": {
+      "values": ["Protección de recursos naturales"],
+      "source": "Documento César Acuña"
+    },
+    "institucional": {
+      "values": ["Fortalecimiento del Estado"],
+      "source": "Documento César Acuña"
+    },
+    "educativo": {
+      "values": [
+        "Mejora de la calidad educativa",
+        "Acceso a educación superior"
+      ],
+      "source": "Documento César Acuña"
+    },
+    "salud": {
+      "values": ["Fortalecimiento del sistema público de salud"],
+      "source": "Documento César Acuña"
+    },
+    "seguridad": {
+      "values": ["Lucha contra la delincuencia organizada"],
+      "source": "Documento César Acuña"
+    }
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Medio",
+      "source": "Documento César Acuña"
+    },
+    "diferencias": {
+      "value": "Enfoque pragmático con cambios progresivos",
+      "source": "Documento César Acuña"
+    },
+    "cumplimientoPrevio": {
+      "value": "Mixto según evaluaciones previas",
+      "source": "Documento César Acuña"
+    }
+  },
+
+  "controversias": {
+    "investigaciones": {
+      "values": ["Investigación por presunto plagio académico"],
+      "source": "Documento César Acuña"
+    },
+    "enCurso": {
+      "values": [],
+      "source": "Documento César Acuña"
+    }
+  },
+
+  "transparencia": {
+    "items": ["Declaración de bienes", "Participación en procesos electorales"],
+    "source": "Documento César Acuña"
+  },
+
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Alto",
+      "source": "Documento César Acuña"
+    },
+    "comunicacion": {
+      "value": "Directa y populista",
+      "source": "Documento César Acuña"
+    },
+    "credibilidad": {
+      "value": "Cuestionada por controversias académicas",
+      "source": "Documento César Acuña"
+    }
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": null,
+      "max": null,
+      "descripcion": "Variable según región",
+      "source": "Documento César Acuña"
+    },
+    "aprobacion": {
+      "value": "Media",
+      "source": "Documento César Acuña"
+    },
+    "redes": {
+      "value": "Presencia activa",
+      "source": "Documento César Acuña"
+    }
+  },
+
+  "innovacionYVision": {
+    "items": [
+      "Educación como motor de desarrollo",
+      "Descentralización regional"
+    ],
+    "source": "Documento César Acuña"
+  },
+
+  "historialLegislativo": {
+    "tieneHistorial": true,
+    "asistencia": {
+      "porcentaje": null,
+      "label": "MEDIA",
+      "source": "Documento César Acuña"
+    },
+    "proyectosPresentados": null,
+    "proyectosAprobados": null,
+    "nota": "El documento no detalla cifras exactas",
+    "source": "Documento César Acuña"
+  }
+}

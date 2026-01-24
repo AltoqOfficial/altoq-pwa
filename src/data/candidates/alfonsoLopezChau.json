@@ -1,0 +1,268 @@
+{
+  "id": "alfonso-lopez-chau",
+  "slug": "alfonsoLopezChau",
+  "fullName": "PABLO ALFONSO LÓPEZ CHAU NAVA",
+  "shortName": "Alfonso López Chau",
+  "image": "/candidatos/alfonso-lopez-chau.webp",
+  "color": "#C62828",
+  "party": "Ahora Nación",
+  "perfilGeneral": {
+    "edad": {
+      "value": null,
+      "source": null
+    },
+    "nacimiento": {
+      "value": null,
+      "source": null
+    },
+    "lugar": {
+      "value": null,
+      "source": null
+    },
+    "nivelEducativo": {
+      "value": [
+        "Bachiller en Ciencias Económicas – Universidad Nacional del Callao (1976)",
+        "Maestro en Economía – Universidad Nacional Autónoma de México (2002)",
+        "Doctor en Economía – Universidad Nacional Autónoma de México (2005)"
+      ],
+      "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+    },
+    "profesion": {
+      "value": [
+        "Economista",
+        "Académico universitario",
+        "Docente universitario"
+      ],
+      "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+    },
+    "partidoActual": {
+      "value": "Ahora Nación",
+      "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+    },
+    "cambiosDePartido": {
+      "value": [],
+      "source": null
+    }
+  },
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "4 años (1995, 2023–2025)",
+      "source": "https://www.infobae.com/peru/2025/04/13/alfonso-lopez-chau-perfil-del-exrector-de-launi-que-se-lanzara-como-candidato-presidencial-en-2026/"
+    },
+    "cargosPrevios": {
+      "values": [
+        "Fundador y precandidato presidencial de Ahora Nación (2023–Actualidad)",
+        "Rector de la Universidad Nacional de Ingeniería (2021–2025)"
+      ],
+      "source": [
+        "https://rpp.pe/politica/elecciones/alfonso-lopez-chau-sobre-elecciones-2026-el-peru-necesita-una-alianza-de-partidos-noticia-1628658",
+        "https://larepublica.pe/politica/2025/05/12/alfonso-lopez-chau-el-rector-de-la-uni-que-busca-ser-presidente-del-peru-con-economia-nacional-de-mercado-hnews-476949"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2026 → Precandidato presidencial"],
+      "source": "https://rpp.pe/politica/elecciones/cpi-a-cuatro-meses-de-las-elecciones-estos-son-los-candidatos-y-pre-candidatos-presidenciales-que-lideran-la-intencion-de-voto-noticia-1666471"
+    }
+  },
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 3,
+      "detalle": {
+        "values": [
+          "Rector de la Universidad Nacional de Ingeniería (2021–2025)",
+          "Director de la Escuela de Ingeniería Económica – UNI (2017–2019)",
+          "Profesor Principal – UNI (1990–2025)"
+        ],
+        "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 0,
+      "detalle": {
+        "values": [],
+        "source": null
+      }
+    }
+  },
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": [
+        "Centro Izquierda",
+        "Socialdemocracia con nacionalismo productivo"
+      ],
+      "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+    },
+    "economia": {
+      "value": "Socialdemocracia económica y nacionalismo productivo",
+      "source": "https://peru21.pe/politica/cade-ejecutivos-2025-alfonso-lopez-chau-presenta-sus-propuestas-para-el-peru/"
+    },
+    "matrimonioIgualitario": {
+      "value": null,
+      "source": null
+    },
+    "aborto": {
+      "value": "Enfoque garantista y progresista en derechos reproductivos",
+      "source": "https://larepublica.pe/politica/2026/01/09/cinco-partidos-prometen-revision-y-salida-de-corte-idh-y-otros-tres-defienden-permanencia-en-planes-de-gobierno-hnews-305037"
+    },
+    "seguridad": {
+      "value": "Fortalecimiento institucional y reforma del sistema penitenciario",
+      "source": "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+    },
+    "ambiente": {
+      "value": "Desarrollo sostenible y soberanía ambiental",
+      "source": "https://img.lpderecho.pe/wp-content/uploads/2025/12/Ahora-Nacion-Plan-de-Gobierno-LP-derecho.pdf"
+    },
+    "educacion": {
+      "value": "Estado docente, educación pública, universal y descentralizada",
+      "source": "https://peru21.pe/politica/cade-ejecutivos-2025-alfonso-lopez-chau-presenta-sus-propuestas-para-el-peru/"
+    },
+    "reformaPolitica": {
+      "value": "Reforma constitucional, descentralización y garantismo democrático",
+      "source": "https://ahoranacion-callao.com/ideario.html"
+    }
+  },
+  "propuestasPrincipales": {
+    "economico": {
+      "values": [
+        "Economía con valor agregado y productividad regional",
+        "Estabilidad macrofiscal y diversificación productiva",
+        "Sistema financiero inclusivo",
+        "Reforma previsional sostenible"
+      ],
+      "source": "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+    },
+    "social": {
+      "values": [
+        "Sistema de protección social universal",
+        "Reducción de pobreza y vulnerabilidad"
+      ],
+      "source": "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+    },
+    "ambiental": {
+      "values": [
+        "Desarrollo sostenible",
+        "Protección de ecosistemas",
+        "Integración ambiental en el crecimiento económico"
+      ],
+      "source": "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+    },
+    "institucional": {
+      "values": [
+        "Reforma del Estado",
+        "Descentralización política",
+        "Fortalecimiento democrático"
+      ],
+      "source": "https://ahoranacion-callao.com/ideario.html"
+    },
+    "educativo": {
+      "values": [
+        "Educación pública de calidad",
+        "Gestión territorial descentralizada"
+      ],
+      "source": "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+    },
+    "salud": {
+      "values": [
+        "Sistema de salud público integrado",
+        "Acceso universal a servicios de salud"
+      ],
+      "source": "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+    },
+    "seguridad": {
+      "values": [
+        "Lucha contra el crimen organizado",
+        "Reforma penitenciaria",
+        "Fortalecimiento de la PNP"
+      ],
+      "source": "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+    }
+  },
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": "https://mpesije.jne.gob.pe"
+    },
+    "diferencias": {
+      "value": "No se identifican contradicciones públicas documentadas",
+      "source": null
+    },
+    "cumplimientoPrevio": {
+      "value": "No aplica (no ha ejercido cargos ejecutivos nacionales)",
+      "source": null
+    }
+  },
+  "controversias": {
+    "investigaciones": {
+      "values": [
+        "Investigación por presunta colusión y negociación incompatible en la UNI",
+        "Cuestionamientos por inclusión de candidatos con denuncias graves en Ahora Nación",
+        "Declaraciones pasadas sobre Víctor Polay (MRTA)"
+      ],
+      "source": [
+        "https://www.infobae.com/peru/2025/07/17/alfonso-lopez-chau-en-la-mira-de-la-fiscalia-es-investigado-por-presuntamente-beneficiar-a-trabajadora-en-la-uni/",
+        "https://willax.pe/politica/alfonso-lopez-chau-candidato-congreso-violacion-menor-willax/",
+        "https://canaln.pe/actualidad/lopez-chau-llamo-luchador-politico-victor-polay-1989-n488900/"
+      ]
+    },
+    "enCurso": {
+      "values": [
+        "Investigación fiscal por presuntos delitos contra la administración pública"
+      ],
+      "source": "https://www.infobae.com/peru/2025/07/17/alfonso-lopez-chau-en-la-mira-de-la-fiscalia-es-investigado-por-presuntamente-beneficiar-a-trabajadora-en-la-uni/"
+    }
+  },
+  "transparencia": {
+    "items": [
+      "Declaración pública de antecedentes",
+      "Registro en plataformas oficiales del JNE",
+      "Plan de gobierno publicado"
+    ],
+    "source": "https://plataformaelectoral.jne.gob.pe"
+  },
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Académico-institucional",
+      "source": "https://larepublica.pe"
+    },
+    "comunicacion": {
+      "value": "Técnica y académica",
+      "source": "https://rpp.pe"
+    },
+    "credibilidad": {
+      "value": "Alta en sectores académicos, debatida en sectores políticos",
+      "source": "https://infobae.com"
+    }
+  },
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 1.8,
+      "max": 1.8,
+      "descripcion": "1.8% intención de voto nacional",
+      "source": "https://rpp.pe/politica/elecciones/cpi-a-cuatro-meses-de-las-elecciones-estos-son-los-candidatos-y-pre-candidatos-presidenciales-que-lideran-la-intencion-de-voto-noticia-1666471"
+    },
+    "aprobacion": {
+      "value": null,
+      "source": null
+    },
+    "redes": {
+      "value": "Presencia activa en redes sociales",
+      "source": "https://www.instagram.com/alfonsolopez_chau/"
+    }
+  },
+  "innovacionYVision": {
+    "items": [
+      "Industrialización descentralizada",
+      "Estado promotor del desarrollo",
+      "Economía con valor agregado"
+    ],
+    "source": "https://mpesije.jne.gob.pe"
+  },
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "asistencia": null,
+    "proyectosPresentados": null,
+    "proyectosAprobados": null,
+    "nota": "No ha ejercido cargos legislativos",
+    "source": null
+  }
+}

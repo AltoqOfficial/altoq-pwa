@@ -1,0 +1,276 @@
+{
+  "id": "yonhy-lescano-ancieta",
+  "slug": "yonhyLescano",
+  "fullName": "Yonhy Lescano Ancieta",
+  "shortName": "Yonhy Lescano",
+  "image": "/candidatos/yonhy-lescano.webp",
+  "color": "#C62828",
+  "party": "Partido Político Cooperación Popular",
+
+  "perfilGeneral": {
+    "edad": { "value": "Sin información disponible", "source": [] },
+    "nacimiento": { "value": "Sin información disponible", "source": [] },
+    "lugar": { "value": "Sin información disponible", "source": [] },
+    "nivelEducativo": {
+      "value": "Derecho (Bachiller y Abogado), Magíster en Derecho, Doctorado en curso",
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://otorongo.club/2021/candidate/01211014/",
+        "https://yonhy-lescano.blogspot.com/p/datos-personales_20.html"
+      ]
+    },
+    "profesion": {
+      "value": ["Abogado", "Docente universitario"],
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "partidoActual": {
+      "value": "Partido Político Cooperación Popular",
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "cambiosDePartido": {
+      "value": ["Acción Popular", "Perú Posible", "Cooperación Popular"],
+      "source": ["https://infogob.jne.gob.pe/"]
+    }
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "21",
+      "source": ["https://infogob.jne.gob.pe/"]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Adherente Fundacional – Acción Popular (2004–2023)",
+        "Defensor Adjunto I – Acción Popular (2004–2007)",
+        "Secretario General Nacional – Acción Popular (2009–2011)",
+        "Congresista – Perú Posible (2011–2016)",
+        "Congresista – Acción Popular (2016–2019)",
+        "Miembro del Comité Político – Cooperación Popular (2024–Actualidad)"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.congreso.gob.pe/",
+        "https://infogob.jne.gob.pe/"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2021 → Candidato", "2026 → Candidato"],
+      "source": ["https://plataformaelectoral.jne.gob.pe/"]
+    }
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 2,
+      "detalle": {
+        "values": [
+          "Profesor Principal – Universidad Nacional del Altiplano de Puno",
+          "Asesor – Congreso de la República"
+        ],
+        "source": [
+          "https://limagris.com/yonhy-lescano-de-candidato-a-la-presidencia-a-asesor-del-congreso/"
+        ]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 0,
+      "detalle": {
+        "values": ["Sin experiencia en sector privado registrada"],
+        "source": []
+      }
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": ["Centro-izquierda", "Autodefinición pública del candidato"],
+      "source": ["https://ladecana.pe/"]
+    },
+    "economia": {
+      "value": "Economía de mercado inclusiva",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "aborto": {
+      "value": "En contra de la despenalización del aborto",
+      "source": ["https://rpp.pe/"]
+    },
+    "seguridad": {
+      "value": "Reingeniería de la PNP y control territorial con PNP y FFAA",
+      "source": ["https://mpesije.jne.gob.pe/"]
+    },
+    "ambiente": {
+      "value": "Ordenamiento territorial sostenible y protección ambiental",
+      "source": ["https://mpesije.jne.gob.pe/"]
+    },
+    "educacion": {
+      "value": "Educación pública prioritaria y reconstrucción escolar",
+      "source": ["https://mpesije.jne.gob.pe/"]
+    },
+    "reformaPolitica": {
+      "value": "Fortalecimiento institucional y transparencia",
+      "source": ["https://mpesije.jne.gob.pe/"]
+    }
+  },
+
+  "propuestasPrincipales": {
+    "economico": {
+      "values": [
+        "Renegociación de concesiones",
+        "Industrialización rural",
+        "Economía social de mercado",
+        "Fortalecimiento de PetroPerú",
+        "Apoyo a MYPE, artesanía y turismo"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf"
+      ]
+    },
+    "social": {
+      "values": [
+        "Seguridad ciudadana",
+        "Reforma de pensiones",
+        "Acceso a agua y saneamiento",
+        "Lucha contra pobreza y anemia"
+      ],
+      "source": ["https://mpesije.jne.gob.pe/"]
+    },
+    "ambiental": {
+      "values": [
+        "Protección de la Amazonía",
+        "Descontaminación de suelos y aguas",
+        "Aseguramiento de fuentes hídricas"
+      ],
+      "source": ["https://mpesije.jne.gob.pe/"]
+    },
+    "institucional": {
+      "values": [
+        "Nueva Constitución",
+        "Lucha contra la corrupción",
+        "Reforma del sistema de justicia"
+      ],
+      "source": ["https://mpesije.jne.gob.pe/"]
+    },
+    "educativo": {
+      "values": [
+        "Reconstrucción de escuelas",
+        "Capacitación docente",
+        "Becas internacionales",
+        "Compra de satélite educativo"
+      ],
+      "source": ["https://mpesije.jne.gob.pe/"]
+    },
+    "salud": {
+      "values": [
+        "Sistema de salud 24/7",
+        "Fortalecimiento de MINSA y EsSalud",
+        "Suministro permanente de medicinas"
+      ],
+      "source": ["https://mpesije.jne.gob.pe/"]
+    },
+    "seguridad": {
+      "values": [
+        "Reingeniería de la PNP",
+        "Cero impunidad",
+        "Tecnología e inteligencia policial"
+      ],
+      "source": ["https://mpesije.jne.gob.pe/"]
+    }
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": ["https://mpesije.jne.gob.pe/"]
+    },
+    "diferencias": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "cumplimientoPrevio": {
+      "value": "No evaluable (no gestión presidencial previa)",
+      "source": []
+    }
+  },
+
+  "controversias": {
+    "investigaciones": {
+      "values": [
+        "Denuncia por presunto acoso sexual (2019) – archivada definitivamente"
+      ],
+      "source": ["https://lpderecho.pe/", "https://ojo-publico.com/"]
+    },
+    "enCurso": {
+      "values": ["Sin investigaciones en curso conocidas"],
+      "source": []
+    }
+  },
+
+  "transparencia": {
+    "items": [
+      "No registra sentencias penales firmes",
+      "Investigaciones archivadas",
+      "Sin procesos judiciales en curso"
+    ],
+    "source": ["https://lpderecho.pe/", "https://www.pj.gob.pe/"]
+  },
+
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Experiencia parlamentaria prolongada",
+      "source": ["https://infogob.jne.gob.pe/"]
+    },
+    "comunicacion": {
+      "value": "Estilo confrontacional y directo",
+      "source": ["https://rpp.pe/"]
+    },
+    "credibilidad": {
+      "value": "Mixta, afectada por controversias pasadas",
+      "source": ["https://ojo-publico.com/"]
+    }
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 2,
+      "max": 2,
+      "descripcion": "2% a nivel nacional (Ipsos, dic 2025)",
+      "source": ["https://www.ipsos.com/"]
+    },
+    "aprobacion": {
+      "value": "Sin información disponible",
+      "source": []
+    },
+    "redes": {
+      "value": "Presencia activa en redes sociales",
+      "source": ["https://lescano.pe/"]
+    }
+  },
+
+  "innovacionYVision": {
+    "items": [
+      "Uso de IA para control estatal",
+      "Industrialización productiva regional",
+      "Ministerio de Ciencia y Tecnología"
+    ],
+    "source": ["https://mpesije.jne.gob.pe/"]
+  },
+
+  "historialLegislativo": {
+    "tieneHistorial": true,
+    "asistencia": {
+      "porcentaje": 85,
+      "label": "ALTA",
+      "source": ["https://www.congreso.gob.pe/"]
+    },
+    "proyectosPresentados": 0,
+    "proyectosAprobados": 0,
+    "nota": "Información legislativa parcial disponible. Fue Congresista en dos periodos (2011-2016 y 2016-2019).",
+    "source": ["https://www.congreso.gob.pe/"]
+  }
+}

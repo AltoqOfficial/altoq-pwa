@@ -240,8 +240,8 @@ const LEFT_CANDIDATES: Candidate[] = [
     scale: { default: 0.45, sm: 0.7, md: 0.6, lg: 0.55, xl: 0.6, ["2xl"]: 0.8 },
   },
   {
-    src: "/promotion/left/butters_promotion.webp",
-    alt: "Miguel Ángel del Castillo",
+    src: "/promotion/left/cerron_promotion.webp",
+    alt: "Vladimir Cerrón",
     zIndex: 20,
     scale: {
       default: 1.1,

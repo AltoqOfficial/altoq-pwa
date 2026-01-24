@@ -38,13 +38,12 @@ export function HistorialLegislativoSection({
 
   const renderCandidateChart = (candidate: CandidateComparisonData | null) => {
     if (candidate) {
+      const asistencia = candidate.historialLegislativo.asistencia;
       return (
         <LegislativeHistoryChart
           hasHistory={candidate.historialLegislativo.tieneHistorial}
-          attendancePercentage={
-            candidate.historialLegislativo.asistencia.porcentaje
-          }
-          attendanceLabel={candidate.historialLegislativo.asistencia.label}
+          attendancePercentage={asistencia?.porcentaje ?? null}
+          attendanceLabel={asistencia?.label ?? "N/A"}
           projectsPresented={
             candidate.historialLegislativo.proyectosPresentados
           }
@@ -52,7 +51,7 @@ export function HistorialLegislativoSection({
           note={candidate.historialLegislativo.nota}
           color={candidate.color}
           source={candidate.historialLegislativo.source}
-          attendanceSource={candidate.historialLegislativo.asistencia.source}
+          attendanceSource={asistencia?.source}
         />
       );
     }

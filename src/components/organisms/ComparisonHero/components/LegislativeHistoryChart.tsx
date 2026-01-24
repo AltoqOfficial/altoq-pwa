@@ -6,10 +6,10 @@ import { SourceTooltip } from "./shared";
 
 interface LegislativeHistoryChartProps {
   hasHistory: boolean;
-  attendancePercentage: number;
+  attendancePercentage: number | null;
   attendanceLabel: string;
-  projectsPresented: number;
-  projectsApproved: number;
+  projectsPresented: number | null;
+  projectsApproved: number | null;
   note?: string;
   color: string;
   source?: string | string[] | null;

@@ -1,0 +1,267 @@
+{
+  "id": "vladimir_cerron",
+  "slug": "vladimirCerron",
+  "fullName": "Vladimir Roy Cerrón Rojas",
+  "shortName": "V. Cerrón",
+  "image": "/candidatos/vladimir-cerron.webp",
+  "color": "#B22222",
+  "party": "Perú Libre",
+
+  "perfilGeneral": {
+    "edad": {
+      "value": "No especificado en el documento",
+      "source": []
+    },
+    "nacimiento": {
+      "value": "No especificado",
+      "source": []
+    },
+    "lugar": {
+      "value": "Junín, Perú",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En"
+      ]
+    },
+    "nivelEducativo": {
+      "value": "Doctor en Medicina / Magíster en Neurociencias",
+      "source": [
+        "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=0121163"
+      ]
+    },
+    "profesion": {
+      "value": ["Médico Neurocirujano", "Docente Universitario"],
+      "source": [
+        "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=0121163"
+      ]
+    },
+    "partidoActual": {
+      "value": "Perú Libre",
+      "source": ["https://perulibre.pe/vladimir-cerron-rojas/"]
+    },
+    "cambiosDePartido": {
+      "value": ["Perú Libertario", "Movimiento Regional Perú Libre"],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En"
+      ]
+    }
+  },
+
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "17",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En"
+      ]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Presidente Regional de Junín (2011–2014)",
+        "Gobernador Regional de Junín (2019 – suspendido)"
+      ],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": [
+        "2016 → Candidato (retirado)",
+        "2021 → Vicepresidencia (excluido)",
+        "2026 → Precandidato"
+      ],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En"
+      ]
+    }
+  },
+
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 2,
+      "detalle": {
+        "values": [
+          "Presidente Regional de Junín",
+          "Gobernador Regional de Junín"
+        ],
+        "source": ["https://infogob.jne.gob.pe/"]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 0,
+      "detalle": {
+        "values": [],
+        "source": []
+      }
+    }
+  },
+
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": ["Izquierda", "Marxista-Leninista-Mariateguista"],
+      "source": [
+        "https://apisije-e.jne.gob.pe/TRAMITE/ESCRITO/2108/ARCHIVO/FIRMADO/9716.PDF"
+      ]
+    },
+    "economia": {
+      "value": "Economía Popular con Mercados",
+      "source": [
+        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": "No especificado explícitamente",
+      "source": []
+    },
+    "aborto": {
+      "value": "A favor de la despenalización",
+      "source": [
+        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"
+      ]
+    },
+    "seguridad": {
+      "value": "Enfoque preventivo y comunitario",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf"
+      ]
+    },
+    "ambiente": {
+      "value": "Soberanía sobre recursos naturales",
+      "source": [
+        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"
+      ]
+    },
+    "educacion": {
+      "value": "Ingreso libre y educación descolonizadora",
+      "source": [
+        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"
+      ]
+    },
+    "reformaPolitica": {
+      "value": "Asamblea Constituyente Plurinacional",
+      "source": [
+        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"
+      ]
+    }
+  },
+
+  "controversias": {
+    "investigaciones": {
+      "values": [
+        "Caso Los Dinámicos del Centro",
+        "Investigación por Lavado de Activos"
+      ],
+      "source": ["https://www.infobae.com/", "https://hytimes.pe/"]
+    },
+    "enCurso": {
+      "values": ["Prisión preventiva vigente (36 meses)"],
+      "source": [
+        "https://hytimes.pe/2026/01/09/poder-judicial-ratifica-prision-preventiva-para-vladimir-cerron/"
+      ]
+    }
+  },
+
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 0.7,
+      "max": 0.7,
+      "descripcion": "0.7% a nivel nacional (Datum, diciembre 2025)",
+      "source": ["https://www.datum.com.pe/"]
+    },
+    "aprobacion": {
+      "value": "Baja, asociada a procesos judiciales",
+      "source": ["https://www.infobae.com/"]
+    },
+    "redes": {
+      "value": "Alta exposición mediática pese a clandestinidad",
+      "source": ["https://www.infobae.com/"]
+    }
+  },
+
+  "propuestasPrincipales": {
+    "economico": {
+      "values": [
+        "Economía Popular con Mercados",
+        "Nacionalización de recursos estratégicos"
+      ],
+      "source": ["https://perulibre.pe"]
+    },
+    "social": {
+      "values": [
+        "Programas sociales universales",
+        "Reducción de desigualdades"
+      ],
+      "source": ["https://perulibre.pe"]
+    },
+    "ambiental": {
+      "values": ["Soberanía sobre recursos naturales"],
+      "source": ["https://perulibre.pe"]
+    },
+    "institucional": {
+      "values": ["Asamblea Constituyente", "Reforma del Estado"],
+      "source": ["https://perulibre.pe"]
+    },
+    "educativo": {
+      "values": ["Educación pública gratuita", "Ingreso libre a universidades"],
+      "source": ["https://perulibre.pe"]
+    },
+    "salud": {
+      "values": ["Sistema de salud público universal"],
+      "source": ["https://perulibre.pe"]
+    },
+    "seguridad": {
+      "values": ["Enfoque preventivo y comunitario"],
+      "source": ["https://perulibre.pe"]
+    }
+  },
+
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": "https://perulibre.pe"
+    },
+    "diferencias": {
+      "value": "Discurso alineado con ideología partidaria",
+      "source": "https://perulibre.pe"
+    },
+    "cumplimientoPrevio": {
+      "value": "Gestión regional con cuestionamientos judiciales",
+      "source": "https://infogob.jne.gob.pe"
+    }
+  },
+
+  "transparencia": {
+    "items": ["Declaración jurada presentada", "Procesos judiciales activos"],
+    "source": ["https://plataformaelectoral.jne.gob.pe"]
+  },
+
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Liderazgo partidario fuerte",
+      "source": "https://perulibre.pe"
+    },
+    "comunicacion": {
+      "value": "Discurso ideológico estructurado",
+      "source": "https://larepublica.pe"
+    },
+    "credibilidad": {
+      "value": "Baja por procesos judiciales",
+      "source": "https://infobae.com"
+    }
+  },
+
+  "innovacionYVision": {
+    "items": [
+      "Asamblea Constituyente Plurinacional",
+      "Economía Popular con Mercados"
+    ],
+    "source": "https://perulibre.pe"
+  },
+
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "asistencia": null,
+    "proyectosPresentados": null,
+    "proyectosAprobados": null,
+    "nota": "No ha ejercido cargos legislativos",
+    "source": null
+  }
+}

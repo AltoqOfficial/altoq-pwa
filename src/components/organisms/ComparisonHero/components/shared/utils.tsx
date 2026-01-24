@@ -187,13 +187,16 @@ export function renderTypographyList(
  * Renders a list as Typography components with source tooltip
  */
 export function renderTypographyListWithSource(
-  value: string[] | { items: string[]; source?: string | string[] } | undefined,
+  value:
+    | string[]
+    | { items: string[]; source?: string | string[] | null }
+    | undefined,
   align: "left" | "center" | "right" = "left"
 ): React.ReactNode {
   if (!value) return "-";
 
   let items: string[];
-  let source: string | string[] | undefined;
+  let source: string | string[] | null | undefined;
 
   if (Array.isArray(value)) {
     items = value;

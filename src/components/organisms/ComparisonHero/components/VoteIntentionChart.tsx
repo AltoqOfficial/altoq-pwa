@@ -4,15 +4,15 @@ import { Typography } from "@/components/atoms";
 import { SourceTooltip } from "./shared";
 
 interface VoteIntentionChartProps {
-  minVote: number;
-  maxVote: number;
+  minVote: number | null;
+  maxVote: number | null;
   description: string;
   color: string;
-  approval: string;
-  socialMedia: string;
-  voteSource?: string | string[];
-  approvalSource?: string | string[];
-  socialMediaSource?: string | string[];
+  approval: string | null;
+  socialMedia: string | null;
+  voteSource?: string | string[] | null;
+  approvalSource?: string | string[] | null;
+  socialMediaSource?: string | string[] | null;
 }
 
 /**
@@ -47,7 +47,7 @@ export function VoteIntentionChart({
               align="center"
               className="text-lg md:text-xl lg:text-2xl"
             >
-              {minVote}%
+              {minVote ?? "N/A"}%
             </Typography>
           </div>
           <div
@@ -61,7 +61,7 @@ export function VoteIntentionChart({
               align="center"
               className="text-lg md:text-xl lg:text-2xl"
             >
-              {maxVote}%
+              {maxVote ?? "N/A"}%
             </Typography>
           </div>
         </div>
