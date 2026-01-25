@@ -1,10 +1,6 @@
 "use client";
 
-import type {
-  CandidateComparisonData,
-  TransparenciaData,
-  InnovacionData,
-} from "@/data";
+import type { CandidateComparisonData } from "@/data";
 import { renderTypographyListWithSource } from "./utils";
 
 interface ListComparisonLayoutProps {

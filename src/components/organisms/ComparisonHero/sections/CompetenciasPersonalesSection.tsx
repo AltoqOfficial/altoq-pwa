@@ -45,8 +45,10 @@ export function CompetenciasPersonalesSection({
                 className="text-xs md:text-sm lg:text-base"
               >
                 {renderValueWithSource(
-                  leftCandidate?.competenciasPersonales[
-                    key as keyof typeof leftCandidate.competenciasPersonales
+                  leftCandidate?.competenciasPersonales?.[
+                    key as keyof NonNullable<
+                      typeof leftCandidate.competenciasPersonales
+                    >
                   ]
                 )}
               </Typography>
@@ -59,8 +61,10 @@ export function CompetenciasPersonalesSection({
                 className="text-xs md:text-sm lg:text-base"
               >
                 {renderValueWithSource(
-                  rightCandidate?.competenciasPersonales[
-                    key as keyof typeof rightCandidate.competenciasPersonales
+                  rightCandidate?.competenciasPersonales?.[
+                    key as keyof NonNullable<
+                      typeof rightCandidate.competenciasPersonales
+                    >
                   ]
                 )}
               </Typography>

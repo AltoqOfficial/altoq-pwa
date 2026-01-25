@@ -37,7 +37,7 @@ export function HistorialLegislativoSection({
   }
 
   const renderCandidateChart = (candidate: CandidateComparisonData | null) => {
-    if (candidate) {
+    if (candidate && candidate.historialLegislativo) {
       const asistencia = candidate.historialLegislativo.asistencia;
       return (
         <LegislativeHistoryChart
@@ -49,7 +49,7 @@ export function HistorialLegislativoSection({
           }
           projectsApproved={candidate.historialLegislativo.proyectosAprobados}
           note={candidate.historialLegislativo.nota}
-          color={candidate.color}
+          color={candidate.color || "#6B7280"}
           source={candidate.historialLegislativo.source}
           attendanceSource={asistencia?.source}
         />

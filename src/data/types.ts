@@ -78,10 +78,9 @@ export interface CoherenciaConElPlan {
   cumplimientoPrevio: SourceableString;
 }
 
-export interface Controversias {
-  investigaciones: SourceableArray;
-  enCurso: SourceableArray;
-}
+// Controversias is a flexible type to accommodate various data structures from candidates
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type Controversias = Record<string, any>;
 
 export interface CompetenciasPersonales {
   liderazgo: SourceableString;
@@ -104,7 +103,7 @@ export interface PercepcionPublica {
 
 export interface Asistencia {
   porcentaje: number | null;
-  label: string;
+  label: string | null;
   source?: string | string[] | null;
 }
 
@@ -135,22 +134,28 @@ export interface InnovacionData {
 
 export interface CandidateComparisonData {
   id: string;
-  slug: string;
-  fullName: string;
-  shortName: string;
+  slug?: string;
+  name?: string; // Alternative to fullName in some candidate files
+  fullName?: string;
+  shortName?: string;
   image: string;
-  color: string;
+  color?: string;
   party: string;
-  perfilGeneral: PerfilGeneral;
-  experienciaPolitica: ExperienciaPolitica;
-  experienciaGestion: ExperienciaGestion;
-  ideologiaPolitica: IdeologiaPolitica;
-  propuestasPrincipales: PropuestasPrincipales;
-  coherenciaConElPlan: CoherenciaConElPlan;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  perfilGeneral: PerfilGeneral | Record<string, any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  experienciaPolitica: ExperienciaPolitica | Record<string, any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  experienciaGestion: ExperienciaGestion | Record<string, any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ideologiaPolitica: IdeologiaPolitica | Record<string, any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  propuestasPrincipales: PropuestasPrincipales | Record<string, any>;
+  coherenciaConElPlan: CoherenciaConElPlan | null;
   controversias: Controversias;
-  transparencia: string[] | TransparenciaData;
-  competenciasPersonales: CompetenciasPersonales;
-  percepcionPublica: PercepcionPublica;
-  innovacionYVision: string[] | InnovacionData;
-  historialLegislativo: HistorialLegislativo;
+  transparencia: string[] | TransparenciaData | null;
+  competenciasPersonales: CompetenciasPersonales | null;
+  percepcionPublica: PercepcionPublica | null;
+  innovacionYVision: string[] | InnovacionData | null;
+  historialLegislativo: HistorialLegislativo | null;
 }

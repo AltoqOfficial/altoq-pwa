@@ -172,7 +172,7 @@ const CandidateImage = memo(function CandidateImage({
   isHero = false,
 }: {
   candidate: {
-    name: string;
+    name?: string;
     fullName?: string;
     image: string;
     brightness: number;
@@ -193,7 +193,7 @@ const CandidateImage = memo(function CandidateImage({
       >
         <Image
           src={candidate.image}
-          alt={candidate.name}
+          alt={candidate.name || candidate.fullName || "Candidato"}
           fill
           priority
           className={`object-cover ${side === "left" ? "object-right" : "object-left"} z-10 animate-candidate-appear xl:scale-100 2xl:scale-108`}
@@ -213,7 +213,7 @@ const CandidateImage = memo(function CandidateImage({
   return (
     <Image
       src={candidate.image}
-      alt={candidate.name}
+      alt={candidate.name || candidate.fullName || "Candidato"}
       width={140}
       height={80}
       loading="lazy"
@@ -265,9 +265,9 @@ export function ComparisonHero() {
 
     if (leftCandidate) {
       return {
-        name: leftCandidate.fullName,
-        fullName: leftCandidate.fullName,
-        shortName: leftCandidate.shortName,
+        name: leftCandidate.fullName || leftCandidate.name || "Candidato",
+        fullName: leftCandidate.fullName || leftCandidate.name,
+        shortName: leftCandidate.shortName || leftCandidate.name,
         image: leftCandidate.image,
         brightness: candidateData?.brightness ?? 1,
         contrast: candidateData?.contrast ?? 1,
@@ -300,9 +300,9 @@ export function ComparisonHero() {
 
     if (rightCandidate) {
       return {
-        name: rightCandidate.fullName,
-        fullName: rightCandidate.fullName,
-        shortName: rightCandidate.shortName,
+        name: rightCandidate.fullName || rightCandidate.name || "Candidato",
+        fullName: rightCandidate.fullName || rightCandidate.name,
+        shortName: rightCandidate.shortName || rightCandidate.name,
         image: rightCandidate.image,
         brightness: candidateData?.brightness ?? 1,
         contrast: candidateData?.contrast ?? 1,
