@@ -9,231 +9,445 @@
 
   "perfilGeneral": {
     "edad": {
-      "value": "72 años",
-      "source": ["Documento César Acuña"]
+      "value": null,
+      "source": []
     },
     "nacimiento": {
-      "value": "12/08/1952",
-      "source": "Documento César Acuña"
+      "value": null,
+      "source": []
     },
     "lugar": {
-      "value": "Virú, La Libertad",
-      "source": "Documento César Acuña"
+      "value": null,
+      "source": []
     },
     "nivelEducativo": {
-      "value": "Doctor en Educación",
-      "source": "Documento César Acuña"
+      "value": "Posdoctorado en Comunicación, Educación y Cultura",
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://andina.pe/agencia/noticia-elecciones-2021-conoce-perfil-cesar-acuna-candidato-presidencial-app-831173.aspx"
+      ]
     },
     "profesion": {
-      "value": ["Docente", "Empresario"],
-      "source": "Documento César Acuña"
+      "value": [
+        "Bachiller en Ingeniería Química - Universidad Nacional de Trujillo (1995)",
+        "Maestro en Administración de la Educación - Universidad de Lima (1997)",
+        "Magíster en Dirección Universitaria - Universidad de Los Andes, Colombia (1998)",
+        "Doctor en Educación - Universidad Complutense de Madrid, España (2013)",
+        "Posdoctorado en Comunicación, Educación y Cultura - Universidad Santo Tomás, Colombia"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.infobae.com/peru/2024/02/16/cesar-acuna-cuanto-mide-el-empresario-y-politico/"
+      ]
     },
     "partidoActual": {
       "value": "Alianza para el Progreso",
-      "source": "Documento César Acuña"
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.infobae.com/peru/2025/10/31/cesar-acuna-lidera-lista-presidencial-por-alianza-para-el-progreso-para-las-elecciones-2026/"
+      ]
     },
     "cambiosDePartido": {
-      "value": [],
-      "source": "Documento César Acuña"
+      "value": "Sin cambios - Fundador de APP (2001)",
+      "source": ["https://www.cesaracuna.pe/sobre-mi"]
+    },
+    "ocupacionActual": {
+      "value": "Candidato Presidencial (renunció al Gobierno Regional de La Libertad para postular)",
+      "source": [
+        "https://lpderecho.pe/cesar-acuna-renuncia-gobierno-regional-libertad-postular-presidencia/",
+        "https://caretas.pe/politica/cesar-acuna-a-sus-aspirantes-al-congreso-ganara-el-que-mas-habla-con-la-gente/"
+      ]
+    },
+    "redesSociales": {
+      "facebook": "https://www.facebook.com/CesarAcunaCAP/",
+      "instagram": "https://www.instagram.com/cesaracunap/",
+      "twitter": "https://x.com/CesarAcunaP",
+      "tiktok": "https://www.tiktok.com/@cesaracunap"
+    },
+    "ubicacionIdeologica": {
+      "value": "Centro",
+      "criterio": "Autodeclaración: 'No soy un candidato de la izquierda radical, ni soy un candidato de la derecha radical, soy un candidato de centro que defiende al pueblo'. APP busca el desarrollo nacional mediante economía social de mercado y protección de sectores vulnerables.",
+      "source": [
+        "https://larepublica.pe/elecciones/2021/03/15/cesar-acuna-no-soy-un-candidato-de-la-izquierda-ni-de-la-derecha-radical-pltc",
+        "https://www.tvperu.gob.pe/noticias/politica/cesar-acuna-no-estamos-con-la-extrema-izquierda-ni-con-la-extrema-derecha"
+      ]
     }
   },
 
   "experienciaPolitica": {
     "anosExperiencia": {
       "value": "Más de 20 años",
-      "source": "Documento César Acuña"
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.cesaracuna.pe/sobre-mi"
+      ]
     },
     "cargosPrevios": {
       "values": [
-        "Congresista de la República (2001-2006)",
-        "Alcalde de Trujillo (2007-2014)",
-        "Gobernador Regional de La Libertad (2015-2018)"
+        "Gobernador Regional de La Libertad (1999)",
+        "Congresista de la República por La Libertad (2001-2006)",
+        "Fundador del Partido Alianza para el Progreso (2001)",
+        "Alcalde Provincial de Trujillo (2007-2010 y 2011-2014)",
+        "Dirección Ejecutiva Nacional y Presidente de APP (2023-2025)",
+        "Gobernador Regional de La Libertad (2015-2018)",
+        "Gobernador Regional de La Libertad reelecto (2023 - Renunció 2025)"
       ],
-      "source": ["Documento César Acuña"]
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.cesaracuna.pe/sobre-mi",
+        "https://www.facebook.com/share/p/16c2EXFRN8/"
+      ]
     },
     "candidaturasPresidenciales": {
       "values": [
-        "2016 → Excluido del proceso electoral",
-        "2021 → Cuarto lugar"
+        "2016 → Excluido del proceso electoral por entrega de dinero",
+        "2021 → Cuarto lugar",
+        "2026 → En curso"
       ],
-      "source": "Documento César Acuña"
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
     }
   },
 
   "experienciaGestion": {
     "sectorPublico": {
-      "cantidad": 3,
+      "cantidad": 4,
       "detalle": {
         "values": [
-          "Congresista de la República",
-          "Alcalde Provincial de Trujillo",
-          "Gobernador Regional de La Libertad"
+          "Gobernador Regional de La Libertad (1999, 2015-2018, 2023-2025)",
+          "Congresista de la República por La Libertad (2001-2006)",
+          "Alcalde Provincial de Trujillo (2007-2014)"
         ],
-        "source": "Documento César Acuña"
+        "source": [
+          "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+          "https://larepublica.pe/elecciones/2021/01/22/cesar-acuna-biografia-carrera-politica-y-partido-al-cual-pertenece-pltc"
+        ]
       }
     },
     "sectorPrivado": {
       "cantidad": 1,
       "detalle": {
-        "values": ["Fundador y directivo de la Universidad César Vallejo"],
-        "source": "Documento César Acuña"
+        "values": [
+          "Asesor - Universidad César Vallejo (2019-2025)",
+          "Fundador y directivo de la Universidad César Vallejo"
+        ],
+        "source": [
+          "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+          "https://larepublica.pe/elecciones/2021/01/22/cesar-acuna-biografia-carrera-politica-y-partido-al-cual-pertenece-pltc"
+        ]
       }
     }
   },
 
   "ideologiaPolitica": {
     "posicion": {
-      "value": ["Centro", "Pragmatismo político con enfoque social"],
-      "source": "Documento César Acuña"
+      "value": [
+        "Centro",
+        "Economía social de mercado con protección de sectores vulnerables"
+      ],
+      "source": [
+        "https://larepublica.pe/sociedad/2025/09/10/alianza-para-el-progreso-se-alista-para-postular-en-su-segunda-campana-electoral-elecciones-2026-hnews-792520",
+        "https://larepublica.pe/elecciones/2021/03/15/cesar-acuna-no-soy-un-candidato-de-la-izquierda-ni-de-la-derecha-radical-pltc"
+      ]
     },
     "economia": {
-      "value": "Economía social de mercado",
-      "source": "Documento César Acuña"
+      "value": "Inversión privada y justicia social: crecimiento anual no menor al 6%, plan de promoción de inversiones privadas (APP) de US$ 80 mil millones, formalización empresarial mediante incentivos y simplificación tributaria.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "matrimonioIgualitario": {
       "value": null,
-      "source": "No especificado en el documento"
+      "source": []
     },
     "aborto": {
-      "value": null,
-      "source": "No especificado en el documento"
+      "value": "El plan no menciona explícitamente el aborto, pero fundamenta su postura en el respeto a la Constitución de 1993 y la dignidad humana como valor supremo.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "seguridad": {
-      "value": "Fortalecimiento institucional y lucha contra la criminalidad",
-      "source": "Documento César Acuña"
+      "value": "Seguridad ciudadana como pre-requisito del desarrollo: Ministerio de Defensa y Seguridad Interna (integrando FF.AA. y PNP), uso de Inteligencia Artificial para análisis predictivo del delito, cárceles modernas mediante OXI y APP.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "ambiente": {
-      "value": "Desarrollo sostenible",
-      "source": "Documento César Acuña"
+      "value": "Cuidado activo del medio ambiente y aprovechamiento sostenible: reingeniería del Sistema Nacional de Gestión Ambiental, SENACE absorba entidades como ANA y SERFOR, manejo forestal sostenible.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "educacion": {
-      "value": "Prioridad nacional y acceso universal",
-      "source": "Documento César Acuña"
+      "value": "Educación pública de calidad: reestructuración del MINEDU, secundaria técnica obligatoria en colegios públicos, carrera docente basada en méritos, certificación obligatoria en inglés e IA, Becas TEC.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
+    },
+    "salud": {
+      "value": "Bienestar mediante atención primaria y acceso real: fortalecimiento del primer nivel de atención (Plan Mil), Historia Clínica Digital interoperable, APP para gestión de hospitales.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "reformaPolitica": {
-      "value": "Reformas graduales",
-      "source": "Documento César Acuña"
+      "value": "Estado moderno, descentralizado y de representación efectiva: reducir el Poder Ejecutivo de 19 a 10 ministerios, fortalecer meritocracia con headhunters internacionales, reformar Constitución para convenios tributarios.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     }
   },
 
   "propuestasPrincipales": {
     "economico": {
       "values": [
-        "Impulso a la inversión privada",
-        "Descentralización económica"
+        "Crecimiento anual no menor al 6% desde 2027; exportaciones por más de US$ 100 mil millones anuales",
+        "Adjudicar US$ 80 mil millones en proyectos APP; reformar art. 56 de la Constitución para convenios tributarios",
+        "Reforma tributaria: eliminar RER y MYPE Tributario, crear Régimen Simplificado para la Formalización (RSF)",
+        "Viabilizar proyectos mineros por US$ 60 mil millones mediante ventanilla única digital",
+        "Extinguir Perupetro; promover capital privado en Petroperú",
+        "Meta de 10 millones de turistas anuales; concesionar Corpac; teleféricos en Puno, Ancash, Cusco, Moquegua, San Martín",
+        "Reemplazar AFP por Empresas Administradoras de Fondos (EAF); 'capital semilla' estatal para pensión universal"
       ],
-      "source": "Documento César Acuña"
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "social": {
-      "values": ["Reducción de la pobreza", "Inclusión social"],
-      "source": "Documento César Acuña"
+      "values": [
+        "Construir 1.25 millones de viviendas nuevas en el quinquenio; S/ 13,500 millones anuales en subsidios",
+        "Extinguir COFOPRI; policía especializada contra tráfico de tierras",
+        "Transferir EPS al OTASS para inversión privada global vía APP; desaladoras en Ancón y Chorrillos",
+        "Plan Mil: mejorar más de mil centros de salud mediante APP; Historia Clínica Digital interoperable",
+        "Reestructurar MINEDU; secundaria técnica obligatoria; Becas TEC con alianzas privadas",
+        "Crear 'Zar de Tecnología e Infraestructura Digital'; extinguir OSIPTEL y PRONATEL; Estado 100% en línea al 2030",
+        "Reestructurar programas sociales hacia inserción laboral productiva",
+        "Bonos de vivienda para jóvenes; programas de empleo para egresados"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "ambiental": {
-      "values": ["Protección de recursos naturales"],
-      "source": "Documento César Acuña"
+      "values": [
+        "SENACE absorba funciones de certificación ambiental de ANA y SERFOR; sistema de 'Huella Ambiental'",
+        "Poner en valor Bosques de Producción Permanente para combatir deforestación",
+        "18 proyectos de plantas de tratamiento de aguas residuales (PTARES) para sostenibilidad a 30 años"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "institucional": {
-      "values": ["Fortalecimiento del Estado"],
-      "source": "Documento César Acuña"
+      "values": [
+        "Reducir el Poder Ejecutivo de 19 a 10 ministerios",
+        "Crear Ministerio de Defensa y Seguridad Interna (FF.AA. + PNP)",
+        "Fortalecer meritocracia con headhunters internacionales",
+        "Reformar art. 56 de la Constitución para que el Ejecutivo apruebe convenios de doble tributación"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "educativo": {
       "values": [
-        "Mejora de la calidad educativa",
-        "Acceso a educación superior"
+        "Reingeniería del MINEDU; fortalecimiento de DRE y UGEL",
+        "Carrera Directiva Nacional basada en mérito; evaluación docente orientada a resultados",
+        "Secundaria técnica obligatoria en colegios públicos",
+        "Certificaciones obligatorias de dominio de inglés e Inteligencia Artificial",
+        "Potenciar PRONABEC con prioridad en Becas TEC; 'Institutos de Excelencia Regionales' con sector privado",
+        "Cerrar brecha de infraestructura con OXI, APP y 'Canon educativo'; COAR en cada región",
+        "Fibra óptica hasta escuelas rurales; 'Escuelas digitales inteligentes'"
       ],
-      "source": "Documento César Acuña"
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "salud": {
-      "values": ["Fortalecimiento del sistema público de salud"],
-      "source": "Documento César Acuña"
+      "values": [
+        "Plan Mil: mejorar más de mil centros de salud (I-2 y I-3) mediante APP con IA y mantenimiento preventivo",
+        "Aseguramiento real y portabilidad entre SIS y EsSalud",
+        "Historia Clínica Digital interoperable entre MINSA, EsSalud y privados; telemedicina con IA",
+        "Replicar modelo APP 'Salog' para logística de medicamentos a nivel nacional",
+        "Torres de atención especializada (tipo Torre Trecca) en norte, sur y este de Lima y regiones",
+        "MINSA con rectoría sólida; separar funciones de financiador y prestador en EsSalud"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "seguridad": {
-      "values": ["Lucha contra la delincuencia organizada"],
-      "source": "Documento César Acuña"
+      "values": [
+        "Crear Ministerio de Defensa y Seguridad Interna (FF.AA. + PNP bajo un solo mando)",
+        "Centro de Fusión de Inteligencia con IA y Big Data para prevención del delito",
+        "Construcción de cárceles modernas mediante OXI y APP",
+        "Brigada Nacional de Ciberpolicía; 'Zar de Tecnología e Infraestructura Digital'",
+        "Reforzar presencia estatal en zonas fronterizas; sistema nacional de trazabilidad de explosivos y combustibles",
+        "Combate a minería ilegal"
+      ],
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     }
   },
 
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
-      "value": "Medio",
-      "source": "Documento César Acuña"
+      "value": "Alto",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+      ]
     },
     "diferencias": {
-      "value": "Enfoque pragmático con cambios progresivos",
-      "source": "Documento César Acuña"
+      "value": "El plan es consistente con su trayectoria empresarial y gestión regional; énfasis en APP y mecanismos de inversión privada.",
+      "source": []
     },
     "cumplimientoPrevio": {
-      "value": "Mixto según evaluaciones previas",
-      "source": "Documento César Acuña"
+      "value": "Como Gobernador Regional y Alcalde de Trujillo, ha promovido modelos de gestión con participación privada.",
+      "source": []
     }
   },
 
   "controversias": {
-    "investigaciones": {
-      "values": ["Investigación por presunto plagio académico"],
-      "source": "Documento César Acuña"
+    "antecedentesPolicicales": {
+      "value": "4 denuncias policiales por violencia familiar (2018 y 2020) - según abogado de Acuña, todos fueron archivados, aunque al menos uno estaría en investigación en el Ministerio Público",
+      "detalle": [
+        "27/03/2018: Retención en vehículo - Jenny Gutiérrez denunció que Acuña no la dejaba bajar de su vehículo tras discusión",
+        "19/04/2018: Acoso/Mensajes - Denuncia por mensajes recibidos desde celular de Acuña",
+        "26/06/2018: Maltrato físico y psicológico - Denunciante afirma que Acuña pidió tener intimidad en presencia del menor",
+        "05/03/2020: Hostigamiento/Amedrentamiento - Camionetas con personas frente a domicilio tras visita de Acuña"
+      ],
+      "source": [
+        "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496"
+      ]
     },
-    "enCurso": {
+    "antecedentesPenales": {
+      "value": "No se encontró información de antecedentes penales",
+      "source": []
+    },
+    "antecedentesJudiciales": {
+      "values": [
+        "Sentencia por alimentos CONFIRMADA: demandado por expareja Jenny Gutiérrez Vaisman; 17° Juzgado de Familia de Lima ratificó fallo que lo obliga a pagar pensión alimenticia mensual y adelantada para su menor hijo (en etapa de ejecución)"
+      ],
+      "source": [
+        "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496",
+        "https://lpderecho.pe/confirman-sentencia-ordena-cesar-acuna-pagar-30-000-soles-cada-mes-pension-alimenticia-favor-menor-hijo-exp-02974-2023/",
+        "https://www.infobae.com/peru/2023/11/25/cesar-acuna-pj-ordena-al-lider-de-app-dar-una-pension-de-90-mil-soles-mensuales-a-su-ultimo-hijo/"
+      ]
+    },
+    "procesosEnCurso": {
       "values": [],
-      "source": "Documento César Acuña"
+      "source": []
+    },
+    "procesosArchivados": {
+      "values": [],
+      "source": []
+    },
+    "declaracionesControversiales": {
+      "values": [
+        "'No permitiremos que el peor alcalde de Lima sea presidente' - cuestionó capacidad de Rafael López Aliaga basándose en su desempeño municipal",
+        "'Si quieren vivir en un país en paz, desde ahora comiencen a vivir en paz. Si quieren vivir en un país competitivo, desde ahora aprendan a ser competitivos' - frases redundantes durante charla en UCV",
+        "'Constitucionalmente, el responsable de dar seguridad es la Policía Nacional. No es el gobernador' - deslindó responsabilidad frente a crisis de criminalidad en La Libertad (agosto 2025)"
+      ],
+      "source": [
+        "https://gestion.pe/peru/acuna-advierte-a-lopez-aliaga-no-permitiremos-que-el-peor-alcalde-de-lima-sea-presidente-noticia/",
+        "https://willax.pe/politica/cesar-acuna-candidato-presidencial-pais-paz-vivir-willax",
+        "https://www.infobae.com/peru/2025/08/09/cesar-acuna-vuelve-a-deslindar-de-la-inseguridad-en-la-libertad-el-responsable-es-la-pnp-y-no-el-gobernador/"
+      ]
+    },
+    "observacionesAdministrativas": {
+      "values": [
+        "Club Universidad César Vallejo (del cual Acuña es representante legal) reportado en centrales de riesgo SUNAT (dic 2025): deuda total S/ 106,160 (S/ 89,095 al Tesoro Público + S/ 17,065 por aportes impagos a EsSalud)",
+        "INDECOPI sancionó a César Acuña y UCV por infracción a normas de Derecho de Autor: (1) 'Política Educativa' - se proclamó erróneamente coautor de obra de Otoniel Alvarado Oyarce; (2) Tesis doctoral reprodujo fragmentos de otros autores sin citarlos"
+      ],
+      "source": [
+        "https://larepublica.pe/politica/2025/12/25/club-cesar-vallejo-propiedad-de-cesar-acuna-reporta-deudas-coactivas-por-mas-de-100-mil-soles-ante-la-sunat-hnews-1441375",
+        "https://www.infobae.com/peru/2025/12/25/cesar-acuna-debe-a-essalud-mas-de-s-17-mil-por-club-ucv-candidato-presidencial-no-cumplio-con-el-aporte-a-sus-trabajadores/",
+        "https://www.tvperu.gob.pe/noticias/politica/indecopi-sanciona-a-cesar-acuna-y-a-ucv-por-infringir-normas-del-derecho-de-autor",
+        "https://canaln.pe/actualidad/indecopi-sanciono-cesar-acuna-y-ucv-plagio-libro-n246036"
+      ]
     }
   },
 
   "transparencia": {
-    "items": ["Declaración de bienes", "Participación en procesos electorales"],
-    "source": "Documento César Acuña"
+    "items": [
+      "Declaración jurada de hoja de vida ante JNE",
+      "Reconoció en Hoja de Vida estar cumpliendo sentencia judicial por alimentos",
+      "Información de cargos y trayectoria disponible en plataforma electoral JNE"
+    ],
+    "source": [
+      "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+      "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496"
+    ]
   },
 
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Alto",
-      "source": "Documento César Acuña"
+      "value": "Fundador y líder de APP desde 2001; múltiples reelecciones como Alcalde y Gobernador Regional",
+      "source": ["https://www.cesaracuna.pe/sobre-mi"]
     },
     "comunicacion": {
-      "value": "Directa y populista",
-      "source": "Documento César Acuña"
+      "value": "Estilo directo y popular; frases coloquiales que generan controversia mediática",
+      "source": [
+        "https://willax.pe/politica/cesar-acuna-candidato-presidencial-pais-paz-vivir-willax"
+      ]
     },
     "credibilidad": {
-      "value": "Cuestionada por controversias académicas",
-      "source": "Documento César Acuña"
+      "value": "Cuestionada por controversias de plagio académico y denuncias familiares; arraigo regional en La Libertad",
+      "source": []
     }
   },
 
   "percepcionPublica": {
     "intencionVoto": {
-      "min": null,
-      "max": null,
-      "descripcion": "Variable según región",
-      "source": "Documento César Acuña"
+      "min": 3,
+      "max": 3,
+      "descripcion": "3% de intención de voto (Ipsos, dic 2025)",
+      "metodologia": "Muestra: 1,211 personas, cobertura nacional urbano-rural, 24 departamentos + Callao. Diseño probabilístico por conglomerados estratificado. Margen de error: ±2.8%, confianza 95%.",
+      "source": [
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf",
+        "https://www.ipsos.com/es-pe/intencion-de-voto-diciembre-2025-encuesta-america-tv-ipsos"
+      ]
     },
     "aprobacion": {
-      "value": "Media",
-      "source": "Documento César Acuña"
+      "value": null,
+      "source": []
     },
     "redes": {
-      "value": "Presencia activa",
-      "source": "Documento César Acuña"
+      "value": "Presencia activa en Facebook, Instagram, X y TikTok",
+      "source": [
+        "https://www.facebook.com/CesarAcunaCAP/",
+        "https://www.instagram.com/cesaracunap/",
+        "https://x.com/CesarAcunaP",
+        "https://www.tiktok.com/@cesaracunap"
+      ]
     }
   },
 
   "innovacionYVision": {
     "items": [
-      "Educación como motor de desarrollo",
-      "Descentralización regional"
+      "Estado 100% transaccional en línea al 2030 con identidad digital universal",
+      "Cobertura 5G/satelital en zonas rurales",
+      "Centro de Fusión de Inteligencia con IA y Big Data",
+      "Escuelas digitales inteligentes",
+      "Telemedicina con Inteligencia Artificial",
+      "Historia Clínica Digital interoperable"
     ],
-    "source": "Documento César Acuña"
+    "source": [
+      "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+    ]
   },
 
   "historialLegislativo": {
     "tieneHistorial": true,
     "asistencia": {
       "porcentaje": null,
-      "label": "MEDIA",
-      "source": "Documento César Acuña"
+      "label": null,
+      "source": []
     },
     "proyectosPresentados": null,
     "proyectosAprobados": null,
-    "nota": "El documento no detalla cifras exactas",
-    "source": "Documento César Acuña"
+    "proyectosDestacados": [],
+    "nota": "Congresista de la República por La Libertad (2001-2006)",
+    "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
   }
 }
