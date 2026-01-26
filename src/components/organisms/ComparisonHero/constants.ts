@@ -106,7 +106,7 @@ export const CANDIDATES: Candidate[] = [
     imageHeightLg: 125,
     offsetY: 16,
     offsetYSm: 14,
-    offsetYMd: 14,
+    offsetYMd: 16,
     brightness: 1,
     contrast: 1,
     saturate: 1,
