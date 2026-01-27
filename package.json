@@ -31,7 +31,7 @@
     "framer-motion": "^12.23.24",
     "html-encoding-sniffer": "^6.0.0",
     "lottie-react": "^2.4.1",
-    "next": "16.0.10",
+    "next": "16.1.5",
     "nodemailer": "^7.0.11",
     "react": "19.2.3",
     "react-apexcharts": "^1.9.0",
