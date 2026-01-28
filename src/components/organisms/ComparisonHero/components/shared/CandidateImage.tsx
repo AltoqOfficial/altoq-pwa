@@ -3,7 +3,7 @@ import Image from "next/image";
 
 interface CandidateImageProps {
   candidate: {
-    name: string;
+    name?: string;
     fullName?: string;
     image: string;
     brightness: number;
@@ -39,7 +39,7 @@ export const CandidateImage = memo(function CandidateImage({
       <div className={`relative w-full h-full bg-transparent`}>
         <Image
           src={candidate.image}
-          alt={candidate.name}
+          alt={candidate.name || candidate.fullName || "Candidato"}
           fill
           priority
           className={`${heroImageClasses.replace("object-cover", "object-contain object-bottom")}`}
@@ -59,7 +59,7 @@ export const CandidateImage = memo(function CandidateImage({
   return (
     <Image
       src={candidate.image}
-      alt={candidate.name}
+      alt={candidate.name || candidate.fullName || "Candidato"}
       width={140}
       height={80}
       loading="lazy"

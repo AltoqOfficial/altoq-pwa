@@ -167,7 +167,7 @@ export function ExperienciaGestionSection({
               <div className="relative w-full h-full rounded-full overflow-hidden">
                 <Image
                   src={candidate.image}
-                  alt={candidate.fullName}
+                  alt={candidate.fullName || "Candidato"}
                   fill
                   className="object-cover"
                 />

@@ -100,7 +100,7 @@ export function ControversiasSection({
                   <div className="relative w-full h-full rounded-full overflow-hidden">
                     <Image
                       src={leftCandidate.image}
-                      alt={leftCandidate.fullName}
+                      alt={leftCandidate.fullName || "Candidato"}
                       fill
                       className="object-cover"
                     />
@@ -117,7 +117,7 @@ export function ControversiasSection({
                   <div className="relative w-full h-full rounded-full overflow-hidden">
                     <Image
                       src={rightCandidate.image}
-                      alt={rightCandidate.fullName}
+                      alt={rightCandidate.fullName || "Candidato"}
                       fill
                       className="object-cover"
                     />

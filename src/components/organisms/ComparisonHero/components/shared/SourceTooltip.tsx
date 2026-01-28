@@ -21,7 +21,7 @@ function subscribeToTooltipChanges(listener: (id: string | null) => void) {
 
 interface SourceTooltipProps {
   children: React.ReactNode;
-  source?: string | string[];
+  source?: string | string[] | null;
   description?: string;
   className?: string;
   /** Force tooltip to appear on a specific side: 'left' centers in left half, 'right' centers in right half */
@@ -393,8 +393,8 @@ export function SourceTooltip({
  * Value with optional source and description
  */
 export interface ValueWithSource {
-  value: string | string[];
-  source?: string | string[];
+  value: string | string[] | null;
+  source?: string | string[] | null;
   description?: string;
 }
 
@@ -402,8 +402,8 @@ export interface ValueWithSource {
  * Array value with optional source and description
  */
 export interface ArrayValueWithSource {
-  values: string | string[];
-  source?: string | string[];
+  values: string | string[] | null;
+  source?: string | string[] | null;
   description?: string;
 }
 
@@ -467,7 +467,13 @@ export function extractSource(
  * Extract the description from a potentially sourced value
  */
 export function extractDescription(
-  value: string | string[] | ValueWithSource | ArrayValueWithSource | undefined
+  value:
+    | string
+    | string[]
+    | ValueWithSource
+    | ArrayValueWithSource
+    | null
+    | undefined
 ): string | undefined {
   if (!value || typeof value !== "object") return undefined;
 

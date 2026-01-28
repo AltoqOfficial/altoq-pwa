@@ -72,9 +72,9 @@ type SourceableData =
   | string
   | string[]
   | {
-      value?: string | string[];
-      values?: string | string[];
-      source?: string | string[];
+      value?: string | string[] | null;
+      values?: string | string[] | null;
+      source?: string | string[] | null;
     }
   | null
   | undefined;
@@ -111,7 +111,9 @@ const getArrayValue = (item: SourceableData): string[] => {
 /**
  * Helper to get source from SourceableData
  */
-const getSource = (item: SourceableData): string | string[] | undefined => {
+const getSource = (
+  item: SourceableData
+): string | string[] | null | undefined => {
   if (!item) return undefined;
   if (typeof item === "object" && "source" in item) {
     return item.source;
@@ -163,7 +165,7 @@ const TimelineItem = ({
   year: string;
   title: string;
   color: string;
-  source?: string | string[];
+  source?: string | string[] | null;
 }) => (
   <div className="flex flex-col relative pt-6 shrink-0 w-32 md:w-64">
     {/* Dot on line */}

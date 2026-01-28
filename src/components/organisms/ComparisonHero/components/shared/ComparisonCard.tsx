@@ -88,7 +88,7 @@ export function MobileComparisonCard({
         {candidate.image && (
           <Image
             src={candidate.image}
-            alt={candidate.fullName}
+            alt={candidate.fullName || "Candidato"}
             fill
             className="object-cover"
           />

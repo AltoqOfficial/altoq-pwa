@@ -30,7 +30,7 @@ export function HistorialLegislativoSection({
               <LegislativeProjectsChart
                 data={leftCandidate.historialLegislativo}
                 partyName={leftCandidate.party}
-                color={leftCandidate.color}
+                color={leftCandidate.color || "#6B7280"}
                 partyLogoLetter={
                   leftCandidate.slug === "keikoFujimori"
                     ? "K"
@@ -49,7 +49,7 @@ export function HistorialLegislativoSection({
               <LegislativeProjectsChart
                 data={rightCandidate.historialLegislativo}
                 partyName={rightCandidate.party}
-                color={rightCandidate.color}
+                color={rightCandidate.color || "#6B7280"}
                 partyLogoLetter={
                   rightCandidate.slug === "rafaelLopez"
                     ? "R"

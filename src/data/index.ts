@@ -21,18 +21,20 @@ import robertoSanchezData from "./candidates/robertoSanchez.json";
 import type { CandidateComparisonData } from "./types";
 
 export const candidatesData: Record<string, CandidateComparisonData> = {
-  keiko: keikoFujimoriData as CandidateComparisonData,
-  lopez: rafaelLopezData as CandidateComparisonData,
-  "mario-vizcarra": marioVizcarraData as CandidateComparisonData,
-  "enrique-valderrama": enriqueValderramaData as CandidateComparisonData,
-  "yonhy-lescano": yonhyLescanoData as CandidateComparisonData,
-  "fernando-olivera": fernandoOliveraData as CandidateComparisonData,
-  "george-forsyth": georgeForsythData as CandidateComparisonData,
-  "carlos-espa": carlosEspaData as CandidateComparisonData,
-  "alfonso-lopez-chau": alfonsoLopezChauData as CandidateComparisonData,
-  "vladimir-cerron": vladimirCerronData as CandidateComparisonData,
-  "cesar-acuna": cesarAcunaData as CandidateComparisonData,
-  "roberto-sanchez": robertoSanchezData as CandidateComparisonData,
+  keiko: keikoFujimoriData as unknown as CandidateComparisonData,
+  lopez: rafaelLopezData as unknown as CandidateComparisonData,
+  "mario-vizcarra": marioVizcarraData as unknown as CandidateComparisonData,
+  "enrique-valderrama":
+    enriqueValderramaData as unknown as CandidateComparisonData,
+  "yonhy-lescano": yonhyLescanoData as unknown as CandidateComparisonData,
+  "fernando-olivera": fernandoOliveraData as unknown as CandidateComparisonData,
+  "george-forsyth": georgeForsythData as unknown as CandidateComparisonData,
+  "carlos-espa": carlosEspaData as unknown as CandidateComparisonData,
+  "alfonso-lopez-chau":
+    alfonsoLopezChauData as unknown as CandidateComparisonData,
+  "vladimir-cerron": vladimirCerronData as unknown as CandidateComparisonData,
+  "cesar-acuna": cesarAcunaData as unknown as CandidateComparisonData,
+  "roberto-sanchez": robertoSanchezData as unknown as CandidateComparisonData,
 };
 
 /**

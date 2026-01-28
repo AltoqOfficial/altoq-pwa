@@ -18,9 +18,9 @@ interface VoteIntentionChartProps {
   color: string;
   approval: string;
   socialMedia: string;
-  voteSource?: string | string[];
-  approvalSource?: string | string[];
-  socialMediaSource?: string | string[];
+  voteSource?: string | string[] | null;
+  approvalSource?: string | string[] | null;
+  socialMediaSource?: string | string[] | null;
   historialPartidos?: PartyHistory[];
 }
 
