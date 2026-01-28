@@ -61,6 +61,7 @@ export function PercepcionPublicaSection({
           voteSource={candidate.percepcionPublica.intencionVoto.source}
           approvalSource={aprobacionSource}
           socialMediaSource={redesSource}
+          historialPartidos={candidate.perfilGeneral?.historialPartidos}
         />
       );
     }

@@ -4,7 +4,7 @@
 
 export { PerfilGeneralSection } from "./PerfilGeneralSection";
 export { ExperienciaPoliticaSection } from "./ExperienciaPoliticaSection";
-export { ExperienciaGestionSection } from "./ExperienciaGestionSection";
+export { ExperienciaGestionSection } from "./ExperienciaProfesionalSection";
 export { IdeologiaPoliticaSection } from "./IdeologiaPoliticaSection";
 export { PropuestasPrincipalesSection } from "./PropuestasPrincipalesSection";
 export { CoherenciaConElPlanSection } from "./CoherenciaConElPlanSection";

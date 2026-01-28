@@ -28,18 +28,21 @@ export function ConditionalLayout({ children }: ConditionalLayoutProps) {
     (route) => pathname === route || pathname.startsWith(`${route}/`)
   );
 
-  // Home page with authenticated user shows dashboard (no header/footer)
-  const isAuthenticatedHomePage = pathname === "/" && isAuthenticated;
+  // Routes that render their own Header
+  const customHeaderRoutes = ["/compara"];
+  const isCustomHeaderRoute = customHeaderRoutes.some(
+    (route) => pathname === route
+  );
 
-  // Dashboard routes or authenticated home page render children directly
-  if (isNoLayoutRoute || isAuthenticatedHomePage) {
+  // Dashboard routes render children directly (they have their own layout)
+  if (isNoLayoutRoute) {
     return <>{children}</>;
   }
 
   // Public routes render with Header and Footer
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
+      {!isCustomHeaderRoute && <Header />}
       <main className="flex-1" id="main-content" role="main">
         {children}
       </main>

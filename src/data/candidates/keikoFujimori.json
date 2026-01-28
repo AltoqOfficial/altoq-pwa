@@ -6,6 +6,11 @@
   "image": "/candidatos/keiko-fujimori.webp",
   "color": "#FF6F00",
   "party": "Fuerza Popular",
+  "partyIcon": "/partidos/fuerzaPopulaIconr.webp",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/keikofujimorih/",
+    "tiktok": "https://www.tiktok.com/@keikofujimorih"
+  },
 
   "perfilGeneral": {
     "edad": {
@@ -71,7 +76,15 @@
         "https://panamericana.pe/politica/440274-alianzas-izquierda-derecha-centro-empiezan-perfilarse-2026",
         "https://elcomercio.pe/politica/derecha-izquierda-son-ubicados-martin-vizcarra-keiko-fujimori-noticia-ecpm-677808-noticia/"
       ]
-    }
+    },
+    "historialPartidos": [
+      {
+        "ano": "2010",
+        "partido": "Fuerza Popular",
+        "icono": "/partidos/fuerzaPopulaIconr.webp",
+        "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/keiko-sofia-fujimori-higuchi_historial-partidario_Q43AyhFWlVg=3h"
+      }
+    ]
   },
 
   "experienciaPolitica": {
@@ -457,6 +470,7 @@
 
   "historialLegislativo": {
     "tieneHistorial": true,
+    "productivityLabel": "ALTA",
     "asistencia": {
       "porcentaje": null,
       "label": null,

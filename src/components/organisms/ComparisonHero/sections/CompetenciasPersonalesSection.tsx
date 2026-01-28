@@ -3,7 +3,10 @@
 import { Typography } from "@/components/atoms";
 import type { CandidateComparisonData } from "@/data";
 import { COMPETENCIAS_PERSONALES_CONFIG } from "../config";
-import { renderValueWithSource } from "../components/shared";
+import {
+  renderValueWithSource,
+  MobileComparisonView,
+} from "../components/shared";
 
 interface DynamicSectionProps {
   leftCandidate: CandidateComparisonData | null;
@@ -22,7 +25,8 @@ export function CompetenciasPersonalesSection({
 
   return (
     <div className="w-full border-t border-white space-y-8 md:space-y-12 lg:space-y-16 py-8 md:py-12 lg:py-16">
-      <div className="space-y-6 md:space-y-8 lg:space-y-12">
+      {/* Desktop Layout */}
+      <div className="hidden md:block space-y-6 md:space-y-8 lg:space-y-12">
         {fields.map(({ key, label }) => (
           <div key={key}>
             <div>
@@ -71,6 +75,17 @@ export function CompetenciasPersonalesSection({
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Mobile Layout */}
+      <div className="md:hidden">
+        <MobileComparisonView
+          fields={fields}
+          leftData={leftCandidate?.competenciasPersonales}
+          rightData={rightCandidate?.competenciasPersonales}
+          leftCandidate={leftCandidate}
+          rightCandidate={rightCandidate}
+        />
       </div>
     </div>
   );

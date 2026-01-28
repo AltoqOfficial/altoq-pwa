@@ -36,9 +36,9 @@ export const metadata = generateMetadata({
  */
 export default function ComparePage() {
   return (
-    <>
+    <div className="min-h-screen bg-neutral-500">
       {/* Hero Section */}
       <ComparisonHero />
-    </>
+    </div>
   );
 }

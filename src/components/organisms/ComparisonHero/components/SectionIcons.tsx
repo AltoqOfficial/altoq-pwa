@@ -121,7 +121,7 @@ export const SECTION_ICONS: Record<string, React.ReactNode> = {
     </svg>
   ),
 
-  ExperienciadeGestion: (
+  ExperienciaProfesional: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="85"

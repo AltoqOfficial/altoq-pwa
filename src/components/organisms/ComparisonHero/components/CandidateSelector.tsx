@@ -38,7 +38,7 @@ const CandidateButton = memo(function CandidateButton({
     <button
       onClick={onClick}
       disabled={isDisabled}
-      className={`relative transition-all duration-300 overflow-hidden border w-full aspect-square flex justify-center items-center group ${
+      className={`relative transition-all duration-300 overflow-hidden border w-full aspect-square flex justify-center items-center group bg-[#484848] ${
         isDisabled
           ? "cursor-not-allowed border-[#555] opacity-60"
           : isLocked
@@ -97,7 +97,7 @@ const DesktopCandidateButton = memo(function DesktopCandidateButton({
     <button
       onClick={onClick}
       disabled={isDisabled}
-      className={`relative transition-all duration-300 overflow-hidden border-2 w-full xl:h-18 flex justify-center items-center group ${
+      className={`relative transition-all duration-300 overflow-hidden border-2 w-full xl:h-18 flex justify-center items-center group bg-[#484848] ${
         isDisabled
           ? "cursor-not-allowed border-[#555] opacity-60"
           : isLocked
@@ -306,7 +306,7 @@ export const CandidateSelector = memo(function CandidateSelector({
   return (
     <>
       {/* Mobile/SM: Grid 5x2 */}
-      <div className="grid grid-cols-5 grid-rows-2 gap-1.5 w-full max-w-[360px] sm:max-w-[420px] xl:hidden mt-8 px-4 sm:px-0">
+      <div className="grid grid-cols-5 grid-rows-2 gap-1.5 w-full max-w-[360px] sm:max-w-[420px] xl:hidden mt-4 mx-auto px-4 sm:px-0">
         {mobileGridData.map((data) => (
           <CandidateButton
             key={data.candidate.id}
@@ -323,7 +323,7 @@ export const CandidateSelector = memo(function CandidateSelector({
       </div>
 
       {/* MD and up: Grid 2 columns */}
-      <div className="hidden xl:grid grid-cols-2 gap-3 w-full max-w-[350px] xl:max-w-[420px]">
+      <div className="hidden xl:grid grid-cols-2 gap-1 w-fit mx-auto">
         {desktopGridData.map((data) => (
           <DesktopCandidateButton
             key={data.candidate.id}
