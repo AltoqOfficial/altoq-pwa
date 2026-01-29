@@ -1,97 +1,83 @@
 {
   "id": "rafael-lopez-aliaga",
-  "slug": "rafaelLopez",
+  "slug": "rafael-lopez-aliaga",
   "fullName": "Rafael Bernardo López Aliaga Cazorla",
   "shortName": "Rafael López Aliaga",
   "image": "/candidatos/rafael-lopez-aliaga.webp",
-  "color": "#1E3A5F",
-  "party": "Renovación Popular",
-  "partyIcon": "/partidos/renovacionPopularIcon.webp",
+  "color": "#0054A5",
+  "party": "Partido Político Renovación Popular",
+  "partyIcon": "/partidos/renovacion-popular.png",
   "socialLinks": {
-    "instagram": "https://www.instagram.com/rafaellopezaliagaoficial/",
-    "tiktok": "https://www.tiktok.com/@rafael_lopez_aliaga?lang=es-419"
+    "instagram": "https://www.instagram.com/rafaellopezaliagaoficial",
+    "tiktok": "https://www.tiktok.com/@rafael_lopez_aliaga",
+    "twitter": "https://x.com/rlopezaliaga1",
+    "facebook": "https://www.facebook.com/RafaelLopezAliagaOficial",
+    "web": "https://rafaellopezaliaga.pe"
   },
-
   "perfilGeneral": {
-    "edad": {
-      "value": null,
-      "source": []
-    },
-    "nacimiento": {
-      "value": null,
-      "source": []
-    },
-    "lugar": {
-      "value": null,
-      "source": []
-    },
+    "edad": { "value": null, "source": [] },
+    "nacimiento": { "value": null, "source": [] },
+    "lugar": { "value": null, "source": [] },
     "nivelEducativo": {
-      "value": "Magíster en Administración",
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
-    },
-    "profesion": {
       "value": [
-        "Bachiller en Ciencias de la Ingeniería - Universidad de Piura (1995)",
-        "Ingeniero Industrial - Universidad de Piura (1995)",
-        "Magíster en Administración - Universidad del Pacífico (1996)"
+        "Ingeniero Industrial",
+        "Bachiller en Ciencias de la Ingeniería",
+        "Magíster en Administración"
       ],
       "source": [
         "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
         "https://larepublica.pe/sociedad/2023/02/28/rafael-lopez-aliaga-que-carreras-estudio-el-alcalde-de-lima-y-en-que-universidades-municipalidad-de-lima-1880284"
       ]
     },
-    "partidoActual": {
-      "value": "Partido Político Renovación Popular",
+    "profesion": {
+      "value": ["Ingeniero Industrial", "Empresario", "Catedrático"],
       "source": [
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO",
-        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/"
+        "https://www.infobae.com/peru/2025/10/31/rafael-lopez-aliaga-oficializo-su-precandidatura-por-renovacion-popular-conoce-a-su-formula-presidencial-con-miras-a-las-elecciones-2026/",
+        "https://larepublica.pe/sociedad/2023/02/28/rafael-lopez-aliaga-que-carreras-estudio-el-alcalde-de-lima-y-en-que-universidades-municipalidad-de-lima-1880284"
+      ]
+    },
+    "partidoActual": {
+      "value": "Renovación Popular",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO"
       ]
     },
     "cambiosDePartido": {
-      "value": "Regidor por Alianza Electoral Unidad Nacional (2007-2010), luego fundó Renovación Popular",
+      "value": "1",
       "source": [
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO"
       ]
     },
-    "ocupacionActual": {
-      "value": "Exalcalde de Lima / Precandidato a la Presidencia de la República 2026 / Catedrático UNI",
-      "source": [
-        "https://www.infobae.com/peru/2025/10/31/rafael-lopez-aliaga-oficializo-su-precandidatura-por-renovacion-popular-conoce-a-su-formula-presidencial-con-miras-a-las-elecciones2026/",
-        "https://larepublica.pe/sociedad/2023/02/28/rafael-lopez-aliaga-que-carreras-estudio-el-alcalde-de-lima-y-en-que-universidades-municipalidad-de-lima-1880284"
-      ]
-    },
-    "redesSociales": {
-      "website": "https://rafaellopezaliaga.pe/",
-      "twitter": "https://x.com/rlopezaliaga1",
-      "instagram": "https://www.instagram.com/rafaellopezaliagaoficial/",
-      "facebook": "https://www.facebook.com/RafaelLopezAliagaOficial",
-      "youtube": "https://www.youtube.com/@rafaellopezaliaga",
-      "tiktok": "https://www.tiktok.com/@rafael_lopez_aliaga"
-    },
-    "ubicacionIdeologica": {
-      "value": "Derecha Socialcristiana / Derecha Conservadora",
-      "criterio": "Autodefinición basada en la Doctrina Social de la Iglesia. Se define como político de 'derecha popular' con formación 'socialcristiana', rechazando las ideologías de izquierda y al centro que considera 'tibio'.",
-      "source": [
-        "https://youtu.be/E0vaBMnfc6c?t=47",
-        "https://larepublica.pe/elecciones/2021/03/03/lopez-aliaga-una-derecha-conservadora-que-atrapa-votos-de-fujimori-pltc"
-      ]
-    }
+    "historialPartidos": [
+      {
+        "ano": "2007",
+        "partido": "Alianza Electoral Unidad Nacional",
+        "icono": "/partidos/unidad-nacional.png",
+        "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+      },
+      {
+        "ano": "2019",
+        "partido": "Renovación Popular",
+        "icono": "/partidos/renovacion-popular.png",
+        "source": [
+          "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO"
+        ]
+      }
+    ]
   },
-
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "18-19 años (desde 2007)",
+      "value": "19",
       "source": [
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO",
-        "https://youtu.be/ToYPQHjRFo4?t=83"
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO"
       ]
     },
     "cargosPrevios": {
       "values": [
-        "Presidente de Renovación Popular (2025-Presente)",
-        "Alcalde Provincial de Lima Metropolitana (2022-2025)",
-        "Representante Legal de Renovación Popular (2019-2022)",
-        "Regidor Provincial por Alianza Electoral Unidad Nacional (2007-2010)"
+        "Regidor Provincial (2007-2010)",
+        "Representante Legal (2019-2022)",
+        "Alcalde Provincial (2022-2025)",
+        "Presidente de Partido (2025-2026)"
       ],
       "source": [
         "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
@@ -99,232 +85,189 @@
       ]
     },
     "candidaturasPresidenciales": {
-      "values": [
-        "2021 → Candidato Presidencial por Renovación Popular (Tercera vuelta electoral)",
-        "2026 → Candidato Presidencial por Renovación Popular"
-      ],
+      "values": ["2021 → No electo", "2026 → Precandidato"],
       "source": [
         "https://youtu.be/ToYPQHjRFo4?t=83",
-        "https://rpp.pe/politica/elecciones/elecciones-2026-jne-publico-la-lista-oficial-de-los-candidatos-presidenciales-noticia-1668084"
+        "https://www.infobae.com/peru/2025/10/31/rafael-lopez-aliaga-oficializo-su-precandidatura-por-renovacion-popular-conoce-a-su-formula-presidencial-con-miras-a-las-elecciones-2026/"
       ]
     }
   },
-
   "experienciaGestion": {
     "sectorPublico": {
       "cantidad": 3,
       "detalle": {
         "values": [
-          "Alcalde de Lima Metropolitana (2023-2025)",
-          "Catedrático en la Universidad Nacional de Ingeniería (2017-2020)",
-          "Regidor Provincial de Lima (2007-2010)"
+          "Regidor Provincial (2007-2010)",
+          "Catedrático - Universidad Nacional de Ingeniería (2017-2020)",
+          "Alcalde - Municipalidad Metropolitana de Lima (2023-2025)"
         ],
-        "source": [
-          "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-          "https://larepublica.pe/sociedad/2023/02/28/rafael-lopez-aliaga-que-carreras-estudio-el-alcalde-de-lima-y-en-que-universidades-municipalidad-de-lima-1880284"
-        ]
+        "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
       }
     },
     "sectorPrivado": {
       "cantidad": 3,
       "detalle": {
         "values": [
-          "Director de Perurail S.A. (1999-2022)",
-          "Director de Peru Belmond Hotels S.A. (1990-2022)",
-          "Director de Ferrocarril Trasandino S.A. (1999-2022)"
+          "Director - Peru Belmond Hotels S.A. (1990-2022)",
+          "Director - Perurail S.A. (1999-2022)",
+          "Director - Ferrocarril Trasandino S.A. (1999-2022)"
         ],
         "source": [
           "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-          "https://larepublica.pe/politica/2021/11/03/rafael-lopez-aliaga-direccion-del-mtc-renovo-permiso-a-perurail-por-5-anos-el-ultimo-dia-del-anterior-gobierno",
-          "https://larepublica.pe/politica/2025/05/25/lopez-aliaga-y-su-vinculo-con-la-disputa-por-el-hotel-sanctuary-de-machu-picchu",
-          "https://diariocorreo.pe/politica/rafael-lopez-aliaga-y-sus-cuestionados-negocios-noticia/"
+          "https://larepublica.pe/politica/2025/05/25/lopez-aliaga-y-su-vinculo-con-la-disputa-por-el-hotel-sanctuary-de-machu-picchu-rafael-lopez-aliaga-sanctuary-lodge-de-machu-picchu-belmond-hotels-hotel-machu-picchu-sanctuary-lodge-hnews-1578552"
         ]
       }
     },
-    "ejercicioProfesional": {
-      "values": [
-        "Director Perurail S.A. (1999-2022)",
-        "Director Peru Belmond Hotels S.A. (1990-2022)",
-        "Director Ferrocarril Trasandino S.A. (1999-2022)",
-        "Catedrático UNI (2017-2020)"
-      ],
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
-    }
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
   },
-
   "ideologiaPolitica": {
     "posicion": {
-      "value": [
-        "Derecha Socialcristiana / Derecha Conservadora",
-        "Derecha popular con base en Doctrina Social de la Iglesia"
-      ],
-      "source": [
-        "https://youtu.be/E0vaBMnfc6c?t=47",
-        "https://larepublica.pe/elecciones/2021/03/03/lopez-aliaga-una-derecha-conservadora-que-atrapa-votos-de-fujimori-pltc"
-      ]
+      "value": "Derecha Socialcristiana / Conservadora",
+      "source": ["https://youtu.be/E0vaBMnfc6c?t=47"]
     },
     "economia": {
-      "value": "Disciplina fiscal y reforma del Estado: Orientación liberal-conservadora centrada en reducción del tamaño del Estado, fuerte disciplina fiscal y austeridad en el gasto público. Prioriza la inversión sobre el gasto corriente y estabilidad macroeconómica para atraer capital privado.",
+      "value": "Liberal-conservadora, centrada en disciplina fiscal, reducción del Estado y austeridad.",
       "source": [
         "https://rpp.pe/economia/economia/rafael-lopez-aliaga-en-cade-2025-estas-son-las-propuestas-economica-para-elecciones-2026-con-reforma-del-estado-y-disciplina-fiscal-noticia-1662680"
       ]
     },
-    "matrimonioIgualitario": {
-      "value": null,
-      "source": []
-    },
+    "matrimonioIgualitario": { "value": null, "source": [] },
     "aborto": {
-      "value": "Provida: 'El aborto es el crimen más abominable que existe en la realidad humana. Es el crimen donde se ataca al niño más desprotegido, está en el vientre de su madre. El aborto no puede ser legalizado en el Perú en ninguna circunstancia.'",
+      "value": "En contra (Provida)",
       "source": [
-        "https://canaln.pe/actualidad/rafael-lopez-aliaga-aborto-no-pude-legalizado-peru-ninguna-circunstancia-n432281"
+        "https://canaln.pe/actualidad/rafael-lopez-aliaga-aborto-no-pude-legalizado-peru-ninguna-circumstancia-n432281"
       ]
     },
     "seguridad": {
-      "value": "Seguridad ciudadana integral con Unidades Itinerantes de Pacificación Ciudadana, inteligencia, agentes encubiertos y acción conjunta de instituciones para combatir delincuencia, pandillaje y microcomercialización de drogas.",
+      "value": "Uso de inteligencia, agentes encubiertos y unidades itinerantes de pacificación.",
       "source": [
         "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
       ]
     },
     "ambiente": {
-      "value": "Políticas municipales sostenibles: Creación y recuperación de espacios verdes para oxigenación y recreación. Preocupación por efectos del cambio climático.",
+      "value": "Políticas municipales sostenibles y recuperación de espacios verdes.",
       "source": [
         "https://www.actualidadambiental.pe/wp-content/uploads/2022/09/Plan-de-Gobierno-Renovacion-Popular-Elecciones-2022.pdf"
       ]
     },
     "educacion": {
-      "value": "Modernización tecnológica y valores tradicionales: Uso de tecnología digital (tablets, internet satelital en zonas rurales), mejora de infraestructura escolar, modelo educativo inspirado en Finlandia. Eliminación de contenidos vinculados a ideología de género del currículo.",
-      "source": [
-        "https://youtu.be/DXX3CpNF0FM?t=245",
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
-    },
-    "salud": {
-      "value": "Sistema de salud universal: Fortalecer y expandir los Hospitales de la Solidaridad a nivel nacional para llevar atención médica accesible especialmente a quienes no pueden acceder a EsSalud o SIS.",
-      "source": [
-        "https://www.facebook.com/saludconlupa/videos/1439458790625689/",
-        "https://larepublica.pe/sociedad/2022/10/04/rafael-lopez-aliaga-8-promesas-en-salud-que-debe-cumplir-el-virtual-alcalde-de-lima-metropolitana"
-      ]
+      "value": "Modernización tecnológica, modelo Finlandia y eliminación de ideología de género.",
+      "source": ["https://youtu.be/DXX3CpNF0FM?t=245"]
     },
     "reformaPolitica": {
-      "value": "Modernización institucional y unicameralidad: Fusión de ministerios ('Son más o menos ocho ministerios que serán uno solo'), reducción del aparato estatal, descentralización de sedes ministeriales.",
+      "value": "Fusión de ministerios y retorno a la unicameralidad.",
       "source": [
-        "https://elcomercio.pe/politica/rafael-lopez-aliaga-dice-que-fusionara-ocho-ministerios-ligados-al-bienestar-humano-noticia/",
         "https://elcomercio.pe/politica/elecciones/rafael-lopez-aliaga-en-cade-2025-desde-el-retorno-al-congreso-unicameral-hasta-petro-peru-los-ejes-de-sus-propuestas-tlc-nota-noticia/"
       ]
     }
   },
-
   "propuestasPrincipales": {
-    "economico": {
-      "values": [
-        "Crecimiento sostenido del PBI (incremento anual 2% hasta llegar al 7% al quinto año) y reducción de inflación",
-        "Industrialización y diversificación productiva: generación de 2 millones de empleos",
-        "Creación del Instituto de Promoción y Desarrollo de las PYMEs y Banco PYME de capital privado",
-        "Parques logísticos y zonas de libre comercio en zonas fronterizas",
-        "Desarrollo industrial de productos nativos y trabajo artesanal familiar",
-        "Modernización de mercados de abasto y reorganización de programa Mi Mercado"
-      ],
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
-    },
-    "social": {
-      "values": [
-        "Central de Lucha Contra la Corrupción (CCC) con plenos poderes",
-        "Fortalecimiento de programas sociales y alimentarios con productos nacionales",
-        "Extensión de Clubes Zonales a nivel nacional para esparcimiento familiar",
-        "Programa alimentario con alto contenido proteico desde gestación hasta etapa escolar",
-        "Erradicar anemia y desnutrición infantil"
-      ],
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
-    },
-    "ambiental": {
-      "values": [
-        "Control y reducción de emisiones de gases de efecto invernadero",
-        "Gestión integral de recursos hídricos y programa 'agua en la esquina'",
-        "Reforestar 500 mil hectáreas anuales hasta alcanzar 2 millones",
-        "Pesca sostenible y acuicultura con participación de PYMEs",
-        "Protección de comunidades nativas y originarias con enfoque pluricultural"
-      ],
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
-    },
-    "institucional": {
-      "values": [
-        "Eliminación de barreras burocráticas y simplificación administrativa",
-        "Reducción y reorganización de ministerios (fusión de 8 ministerios)",
-        "Descentralización de sedes ministeriales y del Poder Ejecutivo",
-        "Gobierno digital y transparencia vía Internet",
-        "Renovación de carrera judicial con jueces jóvenes",
-        "Meritocracia en la función pública"
-      ],
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
-    },
-    "educativo": {
-      "values": [
-        "Tecnología digital (tablets e internet satelital en zonas rurales)",
-        "Mejora de infraestructura escolar",
-        "Modelo educativo inspirado en Finlandia",
-        "Fortalecimiento de becas y créditos para formación técnica",
-        "Exoneración del Impuesto Predial a inmuebles con fines educativos"
-      ],
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
-    },
-    "salud": {
-      "values": [
-        "Expansión de Hospitales de la Solidaridad a nivel nacional",
-        "Descentralización de programas de apoyo social",
-        "Formación de Agentes de Desarrollo comunitarios para salud básica",
-        "Oficina Nacional de Salud Ocupacional"
-      ],
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
-    },
-    "seguridad": {
-      "values": [
-        "Unidades Itinerantes de Pacificación Ciudadana",
-        "Inteligencia y agentes encubiertos contra delincuencia",
-        "Sistemas de videovigilancia en coordinación con gobiernos regionales y municipales",
-        "Combate al pandillaje y microcomercialización de drogas"
-      ],
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
-    },
-    "transporte": {
-      "values": [
-        "Fortalecimiento del Sistema Metropolitano y nuevas líneas de Metro a nivel nacional",
-        "Modernización de Red Vial Nacional: carreteras de penetración a autopistas de 4 carriles",
-        "Modernización portuaria: ampliación de muelles del Callao, segunda pista AIJCH",
-        "Recuperación de red ferroviaria: línea Tumbes-Tacna y Tren Bioceánico",
-        "Conectividad digital nacional: expansión de banda ancha"
-      ],
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
-    },
-    "agricultura": {
-      "values": [
-        "Ley de la Defensoría del Campesino",
-        "Autoridad de Cuencas como organismo autónomo",
-        "Sistema de investigación e innovación agrobiotecnológica en valles y cuencas",
-        "Agro libre de transgénicos y producción de alimentos orgánicos",
-        "Fortalecimiento de organizaciones agrarias y clústeres productivos"
-      ],
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
-    }
+    "institucional": [
+      {
+        "titulo": "Racionalización del aparato estatal",
+        "descripcion": "Reducción y reorganización de ministerios para optimizar el gasto público y descentralización de sedes.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      },
+      {
+        "titulo": "Simplificación administrativa",
+        "descripcion": "Eliminación de barreras burocráticas y creación del Código del Servicio Público para sancionar el mal servicio.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Crecimiento sostenido del PBI",
+        "descripcion": "Meta de incremento anual del 2% hasta llegar al 7% al quinto año de gobierno.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      },
+      {
+        "titulo": "Desarrollo de conectividad ferroviaria",
+        "descripcion": "Impulso a la línea Tumbes-Tacna y el Tren Bioceánico mediante acuerdos gobierno a gobierno.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      },
+      {
+        "titulo": "Creación del Banco PYME",
+        "descripcion": "Impulso al crédito para pequeñas y medianas empresas con capital privado.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Central de Lucha Contra la Corrupción (CCC)",
+        "descripcion": "Organismo con plenos poderes para detectar y sancionar corrupción e infiltrar el delito.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      },
+      {
+        "titulo": "Erradicación de anemia y desnutrición infantil",
+        "descripcion": "Programa alimentario proteico desde la gestación y adquisición de productos a productores nacionales.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Reforestación masiva",
+        "descripcion": "Meta de reforestar 500 mil hectáreas anuales hasta alcanzar 2 millones.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      },
+      {
+        "titulo": "Gestión integral de recursos hídricos",
+        "descripcion": "Ampliación del acceso a agua potable con el programa 'Agua en la esquina'.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Incentivos tributarios para educación",
+        "descripcion": "Exoneración del Impuesto Predial a inmuebles cedidos gratuitamente para fines educativos.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Descentralización y desarrollo comunitario",
+        "descripcion": "Formación de Agentes de Desarrollo para salud básica, alfabetización y saneamiento rural.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Seguridad ciudadana integral",
+        "descripcion": "Unidades Itinerantes de Pacificación Ciudadana con agentes encubiertos y sistemas de videovigilancia.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      },
+      {
+        "titulo": "Oficina Nacional de Salud Ocupacional",
+        "descripcion": "Garantizar la salud ocupacional como un derecho fundamental de los trabajadores.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
+        ]
+      }
+    ]
   },
-
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
       "value": "Alto",
@@ -332,160 +275,146 @@
         "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
       ]
     },
-    "diferencias": {
-      "value": "Discurso público consistente con ideología socialcristiana y conservadora del plan de gobierno",
-      "source": []
-    },
+    "diferencias": { "value": null, "source": [] },
     "cumplimientoPrevio": {
-      "value": "Como Alcalde de Lima (2023-2025): impulsó Hospitales de la Solidaridad, pero enfrentó controversias con concesionarias y deudas tributarias de empresas vinculadas",
-      "source": []
+      "value": "Uso de los Hospitales de la Solidaridad como vitrina de cumplimiento de promesas de salud.",
+      "source": [
+        "https://larepublica.pe/sociedad/2022/10/04/rafael-lopez-aliaga-8-promesas-en-salud-que-debe-cumplir-el-virtual-alcalde-de-lima-metropolitana-jne-onpe-hospital-de-la-solidaridad-sisol-lima-sana"
+      ]
     }
   },
-
   "controversias": {
-    "antecedentesPolicicales": {
-      "value": "No registra antecedentes policiales conocidos",
-      "source": []
-    },
-    "antecedentesPenales": {
-      "value": "Investigación por lavado de activos en curso (Caso Panama Papers). En abril 2025, Séptimo Juzgado de Investigación Preparatoria Nacional declaró infundada tutela de derechos parcialmente, manteniendo la investigación.",
-      "source": [
-        "https://img.lpderecho.pe/wp-content/uploads/2025/08/Exp.-00029-2018-29-5001-JR-PE-03-LP-Derecho-1.pdf"
-      ]
-    },
-    "antecedentesJudiciales": {
-      "values": ["No registra antecedentes judiciales con sentencia firme"],
-      "source": []
-    },
-    "procesosEnCurso": {
-      "values": [
-        "Caso Panama Papers (Lavado de Activos): Investigación preparatoria ampliada por 24 meses adicionales en octubre 2025. Se centra en presuntas operaciones financieras irregulares vinculadas a sociedades offshore.",
-        "Difamación Agravada: López Aliaga ha iniciado procesos penales contra medios de comunicación (La República) por publicaciones sobre sus presuntas deudas tributarias."
-      ],
-      "source": [
-        "https://www.infobae.com/peru/2024/09/10/rafael-lopez-aliaga-seguira-siendo-investigado-por-lavado-de-activos-pj-desestimo-su-pedido-del-caso-panama-papers/",
-        "https://www.facebook.com/peru21/posts/-caso-panama-papers-ampl%C3%ADan-por-24-meses-plazo-de-investigaci%C3%B3n-a-rafael-l%C3%B3pez-a/1245880384233552/"
-      ]
-    },
-    "procesosArchivados": {
-      "values": [
-        "Pedido de Tutela de Derechos (nov 2023): Tercera Sala Penal de Apelaciones Nacional desestimó recurso que buscaba excluir información migratoria de investigación por lavado de activos",
-        "Atentado inexistente: Fiscalía archivó denuncia de supuesto intento de atentado contra él (octubre 2025)",
-        "Observación Electoral por Neutralidad (inicial): JEE Lima Centro 1 archivó inicialmente caso, aunque posteriormente JNE confirmó infracción"
-      ],
-      "source": [
-        "https://lpderecho.pe/rafael-lopez-aliaga-limitan-ministerio-publico-informacion-migratoria-investigacion-lavado-de-activos",
-        "https://www.tvperu.gob.pe/noticias/politica/rafael-lopez-aliaga-pj-desestimo-recurso-y-seguira-siendo-investigado-por-lavado-de-activos"
-      ]
-    },
-    "declaracionesControversiales": {
-      "values": [
-        "Deuda con SUNAT: Empresas vinculadas a su grupo económico mantienen deudas coactivas superiores a S/27 millones (Peruval Corp: S/12.9 millones). López Aliaga lo califica de 'acoso político' y afirma que son juicios que SUNAT ha perdido en tribunales fiscales.",
-        "Negativa a pagar indemnización: Declaró que la MML no pagará los 30 millones de dólares ordenados por Tribunal Arbitral de París a Lima Expresa, a la que calificó de 'delincuente'.",
-        "Expulsiones internas del partido: Controversias con Confemin que desmintió sus declaraciones sobre expulsión de dirigentes mineros por 'operaciones raras'."
-      ],
-      "source": [
-        "https://larepublica.pe/politica/2026/01/04/rafael-lopez-aliaga-mantiene-deuda-coactiva-con-la-sunat-por-mas-de-s129-millones",
-        "https://youtu.be/1FM4Bqeestw?t=223"
-      ]
-    },
-    "observacionesAdministrativas": {
-      "values": [
-        "Infracción de Neutralidad Electoral (JNE, nov 2025): Confirmada infracción al principio de neutralidad electoral durante su gestión como alcalde, al realizar actos oficiales con símbolos de su partido.",
-        "Proceso Sancionador por Propaganda Electoral (JNE, dic 2025): Iniciado por invocar a Dios en propaganda electoral, prohibido por ley.",
-        "Omisión de Información al JNE: No declaró su vínculo con empresa Peruval Corp., que mantiene deuda coactiva millonaria con SUNAT."
-      ],
-      "source": [
-        "https://caretas.pe/politica/jne-confirma-infraccion-de-rafael-lopez-aliaga-por-vulnerar-el-principio-de-neutralidad-electoral/",
-        "https://www.infobae.com/peru/2025/11/05/rafael-lopez-aliaga-si-vulnero-la-neutralidad-electoral-jne-confirma-infraccion-del-exalcalde/"
-      ]
-    },
-    "aclaracionContextual": "Rafael López Aliaga enfrenta una investigación activa por lavado de activos (Caso Panama Papers) que ha sido ampliada hasta 2027. También tiene sanciones confirmadas del JNE por infracción de neutralidad electoral. Las deudas tributarias de sus empresas y la negativa a pagar indemnizaciones arbitrales han generado controversia durante su gestión municipal."
-  },
-
-  "transparencia": {
-    "items": [
-      "Plan de gobierno publicado en plataforma JNE",
-      "Información de carrera política disponible en Infogob",
-      "Hoja de vida publicada en plataforma electoral JNE",
-      "Sitio web oficial de campaña"
+    "antecedentes": [
+      {
+        "titulo": "No registra antecedentes policiales o judiciales previos conocidos.",
+        "estado": null,
+        "source": ["RAFAEL LOPEZ ALIAGA.docx"]
+      }
     ],
-    "source": [
-      "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf",
-      "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO",
-      "https://rafaellopezaliaga.pe/"
+    "procesosJudiciales": [
+      {
+        "titulo": "Caso Panama Papers (Lavado de Activos): Investigación preparatoria ampliada por 24 meses en octubre 2025.",
+        "estado": "En curso",
+        "source": [
+          "https://www.infobae.com/peru/2024/09/10/rafael-lopez-aliaga-seguira-siendo-investigado-por-lavado-de-activos-pj-desestimo-su-pedido-del-caso-panama-papers/"
+        ]
+      },
+      {
+        "titulo": "Difamación Agravada: Procesos iniciados por el candidato contra medios como La República.",
+        "estado": "En curso",
+        "source": ["RAFAEL LOPEZ ALIAGA.docx"]
+      },
+      {
+        "titulo": "Recurso de Tutela de Derechos: Buscaba excluir información migratoria del caso lavado de activos.",
+        "estado": "Archivado",
+        "source": [
+          "https://lpderecho.pe/rafael-lopez-aliaga-limitan-ministerio-publico-informacion-migratoria-investigacion-lavado-de-activos"
+        ]
+      },
+      {
+        "titulo": "Denuncia por presunto atentado contra su vida.",
+        "estado": "Archivado",
+        "source": ["RAFAEL LOPEZ ALIAGA.docx"]
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Negativa a pagar indemnización de $30 millones a Lima Expresa calificándolos de 'delincuentes'.",
+        "source": ["RAFAEL LOPEZ ALIAGA.docx"]
+      },
+      {
+        "titulo": "Declaraciones sobre la expulsión de dirigentes mineros de su partido por 'operaciones raras'.",
+        "source": ["RAFAEL LOPEZ ALIAGA.docx"]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "Deuda coactiva con SUNAT de empresas vinculadas (Peruval Corp) por más de S/ 12.9 millones.",
+        "source": [
+          "https://larepublica.pe/politica/2026/01/04/rafael-lopez-aliaga-mantiene-deuda-coactiva-con-la-sunat-por-mas-de-s129-millones-renovacion-popular-rla-porky-hnews-190686"
+        ]
+      },
+      {
+        "titulo": "Infracción al principio de neutralidad electoral confirmada por el JNE en noviembre 2025.",
+        "source": [
+          "https://caretas.pe/politica/jne-confirma-infraccion-de-rafael-lopez-aliaga-por-vulnerar-el-principio-de-neutralidad-electoral/"
+        ]
+      },
+      {
+        "titulo": "Proceso sancionador por invocar a Dios en propaganda electoral (diciembre 2025).",
+        "source": ["RAFAEL LOPEZ ALIAGA.docx"]
+      },
+      {
+        "titulo": "Omisión de información ante el JNE sobre su vínculo con la empresa Peruval Corp.",
+        "source": ["RAFAEL LOPEZ ALIAGA.docx"]
+      }
     ]
   },
-
+  "transparencia": {
+    "items": [
+      "Vínculo no declarado con Peruval Corp ante el JNE",
+      "Deudas del grupo económico con la SUNAT superiores a S/ 27 millones",
+      "Infracciones de neutralidad electoral documentadas"
+    ],
+    "source": [
+      "https://larepublica.pe/politica/2026/01/04/rafael-lopez-aliaga-mantiene-deuda-coactiva-con-la-sunat-por-mas-de-s129-millones-renovacion-popular-rla-porky-hnews-190686",
+      "https://caretas.pe/politica/jne-confirma-infraccion-de-rafael-lopez-aliaga-por-vulnerar-el-principio-de-neutralidad-electoral/"
+    ]
+  },
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Empresario exitoso (Perurail, Belmond Hotels); fundador y presidente de Renovación Popular; Alcalde de Lima Metropolitana (2023-2025)",
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+      "value": "Alto - Define su postura como 'derecha popular' y lidera su propio partido.",
+      "source": ["RAFAEL LOPEZ ALIAGA.docx"]
     },
     "comunicacion": {
-      "value": "Comunicador confrontacional y mediático; alta presencia en redes sociales y medios de comunicación; estilo polémico y directo",
-      "source": ["https://rafaellopezaliaga.pe/", "https://x.com/rlopezaliaga1"]
+      "value": "Medio - Uso intensivo de redes sociales y medios digitales.",
+      "source": ["RAFAEL LOPEZ ALIAGA.docx"]
     },
     "credibilidad": {
-      "value": "Lidera intención de voto (10% Ipsos dic 2025); genera alta polarización; enfrenta cuestionamientos por investigación de lavado de activos y deudas tributarias empresariales",
-      "source": []
+      "value": "Medio - Cuestionada por procesos judiciales de lavado de activos y deudas tributarias.",
+      "source": ["RAFAEL LOPEZ ALIAGA.docx"]
     }
   },
-
   "percepcionPublica": {
     "intencionVoto": {
-      "min": 10,
-      "max": 10,
-      "descripcion": "10% de intención de voto - LIDERA encuestas (Ipsos, diciembre 2025)",
-      "metodologia": "Encuesta presencial en hogares. Muestra: 1,211 entrevistas urbano-rural en 24 departamentos + Callao. Diseño: muestreo por conglomerados estratificado. Margen de error: ±2.8%, nivel de confianza 95%. Fecha: 18-19 diciembre 2025.",
+      "min": 7.2,
+      "max": 12.8,
+      "descripcion": "Encuesta Ipsos del 18-19 de diciembre de 2025. Lidera la intención de voto con 10%.",
       "source": [
         "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf"
       ]
     },
-    "aprobacion": {
-      "value": null,
-      "source": []
-    },
+    "aprobacion": { "value": null, "source": [] },
     "redes": {
-      "value": "Presencia muy activa en todas las plataformas: X, Instagram, Facebook, YouTube, TikTok y sitio web oficial",
-      "source": [
-        "https://rafaellopezaliaga.pe/",
-        "https://x.com/rlopezaliaga1",
-        "https://www.facebook.com/RafaelLopezAliagaOficial",
-        "https://www.youtube.com/@rafaellopezaliaga",
-        "https://www.tiktok.com/@rafael_lopez_aliaga"
-      ]
+      "value": "Presencia activa en X (Twitter), Instagram, Facebook, TikTok y YouTube.",
+      "source": ["https://rafaellopezaliaga.pe/"]
     }
   },
-
   "innovacionYVision": {
     "items": [
-      "Tren Bioceánico que conecte océanos Atlántico y Pacífico",
-      "Línea ferroviaria Tumbes-Tacna",
-      "Central de Lucha Contra la Corrupción (CCC) con plenos poderes",
-      "Banco PYME de capital privado",
-      "Autoridad de Cuencas como organismo autónomo",
-      "Defensoría del Campesino"
+      "Tren Bioceánico Atlántico-Pacífico",
+      "Programa de emergencia 'Agua en la esquina'",
+      "Central de Lucha Contra la Corrupción (CCC) con poderes de infiltración",
+      "Adopción del modelo educativo de Finlandia"
     ],
     "source": [
       "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
     ]
   },
-
   "historialLegislativo": {
-    "tieneHistorial": true,
-    "productivityLabel": "BAJA",
-    "asistencia": {
-      "porcentaje": null,
-      "label": null,
-      "source": []
+    "tieneHistorial": false,
+    "productivityLabel": "N/A",
+    "asistencia": { "porcentaje": null, "label": null, "source": null },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
     },
-    "proyectosPresentados": null,
-    "proyectosAprobados": null,
-    "proyectosDestacados": [],
-    "nota": "No ha ejercido el cargo de Congresista de la República. Su experiencia política incluye ser Regidor Provincial de Lima (2007-2010) y Alcalde Metropolitano de Lima (2023-2025).",
-    "source": [
-      "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO"
-    ]
+    "projects": [],
+    "nota": "No tiene historial legislativo, su experiencia es principalmente ejecutiva y municipal.",
+    "source": null
   }
 }

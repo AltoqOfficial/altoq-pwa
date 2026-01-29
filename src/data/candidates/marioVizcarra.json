@@ -1,423 +1,415 @@
 {
-  "id": "mario-vizcarra",
-  "name": "Mario Vizcarra",
-  "party": "Perú Primero",
-  "age": 68,
+  "id": "mario-enrique-vizcarra-cornejo",
+  "slug": "mario-enrique-vizcarra-cornejo",
+  "fullName": "Mario Enrique Vizcarra Cornejo",
+  "shortName": "Mario Vizcarra",
   "image": "/candidatos/mario-vizcarra.webp",
-  "shortBio": "Ingeniero Industrial (UNI) y MBA (ESAN). Hermano del expresidente Martín Vizcarra. Empresario con experiencia en el sector agroindustrial y construcción. Sin experiencia política formal, excepto 6 meses como presidente del CTAR Moquegua en 2005. Registra condena suspendida por peculado (2005, archivada).",
+  "color": "#E30613",
+  "party": "Partido Político Perú Primero",
+  "partyIcon": "/partidos/peru-primero.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/mariovizcarrac",
+    "tiktok": "https://www.tiktok.com/@mariovizcarrac",
+    "twitter": "https://x.com/peruprimero_ofi",
+    "facebook": "https://www.facebook.com/people/Mario-Vizcarra-Cornejo/",
+    "web": null
+  },
   "perfilGeneral": {
-    "nombreCompleto": "Mario Enrique Vizcarra Cornejo",
-    "ocupacionActual": "Candidato Presidencial",
-    "partidoPolitico": "Partido Político Perú Primero",
-    "redesSociales": {
-      "candidato": {
-        "tiktok": "https://www.tiktok.com/@mariovizcarrac",
-        "facebook": "https://www.facebook.com/people/Mario-Vizcarra-Cornejo/",
-        "instagram": "https://www.instagram.com/mariovizcarrac"
-      },
-      "partido": {
-        "sitioWeb": null,
-        "tiktok": "https://www.tiktok.com/@peruprimero_oficial",
-        "instagram": "https://www.instagram.com/peruprimero.oficial/",
-        "facebook": "https://www.facebook.com/peruprimero.oficial",
-        "twitter": "https://x.com/peruprimero_ofi"
-      }
+    "edad": {
+      "value": null,
+      "source": []
     },
-    "ubicacionIdeologica": {
-      "posicion": "Centro",
-      "criterio": "La agrupación se posiciona en el centro porque combina políticas de derecha económica, como el fomento a la inversión privada y el libre mercado, con posturas de izquierda social, centradas en la protección de derechos laborales y la regulación de monopolios. No se adhiere a un extremo, sino que busca un equilibrio técnico para promover el crecimiento sin descuidar el bienestar de las mayorías.",
-      "fuente": "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911"
+    "nacimiento": {
+      "value": null,
+      "source": []
     },
-    "gradosAcademicos": [
-      {
-        "institucion": "Universidad Nacional de Ingeniería (UNI)",
-        "grado": "Bachiller en Ingeniería Industrial",
-        "año": 1978,
-        "fuente": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
-      },
-      {
-        "institucion": "Universidad ESAN",
-        "grado": "Magíster en Administración",
-        "año": 2003,
-        "fuente": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
-      }
-    ],
-    "intencionDeVoto": {
-      "porcentaje": 5,
-      "fecha": "18-19 de diciembre de 2025",
-      "medio": "Ipsos (encuesta para América Televisión)",
-      "metodologia": {
-        "muestra": "1,211 entrevistas presencial en hogares (urbano-rural, 24 departamentos + Callao)",
-        "diseño": "Probabilístico, por conglomerados y estratificado en la primera etapa. Selección aleatoria de localidades y manzanas, seguida de muestreo sistemático de viviendas y cuotas de sexo y edad. Recolección presencial en hogares con dispositivos móviles (CAPI).",
-        "margenError": "±2.8% (nivel de confianza 95%)"
-      },
-      "fuente": "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf"
+    "lugar": {
+      "value": "Moquegua (Presunto)",
+      "source": [
+        "https://peru21.pe/politica/mario-vizcarra-el-plan-b-de-su-hermano-el-expresidente-martin-vizcarra/"
+      ]
     },
-    "fuentes": [
-      "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-      "https://andina.pe/agencia/noticia-elecciones-2026-mario-vizcarra-es-elegido-candidato-presidencial-peru-primero-1054860.aspx"
-    ]
+    "nivelEducativo": {
+      "value": [
+        "Bachiller en Ingeniería Industrial",
+        "Magíster en Administración"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.youtube.com/watch?v=0pp_EkaFO7Q&t=352s"
+      ]
+    },
+    "profesion": {
+      "value": ["Ingeniero Industrial"],
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "partidoActual": {
+      "value": "Partido Político Perú Primero",
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "cambiosDePartido": {
+      "value": "0",
+      "source": []
+    },
+    "historialPartidos": []
   },
   "experienciaPolitica": {
-    "añosTotales": "6 meses aproximadamente",
-    "nota": "Se presume que no tiene años de experiencia en la política. Ha estado vinculado a las campañas electorales del expresidente Martín Vizcarra, pero no ha ocupado cargos políticos ni ha tenido participación directa en la gestión pública.",
-    "cargos": [
-      {
-        "cargo": "Presidente",
-        "institucion": "CTAR Moquegua",
-        "periodo": "2005 (6 meses)",
-        "fuente": "https://lanoticia.com.pe/mario-vizcarra-tambien-es-corrupto-y-busca-llegar-al-poder-para-delinquir/"
-      }
-    ],
-    "fuentes": [
-      "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911",
-      "https://panamericana.pe/politica/457486-ppk-cuestiona-candidatura-mario-vizcarra-ninguna-experiencia-politica-cero",
-      "https://diariocorreo.pe/politica/otro-vizcarra-tambien-con-lios-en-la-justicia-noticia/"
-    ]
+    "anosExperiencia": {
+      "value": "1",
+      "source": [
+        "https://lanoticia.com.pe/mario-vizcarra-tambien-es-corrupto-y-busca-llegar-al-poder-para-delinquir/"
+      ]
+    },
+    "cargosPrevios": {
+      "values": ["Presidente del CTAR Moquegua (2005-2005)"],
+      "source": [
+        "https://lanoticia.com.pe/mario-vizcarra-tambien-es-corrupto-y-busca-llegar-al-poder-para-delinquir/"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2026 → En curso"],
+      "source": [
+        "https://andina.pe/agencia/noticia-elecciones-2026-mario-vizcarra-es-elegido-candidato-presidencial-peru-primero-1054860.aspx"
+      ]
+    }
   },
   "experienciaGestion": {
-    "cargos": [
-      {
-        "cargo": "Gerente Administrativo",
-        "entidad": "CyM VIZCARRA SAC",
-        "tipo": "Privada",
-        "periodo": "1993 - 2017",
-        "fuente": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
-      },
-      {
-        "cargo": "Gerente Administrativo / Propietario / Gerente General / Representante Legal",
-        "entidad": "Agrotécnica Estuquiña SAC",
-        "tipo": "Privada",
-        "periodo": "1998 - 2025",
-        "fuente": "https://peru21.pe/politica/mario-vizcarra-el-plan-b-de-su-hermano-el-expresidente-martin-vizcarra/"
+    "sectorPublico": {
+      "cantidad": 1,
+      "detalle": {
+        "values": ["Presidente del CTAR Moquegua (2005-2005)"],
+        "source": [
+          "https://lanoticia.com.pe/mario-vizcarra-tambien-es-corrupto-y-busca-llegar-al-poder-para-delinquir/"
+        ]
       }
-    ],
-    "fuentes": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "sectorPrivado": {
+      "cantidad": 2,
+      "detalle": {
+        "values": [
+          "Gerente Administrativo en CyM VIZCARRA SAC (1993-2017)",
+          "Gerente Administrativo en AGROTECNICA ESTUQUIÑA SAC (1998-2025)"
+        ],
+        "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+      }
+    },
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
   },
   "ideologiaPolitica": {
+    "posicion": {
+      "value": "Centro",
+      "source": [
+        "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911"
+      ]
+    },
     "economia": {
-      "sintesis": "Inversión privada y regulación del mercado",
-      "descripcion": "Posición de centro económico que busca el equilibrio entre el libre mercado y la intervención estatal regulatoria. Propone incentivar la inversión privada en todas sus escalas para dinamizar la economía, condicionado estrictamente al cumplimiento de los derechos laborales y a una regulación que prohíba prácticas monopólicas.",
-      "fuente": "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911"
+      "value": "Fomento a la inversión privada, libre mercado con regulación de monopolios y cumplimiento de derechos laborales.",
+      "source": [
+        "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911"
+      ]
     },
-    "educacion": {
-      "sintesis": "Alianza estratégica público-privada para la calidad educativa",
-      "descripcion": "Propone un modelo de reforma donde el Estado garantiza la infraestructura básica, mientras se exige responsabilidad social a las grandes empresas (mineras y agroexportadoras) para financiar proyectos de impacto directo en el rendimiento académico. Busca cerrar brechas de desigualdad digital y servicios básicos en zonas rurales, capacitando docentes y promoviendo la meritocracia bajo una visión de centro que prioriza la igualdad de oportunidades.",
-      "fuente": "https://youtu.be/0pp_EkaFO7Q?t=1884"
+    "matrimonioIgualitario": {
+      "value": "A favor (Respaldo a Unión Civil y respeto a opciones sexuales)",
+      "source": [
+        "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
+      ]
     },
-    "salud": {
-      "sintesis": "Responsabilidad compartida para el cierre de brechas",
-      "descripcion": "Plantea combatir el desabastecimiento de medicinas mediante un sistema de denuncias anónimas contra la corrupción y la ineficiencia administrativa. Busca replicar modelos de responsabilidad social donde grandes empresas, como las mineras y agroexportadoras, inviertan directamente en infraestructura de salud y educación para acelerar el cierre de brechas sociales en las regiones.",
-      "fuente": "https://youtu.be/0pp_EkaFO7Q?t=1653"
-    },
-    "derechosCiviles": {
-      "sintesis": "A favor del aborto libre y respeto a diversidad sexual",
-      "descripcion": "Vizcarra defiende la libertad de elección de las personas sobre su orientación sexual y relaciones, y sostiene que el aborto debe ser una decisión total de la mujer, especialmente en casos de violación o bajo su propio criterio sobre la vida que gesta. Esta visión busca evitar la injerencia de posturas teocráticas o fundamentalistas en las políticas públicas para garantizar los derechos fundamentales de cada ciudadano.",
-      "posicionAborto": "A favor (pro-elección)",
-      "posicionUnionCivil": "A favor",
-      "fuente": "https://youtu.be/N4JdYD_U7j8?t=2080"
+    "aborto": {
+      "value": "A favor (Pro-elección, especialmente en casos de violación)",
+      "source": [
+        "https://youtu.be/N4JdYD_U7j8?t=2080",
+        "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
+      ]
     },
     "seguridad": {
-      "sintesis": "Reforma del sistema penitenciario y control territorial",
-      "descripcion": "Propone destrabar la construcción de penales paralizados, habilitar cuarteles militares en zonas remotas de la selva para reclusos de alta peligrosidad bajo custodia de las Fuerzas Armadas y derogar leyes que dificultan la intervención policial contra el crimen organizado.",
-      "fuente": "https://youtu.be/N4JdYD_U7j8?t=2359"
+      "value": "Reforma penitenciaria, control territorial mediante cuarteles militares y derogación de leyes que dificultan intervención policial.",
+      "source": ["https://youtu.be/N4JdYD_U7j8?t=2359"]
     },
     "ambiente": {
-      "sintesis": "Respeto al medio ambiente como parte de la política social",
-      "descripcion": "Mario Vizcarra aborda el medio ambiente como parte de la 'cara social' de Perú Primero, un partido de centro. Enfatiza la importancia fundamental de respetar el medio ambiente, junto con los derechos laborales. Este compromiso forma parte de su objetivo más amplio de cerrar brechas en áreas como la educación y la salud.",
-      "fuente": "https://youtu.be/0pp_EkaFO7Q?t=608"
+      "value": "Compromiso con el respeto ambiental como parte de la responsabilidad social para cerrar brechas.",
+      "source": ["https://youtu.be/0pp_EkaFO7Q?t=608"]
+    },
+    "educacion": {
+      "value": "Alianza público-privada, meritocracia docente y cierre de brecha digital en zonas rurales.",
+      "source": ["https://youtu.be/0pp_EkaFO7Q?t=1884"]
     },
     "reformaPolitica": {
-      "sintesis": "Reforma profunda del INPE y la PNP",
-      "descripcion": "Propone una reestructuración profunda del Estado para eliminar la ineficiencia y la corrupción, priorizando la elección de representantes probos que legislen a favor del ciudadano y no por beneficios propios.",
-      "fuente": "https://youtu.be/0pp_EkaFO7Q?t=1576"
+      "value": "Reestructuración del Estado para eliminar corrupción e ineficiencia, priorizando representantes probos.",
+      "source": ["https://youtu.be/0pp_EkaFO7Q?t=1576"]
     }
   },
   "propuestasPrincipales": {
-    "ejeEconomico": {
-      "propuestas": [
-        {
-          "titulo": "Comando Temporal de Destrabe de Inversiones",
-          "descripcion": "Creación de un comando liderado por el MEF para reducir trámites burocráticos y reactivar la inversión pública-privada.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Fortalecimiento de la regla fiscal",
-          "descripcion": "Coordinar acciones con el BCRP para mantener la disciplina fiscal sin detener la ejecución de proyectos de inversión pública necesarios.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Reforma tributaria integral",
-          "descripcion": "Simplificación del sistema, digitalización total de expedientes y control fiscal más riguroso a través de la SUNAT.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Ventanilla Única APP y Proyectos Estratégicos (VUPRO)",
-          "descripcion": "Centralizar y agilizar los procesos para Asociaciones Público-Privadas y proyectos de gran envergadura nacional en una plataforma única.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Régimen Simplificado Progresivo para MYPE",
-          "descripcion": "Sistema tributario diseñado específicamente para que las micro y pequeñas empresas transiten hacia la formalidad de manera escalonada.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Sistema 'Compras Abiertas 360'",
-          "descripcion": "Plataforma de monitoreo en tiempo real para todas las compras públicas nacionales, asegurando transparencia y control ciudadano total.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Inversión en infraestructura productiva y social",
-          "descripcion": "Priorización de proyectos con alta rentabilidad social: agua, saneamiento, salud y educación en zonas desatendidas. Mejora de infraestructura logística y conectividad digital nacional.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        }
-      ],
-      "fuentePrincipal": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+    "institucional": [
+      {
+        "titulo": "Creación del INDA y Reorganización del MIDAGRI",
+        "descripcion": "Creación del Instituto Nacional de Desarrollo Agrario y reorganización ministerial para eliminar la captura institucional y la corrupción vía digitalización.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Carrera Pública Meritocrática Agraria",
+        "descripcion": "Implementación de una carrera meritocrática y creación de la Escuela de Gestión Pública Agraria para tecnificar el sector.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Veeduría Ciudadana y Tribunal Agrario",
+        "descripcion": "Mecanismos de fiscalización por parte de los productores y creación de un tribunal especializado para resolver conflictos jurídicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Comando Temporal de Destrabe de Inversiones",
+        "descripcion": "Liderado por el MEF para reducir trámites burocráticos y reactivar la inversión pública-privada.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Régimen Simplificado Progresivo para MYPE",
+        "descripcion": "Sistema tributario diseñado para que las micro y pequeñas empresas transiten hacia la formalidad de manera escalonada.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Plataforma Compras Abiertas 360",
+        "descripcion": "Monitoreo en tiempo real de todas las compras públicas nacionales para asegurar transparencia total.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Programa Nacional Agua 100",
+        "descripcion": "Estrategia para lograr cobertura universal de agua potable segura al año 2031.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Vivienda Social Sostenible \"Una Casita Para Ti\"",
+        "descripcion": "Ejecución de proyectos de vivienda en ciudades intermedias con criterios ecológicos y metodologías BIM.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Impulso a sistemas de transporte masivo eléctrico",
+        "descripcion": "Desarrollo de metros, buses eléctricos y teleféricos para reducir contaminación y tiempos de viaje.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Fondo Rotatorio \"Mi Chacra Crece\"",
+        "descripcion": "Capitalización de 300 mil familias agricultoras mediante créditos, asistencia técnica y seguros agrarios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Perú AgroSostenible",
+        "descripcion": "Promoción de agricultura de precisión, I+D varietal y creación de clústeres de exportación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Eficiencia Hídrica y Recuperación de Andenes",
+        "descripcion": "Instalación de riego tecnificado y rehabilitación de infraestructura incaica como solución al cambio climático.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Modelo Moquegua de Infraestructura Educativa",
+        "descripcion": "Réplica de convenios público-privados para rehabilitar colegios y equipamiento tecnológico de forma ágil.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Conectividad Digital Rural al 80%",
+        "descripcion": "Dotar de internet de alta velocidad y servicios básicos a las instituciones rurales para eliminar desventajas competitivas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Sistema Farmacia Digital y Compra Unificada",
+        "descripcion": "Centralización de adquisiciones estatales para reducir costos y monitoreo de stock en tiempo real vía app.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Programa Nacional Cuna Saludable",
+        "descripcion": "Intervención multisectorial contra la anemia y desnutrición crónica infantil en zonas de pobreza.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Vigilancia Tecnológica y Predictiva",
+        "descripcion": "Uso de IA para análisis de mapas de calor del delito e interconexión de cámaras municipales con la PNP.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      },
+      {
+        "titulo": "Formalización Agresiva y Trazabilidad Financiera",
+        "descripcion": "Bancarización obligatoria y pagos digitales para seguir el rastro de dinero de actividades ilegales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+        ]
+      }
+    ]
+  },
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+      ]
     },
-    "ejeSocial": {
-      "propuestas": [
-        {
-          "titulo": "Programa Nacional de Vivienda Sostenible",
-          "descripcion": "Implementación masiva de programas de vivienda social sostenible como 'Una Casita Para Ti' en ciudades intermedias con criterios ecológicos. Incentivos fiscales para edificación industrializada con metodologías BIM/DFMA.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Programa Nacional 'Agua 100'",
-          "descripcion": "Estrategia para lograr cobertura universal y acceso a agua potable segura para toda la población al año 2031. Incluye plantas modulares de tratamiento, tarifa social diferenciada, plantas desalinizadoras y trasvases de cuencas.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Gestión de riesgo de desastres y resiliencia",
-          "descripcion": "Fortalecimiento de la GRD en planeamiento urbano, Programa Nacional de Reforzamiento Sísmico y seguros obligatorios contra desastres para viviendas con financiamiento estatal.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Construcción y productividad",
-          "descripcion": "Adopción masiva de BIM/DFMA al 2028, Programa Nacional de Reciclaje de RCD y estándares verdes obligatorios en edificaciones.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Plan Nacional de Movilidad Sostenible",
-          "descripcion": "Impulso a sistemas de transporte masivo eléctrico (metros, buses eléctricos, teleféricos), Plan Nacional de Movilidad Activa (ciclovías) y reordenamiento del transporte informal con tecnología.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        }
-      ],
-      "fuentePrincipal": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+    "diferencias": {
+      "value": "Ninguna identificada en el documento.",
+      "source": []
     },
-    "ejeAmbiental": {
-      "propuestas": [
-        {
-          "titulo": "Fondo rotatorio 'Mi Chacra Crece'",
-          "descripcion": "Capitalización de 300 mil familias de la agricultura familiar mediante créditos, asistencia técnica y seguros agrarios especializados.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Agro-Asiste (plataforma + IA)",
-          "descripcion": "Asesoría técnica personalizada mediante tecnología de inteligencia artificial y una red presencial de técnicos en campo.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Perú AgroSostenible",
-          "descripcion": "I+D varietal y agricultura de precisión, clústeres y parques de exportación, infraestructura logística (cadenas de frío, puertos, carreteras rurales), certificaciones y penetración de mercados internacionales.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Recuperación de andenes y sistemas ancestrales",
-          "descripcion": "Rehabilitar infraestructuras incaicas de cultivo y gestión hídrica como solución sostenible y resiliente al cambio climático.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Seguridad alimentaria",
-          "descripcion": "Incentivos para autosuficiencia de alimentos básicos, modernización de mercados, transferencias focalizadas y comedores, reservas estratégicas del recurso hídrico.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Sostenibilidad ambiental y cambio climático",
-          "descripcion": "Técnicas agroforestales, silvopastoril y conservación de suelos. Eficiencia hídrica y riego tecnificado. Bioeconomía y aprovechamiento de residuos orgánicos.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Innovación y tecnología agraria",
-          "descripcion": "Fortalecimiento INIA/centros de excelencia, plataformas AgroDigital/biotecnología/CITEs/sensores, ecosistema de innovación con fondos y hubs.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        }
-      ],
-      "fuentePrincipal": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-    },
-    "ejeInstitucional": {
-      "propuestas": [
-        {
-          "titulo": "Creación del INDA y Reorganización del MIDAGRI",
-          "descripcion": "Crear el Instituto Nacional de Desarrollo Agrario (INDA) y reorganizar el MIDAGRI para eliminar la captura institucional y reducir la rotación de directivos. Digitalización total mediante la plataforma 'AgroTransparente'.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Carrera Pública y Escuela de Gestión Pública Agraria",
-          "descripcion": "Implementar una carrera pública meritocrática que garantice estabilidad y profesionalismo a los técnicos del sector. Escuela de Gestión Pública Agraria para capacitación continua.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Veeduría Ciudadana y Tribunal Agrario",
-          "descripcion": "Mecanismos de veeduría ciudadana para que los productores fiscalicen la ejecución presupuestal. Tribunal Agrario para seguridad jurídica y resolución de conflictos especializados.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        }
-      ],
-      "fuentePrincipal": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-    },
-    "ejeEducativo": {
-      "propuestas": [
-        {
-          "titulo": "Cerrar brechas de desigualdad con enfoque territorial",
-          "descripcion": "Fortalecimiento del Programa Juntos para permanencia escolar, alimentación escolar con pertinencia cultural y productos locales, inversión en infraestructura y conectividad digital en zonas rurales (meta: 80% de instituciones rurales con servicios básicos e internet).",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Mejorar la calidad educativa",
-          "descripcion": "Evaluación y capacitación docente continua y meritocrática, innovación tecnológica y digitalización del currículo escolar, modernización de infraestructura educativa bajo el modelo Moquegua (convenios con sector privado).",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Defensa del enfoque de género e inclusión",
-          "descripcion": "Transversalización del enfoque de género y respeto a la diversidad en las políticas educativas, promoviendo la igualdad de oportunidades entre hombres y mujeres, protegiendo los derechos de minorías y poblaciones vulnerables.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        }
-      ],
-      "fuentePrincipal": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-    },
-    "ejeSalud": {
-      "propuestas": [
-        {
-          "titulo": "Centro Nacional de Inteligencia en Salud Pública y Redes Integradas (RIS)",
-          "descripcion": "Integrar hospitales, laboratorios y farmacias mediante un sistema de inteligencia. Implementar Redes Integradas de Salud (RIS) en las 24 regiones con énfasis en áreas rurales para el control de enfermedades no transmisibles.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Programa Nacional 'Cuna Saludable'",
-          "descripcion": "Intervención multisectorial contra la anemia y desnutrición: suplementación con hierro, control del crecimiento y desarrollo infantil temprano, priorizando zonas con altos índices de pobreza extrema y ruralidad.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Expansión de Centros de Salud Mental Comunitaria (CSMC)",
-          "descripcion": "Duplicar el número de centros especializados a nivel nacional e integrar servicios de atención psicológica en instituciones educativas y centros laborales para abordar el estigma y las secuelas post-pandemia.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Plan de Modernización Hospitalaria y Telesalud Nacional",
-          "descripcion": "Renovar equipamiento médico en centros de salud de primer nivel y desplegar masivamente la telemedicina en zonas remotas, utilizando la capacidad logística de las Fuerzas Armadas para evacuaciones de emergencia.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Reforma del SERUMS y Programa de Especialización Descentralizada",
-          "descripcion": "Mejorar condiciones laborales y de seguridad del personal en provincias, incentivando la especialización en regiones con déficit de médicos mediante becas y escala salarial basada en desempeño.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Sistema 'Farmacia Digital' y Compra Unificada Nacional",
-          "descripcion": "Centralizar adquisiciones estatales para reducir costos y garantizar abastecimiento permanente de medicinas esenciales. Aplicación móvil para que ciudadanos monitoreen el stock en tiempo real.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        }
-      ],
-      "fuentePrincipal": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-    },
-    "ejeSeguridad": {
-      "propuestas": [
-        {
-          "titulo": "Formalización agresiva de la economía informal",
-          "descripcion": "Simplificación tributaria para pequeños negocios, bancarización obligatoria y uso masivo de pagos digitales para seguimiento de dinero proveniente de actividades ilegales mediante trazabilidad financiera.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Control de mercados ilegales",
-          "descripcion": "Trazabilidad total del oro desde extracción hasta exportación, programas de sustitución productiva en zonas cocaleras, cooperación binacional de inteligencia contra narcotráfico y minería ilegal.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Programa Nacional 'Camino Seguro'",
-          "descripcion": "Intervención social en zonas críticas enfocada en reducción de deserción escolar, pandillaje y promoción de empleabilidad para jóvenes vulnerables. Mejoramiento urbano: iluminación, cámaras inteligentes y recuperación de espacios públicos.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Vigilancia tecnológica y predictiva",
-          "descripcion": "Inteligencia artificial para análisis de mapas de calor del delito e interconexión de centrales de videovigilancia municipales con la PNP.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Fortalecimiento de la investigación criminal",
-          "descripcion": "Modernización de unidades de inteligencia de la PNP para desarticular bandas atomizadas y organizaciones transnacionales mediante tecnología avanzada y capacitación especializada.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Control fronterizo y migratorio estricto",
-          "descripcion": "Refuerzo de vigilancia en fronteras contra tráfico de armas, explosivos y trata de personas, en coordinación con las Fuerzas Armadas en zonas estratégicas.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        },
-        {
-          "titulo": "Reforma del sistema de justicia y penitenciario",
-          "descripcion": "Eliminar leyes que favorecen la impunidad (como la 'Ley Soto'), implementar grilletes electrónicos para delitos no graves, reducir hacinamiento carcelario. Limpieza de corrupción interna en la Policía y el Poder Judicial.",
-          "fuente": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
-        }
-      ],
-      "fuentePrincipal": "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+    "cumplimientoPrevio": {
+      "value": "Sin historial legislativo previo para contrastar promesas pasadas.",
+      "source": []
     }
   },
   "controversias": {
-    "antecedentesLegales": {
-      "policiales": {
-        "tiene": null,
-        "detalle": "No se pudo corroborar."
-      },
-      "judiciales": {
-        "tiene": true,
-        "procesos": [
-          {
-            "descripcion": "Condena por peculado (delito contra la administración pública)",
-            "resultado": "Sentencia suspendida, firme en octubre de 2005 (archivada)",
-            "detalle": "Mario Vizcarra consignó que fue condenado por el Poder Judicial por el delito contra la administración pública en la modalidad de peculado. Fue una sentencia suspendida que quedó firme en octubre del 2005. El JEE no admitió su candidatura al Senado por esta sentencia condenatoria.",
-            "fuente": "https://altavoz.pe/politica/mario-vizcarra-registra-una-condena-por-corrupcion/"
-          }
+    "antecedentes": [
+      {
+        "titulo": "Condena por delito de Peculado (2005)",
+        "estado": "Sentencia cumplida/Firme",
+        "source": [
+          "https://altavoz.pe/politica/mario-vizcarra-registra-una-condena-por-corrupcion/",
+          "https://www.infobae.com/peru/2026/01/01/jee-no-admite-candidatura-de-mario-vizcarra-al-senado-por-su-sentencia-por-peculado/"
+        ]
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "Proceso por peculado derivado de su gestión en CTAR Moquegua",
+        "estado": "Archivado",
+        "source": [
+          "https://altavoz.pe/politica/mario-vizcarra-registra-una-condena-por-corrupcion/"
+        ]
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Postura a favor del aborto libre",
+        "source": [
+          "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
         ]
       },
-      "penales": {
-        "tiene": true,
-        "detalle": "Condena por peculado con sentencia suspendida (2005, archivada).",
-        "fuente": "https://www.infobae.com/peru/2026/01/01/jee-no-admite-candidatura-de-mario-vizcarra-al-senado-por-su-sentencia-por-peculado/"
+      {
+        "titulo": "Propuesta de legalización de drogas que no impliquen daño social",
+        "source": [
+          "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
+        ]
+      },
+      {
+        "titulo": "Respaldo a la Unión Civil y derechos de minorías sexuales",
+        "source": [
+          "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
+        ]
       }
+    ],
+    "observaciones": []
+  },
+  "transparencia": {
+    "items": [
+      "Consigna sentencia por peculado en hoja de vida",
+      "Plataforma AgroTransparente propuesta en su plan"
+    ],
+    "source": [
+      "https://altavoz.pe/politica/mario-vizcarra-registra-una-condena-por-corrupcion/",
+      "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+    ]
+  },
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Medio - Experiencia gerencial en sector privado por más de 20 años.",
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
     },
-    "procesosEnCurso": null,
-    "procesosArchivados": [
-      {
-        "descripcion": "Condena por peculado (delito contra la administración pública)",
-        "resultado": "Sentencia suspendida que quedó firme en octubre del 2005",
-        "detalle": "Consignado por el propio Mario Vizcarra en su declaración jurada. El JEE no admitió su candidatura al Senado por esta sentencia condenatoria firme por peculado.",
-        "fuente": "https://altavoz.pe/politica/mario-vizcarra-registra-una-condena-por-corrupcion/"
-      }
-    ],
-    "declaracionesControversiales": [
-      {
-        "descripcion": "Posición a favor de la unión civil y respeto a relaciones del mismo sexo",
-        "detalle": "'Si las personas deciden su opción sexual o de relación, hay que respetarlas siempre que no transgredan los derechos de otros', afirmó, abriendo paso al respaldo de iniciativas como unión civil.",
-        "fuente": "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
-      },
-      {
-        "descripcion": "Posición a favor del aborto libre (pro-elección)",
-        "detalle": "Estaría a favor del aborto en todos los casos, 'más aún en temas de violación'. 'Es obvio que se debe respetar el derecho de la mujer a decidir sobre su cuerpo y su proyecto de vida', mencionó.",
-        "fuente": "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
-      },
-      {
-        "descripcion": "Posición a favor de legalizar algunas drogas",
-        "detalle": "'Algún tipo de drogas vamos a legalizarlas, aquellas que no impliquen un daño para la sociedad', sostuvo.",
-        "fuente": "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
-      }
-    ],
-    "observacionesAdministrativas": {
-      "tiene": false,
-      "detalle": "No se encontraron observaciones administrativas o financieras (SUNAT, INDECOPI u otros)."
+    "comunicacion": {
+      "value": "Medio - Participación activa en entrevistas digitales y redes sociales.",
+      "source": ["https://youtu.be/0pp_EkaFO7Q"]
+    },
+    "credibilidad": {
+      "value": "Baja - Cuestionado por su vínculo familiar con Martín Vizcarra y antecedente de corrupción.",
+      "source": [
+        "https://lanoticia.com.pe/mario-vizcarra-tambien-es-corrupto-y-busca-llegar-al-poder-para-delinquir/"
+      ]
     }
   },
-  "coherenciaConElPlan": null,
-  "transparencia": null,
-  "competenciasPersonales": null,
-  "percepcionPublica": null,
-  "innovacionYVision": null,
-  "historialLegislativo": null
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 5,
+      "max": 5,
+      "descripcion": "Encuesta América TV - Ipsos (19/12/2025). Muestra de 1,211 personas.",
+      "source": [
+        "https://www.ipsos.com/es-pe/intencion-de-voto-diciembre-2025-encuesta-america-tv-ipsos"
+      ]
+    },
+    "aprobacion": {
+      "value": null,
+      "source": []
+    },
+    "redes": {
+      "value": "Presencia activa en TikTok, Facebook e Instagram con enfoque en propuestas técnicas.",
+      "source": ["https://www.tiktok.com/@mariovizcarrac"]
+    }
+  },
+  "innovacionYVision": {
+    "items": [
+      "Adopción masiva de tecnología BIM/DFMA para construcción pública",
+      "Uso de IA para asesoría agraria (Agro-Asiste)",
+      "Sistema de vigilancia policial predictiva con mapas de calor"
+    ],
+    "source": [
+      "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+    ]
+  },
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "productivityLabel": "N/A",
+    "asistencia": {
+      "porcentaje": null,
+      "label": null,
+      "source": null
+    },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [],
+    "nota": "No tiene historial legislativo",
+    "source": null
+  }
 }

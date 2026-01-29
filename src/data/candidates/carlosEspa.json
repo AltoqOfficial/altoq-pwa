@@ -1,414 +1,330 @@
 {
-  "id": "carlos-espa",
-  "slug": "carlosEspa",
+  "id": "alfonso-carlos-espa-garces-alvear",
+  "slug": "alfonso-carlos-espa-garces-alvear",
   "fullName": "Alfonso Carlos Espá Garcés-Alvear",
   "shortName": "Carlos Espá",
   "image": "/candidatos/carlos-espa.webp",
-  "color": "#00695C",
+  "color": "#004B93",
   "party": "SíCreo",
-
+  "partyIcon": "/partidos/sicreo.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/carlosespaoficial/",
+    "tiktok": "https://www.tiktok.com/@carlosespaoficial",
+    "twitter": null,
+    "facebook": null,
+    "web": "https://sicreo.org.pe/"
+  },
   "perfilGeneral": {
-    "edad": {
-      "value": null,
-      "source": []
-    },
-    "nacimiento": {
-      "value": null,
-      "source": []
-    },
-    "lugar": {
-      "value": null,
-      "source": []
-    },
+    "edad": { "value": null, "source": [] },
+    "nacimiento": { "value": null, "source": [] },
+    "lugar": { "value": null, "source": [] },
     "nivelEducativo": {
-      "value": "Magíster en Ciencia Política",
+      "value": [
+        "Bachiller en Derecho - PUCP",
+        "Magíster en Ciencia Política - The American University"
+      ],
       "source": [
-        "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
+        "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df#:~:text=Abogado,Peru",
+        "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df#:~:text=master,University"
       ]
     },
     "profesion": {
-      "value": [
-        "Bachiller en Derecho - Pontificia Universidad Católica del Perú (PUCP)",
-        "Magíster en Ciencia Política - The American University"
-      ],
+      "value": ["Abogado", "Periodista", "Político"],
       "source": [
         "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
       ]
     },
     "partidoActual": {
-      "value": "Partido Político SíCreo",
+      "value": "SíCreo",
       "source": [
-        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
         "https://sicreo.org.pe/wp-content/uploads/2025/04/Sintesis-PARTIDO-SICREO-II.pdf"
       ]
     },
     "cambiosDePartido": {
-      "value": "Fundador de SíCreo (2022). Sin militancia partidaria previa conocida.",
+      "value": "0",
       "source": [
         "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
       ]
     },
-    "ocupacionActual": {
-      "value": "Presidente del Partido Político SíCreo / Candidato Presidencial 2026",
-      "source": [
-        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-        "https://sicreo.org.pe/wp-content/uploads/2025/04/Sintesis-PARTIDO-SICREO-II.pdf"
-      ]
-    },
-    "redesSociales": {
-      "tiktok": "https://www.tiktok.com/@carlosespaoficial",
-      "instagram": "https://www.instagram.com/carlosespaoficial/",
-      "youtube": "https://www.youtube.com/@CarlosEspaOficial"
-    },
-    "ubicacionIdeologica": {
-      "value": "Derecha Liberal y Conservadora",
-      "criterio": "Rechaza 'etiquetas' políticas tradicionales pero resalta: libertad individual como valor supremo, postura humanista centrada en la familia como núcleo social y derecho a la vida desde la concepción. Propone Estado pequeño que no interfiera en decisiones privadas de padres ni en economía, buscando 'secar la corrupción' mediante eliminación de trabas burocráticas.",
-      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
-    }
+    "historialPartidos": [
+      {
+        "ano": "2022",
+        "partido": "SíCreo",
+        "icono": "/partidos/sicreo.png",
+        "source": [
+          "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
+        ]
+      }
+    ]
   },
-
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "3 años (desde 2022)",
+      "value": "3",
       "source": [
         "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
       ]
     },
     "cargosPrevios": {
-      "values": ["Presidente y Fundador del Partido SíCreo (2022-Presente)"],
+      "values": ["Presidente y Fundador del Partido SíCreo (2022-Actualidad)"],
       "source": [
-        "https://sicreo.org.pe/wp-content/uploads/2025/04/Sintesis-PARTIDO-SICREO-II.pdf",
         "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
       ]
     },
-    "candidaturasPresidenciales": {
-      "values": [
-        "2026 → Candidato Presidencial por SíCreo (primera postulación)"
-      ],
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
-    }
+    "candidaturasPresidenciales": { "values": [], "source": [] }
   },
-
   "experienciaGestion": {
     "sectorPublico": {
-      "cantidad": 0,
-      "detalle": {
-        "values": [],
-        "source": []
-      }
-    },
-    "sectorPrivado": {
-      "cantidad": 2,
+      "cantidad": 1,
       "detalle": {
         "values": [
-          "Director y Conductor de 'Cuarto Poder' - América Televisión (2002-2004)",
-          "Especialista en Medios / Área de Prensa - Embajada de Estados Unidos en el Perú (aprox. 2005-2015)"
+          "Especialista en Medios / Área de Prensa - Embajada de Estados Unidos en el Perú (2005-2015)"
         ],
         "source": [
-          "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/",
           "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
         ]
       }
     },
-    "ejercicioProfesional": {
-      "values": [
-        "Director y Conductor de 'Cuarto Poder' - América Televisión (2002-2004)",
-        "Periodista en Radio Programas del Perú (RPP)",
-        "Periodista en canales Panamericana, Monitor, Global, América Televisión",
-        "La Voz de los Estados Unidos de América (VOA) en Washington D.C.",
-        "Especialista en Medios - Embajada de Estados Unidos en Perú"
-      ],
-      "source": [
-        "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
-      ]
-    }
+    "sectorPrivado": {
+      "cantidad": 1,
+      "detalle": {
+        "values": [
+          "Director y Conductor de Cuarto Poder - América Televisión (2002-2004)"
+        ],
+        "source": [
+          "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/"
+        ]
+      }
+    },
+    "source": "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
   },
-
   "ideologiaPolitica": {
     "posicion": {
-      "value": [
-        "Derecha Liberal y Conservadora",
-        "Libertad individual como valor supremo"
-      ],
+      "value": "Derecha Liberal y Conservadora",
       "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
     },
     "economia": {
-      "value": "Pro inversión privada: Shock de desregulación y libre mercado. Eliminación de la 'permisología' y trámites asfixiantes para liberar la iniciativa privada.",
+      "value": "Pro inversión privada, libre mercado y eliminación de trabas burocráticas.",
       "source": [
         "https://www.youtube.com/watch?v=OCCJEdwrkwI",
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"
       ]
     },
     "matrimonioIgualitario": {
-      "value": "No apoya el matrimonio igualitario, pero sí apoya la no discriminación",
+      "value": "No apoya, pero promueve la no discriminación.",
       "source": ["https://youtu.be/QIBo3MeAiik?t=5018"]
     },
     "aborto": {
-      "value": "En contra del aborto (solo causas legales vigentes). Defensa del derecho a la vida desde la concepción.",
+      "value": "En contra (solo permite causas legales existentes).",
       "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
     },
     "seguridad": {
-      "value": "Limpieza y firmeza: Imperio de la ley y autoridad. Fortalecimiento logístico y operativo de PNP y FFAA para recuperar orden interno, combatir crimen organizado y proteger soberanía.",
-      "source": [
-        "https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf",
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
+      "value": "Limpieza y firmeza mediante el imperio de la ley y autoridad.",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
     },
     "ambiente": {
-      "value": "Desarrollo formal sostenible: Promoción de inversión minera responsable como motor de desarrollo, combatiendo frontalmente actividades ilegales (tala y minería) que depredan la Amazonía.",
-      "source": [
-        "https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf",
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
+      "value": "Desarrollo formal sostenible y combate a la minería ilegal.",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
     },
     "educacion": {
-      "value": "Educación centrada en la familia: Libertad de elegir de las familias. Sistema de competencia y meritocracia donde los padres decidan la educación de sus hijos, rompiendo el monopolio sindical en la enseñanza pública.",
-      "source": [
-        "https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf",
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
-    },
-    "salud": {
-      "value": "Eficiencia y tecnología: Modernización integral del sistema de salud mediante digitalización de procesos y alianzas estratégico-privadas para garantizar calidad, rapidez y acceso universal.",
-      "source": [
-        "https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf",
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
+      "value": "Educación centrada en la familia y libertad de elección de los padres.",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
     },
     "reformaPolitica": {
-      "value": "Reforma Gradual del Estado: Estado eficiente y descentralizado. Reducción del gasto público superfluo, eliminación de duplicidad de funciones y combate al clientelismo burocrático para transformar el Estado en facilitador del ciudadano.",
-      "source": [
-        "https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf",
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
+      "value": "Reforma gradual del Estado y reducción del gasto público superfluo.",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
     }
   },
-
   "propuestasPrincipales": {
-    "economico": {
-      "values": [
-        "Shock de desregulación y libre mercado",
-        "Eliminación de la 'permisología' y trámites asfixiantes",
-        "Liberar la iniciativa privada sin interferencia de Estado sobredimensionado",
-        "Respeto irrestricto a la propiedad privada como base del desarrollo"
-      ],
-      "source": [
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
-    },
-    "social": {
-      "values": [
-        "Libertad y propiedad privada como base del desarrollo personal y familiar",
-        "Superación de la pobreza mediante creación de riqueza individual",
-        "Familia como núcleo fundamental de la sociedad"
-      ],
-      "source": [
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
-    },
-    "ambiental": {
-      "values": [
-        "Desarrollo sostenible y minería formal",
-        "Promoción de inversión minera responsable como motor de desarrollo",
-        "Combate frontal a actividades ilegales (tala y minería) que depredan la Amazonía"
-      ],
-      "source": [
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
-    },
-    "institucional": {
-      "values": [
-        "Estado eficiente y descentralizado",
-        "Reducción del gasto público superfluo",
-        "Eliminación de duplicidad de funciones",
-        "Combate al clientelismo burocrático",
-        "Transformar el Estado en facilitador del ciudadano"
-      ],
-      "source": [
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
-    },
-    "educativo": {
-      "values": [
-        "Libertad de elegir de las familias",
-        "Sistema de competencia y meritocracia",
-        "Padres deciden la educación de sus hijos",
-        "Romper monopolio sindical en enseñanza pública"
-      ],
-      "source": [
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
-    },
-    "salud": {
-      "values": [
-        "Tecnología y servicios eficientes",
-        "Modernización integral del sistema de salud",
-        "Digitalización de procesos",
-        "Alianzas estratégico-privadas para calidad, rapidez y acceso universal"
-      ],
-      "source": [
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
-    },
-    "seguridad": {
-      "values": [
-        "Imperio de la ley y autoridad",
-        "Fortalecimiento logístico y operativo de PNP y FFAA",
-        "Recuperar orden interno",
-        "Combatir crimen organizado",
-        "Proteger la soberanía nacional",
-        "Propuesta de reabrir penal El Frontón (controversial)"
-      ],
-      "source": [
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
-    }
+    "institucional": [
+      {
+        "titulo": "Estado eficiente y descentralizado",
+        "descripcion": "Reducción del gasto público superfluo, eliminación de la duplicidad de funciones y combate al clientelismo burocrático.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Shock de desregulación y libre mercado",
+        "descripcion": "Eliminación de la 'permisología' y trámites asfixiantes para liberar la iniciativa privada.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Libertad y propiedad privada",
+        "descripcion": "Superación de la pobreza mediante la creación de riqueza individual y respeto irrestricto a la propiedad privada.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Desarrollo sostenible y minería formal",
+        "descripcion": "Promoción de inversión minera responsable y combate frontal a la tala y minería ilegal en la Amazonía.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Libertad de elegir de las familias",
+        "descripcion": "Implementación de un sistema de competencia y meritocracia donde los padres decidan la educación de sus hijos.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Tecnología y servicios eficientes",
+        "descripcion": "Modernización mediante digitalización y alianzas estratégico-privadas para acceso universal.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Imperio de la ley y autoridad",
+        "descripcion": "Fortalecimiento de la PNP y Fuerzas Armadas para recuperar el orden interno y combatir el crimen organizado.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+        ]
+      }
+    ]
   },
-
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
       "value": "Alto",
-      "source": [
-        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
-      ]
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
     },
     "diferencias": {
-      "value": "Discurso público consistente con ideología liberal-conservadora del plan de gobierno. Posicionamiento como 'outsider' con pasado periodístico.",
-      "source": []
+      "value": "Ninguna reportada; el discurso de outsider se alinea con las propuestas de reducción del Estado.",
+      "source": ["https://www.youtube.com/watch?v=OCCJEdwrkwI"]
     },
     "cumplimientoPrevio": {
-      "value": "Primera candidatura presidencial; sin experiencia previa en gestión pública. Carrera profesional en periodismo de investigación.",
+      "value": "No aplica por falta de cargos públicos electos previos.",
       "source": []
     }
   },
-
   "controversias": {
-    "antecedentesPolicicales": {
-      "value": "No registra antecedentes policiales en las bases de datos de consulta pública",
-      "source": ["https://plataformahistorico.jne.gob.pe/"]
-    },
-    "antecedentesPenales": {
-      "value": "No registra antecedentes penales según declaración jurada de hoja de vida presentada ante el ente electoral",
-      "source": ["https://plataformahistorico.jne.gob.pe/"]
-    },
-    "antecedentesJudiciales": {
-      "values": ["No registra sentencias judiciales condenatorias vigentes"],
-      "source": ["https://infogob.jne.gob.pe/"]
-    },
-    "procesosEnCurso": {
-      "values": [
-        "No se reportan procesos penales abiertos de relevancia pública"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/e9d731a4-a79f-42e0-9ff7-29f6abe2bd3f.pdf"
-      ]
-    },
-    "procesosArchivados": {
-      "values": [
-        "Archivos administrativos relacionados a su labor periodística pasada, sin derivar en condenas o procesos penales vigentes"
-      ],
-      "source": ["https://infogob.jne.gob.pe/"]
-    },
-    "declaracionesControversiales": {
-      "values": [
-        "Propuesta de reabrir penal El Frontón: Señalada por analistas y medios como medida de difícil viabilidad jurídica debido a tratados internacionales de derechos humanos.",
-        "Salida de Cuarto Poder (2004): Hecho mediático controversial donde denunció presiones editoriales que limitaban la libertad de prensa."
-      ],
-      "source": [
-        "https://www.youtube.com/watch?v=_RLRJeCoP1Y&t=2s",
-        "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/"
-      ]
-    },
-    "observacionesAdministrativas": {
-      "values": [
-        "Al cierre de 2025, no presenta deudas coactivas en estado de cobranza con la SUNAT bajo su registro personal o de sus empresas declaradas"
-      ],
-      "source": []
-    },
-    "aclaracionContextual": "El candidato basa su discurso de transparencia en su pasado como periodista de investigación y su rechazo al clientelismo burocrático, posicionándose como un 'outsider' con formación académica sólida en ciencias políticas."
-  },
-
-  "transparencia": {
-    "items": [
-      "Plan de gobierno publicado en plataforma JNE",
-      "Ideario del partido disponible en sitio web oficial",
-      "Hoja de vida publicada en plataforma electoral JNE",
-      "Sin deudas coactivas con SUNAT"
+    "antecedentes": [
+      {
+        "titulo": "No registra antecedentes policiales, penales ni judiciales condenatorios.",
+        "estado": null,
+        "source": [
+          "https://plataformahistorico.jne.gob.pe/",
+          "https://infogob.jne.gob.pe/"
+        ]
+      }
     ],
-    "source": [
-      "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf",
-      "https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf",
-      "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+    "procesosJudiciales": [
+      {
+        "titulo": "Archivos administrativos relacionados a su labor periodística.",
+        "estado": "Archivado",
+        "source": ["https://infogob.jne.gob.pe/"]
+      },
+      {
+        "titulo": "No se reportan procesos penales abiertos de relevancia pública.",
+        "estado": "Sin procesos",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/e9d731a4-a79f-42e0-9ff7-29f6abe2bd3f.pdf"
+        ]
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Propuesta de reabrir el penal El Frontón, cuestionada por su viabilidad jurídica internacional.",
+        "source": ["https://www.youtube.com/watch?v=_RLRJeCoP1Y&t=2s"]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "Salida controversial de Cuarto Poder en 2004 denunciando presiones gubernamentales.",
+        "source": [
+          "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/"
+        ]
+      },
+      {
+        "titulo": "No presenta deudas coactivas con la SUNAT al cierre de 2025.",
+        "source": ["https://www.sunat.gob.pe/"]
+      }
     ]
   },
-
+  "transparencia": {
+    "items": [
+      "Declaración jurada de hoja de vida sin omisiones reportadas",
+      "Inexistencia de deudas coactivas SUNAT",
+      "Historial de transparencia periodística"
+    ],
+    "source": [
+      "https://plataformahistorico.jne.gob.pe/",
+      "https://infogob.jne.gob.pe/"
+    ]
+  },
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Fundador y presidente del partido SíCreo (2022); ex director y conductor de programa de investigación periodística 'Cuarto Poder'",
+      "value": "Medio - Fundador de un partido nuevo sin estructura previa masiva.",
       "source": [
-        "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf",
-        "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/"
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
       ]
     },
     "comunicacion": {
-      "value": "Periodista profesional con amplia experiencia en medios (RPP, América TV, Panamericana, VOA). Comunicador directo con perfil de 'outsider'.",
+      "value": "Alto - Experiencia extensa como director de noticias y comunicador.",
       "source": [
         "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
       ]
     },
     "credibilidad": {
-      "value": "Se posiciona como 'outsider' con trayectoria periodística en investigación y sin antecedentes judiciales o deudas tributarias. Renuncia a Cuarto Poder por presiones editoriales refuerza imagen de independencia.",
-      "source": []
+      "value": "Medio/Alto - Basada en su pasado como periodista de investigación.",
+      "source": ["https://www.youtube.com/watch?v=OCCJEdwrkwI"]
     }
   },
-
   "percepcionPublica": {
     "intencionVoto": {
       "min": 2,
       "max": 2,
-      "descripcion": "2% de intención de voto (Ipsos - América TV, diciembre 2025)",
-      "metodologia": "Encuesta presencial en hogares (cara a cara) utilizando cartilla de votación (ánfora secreta). Muestra: 1,205 personas a nivel nacional. Margen de error: ±2.8%, nivel de confianza 95%. Fecha de campo: 11-12 diciembre 2025.",
+      "descripcion": "Encuesta Ipsos Perú para América Televisión (11-12 de diciembre 2025).",
       "source": [
         "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf"
       ]
     },
-    "aprobacion": {
-      "value": null,
-      "source": []
-    },
+    "aprobacion": { "value": null, "source": [] },
     "redes": {
-      "value": "Presencia activa en TikTok, Instagram y YouTube",
-      "source": [
-        "https://www.tiktok.com/@carlosespaoficial",
-        "https://www.instagram.com/carlosespaoficial/",
-        "https://www.youtube.com/@CarlosEspaOficial"
-      ]
+      "value": "Presencia activa en TikTok, Instagram y Youtube bajo el usuario carlosespaoficial.",
+      "source": ["https://votaxmi.com/candidato/38/carlos-espa"]
     }
   },
-
   "innovacionYVision": {
     "items": [
-      "Shock de desregulación y libre mercado",
-      "Digitalización integral del sistema de salud",
-      "Estado eficiente como facilitador del ciudadano",
-      "'Secar la corrupción' eliminando trabas burocráticas"
+      "Propuesta de 'secar la corrupción' eliminando burocracia",
+      "Implementación de vouchers educativos o competencia meritocrática",
+      "Uso de tecnología y digitalización para modernización de salud"
     ],
     "source": [
       "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
     ]
   },
-
   "historialLegislativo": {
     "tieneHistorial": false,
-    "asistencia": {
-      "porcentaje": null,
-      "label": null,
-      "source": []
+    "productivityLabel": "N/A",
+    "asistencia": { "porcentaje": null, "label": null, "source": null },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
     },
-    "proyectosPresentados": null,
-    "proyectosAprobados": null,
-    "proyectosDestacados": [],
-    "nota": "No ha ejercido el cargo de Congresista de la República ni otro cargo público. Su carrera profesional ha sido en el sector privado como periodista de investigación y posteriormente en la Embajada de Estados Unidos.",
-    "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    "projects": [],
+    "nota": "No tiene historial legislativo",
+    "source": null
   }
 }

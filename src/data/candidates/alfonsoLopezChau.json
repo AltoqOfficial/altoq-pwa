@@ -1,12 +1,19 @@
 {
-  "id": "alfonso-lopez-chau",
-  "slug": "alfonsoLopezChau",
-  "fullName": "Pablo Alfonso López Chau Nava",
+  "id": "pablo-alfonso-lopez-chau-nava",
+  "slug": "pablo-alfonso-lopez-chau-nava",
+  "fullName": "PABLO ALFONSO LÓPEZ CHAU NAVA",
   "shortName": "Alfonso López Chau",
   "image": "/candidatos/alfonso-lopez-chau.webp",
-  "color": "#1565C0",
-  "party": "Ahora Nación",
-
+  "color": "#1e3a8a",
+  "party": "Ahora Nación - AN",
+  "partyIcon": "/partidos/ahora-nacion.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/alfonsolopez_chau/",
+    "tiktok": null,
+    "twitter": "https://x.com/LopezChauNava",
+    "facebook": "https://www.facebook.com/profile.php?id=100014146592128",
+    "web": "https://ahoranacion-callao.com/plan.html"
+  },
   "perfilGeneral": {
     "edad": {
       "value": null,
@@ -21,78 +28,67 @@
       "source": []
     },
     "nivelEducativo": {
-      "value": "Doctor en Economía",
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
-    },
-    "profesion": {
       "value": [
-        "Bachiller en Ciencias Económicas - Universidad Nacional del Callao (1976)",
-        "Maestro en Economía - Universidad Nacional Autónoma de México (2002)",
-        "Doctor en Economía - Universidad Nacional Autónoma de México (2005)"
+        "Bachiller en Ciencias Económicas",
+        "Maestro en Economía",
+        "Doctor en Economía"
       ],
       "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
     },
+    "profesion": {
+      "value": ["Economista", "Docente Universitario"],
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
     "partidoActual": {
-      "value": "Ahora Nación - AN",
+      "value": "Ahora Nación",
       "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
     },
     "cambiosDePartido": {
-      "value": "Fundador de Ahora Nación (2023)",
-      "source": [
-        "https://larepublica.pe/politica/2025/05/12/alfonso-lopez-chau-el-rector-de-la-uni-que-busca-ser-presidente-del-peru-con-economia-nacional-de-mercado-hnews-476949"
-      ]
+      "value": null,
+      "source": []
     },
-    "ocupacionActual": {
-      "value": "Ex Rector de la Universidad Nacional de Ingeniería / Precandidato presidencial de Ahora Nación",
-      "source": [
-        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-        "https://www.infobae.com/peru/2025/04/12/alfonso-lopez-chau-renuncia-como-rector-de-la-uni-para-iniciar-su-campana-presidencial/"
-      ]
-    },
-    "redesSociales": {
-      "instagram": "https://www.instagram.com/alfonsolopez_chau/",
-      "facebook": "https://www.facebook.com/profile.php?id=100014146592128",
-      "twitter": "https://x.com/LopezChauNava",
-      "youtube": "https://www.youtube.com/@lopez-chaurector1581/videos"
-    },
-    "ubicacionIdeologica": {
-      "value": "Centro Izquierda",
-      "criterio": "Socialdemocracia económica con nacionalismo productivo. Promueve industria, innovación y descentraliza el poder económico. Estado garante de derechos sociales universales (salud, educación).",
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
-    }
+    "historialPartidos": [
+      {
+        "ano": "2023",
+        "partido": "Ahora Nación",
+        "icono": "/partidos/ahora-nacion.png",
+        "source": [
+          "https://rpp.pe/politica/elecciones/alfonso-lopez-chau-sobre-elecciones-2026-el-peru-necesita-una-alianza-de-partidos-noticia-1628658"
+        ]
+      }
+    ]
   },
-
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "4 años (1995, 2023-2025)",
+      "value": "4",
       "source": [
-        "https://www.infobae.com/peru/2025/04/13/alfonso-lopez-chau-perfil-del-exrector-de-launi-que-se-lanzara-como-candidato-presidencial-en-2026/"
+        "https://www.infobae.com/peru/2025/04/13/alfonso-lopez-chau-perfil-del-exrector-de-la-uni-que-se-lanzara-como-candidato-presidencial-en-2026/"
       ]
     },
     "cargosPrevios": {
       "values": [
-        "Fundador y Precandidato Presidencial del Partido Ahora Nación (2023-Presente)"
+        "Rector de la Universidad Nacional de Ingeniería (2021-2025)",
+        "Fundador y Precandidato Presidencial de Ahora Nación (2023-2025)"
       ],
       "source": [
-        "https://rpp.pe/politica/elecciones/alfonso-lopez-chau-sobre-elecciones-2026-el-peru-necesita-una-alianza-de-partidos-noticia-1628658",
-        "https://larepublica.pe/politica/2025/05/12/alfonso-lopez-chau-el-rector-de-la-uni-que-busca-ser-presidente-del-peru-con-economia-nacional-de-mercado-hnews-476949"
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://rpp.pe/politica/elecciones/alfonso-lopez-chau-sobre-elecciones-2026-el-peru-necesita-una-alianza-de-partidos-noticia-1628658"
       ]
     },
     "candidaturasPresidenciales": {
-      "values": ["2026 → Precandidato Presidencial por Ahora Nación"],
+      "values": ["2026 → En proceso (Precandidato)"],
       "source": [
         "https://www.infobae.com/peru/2025/04/12/alfonso-lopez-chau-renuncia-como-rector-de-la-uni-para-iniciar-su-campana-presidencial/"
       ]
     }
   },
-
   "experienciaGestion": {
     "sectorPublico": {
       "cantidad": 3,
       "detalle": {
         "values": [
           "Rector de la Universidad Nacional de Ingeniería (2021-2025)",
-          "Director de la Escuela de Ingeniería Económica, UNI (2017-2019)",
+          "Director de la Escuela de Ingeniería Económica - UNI (2017-2019)",
           "Profesor Principal de la Universidad Nacional de Ingeniería (1990-2025)"
         ],
         "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
@@ -105,275 +101,150 @@
         "source": []
       }
     },
-    "ejercicioProfesional": {
-      "values": [
-        "Profesor Principal - Universidad Nacional de Ingeniería (1990-2025)",
-        "Director de Escuela de Ingeniería Económica - UNI (2017-2019)",
-        "Rector - Universidad Nacional de Ingeniería (2021-2025)"
-      ],
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
-    }
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
   },
-
   "ideologiaPolitica": {
     "posicion": {
-      "value": [
-        "Centro Izquierda",
-        "Socialdemocracia económica + Nacionalismo productivo"
-      ],
+      "value": "Centro Izquierda",
       "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
     },
     "economia": {
-      "value": "Socialdemocracia económica + Nacionalismo productivo: Promueve industria, innovación y descentralización del poder económico. Crecimiento basado en valor agregado, productividad regional y estabilidad macro fiscal.",
+      "value": "Socialdemocracia económica + Nacionalismo productivo. Promueve industria, innovación y descentralización del poder económico.",
       "source": [
         "https://peru21.pe/politica/cade-ejecutivos-2025-alfonso-lopez-chau-presenta-sus-propuestas-para-el-peru/"
       ]
     },
     "matrimonioIgualitario": {
-      "value": null,
+      "value": "Sin posición explícita",
       "source": []
     },
     "aborto": {
-      "value": "Garantismo constitucional + Enfoque progresista en libertades: Compromiso con protección de derechos humanos y civiles, sin retrocesos en derechos reproductivos.",
+      "value": "Parcial / Progresista. Garantismo constitucional sin retrocesos en derechos reproductivos.",
       "source": [
         "https://larepublica.pe/politica/2026/01/09/cinco-partidos-prometen-revision-y-salida-de-corte-idh-y-otros-tres-defienden-permanencia-en-planes-de-gobierno-hnews-305037"
       ]
     },
     "seguridad": {
-      "value": "Articulación institucional, reforma policial, combate al crimen organizado y transformación del sistema penitenciario para reinserción real.",
+      "value": "Garantismo democrático y recuperación de la autoridad del Estado frente al crimen organizado.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
       ]
     },
     "ambiente": {
-      "value": "Desarrollo sostenible + Nacionalismo ambiental: Integración de sociedad, economía y ambiente. Protección de ecosistemas, biodiversidad y recursos naturales con soberanía.",
+      "value": "Desarrollo sostenible + Nacionalismo ambiental. Soberanía sobre recursos con protección y sostenibilidad.",
       "source": [
         "https://img.lpderecho.pe/wp-content/uploads/2025/12/Ahora-Nacion-Plan-de-Gobierno-LP-derecho.pdf"
       ]
     },
     "educacion": {
-      "value": "Estado Docente + Socialdemocracia educativa: Educación pública, universal, descentralizada y liderada por el Estado como herramienta de justicia social. Docentes valorados como protagonistas del cambio.",
+      "value": "Estado Docente + Socialdemocracia educativa. Educación pública, universal y descentralizada como herramienta de justicia social.",
       "source": [
         "https://peru21.pe/politica/cade-ejecutivos-2025-alfonso-lopez-chau-presenta-sus-propuestas-para-el-peru/"
       ]
     },
-    "salud": {
-      "value": "Universalismo socialdemócrata + Estado garante: Acceso a la salud como derecho universal con sistema unificado y público. Entornos saludables con agua potable universal.",
-      "source": ["https://ahoranacion-callao.com/plan.html"]
-    },
     "reformaPolitica": {
-      "value": "Reformismo constitucional + Descentralización radical + Garantismo democrático: Más poder a regiones, más equilibrio institucional, más protección de derechos, más participación democrática.",
+      "value": "Reformismo constitucional y descentralización radical. Reescritura del modelo político para dar más poder a las regiones.",
       "source": ["https://ahoranacion-callao.com/ideario.html"]
     }
   },
-
   "propuestasPrincipales": {
-    "economico": {
-      "values": [
-        "Crecimiento económico sostenido basado en valor agregado y productividad regional",
-        "Estabilidad macro fiscal y uso responsable de finanzas públicas",
-        "Diversificación productiva y eslabonamiento de cadenas de valor",
-        "Ampliación del sistema financiero para poblaciones vulnerables",
-        "Reforma del sistema previsional (público y privado)"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "social": {
-      "values": [
-        "Sistema de protección social universal, adaptativo y de calidad",
-        "Igualdad de oportunidades y equidad territorial",
-        "Acceso a medios de vida dignos",
-        "Mayor inversión social",
-        "Fortalecimiento del tejido social"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "ambiental": {
-      "values": [
-        "Desarrollo sostenible integrando sociedad, economía y ambiente",
-        "Seguridad y protección del ambiente",
-        "Sostenibilidad como base del desarrollo presente y futuro",
-        "Integración de dimensión ambiental para crecimiento económico",
-        "Mejora de calidad de vida mediante dimensión ambiental"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "institucional": {
-      "values": [
-        "Sistema de justicia con plena autonomía e independencia",
-        "Meritocracia en elección de magistrados",
-        "Acceso a justicia libre de corrupción",
-        "Erradicación de violencia, discriminación y desigualdad estructurales",
-        "Descentralización radical con más poder a regiones"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "educativo": {
-      "values": [
-        "Sistema educativo que garantice aprendizajes reales y transformadores",
-        "Gestión educativa descentralizada",
-        "Escuelas seguras, conectadas y con condiciones dignas",
-        "Docentes valorados y acompañados",
-        "Educación superior diversificada con empleabilidad y arraigo territorial",
-        "Educación como motor de justicia social y ciudadanía democrática"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "salud": {
-      "values": [
-        "Disponibilidad universal de agua potable",
-        "Intervenciones innovadoras de protección y prevención",
-        "Mayor acceso efectivo a servicios de salud",
-        "Sistema de salud más eficiente e integrado",
-        "Participación ciudadana y rendición de cuentas en salud"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "seguridad": {
-      "values": [
-        "Articulación entre entidades de seguridad pública",
-        "Mejora del desempeño institucional de la PNP",
-        "Combate al crimen organizado y corrupción",
-        "Transformación del sistema penitenciario para reinserción real",
-        "Recuperar autoridad del Estado y orden"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "energia": {
-      "values": [
-        "Acceso universal, seguro y asequible a la energía",
-        "Minería formal, limpia y responsable con valor agregado",
-        "Formalización de minería artesanal y pequeña escala",
-        "Mayor encadenamiento productivo de gran minería",
-        "Gobernanza sectorial integrada con presencia estatal territorial"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "agricultura": {
-      "values": [
-        "Agro competitivo, ambientalmente amigable y con bienestar social",
-        "Recuperación de cuencas y subcuencas hidrográficas",
-        "Gestión ambiental de la producción",
-        "Organizaciones de productores familiares articulados a mercados",
-        "Oportunidades para jóvenes y mujeres rurales"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "transporte": {
-      "values": [
-        "Sistema de transporte multimodal con enfoque logístico",
-        "Planes de infraestructura descentralizados",
-        "Transporte público digno, accesible y sostenible",
-        "Seguridad vial con estándares internacionales",
-        "Optimización logística para conectar producción con mercados"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "industrializacion": {
-      "values": [
-        "Transición de economía extractiva a modelo diversificado y resiliente",
-        "Cadenas productivas regionales integradas a mercados",
-        "Fortalecimiento de pequeñas y medianas industrias",
-        "Estado que orienta industrialización con criterios técnicos y territoriales"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "emprendimiento": {
-      "values": [
-        "'Todo el poder a las regiones para conquistar mercados del mundo'",
-        "Industrialización nacional con moral como motor del desarrollo",
-        "MiPymes formalizadas como núcleo de economía descentralizada",
-        "Estado transparente sin privilegios",
-        "Riqueza con justicia social y empleo digno"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "defensa": {
-      "values": [
-        "Disuasión creíble con programas ESCUDO I, II y III",
-        "Apoyo a seguridad ciudadana con unidades especializadas",
-        "FFAA en zonas de menor desarrollo (selva y fronteras)",
-        "Fortalecimiento de capacidades de ciberdefensa",
-        "Impulso a I+D e industria militar (FAxME, SIMA, CEMAN FAP)"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "relacionesExteriores": {
-      "values": [
-        "Perú como líder en América Latina y actor clave del Sur Global",
-        "Política exterior comprometida con desarrollo sostenible",
-        "Promoción de democracia y derechos humanos",
-        "Cultura como herramienta clave del accionar internacional",
-        "Cooperación regional y mundial"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "vivienda": {
-      "values": [
-        "Acceso a vivienda digna, segura y bien ubicada",
-        "Reducción del déficit habitacional con soluciones sostenibles",
-        "Urbanismo social y esquemas accesibles de financiamiento",
-        "Protección frente a riesgos climáticos",
-        "Formalización predial urbana y seguridad jurídica"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "trabajo": {
-      "values": [
-        "Empleo decente como norma, no excepción",
-        "Fuerza laboral más calificada, productiva y protegida",
-        "Reducción sostenida de informalidad",
-        "Estado que acompaña, capacita y conecta",
-        "Jóvenes con acceso a empleos formales y emprendimientos sostenibles"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    },
-    "cultura": {
-      "values": [
-        "Cultura en el centro del desarrollo nacional",
-        "Protección y sostenibilidad del patrimonio cultural",
-        "Impulso a industrias creativas y culturales",
-        "Acceso e inclusión cultural universal",
-        "Perú diverso, moderno e inclusivo"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
-      ]
-    }
+    "institucional": [
+      {
+        "titulo": "Reformismo constitucional y descentralización radical",
+        "descripcion": "Reescribir el modelo político peruano otorgando más poder a las regiones, equilibrio institucional y mayor participación democrática.",
+        "source": ["https://ahoranacion-callao.com/ideario.html"]
+      },
+      {
+        "titulo": "Política Exterior Líder y Soberana",
+        "descripcion": "Posicionar al Perú como líder en América Latina e insertarlo en las dinámicas del Asia-Pacífico y el Sur Global.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Crecimiento con Valor Agregado",
+        "descripcion": "Garantizar estabilidad macroeconómica y fomentar la productividad regional y la diversificación de la matriz productiva.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      },
+      {
+        "titulo": "Industrialización Nacional",
+        "descripcion": "Transición de una economía extractiva a un modelo diversificado con cadenas productivas regionales integradas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      },
+      {
+        "titulo": "Minería Formal y Sostenible",
+        "descripcion": "Promover una minería limpia, responsable y con mayor valor agregado que sirva como palanca de desarrollo territorial.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Protección Social Universal",
+        "descripcion": "Construir un sistema adaptativo y de calidad para superar la pobreza y vulnerabilidad en todos los hogares.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      },
+      {
+        "titulo": "Vivienda Digna y Segura",
+        "descripcion": "Reducción del déficit habitacional mediante urbanismo social y soluciones sostenibles frente a riesgos climáticos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Equilibrio del Desarrollo Sostenible",
+        "descripcion": "Integración de las dimensiones social, económica y ambiental para proteger ecosistemas y recursos naturales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Sistema Educativo Transformador",
+        "descripcion": "Gestión descentralizada, escuelas seguras y conectadas, y valoración del docente como protagonista del cambio.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Acceso Universal y Eficiente",
+        "descripcion": "Disponibilidad universal de agua potable y un sistema de salud unificado, público y transparente.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Lucha contra el Crimen Organizado",
+        "descripcion": "Recuperar la autoridad del Estado, combatir la extorsión y transformar el sistema penitenciario en un espacio de reinserción.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      },
+      {
+        "titulo": "Plan de Defensa ESCUDO",
+        "descripcion": "Implementación de programas ESCUDO I, II y III para una disuasión creíble y fortalecimiento de la ciberdefensa.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+        ]
+      }
+    ]
   },
-
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
       "value": "Alto",
@@ -382,95 +253,87 @@
       ]
     },
     "diferencias": {
-      "value": "Plan de gobierno muy detallado y técnico, consistente con su perfil académico como rector universitario",
+      "value": "-",
       "source": []
     },
     "cumplimientoPrevio": {
-      "value": "Primera candidatura presidencial; experiencia previa como Rector de la UNI (2021-2025)",
-      "source": []
+      "value": "Gestión destacada en la Universidad Nacional de Ingeniería (UNI) enfocada en innovación.",
+      "source": [
+        "https://www.infobae.com/peru/2025/04/13/alfonso-lopez-chau-perfil-del-exrector-de-la-uni-que-se-lanzara-como-candidato-presidencial-en-2026/"
+      ]
     }
   },
-
   "controversias": {
-    "antecedentesPolicicales": {
-      "value": null,
-      "source": []
-    },
-    "antecedentesPenales": {
-      "value": null,
-      "source": []
-    },
-    "antecedentesJudiciales": {
-      "values": [],
-      "source": []
-    },
-    "procesosEnCurso": {
-      "values": [
-        "Investigación fiscal por presuntos delitos de colusión y negociación incompatible: Por presuntamente beneficiar a trabajadora Sonia Ana Ulloa como secretaria general de la UNI de forma irregular sin cumplir requisitos para el cargo."
-      ],
-      "source": [
-        "https://www.infobae.com/peru/2025/07/17/alfonso-lopez-chau-en-la-mira-de-la-fiscalia-es-investigado-por-presuntamente-beneficiar-a-trabajadora-en-la-uni/"
-      ]
-    },
-    "procesosArchivados": {
-      "values": [],
-      "source": []
-    },
-    "declaracionesControversiales": {
-      "values": [
-        "Prisión política en década de 1970: Estuvo recluido durante el régimen militar de Juan Velasco por motivos políticos, siendo posteriormente amnistiado. No existe sentencia penal ni antecedentes judiciales derivados.",
-        "Candidatos cuestionados en Ahora Nación: Es cuestionado por la inclusión de candidatos con denuncias graves dentro del partido, incluyendo antecedentes por presunta violación y señalamientos sobre manejos económicos irregulares.",
-        "Calificativo a Víctor Polay Campos (1989): En una columna de archivo de 1989, calificó como 'luchador social' al guerrillero del MRTA Víctor Polay Campos."
-      ],
-      "source": [
-        "https://caretas.pe/politica/equipo-de-lopez-chau-confirma-que-estuvo-recluido-en-prision-y-salio-por-una-amnistia/",
-        "https://willax.pe/politica/alfonso-lopez-chau-candidato-congreso-violacion-menor-willax/",
-        "https://canaln.pe/actualidad/lopez-chau-llamo-luchador-politico-victor-polay-1989-n488900/"
-      ]
-    },
-    "observacionesAdministrativas": {
-      "values": [],
-      "source": []
-    },
-    "aclaracionContextual": "Alfonso López Chau tiene un perfil predominantemente académico. Su equipo ha confirmado que estuvo preso en los años 70 por razones políticas durante la dictadura militar, siendo amnistiado posteriormente sin generar antecedentes penales. La investigación fiscal actual por su gestión en la UNI está en curso."
-  },
-
-  "transparencia": {
-    "items": [
-      "Plan de gobierno publicado en plataforma JNE",
-      "Información de carrera política disponible en Infogob",
-      "Hoja de vida publicada en plataforma electoral JNE"
+    "antecedentes": [
+      {
+        "titulo": "Recluido en prisión en la década de 1970 por motivos políticos durante el régimen militar de Juan Velasco Alvarado; fue amnistiado posteriormente.",
+        "estado": "Amnistiado",
+        "source": [
+          "https://caretas.pe/politica/equipo-de-lopez-chau-confirma-que-estuvo-recluido-en-prision-y-salio-por-una-amnistia/"
+        ]
+      }
     ],
-    "source": [
-      "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf",
-      "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+    "procesosJudiciales": [
+      {
+        "titulo": "Investigación fiscal por presuntos delitos de colusión y negociación incompatible por el nombramiento supuestamente irregular de Sonia Ana Ulloa en la UNI.",
+        "estado": "En curso",
+        "source": [
+          "https://www.infobae.com/peru/2025/07/17/alfonso-lopez-chau-en-la-mira-de-la-fiscalia-es-investigado-por-presuntamente-beneficiar-a-trabajadora-en-la-uni/"
+        ]
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Calificó como 'luchador social' al cabecilla del MRTA, Víctor Polay Campos, en una columna escrita en 1989.",
+        "source": [
+          "https://canaln.pe/actualidad/lopez-chau-llamo-luchador-politico-victor-polay-1989-n488900/"
+        ]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "Cuestionamientos por la inclusión de candidatos con denuncias graves (violación y manejos económicos irregulares) en el partido Ahora Nación.",
+        "source": [
+          "https://willax.pe/politica/alfonso-lopez-chau-candidato-congreso-violacion-menor-willax/"
+        ]
+      }
     ]
   },
-
+  "transparencia": {
+    "items": [
+      "Sin sentencia penal ni antecedentes judiciales registrados.",
+      "Uso de plataforma oficial del JNE para declarar grados y experiencia."
+    ],
+    "source": [
+      "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+      "https://caretas.pe/politica/equipo-de-lopez-chau-confirma-que-estuvo-recluido-en-prision-y-salio-por-una-amnistia/"
+    ]
+  },
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Rector de la Universidad Nacional de Ingeniería (2021-2025); fundador del partido Ahora Nación",
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+      "value": "Alto - Reconocido por su gestión como Rector de la UNI y su capacidad de convocatoria.",
+      "source": [
+        "https://larepublica.pe/politica/2025/05/12/alfonso-lopez-chau-el-rector-de-la-uni-que-busca-ser-presidente-del-peru-con-economia-nacional-de-mercado-hnews-476949"
+      ]
     },
     "comunicacion": {
-      "value": "Perfil académico y técnico; presencia activa en redes sociales incluyendo YouTube",
+      "value": "Medio - Enfoque académico y técnico en sus propuestas.",
       "source": [
-        "https://www.instagram.com/alfonsolopez_chau/",
-        "https://www.youtube.com/@lopez-chaurector1581/videos"
+        "https://peru21.pe/politica/cade-ejecutivos-2025-alfonso-lopez-chau-presenta-sus-propuestas-para-el-peru/"
       ]
     },
     "credibilidad": {
-      "value": "Reconocido en ámbito académico como rector de la UNI; enfrenta cuestionamientos por candidatos de su partido y una investigación fiscal en curso",
-      "source": []
+      "value": "Medio - Respaldado por su trayectoria académica, pero afectado por investigaciones fiscales recientes.",
+      "source": [
+        "https://www.infobae.com/peru/2025/07/17/alfonso-lopez-chau-en-la-mira-de-la-fiscalia-es-investigado-por-presuntamente-beneficiar-a-trabajadora-en-la-uni/"
+      ]
     }
   },
-
   "percepcionPublica": {
     "intencionVoto": {
       "min": 1.8,
       "max": 1.8,
-      "descripcion": "1.8% de intención de voto (CPI, diciembre 2025)",
-      "metodologia": "Encuesta presencial en hogares. Muestra: 1,200 personas urbanas de 18 a 70 años. Cobertura: ámbito urbano nacional. Trabajo de campo: 26 al 30 de noviembre de 2025. Nivel de confianza: 95.5%. Margen de error: ±2.8%.",
+      "descripcion": "CPI - Encuesta presencial en hogares (26-30 nov 2025)",
       "source": [
         "https://rpp.pe/politica/elecciones/cpi-a-cuatro-meses-de-las-elecciones-estos-son-los-candidatos-y-pre-candidatos-presidenciales-que-lideran-la-intencion-de-voto-noticia-1666471"
       ]
@@ -480,41 +343,41 @@
       "source": []
     },
     "redes": {
-      "value": "Presencia activa en Instagram, Facebook, X (Twitter) y YouTube",
+      "value": "Presencia activa en Instagram, Facebook, X y YouTube.",
       "source": [
-        "https://www.instagram.com/alfonsolopez_chau/",
-        "https://www.facebook.com/profile.php?id=100014146592128",
         "https://x.com/LopezChauNava",
-        "https://www.youtube.com/@lopez-chaurector1581/videos"
+        "https://www.instagram.com/alfonsolopez_chau/"
       ]
     }
   },
-
   "innovacionYVision": {
     "items": [
-      "Sistema de transporte multimodal con enfoque logístico",
-      "Disuasión creíble con programas ESCUDO I, II y III",
-      "Transición de economía extractiva a modelo diversificado",
-      "Perú como líder en América Latina y actor del Sur Global",
-      "Fortalecimiento de capacidades de ciberdefensa",
-      "Cultura como herramienta clave del accionar internacional"
+      "Propuesta de industrialización basada en la conexión academia-industria-Estado.",
+      "Implementación del programa de defensa tecnológica ESCUDO.",
+      "Visión de soberanía nacional en la Antártida."
     ],
     "source": [
       "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
     ]
   },
-
   "historialLegislativo": {
     "tieneHistorial": false,
+    "productivityLabel": "N/A",
     "asistencia": {
       "porcentaje": null,
       "label": null,
-      "source": []
+      "source": null
     },
-    "proyectosPresentados": null,
-    "proyectosAprobados": null,
-    "proyectosDestacados": [],
-    "nota": "No ha ejercido el cargo de Congresista de la República. Su experiencia es académica como Rector de la UNI y como fundador de partido político.",
-    "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [],
+    "nota": "No tiene historial legislativo",
+    "source": null
   }
 }

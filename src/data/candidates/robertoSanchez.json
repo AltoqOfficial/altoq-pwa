@@ -1,12 +1,19 @@
 {
   "id": "roberto-sanchez-palomino",
-  "slug": "robertoSanchezPalomino",
+  "slug": "roberto-sanchez-palomino",
   "fullName": "Roberto Helbert Sánchez Palomino",
   "shortName": "Roberto Sánchez",
   "image": "/candidatos/roberto-sanchez.webp",
-  "color": "#D32F2F",
+  "color": "#E30013",
   "party": "Juntos por el Perú",
-
+  "partyIcon": "/partidos/juntos-por-el-peru.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/robertosanchp/",
+    "tiktok": null,
+    "twitter": "https://x.com/RobertoSanchP",
+    "facebook": "https://web.facebook.com/RobertoSanchez.Oficial/",
+    "web": "https://www.robertosanchezjp.com/"
+  },
   "perfilGeneral": {
     "edad": {
       "value": null,
@@ -21,81 +28,66 @@
       "source": []
     },
     "nivelEducativo": {
-      "value": "Maestría en Políticas Sociales",
+      "value": [
+        "Bachiller en Psicología (1998)",
+        "Psicólogo (2000)",
+        "Maestría en Políticas Sociales (2023)"
+      ],
       "source": [
         "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
         "https://es.scribd.com/document/974065706/Juntos-Por-El-Peru-Roberto-Helbert-Sanchez-Palomino"
       ]
     },
     "profesion": {
-      "value": [
-        "Psicólogo (UNMSM, 2000)",
-        "Bachiller en Psicología (UNMSM, 1998)",
-        "Maestría en Políticas Sociales (PUCP, 2023)"
-      ],
+      "value": ["Psicólogo"],
       "source": [
-        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
         "https://es.scribd.com/document/974065706/Juntos-Por-El-Peru-Roberto-Helbert-Sanchez-Palomino"
       ]
     },
     "partidoActual": {
       "value": "Juntos por el Perú",
-      "source": [
-        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/"
-      ]
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
     },
     "cambiosDePartido": {
-      "value": "Sin cambios registrados",
+      "value": null,
       "source": []
     },
-    "ocupacionActual": {
-      "value": "Congresista de la República",
-      "source": [
-        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-        "https://www.congreso.gob.pe/Congresistas/?K=290&TPL=if0&a=iv&id=1147"
-      ]
-    },
-    "redesSociales": {
-      "facebook": "https://web.facebook.com/RobertoSanchez.Oficial/",
-      "instagram": "https://www.instagram.com/robertosanchp/",
-      "twitter": "https://x.com/RobertoSanchP",
-      "web": "https://www.robertosanchezjp.com/"
-    },
-    "ubicacionIdeologica": {
-      "value": "Izquierda",
-      "criterio": "Autodeclaración pública: 'Representamos a la izquierda moderna' (RPP). Promueve propuestas y discursos propios del campo de la izquierda (refundar el modelo económico, énfasis en justicia social y rol del Estado).",
-      "source": ["https://youtu.be/XLkolkxOJYw?t=771"]
-    }
+    "historialPartidos": [
+      {
+        "ano": "2021",
+        "partido": "Juntos por el Perú",
+        "icono": "/partidos/juntos-por-el-peru.png",
+        "source": [
+          "https://infogob.jne.gob.pe/Politico/FichaPolitico/roberto-helbert-sanchez-palomino_historial-partidario_mDIDCbZ0jT0=Ib"
+        ]
+      }
+    ]
   },
-
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "5 años",
+      "value": "5",
       "source": [
-        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/roberto-helbert-sanchez-palomino_historial-partidario"
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/roberto-helbert-sanchez-palomino_historial-partidario_mDIDCbZ0jT0=Ib"
       ]
     },
     "cargosPrevios": {
       "values": [
-        "Congresista de la República - Juntos por el Perú (2021-2026)",
-        "Apoderado - Juntos por el Perú (2024-Actualidad)",
-        "Representante Legal - Juntos por el Perú (2024-Actualidad)"
+        "Congresista de la República (2021-2026)",
+        "Apoderado de Juntos por el Perú (2024-Actualidad)",
+        "Representante Legal de Juntos por el Perú (2024-Actualidad)"
       ],
       "source": [
-        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-        "https://www.congreso.gob.pe/deu/obleuterat/?K=290&TPL=if0&a=iv&id=1147",
-        "https://es.scribd.com/document/662406621/Directivos-JxP",
-        "https://jp.org.pe/"
+        "https://www.congreso.gob.pe/Congresistas/?K=290&TPL=if0&a=iv&id=1147",
+        "https://es.scribd.com/document/662406621/Directivos-JxP"
       ]
     },
     "candidaturasPresidenciales": {
-      "values": ["Elecciones 2026 (en curso)"],
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+      "values": ["2026 → En curso"],
+      "source": [
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/"
+      ]
     }
   },
-
   "experienciaGestion": {
     "sectorPublico": {
       "cantidad": 5,
@@ -108,32 +100,27 @@
           "Congresista de la República (2021-2026)"
         ],
         "source": [
-          "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
           "https://www.caribbeannewsdigital.com/es/turismo/roberto-helbert-sanchez-es-el-nuevo-ministro-de-turismo-de-peru",
-          "https://larepublica.pe/economia/2022/12/07/disolucion-del-congreso-roberto-sanchez-renuncio-al-mincetur-tras-golpe-de-estado",
-          "https://www.congreso.gob.pe/deu/obleuterat/?K=290&TPL=if0&a=iv&id=1147"
+          "https://larepublica.pe/economia/2022/12/07/disolucion-del-congreso-roberto-sanchez-renuncio-al-mincetur-tras-golpe-de-estado"
         ]
       }
     },
     "sectorPrivado": {
-      "cantidad": null,
+      "cantidad": 0,
       "detalle": {
         "values": [],
         "source": []
       }
-    }
+    },
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
   },
-
   "ideologiaPolitica": {
     "posicion": {
-      "value": [
-        "Izquierda",
-        "Enfoque progresista, rol activo del Estado, justicia social y recuperación de soberanía sobre recursos estratégicos"
-      ],
+      "value": "Izquierda",
       "source": ["https://youtu.be/XLkolkxOJYw?t=771"]
     },
     "economia": {
-      "value": "Crítica al modelo económico: cuestiona la 'economía social de mercado' y privilegia mayor intervención del Estado y recuperación de soberanía sobre recursos y sectores estratégicos.",
+      "value": "Crítica al modelo de economía social de mercado; propone mayor intervención del Estado y soberanía sobre recursos estratégicos.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
       ]
@@ -143,162 +130,115 @@
       "source": []
     },
     "aborto": {
-      "value": "Apoyo a la despenalización del aborto en casos de embarazo por violación (coautor del proyecto de ley)",
+      "value": "A favor de la despenalización en casos de violación sexual.",
       "source": [
-        "https://www.congreso.gob.pe/index.php?File=%2FDocs%2FDGP%2FDIDP%2Fagenda2024%2FAGENDA-2024-2025-EQUIDAD-TEMA-68.html"
+        "https://www.congreso.gob.pe/index.php?File=%2FDocs%2FDGP%2FDIDP%2Fagenda2024%2FAGENDA-2024-2025-EQUIDAD-TEMA-68.html&K=73549"
       ]
     },
     "seguridad": {
-      "value": "Prevención del delito con enfoque social y comunitario",
+      "value": "Enfoque preventivo y comunitario con reforma estructural de la Policía Nacional.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
       ]
     },
     "ambiente": {
-      "value": "Conservación y adaptación climática: prioriza la conservación de la biodiversidad, gestión del agua y adaptación climática como centro de la política ambiental.",
+      "value": "Prioriza la conservación de la biodiversidad y la protección de cabeceras de cuenca.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
       ]
     },
     "educacion": {
-      "value": "Estado garante de educación pública, universal, gratuita e intercultural, con énfasis en equidad territorial y formación docente.",
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
-      ]
-    },
-    "salud": {
-      "value": "Salud pública e integrada: sistema de salud público, universal e integrado; implementar Redes Integradas de Salud y sistema nacional único de referencia/contrarreferencia.",
+      "value": "Estado garante de una educación pública, universal, gratuita e intercultural.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
       ]
     },
     "reformaPolitica": {
-      "value": "Fortalecimiento institucional y transparencia: Nueva Constitución, independencia de poderes, selección de autoridades por mérito y probidad, mecanismos de control y participación ciudadana.",
+      "value": "Promueve una Nueva Constitución mediante Asamblea Constituyente y refundación institucional.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
       ]
     }
   },
-
   "propuestasPrincipales": {
-    "economico": {
-      "values": [
-        "Ruptura con el modelo primario-exportador y desarrollo de industria nacional con valor agregado",
-        "Justicia fiscal y redistribución de la riqueza (impuesto a grandes fortunas, eliminar exoneraciones regresivas)",
-        "Diversificación productiva y transformación de la matriz energética hacia renovables",
-        "Gestión del Riesgo de Desastres (GRD) y adaptación climática como motores tecnológicos",
-        "Nuevo Ministerio de Ciencia y Tecnología; 20 CITEs y 10 complejos industriales descentralizados",
-        "Meta: 40% de exportaciones con valor agregado; inversión en I+D de 0.15% a 0.50% del PIB",
-        "Reducir informalidad laboral al 60%",
-        "Renegociar contratos en sectores estratégicos (gas, minería, hidrocarburos)",
-        "Elevar la presión tributaria al 25% del PIB"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
-      ]
-    },
-    "social": {
-      "values": [
-        "Sistema de salud público, universal e integrado con rectoría única",
-        "Derecho a la vivienda digna; Instituto Nacional de Desarrollo Urbano",
-        "Educación pública universal, gratuita e intercultural",
-        "Reformular Política Nacional de Juventud; Consejo Nacional de Juventudes adscrito a PCM",
-        "Reducción de informalidad y protección social; mejorar Remuneración Mínima Vital",
-        "Derechos humanos con enfoque intercultural; reparaciones a víctimas",
-        "Seguridad ciudadana con enfoque preventivo y comunitario; planes locales con juntas vecinales",
-        "Sistema Nacional de Cultura Plurinacional; Fondo Nacional de Cultura",
-        "Protección del agua y seguridad hídrica"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
-      ]
-    },
-    "ambiental": {
-      "values": [
-        "Protección del agua en defensa de la vida: prioridad para consumo humano y agricultura familiar",
-        "Restablecer intangibilidad de cabeceras de cuenca, glaciares y cuerpos de agua",
-        "Fondo de Agua y canon hídrico para financiar proyectos de conservación",
-        "Autonomía y fortalecimiento de la Autoridad Nacional del Agua (ANA)",
-        "Hacer vinculante la Zonificación Ecológica y Económica (ZEE)",
-        "Prohibir concesiones mineras en zonas de producción y protección de fuentes de agua",
-        "Crear 3 polos tecnológicos de GRD (Costa, Andes, Amazonía); producir 50% del equipamiento nacional",
-        "Transformación de la pequeña minería: formalización, cooperativas, parques mineros"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
-      ]
-    },
-    "institucional": {
-      "values": [
-        "Asamblea Constituyente y Nueva Constitución",
-        "Separación efectiva de poderes y control ciudadano; prohibir lobbies y puerta giratoria",
-        "Reforma del sistema de justicia: doble instancia sustantiva, selección por antigüedad y probidad",
-        "Fiscalías especializadas en violencia policial y abuso de poder",
-        "Autonomía de Defensoría del Pueblo y Tribunal Constitucional",
-        "Imprescriptibilidad de delitos contra la administración pública; inhabilitación perpetua para corruptos",
-        "Veedurías ciudadanas para fiscalizar gestión pública",
-        "Democracia participativa: referéndum, audiencias públicas, consejos ciudadanos",
-        "Representación de pueblos originarios en el Parlamento",
-        "Garantía del derecho a la protesta; acabar con el terruqueo",
-        "Reforma estructural de la Policía Nacional"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
-      ]
-    },
-    "educativo": {
-      "values": [
-        "Restituir carácter público, universal, gratuito e intercultural; inversión educativa hasta 6% del PBI",
-        "Aumentar matrícula pública universitaria en 50%; reducir brecha urbano-rural en 30%",
-        "20% de reducción de brecha de infraestructura; 100% escuelas con servicios básicos, 80% con conectividad",
-        "Erradicar analfabetismo; reducir deserción escolar a menos del 2%",
-        "Nombramiento del 90% del magisterio; formación continua a >250,000 docentes",
-        "Reducir violencia escolar en 50%; 100% accesibilidad para estudiantes con discapacidad",
-        "Revisión curricular con enfoque intercultural y de género",
-        "Sistema autónomo de aseguramiento de calidad universitaria",
-        "Aumentar presupuesto por estudiante universitario +50%",
-        "Cobertura EIB en secundaria al 70%"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
-      ]
-    },
-    "salud": {
-      "values": [
-        "La salud como prioridad pública; rectoría única del sistema",
-        "Implementar Redes Integradas de Salud (RIS) en todo el país; meta: 70% operativas",
-        "Financiamiento basado en resultados y Pago per Cápita ajustado",
-        "Fondo Financiero Intangible de Suministros Estratégicos Médicos; fortalecer CENARES",
-        "Inventario y gestión de equipamiento biomédico (PUGA-EBM)",
-        "Tarifario único de intercambio para procedimientos de baja complejidad",
-        "Reducción del tiempo de referencia/contrarreferencia en 40%; anemia infantil <20%",
-        "Plan Maestro de Infraestructura y equipamiento en salud",
-        "Salud mental comunitaria integrada en atención primaria",
-        "Disponibilidad de suministros estratégicos médicos >95%"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
-      ]
-    },
-    "seguridad": {
-      "values": [
-        "Política nacional integral, territorial y preventiva contra crimen organizado",
-        "Reforma estructural de la Policía Nacional del Perú; profesionalización y evaluación de integridad",
-        "Sistema Nacional Integrado de Información Criminal",
-        "Capacitar al 80% de efectivos policiales en inteligencia y tecnología",
-        "Planes locales de seguridad con juntas vecinales; reconocimiento legal",
-        "Recuperación de espacios públicos como estrategia preventiva",
-        "Servicio militar voluntario ampliado (100,000 hombres y mujeres) con formación técnica",
-        "100% del personal policial evaluado en integridad",
-        "Reducción de homicidios en 70%",
-        "Derogar leyes pro-crimen e impunidad"
-      ],
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
-      ]
-    }
+    "institucional": [
+      {
+        "titulo": "Asamblea Constituyente",
+        "descripcion": "Impulso a una Nueva Constitución democrática para recuperar soberanía y reforzar legitimidad.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+        ]
+      },
+      {
+        "titulo": "Lucha anticorrupción",
+        "descripcion": "Imprescriptibilidad de delitos contra la administración pública e inhabilitación perpetua.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Ruptura del modelo primario-exportador",
+        "descripcion": "Desarrollar industria nacional con valor agregado y sustitución de importaciones.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+        ]
+      },
+      {
+        "titulo": "Justicia fiscal",
+        "descripcion": "Impuesto a grandes fortunas y eliminación de exoneraciones regresivas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Vivienda digna",
+        "descripcion": "Incorporar el derecho a la vivienda digna y segura con programas de vivienda social.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Protección del agua",
+        "descripcion": "Establecer la intangibilidad de cabeceras de cuenca y crear un Fondo de Agua.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Inversión del 6% del PBI",
+        "descripcion": "Incrementar presupuesto educativo y aumentar la matrícula pública universitaria en 50%.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Redes Integradas de Salud (RIS)",
+        "descripcion": "Implementar un sistema público, universal e integrado con rectoría única y centralización de compras.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Reforma Policial y Participación Ciudadana",
+        "descripcion": "Reforma de la PNP con control ciudadano y reconocimiento legal a juntas vecinales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+        ]
+      }
+    ]
   },
-
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
       "value": "Alto",
@@ -307,128 +247,107 @@
       ]
     },
     "diferencias": {
-      "value": "No se identifican contradicciones relevantes entre su discurso y el plan de gobierno",
+      "value": "-",
       "source": []
     },
     "cumplimientoPrevio": {
-      "value": "Como Ministro de Comercio Exterior y Turismo (2021-2022) y Congresista, ha promovido propuestas alineadas con el plan de JPP",
-      "source": []
+      "value": "Su actividad legislativa refleja las posturas de su Plan de Gobierno, como la coautoría de leyes de equidad social.",
+      "source": [
+        "https://www.congreso.gob.pe/index.php?File=%2FDocs%2FDGP%2FDIDP%2Fagenda2024%2FAGENDA-2024-2025-EQUIDAD-TEMA-68.html&K=73549"
+      ]
     }
   },
-
   "controversias": {
-    "antecedentesPolicicales": {
-      "value": "No registra antecedentes policiales conocidos",
-      "source": []
-    },
-    "antecedentesPenales": {
-      "value": "No registra sentencias penales firmes ni condenas penales conocidas",
-      "source": []
-    },
-    "antecedentesJudiciales": {
-      "values": [
-        "Investigación preliminar por hechos del 7-dic-2022: imputación como presunto coautor de rebelión/conspiración (Exp. N°00039-2022)",
-        "Congreso declaró haber lugar a formación de causa penal contra Roberto Sánchez (marzo 2023)",
-        "Informe Final de Subcomisión de Acusaciones Constitucionales - Denuncia Constitucional N°328 (marzo 2023)",
-        "Inclusión en investigación fiscal por presunta organización criminal y obstrucción a la justicia (nov 2022)",
-        "Fiscalía solicitó 25 años de prisión en ciertas imputaciones",
-        "EXCLUIDO del proceso penal por rebelión: Corte Suprema resolvió excluirlo de la investigación por el 7-dic-2022 (enero 2025)"
-      ],
-      "source": [
-        "https://img.lpderecho.pe/wp-content/uploads/2022/12/Expediente-00039-2022-0-5001-JS-PE-01-LPDerecho.pdf",
-        "https://comunicaciones.congreso.gob.pe/noticias/declaran-haber-lugar-a-formacion-de-causa-penal-contra-exministros/",
-        "https://leyes.congreso.gob.pe/Documentos/2021_2026/Acusaciones_Constitucionales/Informe_Final/INF_FINAL_328.pdf",
-        "https://rpp.pe/politica/judiciales/fiscalia-incluye-a-ministro-roberto-sanchez-en-investigacion-a-pedro-castillo-por-presunta-organizacion-criminal-noticia-1444625",
-        "https://www.infobae.com/peru/2025/01/30/roberto-sanchez-se-salva-de-juicio-por-intento-de-golpe-de-estado-corte-suprema-excluye-a-congresista-de-investigacion/"
-      ]
-    },
-    "procesosEnCurso": {
-      "values": [
-        "Denuncia Constitucional N°328: procedimiento parlamentario en trámite",
-        "Denuncia por presunta negociación incompatible / contratación irregular en Mincetur (Fiscalía, enero 2025)",
-        "Investigación por presunta organización criminal / obstrucción (expediente conexo al caso 00039-2022)"
-      ],
-      "source": [
-        "https://leyes.congreso.gob.pe/Documentos/2021_2026/Acusaciones_Constitucionales/Informe_Final/INF_FINAL_328.pdf",
-        "https://andina.pe/agencia/noticia-mp-presenta-denuncia-constitucional-contra-congresistas-guido-bellido-y-roberto-sanchez-1015925.aspx",
-        "https://www.infobae.com/peru/2025/01/23/guido-bellido-y-roberto-sanchez-en-problemas-fiscalia-los-denuncio-por-una-presunta-contratacion-irregular-cuando-eran-ministros/"
-      ]
-    },
-    "procesosArchivados": {
-      "values": [
-        "Proceso penal por rebelión vinculado al 7-dic-2022 (Exp. N°00039-2022) - EXCLUIDO por la Corte Suprema (enero 2025)"
-      ],
-      "source": [
-        "https://www.infobae.com/peru/2025/01/30/roberto-sanchez-se-salva-de-juicio-por-intento-de-golpe-de-estado-corte-suprema-excluye-a-congresista-de-investigacion/"
-      ]
-    },
-    "declaracionesControversiales": {
-      "values": [
-        "Colaborador eficaz declaró que Sánchez habría acordado entregar S/8,000 mensuales a favor de Bruno Pacheco; Sánchez reconoció que Mincetur contrató a la pareja de Pacheco",
-        "Calificó como 'patrañas' testimonios sobre pagos a Bruno Pacheco",
-        "Reconoció llamadas a Bruno Pacheco: 'es mi función como ministro'",
-        "Denuncias de uso de personal de despacho para campaña (2025)",
-        "JEE determinó infracción a la neutralidad electoral por actividades proselitistas (dic 2025)",
-        "Habría intentado que el mensaje golpista del 7-D se transmitiera por radio para mayor cobertura",
-        "Alegó vulneración de derecho a la defensa ante citaciones fiscales",
-        "Cuestionó hipótesis del Ministerio Público como 'imaginativas' y 'afiebradas'"
-      ],
-      "source": [
-        "https://elcomercio.pe/politica/justicia/roberto-sanchez-reconoce-que-el-mincetur-contrato-a-pareja-de-bruno-pacheco-noticia/",
-        "https://gestion.pe/peru/politica/roberto-sanchez-califica-como-patranas-testimonio-sobre-pagos-a-favor-bruno-pacheco-rmmn-noticia/",
-        "https://willax.pe/politica/roberto-sanchez-confiesa-que-realizo-llamadas-a-bruno-pacheco-es-mi-funcion-como-ministro",
-        "https://elcomercio.pe/politica/congreso/roberto-sanchez-denuncian-que-el-congresista-de-juntos-por-el-peru-utiliza-a-trabajadores-de-su-despacho-para-su-campana-elecciones-2026-ultimas-noticia/",
-        "https://rpp.pe/politica/elecciones/jee-senala-que-roberto-sanchez-incurrio-en-infraccion-a-la-neutralidad-electoral-noticia-1669166",
-        "https://www.infobae.com/peru/2024/01/19/congresista-roberto-sanchez-habria-buscado-que-el-mensaje-golpista-de-pedro-castillo-se-transmita-por-radio/",
-        "https://larepublica.pe/politica/judiciales/2022/12/10/pedro-castillo-roberto-sanchez-tras-ser-notificado-hoy-por-la-fiscalia-esto-vulnera-mi-derecho-a-la-defensa-golpe-de-estado-mdga"
-      ]
-    },
-    "observacionesAdministrativas": {
-      "values": [
-        "Informe de Transferencia de Gestión MINCETUR 2022 con observaciones administrativas",
-        "JEE: infracción a la neutralidad electoral (2025) - observación administrativa-electoral"
-      ],
-      "source": [
-        "https://transparencia.mincetur.gob.pe/institucional/transferencia_gestion/2022/MINCETUR/INFORME_TRANSFERENCIA_PLIEGO_MINCETUR.pdf",
-        "https://rpp.pe/politica/elecciones/jee-senala-que-roberto-sanchez-incurrio-en-infraccion-a-la-neutralidad-electoral-noticia-1669166"
-      ]
-    }
-  },
-
-  "transparencia": {
-    "items": [
-      "Información disponible en JNE y plataforma electoral",
-      "Registro de cargos públicos en Infogob",
-      "Declaración jurada de hoja de vida ante JNE",
-      "Plan de gobierno publicado oficialmente"
+    "antecedentes": [
+      {
+        "titulo": "Sin antecedentes policiales conocidos.",
+        "estado": null,
+        "source": []
+      }
     ],
-    "source": [
-      "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-      "https://infogob.jne.gob.pe/Politico/FichaPolitico/roberto-helbert-sanchez-palomino_historial-partidario"
+    "procesosJudiciales": [
+      {
+        "titulo": "Investigación por rebelión y conspiración (Hechos 7-Dic-2022).",
+        "estado": "Archivado (Excluido por la Corte Suprema en Ene-2025)",
+        "source": [
+          "https://www.infobae.com/peru/2025/01/30/roberto-sanchez-se-salva-de-juicio-por-intento-de-golpe-de-estado-corte-suprema-excluye-a-congresista-de-investigacion/"
+        ]
+      },
+      {
+        "titulo": "Denuncia constitucional por negociación incompatible y contratación irregular en Mincetur.",
+        "estado": "En curso (Trámite parlamentario)",
+        "source": [
+          "https://andina.pe/agencia/noticia-mp-presenta-denuncia-constitucional-contra-congresistas-guido-bellido-y-roberto-sanchez-1015925.aspx"
+        ]
+      },
+      {
+        "titulo": "Investigación preliminar por organización criminal y obstrucción a la justicia.",
+        "estado": "En curso",
+        "source": [
+          "https://rpp.pe/politica/judiciales/fiscalia-incluye-a-ministro-roberto-sanchez-en-investigacion-a-pedro-castillo-por-presunta-organizacion-criminal-noticia-1444625"
+        ]
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Calificó como 'patrañas' testimonios sobre pagos a Bruno Pacheco.",
+        "source": [
+          "https://gestion.pe/peru/politica/roberto-sanchez-califica-como-patranas-testimonio-sobre-pagos-a-favor-bruno-pacheco-rmmn-noticia/"
+        ]
+      },
+      {
+        "titulo": "Cuestionó al Ministerio Público calificando sus hipótesis de 'imaginativas' y 'afiebradas'.",
+        "source": [
+          "https://comunicaciones.congreso.gob.pe/noticias/exministro-de-comercio-exterior-sostiene-que-no-dijo-todo-por-el-pais/"
+        ]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "JEE determinó infracción a la neutralidad electoral (2025) por proselitismo.",
+        "source": [
+          "https://rpp.pe/politica/elecciones/jee-senala-que-roberto-sanchez-incurrio-en-infraccion-a-la-neutralidad-electoral-noticia-1669166"
+        ]
+      },
+      {
+        "titulo": "Denuncia periodística sobre uso de personal de su despacho para campaña electoral.",
+        "source": [
+          "https://elcomercio.pe/politica/congreso/roberto-sanchez-denuncian-que-el-congresista-de-juntos-por-el-peru-utiliza-a-trabajadores-de-su-despacho-para-su-campana-elecciones-2026-ultimas-noticia/"
+        ]
+      }
     ]
   },
-
+  "transparencia": {
+    "items": [
+      "Declaración de intereses presentada ante JNE",
+      "Publicación de Plan de Gobierno oficial"
+    ],
+    "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+  },
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Liderazgo político y partidario: Apoderado y Representante Legal de Juntos por el Perú",
-      "source": ["https://jp.org.pe/"]
+      "value": "Medio - Presidente de su partido político y exministro de Estado.",
+      "source": [
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/"
+      ]
     },
     "comunicacion": {
-      "value": "Discurso técnico con enfoque social y de izquierda",
+      "value": "Alto - Frecuente presencia en medios y redes sociales defendiendo su postura política.",
       "source": ["https://youtu.be/XLkolkxOJYw?t=771"]
     },
     "credibilidad": {
-      "value": "Percepción positiva en su base partidaria; controversias por investigaciones judiciales afectan percepción general",
-      "source": []
+      "value": "Bajo - Afectada por múltiples investigaciones fiscales y denuncias de uso de recursos públicos.",
+      "source": [
+        "https://rpp.pe/politica/judiciales/fiscalia-incluye-a-ministro-roberto-sanchez-en-investigacion-a-pedro-castillo-por-presunta-organizacion-criminal-noticia-1444625",
+        "https://elcomercio.pe/politica/congreso/roberto-sanchez-denuncian-que-el-congresista-de-juntos-por-el-peru-utiliza-a-trabajadores-de-su-despacho-para-su-campana-elecciones-2026-ultimas-noticia/"
+      ]
     }
   },
-
-  "percepcionPublica": {
+  "percepsionPublica": {
     "intencionVoto": {
-      "min": null,
-      "max": null,
-      "descripcion": "No aparece con porcentaje individual; agrupado en categoría 'Otros' (12% colectivo, Ipsos dic 2025)",
-      "metodologia": "Muestra: 1,211 entrevistas presenciales en hogares (urbano-rural, 24 departamentos + Callao). Margen de error: ±2.8% (95% confianza).",
+      "min": 0,
+      "max": 0,
+      "descripcion": "Agrupado en la categoría 'Otros' con un 12% total (Ipsos, Dic-2025). No figura con porcentaje individual.",
       "source": [
         "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf"
       ]
@@ -438,46 +357,40 @@
       "source": []
     },
     "redes": {
-      "value": "Presencia digital activa en Facebook, Instagram, X y sitio web de campaña",
-      "source": [
-        "https://web.facebook.com/RobertoSanchez.Oficial/",
-        "https://www.instagram.com/robertosanchp/",
-        "https://x.com/RobertoSanchP",
-        "https://www.robertosanchezjp.com/"
-      ]
+      "value": "Presencia activa en Facebook, Instagram y X (@RobertoSanchP).",
+      "source": ["https://x.com/RobertoSanchP"]
     }
   },
-
   "innovacionYVision": {
     "items": [
-      "Nueva Constitución y Asamblea Constituyente",
-      "Transformación del modelo económico primario-exportador",
-      "Nuevo Ministerio de Ciencia y Tecnología",
-      "Polos tecnológicos para Gestión del Riesgo de Desastres",
-      "Sistema Nacional de Cultura Plurinacional",
-      "Redes Integradas de Salud con rectoría única"
+      "Creación de un Ministerio de Ciencia y Tecnología",
+      "Producción nacional del 50% del equipamiento para Gestión del Riesgo de Desastres",
+      "Implementación de 10 complejos industriales descentralizados tecnológicos"
     ],
     "source": [
       "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
     ]
   },
-
   "historialLegislativo": {
     "tieneHistorial": true,
+    "productivityLabel": "Media",
     "asistencia": {
       "porcentaje": null,
       "label": null,
-      "source": []
+      "source": null
     },
-    "proyectosPresentados": null,
-    "proyectosAprobados": null,
-    "proyectosDestacados": [
-      "Coautor del proyecto de ley que despenaliza el aborto en casos de embarazo por violación sexual"
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [
+      "Ley que despenaliza el aborto en casos de embarazos por violación"
     ],
-    "nota": "Congresista desde 2021; fue Ministro de Comercio Exterior y Turismo (2021-2022)",
-    "source": [
-      "https://www.congreso.gob.pe/Congresistas/?K=290&TPL=if0&a=iv&id=1147",
-      "https://www.congreso.gob.pe/index.php?File=%2FDocs%2FDGP%2FDIDP%2Fagenda2024%2FAGENDA-2024-2025-EQUIDAD-TEMA-68.html"
-    ]
+    "nota": "Congresista en funciones (2021-2026).",
+    "source": "https://www.congreso.gob.pe/Congresistas/?K=290&TPL=if0&a=iv&id=1147"
   }
 }
