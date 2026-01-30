@@ -3,7 +3,7 @@
   "slug": "vladimir-roy-cerron-rojas",
   "fullName": "Vladimir Roy Cerrón Rojas",
   "shortName": "Vladimir Cerrón",
-  "image": "/candidatos/vladimir-cerron.webp",
+  "image": "/candidates/vladimir-roy-cerron-rojas.png",
   "color": "#e30613",
   "party": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
   "partyIcon": "/partidos/peru-libre.png",
@@ -30,18 +30,20 @@
       ],
       "source": [
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En",
-        "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=0121163"
+        "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=0121163#:~:text=Doctor%20,Medicina%20(UNMSM)",
+        "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=0121163#:~:text=DOCTOR%20EN%20MEDICINA"
       ]
     },
     "profesion": {
       "value": ["Médico Neurocirujano", "Docente Universitario"],
       "source": [
         "https://perulibre.pe/vladimir-cerron-rojas/",
-        "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=0121163"
+        "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=0121163#:~:text=Doctor%20,Medicina%20(UNMSM)",
+        "https://plataformaelectoral.jne.gob.pe/candidatos/detalle/detalle-candidato"
       ]
     },
     "partidoActual": {
-      "value": "Partido Político Nacional Perú Libre",
+      "value": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
       "source": [
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En"
       ]
@@ -74,7 +76,7 @@
       "values": [
         "Presidente Regional de Junín (2011-2014)",
         "Gobernador Regional de Junín (2019-2019)",
-        "Secretario General Nacional de Perú Libre (2008-2026)"
+        "Secretario General de Perú Libre (2008-2026)"
       ],
       "source": [
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En"
@@ -83,12 +85,11 @@
     "candidaturasPresidenciales": {
       "values": [
         "2016 → Retiró su candidatura",
-        "2021 → Improcedente (Candidato a la 2da Vicepresidencia)",
+        "2021 → Candidato a la 2da Vicepresidencia (Improcedente)",
         "2026 → Precandidato Presidencial"
       ],
       "source": [
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En",
-        "https://perusupportgroup.org.uk/2024/07/who-is-protecting-vladimir-cerron/"
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En"
       ]
     }
   },
@@ -99,7 +100,7 @@
         "values": [
           "Gobernador Regional de Junín (2019-2019)",
           "Presidente Regional de Junín (2011-2014)",
-          "Médico Asistente Neurocirujano en EsSalud (2003-2021)",
+          "Médico Asistente (Neurocirujano) en EsSalud (2003-2021)",
           "Docente Nombrado en la Universidad Nacional del Centro del Perú (2002-2020)"
         ],
         "source": [
@@ -117,48 +118,46 @@
   "ideologiaPolitica": {
     "posicion": {
       "value": "Izquierda Marxista-Leninista-Mariateguista",
+      "descripcion": "Según su propio papel, para el partido de Cerrón ser Marxista-Leninista-Mariateguista significa: Asumir el socialismo científico pero adaptado a la realidad peruana (\"creación heroica sin calco ni copia\"), proponiendo una \"Economía Popular con Mercados\" donde el Estado regula y participa activamente, rechazando el neoliberalismo y promoviendo una Asamblea Constituyente.",
       "source": [
-        "https://apisije-e.jne.gob.pe/TRAMITE/ESCRITO/2108/ARCHIVO/FIRMADO/9716.PDF"
+        "https://apisije-e.jne.gob.pe/TRAMITE/ESCRITO/2108/ARCHIVO/FIRMADO/9716.PDF#:~:text=izquierda%20se%20necesita%20abrazar%20la%20teor%C3%ADa%20marxista"
       ]
     },
     "economia": {
-      "value": "Economía Popular con Mercados; Estado planificador, empresario e industrializador que rechaza el neoliberalismo y los monopolios.",
+      "value": "Economía Popular con Mercados; Estado planificador, empresario e industrializador.",
       "source": [
-        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"
+        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/#:~:text=Economía%20popular"
       ]
     },
-    "matrimonioIgualitario": {
-      "value": "Sin posición explícita en el documento",
-      "source": []
-    },
+    "matrimonioIgualitario": { "value": null, "source": [] },
     "aborto": {
       "value": "A favor / Pro-Despenalización (Programa oficial 2026)",
       "source": [
-        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"
+        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/#:~:text=fortalecer%20la%20despenalizaci%C3%B3n%20del%20aborto"
       ]
     },
     "seguridad": {
-      "value": "Enfoque preventivo y comunitario con participación de rondas campesinas y urbanas; reforma policial para depurar corrupción.",
+      "value": "Enfoque preventivo y comunitario con participación de rondas; reforma de la Policía Nacional.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf"
+        "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=SEGURIDAD%20CIUDADANA%20CON%20ENFOQUE%20PREVENTIVO"
       ]
     },
     "ambiente": {
-      "value": "Soberanía sobre recursos naturales y Canon Comunal; deforestación neta cero al 2030 y prohibición de privatizar el agua.",
+      "value": "Soberanía sobre recursos y Canon Comunal; prohibición de privatizar el agua.",
       "source": [
-        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"
+        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/#:~:text=Sobre%20política%20medioambiental"
       ]
     },
     "educacion": {
-      "value": "Descolonizadora, de ingreso libre a universidades públicas, con presupuesto del 10% del PBI y currículo regionalizado.",
+      "value": "Descolonizadora y de Ingreso Libre; currículo regionalizado y 10% del PBI para el sector.",
       "source": [
-        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"
+        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/#:~:text=Política%20de%20educación%20pública"
       ]
     },
     "reformaPolitica": {
-      "value": "Asamblea Constituyente Plurinacional para redactar una nueva Carta Magna y cambiar el régimen económico.",
+      "value": "Asamblea Constituyente Plurinacional para derogar la Constitución de 1993.",
       "source": [
-        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"
+        "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/#:~:text=Nueva%20Constitución%20Política"
       ]
     }
   },
@@ -166,63 +165,63 @@
     "institucional": [
       {
         "titulo": "Asamblea Constituyente Plurinacional",
-        "descripcion": "Derogar la Constitución de 1993 para redactar una nueva que consagre el cambio de régimen económico y establezca elección popular de jueces y fiscales.",
+        "descripcion": "Establecer un Estado Plurinacional y elección popular de jueces y fiscales.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=REFUNDACIÓN%20DEL%20ESTADO%20Y%20NUEVA%20CONSTITUCIÓN"
         ]
       }
     ],
     "economico": [
       {
-        "titulo": "Recuperación de Soberanía sobre Recursos Naturales",
-        "descripcion": "Renegociación o anulación de contratos-ley y peajes; reforma tributaria progresiva para elevar la presión tributaria al 20% del PBI.",
+        "titulo": "Economía Popular con Mercados",
+        "descripcion": "Renegociación de contratos-ley y recuperación de soberanía sobre recursos (gas, litio).",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=DIMENSION%20ECONOMICA"
         ]
       }
     ],
     "social": [
       {
         "titulo": "Justicia Social y Estado de Bienestar",
-        "descripcion": "Sistema universal de pensiones público, entrega de 500,000 títulos de propiedad y programa 'Hambre Cero'.",
+        "descripcion": "Sistema universal de pensiones público y entrega de 500,000 títulos de propiedad.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=DERECHOS%20SOCIALES%20Y%20JUSTICIA%20SOCIAL"
         ]
       }
     ],
     "ambiental": [
       {
-        "titulo": "Deforestación Neta Cero al 2030",
-        "descripcion": "Protección de cabeceras de cuenca y glaciares; combate frontal a la minería ilegal y transición energética hacia renovables.",
+        "titulo": "Soberanía ecológica",
+        "descripcion": "Deforestación Neta Cero al 2030 y protección estricta de cabeceras de cuenca.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=MEDIO%20AMBIENTE,%20AGUA%20Y%20TRANSICIÓN%20ECOLÓGICA"
         ]
       }
     ],
     "educativo": [
       {
-        "titulo": "Ingreso Libre a las Universidades",
-        "descripcion": "Eliminación de exámenes de admisión restrictivos y creación de universidades públicas regionales.",
+        "titulo": "Ingreso Libre",
+        "descripcion": "Eliminación de exámenes de admisión y creación de universidades públicas regionales.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=EDUCACIÓN%20LIBERADORA%20Y%20SALUD%20UNIVERSAL"
         ]
       }
     ],
     "salud": [
       {
         "titulo": "Sistema Único de Salud",
-        "descripcion": "Unificación de Minsa, EsSalud y Sanidades; implementación del programa 'Médicos de la Familia' basado en el modelo preventivo cubano.",
+        "descripcion": "Unificación de Minsa y EsSalud; programa 'Médicos de la Familia' (modelo cubano).",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=Implementar%20un%20Sistema"
         ]
       }
     ],
     "seguridad": [
       {
-        "titulo": "Seguridad Ciudadana Preventiva",
-        "descripcion": "Reforma integral de la PNP y formalización de la participación de rondas campesinas y urbanas en la seguridad nacional.",
+        "titulo": "Seguridad con enfoque comunitario",
+        "descripcion": "Participación activa de rondas campesinas y urbanas; ataque a causas sociales del delito.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=SEGURIDAD%20CIUDADANA%20CON%20ENFOQUE%20PREVENTIVO"
         ]
       }
     ]
@@ -235,36 +234,36 @@
       ]
     },
     "diferencias": {
-      "value": "Mantiene el liderazgo absoluto del partido y la línea ideológica fundacional.",
+      "value": "Liderazgo absoluto y continuidad ideológica.",
       "source": [
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En"
       ]
     },
     "cumplimientoPrevio": {
-      "value": "Sus gestiones regionales fueron interrumpidas o marcadas por procesos judiciales.",
+      "value": "Gestiones regionales marcadas por sentencias judiciales luego anuladas.",
       "source": [
-        "https://elbuho.pe/2025/03/tc-declara-nula-sentencia-condenatoria-contra-vladimir-cerron-por-caso-la-oroya"
+        "https://elbuho.pe/2025/03/tc-declara-nula-sentencia-condenatoria-contra-vladimir-cerron-por-caso-la-oroya#:~:text=El%20Tribunal%20Constitucional,en%20el%202019"
       ]
     }
   },
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "Clandestinidad y prófugo de la justicia desde octubre de 2023",
+        "titulo": "Clandestinidad y Orden de Captura Vigente",
         "estado": "Activo",
         "source": [
-          "https://www.infobae.com/peru/2025/07/14/vladimir-cerron-reaparece-en-tiktok-tras-mas-de-600-dias-profugo-pero-el-estado-no-puede-ubicarlo-segun-abogado-el-peru-no-tiene-como-rastrearlo"
+          "https://www.infobae.com/peru/2025/07/14/vladimir-cerron-reaparece-en-tiktok-tras-mas-de-600-dias-profugo-pero-el-estado-no-puede-ubicarlo-segun-abogado-el-peru-no-tiene-como-rastrearlo#:~:text=Tras%20mas,simpatizantes"
         ]
       },
       {
-        "titulo": "Destitución de EsSalud por inasistencias injustificadas",
+        "titulo": "Destitución de EsSalud",
         "estado": "Finalizado",
         "source": [
           "https://willax.pe/destacados/fiorella-molinelli-vladimir-cerron-fue-despedido-de-essalud-durante-mi-gestion"
         ]
       },
       {
-        "titulo": "Destitución como docente de la UNCP tras sentencia penal",
+        "titulo": "Destitución de docente universitario",
         "estado": "Finalizado",
         "source": [
           "https://files.uncp.edu.pe/bk2/La+Universidad/Resoluciones/CU/0047-CU-2020.pdf"
@@ -273,68 +272,66 @@
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Caso Los Dinámicos del Centro (Organización Criminal y Lavado de Activos)",
-        "estado": "Sentenciado (Prisión preventiva ratificada en Enero 2026)",
+        "titulo": "Caso Los Dinámicos del Centro (Organización Criminal)",
+        "estado": "Sentenciado (Prisión preventiva ratificada en 2026)",
         "source": [
-          "https://hytimes.pe/2026/01/09/poder-judicial-ratifica-prision-preventiva-para-vladimir-cerron-por-organizacion-criminal-y-lavado-de-activos/"
+          "https://hytimes.pe/2026/01/09/poder-judicial-ratifica-prision-preventiva-para-vladimir-cerron-por-organizacion-criminal-y-lavado-de-activos/#:~:text=La%20defensa%20de%20Cerron,nacional%20Peru%20Libre"
         ]
       },
       {
         "titulo": "Caso Aeródromo Wanka",
-        "estado": "Absuelto (Corte Suprema anuló sentencia en Marzo 2025)",
+        "estado": "Archivado (Absuelto por Corte Suprema en 2025)",
         "source": [
-          "https://www.infobae.com/peru/2025/03/26/vladimir-cerron-corte-suprema-absuelve-al-profugo-lider-de-peru-libre-del-caso-aerodromo-wanka/"
+          "https://www.infobae.com/peru/2025/03/26/vladimir-cerron-corte-suprema-absuelve-al-profugo-lider-de-peru-libre-del-caso-aerodromo-wanka/#:~:text=La%20Sala%20Penal,en%20el%20caso"
         ]
       },
       {
         "titulo": "Caso Saneamiento La Oroya",
-        "estado": "Archivado (TC declaró nula la sentencia en Marzo 2025)",
+        "estado": "Archivado (Sentencia nula por el TC en 2025)",
         "source": [
-          "https://elbuho.pe/2025/03/tc-declara-nula-sentencia-condenatoria-contra-vladimir-cerron-por-caso-la-oroya"
+          "https://elbuho.pe/2025/03/tc-declara-nula-sentencia-condenatoria-contra-vladimir-cerron-por-caso-la-oroya#:~:text=El%20Tribunal%20Constitucional,en%20el%202019"
         ]
       },
       {
         "titulo": "Caso Antalsis (Colusión)",
-        "estado": "En curso (Prisión preventiva revocada a comparecencia en Enero 2026)",
+        "estado": "En curso",
         "source": [
-          "https://www.infobae.com/peru/2025/01/21/revocan-prision-preventiva-contra-vladimir-cerron-en-caso-antalsis-tribunal-encontro-fallas-en-resolucion-judicial"
+          "https://www.infobae.com/peru/2025/01/21/revocan-prision-preventiva-contra-vladimir-cerron-en-caso-antalsis-tribunal-encontro-fallas-en-resolucion-judicial#:~:text=al%20declarar%20nula%20la,en%20agravio%20del%20Estado"
+        ]
+      },
+      {
+        "titulo": "Investigación por Lavado de Activos (Financiamiento Campaña)",
+        "estado": "En curso",
+        "source": [
+          "https://elcomercio.pe/politica/vladimir-cerron-cuales-son-las-razones-por-las-que-el-profugo-fundador-de-peru-libre-seguira-siendo-investigado-por-presunto-lavado-de-activos-noticia/#:~:text=En%20un%20reciente%20fallo,a%20su%20partido%20Peru%20Libre"
         ]
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Ataques constantes a la izquierda progresista ('caviares') y ONGs",
+        "titulo": "Enfrentamiento con 'Caviares' y ONGs",
         "source": [
-          "https://www.infobae.com/peru/2025/07/11/vladimir-cerron-reaparece-en-tiktok-y-revela-tensiones-con-pedro-castillo-en-las-elecciones-2021-tuve-problemas-con-los-caviares/"
+          "https://www.infobae.com/peru/2025/07/11/vladimir-cerron-reaparece-en-tiktok-y-revela-tensiones-con-pedro-castillo-en-las-elecciones-2021-tuve-problemas-con-los-caviares/#:~:text=Cerron%20Rojas%20revel%C3%B3%20los,a%20m%C3%A1s%20votantes"
         ]
       },
       {
-        "titulo": "Califica a Pedro Castillo como alguien rodeado de traidores y sin firmeza ideológica",
+        "titulo": "Críticas a la firmeza ideológica de Pedro Castillo",
         "source": [
-          "https://caretas.pe/home_web/home_principal_secundario/vladimir-cerron-ataca-a-castillo-chavez-y-torres-son-traidores-del-pueblo"
+          "https://caretas.pe/home_web/home_principal_secundario/vladimir-cerron-ataca-a-castillo-chavez-y-torres-son-traidores-del-pueblo#:~:text=El%20lider%20de%20Peru,del%20partido"
         ]
       }
     ],
     "observaciones": [
       {
-        "titulo": "Presunta protección estatal ('El Cofre') para evitar su captura",
+        "titulo": "Acusaciones de protección estatal ('El Cofre')",
         "source": [
-          "https://perusupportgroup.org.uk/2024/07/who-is-protecting-vladimir-cerron/"
-        ]
-      },
-      {
-        "titulo": "Realización de mítines y campaña política desde la clandestinidad vía TikTok",
-        "source": [
-          "https://www.infobae.com/peru/2025/07/14/vladimir-cerron-reaparece-en-tiktok-tras-mas-de-600-dias-profugo-pero-el-estado-no-puede-ubicarlo-segun-abogado-el-peru-no-tiene-como-rastrearlo"
+          "https://perusupportgroup.org.uk/2024/07/who-is-protecting-vladimir-cerron/#:~:text=One%20line%20of%20thought,PL%20back%20in%202021"
         ]
       }
     ]
   },
   "transparencia": {
-    "items": [
-      "Hojas de vida presentadas ante JNE",
-      "Registro CTI Vitae (Concytec)"
-    ],
+    "items": ["Hoja de vida JNE", "Registro CTI Vitae", "Infogob"],
     "source": [
       "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En",
       "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=0121163"
@@ -342,21 +339,21 @@
   },
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Alto - Mantiene liderazgo absoluto de la organización Perú Libre desde su fundación.",
+      "value": "Alto - Ejerce ininterrumpidamente como Secretario General de Perú Libre (2008-2026).",
       "source": [
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/vladimir-roy-cerron-rojas_historial-partidario_l@EU5n@kwUc=En"
       ]
     },
     "comunicacion": {
-      "value": "Alto - Alta exposición mediática y uso intensivo de redes sociales (TikTok) incluso en clandestinidad.",
+      "value": "Alto - Uso intensivo de TikTok para transmisiones en vivo y mítines virtuales desde la clandestinidad.",
       "source": [
-        "https://www.infobae.com/peru/2025/07/14/vladimir-cerron-reaparece-en-tiktok-tras-mas-de-600-dias-profugo-pero-el-estado-no-puede-ubicarlo-segun-abogado-el-peru-no-tiene-como-rastrearlo"
+        "https://www.infobae.com/peru/2025/07/14/vladimir-cerron-reaparece-en-tiktok-tras-mas-de-600-dias-profugo-pero-el-estado-no-puede-ubicarlo-segun-abogado-el-peru-no-tiene-como-rastrearlo#:~:text=Tras%20mas,simpatizantes"
       ]
     },
     "credibilidad": {
-      "value": "Bajo - Impacto negativo por situación legal de clandestinidad y sentencias (aunque algunas anuladas).",
+      "value": "Baja - Desgaste por situación de clandestinidad y procesos por organización criminal.",
       "source": [
-        "https://encuestas.com.pe/encuesta-presidencial-datum-14-diciembre-2025/"
+        "https://encuestas.com.pe/encuesta-presidencial-datum-14-diciembre-2025/#:~:text=17.-,Vladimir%20Cerron"
       ]
     }
   },
@@ -364,14 +361,14 @@
     "intencionVoto": {
       "min": 0.7,
       "max": 0.7,
-      "descripcion": "Encuesta Datum Internacional (14 de diciembre 2025) registra 0.7% de intención de voto.",
+      "descripcion": "Encuesta Datum Internacional (Diciembre 2025) registra intención mínima.",
       "source": [
-        "https://www.datum.com.pe/new_web_files/files/pdf/510a-0125%20-%20Encuesta%20DATUM%20-%20Diciembre%202025%20-%20Informe%20ELECTORAL%20Final%20v1_251216113108.pdf"
+        "https://www.datum.com.pe/new_web_files/files/pdf/510a-0125%20-%20Encuesta%20DATUM%20-%20Diciembre%202025%20-%20Informe%20ELECTORAL%20Final%20v1_251216113108.pdf#:~:text=INTENCI%C3%93N%20DE%20VOTO%20PRESIDENCIAL"
       ]
     },
     "aprobacion": { "value": null, "source": [] },
     "redes": {
-      "value": "Alta presencia y actividad en TikTok y Twitter (X), usándolas como principal canal de campaña desde la clandestinidad.",
+      "value": "Alta exposición mediática en TikTok desafiando a las autoridades.",
       "source": [
         "https://www.infobae.com/peru/2025/07/14/vladimir-cerron-reaparece-en-tiktok-tras-mas-de-600-dias-profugo-pero-el-estado-no-puede-ubicarlo-segun-abogado-el-peru-no-tiene-como-rastrearlo"
       ]
@@ -379,9 +376,9 @@
   },
   "innovacionYVision": {
     "items": [
-      "Propuesta de Estado Plurinacional",
-      "Implementación de Médicos de la Familia (modelo preventivo)",
-      "Canon Comunal directo a comunidades"
+      "Asamblea Constituyente Plurinacional",
+      "Economía Popular con Mercados",
+      "Ingreso Libre universitario"
     ],
     "source": [
       "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/"

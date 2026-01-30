@@ -98,8 +98,9 @@
   "ideologiaPolitica": {
     "posicion": {
       "value": "Centro",
+      "descripcion": "La agrupación se posiciona en el centro porque combina políticas de derecha económica, como el fomento a la inversión privada y el libre mercado, con posturas de izquierda social, centradas en la protección de derechos laborales y la regulación de monopolios. No se adhiere a un extremo, sino que busca un equilibrio técnico para promover el crecimiento sin descuidar el bienestar de las mayorías.",
       "source": [
-        "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911"
+        "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911#:~:text=Seg%C3%BAn%20Mario%20Vizcarra,a%20La%20Rep%C3%BAblica"
       ]
     },
     "economia": {

@@ -325,67 +325,126 @@ export function SourceTooltip({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <span
-              className={`
-                relative block bg-white rounded-2xl drop-shadow-xl
-                text-[#333333]
-                ${isMobile ? "p-3" : "p-4"}
-                text-left
-                animate-tooltip-in
-              `}
-            >
-              {/* Content Wrapper for inline flow */}
-              <span className="font-atNameSans font-light text-sm leading-relaxed tracking-wide inline">
-                {description ? (
-                  <>
-                    {description}
-                    {/* Spacer before tags if description exists */}
-                    <span className="inline-block w-1"></span>
-                  </>
-                ) : (
-                  "Información verificada: "
-                )}
-
-                {/* Inline Source Tags */}
-                {sources.map((src, idx) => (
-                  <a
-                    key={idx}
-                    href={src}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="
-                      inline-flex items-center justify-center
-                      bg-[#666666] hover:bg-black
-                      text-white text-[8px] font-sohne-breit font-bold uppercase
-                      px-2.5 py-0.5 rounded-full
-                      transition-colors duration-200
-                      mx-1 align-middle my-0.5
-                      no-underline
-                    "
-                    style={{ verticalAlign: "2px" }}
-                  >
-                    {getSourceLabel(src)}
-                  </a>
-                ))}
-              </span>
-
-              <span
-                className={`absolute w-0 h-0 block ${
-                  isTop
-                    ? "top-[calc(100%-1px)] border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-white"
-                    : "bottom-[calc(100%-1px)] border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-white"
-                }`}
-                style={{
-                  left: "24px",
-                  transform: "translateX(-50%)",
-                }}
-              />
-            </span>
+            <TooltipContent
+              description={description}
+              sources={sources}
+              isMobile={isMobile}
+              isTop={isTop}
+            />
           </div>,
           document.body
         )}
     </>
+  );
+}
+
+// Separate component for tooltip content to manage its own state
+function TooltipContent({
+  description,
+  sources,
+  isMobile,
+  isTop,
+}: {
+  description?: string;
+  sources: string[];
+  isMobile: boolean;
+  isTop: boolean;
+}) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const MAX_CHARS = 120;
+
+  // Helper to extract clean domain name for tags
+  const getSourceLabel = (url: string) => {
+    try {
+      const hostname = new URL(url).hostname;
+      const name = hostname.replace(/^www\./, "");
+      if (name.includes("infogob")) return "INFOGOB";
+      if (name.includes("rpp")) return "RPP";
+      if (name.includes("elcomercio")) return "EL COMERCIO";
+      if (name.includes("larepublica")) return "LA REPÚBLICA";
+      if (name.includes("ipsos")) return "IPSOS";
+      if (name.includes("swissinfo")) return "SWISSINFO";
+      return name.split(".")[0].toUpperCase();
+    } catch {
+      return "FUENTE";
+    }
+  };
+
+  const shouldTruncate = description && description.length > MAX_CHARS;
+  const displayText =
+    shouldTruncate && !isExpanded
+      ? description.slice(0, MAX_CHARS).trimEnd() + "..."
+      : description;
+
+  return (
+    <span
+      className={`
+        relative block bg-white rounded-2xl drop-shadow-xl
+        text-[#333333]
+        ${isMobile ? "p-3" : "p-4"}
+        text-left
+        animate-tooltip-in
+      `}
+    >
+      {/* Content Wrapper for inline flow */}
+      <span className="font-atNameSans font-light text-sm leading-relaxed tracking-wide inline">
+        {description ? (
+          <>
+            {displayText}
+            {shouldTruncate && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsExpanded(!isExpanded);
+                }}
+                className="text-[#0066cc] hover:text-[#0044aa] font-medium ml-1 underline-offset-2 hover:underline transition-colors"
+              >
+                {isExpanded ? "Ver menos" : "Ver más"}
+              </button>
+            )}
+            {/* Spacer before tags if description exists */}
+            <span className="inline-block w-1"></span>
+          </>
+        ) : (
+          "Información verificada: "
+        )}
+
+        {/* Inline Source Tags */}
+        {sources.map((src, idx) => (
+          <a
+            key={idx}
+            href={src}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="
+              inline-flex items-center justify-center
+              bg-[#666666] hover:bg-black
+              text-white text-[8px] font-sohne-breit font-bold uppercase
+              px-2.5 py-0.5 rounded-full
+              transition-colors duration-200
+              mx-1 align-middle my-0.5
+              no-underline
+            "
+            style={{ verticalAlign: "2px" }}
+          >
+            {getSourceLabel(src)}
+          </a>
+        ))}
+      </span>
+
+      <span
+        className={`absolute w-0 h-0 block ${
+          isTop
+            ? "top-[calc(100%-1px)] border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-white"
+            : "bottom-[calc(100%-1px)] border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-white"
+        }`}
+        style={{
+          left: "24px",
+          transform: "translateX(-50%)",
+        }}
+      />
+    </span>
   );
 }
 
@@ -477,8 +536,12 @@ export function extractDescription(
 ): string | undefined {
   if (!value || typeof value !== "object") return undefined;
 
+  // Support both English 'description' and Spanish 'descripcion'
   if ("description" in value && !Array.isArray(value))
     return (value as ValueWithSource | ArrayValueWithSource).description;
+
+  if ("descripcion" in value && !Array.isArray(value))
+    return (value as { descripcion?: string }).descripcion;
 
   return undefined;
 }

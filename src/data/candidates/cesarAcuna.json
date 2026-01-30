@@ -3,16 +3,16 @@
   "slug": "cesar-acuna-peralta",
   "fullName": "César Acuña Peralta",
   "shortName": "César Acuña",
-  "image": "/candidatos/cesar-acuna.webp",
+  "image": "/candidates/cesar-acuna-peralta.png",
   "color": "#004b93",
-  "party": "Alianza para el Progreso",
-  "partyIcon": "/partidos/app.png",
+  "party": "Partido Político Alianza para el Progreso",
+  "partyIcon": "/partidos/alianza-para-el-progreso.png",
   "socialLinks": {
     "instagram": "https://www.instagram.com/cesaracunap/",
-    "tiktok": "https://www.tiktok.com/@cesaracunap",
+    "tiktok": "tiktok.com/@cesaracunap",
     "twitter": "https://x.com/CesarAcunaP",
     "facebook": "https://www.facebook.com/CesarAcunaCAP/",
-    "web": "https://www.cesaracuna.pe"
+    "web": "https://www.cesaracuna.pe/sobre-mi"
   },
   "perfilGeneral": {
     "edad": { "value": null, "source": [] },
@@ -20,27 +20,27 @@
     "lugar": { "value": null, "source": [] },
     "nivelEducativo": {
       "value": [
-        "Bachiller de Ingeniería Química (1995)",
-        "Maestro en la Administración de la Educación (1997)",
-        "Magister en Dirección Universitaria (1998)",
-        "Doctor en Educación (2013)",
-        "Posdoctorado en Comunicación, Educación y Cultural"
+        "Posdoctorado en Comunicación, Educación y Cultural, Colombia - Universidad Santo Tomás",
+        "Bachiller de Ingeniería Química - Universidad Nacional de Trujillo (1995)",
+        "Maestro en la Administración de la Educación - Universidad de Lima (1997)",
+        "Magister en Dirección Universitaria, Colombia - Universidad de Los Andes (1998)",
+        "Doctor en Educación - Universidad Complutense de Madrid, España (2013)"
       ],
       "source": [
         "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-        "https://andina.pe/agencia/noticia-elecciones-2021-conoce-perfil-cesar-acuna-candidato-presidencial-app-831173.aspx",
-        "https://www.infobae.com/peru/2024/02/16/cesar-acuna-cuanto-mide-el-empresario-y-politico/",
-        "https://larepublica.pe/politica/elecciones/2022/10/02/cesar-acuna-regresaria-al-gobierno-regional-de-la-libertad-tras-liderar-la-preferencia-con-30-elecciones-regionales-y-municipales-2022-elecciones-2022-resultado-de-elecciones"
+        "https://andina.pe/agencia/noticia-elecciones-2021-conoce-perfil-cesar-acuna-candidato-presidencial-app-831173.aspx#:~:text=Tiene%20un%20posdoctorado",
+        "https://www.infobae.com/peru/2024/02/16/cesar-acuna-cuanto-mide-el-empresario-y-politico/#:~:text=cuanto%20a%20su-,formaci%C3%B3n%20acad%C3%A9mica,-%2C%20Acu%C3%B1a%20posee%20un",
+        "https://larepublica.pe/politica/elecciones/2022/10/02/cesar-acuna-regresaria-al-gobierno-regional-de-la-libertad-tras-liderar-la-preferencia-con-30-elecciones-regionales-y-municipales-2022-elecciones-2022-resultado-de-elecciones#:~:text=urna%2C%20seg%C3%BAn%20ipsos-,Perfil,-de%20C%C3%A9sar%20Acu%C3%B1a"
       ]
     },
     "profesion": {
-      "value": ["Ingeniero Químico"],
+      "value": ["Ingeniería Química"],
       "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
     },
     "partidoActual": {
-      "value": "Alianza para el Progreso",
+      "value": "Partido Político Alianza para el Progreso",
       "source": [
-        "https://www.infobae.com/peru/2025/10/31/cesar-acuna-lidera-lista-presidencial-por-alianza-para-el-progreso-para-las-elecciones-2026-quienes-son-los-canditatos-a-la-vicepresidencia-del-partido/"
+        "https://www.infobae.com/peru/2025/10/31/cesar-acuna-lidera-lista-presidencial-por-alianza-para-el-progreso-para-las-elecciones-2026-quienes-son-los-canditatos-a-la-vicepresidencia-del-partido/#:~:text=candidato%20presidencial%20de-,Alianza%20para%20el%20Progreso,-para%20las%20elecciones"
       ]
     },
     "cambiosDePartido": {
@@ -51,57 +51,57 @@
       {
         "ano": "2001",
         "partido": "Alianza para el Progreso",
-        "icono": "/partidos/app.png",
+        "icono": "/partidos/alianza-para-el-progreso.png",
         "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
       }
     ]
   },
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "26",
+      "value": "Más de 20 años",
       "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
     },
     "cargosPrevios": {
       "values": [
-        "Gobernador Regional de La Libertad (1999-1999)",
+        "Gobernador Regional de la Libertad (1999-1999)",
         "Congresista de la República (2001-2006)",
+        "Fundador del Partido Político Alianza para el Progreso (2001)",
         "Alcalde Provincial de Trujillo (2007-2014)",
-        "Gobernador Regional de La Libertad (2015-2015)",
-        "Gobernador Regional de La Libertad (2023-2025)"
+        "Gobernador Regional de la Libertad (2015-2018)",
+        "Gobernador Regional de la Libertad (2023-2025)",
+        "Presidente en Alianza para el Progreso (2023-2025)"
       ],
       "source": [
         "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-        "https://www.cesaracuna.pe/sobre-mi"
+        "https://www.cesaracuna.pe/sobre-mi",
+        "https://www.facebook.com/share/p/16c2EXFRN8/"
       ]
     },
     "candidaturasPresidenciales": {
-      "values": ["2026 → En curso"],
+      "values": ["2026 → Candidato Presidencial Oficialmente Inscrito"],
       "source": [
-        "https://www.infobae.com/peru/2026/01/04/elecciones-generales-2026-32-formulas-presidenciales-estan-oficialmente-inscritas/"
+        "https://www.infobae.com/peru/2026/01/04/elecciones-generales-2026-32-formulas-presidenciales-estan-oficialmente-inscritas/#:~:text=C%C3%A9sar%20Acu%C3%B1a%20lidera%20lista%20presidencial%20por%20Alianza%20para%20el%20Progreso%20para%20las%20Elecciones%202026"
       ]
     }
   },
   "experienciaGestion": {
     "sectorPublico": {
-      "cantidad": 5,
+      "cantidad": 3,
       "detalle": {
         "values": [
-          "Gobernador Regional de La Libertad (1999-1999)",
-          "Congresista de la República (2001-2006)",
-          "Alcalde Provincial de Trujillo (2007-2014)",
-          "Gobernador Regional de La Libertad (2015-2015)",
-          "Gobernador Regional de La Libertad (2023-2025)"
+          "Gobernador Regional de la Libertad (2015-2015)",
+          "Alcalde - Municipalidad Provincial de Trujillo (2007-2014)"
         ],
-        "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+        "source": [
+          "https://larepublica.pe/elecciones/2021/01/22/cesar-acuna-biografia-carrera-politica-y-partido-al-cual-pertenece-pltc#:~:text=Durante%20el%202015%2C%20trabaj%C3%B3%20como%20gobernador%20regional%20de%20La%20Libertad.",
+          "https://larepublica.pe/elecciones/2021/01/22/cesar-acuna-biografia-carrera-politica-y-partido-al-cual-pertenece-pltc#:~:text=Postul%C3%B3%20a%20la%20Alcald%C3%ADa%20de%20Trujillo%20y%20fue%20elegido%20para%20los%20periodos%202007%2D2010%20y%202011%2D2014"
+        ]
       }
     },
     "sectorPrivado": {
-      "cantidad": 2,
+      "cantidad": 1,
       "detalle": {
-        "values": [
-          "Fundador y Representante - Universidad César Vallejo",
-          "Asesor - Universidad César Vallejo (2019-2025)"
-        ],
+        "values": ["Asesor - Universidad César Vallejo (2019-2025)"],
         "source": [
           "https://larepublica.pe/elecciones/2021/01/22/cesar-acuna-biografia-carrera-politica-y-partido-al-cual-pertenece-pltc"
         ]
@@ -112,123 +112,126 @@
   "ideologiaPolitica": {
     "posicion": {
       "value": "Centro",
+      "descripcion": "Alianza para el Progreso se define como una fuerza de centro que busca el desarrollo nacional mediante la convivencia de la economía social de mercado y la protección de los sectores más vulnerables. César Acuña sustenta esta postura afirmando: \"No soy un candidato de la izquierda radical, ni soy un candidato de la derecha radical, soy un candidato de centro que defiende al pueblo\", enfatizando que su prioridad es promover la inversión privada para generar calidad de vida sin descuidar el rol promotor y social del Estado.",
       "source": [
-        "https://larepublica.pe/sociedad/2025/09/10/alianza-para-el-progreso-se-alista-para-postular-en-su-segunda-campana-electoral-elecciones-2026-hnews-792520"
+        "https://larepublica.pe/sociedad/2025/09/10/alianza-para-el-progreso-se-alista-para-postular-en-su-segunda-campana-electoral-elecciones-2026-hnews-792520#:~:text=Alianza%20para%20el%20Progreso%20ha%20tratado%20de%20mantener%20una%20postura%20ideol%C3%B3gica%20de%20centro",
+        "https://larepublica.pe/elecciones/2021/03/15/cesar-acuna-no-soy-un-candidato-de-la-izquierda-ni-de-la-derecha-radical-pltc#:~:text=%E2%80%9CC%C3%A9sar%20Acu%C3%B1a%20ofrece%20porque%20es%20un%20candidato%20de%20centro%2C%20no%20soy%20un%20candidato%20de%20la%20izquierda%20radical%2C%20ni%20soy%20un%20candidato%20de%20la%20derecha%20radical%2C%20soy%20un%20candidato%20de%20centro%20que%20defiende%20al%20pueblo.%20Soy%20un%20candidato%20que%20cuida%20al%20pueblo%E2%80%9D%2C%20acot%C3%B3.",
+        "https://www.tvperu.gob.pe/noticias/politica/cesar-acuna-no-estamos-con-la-extrema-izquierda-ni-con-la-extrema-derecha#:~:text=C%C3%A9sar%20Acu%C3%B1a%3A%20%E2%80%9CNo%20estamos%20con%20la%20extrema%20izquierda%20ni%20con%20la%20extrema%20derecha%E2%80%9D"
       ]
     },
     "economia": {
-      "value": "Propone una economía competitiva basada en estabilidad macroeconómica, promoción de inversiones privadas (APP) y formalización empresarial con incentivos tributarios.",
+      "value": "Economía competitiva basada en la estabilidad macroeconómica e inversión privada agresiva (US$ 80 mil millones) con enfoque en justicia social y formalización empresarial.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=La%20institucionalidad%20econ%C3%B3mica="
       ]
     },
     "matrimonioIgualitario": { "value": "-", "source": [] },
     "aborto": {
-      "value": "En contra (basado en la defensa de la Constitución y la dignidad humana)",
+      "value": "Basada en el respeto a la Constitución de 1993 y la dignidad humana (sin mención explícita al término aborto)",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Respeto%20por%20la%20dignidad%20de%20las%20personas="
       ]
     },
     "seguridad": {
-      "value": "Creación del Ministerio de Defensa y Seguridad Interna, uso de IA para análisis predictivo y modernización de cárceles vía APP/OXI.",
+      "value": "Creación del Ministerio de Defensa y Seguridad Interna, uso de Inteligencia Artificial para análisis predictivo y cárceles modernas mediante Obras por Impuestos y APP.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=La%20reducci%C3%B3n%20dr%C3%A1stica%20de%20homicidios="
       ]
     },
     "ambiente": {
-      "value": "Reingeniería del Sistema Nacional de Gestión Ambiental (SENACE absorbiendo ANA y SERFOR) y manejo forestal sostenible.",
+      "value": "Reingeniería del SENACE para absorber ANA y SERFOR, manejo forestal sostenible y remediación de pasivos ambientales.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=el%20Estado%20debe%20mejorar="
       ]
     },
     "educacion": {
-      "value": "Reestructuración del MINEDU, secundaria técnica obligatoria, carrera docente por méritos y certificaciones en inglés e IA.",
+      "value": "Reestructuración del MINEDU, secundaria técnica obligatoria, fortalecimiento de la carrera docente y certificaciones en inglés e IA.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=MINEDU%20debe%20iniciar%20Plan%20de%20promoci%C3%B3n="
       ]
     },
     "reformaPolitica": {
-      "value": "Reducción de ministerios de 19 a 10, fortalecimiento de la meritocracia con headhunters y facultades legislativas para convenios tributarios.",
+      "value": "Reducción de ministerios de 19 a 10, descentralización efectiva y reformas constitucionales para facilitar convenios tributarios.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Redise%C3%B1o%20del%20Poder%20Ejecutivo:%20reducci%C3%B3n%20de%2019%20a%2010%20ministerios="
       ]
     }
   },
   "propuestasPrincipales": {
     "institucional": [
       {
-        "titulo": "Reducción del Poder Ejecutivo",
-        "descripcion": "Reducir de 19 a solo 10 ministerios para eliminar duplicidades y gasto improductivo.",
+        "titulo": "Rediseño del Poder Ejecutivo",
+        "descripcion": "Reducción de 19 a solo 10 ministerios para eliminar duplicidades y gasto improductivo.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Redise%C3%B1o%20del%20Poder%20Ejecutivo:%20reducci%C3%B3n%20de%2019%20a%2010%20ministerios="
         ]
       }
     ],
     "economico": [
       {
-        "titulo": "Plan de Inversiones APP",
-        "descripcion": "Adjudicar US$ 80 mil millones en proyectos de Asociaciones Público-Privadas y reformar el Art. 56 de la Constitución.",
+        "titulo": "Crecimiento Macroeconómico",
+        "descripcion": "Crecimiento anual no menor al 6% y exportaciones por US$ 100 mil millones.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=2.1%20Defensa%20de%20la%20estabilidad%20macroecon%C3%B3mica%20como%20activo%20pa%C3%ADs="
         ]
       },
       {
         "titulo": "Reforma del Sistema de Pensiones",
-        "descripcion": "AFP reemplazadas por Empresas Administradoras de Fondos (EAF) con capital semilla estatal (modelo alemán).",
+        "descripcion": "Sustituir AFP por Empresas Administradoras de Fondos con capital semilla estatal.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=2.14%20Reformulaci%C3%B3n%20del%20Sistema%20de%20Pensiones="
         ]
       }
     ],
     "social": [
       {
-        "titulo": "Vivienda y Saneamiento",
-        "descripcion": "Construir 1.25 millones de viviendas y transferir EPS municipales al OTASS para inversión privada global.",
+        "titulo": "Meta de Vivienda",
+        "descripcion": "Construcción de 1.25 millones de viviendas nuevas mediante subsidios anuales de S/. 13,500 millones.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=3.1%201.25%20millones%20de%20viviendas%20nuevas%20en%20el%20quinquenio="
         ]
       },
       {
-        "titulo": "Transformación Digital",
-        "descripcion": "Crear el 'Zar de Tecnología' para un Estado 100% transaccional en línea al 2030.",
+        "titulo": "Agua y Saneamiento",
+        "descripcion": "Transferencia de EPS municipales al OTASS y adjudicación de plantas desaladoras vía APP.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=3.2%20Agua%20y%20saneamiento="
         ]
       }
     ],
     "ambiental": [
       {
-        "titulo": "Centralización de Certificaciones",
-        "descripcion": "SENACE absorberá ANA y SERFOR para agilizar permisos mediante el sistema de Huella Ambiental.",
+        "titulo": "Reingeniería Ambiental",
+        "descripcion": "Centralización de certificaciones ambientales en el SENACE y sistema de Huella Ambiental.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=certificaci%C3%B3n%20ambiental="
         ]
       }
     ],
     "educativo": [
       {
-        "titulo": "Secundaria Técnica y Becas",
-        "descripcion": "Implementación de secundaria técnica obligatoria y priorización de 'Becas TEC' sobre universitarias.",
+        "titulo": "Educación Secundaria Técnica",
+        "descripcion": "Implementación obligatoria de secundaria técnica y certificaciones en IA e inglés en colegios públicos.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Educaci%C3%B3n%20T%C3%A9cnica%20y%20Superior="
         ]
       }
     ],
     "salud": [
       {
         "titulo": "Plan Mil",
-        "descripcion": "Mejora de más de mil centros de salud de nivel I-2 y I-3 mediante APP e Historia Clínica Digital interoperable.",
+        "descripcion": "Mejora de mil centros de salud mediante APP con equipamiento de Inteligencia Artificial.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=La%20Atenci%C3%B3n%20Primaria%20de%20Salud%20debe%20ser%20fortalecida="
         ]
       }
     ],
     "seguridad": [
       {
-        "titulo": "Unificación de Mando",
-        "descripcion": "Creación del Ministerio de Defensa y Seguridad Interna integrando FF.AA. y PNP.",
+        "titulo": "Ministerio de Defensa y Seguridad Interna",
+        "descripcion": "Integrar FF.AA. y PNP bajo un solo mando estratégico.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Ministerio%20de%20Defensa="
         ]
       }
     ]
@@ -237,84 +240,85 @@
     "nivelDeAlineacion": {
       "value": "Alto",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pd"
       ]
     },
     "diferencias": { "value": "-", "source": [] },
-    "cumplimientoPrevio": { "value": "-", "source": [] }
+    "cumplimientoPrevio": {
+      "value": "Menciona ejecución de obras como alcalde y gobernador como respaldo",
+      "source": ["https://www.cesaracuna.pe/sobre-mi"]
+    }
   },
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "4 denuncias policiales por violencia familiar (2018 y 2020)",
-        "estado": "Archivados",
+        "titulo": "4 denuncias policiales por violencia familiar (Retención en vehículo, acoso, maltrato físico y hostigamiento)",
+        "estado": "Archivados / Uno en investigación",
         "source": [
-          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496"
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=La%20Rep%C3%BAblica%20obtuvo%20acceso%20al%20registro%20de%20cuatro%20denuncias%20policiales%20que%20interpuso%20Jenny%20Guti%C3%A9rrez%20contra%20C%C3%A9sar%20Acu%C3%B1a"
         ]
       }
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Demanda por pensión de alimentos (Hijo menor con Jenny Gutiérrez)",
-        "estado": "Sentenciado / En ejecución",
+        "titulo": "Sentencia Confirmada por Pago de Pensión Alimenticia (S/ 30,000 mensuales)",
+        "estado": "En ejecución",
         "source": [
-          "https://lpderecho.pe/confirman-sentencia-ordena-cesar-acuna-pagar-30-000-soles-cada-mes-pension-alimenticia-favor-menor-hijo-exp-02974-2023/"
+          "https://lpderecho.pe/confirman-sentencia-ordena-cesar-acuna-pagar-30-000-soles-cada-mes-pension-alimenticia-favor-menor-hijo-exp-02974-2023/#:~:text=Confirman-,sentencia%20que%20ordena%20a%20C%C3%A9sar%20Acu%C3%B1a%20pagar%2030%20000%20soles%20cada%20mes%20por%20pensi%C3%B3n%20alimenticia%20a%20favor%20de%20su%20menor%20hijo,-%5BExp.%2002974%2D2023"
         ]
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Cuestionamiento a Rafael López Aliaga como el 'peor alcalde de Lima'",
+        "titulo": "Afirmación sobre Rafael López Aliaga: 'No permitiremos que el peor alcalde de Lima sea presidente'",
         "source": [
-          "https://gestion.pe/peru/acuna-advierte-a-lopez-aliaga-no-permitiremos-que-el-peor-alcalde-de-lima-sea-presidente-noticia/"
+          "https://gestion.pe/peru/acuna-advierte-a-lopez-aliaga-no-permitiremos-que-el-peor-alcalde-de-lima-sea-presidente-noticia/#:~:text=%E2%80%9CC%C3%A9sar%20Acu%C3%B1a%20ofrece%20porque%20es%20un%20candidato%20de%20centro%2C%20no%20soy%20un%20candidato%20de%20la%20izquierda%20radical%2C%20ni%20soy%20un%20candidato%20de%20la%20derecha%20radical%2C%20soy%20un%20candidato%20de%20centro%20que%20defiende%20al%20pueblo.%20Soy%20un%20candidato%20que%20cuida%20al%20pueblo%E2%80%9D%2C%20acot%C3%B3."
         ]
       },
       {
-        "titulo": "Deslinde de responsabilidad en seguridad ciudadana: 'El responsable es la PNP, no el gobernador'",
+        "titulo": "Deslinde de seguridad: 'Constitucionalmente, el responsable de dar seguridad es la PNP. No es el gobernador'",
         "source": [
-          "https://www.infobae.com/peru/2025/08/09/cesar-acuna-vuelve-a-deslindar-de-la-inseguridad-en-la-libertad-el-responsable-es-la-pnp-y-no-el-gobernador/"
+          "https://www.infobae.com/peru/2025/08/09/cesar-acuna-vuelve-a-deslindar-de-la-inseguridad-en-la-libertad-el-responsable-es-la-pnp-y-no-el-gobernador/#:~:text=seguridad%20ciudadana%E2%80%9D%2C-,afirm%C3%B3%20Acu%C3%B1a,-durante%20una%20entrevista"
         ]
       }
     ],
     "observaciones": [
       {
-        "titulo": "Deudas coactivas del Club UCV ante SUNAT (S/ 106,160)",
+        "titulo": "Deudas coactivas del Club UCV ante la SUNAT (S/ 106,160)",
         "source": [
-          "https://larepublica.pe/politica/2025/12/25/club-cesar-vallejo-propiedad-de-cesar-acuna-reporta-deudas-coactivas-por-mas-de-100-mil-soles-ante-la-sunat-hnews-1441375"
+          "https://larepublica.pe/politica/2025/12/25/club-cesar-vallejo-propiedad-de-cesar-acuna-reporta-deudas-coactivas-por-mas-de-100-mil-soles-ante-la-sunat-hnews-1441375#:~:text=Seg%C3%BAn%20informaci%C3%B3n%20oficial%20de%20la%20SUNAT%20actualizados%20al%2019%20de%20diciembre%2C%20el%20club%20C%C3%A9sar%20Vallejo%20F%C3%BAtbol%20Club%20S.A.C"
         ]
       },
       {
         "titulo": "Sanción de Indecopi por infracción al Derecho de Autor (Libro 'Política Educativa' y Tesis Doctoral)",
         "source": [
-          "https://www.tvperu.gob.pe/noticias/politica/indecopi-sanciona-a-cesar-acuna-y-a-ucv-por-infringir-normas-del-derecho-de-autor"
+          "https://www.tvperu.gob.pe/noticias/politica/indecopi-sanciona-a-cesar-acuna-y-a-ucv-por-infringir-normas-del-derecho-de-autor#:~:text=primer%20procedimiento%20sancionador%2C-,la%20Comisi%C3%B3n%20de%20Derecho,-de%20Autor%20del"
         ]
       }
     ]
   },
   "transparencia": {
     "items": [
-      "Reconocimiento de sentencia por alimentos en Hoja de Vida JNE",
-      "Publicación de Plan de Gobierno 2026-2031"
+      "Reporte de Hoja de Vida JNE 2026",
+      "Declaración Jurada de Ingresos"
     ],
-    "source": [
-      "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
-    ]
+    "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
   },
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Alto - Fundador de partido nacional y consorcio universitario",
+      "value": "Alto - Fundador de APP y universidades con amplia experiencia ejecutiva",
       "source": ["https://www.cesaracuna.pe/sobre-mi"]
     },
     "comunicacion": {
-      "value": "Medio - Conocido por frases redundantes y mediáticas",
+      "value": "Medio - Uso de frases redundantes frecuentemente viralizadas",
       "source": [
-        "https://willax.pe/politica/cesar-acuna-candidato-presidencial-pais-paz-vivir-willax"
+        "https://willax.pe/politica/cesar-acuna-candidato-presidencial-pais-paz-vivir-willax#:~:text=Lo%20mencionado%20por%20el%20hoy%20candidato%20presidencial%20fue%20durante%20una%20charla%20en%20la%20Universidad%20C%C3%A9sar%20Vallejo%20(UCV)."
       ]
     },
     "credibilidad": {
-      "value": "Bajo/Medio - Afectado por casos de plagio y deudas coactivas",
+      "value": "Baja - Cuestionada por procesos de plagio y temas de pensión alimenticia",
       "source": [
-        "https://canaln.pe/actualidad/indecopi-sanciono-cesar-acuna-y-ucv-plagio-libro-n246036"
+        "https://canaln.pe/actualidad/indecopi-sanciono-cesar-acuna-y-ucv-plagio-libro-n246036#:~:text=Indecopi%20sanciona%20a%20C%C3%A9sar%20Acu%C3%B1a%20por%20infringir%20normas%20de%20Derecho%20de%20Autor"
       ]
     }
   },
@@ -322,22 +326,22 @@
     "intencionVoto": {
       "min": 0.2,
       "max": 5.8,
-      "descripcion": "Encuesta América TV - Ipsos (19/12/2025): 3%",
+      "descripcion": "3% (Margen de error +/- 2.8%) - América TV - Ipsos (18-19 Dic 2025)",
       "source": [
-        "https://www.ipsos.com/es-pe/intencion-de-voto-diciembre-2025-encuesta-america-tv-ipsos"
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf#:~:text=C%C3%A9sar%20Acu%C3%B1a%203="
       ]
     },
-    "aprobacion": { "value": "null", "source": [] },
+    "aprobacion": { "value": "-", "source": [] },
     "redes": {
-      "value": "Alta presencia en TikTok, Facebook e Instagram con enfoque en actividades partidarias y académicas.",
+      "value": "Fuerte presencia multiplataforma con enfoque en juventud y gestión académica",
       "source": ["https://www.instagram.com/cesaracunap/"]
     }
   },
   "innovacionYVision": {
     "items": [
-      "Implementación de Inteligencia Artificial en seguridad y salud",
-      "Modelo de pensiones basado en el sistema alemán",
-      "Creación de la figura del Zar de Tecnología"
+      "Modelo de pensiones semilla alemán",
+      "Zar de Tecnología e Infraestructura Digital",
+      "Ciberpolicía especializada"
     ],
     "source": [
       "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
@@ -356,7 +360,7 @@
       "otros": 0
     },
     "projects": [],
-    "nota": "Fue Congresista en el periodo 2001-2006, pero el documento no detalla estadísticas de producción legislativa.",
+    "nota": "Congresista de la República por La Libertad (2001-2006)",
     "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
   }
 }

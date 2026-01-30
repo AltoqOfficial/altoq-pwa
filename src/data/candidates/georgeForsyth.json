@@ -1,11 +1,11 @@
 {
   "id": "george-patrick-forsyth-sommer",
   "slug": "george-patrick-forsyth-sommer",
-  "fullName": "George Patrick Forsyth Sommer",
+  "fullName": "George Patrick Forsyth Sommer [cite: 9]",
   "shortName": "George Forsyth",
-  "image": "/candidatos/george-forsyth.webp",
+  "image": "/candidates/george-patrick-forsyth-sommer.png",
   "color": "#E1251B",
-  "party": "Partido Democrático Somos Perú",
+  "party": "Partido Democrático Somos Perú [cite: 12]",
   "partyIcon": "/partidos/somos-peru.png",
   "socialLinks": {
     "instagram": "https://www.instagram.com/george.forsyth/",
@@ -20,25 +20,29 @@
     "lugar": { "value": null, "source": [] },
     "nivelEducativo": {
       "value": [
-        "Bachiller en Administración de Empresas (2021)",
-        "Magíster de Administración (2023)"
+        "Bachiller en Administración de Empresas – 2021 [cite: 26]",
+        "Magíster de Administración – 2023 [cite: 28]"
       ],
       "source": [
-        "https://repositorioacademico.upc.edu.pe/handle/10757/658293",
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://repositorioacademico.upc.edu.pe/handle/10757/658293#:~:text=Forsyth%20Sommer,%20George%20Patrick",
         "https://www.linkedin.com/in/george-forsyth-a5139135b/"
       ]
     },
     "profesion": {
-      "value": ["Administrador", "Exfutbolista profesional"],
+      "value": [
+        "Administrador [cite: 26, 28]",
+        "Ex-futbolista profesional [cite: 47]"
+      ],
       "source": [
-        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://repositorioacademico.upc.edu.pe/handle/10757/658293#:~:text=Forsyth%20Sommer,%20George%20Patrick",
         "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/"
       ]
     },
     "partidoActual": {
-      "value": "Partido Democrático Somos Perú",
+      "value": "Partido Democrático Somos Perú [cite: 12]",
       "source": [
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/george-patrick-forsyth-sommer_procesos-electorales_4b@2tWTg7S8=@W"
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/#:~:text=Somos%20Per%C3%BA"
       ]
     },
     "cambiosDePartido": {
@@ -53,84 +57,77 @@
         "partido": "Partido Popular Cristiano",
         "icono": "/partidos/ppc.png",
         "source": [
-          "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia"
+          "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia#:~:text=Con%20el%20Partido%20Popular%20Cristiano%20(PPC)%20logr%C3%B3%20ser%20regidor%20de%20La%20Victoria%20(2011"
         ]
       },
       {
         "ano": "2019",
         "partido": "Partido Democrático Somos Perú",
         "icono": "/partidos/somos-peru.png",
-        "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+        "source": [
+          "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia/?ref=ecr#:~:text=luego%20se%20convirti%C3%B3%20en%20alcalde%20de%20dicho%20distrito%20para%20el%20periodo%202019"
+        ]
       },
       {
         "ano": "2020",
         "partido": "Restauración Nacional/Victoria Nacional",
         "icono": "/partidos/victoria-nacional.png",
         "source": [
-          "https://infogob.jne.gob.pe/Politico/FichaPolitico/george-patrick-forsyth-sommer_historial-partidario_4b@2tWTg7S8=@W"
-        ]
-      },
-      {
-        "ano": "2023",
-        "partido": "Partido Democrático Somos Perú",
-        "icono": "/partidos/somos-peru.png",
-        "source": [
-          "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/"
+          "https://elcomercio.pe/elecciones-2021/george-forsyth-ya-aparece-como-afiliado-al-partido-restauracion-nacional-en-el-rop-elecciones-2021-nndc-noticia/#:~:text=George%20Forsyth%20ya%20aparece%20como%20afiliado%20al%20partido%20Restauraci%C3%B3n%20Nacional%20en%20el%20ROP"
         ]
       }
     ]
   },
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "5 años y 9 meses",
+      "value": "5 años y 9 meses [cite: 42]",
       "source": [
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/george-patrick-forsyth-sommer_procesos-electorales_4b@2tWTg7S8=@W"
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/george-patrick-forsyth-sommer_procesos-electorales_4b@2tWTg7S8=@W,"
       ]
     },
     "cargosPrevios": {
       "values": [
-        "Regidor Distrital de La Victoria (2011-2014)",
-        "Alcalde Distrital de La Victoria (2019-2020)"
+        "Regidor Distrital (2011-2014) [cite: 43]",
+        "Alcalde Distrital (2019-2020) [cite: 44]"
       ],
       "source": [
-        "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia"
+        "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia#:~:text=Con%20el%20Partido%20Popular%20Cristiano%20(PPC)%20logr%C3%B3%20ser%20regidor%20de%20La%20Victoria%20(2011",
+        "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia/?ref=ecr#:~:text=luego%20se%20convirti%C3%B3%20en%20alcalde%20de%20dicho%20distrito%20para%20el%20periodo%202019"
       ]
     },
     "candidaturasPresidenciales": {
-      "values": ["2021 → Excluido", "2026 → Precandidato"],
+      "values": ["2021 → Exclusión [cite: 259]", "2026 → En curso [cite: 53]"],
       "source": [
-        "https://www.infobae.com/america/america-latina/2021/02/11/george-forsyth-el-candidato-que-lideraba-las-encuestas-fue-excluido-de-las-elecciones-presidenciales-en-peru/",
-        "http://larepublica.pe/politica/2025/11/09/george-forsyth-precandidato-presidencial-de-somos-peru-aparecio-vestido-de-uniforme-militar-frente-a-jose-jeri-hnews-688482"
+        "https://www.infobae.com/america/america-latina/2021/02/11/george-forsyth-el-candidato-que-lideraba-las-encuestas-fue-excluido-de-las-elecciones-presidenciales-en-peru/#:~:text=fue%20excluido%20de%20las%20elecciones%20presidenciales",
+        "http://larepublica.pe/politica/2025/11/09/george-forsyth-precandidato-presidencial-de-somos-peru-aparecio-vestido-de-uniforme-militar-frente-a-jose-jeri-hnews-688482#:~:text=George%20Forsyth%20se%20gradu%C3%B3%20y%20convirti%C3%B3%20en%20reservista%20del%20Ej%C3%A9rcito%20en%202019"
       ]
     }
   },
   "experienciaGestion": {
     "sectorPublico": {
-      "cantidad": 3,
+      "cantidad": 2,
       "detalle": {
         "values": [
-          "Regidor Distrital (2011-2014)",
-          "Alcalde Distrital (2019-2020)",
-          "Oficial Profesional de Reserva - Capitán de Caballería (2019-Actualidad)"
+          "Alcalde Distrital de La Victoria (2019-2020) [cite: 44]",
+          "Capitán de Caballería - Oficial Profesional de Reserva (2019-Actualidad) [cite: 53]"
         ],
         "source": [
-          "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-          "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/"
+          "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia/?ref=ecr#:~:text=luego%20se%20convirti%C3%B3%20en%20alcalde%20de%20dicho%20distrito%20para%20el%20periodo%202019",
+          "http://larepublica.pe/politica/2025/11/09/george-forsyth-precandidato-presidencial-de-somos-peru-aparecio-vestido-de-uniforme-militar-frente-a-jose-jeri-hnews-688482#:~:text=George%20Forsyth%20se%20gradu%C3%B3%20y%20convirti%C3%B3%20en%20reservista%20del%20Ej%C3%A9rcito%20en%202019"
         ]
       }
     },
     "sectorPrivado": {
-      "cantidad": 5,
+      "cantidad": 3,
       "detalle": {
         "values": [
-          "Jugador de fútbol profesional - Club Alianza Lima (2001-2016)",
-          "Jugador de fútbol profesional - Borussia Dortmund II (2002-2003)",
-          "Jugador de fútbol profesional - Atalanta B.C. (2007-2007)",
-          "Gerente General - Los M S.A.C. (2017-Actualidad)",
-          "Gerente General - Alhambra Inversiones S.R.L. (2024-Actualidad)"
+          "Gerente General - Los M S.A.C. (2017-Actualidad) [cite: 57]",
+          "Gerente General - Alhambra Inversiones S.R.L (2024-Actualidad) [cite: 55]",
+          "Jugador de fútbol profesional (2001-2016) [cite: 47]"
         ],
         "source": [
-          "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/"
+          "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/",
+          "https://larepublica.pe/politica/elecciones/2022/08/18/elecciones-2022-george-forsyth-declaro-no-tener-ingresos-rafael-lopez-aliaga-jne-pacto-etico-electoral#:~:text=gerente%20general%20de%20la%20empresa%20Los%20M,actualidad"
         ]
       }
     },
@@ -139,283 +136,270 @@
   "ideologiaPolitica": {
     "posicion": {
       "value": "Centro / centro-derecha",
+      "descripcion": "Se toma exclusivamente a partir de la declaración pública del propio George Forsyth recogida en la entrevista de Infobae (03/04/2021): \"No queremos un gobierno populista que esté de espaldas a la población (...) Especialmente dentro del contexto en que nos encontramos actualmente, con una crisis económica terrible, vamos a darle las facilidades que corresponden a la empresa privada\". Esa frase combina una autodefinición/posicionamiento en contra del populismo y una preferencia explícita por facilitar la inversión/actividad privada, lo que, tomado como única evidencia, ubica su posicionamiento en el espectro hacia el centro con sesgo hacia la centro-derecha (énfasis en liberalismo económico limitado y rechazo al populismo).",
       "source": [
-        "https://www.infobae.com/america/america-latina/2021/04/03/george-forsyth-el-ex-futbolista-que-quiere-ser-presidente-del-peru-no-queremos-un-gobierno-populista-que-este-de-espaldas-a-la-poblacion/"
+        "https://www.infobae.com/america/america-latina/2021/04/03/george-forsyth-el-ex-futbolista-que-quiere-ser-presidente-del-peru-no-queremos-un-gobierno-populista-que-este-de-espaldas-a-la-poblacion/#:~:text=No%20queremos%20un%20gobierno%20populista%20que%20est%C3%A9%20de%20espaldas%20a%20la%20poblaci%C3%B3n%20%28...%29%20Especialmente%20dentro%20del%20contexto%20en%20que%20nos%20encontramos%20actualmente%2C%20con%20una%20crisis%20econ%C3%B3mica%20terrible%2C%20vamos%20a%20darle%20las%20facilidades%20que%20corresponden%20a%20la%20empresa%20privada"
       ]
     },
     "economia": {
-      "value": "Economía social de mercado competitiva y abierta, con énfasis en facilitar la inversión privada y descentralización.",
+      "value": "Economía social de mercado competitiva y abierta[cite: 59]. Propone dar facilidades a la inversión privada y rechaza el populismo[cite: 21, 22].",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=econom%C3%ADa%20social%20de%20mercado%20competitiva%20y%20abierta"
       ]
     },
-    "matrimonioIgualitario": {
-      "value": "Sin posición explícita en el plan",
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
-      ]
-    },
+    "matrimonioIgualitario": { "value": "-", "source": [] },
     "aborto": {
-      "value": "Restricción con excepciones (violación o peligro de vida de la madre)",
+      "value": "Restricción con excepciones: admisible solo por violación o peligro de vida de la madre[cite: 68, 70].",
       "source": [
-        "https://canaln.pe/actualidad/george-forsyth-sobre-aborto-solo-casos-violacion-cuando-madre-este-peligro-n432360"
+        "https://canaln.pe/actualidad/george-forsyth-sobre-aborto-solo-casos-violacion-cuando-madre-este-peligro-n432360#:~:text=%E2%80%9CEs%20un%20tema%20muy%20sensible.%20Nosotros%20ya%20nos%20hemos%20pronunciado%20al%20respecto%20y%20creemos%20que%20se%20pueda%20dar%20el%20aborto%20exclusivamente%20en%20casos%20de%20violaci%C3%B3n%20o%20en%20caso%20de%20que%20la%20madre%20est%C3%A9%20en%20peligro%E2%80%9D,%20argument%C3%B3%20el%20tambi%C3%A9n%20exalcalde%20de%20La%20Victoria."
       ]
     },
     "seguridad": {
-      "value": "Gestión territorial efectiva (SINASEC), modernización policial y tolerancia cero a la corrupción.",
+      "value": "Gestión territorial del SINASEC con poder ejecutivo y modernización policial cercana al ciudadano[cite: 195, 211].",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22CIUDADAN%C3%8DA%20SEGURA%22%20Sin%20Temor%20en%20las%20Calles"
       ]
     },
     "ambiente": {
-      "value": "Conservación de biodiversidad y adaptación climática, enfocada en gestión del agua y energías renovables.",
+      "value": "Conservación de biodiversidad, adaptación climática y gestión inteligente del agua[cite: 73, 74].",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=La%20biodiversidad%20peruana,siglo%20XXI"
       ]
     },
     "educacion": {
-      "value": "Educación pública como bien común, centrada en infraestructura, calidad docente y formación digital.",
+      "value": "Educación pública como bien común, centrada en infraestructura, calidad docente y reducción de brechas[cite: 62, 63].",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=la%20importancia%20de%20la%20familia%2C%20que%20es%20la%20c%C3%A9lula%20b%C3%A1sica%20de%20la%20society%2C%20la%20ra%C3%ADz%20de%20su%20grandeza%20y%20el%20%C3%A1mbito%20natural%20de%20la%20educaci%C3%B3n%20y%20de%20la%20cultura"
       ]
     },
     "reformaPolitica": {
-      "value": "Fortalecimiento institucional, mérito en selección de funcionarios y blindaje de órganos autónomos.",
+      "value": "Fortalecimiento institucional, transparencia y blindaje de órganos autónomos contra la captura política[cite: 77, 78, 146].",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Se%20impulsar%C3%A1n%20reformas%20constitucionales%20para%20fortalecer%20los%20procesos%20de%20selecci%C3%B3n%20de%20altos%20funcionarios"
       ]
     }
   },
   "propuestasPrincipales": {
     "institucional": [
       {
-        "titulo": "Blindaje Constitucional de Órganos Autónomos",
-        "descripcion": "Reformas para proteger órganos de control (JNE, ONPE, etc.) y reducir la captura política mediante mayorías calificadas y autonomía presupuestal.",
+        "titulo": "Blindaje Constitucional de Órganos Autónomos [cite: 146]",
+        "descripcion": "Reformas para proteger órganos de control y reducir captura política mediante autonomía presupuestal[cite: 147].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20BLINDAJE%20CONSTITUCIONAL%20DE%20%C3%93RGANOS%20AUT%C3%93NOMOS"
         ]
       },
       {
-        "titulo": "Contraloría 4.0 - IA Anticorrupción",
-        "descripcion": "Uso de Inteligencia Artificial y cruces masivos de bases de datos para detectar corrupción en tiempo real.",
+        "titulo": "Contraloría 4.0 - Inteligencia Artificial Anticorrupción [cite: 150]",
+        "descripcion": "Detectar y prevenir corrupción en tiempo real con IA y auditorías automatizadas[cite: 151].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201:%20CONTRALOR%C3%8DA%204.0%20,INTELIGENCIA%20ARTIFICIAL%20ANTICORRUPCI%C3%93N"
         ]
       }
     ],
     "economico": [
       {
-        "titulo": "Hub Logístico del Pacífico Sur",
-        "descripcion": "Articulación del Puerto de Chancay, modernización de aeropuertos y reducción de brecha de infraestructura de transporte.",
+        "titulo": "Perú: País integrado y abierto al mundo [cite: 82]",
+        "descripcion": "Posicionar al Perú como hub logístico del Pacífico Sur mediante infraestructura de transporte[cite: 83].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Reducir%20la%20brecha%20de%20infraestructura%20de%20transporte"
         ]
       },
       {
-        "titulo": "Formalización y Apoyo a MYPES",
-        "descripcion": "Ventanilla única, amnistía tributaria inicial y Régimen Único para MYPE (RUM) para incentivar la formalización.",
+        "titulo": "Perú potencia agroexportadora mundial [cite: 97]",
+        "descripcion": "Duplicar exportaciones agrícolas mediante riego y financiamiento[cite: 98].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Posicionar%20al%20Per%C3%BA%20como%20la%20primera%20potencia%20agroexportadora%20de%20Am%C3%A9rica%20Latina"
         ]
       }
     ],
     "social": [
       {
-        "titulo": "Programa Anemia Cero",
-        "descripcion": "Estrategia nacional de nutrición infantil con personal especializado para diagnóstico y seguimiento en niños de 0 a 5 años.",
+        "titulo": "Anemia Cero [cite: 108]",
+        "descripcion": "Estrategia nacional de nutrición infantil para diagnóstico y seguimiento en niños de 0–5 años[cite: 109].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22ANEMIA%20CERO%22.%20ESTRATEGIA%20NACIONAL%20DE%20NUTRICI%C3%93N%20INFANTIL"
         ]
       },
       {
-        "titulo": "Perú Alimenta",
-        "descripcion": "Garantizar alimentación a hogares en pobreza extrema mediante Comedores Solidarios y la Tarjeta Solidaria.",
+        "titulo": "Igualdad entre Mujeres y Hombres [cite: 122]",
+        "descripcion": "Reducir violencia de género con ampliación de Centros de Emergencia Mujer y cámaras Gesell[cite: 123].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=IGUALDAD%20ENTRE%20MUJERES%20Y%20HOMBRES"
         ]
       }
     ],
     "ambiental": [
       {
-        "titulo": "Perú Preparado ante el Fenómeno del Niño",
-        "descripcion": "Obras de prevención en cuencas críticas y creación de un fondo de emergencia climática.",
+        "titulo": "Agua para Vivir [cite: 134]",
+        "descripcion": "Gestión inteligente del agua para garantizar acceso universal seguro y continuo[cite: 135].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20AGUA%20PARA%20VIVIR,AGUA"
         ]
       },
       {
-        "titulo": "Programa Agua para Vivir",
-        "descripcion": "Gestión inteligente del agua: cero fugas, reforma de EPS, desalinizaciones estratégicas y siembra/cosecha de agua.",
+        "titulo": "Perú con Energías Renovables [cite: 140]",
+        "descripcion": "Meta de ~30% de la matriz energética al 2031 con solar e hidrógeno verde[cite: 141].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20%22PER%C3%9A%20CON%20ENERG%C3%8DAS%20RENOVABLES%22"
         ]
       }
     ],
     "educativo": [
       {
-        "titulo": "Educación Digital Escolar",
-        "descripcion": "Distribución masiva de laptops, conectividad universal y currículo de programación obligatorio en secundaria.",
+        "titulo": "Educación Digital Escolar [cite: 173]",
+        "descripcion": "Laptops masivas, conectividad universal y currículo de programación obligatorio[cite: 174].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20EDUCACI%C3%93N%20DIGITAL%20ESCOLAR"
         ]
       },
       {
-        "titulo": "Oficios del Futuro",
-        "descripcion": "Formación técnica en oficios resistentes a la automatización mediante modelo dual y becas integrales.",
+        "titulo": "Programa Nacional Oficios del Futuro [cite: 177]",
+        "descripcion": "Formar técnicos en oficios resistentes a la automatización para reducir población 'nini'[cite: 178].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf"
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=A%20los%20dos%20tercios%20del%20mandato%20se%20debe%20contar%20con%20servicios%20b%C3%A1sicos%20en%20todos%20los%20centros%20educativos"
         ]
       }
     ],
     "salud": [
       {
-        "titulo": "Salud Digna para Todos",
-        "descripcion": "Articulación de MINSA/EsSalud, fortalecimiento del primer nivel, telemedicina e historia clínica electrónica unificada.",
+        "titulo": "Salud Digna para Todos [cite: 112, 187]",
+        "descripcion": "Sistema universal articulado (MINSA/EsSalud) con historia clínica electrónica unificada[cite: 113, 188].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20SALUD%20DIGNA%20PARA%20TODOS"
         ]
       },
       {
-        "titulo": "PADOMI Universal",
-        "descripcion": "Extensión nacional de la atención domiciliaria para adultos mayores y personas con enfermedades crónicas.",
+        "titulo": "PADOMI Universal [cite: 114, 189]",
+        "descripcion": "Extensión nacional de atención domiciliaria para adultos mayores y crónicos[cite: 115, 190].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%20NACIONAL%20DE%20ATENCI%C3%93N%20DOMICILIARIA%20%28PADOMI%20UNIVERSAL%29"
         ]
       }
     ],
     "seguridad": [
       {
-        "titulo": "Poder Ejecutivo para Comités Locales",
-        "descripcion": "Otorgar presupuesto y capacidad de ejecución a los CODISEC para planes de seguridad distritales.",
+        "titulo": "Poder Ejecutivo para Comités Locales [cite: 197]",
+        "descripcion": "Presupuesto obligatorio y capacidad ejecutiva para CODISEC/CORESEC[cite: 198].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201:%20PODER%20EJECUTIVO%20PARA%20COMIT%C3%89S%20LOCALES"
         ]
       },
       {
-        "titulo": "Evaluación por Resultados",
-        "descripcion": "Ranking público de comités basado en indicadores de reducción de victimización y tiempo de respuesta policial.",
+        "titulo": "Policía al Servicio del Ciudadano [cite: 211]",
+        "descripcion": "Modernización y descentralización con patrullaje focalizado y cercanía comunitaria[cite: 212, 223].",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20POLIC%C3%8DA%20AL%20SERVICIO%20DEL%20CIUDADANO"
         ]
       }
     ]
   },
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
-      "value": "Alto",
+      "value": "Alto [cite: 58-106]",
       "source": [
         "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
       ]
     },
     "diferencias": {
-      "value": "El plan se enfoca en gestión técnica y cierre de brechas, alineado con su discurso de 'no populismo'.",
+      "value": "Su discurso anti-populista se alinea con la diversificación productiva y competitividad del plan[cite: 21, 104].",
       "source": [
         "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
       ]
     },
     "cumplimientoPrevio": {
-      "value": "Su gestión municipal en La Victoria mostró enfoque en ordenamiento, aunque con observaciones administrativas por la Contraloría.",
+      "value": "Reportes de su gestión municipal muestran enfoque en ordenamiento, pero con riesgos financieros y administrativos detectados[cite: 274, 280].",
       "source": [
-        "https://www.gob.pe/institucion/contraloria/noticias/1235430-contraloria-detecta-pago-de-s-1-7-millones-por-asfalto-deficiente-en-la-victoria"
+        "https://sudaca.pe/noticia/informes/la-deuda-que-george-forsyth-dejo-en-la-victoria-y-que-podria-costarle-s6-millones-al-distrito/#:~:text=La%20deuda%20que%20George%20Forsyth%20dejo%20en%20La%20Victoria%20y%20que%20podria%20costarle%20S%2F6%20millones%20al%20distrito"
       ]
     }
   },
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "No registra antecedentes policiales ni penales firmes conocidos.",
+        "titulo": "Candidato en 2021 excluido por omisión de información en su hoja de vida [cite: 258]",
         "estado": null,
-        "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+        "source": [
+          "https://www.infobae.com/america/america-latina/2021/02/11/george-forsyth-el-candidato-que-lideraba-las-encuestas-fue-excluido-de-las-elecciones-presidenciales-en-peru/#:~:text=fue%20excluido%20de%20las%20elecciones%20presidenciales"
+        ]
       }
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Investigación por presunta colusión en gestión como alcalde de La Victoria (contratos a empresas vinculadas).",
+        "titulo": "Investigación preparatoria ampliada hasta 2026 por presunta colusión en La Victoria [cite: 239]",
         "estado": "En curso",
         "source": [
-          "https://canalb.pe/noticias/judiciales/poder-judicial-extiende-investigacion-contra-forsyth-por-presunta-colusion-en-la-victoria"
+          "https://canalb.pe/noticias/judiciales/poder-judicial-extiende-investigacion-contra-forsyth-por-presunta-colusion-en-la-victoria#:~:text=El%20Poder%20Judicial%20resolvi%C3%B3%20ampliar%20hasta%20mayo%20de%202026%20la%20investigaci%C3%B3n%20preparatoria%20contra%20George%20Forsyth"
         ]
       },
       {
-        "titulo": "Investigación preliminar por presuntos contratos favoreciendo a socios/amigos en La Victoria.",
+        "titulo": "Diligencias preliminares por presuntos contratos favoreciendo a socio en La Victoria [cite: 241]",
         "estado": "En curso",
         "source": [
-          "https://peru21.pe/politica/george-forsyth-fiscalia-inicia-investigacion-preliminar-en-su-contra-por-contratos-de-su-amigo-en-la-victoria-nndc-noticia/"
+          "https://peru21.pe/politica/george-forsyth-fiscalia-inicia-investigacion-preliminar-en-su-contra-por-contratos-de-su-amigo-en-la-victoria-nndc-noticia/#:~:text=La%20Primera%20,la%20victoria"
         ]
       },
       {
-        "titulo": "Denuncia por violencia familiar presentada por Vanessa Terkes.",
+        "titulo": "Denuncia de violencia familiar de Vanessa Terkes declarada 'infundada' [cite: 244]",
         "estado": "Archivado",
         "source": [
-          "https://peru21.pe/espectaculos/george-forsyth-revela-denuncia-vanessa-terkes-declarada-infundada-nndc-496568-noticia/"
+          "https://peru21.pe/espectaculos/george-forsyth-revela-denuncia-vanessa-terkes-declarada-infundada-nndc-496568-noticia/#:~:text=la%20denuncia%20por%20violencia%20familiar%20que%20interpuso%20Vanessa%20Terkes%20en%20su%20contra%20ante%20el%20Poder%20Judicial%20fue%20declarada%20%22infundada%22"
         ]
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Declaración: 'No queremos un gobierno populista que esté de espaldas a la población'.",
+        "titulo": "Alegaciones públicas de maltrato y frases insultantes ('eres una porquería') [cite: 250, 260]",
         "source": [
-          "https://www.infobae.com/america/america-latina/2021/04/03/george-forsyth-el-ex-futbolista-que-quiere-ser-presidente-del-peru-no-queremos-un-gobierno-populista-que-este-de-espaldas-a-la-poblacion/"
-        ]
-      },
-      {
-        "titulo": "Relatos de frases insultantes difundidos por su expareja en medios de comunicación.",
-        "source": [
-          "https://peru21.pe/espectaculos/local/vanessa-terkes-llora-revela-infierno-george-forsyth-me-dijo-vales-porqueria-483464-noticia/"
+          "https://peru21.pe/espectaculos/local/vanessa-terkes-llora-revela-infierno-george-forsyth-me-dijo-vales-porqueria-483464-noticia/#:~:text=Vanessa%20Terkes%20llora%20y%20revela%20'infierno'%20que%20vivi%C3%B3%20con%20Forsyth:%20%22Me%20dijo:%20'no%20vales%20nada,%20eres%20una%20porquer%C3%ADa'%22"
         ]
       }
     ],
     "observaciones": [
       {
-        "titulo": "Uso de uniforme militar en acto oficial (posible vulneración de la ley).",
+        "titulo": "Aparición con uniforme militar en acto oficial (posible vulneración legal) [cite: 254, 262]",
         "source": [
-          "https://peru21.pe/politica/george-forsyth-habria-vulnerado-la-ley-al-utilizar-uniforme-militar/"
+          "https://caretas.pe/politica/revelan-aparicion-de-george-forsyth-con-uniforme-militar-frente-al-presidente-jose-jeri/#:~:text=El%20precandidato%20presidencial%20de%20Somos%20Per%C3%BA%20asisti%C3%B3%20uniformado%20a%20la%20ceremonia"
         ]
       },
       {
-        "titulo": "Reporte de deuda coactiva y suspensión temporal de empresas vinculadas (Los M S.A.C.).",
+        "titulo": "Reporte de deuda coactiva de Los M S.A.C. ante centrales de riesgo [cite: 265, 267]",
         "source": [
-          "https://elcomercio.pe/elecciones-2021/george-forsyth-jee-lo-excluye-de-las-elecciones-2021-por-omitir-informacion-en-su-hoja-de-vida-victoria-nacional-nndc-noticia"
+          "https://elcomercio.pe/elecciones-2021/george-forsyth-jee-lo-excluye-de-las-elecciones-2021-por-omitir-informacion-en-su-hoja-de-vida-victoria-nacional-nndc-noticia#:~:text=segun%20la%20resolucion,hoja%20de%20vida"
         ]
       },
       {
-        "titulo": "Informe de Contraloría por pago de S/1.7 millones por asfalto deficiente en La Victoria.",
+        "titulo": "Contraloría detecta pago de S/1.7 millones por asfalto deficiente en La Victoria [cite: 275, 276]",
         "source": [
-          "https://www.gob.pe/institucion/contraloria/noticias/1235430-contraloria-detecta-pago-de-s-1-7-millones-por-asfalto-deficiente-en-la-victoria"
-        ]
-      },
-      {
-        "titulo": "Deuda y arbitraje por servicio de recolección de basura en La Victoria.",
-        "source": [
-          "https://sudaca.pe/noticia/informes/la-deuda-que-george-forsyth-dejo-en-la-victoria-y-que-podria-costarle-s6-millones-al-distrito/"
+          "https://www.gob.pe/institucion/contraloria/noticias/1235430-contraloria-detecta-pago-de-s-1-7-millones-por-asfalto-deficiente-en-la-victoria#:~:text=La%20Contralor%C3%ADa%20General%20revel%C3%B3%20que%20la%20Municipalidad%20Distrital,pavimentos%20urbanos"
         ]
       }
     ]
   },
   "transparencia": {
     "items": [
-      "Declaración de no tener ingresos ante el JNE (2022)",
-      "Omisión de información en hoja de vida (2021) resultó en exclusión temporal",
-      "Reporte de empresas en suspensión temporal ante SUNAT"
+      "Informe del JEE N° 030-2021 sobre deudas coactivas [cite: 267]",
+      "Reporte de exclusión por omisión de información en Hoja de Vida [cite: 258]",
+      "Portal de transparencia con indicadores propuesto en plan [cite: 209]"
     ],
     "source": [
-      "https://larepublica.pe/politica/elecciones/2022/08/18/elecciones-2022-george-forsyth-declaro-no-tener-ingresos-rafael-lopez-aliaga-jne-pacto-etico-electoral",
-      "https://www.infobae.com/america/america-latina/2021/02/11/george-forsyth-el-candidato-que-lideraba-las-encuestas-fue-excluido-de-las-elecciones-presidenciales-en-peru/"
+      "https://elcomercio.pe/elecciones-2021/george-forsyth-jee-lo-excluye-de-las-elecciones-2021-por-omitir-informacion-en-su-hoja-de-vida-victoria-nacional-nndc-noticia#:~:text=segun%20la%20resolucion,hoja%20de%20vida"
     ]
   },
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Medio - Experiencia ejecutiva como alcalde y capitán de caballería, pero con cuestionamientos administrativos.",
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+      "value": "Medio - Gestión en La Victoria y formación militar de reserva[cite: 44, 53].",
+      "source": [
+        "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/"
+      ]
     },
     "comunicacion": {
-      "value": "Alto - Amplia presencia mediática y manejo de redes sociales.",
+      "value": "Alto - Amplia presencia en redes sociales y medios [cite: 13-18].",
       "source": ["https://web.facebook.com/GeorgeForsythSP/"]
     },
     "credibilidad": {
-      "value": "Medio - Afectada por investigaciones fiscales en curso y controversias personales pasadas.",
+      "value": "Bajo/Medio - Afectada por investigaciones fiscales en curso y controversias personales[cite: 239, 251].",
       "source": [
-        "https://canalb.pe/noticias/judiciales/poder-judicial-extiende-investigacion-contra-forsyth-por-presunta-colusion-en-la-victoria"
+        "https://canalb.pe/noticias/judiciales/poder-judicial-extiende-investigacion-contra-forsyth-por-presunta-colusion-en-la-victoria#:~:text=El%20Poder%20Judicial%20resolvi%C3%B3%20ampliar%20hasta%20mayo%20de%202026%20la%20investigaci%C3%B3n%20preparatoria%20contra%20George%20Forsyth"
       ]
     }
   },
@@ -423,23 +407,22 @@
     "intencionVoto": {
       "min": 0,
       "max": 12,
-      "descripcion": "Ipsos (Diciembre 2025): Agrupado en la categoría 'Otros' que suma 12% en conjunto.",
+      "descripcion": "Encuesta Ipsos 18-19 dic 2025; Forsyth está agrupado en el 12% de 'Otros' [cite: 31-35].",
       "source": [
-        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf"
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf#:~:text=George%20Forsyth%20por%20Somos%20Per%C3%BA"
       ]
     },
     "aprobacion": { "value": null, "source": [] },
     "redes": {
-      "value": "Fuerte presencia en Facebook, Instagram y X; canal de YouTube activo para campaña.",
-      "source": ["https://www.instagram.com/george.forsyth/"]
+      "value": "Presencia activa en Facebook, Instagram, X y YouTube [cite: 14-17].",
+      "source": ["https://x.com/George_Forsyth"]
     }
   },
   "innovacionYVision": {
     "items": [
-      "Implementación de Blockchain para trazabilidad de recursos públicos",
-      "Uso de IA para auditorías automatizadas en la Contraloría",
-      "Enfoque en 'Oficios del Futuro' para combatir el desempleo juvenil 'nini'",
-      "Propuesta de Hub Logístico aprovechando el Puerto de Chancay"
+      "Plataforma nacional de integridad con blockchain [cite: 154]",
+      "Inteligencia Artificial para detección de corrupción en tiempo real [cite: 151]",
+      "Uso de IA para procesamiento de datos criminalísticos en mapas del delito [cite: 217]"
     ],
     "source": [
       "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
@@ -458,7 +441,7 @@
       "otros": 0
     },
     "projects": [],
-    "nota": "No tiene historial legislativo; su experiencia es en el sector ejecutivo y municipal.",
+    "nota": "No tiene historial legislativo [cite: 41-44].",
     "source": null
   }
 }

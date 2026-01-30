@@ -3,7 +3,7 @@
   "slug": "keiko-sofia-fujimori-higuchi",
   "fullName": "Keiko Sofía Fujimori Higuchi",
   "shortName": "Keiko Fujimori",
-  "image": "/candidatos/keiko-fujimori.webp",
+  "image": "/candidates/keiko-sofia-fujimori-higuchi.png",
   "color": "#FF8500",
   "party": "Partido Político Fuerza Popular",
   "partyIcon": "/partidos/fuerza-popular.png",
@@ -16,77 +16,84 @@
   },
   "perfilGeneral": {
     "edad": {
-      "value": null,
+      "value": "-",
       "source": []
     },
     "nacimiento": {
-      "value": null,
+      "value": "-",
       "source": []
     },
     "lugar": {
-      "value": null,
+      "value": "-",
       "source": []
     },
     "nivelEducativo": {
       "value": [
-        "Bachiller en Administración de empresas - BOSTON UNIVERSITY (1997)",
+        "Bachiller en Administración de empresas - BOSTON UNIVERSITY (1977)",
         "Máster en Administración de Negocios - Universidad de Columbia (2008)"
       ],
       "source": [
         "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-        "https://rpp.pe/politica/elecciones/que-estudio-keiko-fujimori-en-estados-unidos-noticia-961018",
-        "https://larepublica.pe/verificador/2022/05/14/no-no-es-cierto-que-keiko-fujimori-no-tiene-profesion-alguna-en-estados-unidos"
+        "https://rpp.pe/politica/elecciones/que-estudio-keiko-fujimori-en-estados-unidos-noticia-961018#:~:text=entre%20julio%201995%20y%20mayo%201997%2C%20contin%C3%BAa%20la%20carrera%20de%20Administraci%C3%B3n%20de%20Empresas%2C%20pero%20esta%20vez%20en%20la%20Universidad%20de%20Boston",
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://larepublica.pe/verificador/2022/05/14/no-no-es-cierto-que-keiko-fujimori-no-tiene-profesion-alguna-en-estados-unidos#:~:text=bachiller%20en%20Administraci%C3%B3n%20de%20Empresas%20por%20la%20Universidad%20de%20Boston%20y%2C%20adem%C3%A1s%2C%20obtuvo%20un%20MBA%20(M%C3%A1ster%20en%20Administraci%C3%B3n%20de%20Negocios)%20en%20la%20Universidad%20de%20Columbia.",
+        "https://rpp.pe/politica/judiciales/keiko-fujimori-la-trayectoria-de-la-lideresa-de-fuerza-popular-fotos-noticia-1160411#:~:text=Durante%20el%20mandato%20de%20su%20padre%2C%20viaj%C3%B3%20a%20Nueva%20York%20para%20estudiar%20en%20la%20Stony%20Brook%20University%2C%20asimismo%20se%20licenci%C3%B3%20de%20Administraci%C3%B3n%20de%20Negocios%20en%20la%20Universidad%20de%20Boston%20en%201997%2C%20para%20finalmente%20culminar%20una%20Maestr%C3%ADa%20en%20Administraci%C3%B3n%20de%20Empresas%20en%20la%20Universidad%20de%20Columbia."
       ]
     },
     "profesion": {
-      "value": ["Administradora de Empresas"],
+      "value": [
+        "Administración de Empresas",
+        "Máster en Administración de Negocios"
+      ],
       "source": [
-        "https://rpp.pe/politica/elecciones/que-estudio-keiko-fujimori-en-estados-unidos-noticia-961018"
+        "https://rpp.pe/politica/elecciones/que-estudio-keiko-fujimori-en-estados-unidos-noticia-961018#:~:text=entre%20julio%201995%20y%20mayo%201997%2C%20contin%C3%BAa%20la%20carrera%20de%20Administraci%C3%B3n%20de%20Empresas%2C%20pero%20esta%20vez%20en%20la%20Universidad%20de%20Boston"
       ]
     },
     "partidoActual": {
-      "value": "Fuerza Popular",
+      "value": "Partido Político Fuerza Popular",
       "source": [
-        "https://www.infobae.com/peru/2025/12/08/fuerza-popular-oficializa-a-keiko-fujimori-como-candidata-presidencial-para-el-2026/"
+        "https://www.infobae.com/peru/2025/12/08/fuerza-popular-oficializa-a-keiko-fujimori-como-candidata-presidencial-para-el-2026/#:~:text=Fuerza%20Popular%20eligi%C3%B3%20oficialmente%20a%20Keiko%20Fujimori%20como%20su%20aspirante%20principal%20para%20disputar%20la%20Presidencia%20en%20las%20elecciones%20de%202026"
       ]
     },
     "cambiosDePartido": {
-      "value": "1",
-      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+      "value": "-",
+      "source": []
     },
     "historialPartidos": [
       {
         "ano": "2006",
         "partido": "Alianza por el Futuro",
-        "icono": "/partidos/alianza-por-el-futuro.png",
+        "icono": "/partidos/icono.png",
         "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
       },
       {
         "ano": "2010",
-        "partido": "Fuerza Popular",
+        "partido": "Partido Político Fuerza Popular",
         "icono": "/partidos/fuerza-popular.png",
         "source": [
-          "https://rpp.pe/politica/gobierno/la-historia-de-las-primeras-damas-del-peru-en-el-siglo-xxi-noticia-1064156"
+          "https://rpp.pe/politica/gobierno/la-historia-de-las-primeras-damas-del-peru-en-el-siglo-xxi-noticia-1064156#:~:text=En%20el%202010%20fund%C3%B3%20Fuerza%20Popular"
         ]
       }
     ]
   },
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "30",
+      "value": "Más de 30 años",
       "source": [
-        "https://rpp.pe/politica/gobierno/la-historia-de-las-primeras-damas-del-peru-en-el-siglo-xxi-noticia-1064156"
+        "https://rpp.pe/politica/gobierno/la-historia-de-las-primeras-damas-del-peru-en-el-siglo-xxi-noticia-1064156#:~:text=Keiko%20Fujimori%20(1994%2D2000)"
       ]
     },
     "cargosPrevios": {
       "values": [
-        "Primera Dama del Perú (1994-2000)",
+        "Ex primera dama del Perú (1994-2000)",
         "Congresista de la República (2006-2011)",
+        "Fundadora de Fuerza Popular (2010)",
         "Presidenta de Fuerza Popular (2010-2024)"
       ],
       "source": [
-        "https://rpp.pe/politica/gobierno/la-historia-de-las-primeras-damas-del-peru-en-el-siglo-xxi-noticia-1064156",
-        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+        "https://rpp.pe/politica/gobierno/la-historia-de-las-primeras-damas-del-peru-en-el-siglo-xxi-noticia-1064156#:~:text=Keiko%20Fujimori%20(1994%2D2000)",
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://rpp.pe/politica/gobierno/la-historia-de-las-primeras-damas-del-peru-en-el-siglo-xxi-noticia-1064156#:~:text=fue%20congresista%20entre%202006%20y%202011"
       ]
     },
     "candidaturasPresidenciales": {
@@ -94,12 +101,13 @@
         "2011 → Perdió frente a Ollanta Humala",
         "2016 → Perdió en segunda vuelta contra Kuczynski",
         "2021 → Perdió en segunda vuelta contra Castillo",
-        "2026 → Candidata oficializada"
+        "2024-Actualidad → Postula a la presidencia"
       ],
       "source": [
-        "https://www.americatv.com.pe/noticias/actualidad/keiko-fujimori-perfil-trayectoria-y-cuestionamientos-candidata-n217084",
-        "https://cnnespanol.cnn.com/2024/09/11/fujimori-peru-influencia-familia-orix",
-        "https://www.infobae.com/peru/2025/11/30/keiko-fujimori-oficializa-su-candidatura-2026-es-una-oportunidad-de-cambio/"
+        "https://www.americatv.com.pe/noticias/actualidad/keiko-fujimori-perfil-trayectoria-y-cuestionamientos-candidata-n217084#:~:text=en%20el%C2%A02011%20postul%C3%B3%20a%20la%20presidencia%20donde%20perdi%C3%B3%20las%20elecciones%20frente%20a%20su%20oponente%20Ollanta%20Humala%2C",
+        "https://cnnespanol.cnn.com/2024/09/11/fujimori-peru-influencia-familia-orix#:~:text=En%20el%20a%C3%B1o-,2016,-%2C%20Keiko%20Fujimori%20lleg%C3%B3",
+        "https://www.infobae.com/peru/2025/03/11/ganamos-pero-nos-robaron-los-votos-4-anos-despues-keiko-fujimori-aun-insiste-que-pedro-castillo-cometio-fraude/#:~:text=su%20derrota%20en%20los%20comicios%20de%202021",
+        "https://lpderecho.pe/keiko-fujimori-elecciones-2026/#:~:text=Keiko%20Fujimori%20oficializ%C3%B3%20en%20Trujillo%20su%20candidatura%20presidencial%20para%20las%20elecciones%20de%202026%2C"
       ]
     }
   },
@@ -108,11 +116,12 @@
       "cantidad": 2,
       "detalle": {
         "values": [
-          "Primera Dama de la Nación (1994-2000)",
+          "Ex primera dama del Perú (1994-2000)",
           "Congresista de la República (2006-2011)"
         ],
         "source": [
-          "https://rpp.pe/politica/gobierno/la-historia-de-las-primeras-damas-del-peru-en-el-siglo-xxi-noticia-1064156"
+          "https://rpp.pe/politica/gobierno/la-historia-de-las-primeras-damas-del-peru-en-el-siglo-xxi-noticia-1064156#:~:text=Keiko%20Fujimori%20(1994%2D2000)",
+          "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
         ]
       }
     },
@@ -120,13 +129,14 @@
       "cantidad": 3,
       "detalle": {
         "values": [
-          "Gestión de fondos en GM Asset Management (Nueva York)",
-          "Docente invitada en Adam Smith Center - FIU",
-          "Colaboradora estratégica en Editorial de Sachi Fujimori"
+          "GM Asset Management (Gestión de fondos de pensiones en Nueva York)",
+          "Adam Smith Center de la Florida International University (Docente invitada)",
+          "Editorial que dirige su hermana Sachi (Colaboradora estratégica)"
         ],
         "source": [
-          "https://fpp.org.pe/keiko-fujimori-afirma-que-si-trabaja-y-niega-vivir-solo-de-la-politica/",
-          "https://www.infobae.com/peru/2025/10/30/keiko-fujimori-afirma-que-si-trabaja-expone-cargos-como-docente-universitaria-y-encargada-en-editorial-de-libros/"
+          "https://fpp.org.pe/keiko-fujimori-afirma-que-si-trabaja-y-niega-vivir-solo-de-la-politica/#:~:text=trabaj%C3%B3%20en%20GM%20Asset%20Management%2C%20una%20firma%20de%20gesti%C3%B3n%20de%20fondos%20de%20pensiones%20en%20Nueva%20York",
+          "https://www.infobae.com/peru/2025/10/30/keiko-fujimori-afirma-que-si-trabaja-expone-cargos-como-docente-universitaria-y-encargada-en-editorial-de-libros/#:~:text=docente%20invitada%20en%20el%20Adam%20Smith%20Center%20de%20la%20Florida%20International%20University%2C%20donde%20imparte%20clases%20y%20conferencias%20junto%20a%20figuras%20como%20el%20expresidente%20colombiano%20%C3%81lvaro%20Uribe",
+          "https://www.infobae.com/peru/2025/10/30/keiko-fujimori-afirma-que-si-trabaja-expone-cargos-como-docente-universitaria-y-encargada-en-editorial-de-libros/#:~:text=participa%20en%20una%20editorial%20que%20dirige%20su%20hermana%20Sachi%2C%20en%20la%20cual%20colabora%20en%20tareas%20de%20estrategia%20de%20ventas%20y%20difusi%C3%B3n%20de%20libros"
         ]
       }
     },
@@ -135,178 +145,181 @@
   "ideologiaPolitica": {
     "posicion": {
       "value": "Derecha",
+      "descripcion": "El partido Fuerza Popular se posiciona en la derecha política al priorizar el \"crecimiento económico\" mediante una \"menor intervención estatal\", cumpliendo con la definición conceptual del politólogo Arturo Maldonado. Esta identidad se reafirma con la autonomía de su propuesta electoral y un discurso de gestión basado en la \"cabeza fría\", lo que sugiere un enfoque en la eficiencia administrativa y el libre mercado.",
       "source": [
-        "https://www.eltiempo.com/mundo/latinoamerica/quien-es-keiko-fujimori-candidata-presidencial-en-peru-2021-593872",
-        "https://elcomercio.pe/politica/derecha-izquierda-son-ubicados-martin-vizcarra-keiko-fujimori-noticia-ecpm-677808-noticia/"
+        "https://www.eltiempo.com/mundo/latinoamerica/quien-es-keiko-fujimori-candidata-presidencial-en-peru-2021-593872#:~:text=La%20candidata%20derechista%20del%20partido%20Fuerza%20Popular%2C%20el%20cual%20lidera%20desde%202010%2C",
+        "https://panamericana.pe/politica/440274-alianzas-izquierda-derecha-centro-empiezan-perfilarse-2026#:~:text=derecha%20y%20entre%20los%20partidos%20tradicionales%2C%20se%20mantiene%20la%20preferencia%20por%20postularse%20de%20forma%20independiente.%20Fuerza",
+        "https://elcomercio.pe/politica/derecha-izquierda-son-ubicados-martin-vizcarra-keiko-fujimori-noticia-ecpm-677808-noticia/#:~:text=El%20polit%C3%B3logo%20Arturo,el%20crecimiento%20econ%C3%B3mico",
+        "https://icndiario.com/2025/10/keiko-fujimori-anuncia-su-precandidatura-presidencial-para-las-elecciones-de-peru-2026-con-discurso-de-orden-y-seguridad/#:~:text=%E2%80%9CSi%20el%20pueblo%20peruano%20me%20da%20esta%20confianza%2C%20gobernar%C3%A9%20como%20gobiernan%20las%20mujeres%20y%20las%20madres%20en%20sus%20casas%3A%20con%20cabeza%20fr%C3%ADa%2C%20con%20el%20coraz%C3%B3n%20grande%20y%20con%20las%20manos%20limpias%E2%80%9D%2C%20manifest%C3%B3."
       ]
     },
     "economia": {
-      "value": "Defensa de una economía capitalista popular, libre mercado y la inversión privada responsable con menor intervención estatal.",
+      "value": "Defensa de una economía capitalista popular y la inversión privada responsable. Propone un modelo de libre mercado que proteja a sectores vulnerables (Mypes, agro) mediante la redistribución de la riqueza.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Capitalismo="
       ]
     },
     "matrimonioIgualitario": {
-      "value": "En contra (defensa de la familia tradicional)",
+      "value": "Sin posición explícita (Protege la estructura de la familia tradicional)",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Protegemos%20decididamente%20el%20derecho%20a%20la%20vida%20desde%20su%20concepci%C3%B3n="
       ]
     },
     "aborto": {
-      "value": "En contra (defensa del derecho a la vida desde la concepción)",
+      "value": "En contra (Protege el derecho a la vida desde la concepción)",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Protegemos%20decididamente%20el%20derecho%20a%20la%20vida%20desde%20su%20concepci%C3%B3n="
       ]
     },
     "seguridad": {
-      "value": "Restablecimiento del orden público, respaldo total a las fuerzas armadas y policiales para combatir el crimen y terrorismo.",
+      "value": "Restablecimiento del orden público y respaldo total a las instituciones armadas y policiales contra el crimen y terrorismo.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Homenaje%20y%20apoyo%20a%20la%20Polic%C3%ADa%20Nacional%20y%20Fuerzas%20Armadas="
       ]
     },
     "ambiente": {
-      "value": "Desarrollo sostenible equilibrando la inversión económica con el cuidado de la naturaleza y respeto a comunidades nativas.",
+      "value": "Desarrollo sostenible en convivencia entre la inversión económica y el cuidado de la naturaleza.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=El%20Per%C3%BA%20es%20un%20pa%C3%ADs%20megadiverso,%20cuyo%20futuro%20es%20sostenible="
       ]
     },
     "educacion": {
-      "value": "Libertad de los padres para elegir la educación de sus hijos; enfoque en calidad, ciencia y tecnología.",
+      "value": "Libertad de los padres para educar; enfoque en calidad, ciencia y tecnología como motor de movilidad social.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Los%20padres,hijos"
       ]
     },
     "reformaPolitica": {
-      "value": "Fortalecimiento de partidos políticos, independencia de poderes y consolidación de la institucionalidad democrática.",
+      "value": "Fortalecer los partidos políticos y la independencia de poderes para garantizar gobernabilidad.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Los%20partidos%20pol%C3%ADticos%20son%20la%20base%20de%20la%20democracia="
       ]
     }
   },
   "propuestasPrincipales": {
     "institucional": [
       {
-        "titulo": "Fortalecimiento de la Independencia de Poderes",
-        "descripcion": "Busca la consolidación de la institucionalidad democrática y la seguridad jurídica para garantizar la gobernabilidad.",
+        "titulo": "Fortalecer la independencia de poderes",
+        "descripcion": "Busca la consolidación de la institucionalidad democrática, la transparencia y la seguridad jurídica.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Los%20partidos%20pol%C3%ADticos%20son%20la%20base%20de%20la%20democracia="
         ]
       }
     ],
     "economico": [
       {
         "titulo": "Estabilidad Macroeconómica",
-        "descripcion": "Fortalecimiento de la disciplina fiscal, autonomía del BCRP y reducción del déficit fiscal al 1% del PBI para 2031.",
+        "descripcion": "Independencia del BCRP, respeto a contratos y reducción del déficit fiscal al 1% del PBI para 2031.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Aseguramiento%20de%20la%20independencia%20del%20BCRP%20y%20el%20respeto%20a%20los%20contratos.%20%E2%80%A2%20Sostenimiento%20del%20d%C3%A9ficit%20fiscal%20del%201%%20del%20PBI%20en%202031.="
         ]
       },
       {
         "titulo": "Estrategia Cero Colas",
-        "descripcion": "Modernización digital del 100% de trámites de alta demanda para eliminar colas físicas en dos años.",
+        "descripcion": "Modernización del Estado mediante atención 100% digital en trámites de alta demanda.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=estrategia%20nacional%20%E2%80%9CCero%20Colas%E2%80%9D="
         ]
       },
       {
-        "titulo": "Ventanilla Única con IA",
-        "descripcion": "Plataforma digital potenciada por IA para realizar el 80% de trámites empresariales en línea.",
+        "titulo": "Shock Desregulatorio",
+        "descripcion": "Eliminar más de 500 trámites innecesarios y reducir en 40% el tiempo de aprobación de proyectos de inversión.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=para%20reducir%20en%20al%20menos%2040%20%%20el%20tiempo%20promedio%20de%20tramitaci%C3%B3n%20de%20proyectos%20de%20inversi%C3%B3n="
         ]
       }
     ],
     "social": [
       {
-        "titulo": "Salud Infantil y Lucha contra la Anemia",
-        "descripcion": "Presupuesto específico para suplementos y garantía de cadena de frío para vacunas.",
+        "titulo": "Salud Infantil y Nutrición",
+        "descripcion": "Garantizar cadena de frío para vacunas y presupuesto específico para lucha contra la anemia.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Fortalecimiento%20de%20la%20implementaci%C3%B3n%20del%20Plan%20Multisectorial%20de%20Lucha="
         ]
       },
       {
-        "titulo": "Centros COOL para Salud Mental",
-        "descripcion": "Creación de centros de acompañamiento emocional y líneas de atención psicológica 24/7 para jóvenes.",
+        "titulo": "Salud Mental Juvenil",
+        "descripcion": "Creación de centros 'COOL' y líneas de atención psicológica 24/7.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Creaci%C3%B3n%20de%20%E2%80%9CCentros%20de%20Oportunidades%20y%20Orientaci%C3%B3n%20Local="
         ]
       },
       {
         "titulo": "Amigos con Huella",
         "descripcion": "Sistema nacional de identificación de mascotas con microchip y red de albergues.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Implementaci%C3%B3n%20del%20programa%20nacional%20%E2%80%9CAmigos%20con%20Huella%20%E2%80%93%20Sistema%20Nacional%20de%20Tenencia%20Responsable%20de%20Mascotas%E2%80%9D="
         ]
       }
     ],
     "ambiental": [
       {
-        "titulo": "Cero Deforestación Ilegal",
-        "descripcion": "Uso de vigilancia satelital y drones, endurecimiento de penas por tala ilegal y creación del Fondo Verde Amazónico.",
+        "titulo": "Amazonía y Cero Deforestación",
+        "descripcion": "Vigilancia satelital, drones y creación de un 'Fondo Verde Amazónico'.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Amazon%C3%ADa,%20biodiversidad%20y%20lucha%20contra%20la%20deforestaci%C3%B3n="
         ]
       },
       {
         "titulo": "Economía Circular",
-        "descripcion": "Eliminación de botaderos abiertos y creación de plantas de valorización energética mediante APPs.",
+        "descripcion": "Eliminación de botaderos y creación de plantas de valorización energética.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Econom%C3%ADa%20circular%20y%20gesti%C3%B3n%20moderna%20de%20residuos="
         ]
       }
     ],
     "educativo": [
       {
-        "titulo": "Infraestructura y Conectividad",
+        "titulo": "Infraestructura Educativa",
         "descripcion": "Construcción de 3,000 colegios y entrega de 6 millones de dispositivos con internet satelital.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Construcci%C3%B3n%20de%203,000%20colegios%20durante%20el%20periodo%20de%20gesti%C3%B3n.="
         ]
       },
       {
         "titulo": "Rumbo Técnico Joven",
-        "descripcion": "Certificación técnica en secundaria para rápida inserción laboral y duplicación de becas de PRONABEC.",
+        "descripcion": "Certificación técnica en secundaria y duplicación de becas universitarias.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Rumbo%20T%C3%A9cnico%20Joven%E2%80%9D="
         ]
       }
     ],
     "salud": [
       {
-        "titulo": "Reactivación del Modelo CLAS",
-        "descripcion": "Fortalecimiento de la gestión comunitaria de centros de salud con financiamiento sostenible.",
+        "titulo": "Historia Clínica Electrónica",
+        "descripcion": "Integrar el 80% de los sistemas de salud (MINSA, EsSalud) vinculados al DNI.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Integrar%20el%2080%%20del%20sistema%20de%20salud="
         ]
       },
       {
-        "titulo": "Historia Clínica Electrónica Universal",
-        "descripcion": "Integración del 80% de sistemas de salud (MINSA, EsSalud, Sanidades) vinculados al DNI.",
+        "titulo": "Modelo CLAS",
+        "descripcion": "Reactivación y fortalecimiento de las Comunidades Locales de Administración de Salud.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Reactivaci%C3%B3n%20y%20fortalecimiento%20del%20modelo%20CLAS="
         ]
       }
     ],
     "seguridad": [
       {
         "titulo": "Perú con Orden",
-        "descripcion": "Uso de tecnología predictiva, drones y cámaras con reconocimiento facial para patrullaje.",
+        "descripcion": "Plataforma de tecnología predictiva, drones y reconocimiento facial.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Incremento%20del%20patrullaje%20motorizado%20y%20a%C3%A9reo%20(drones)%20con%20tecnolog%C3%ADa%20GPS%20y%20c%C3%A1maras%20de%20reconocimiento%20facial"
         ]
       },
       {
-        "titulo": "Mega Penales de Máxima Seguridad",
-        "descripcion": "Construcción de 4 mega penales con bloqueo total de señal celular y administración temporal de FF.AA.",
+        "titulo": "Mega Penales",
+        "descripcion": "Construcción de 4 mega penales de máxima seguridad con bloqueo de señal celular.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Construcci%C3%B3n%20de%20four%20(4)%20mega%20penales%20de%20m%C3%A1xima%20seguridad="
         ]
       },
       {
-        "titulo": "Unidades de Flagrancia Express",
-        "descripcion": "Procesos judiciales inmediatos para delitos de sicariato y extorsión.",
+        "titulo": "Unidades de Flagrancia",
+        "descripcion": "Procesos inmediatos y sentencias rápidas contra sicariato y extorsión.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Creaci%C3%B3n%20de%20nuevas%20Unidades%20de%20Flagrancia%20Expres="
         ]
       }
     ]
@@ -319,73 +332,73 @@
       ]
     },
     "diferencias": {
-      "value": null,
+      "value": "-",
       "source": []
     },
     "cumplimientoPrevio": {
-      "value": null,
+      "value": "-",
       "source": []
     }
   },
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "Investigación por Caso Cócteles iniciada en 2014",
+        "titulo": "Caso Cócteles - Investigación por aportes de campaña",
         "estado": "En proceso de anulación",
         "source": [
-          "https://larepublica.pe/politica/2024/06/27/juicio-a-keiko-fujimori-antecedentes-cronologia-y-en-que-consiste-el-caso-cocteles-1821690"
+          "https://www.infobae.com/peru/2024/07/02/juicio-a-keiko-fujimori-estos-son-los-delitos-de-los-que-se-le-acusa-y-los-anos-de-carcel-que-ha-pedido-la-fiscalia/#:~:text=investigaci%C3%B3n%20que%20inici%C3%B3%20en%20el%202014%20y%20se%20formaliz%C3%B3%20en%20el%202019"
         ]
       }
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Caso Cócteles - Presunto uso de eventos y falsos aportantes para ocultar dinero ilícito (2011 y 2016)",
+        "titulo": "Caso Cócteles - Presunto uso de eventos para ocultar dinero ilícito",
         "estado": "En curso",
         "source": [
-          "https://www.infobae.com/peru/2024/07/02/juicio-a-keiko-fujimori-estos-son-los-delitos-de-los-que-se-le-acusa-y-los-anos-de-carcel-que-ha-pedido-la-fiscalia/"
+          "https://larepublica.pe/politica/2024/06/27/juicio-a-keiko-fujimori-antecedentes-cronologia-y-en-que-consiste-el-caso-cocteles-1821690#:~:text=Cronolog%C3%ADa%20del%20caso%20C%C3%B3cteles"
         ]
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Crítica a Gustavo Petro ('Con Perú no te metas') calificándolo de 'guerrillero'",
+        "titulo": "Crítica a Gustavo Petro ('Con el Perú no te metas')",
         "source": [
-          "https://caretas.pe/home_web/home_principal/con-el-peru-no-te-metas-keiko-fujimori-responde-con-dureza-a-gustavo-petro-por-disputa-territorial-sobre-la-isla-santa-rosa/"
+          "https://caretas.pe/home_web/home_principal/con-el-peru-no-te-metas-keiko-fujimori-responde-con-dureza-a-gustavo-petro-por-disputa-territorial-sobre-la-isla-santa-rosa/#:~:text=En%20medio%20de%20una,la%20isla%20Santa%20Rosa"
         ]
       },
       {
-        "titulo": "Comentario sobre la película Chavín de Huántar: 'Qué pena que se hayan olvidado de mi padre'",
+        "titulo": "Comentario sobre película Chavín de Huántar respecto a su padre",
         "source": [
-          "https://cosas.pe/actualidad/355633/keiko-fujimori-tras-ver-pelicula-chavin-de-huantar-que-pena-que-se-hayan-olvidado-de-mi-padre/"
+          "https://cosas.pe/actualidad/355633/keiko-fujimori-tras-ver-pelicula-chavin-de-huantar-que-pena-que-se-hayan-olvidado-de-mi-padre/#:~:text=Sin%20embargo,Chavin%20de%20Huantar."
         ]
       }
     ],
     "observaciones": [
       {
-        "titulo": "Uso de cámara del Congreso para registrar evento partidario en Trujillo (2025)",
+        "titulo": "Uso irregular de cámara del Congreso en evento partidario",
         "source": [
-          "https://elpopular.pe/actualidad/2025/11/02/escandalo-en-fuerza-popular-equipo-del-congreso-grabo-acto-politico-de-keiko-fujimori-en-trujillo-149934"
+          "https://elpopular.pe/actualidad/2025/11/02/escandalo-en-fuerza-popular-equipo-del-congreso-grabo-acto-politico-de-keiko-fujimori-en-trujillo-149934#:~:text=El%20pasado,el%20evento%20partidario"
         ]
       }
     ]
   },
   "transparencia": {
-    "items": [],
+    "items": ["No se encontraron observaciones administrativas"],
     "source": []
   },
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Alto - Lideresa del partido Fuerza Popular desde su fundación en 2010.",
+      "value": "Alto - Líder de Fuerza Popular desde 2010",
       "source": [
-        "https://www.semana.com/mundo/articulo/la-historia-de-keiko-fujimori-la-hija-bendita/202102/"
+        "https://www.semana.com/mundo/articulo/la-historia-de-keiko-fujimori-la-hija-bendita/202102/#:~:text=Por%20esta%20raz%C3%B3n%2C%20desde%202010%2C%20es%20la%20l%C3%ADder%20del%20partido%20Fuerza%20Popular."
       ]
     },
     "comunicacion": {
-      "value": null,
+      "value": "-",
       "source": []
     },
     "credibilidad": {
-      "value": null,
+      "value": "-",
       "source": []
     }
   },
@@ -393,28 +406,25 @@
     "intencionVoto": {
       "min": 4.2,
       "max": 9.8,
-      "descripcion": "Encuesta América TV - Ipsos (19/12/2025): 7% de intención de voto con margen de error +/- 2.8%.",
+      "descripcion": "Encuesta América TV - Ipsos (19 de diciembre 2025). 7% con +/- 2.8% margen de error.",
       "source": [
-        "https://www.ipsos.com/es-pe/intencion-de-voto-diciembre-2025-encuesta-america-tv-ipsos"
+        "https://www.ipsos.com/es-pe/intencion-de-voto-diciembre-2025-encuesta-america-tv-ipsos#:~:text=Keiko%20Fujimori%20con%207%25"
       ]
     },
     "aprobacion": {
-      "value": null,
+      "value": "-",
       "source": []
     },
     "redes": {
-      "value": "Presencia activa en TikTok, Instagram, Facebook y X.",
-      "source": [
-        "https://www.tiktok.com/@keikofujimorih",
-        "https://x.com/KeikoFujimori"
-      ]
+      "value": "Presencia activa en TikTok e Instagram con enfoque de campaña.",
+      "source": ["https://www.tiktok.com/@keikofujimorih"]
     }
   },
   "innovacionYVision": {
     "items": [
       "Ventanilla Única Digital Nacional potenciada por Inteligencia Artificial",
-      "Estrategia Nacional 'Cero Colas' mediante digitalización total",
-      "Centros 'COOL' de salud mental para acompañamiento juvenil"
+      "Programa 'Amigos con Huella' para tenencia responsable",
+      "Centros 'COOL' de salud mental comunitaria"
     ],
     "source": [
       "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf"
@@ -422,7 +432,7 @@
   },
   "historialLegislativo": {
     "tieneHistorial": true,
-    "productivityLabel": "Información no detallada en fuentes",
+    "productivityLabel": "Congresista electa en 2006",
     "asistencia": {
       "porcentaje": null,
       "label": null,
@@ -437,7 +447,7 @@
       "otros": 0
     },
     "projects": [],
-    "nota": "Elegida Congresista por Alianza por el Futuro (período 2006-2011).",
+    "nota": "Elegida Congresista por Alianza por el Futuro (2006-2011)",
     "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
   }
 }

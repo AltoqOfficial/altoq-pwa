@@ -100,6 +100,7 @@
   "ideologiaPolitica": {
     "posicion": {
       "value": "Derecha Liberal y Conservadora",
+      "descripcion": "Aunque él personalmente prefiere rechazar las \"etiquetas\" políticas tradicionales, resalta lo siguiente: la libertad individual es el valor supremo. Su postura es humanista al centrar el progreso en el respeto irrestricto a la familia como núcleo social y al derecho a la vida desde la concepción. Propone un Estado pequeño que no interfiera en las decisiones privadas de los padres ni en la economía, buscando \"secar la corrupción\" mediante la eliminación de trabas burocráticas que asfixian al trabajador honesto.",
       "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
     },
     "economia": {

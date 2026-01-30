@@ -12,15 +12,15 @@
     "tiktok": null,
     "twitter": null,
     "facebook": "https://www.facebook.com/FerOliveraVega/",
-    "web": "http://www.partidofrentedelaesperanza2021.pe/DOCUMENTOS/ideario.pdf"
+    "web": "http://www.partidofrentedelaesperanza2021.pe/DOCUMENTOS/ideario.pdf#page=4&search=centro"
   },
   "perfilGeneral": {
     "edad": { "value": null, "source": [] },
     "nacimiento": { "value": null, "source": [] },
     "lugar": {
-      "value": "Lima, Perú",
+      "value": "Jesús María, Lima",
       "source": [
-        "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera/sobre-congresista/"
+        "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera/sobre-congresista/#:~:text=Periodo%20Parlamentario%201995%2D2000&text=Fundador%20del%20Frente%20Independiente%20Moralizador,de%20Investigaci%C3%B3n%20del%20Tren%20El%C3%A9ctrico."
       ]
     },
     "nivelEducativo": {
@@ -151,14 +151,15 @@
   "ideologiaPolitica": {
     "posicion": {
       "value": "Centro Reformista",
+      "descripcion": "Según su propio papel, para el partido de Olivera ser Centro Reformista significa: Dejar de pelear por si eres de izquierda o derecha (Centro) para enfocarse urgentemente en cambiar las leyes y la Constitución que impiden el progreso (Reformista).",
       "source": [
-        "http://www.partidofrentedelaesperanza2021.pe/DOCUMENTOS/ideario.pdf"
+        "http://www.partidofrentedelaesperanza2021.pe/DOCUMENTOS/ideario.pdf#page=4&search=centro"
       ]
     },
     "economia": {
       "value": "Economía Social de Mercado con fuerte intervencionismo estatal, eliminación de 'Contratos Ley' y reducción del IGV al 10%.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=PROGRAMA%20ECON%C3%93MICO"
       ]
     },
     "matrimonioIgualitario": {
@@ -172,25 +173,25 @@
     "seguridad": {
       "value": "Reforma radical, depuración policial y penas de trabajos obligatorios.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
       ]
     },
     "ambiente": {
       "value": "Desarrollismo Verde: canje de deuda por conservación y protección absoluta de cabeceras de cuenca.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD"
       ]
     },
     "educacion": {
       "value": "Humanista, anti-lucro y vinculada a la producción, financiada con reducción de gasto militar.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACI%C3%93N"
       ]
     },
     "reformaPolitica": {
       "value": "Refundacional y plebiscitaria: eliminación de inmunidad y revocatoria del Presidente.",
       "source": [
-        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO%20En%20nuestro%20concepto"
       ]
     }
   },
@@ -200,14 +201,7 @@
         "titulo": "Ley Patriota y Referéndum Constitucional",
         "descripcion": "Eliminación de la inmunidad para todas las autoridades y establecimiento de la revocatoria del Presidente y Congresistas.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
-        ]
-      },
-      {
-        "titulo": "Jurados Ciudadanos",
-        "descripcion": "Involucrar a los ciudadanos en los veredictos de la administración de justicia.",
-        "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
         ]
       }
     ],
@@ -216,239 +210,134 @@
         "titulo": "Revolución Tributaria",
         "descripcion": "Reducción gradual del IGV del 18% al 10% y eliminación del Impuesto a la Renta de Quinta Categoría.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
-        ]
-      },
-      {
-        "titulo": "Nuevo Régimen MYPE",
-        "descripcion": "Tasa única de 4% de IGV y 1% de Renta para pequeñas empresas sin contabilidad compleja.",
-        "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
         ]
       }
     ],
     "social": [
       {
-        "titulo": "Nutrición Cero Anemia",
-        "descripcion": "Eliminación total de desnutrición mediante programas de alimentación escolar con proteínas nativas.",
-        "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
-        ]
-      },
-      {
         "titulo": "Shock de Saneamiento",
-        "descripcion": "Financiamiento inmediato para proyectos de agua y alcantarillado a nivel nacional.",
+        "descripcion": "Financiamiento y ejecución inmediata de todos los proyectos de agua y alcantarillado.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
         ]
       }
     ],
     "ambiental": [
       {
         "titulo": "Canje de Deuda por Conservación",
-        "descripcion": "Valorizar la captura de CO2 para negociar el pago de la deuda externa peruana.",
+        "descripcion": "Valorizar la captura de CO2 para negociar deuda externa y atraer capitales.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
-        ]
-      },
-      {
-        "titulo": "Protección de Cabeceras de Cuenca",
-        "descripcion": "Prohibición absoluta de actividades extractivas en zonas donde nace el agua.",
-        "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
         ]
       }
     ],
     "educativo": [
       {
-        "titulo": "Ministerio de Ciencia y Tecnología",
-        "descripcion": "Impulsar educación orientada a la innovación con infraestructura moderna.",
+        "titulo": "Ciencia y Tecnología",
+        "descripcion": "Educación orientada decididamente a la ciencia y tecnología dotándola de infraestructura moderna.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
-        ]
-      },
-      {
-        "titulo": "Reducción de Gasto Militar",
-        "descripcion": "Limitar gasto en armamento para redirigir fondos al sector educativo.",
-        "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
         ]
       }
     ],
     "salud": [
       {
         "titulo": "Mi Médico de Cabecera",
-        "descripcion": "Asignación de un especialista por distrito y atención hospitalaria las 24 horas.",
+        "descripcion": "Asignación de un médico especialista por cada distrito para atención personalizada.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
-        ]
-      },
-      {
-        "titulo": "Soberanía Sanitaria",
-        "descripcion": "Creación de Droguería y Laboratorio Nacional para fabricar medicinas y bajar costos.",
-        "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
         ]
       }
     ],
     "seguridad": [
       {
-        "titulo": "Reorganización Policial",
-        "descripcion": "División en Policía Comunitaria e Investigaciones, y reducción de escuelas de 25 a 7.",
+        "titulo": "Reforma Policial",
+        "descripcion": "Especialización en Policía Comunitaria e Investigaciones con depuración de malos elementos.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
-        ]
-      },
-      {
-        "titulo": "Trabajo Obligatorio para Presos",
-        "descripcion": "Penas que incluyan construcción de carreteras y servicios públicos para los internos.",
-        "source": [
-          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
         ]
       }
     ]
-  },
-  "coherenciaConElPlan": {
-    "nivelDeAlineacion": {
-      "value": "Alto",
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
-      ]
-    },
-    "diferencias": {
-      "value": "Ninguna reportada en el documento",
-      "source": []
-    },
-    "cumplimientoPrevio": {
-      "value": "Famoso por revelar el primer 'Vladivideo' en el año 2000, iniciando su lucha anticorrupción.",
-      "source": ["https://www.idl-reporteros.pe/conspiraciones-telefonicas/"]
-    }
   },
   "controversias": {
     "antecedentes": [
       {
         "titulo": "Detención por requisitoria vigente (Reo Contumaz) en 2024",
-        "estado": "Liberado bajo reglas de conducta",
+        "estado": null,
         "source": [
-          "https://www.infobae.com/peru/2024/01/27/fernando-olivera-fue-arrestado-por-caso-de-difamacion-contra-gobernadora-de-moquegua/"
-        ]
-      },
-      {
-        "titulo": "Presentación de 'Cartas Falsas' al Vaticano",
-        "estado": "Hecho público",
-        "source": [
-          "https://rpp.pe/politica/actualidad/cardenal-perdona-cartas-falsas-pero-queda-esa-huella-de-maldad-noticia-291141"
+          "https://www.infobae.com/peru/2024/01/27/fernando-olivera-fue-arrestado-por-caso-de-difamacion-contra-gobernadora-de-moquegua-fue-liberado-horas-despues/#:~:text=La%20captura%20fue%20ejecutada%20por%20miembros%20de%20la%20División%20de%20Requisitoria,se%20ordenara%20su%20liberación"
         ]
       }
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Investigación por colusión agravada - Caso Carretera Interoceánica (Odebrecht)",
+        "titulo": "Investigación por colusión agravada - Caso Carretera Interoceánica",
         "estado": "En curso",
         "source": [
-          "https://larazon.pe/fernando-olivera-poder-judicial-rechaza-archivo-en-caso-de-colusion-agravada-relacionado-con-odebrecht/"
+          "https://larazon.pe/fernando-olivera-poder-judicial-rechaza-archivo-en-caso-de-colusion-agravada-relacionado-con-odebrecht/#:~:text=El%20Poder%20Judicial%2C%20en%20segunda%20instancia%2C%20rechaz%C3%B3,que%20le%20imputa%20la%20Fiscal%C3%ADa"
         ]
       },
       {
-        "titulo": "Investigación preliminar por tráfico de influencias (Caso Lava Jato)",
+        "titulo": "Investigación preliminar por tráfico de influencias (Lava Jato)",
         "estado": "En curso",
         "source": [
-          "https://www.americatv.com.pe/noticias/actualidad/fernando-olivera-declaro-como-investigado-caso-odebrecht-n376825"
+          "https://www.americatv.com.pe/noticias/actualidad/fernando-olivera-declaro-como-investigado-caso-odebrecht-n376825?#:~:text=Fernando%20Olivera%20es%20investigado,adjudicada%20a%20Odebrecht"
         ]
       },
       {
-        "titulo": "Juicio por difamación agravada contra la gobernadora de Moquegua",
+        "titulo": "Juicio por difamación agravada contra gobernadora de Moquegua",
         "estado": "En curso",
         "source": [
-          "https://rpp.pe/politica/judiciales/fernando-olivera-poder-judicial-dispuso-liberacion-de-exministro-tras-ser-detenido-por-caso-de-difamacion-noticia-1530082"
+          "https://rpp.pe/politica/judiciales/fernando-olivera-poder-judicial-dispuso-liberacion-de-exministro-tras-ser-detenido-por-caso-de-difamacion-noticia-1530082#:~:text=Fernando%20Olivera%20afirmó%20en%202022,afrontaba%20un%20proceso%20judicial"
         ]
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Calificó al Congreso de la República como 'Congreso de la corrupción' en 2025",
+        "titulo": "Vladiaudios sobre presunto fraude electoral",
         "source": [
-          "https://larepublica.pe/politica/2025/11/20/fernando-olivera-sobre-jose-jeri-es-el-representante-del-congreso-de-la-corrupcion-hnews-814820"
+          "https://www.idl-reporteros.pe/conspiraciones-telefonicas/#:~:text=El%20jueves%2024%20a%20las%205%3A30%20de%20la%20tarde,el%20vídeo%20Kouri%2DMontesinos"
         ]
       },
       {
-        "titulo": "Difusión de 'Vladiaudios' sobre presunto fraude que medios consideraron poco probatorios",
-        "source": ["https://www.idl-reporteros.pe/conspiraciones-telefonicas/"]
+        "titulo": "Cartas Falsas al Vaticano",
+        "source": [
+          "https://rpp.pe/politica/actualidad/cardenal-perdona-cartas-falsas-pero-queda-esa-huella-de-maldad-noticia-291141#:~:text=el%20cardenal%20Juan%20Luis%20Cipriani%20al%20ser%20consultado,firmada%20por%20el%20religioso"
+        ]
+      },
+      {
+        "titulo": "Acusaciones de corrupción al presidente del Congreso José Jerí",
+        "source": [
+          "https://larepublica.pe/politica/2025/11/20/fernando-olivera-sobre-jose-jeri-es-el-representante-del-congreso-de-la-corrupcion-hnews-814820#:~:text=el%20periodista%20Pedro%20Salinas%20entrevistó,parte%20de%20un%20partido%20de%20la%20corrupción"
+        ]
       }
     ],
     "observaciones": [
       {
-        "titulo": "Responsabilidad política por liberación del vocero de Sendero Luminoso, Adolfo Olaechea (2003)",
+        "titulo": "Liberación del vocero de Sendero Luminoso Adolfo Olaechea (2003)",
         "source": [
-          "https://lum.cultura.pe/cdi/video/apra-culpo-fernando-olivera-por-la-excarcelacion-de-olaechea"
+          "https://lum.cultura.pe/cdi/video/apra-culpo-fernando-olivera-por-la-excarcelacion-de-olaechea#:~:text=El%2004%20de%20noviembre%20de%202003,en%20el%20tema%20jurídico"
         ]
       }
     ]
   },
-  "transparencia": {
-    "items": [
-      "Hoja de vida ante JNE",
-      "Ideario político público",
-      "Plan de Gobierno 2021-2026"
-    ],
-    "source": ["https://infogob.jne.gob.pe/", "https://mpesije.jne.gob.pe/"]
-  },
-  "competenciasPersonales": {
-    "liderazgo": {
-      "value": "Alto - Fundador de dos partidos políticos y líder histórico del FIM.",
-      "source": [
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
-      ]
-    },
-    "comunicacion": {
-      "value": "Alto - Estilo agresivo y confrontacional enfocado en denuncias de corrupción.",
-      "source": [
-        "https://larepublica.pe/politica/2025/11/20/fernando-olivera-sobre-jose-jeri-es-el-representante-del-congreso-de-la-corrupcion-hnews-814820"
-      ]
-    },
-    "credibilidad": {
-      "value": "Baja/Media - Paradoja entre su discurso anticorrupción y sus investigaciones fiscales actuales.",
-      "source": [
-        "https://larazon.pe/fernando-olivera-poder-judicial-rechaza-archivo-en-caso-de-colusion-agravada-relacionado-con-odebrecht/"
-      ]
-    }
-  },
-  "percepcionPublica": {
+  "percepsionPublica": {
     "intencionVoto": {
       "min": 1.2,
       "max": 1.2,
-      "descripcion": "Encuesta Datum Internacional, diciembre 2025. Nucleo duro en provincias pero bajo en Lima.",
+      "descripcion": "Encuesta Datum Diciembre 2025: Mantiene núcleo duro en provincias pero bajo en la capital.",
       "source": [
-        "https://www.datum.com.pe/new_web_files/files/pdf/510a-0125%20-%20Encuesta%20DATUM%20-%20Diciembre%202025.pdf"
+        "https://www.datum.com.pe/new_web_files/files/pdf/510a-0125%20-%20Encuesta%20DATUM%20-%20Diciembre%202025%20-%20Informe%20ELECTORAL%20Final%20v1_251216113108.pdf#:~:text=INTENCI%C3%93N%20DE%20VOTO%20PRESIDENCIAL"
       ]
-    },
-    "aprobacion": {
-      "value": "Estadísticamente bajo",
-      "source": [
-        "https://www.datum.com.pe/new_web_files/files/pdf/510a-0125%20-%20Encuesta%20DATUM%20-%20Diciembre%202025.pdf"
-      ]
-    },
-    "redes": {
-      "value": "Presencia activa en Facebook e Instagram con enfoque en transmisiones de denuncias.",
-      "source": ["https://www.facebook.com/FerOliveraVega/"]
     }
-  },
-  "innovacionYVision": {
-    "items": [
-      "Cero beneficios penitenciarios para corruptos",
-      "Droguería Nacional Estatal",
-      "Canje de deuda externa por activos ambientales"
-    ],
-    "source": [
-      "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf"
-    ]
   },
   "historialLegislativo": {
     "tieneHistorial": true,
-    "productivityLabel": "16 años de actividad",
+    "productivityLabel": "16 años ininterrumpidos",
     "asistencia": {
       "porcentaje": null,
-      "label": "Presencia ininterrumpida",
+      "label": "5 periodos consecutivos",
       "source": null
     },
     "stats": {
@@ -460,7 +349,7 @@
       "otros": 0
     },
     "projects": [],
-    "nota": "Diputado y Congresista por 5 periodos entre 1985 y 2001.",
-    "source": "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera/sobre-congresista/"
+    "nota": "Elegido en 5 periodos consecutivos entre 1985 y 2001.",
+    "source": "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera/sobre-congresista/#:~:text=Periodo%20Parlamentario%201995%2D2000&text=Fundador%20del%20Frente%20Independiente%20Moralizador,de%20Investigaci%C3%B3n%20del%20Tren%20El%C3%A9ctrico."
   }
 }

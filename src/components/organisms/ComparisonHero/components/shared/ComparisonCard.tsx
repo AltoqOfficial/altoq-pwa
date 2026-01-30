@@ -148,6 +148,40 @@ export function MobileComparisonCard({
             />
           </a>
         )}
+        {socialLinks?.facebook && (
+          <a
+            href={socialLinks.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-md"
+            aria-label="Facebook"
+          >
+            <Image
+              src="/icons/facebook.webp"
+              alt="Facebook"
+              width={24}
+              height={24}
+              className="w-5 h-5 md:w-6 md:h-6 object-contain"
+            />
+          </a>
+        )}
+        {socialLinks?.twitter && (
+          <a
+            href={socialLinks.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-md"
+            aria-label="X (Twitter)"
+          >
+            <Image
+              src="/icons/twitter-x.webp"
+              alt="X (Twitter)"
+              width={24}
+              height={24}
+              className="w-5 h-5 md:w-6 md:h-6 object-contain"
+            />
+          </a>
+        )}
       </div>
 
       {/* Custom Data Layout */}
