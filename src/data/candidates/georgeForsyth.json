@@ -3,7 +3,7 @@
   "slug": "george-patrick-forsyth-sommer",
   "fullName": "George Patrick Forsyth Sommer [cite: 9]",
   "shortName": "George Forsyth",
-  "image": "/candidates/george-patrick-forsyth-sommer.png",
+  "image": "/candidatos/george-forsyth.webp",
   "color": "#E1251B",
   "party": "Partido Democrático Somos Perú [cite: 12]",
   "partyIcon": "/partidos/somos-peru.png",
@@ -142,14 +142,30 @@
       ]
     },
     "economia": {
-      "value": "Economía social de mercado competitiva y abierta[cite: 59]. Propone dar facilidades a la inversión privada y rechaza el populismo[cite: 21, 22].",
+      "value": "Economía social de mercado",
+      "descripcion": "Se declara a favor de una economía social de mercado competitiva y abierta, poniendo la descentralización como medio para fortalecer las economías locales y regionales dentro de ese marco (posición ideológica del partido, no propuestas).",
       "source": [
         "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=econom%C3%ADa%20social%20de%20mercado%20competitiva%20y%20abierta"
       ]
     },
+    "educacion": {
+      "value": "Infraestructura educativa prioritaria",
+      "descripcion": "Defiende el papel activo del Estado para garantizar la educación pública como bien común, centrada en el acceso universal, la equidad territorial y la mejora de la calidad educativa (enfoque en formación docente y reducción de brechas).",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=la%20importancia%20de%20la%20familia%2C%20que%20es%20la%20c%C3%A9lula%20b%C3%A1sica%20de%20la%20sociedad%2C%20la%20ra%C3%ADz%20de%20su%20grandeza%20y%20el%20%C3%A1mbito%20natural%20de%20la%20educaci%C3%B3n%20y%20de%20la%20cultura"
+      ]
+    },
+    "salud": {
+      "value": "Salud pública e integrada",
+      "descripcion": "Defiende un sistema de salud público, universal e integrado con rectoría única para superar la fragmentación institucional y garantizar acceso efectivo y cobertura ampliada.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=El%20sistema%20de%20salud%20peruano%20atraviesa%20una%20crisis%20estructural%20caracterizada%20por%20una%20profunda%20fragmentaci%C3%B3n%20institucional"
+      ]
+    },
     "matrimonioIgualitario": { "value": "-", "source": [] },
     "aborto": {
-      "value": "Restricción con excepciones: admisible solo por violación o peligro de vida de la madre[cite: 68, 70].",
+      "value": "Restricción con excepciones",
+      "descripcion": "El plan de gobierno que revisaste no contiene propuestas públicas sobre la despenalización del aborto; en la arena pública, George Forsyth declaró que, personalmente, considera admisible la interrupción del embarazo solo en casos de violación o cuando la vida de la madre esté en peligro. En el orden legal peruano, el aborto terapéutico (cuando peligra la vida o la salud de la mujer) está permitido, mientras que la despenalización por violación ha sido objeto de debate y no está plenamente garantizada por la ley.",
       "source": [
         "https://canaln.pe/actualidad/george-forsyth-sobre-aborto-solo-casos-violacion-cuando-madre-este-peligro-n432360#:~:text=%E2%80%9CEs%20un%20tema%20muy%20sensible.%20Nosotros%20ya%20nos%20hemos%20pronunciado%20al%20respecto%20y%20creemos%20que%20se%20pueda%20dar%20el%20aborto%20exclusivamente%20en%20casos%20de%20violaci%C3%B3n%20o%20en%20caso%20de%20que%20la%20madre%20est%C3%A9%20en%20peligro%E2%80%9D,%20argument%C3%B3%20el%20tambi%C3%A9n%20exalcalde%20de%20La%20Victoria."
       ]
@@ -161,19 +177,15 @@
       ]
     },
     "ambiente": {
-      "value": "Conservación de biodiversidad, adaptación climática y gestión inteligente del agua[cite: 73, 74].",
+      "value": "Conservación y adaptación climática",
+      "descripcion": "Prioriza la conservación de la mega biodiversidad como ventaja estratégica, junto a la adaptación climática y la gestión del agua para enfrentar la alta vulnerabilidad y la degradación acelerada del patrimonio natural. Esta formulación se basa en el diagnóstico del plan que valora la biodiversidad como motor de desarrollo (biocomercio, ecoturismo, bioeconomía) y subraya la urgencia de abordar la crisis hídrica, la deforestación y la exposición a eventos extremos.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=La%20biodiversidad%20peruana,siglo%20XXI"
       ]
     },
-    "educacion": {
-      "value": "Educación pública como bien común, centrada en infraestructura, calidad docente y reducción de brechas[cite: 62, 63].",
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=la%20importancia%20de%20la%20familia%2C%20que%20es%20la%20c%C3%A9lula%20b%C3%A1sica%20de%20la%20society%2C%20la%20ra%C3%ADz%20de%20su%20grandeza%20y%20el%20%C3%A1mbito%20natural%20de%20la%20educaci%C3%B3n%20y%20de%20la%20cultura"
-      ]
-    },
     "reformaPolitica": {
-      "value": "Fortalecimiento institucional, transparencia y blindaje de órganos autónomos contra la captura política[cite: 77, 78, 146].",
+      "value": "Instituciones y transparencia",
+      "descripcion": "Aboga por una reforma institucional orientada a fortalecer la selección de altos funcionarios y la rendición de cuentas, privilegiando mecanismos basados en mérito, transparencia y participación ciudadana para reducir la captura política.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Se%20impulsar%C3%A1n%20reformas%20constitucionales%20para%20fortalecer%20los%20procesos%20de%20selecci%C3%B3n%20de%20altos%20funcionarios"
       ]

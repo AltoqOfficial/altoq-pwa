@@ -97,17 +97,28 @@
   },
   "ideologiaPolitica": {
     "posicion": {
-      "value": "Centro",
+      "value": "Centro Izquierda",
       "descripcion": "La agrupación se posiciona en el centro porque combina políticas de derecha económica, como el fomento a la inversión privada y el libre mercado, con posturas de izquierda social, centradas en la protección de derechos laborales y la regulación de monopolios. No se adhiere a un extremo, sino que busca un equilibrio técnico para promover el crecimiento sin descuidar el bienestar de las mayorías.",
       "source": [
         "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911#:~:text=Seg%C3%BAn%20Mario%20Vizcarra,a%20La%20Rep%C3%BAblica"
       ]
     },
     "economia": {
-      "value": "Fomento a la inversión privada, libre mercado con regulación de monopolios y cumplimiento de derechos laborales.",
+      "sintesis": "Inversión privada y regulación del mercado",
+      "descripcion": "Esta postura se define como una posición de centro económico que busca el equilibrio entre el libre mercado y la intervención estatal regulatoria. Propone incentivar la inversión privada en todas sus escalas para dinamizar la economía, condicionado estrictamente al cumplimiento de los derechos laborales y a una regulación que prohíba prácticas monopólicas.",
       "source": [
-        "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911"
+        "https://larepublica.pe/politica/2025/10/27/quien-es-mario-vizcarra-el-hermano-de-martin-vizcarra-que-postularia-a-la-presidencia-del-peru-en-las-elecciones-del-2026-hnews-655911#:~:text=ubicaci%C3%B3n%20en%20el%20espectro%20es%20de%20centro.%20Si%20se%20quiere%20analizar%20desde%20el%20lado%20econ%C3%B3mico%2C%20estamos%20algo%20m%C3%A1s%20cercanos%20a%20la%20derecha%20porque%20respetamos%20e%20incentivamos%20la%20inversi%C3%B3n%20privada"
       ]
+    },
+    "educacion": {
+      "sintesis": "Alianza Estratégica Público-Privada para la Calidad Educativa",
+      "descripcion": "Propone un modelo de reforma donde el Estado garantiza la infraestructura básica, mientras se exige responsabilidad social a las grandes empresas (mineras y agroexportadoras) para financiar proyectos de impacto directo en el rendimiento académico. Busca cerrar brechas de desigualdad digital y servicios básicos en zonas rurales, capacitando docentes y promoviendo la meritocracia bajo una visión de centro que prioriza la igualdad de oportunidades.",
+      "source": ["https://youtu.be/0pp_EkaFO7Q?t=1884"]
+    },
+    "salud": {
+      "sintesis": "Responsabilidad compartida para el cierre de brechas",
+      "descripcion": "La propuesta plantea combatir el desabastecimiento de medicinas mediante un sistema de denuncias anónimas contra la corrupción y la ineficiencia administrativa. Además, busca replicar modelos de responsabilidad social donde grandes empresas, como las mineras y agroexportadoras, inviertan directamente en infraestructura de salud y educación para acelerar el cierre de brechas sociales en las regiones.",
+      "source": ["https://youtu.be/0pp_EkaFO7Q?t=1653"]
     },
     "matrimonioIgualitario": {
       "value": "A favor (Respaldo a Unión Civil y respeto a opciones sexuales)",
@@ -116,26 +127,26 @@
       ]
     },
     "aborto": {
-      "value": "A favor (Pro-elección, especialmente en casos de violación)",
+      "sintesis": "Respeta las relaciones del mismo sexo porque es un derecho / A favor del aborto libre (pro-elección)",
+      "descripcion": "Vizcarra defiende la libertad de elección de las personas sobre su orientación sexual y relaciones, y sostiene que el aborto debe ser una decisión total de la mujer, especialmente en casos de violación o bajo su propio criterio sobre la vida que gesta. Esta visión busca evitar la injerencia de posturas teocráticas o fundamentalistas en las políticas públicas para garantizar los derechos fundamentales de cada ciudadano.",
       "source": [
         "https://youtu.be/N4JdYD_U7j8?t=2080",
-        "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
+        "https://www.youtube.com/watch?v=Diio_Pq7g1Q"
       ]
     },
     "seguridad": {
-      "value": "Reforma penitenciaria, control territorial mediante cuarteles militares y derogación de leyes que dificultan intervención policial.",
+      "sintesis": "Reforma del sistema penitenciario y control territorial",
+      "descripcion": "Propone destrabar la construcción de penales paralizados, habilitar cuarteles militares en zonas remotas de la selva para reclusos de alta peligrosidad bajo custodia de las Fuerzas Armadas y derogar leyes que dificultan la intervención policial contra el crimen organizado.",
       "source": ["https://youtu.be/N4JdYD_U7j8?t=2359"]
     },
     "ambiente": {
-      "value": "Compromiso con el respeto ambiental como parte de la responsabilidad social para cerrar brechas.",
+      "sintesis": "Destaca la importancia y respeta el medio ambiente",
+      "descripcion": "Mario Vizcarra aborda el medio ambiente como parte de la \"cara social\" de Perú Primero, un partido de centro. Él enfatiza la importancia fundamental de respetar el medio ambiente, junto con los derechos laborales. Este compromiso forma parte de su objetivo más amplio de cerrar brechas en áreas como la educación y la salud.",
       "source": ["https://youtu.be/0pp_EkaFO7Q?t=608"]
     },
-    "educacion": {
-      "value": "Alianza público-privada, meritocracia docente y cierre de brecha digital en zonas rurales.",
-      "source": ["https://youtu.be/0pp_EkaFO7Q?t=1884"]
-    },
     "reformaPolitica": {
-      "value": "Reestructuración del Estado para eliminar corrupción e ineficiencia, priorizando representantes probos.",
+      "sintesis": "Reforma profunda del Instituto Nacional Penitenciario (INPE) y de la Policía Nacional",
+      "descripcion": "Propone una reestructuración profunda del Estado para eliminar la ineficiencia y la corrupción, priorizando la elección de representantes probos que legislen a favor del ciudadano y no por beneficios propios.",
       "source": ["https://youtu.be/0pp_EkaFO7Q?t=1576"]
     }
   },

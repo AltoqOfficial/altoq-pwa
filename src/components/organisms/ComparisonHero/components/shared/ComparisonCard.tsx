@@ -101,14 +101,14 @@ export function MobileComparisonCard({
           font="bigShoulders"
           className="text-white text-[13px] md:text-[20px] font-light"
         >
-          {candidate.party || "Partido"}
+          {candidate.shortName || "Candidato"}
         </Typography>
         <Typography
           variant="p"
           font="bigShoulders"
           className="text-white text-[7px] md:text-[12px] font-black mt-1"
         >
-          PARTIDO ACTUAL
+          {candidate.party || "Partido"}
         </Typography>
       </div>
 

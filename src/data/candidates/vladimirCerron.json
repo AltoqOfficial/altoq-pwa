@@ -3,7 +3,7 @@
   "slug": "vladimir-roy-cerron-rojas",
   "fullName": "Vladimir Roy Cerrón Rojas",
   "shortName": "Vladimir Cerrón",
-  "image": "/candidates/vladimir-roy-cerron-rojas.png",
+  "image": "/candidatos/vladimir-cerron.webp",
   "color": "#e30613",
   "party": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
   "partyIcon": "/partidos/peru-libre.png",
@@ -124,38 +124,44 @@
       ]
     },
     "economia": {
-      "value": "Economía Popular con Mercados; Estado planificador, empresario e industrializador.",
+      "sintesis": "Economía Popular con Mercados",
+      "descripcion": "Economía Popular con Mercados; Estado planificador, empresario e industrializador que renegocia contratos-ley y recupera la soberanía sobre recursos naturales.",
       "source": [
         "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/#:~:text=Economía%20popular"
       ]
     },
     "matrimonioIgualitario": { "value": null, "source": [] },
     "aborto": {
-      "value": "A favor / Pro-Despenalización (Programa oficial 2026)",
+      "sintesis": "A favor / Pro-Despenalización",
+      "descripcion": "Postura a favor de fortalecer la despenalización del aborto, según consta en el programa político oficial del partido para 2026.",
       "source": [
         "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/#:~:text=fortalecer%20la%20despenalizaci%C3%B3n%20del%20aborto"
       ]
     },
     "seguridad": {
-      "value": "Enfoque preventivo y comunitario con participación de rondas; reforma de la Policía Nacional.",
+      "sintesis": "Seguridad preventiva y comunitaria",
+      "descripcion": "Enfoque preventivo y comunitario con participación activa de rondas campesinas y urbanas; incluye la reforma de la Policía Nacional.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=SEGURIDAD%20CIUDADANA%20CON%20ENFOQUE%20PREVENTIVO"
       ]
     },
     "ambiente": {
-      "value": "Soberanía sobre recursos y Canon Comunal; prohibición de privatizar el agua.",
+      "sintesis": "Soberanía de recursos y Canon Comunal",
+      "descripcion": "Defensa de la soberanía sobre recursos naturales y establecimiento del Canon Comunal; prohibición expresa de la privatización del agua.",
       "source": [
         "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/#:~:text=Sobre%20política%20medioambiental"
       ]
     },
     "educacion": {
-      "value": "Descolonizadora y de Ingreso Libre; currículo regionalizado y 10% del PBI para el sector.",
+      "sintesis": "Educación descolonizadora y de Ingreso Libre",
+      "descripcion": "Promueve una educación descolonizadora, con currículo regionalizado, asignación del 10% del PBI al sector y el Ingreso Libre a las universidades.",
       "source": [
         "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/#:~:text=Política%20de%20educación%20pública"
       ]
     },
     "reformaPolitica": {
-      "value": "Asamblea Constituyente Plurinacional para derogar la Constitución de 1993.",
+      "sintesis": "Asamblea Constituyente Plurinacional",
+      "descripcion": "Propuesta central de convocar a una Asamblea Constituyente Plurinacional para redactar una Nueva Constitución y derogar la de 1993.",
       "source": [
         "https://perulibre.pe/propuesta-politica-ideologica-y-programatica-del-partido-politico-nacional-peru-libre/#:~:text=Nueva%20Constitución%20Política"
       ]

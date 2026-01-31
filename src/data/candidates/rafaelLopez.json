@@ -3,7 +3,7 @@
   "slug": "rafael-lopez-aliaga",
   "fullName": "Rafael Bernardo López Aliaga Cazorla",
   "shortName": "Rafael López Aliaga",
-  "image": "/candidates/rafael-lopez-aliaga.png",
+  "image": "/candidatos/rafael-lopez-aliaga.webp",
   "color": "#0054A5",
   "party": "Partido Político Renovación Popular",
   "partyIcon": "/partidos/renovacion-popular.png",
@@ -138,39 +138,45 @@
       ]
     },
     "economia": {
-      "value": "Disciplina fiscal y reforma del Estado. Orientación liberal-conservadora centrada en la reducción del tamaño del Estado y austeridad.",
+      "sintesis": "Disciplina fiscal y Estado reducido",
+      "descripcion": "Disciplina fiscal y reforma del Estado. Orientación liberal-conservadora centrada en la reducción del tamaño del Estado y austeridad.",
       "source": [
         "https://rpp.pe/economia/economia/rafael-lopez-aliaga-en-cade-2025-estas-son-las-propuestas-economica-para-elecciones-2026-con-reforma-del-estado-y-disciplina-fiscal-noticia-1662680#:~:text=Reforma%20del%20Estado%20y%20disciplina%20fiscal"
       ]
     },
     "matrimonioIgualitario": { "value": null, "source": [] },
     "aborto": {
-      "value": "En contra. Define el aborto como el crimen más abominable y afirma que no puede ser legalizado en ninguna circunstancia.",
+      "sintesis": "Totalmente en contra",
+      "descripcion": "En contra. Define el aborto como el crimen más abominable y afirma que no puede ser legalizado en ninguna circunstancia.",
       "source": [
         "https://canaln.pe/actualidad/rafael-lopez-aliaga-aborto-no-pude-legalizado-peru-ninguna-circunstancia-n432281#:~:text=El%20aborto%20es,circunstancia"
       ]
     },
     "seguridad": {
-      "value": "Unidades Itinerantes de Pacificación Ciudadana con inteligencia, agentes encubiertos y sistemas de videovigilancia.",
+      "sintesis": "Plan Bukele y Mega Cárceles",
+      "descripcion": "Unidades Itinerantes de Pacificación Ciudadana con inteligencia, agentes encubiertos y sistemas de videovigilancia.",
       "source": [
         "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
       ]
     },
     "ambiente": {
-      "value": "Establecer políticas municipales sostenibles, crear y recuperar espacios verdes.",
+      "sintesis": "Políticas municipales sostenibles",
+      "descripcion": "Establecer políticas municipales sostenibles, crear y recuperar espacios verdes.",
       "source": [
         "https://www.actualidadambiental.pe/wp-content/uploads/2022/09/Plan-de-Gobierno-Renovacion-Popular-Elecciones-2022.pdf#:~:text=crear%20y%20recuperar%20Espacios%20Verdes"
       ]
     },
     "educacion": {
-      "value": "Modernización tecnológica (tablets e internet satelital), modelo Finlandia y eliminación de ideología de género.",
+      "sintesis": "Modelo Finlandia y sin ideología de género",
+      "descripcion": "Modernización tecnológica (tablets e internet satelital), modelo Finlandia y eliminación de ideología de género.",
       "source": [
         "https://youtu.be/DXX3CpNF0FM?t=245",
         "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=educaci%C3%B3n%20escolar"
       ]
     },
     "reformaPolitica": {
-      "value": "Modernización institucional, fusión de ocho ministerios y retorno a la unicameralidad.",
+      "sintesis": "Fusión de ministerios y unicameralidad",
+      "descripcion": "Modernización institucional, fusión de ocho ministerios y retorno a la unicameralidad.",
       "source": [
         "https://elcomercio.pe/politica/rafael-lopez-aliaga-dice-que-fusionara-ocho-ministerios-ligados-al-bienestar-humano-noticia/#:~:text=L%C3%B3pez%20Aliaga%20dijo,en%20uno%20solo",
         "https://elcomercio.pe/politica/elecciones/rafael-lopez-aliaga-en-cade-2025-desde-el-retorno-al-congreso-unicameral-hasta-petro-peru-los-ejes-de-sus-propuestas-tlc-nota-noticia/#:~:text=durante%20el,provisionales"

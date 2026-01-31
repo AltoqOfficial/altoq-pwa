@@ -150,46 +150,54 @@
   },
   "ideologiaPolitica": {
     "posicion": {
-      "value": "Centro Reformista",
-      "descripcion": "Según su propio papel, para el partido de Olivera ser Centro Reformista significa: Dejar de pelear por si eres de izquierda o derecha (Centro) para enfocarse urgentemente en cambiar las leyes y la Constitución que impiden el progreso (Reformista).",
-      "source": [
-        "http://www.partidofrentedelaesperanza2021.pe/DOCUMENTOS/ideario.pdf#page=4&search=centro"
-      ]
+      "value": "Centro / Personalismo",
+      "descripcion": "Liderado por Fernando Olivera, el partido suele centrarse en la lucha anticorrupción y reformas políticas radicales, con una ubicación difusa en el espectro tradicional.",
+      "source": ["https://es.wikipedia.org/wiki/Frente_de_la_Esperanza_2021"]
     },
     "economia": {
-      "value": "Economía Social de Mercado con fuerte intervencionismo estatal, eliminación de 'Contratos Ley' y reducción del IGV al 10%.",
+      "sintesis": "Economía Social de Mercado",
+      "descripcion": "Está enmarcada en un Estado de Bienestar. Esta postura combina el respeto a la propiedad privada con un fuerte intervencionismo estatal, proponiendo eliminar la protección constitucional de los \"Contratos Ley\" para que el Estado recupere su capacidad de modificar acuerdos con privados. Además, busca reactivar el consumo y la formalización mediante recortes drásticos de impuestos, específicamente reduciendo el IGV al 10% y eliminando el Impuesto a la Renta de quinta categoría para los trabajadores.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=PROGRAMA%20ECON%C3%93MICO"
       ]
     },
-    "matrimonioIgualitario": {
-      "value": "Sin posición explícita",
-      "source": []
-    },
-    "aborto": {
-      "value": "En contra / Conservadurismo Social",
-      "source": ["https://www.instagram.com/p/DTLHwF4Eb9S/"]
-    },
-    "seguridad": {
-      "value": "Reforma radical, depuración policial y penas de trabajos obligatorios.",
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
-      ]
-    },
-    "ambiente": {
-      "value": "Desarrollismo Verde: canje de deuda por conservación y protección absoluta de cabeceras de cuenca.",
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD"
-      ]
-    },
     "educacion": {
-      "value": "Humanista, anti-lucro y vinculada a la producción, financiada con reducción de gasto militar.",
+      "sintesis": "Humanista, anti-lucro y productiva",
+      "descripcion": "La ideología educativa del plan es humanista y productiva, caracterizada por un rechazo explícito al lucro en la enseñanza. Propone financiar el sector mediante la reducción del gasto en armamento y vincula la educación directamente con el aparato productivo y la tecnología. Además, asume un enfoque asistencialista al considerar la nutrición (desayunos y almuerzos escolares) como requisito indispensable para el aprendizaje.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACI%C3%93N"
       ]
     },
+    "salud": {
+      "sintesis": "Estatista, Intervencionista y Universalista",
+      "descripcion": "El plan asume que el mercado privado (laboratorios extranjeros e importadores locales) encarece los costos. Por ello, propone una ideología de \"Soberanía Sanitaria\", buscando romper la dependencia del sector privado mediante la creación de empresas públicas (\"Droguería y Laboratorio Nacional\") para fabricar medicinas y bajar costos. Asimismo, adopta un enfoque de medicina social (SIS para todos), asignando médicos de cabecera por distrito y ofreciendo incentivos económicos (bonos) a las familias que cumplan con la prevención de enfermedades.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": null,
+      "source": []
+    },
+    "aborto": {
+      "sintesis": "NO, apoya el Conservadurismo Social",
+      "descripcion": "Es una ideología social-cristiana o conservadora. Promueve la protección económica de la mujer (salarios, seguros) y su rol materno, mientras adopta una postura implícita de defensa del niño por nacer, alejándose de la agenda feminista liberal sobre derechos reproductivos.",
+      "source": ["https://www.instagram.com/p/DTLHwF4Eb9S/"]
+    },
+    "seguridad": {
+      "value": null,
+      "source": []
+    },
+    "ambiente": {
+      "sintesis": "Desarrollismo Verde o Eco-Capitalismo Pragmático",
+      "descripcion": "La ideología ambiental es pragmática y financiera. El plan ve la biodiversidad y la capacidad de captura de CO2 no solo como bienes a proteger, sino como activos financieros para negociar deuda externa y atraer capitales. Busca conciliar esto con una minería continuista pero regulada, rechazando el daño irreversible pero promoviendo la inversión extractiva.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD"
+      ]
+    },
     "reformaPolitica": {
-      "value": "Refundacional y plebiscitaria: eliminación de inmunidad y revocatoria del Presidente.",
+      "sintesis": "Refundacional, Plebiscitaria y Radical",
+      "descripcion": "Es una ideología anti-establishment que busca \"aniquilar\" el sistema de corrupción actual mediante una democracia directa radical. Propone que el control político no lo ejerza el Congreso (al que también busca revocar), sino la ciudadanía directamente a través de referéndums y censuras, eliminando la protección jurídica (inmunidad) de los gobernantes.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO%20En%20nuestro%20concepto"
       ]

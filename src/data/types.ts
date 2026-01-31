@@ -8,6 +8,7 @@
 export interface ValueWithSource {
   value: string | string[] | null;
   source?: string | string[] | null;
+  descripcion?: string;
 }
 
 /**
@@ -16,6 +17,7 @@ export interface ValueWithSource {
 export interface ArrayWithSource {
   values: string | string[];
   source?: string | string[] | null;
+  descripcion?: string;
 }
 
 /**

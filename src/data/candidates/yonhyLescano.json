@@ -3,7 +3,7 @@
   "slug": "yonhy-lescano-ancieta",
   "fullName": "Yonhy Lescano Ancieta",
   "shortName": "Yonhy Lescano",
-  "image": "/candidates/yonhy-lescano-ancieta.png",
+  "image": "/candidatos/yonhy-lescano.webp",
   "color": "#0047AB",
   "party": "Partido Político Cooperación Popular",
   "partyIcon": "/partidos/cooperacion-popular.png",
@@ -142,50 +142,56 @@
   },
   "ideologiaPolitica": {
     "posicion": {
-      "value": "Centro-izquierda",
-      "descripcion": "Se toma a partir de la declaración pública de Yonhy Lescano en una nota periodística de 2025 donde él mismo se define como \"hombre / candidato de centroizquierda\"; la clasificación usa por tanto la autodefinición del propio actor reportada por un medio.",
-      "source": [
-        "https://ladecana.pe/candidato-yonhy-lescano-anuncia-nueva-constitucion-carretera-a-sandia-saneamiento-para-juliaca-y-lucha-anti-corrupcion/#:~:text=centroizquierda"
-      ]
+      "value": "Centro / Populismo",
+      "descripcion": "Lescano se autodefine como un político de centro, aunque sus propuestas a veces oscilan entre el populismo y medidas de carácter social.",
+      "source": ["https://es.wikipedia.org/wiki/Yonhy_Lescano"]
     },
     "economia": {
-      "value": "Economía de mercado inclusiva orientada a un crecimiento sostenible, competitivo e inclusivo que genere empleo digno.",
+      "sintesis": "Economía de mercado inclusiva",
+      "descripcion": "\"La dimensión económica de nuestro Plan de Gobierno está orientada a impulsar un crecimiento económico sostenible, competitivo e inclusivo, que genere empleo digno y reduzca la informalidad. Busca fortalecer la productividad, promover la inversión pública y privada responsable, apoyar a las micro y pequeñas empresas, diversificar la economía y fomentar el desarrollo productivo regional, asegurando estabilidad macroeconómica y bienestar para la población.\"",
       "source": [
         "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=La%20dimensi%C3%B3n%20econ%C3%B3mica%20de%20nuestro%20Plan%20de%20Gobierno%20est%C3%A1%20orientada%20a%20impulsar%20un%20crecimiento%20econ%C3%B3mico%20sostenible%2C%20competitivo%20e%20inclusivo"
       ]
     },
-    "matrimonioIgualitario": {
-      "value": "A favor de la unión civil",
+    "educacion": {
+      "sintesis": "Educación pública prioritaria",
+      "descripcion": "Garantizar la educación pública mediante la reconstrucción de 27,000 instituciones públicas, capacitación del magisterio, ampliación de becas y acceso progresivo a conectividad y servicios básicos.",
       "source": [
-        "https://rpp.pe/peru/actualidad/elecciones-2021-yhony-lescano-a-favor-de-union-civil-y-eutanasia-en-contra-de-aborto-y-legalizacion-de-marihuana-noticia-1318437#:~:text=la%20muerte%20no%20es%20ninguna%20soluci%C3%B3n%20para%20nada"
+        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Garantizar%20la%20Educaci%C3%B3n%20P%C3%BAblica%3A%20Reconstrucci%C3%B3n%20de%2027%2C000%20instituciones"
       ]
     },
+    "salud": {
+      "sintesis": "Sistema de salud universal",
+      "descripcion": "Paralelamente, el Plan propone fortalecer MINSA y EsSalud, reforzar la atención primaria y de especialidades, asegurar turnos mañana/tarde/noche y movilizar especialistas para cirugías regionales, además de priorizar equipamiento y medicinas.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Garantizar%20la%20salud%20p%C3%BAblica%20en%20Minsa%20y%20Essalud%2C%20equipamiento%2C%20fortalecer%20la%20atenci%C3%B3n%20primaria%20y%20de%20especialidades"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": null,
+      "source": []
+    },
     "aborto": {
-      "value": "En contra",
+      "sintesis": "Oposición al aborto",
+      "descripcion": "Se opone a la despenalización y legalización del aborto; en RPP afirmó que \"la muerte no es ninguna solución para nada\". Ha propuesto medidas de asistencia (médica y psicológica) para víctimas de violación y llegó a presentar proyectos de ley orientados a proteger al no nacido en casos de violación.",
       "source": [
         "https://rpp.pe/peru/actualidad/elecciones-2021-yhony-lescano-a-favor-de-union-civil-y-eutanasia-en-contra-de-aborto-y-legalizacion-de-marihuana-noticia-1318437#:~:text=la%20muerte%20no%20es%20ninguna%20soluci%C3%B3n%20para%20nada"
       ]
     },
     "seguridad": {
-      "value": "Reingeniería y fortalecimiento operativo de la PNP; control territorial disuasivo con PNP y FFAA.",
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Fortalecimiento%20y%20Reingenier%C3%ADa%20institucional%20y%20operativa%20de%20la%20Policial%20Nacional%20del%20Per%C3%BA"
-      ]
+      "value": null,
+      "source": []
     },
     "ambiente": {
-      "value": "Desarrollo equilibrado e integrado del territorio nacional, reduciendo brechas regionales y respetando características ambientales.",
+      "sintesis": "Ordenamiento territorial sostenible",
+      "descripcion": "La dimensión territorial de nuestro Plan de Gobierno se orienta a promover un desarrollo equilibrado e integrado del territorio nacional, reduciendo las brechas entre regiones urbanas y rurales. Busca fortalecer la descentralización, el ordenamiento territorial y la articulación entre los distintos niveles de gobierno, garantizando el acceso equitativo a infraestructura, servicios públicos y oportunidades económicas, con respeto a las características sociales, culturales y ambientales de cada territorio.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=La%20dimensi%C3%B3n%20territorial%20de%20nuestro%20Plan%20de%20Gobierno%20se%20orienta%20a%20promover%20un%20desarrollo%20equilibrado%20e%20integrado%20del%20territorio%20nacional"
       ]
     },
-    "educacion": {
-      "value": "Educación pública prioritaria mediante la reconstrucción de instituciones, capacitación del magisterio y ampliación de becas.",
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Garantizar%20la%20Educaci%C3%B3n%20P%C3%BAblica%3A%20Reconstrucci%C3%B3n%20de%2027%2C000%20instituciones"
-      ]
-    },
     "reformaPolitica": {
-      "value": "Fortalecimiento del Estado y sus instituciones para garantizar una gestión pública eficiente y transparente.",
+      "sintesis": "Fortalecimiento institucional y transparencia",
+      "descripcion": "La dimensión institucional de nuestro Plan de Gobierno se orienta a fortalecer el Estado y sus instituciones, garantizando una gestión pública eficiente y transparente.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=La%20dimensi%C3%B3n%20institucional%20de%20nuestro%20Plan%20de%20Gobierno%20se%20orienta%20a%20fortalecer%20el%20Estado%20y%20sus%20instituciones"
       ]

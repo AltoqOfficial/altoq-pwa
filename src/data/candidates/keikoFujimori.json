@@ -3,7 +3,7 @@
   "slug": "keiko-sofia-fujimori-higuchi",
   "fullName": "Keiko Sofía Fujimori Higuchi",
   "shortName": "Keiko Fujimori",
-  "image": "/candidates/keiko-sofia-fujimori-higuchi.png",
+  "image": "/candidatos/keiko-fujimori.webp",
   "color": "#FF8500",
   "party": "Partido Político Fuerza Popular",
   "partyIcon": "/partidos/fuerza-popular.png",
@@ -154,43 +154,47 @@
       ]
     },
     "economia": {
-      "value": "Defensa de una economía capitalista popular y la inversión privada responsable. Propone un modelo de libre mercado que proteja a sectores vulnerables (Mypes, agro) mediante la redistribución de la riqueza.",
+      "sintesis": "Capitalismo Popular",
+      "descripcion": "Defensa de una economía capitalista popular y la inversión privada responsable. Propone un modelo de libre mercado que proteja a sectores vulnerables (Mypes, agro) mediante la redistribución de la riqueza.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Capitalismo="
       ]
     },
     "matrimonioIgualitario": {
-      "value": "Sin posición explícita (Protege la estructura de la familia tradicional)",
-      "source": [
-        "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Protegemos%20decididamente%20el%20derecho%20a%20la%20vida%20desde%20su%20concepci%C3%B3n="
-      ]
+      "value": null,
+      "source": []
     },
     "aborto": {
-      "value": "En contra (Protege el derecho a la vida desde la concepción)",
+      "sintesis": "En contra",
+      "descripcion": "Posición en contra del aborto, fundamentada en la protección decidida del derecho a la vida desde la concepción.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Protegemos%20decididamente%20el%20derecho%20a%20la%20vida%20desde%20su%20concepci%C3%B3n="
       ]
     },
     "seguridad": {
-      "value": "Restablecimiento del orden público y respaldo total a las instituciones armadas y policiales contra el crimen y terrorismo.",
+      "sintesis": "Restablecimiento de autoridad y orden",
+      "descripcion": "Restablecimiento del orden público y respaldo total a las instituciones armadas y policiales contra el crimen y terrorismo.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Homenaje%20y%20apoyo%20a%20la%20Polic%C3%ADa%20Nacional%20y%20Fuerzas%20Armadas="
       ]
     },
     "ambiente": {
-      "value": "Desarrollo sostenible en convivencia entre la inversión económica y el cuidado de la naturaleza.",
+      "sintesis": "Desarrollo sostenible equilibrado",
+      "descripcion": "Desarrollo sostenible en convivencia entre la inversión económica y el cuidado de la naturaleza.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=El%20Per%C3%BA%20es%20un%20pa%C3%ADs%20megadiverso,%20cuyo%20futuro%20es%20sostenible="
       ]
     },
     "educacion": {
-      "value": "Libertad de los padres para educar; enfoque en calidad, ciencia y tecnología como motor de movilidad social.",
+      "sintesis": "Libertad educativa y tecnología a",
+      "descripcion": "Libertad de los padres para educar; enfoque en calidad, ciencia y tecnología como motor de movilidad social.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Los%20padres,hijos"
       ]
     },
     "reformaPolitica": {
-      "value": "Fortalecer los partidos políticos y la independencia de poderes para garantizar gobernabilidad.",
+      "sintesis": "Fortalecimiento de partidos y gobernabilidad",
+      "descripcion": "Fortalecer los partidos políticos y la independencia de poderes para garantizar gobernabilidad.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Los%20partidos%20pol%C3%ADticos%20son%20la%20base%20de%20la%20democracia="
       ]

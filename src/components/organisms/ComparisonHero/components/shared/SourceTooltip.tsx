@@ -23,6 +23,7 @@ interface SourceTooltipProps {
   children: React.ReactNode;
   source?: string | string[] | null;
   description?: string;
+  title?: string;
   className?: string;
   /** Force tooltip to appear on a specific side: 'left' centers in left half, 'right' centers in right half */
   side?: "left" | "right";
@@ -38,6 +39,7 @@ export function SourceTooltip({
   children,
   source,
   description,
+  title,
   className = "",
   side,
 }: SourceTooltipProps) {
@@ -265,27 +267,6 @@ export function SourceTooltip({
   // Normalize source to array
   const sources = Array.isArray(source) ? source : [source];
 
-  // Helper to extract clean domain name for tags
-  const getSourceLabel = (url: string) => {
-    try {
-      const hostname = new URL(url).hostname;
-      // Remove www.
-      const name = hostname.replace(/^www\./, "");
-      // Get main domain part (e.g. infogob.jne.gob.pe -> infogob)
-      // Special cases for known news sites could be added here
-      if (name.includes("infogob")) return "INFOGOB";
-      if (name.includes("rpp")) return "RPP";
-      if (name.includes("elcomercio")) return "EL COMERCIO";
-      if (name.includes("larepublica")) return "LA REPÚBLICA";
-      if (name.includes("ipsos")) return "IPSOS";
-      if (name.includes("swissinfo")) return "SWISSINFO";
-
-      return name.split(".")[0].toUpperCase();
-    } catch {
-      return "FUENTE";
-    }
-  };
-
   const isTop = position === "top";
 
   // Transform: Align tooltip to anchor point and position vertically
@@ -330,6 +311,7 @@ export function SourceTooltip({
               sources={sources}
               isMobile={isMobile}
               isTop={isTop}
+              title={title}
             />
           </div>,
           document.body
@@ -344,14 +326,21 @@ function TooltipContent({
   sources,
   isMobile,
   isTop,
+  title,
 }: {
   description?: string;
   sources: string[];
   isMobile: boolean;
   isTop: boolean;
+  title?: string;
 }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const MAX_CHARS = 120;
+  // Assistant Logic:
+  // Title (sintesis) should be bold.
+  // Descripcion should be full.
+  // Sources are links.
+  // "Ver más" goes to first source.
+
+  const firstSource = sources.length > 0 ? sources[0] : null;
 
   // Helper to extract clean domain name for tags
   const getSourceLabel = (url: string) => {
@@ -370,12 +359,6 @@ function TooltipContent({
     }
   };
 
-  const shouldTruncate = description && description.length > MAX_CHARS;
-  const displayText =
-    shouldTruncate && !isExpanded
-      ? description.slice(0, MAX_CHARS).trimEnd() + "..."
-      : description;
-
   return (
     <span
       className={`
@@ -384,53 +367,65 @@ function TooltipContent({
         ${isMobile ? "p-3" : "p-4"}
         text-left
         animate-tooltip-in
+        flex flex-col gap-2 min-w-[200px]
       `}
     >
-      {/* Content Wrapper for inline flow */}
-      <span className="font-atNameSans font-light text-sm leading-relaxed tracking-wide inline">
-        {description ? (
-          <>
-            {displayText}
-            {shouldTruncate && (
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setIsExpanded(!isExpanded);
-                }}
-                className="text-[#0066cc] hover:text-[#0044aa] font-medium ml-1 underline-offset-2 hover:underline transition-colors"
-              >
-                {isExpanded ? "Ver menos" : "Ver más"}
-              </button>
-            )}
-            {/* Spacer before tags if description exists */}
-            <span className="inline-block w-1"></span>
-          </>
-        ) : (
-          "Información verificada: "
-        )}
+      {/* Title (Sintesis) */}
+      {title && (
+        <span className="block font-atName font-bold text-sm leading-tight text-[#111111]">
+          {title}
+        </span>
+      )}
+
+      {/* Description */}
+      {description && (
+        <span className="block font-atName font-light text-sm leading-relaxed tracking-wide text-gray-700">
+          {description}
+        </span>
+      )}
+
+      {/* Sources and Ver Más */}
+      <span className="block mt-1 pt-2 border-t border-gray-100">
+        <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider mr-2">
+          FUENTES:
+        </span>
 
         {/* Inline Source Tags */}
-        {sources.map((src, idx) => (
+        <span className="inline-flex flex-wrap gap-1 align-middle">
+          {sources.map((src, idx) => (
+            <a
+              key={idx}
+              href={src}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="
+                inline-flex items-center justify-center
+                bg-[#f0f0f0] hover:bg-[#e0e0e0]
+                text-gray-600 hover:text-black
+                text-[9px] font-sohne-breit font-bold uppercase
+                px-2 py-0.5 rounded-md
+                transition-colors duration-200
+                no-underline border border-gray-200
+              "
+            >
+              {getSourceLabel(src)}
+            </a>
+          ))}
+        </span>
+
+        {/* Ver más button pointing to first source */}
+        {firstSource && (
           <a
-            key={idx}
-            href={src}
+            href={firstSource}
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
-            className="
-              inline-flex items-center justify-center
-              bg-[#666666] hover:bg-black
-              text-white text-[8px] font-sohne-breit font-bold uppercase
-              px-2.5 py-0.5 rounded-full
-              transition-colors duration-200
-              mx-1 align-middle my-0.5
-              no-underline
-            "
-            style={{ verticalAlign: "2px" }}
+            className="block mt-2 text-right text-[10px] text-blue-600 font-bold hover:underline uppercase tracking-wide cursor-pointer"
           >
-            {getSourceLabel(src)}
+            VER MÁS →
           </a>
-        ))}
+        )}
       </span>
 
       <span
@@ -537,11 +532,24 @@ export function extractDescription(
   if (!value || typeof value !== "object") return undefined;
 
   // Support both English 'description' and Spanish 'descripcion'
-  if ("description" in value && !Array.isArray(value))
-    return (value as ValueWithSource | ArrayValueWithSource).description;
+  const v = value as { description?: string; descripcion?: string };
+  return v.description || v.descripcion;
+}
 
-  if ("descripcion" in value && !Array.isArray(value))
-    return (value as { descripcion?: string }).descripcion;
+/**
+ * Extract the synthesis (title) from a potentially sourced value
+ */
+export function extractSynthesis(
+  value:
+    | string
+    | string[]
+    | ValueWithSource
+    | ArrayValueWithSource
+    | null
+    | undefined
+): string | undefined {
+  if (!value || typeof value !== "object") return undefined;
 
-  return undefined;
+  const v = value as { sintesis?: string };
+  return v.sintesis;
 }

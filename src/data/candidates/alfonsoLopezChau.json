@@ -3,7 +3,7 @@
   "slug": "pablo-alfonso-lopez-chau-nava",
   "fullName": "PABLO ALFONSO LÓPEZ CHAU NAVA",
   "shortName": "Alfonso López Chau",
-  "image": "/candidates/pablo-alfonso-lopez-chau-nava.png",
+  "image": "/candidatos/alfonso-lopez-chau.webp",
   "color": "#004595",
   "party": "Ahora Nación - AN",
   "partyIcon": "/partidos/ahora-nacion.png",
@@ -107,38 +107,44 @@
       "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
     },
     "economia": {
-      "value": "Socialdemocracia económica y Nacionalismo productivo; promueve industria e innovación.",
+      "sintesis": "Soberanía y Diversificación Industrial",
+      "descripcion": "Socialdemocracia económica y Nacionalismo productivo; promueve industria e innovación.",
       "source": [
         "https://peru21.pe/politica/cade-ejecutivos-2025-alfonso-lopez-chau-presenta-sus-propuestas-para-el-peru/"
       ]
     },
     "matrimonioIgualitario": { "value": null, "source": [] },
     "aborto": {
-      "value": "Enfoque progresista; protección de derechos reproductivos sin retrocesos.",
+      "sintesis": "Progresismo moderado",
+      "descripcion": "Enfoque progresista; protección de derechos reproductivos sin retrocesos.",
       "source": [
         "https://larepublica.pe/politica/2026/01/09/cinco-partidos-prometen-revision-y-salida-de-corte-idh-y-otros-tres-defienden-permanencia-en-planes-de-gobierno-hnews-305037"
       ]
     },
     "seguridad": {
-      "value": "Firmeza institucional y recuperación de la autoridad del Estado frente al crimen organizado.",
+      "sintesis": "Autoridad institucional y reforma policial",
+      "descripcion": "Firmeza institucional y recuperación de la autoridad del Estado frente al crimen organizado.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
       ]
     },
     "ambiente": {
-      "value": "Desarrollo sostenible con soberanía sobre recursos naturales.",
+      "sintesis": "Sostenibilidad con soberanía",
+      "descripcion": "Desarrollo sostenible con soberanía sobre recursos naturales.",
       "source": [
         "https://img.lpderecho.pe/wp-content/uploads/2025/12/Ahora-Nacion-Plan-de-Gobierno-LP-derecho.pdf"
       ]
     },
     "educacion": {
-      "value": "Estado Docente; educación pública, universal y descentralizada.",
+      "sintesis": "Estado Docente y Universidad Pública",
+      "descripcion": "Estado Docente; educación pública, universal y descentralizada.",
       "source": [
         "https://peru21.pe/politica/cade-ejecutivos-2025-alfonso-lopez-chau-presenta-sus-propuestas-para-el-peru/"
       ]
     },
     "reformaPolitica": {
-      "value": "Reformismo constitucional y descentralización radical del poder.",
+      "sintesis": "Refundación Republicana",
+      "descripcion": "Reformismo constitucional y descentralización radical del poder.",
       "source": ["https://ahoranacion-callao.com/ideario.html"]
     }
   },

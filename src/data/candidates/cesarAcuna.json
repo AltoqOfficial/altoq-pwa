@@ -3,7 +3,7 @@
   "slug": "cesar-acuna-peralta",
   "fullName": "César Acuña Peralta",
   "shortName": "César Acuña",
-  "image": "/candidates/cesar-acuna-peralta.png",
+  "image": "/candidatos/cesar-acuna.webp",
   "color": "#004b93",
   "party": "Partido Político Alianza para el Progreso",
   "partyIcon": "/partidos/alianza-para-el-progreso.png",
@@ -120,38 +120,44 @@
       ]
     },
     "economia": {
-      "value": "Economía competitiva basada en la estabilidad macroeconómica e inversión privada agresiva (US$ 80 mil millones) con enfoque en justicia social y formalización empresarial.",
+      "sintesis": "Inversión privada y Justicia Social",
+      "descripcion": "Economía competitiva basada en la estabilidad macroeconómica e inversión privada agresiva (US$ 80 mil millones) con enfoque en justicia social y formalización empresarial.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=La%20institucionalidad%20econ%C3%B3mica="
       ]
     },
     "matrimonioIgualitario": { "value": "-", "source": [] },
     "aborto": {
-      "value": "Basada en el respeto a la Constitución de 1993 y la dignidad humana (sin mención explícita al término aborto)",
+      "sintesis": "Defensa de la dignidad humana",
+      "descripcion": "Postura basada en el respeto a la Constitución de 1993 y la dignidad humana (sin mención explícita al término aborto, alineada al conservadurismo).",
       "source": [
         "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Respeto%20por%20la%20dignidad%20de%20las%20personas="
       ]
     },
     "seguridad": {
-      "value": "Creación del Ministerio de Defensa y Seguridad Interna, uso de Inteligencia Artificial para análisis predictivo y cárceles modernas mediante Obras por Impuestos y APP.",
+      "sintesis": "Ministerio de Defensa y Seguridad Interna",
+      "descripcion": "Propone la creación del Ministerio de Defensa y Seguridad Interna, el uso de Inteligencia Artificial para análisis predictivo y cárdeles modernas mediante Obras por Impuestos y APP.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=La%20reducci%C3%B3n%20dr%C3%A1stica%20de%20homicidios="
       ]
     },
     "ambiente": {
-      "value": "Reingeniería del SENACE para absorber ANA y SERFOR, manejo forestal sostenible y remediación de pasivos ambientales.",
+      "sintesis": "Reingeniería ambiental (SENACE)",
+      "descripcion": "Reingeniería del SENACE para absorber ANA y SERFOR, manejo forestal sostenible y remediación de pasivos ambientales.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=el%20Estado%20debe%20mejorar="
       ]
     },
     "educacion": {
-      "value": "Reestructuración del MINEDU, secundaria técnica obligatoria, fortalecimiento de la carrera docente y certificaciones en inglés e IA.",
+      "sintesis": "Secundaria técnica y meritocracia",
+      "descripcion": "Propone la reestructuración del MINEDU, secundaria técnica obligatoria, fortalecimiento de la carrera docente y certificaciones en inglés e IA.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=MINEDU%20debe%20iniciar%20Plan%20de%20promoci%C3%B3n="
       ]
     },
     "reformaPolitica": {
-      "value": "Reducción de ministerios de 19 a 10, descentralización efectiva y reformas constitucionales para facilitar convenios tributarios.",
+      "sintesis": "Reducción de ministerios",
+      "descripcion": "Reducción de ministerios de 19 a 10, descentralización efectiva y reformas constitucionales para facilitar convenios tributarios.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Redise%C3%B1o%20del%20Poder%20Ejecutivo:%20reducci%C3%B3n%20de%2019%20a%2010%20ministerios="
       ]

@@ -3,7 +3,7 @@
   "slug": "roberto-sanchez-palomino",
   "fullName": "Roberto Helbert Sánchez Palomino",
   "shortName": "Roberto Sánchez",
-  "image": "/candidates/roberto-sanchez-palomino.png",
+  "image": "/candidatos/roberto-sanchez.webp",
   "color": "#E30013",
   "party": "Juntos por el Perú",
   "partyIcon": "/partidos/juntos-por-el-peru.png",
@@ -133,7 +133,8 @@
       "source": ["https://youtu.be/XLkolkxOJYw?t=771"]
     },
     "economia": {
-      "value": "Crítica al modelo económico; cuestiona la 'economía social de mercado' y aboga por mayor intervención estatal y soberanía sobre recursos.",
+      "sintesis": "Soberanía y diversificación productiva",
+      "descripcion": "Crítica al modelo económico; cuestiona la 'economía social de mercado' actual y aboga por mayor intervención estatal, justicia fiscal y soberanía sobre los recursos naturales.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=La%20iniciativa%20privada%20es%20libre.%20Se%20ejerce%20en%20una%20econom%C3%ADa%20social%20de%20mercado"
       ]
@@ -143,31 +144,36 @@
       "source": []
     },
     "aborto": {
-      "value": "A favor de la despenalización en casos de violación sexual.",
+      "sintesis": "A favor (casos de violación)",
+      "descripcion": "A favor de la despenalización en casos de violación sexual.",
       "source": [
         "https://www.congreso.gob.pe/index.php?File=%2FDocs%2FDGP%2FDIDP%2Fagenda2024%2FAGENDA-2024-2025-EQUIDAD-TEMA-68.html&K=73549&Kfn=didp%2Fprocedimientos-parlamentarios%2Fagenda-2024-2025%2FEQUIDAD#:~:text=Ley%20que%20despenaliza%20el%20aborto%20en%20casos%20de%20embarazos%20como%20consecuencia%20de%20violaci%C3%B3n%20sexual"
       ]
     },
     "seguridad": {
-      "value": "Enfoque preventivo y comunitario; propone planes locales con participación de juntas vecinales y reforma de la PNP.",
+      "sintesis": "Enfoque preventivo y reforma policial",
+      "descripcion": "Enfoque preventivo y comunitario; propone planes locales con participación de juntas vecinales y reforma de la PNP.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=implementaremos%20una%20pol%C3%ADtica%20nacional%20de%20seguridad%20ciudadana%20con%20enfoque%20integral"
       ]
     },
     "ambiente": {
-      "value": "Prioriza la conservación de biodiversidad, protección de cabeceras de cuenca ('Agua en defensa de la vida') y adaptación climática.",
+      "sintesis": "Defensa del agua y vida",
+      "descripcion": "Prioriza la conservación de biodiversidad, protección de cabeceras de cuenca ('Agua en defensa de la vida') y adaptación climática.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Protecci%C3%B3n%20del%20agua%20en%20defensa%20de%20la%20vida"
       ]
     },
     "educacion": {
-      "value": "Estado garante de la educación pública, universal, gratuita e intercultural.",
+      "sintesis": "Educación pública universal",
+      "descripcion": "Estado garante de la educación pública, universal, gratuita e intercultural.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=fortalecer%20el%20rol%20del%20Estado%20como%20garante%20del%20derecho%20a%20la%20educaci%C3%B3n"
       ]
     },
     "reformaPolitica": {
-      "value": "Refundación institucional mediante una Nueva Constitución; selección de autoridades por mérito y probidad.",
+      "sintesis": "Nueva Constitución",
+      "descripcion": "Refundación institucional mediante una Nueva Constitución; selección de autoridades por mérito y probidad.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=debe%20hacerse%20en%20m%C3%A9rito%20a%20la%20antig%C3%BCedad%20y%20probidad%20comprobada%20en%20el%20ejercicio%20de%20la%20funci%C3%B3n.%20En%20tanto%20el%20Tribunal%20Constitucional%20no%20ser%C3%A1%20un%20ente%20de%20manipulaci%C3%B3n%20pol%C3%ADtica"
       ]
