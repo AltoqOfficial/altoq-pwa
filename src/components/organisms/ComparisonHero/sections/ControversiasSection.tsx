@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import type { CandidateComparisonData, ControversyData } from "@/data";
 import { Typography } from "@/components/atoms";
 import { SourceTooltip } from "../components/shared";
@@ -166,13 +166,13 @@ export function ControversiasSection({
                   <div className="absolute -left-6 lg:-left-12 top-0">
                     <button
                       onClick={() => toggleCategory(category.key)}
-                      className="w-6 h-6 lg:w-10 lg:h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors shrink-0 cursor-pointer shadow-lg z-20"
+                      className="w-6 h-6 lg:w-10 lg:h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-all duration-300 shrink-0 cursor-pointer shadow-lg z-20"
                     >
-                      {isExpanded ? (
-                        <ChevronUp className="w-3 h-3 lg:w-5 lg:h-5 text-black" />
-                      ) : (
-                        <ChevronDown className="w-3 h-3 lg:w-5 lg:h-5 text-black" />
-                      )}
+                      <ChevronDown
+                        className={`w-3 h-3 lg:w-5 lg:h-5 text-black transition-transform duration-300 ${
+                          isExpanded ? "rotate-180" : "rotate-0"
+                        }`}
+                      />
                     </button>
                   </div>
 
@@ -189,7 +189,7 @@ export function ControversiasSection({
 
                 {/* CONTENIDO DE CATEGORÍA */}
                 {isExpanded && (
-                  <div className="w-full relative pt-2 pb-4 ml-px">
+                  <div className="w-full relative pt-2 pb-4 ml-px animate-in slide-in-from-top-4 fade-in duration-300">
                     {/* Conectar con la siguiente categoría si no es la última */}
                     {!isLast && (
                       <div

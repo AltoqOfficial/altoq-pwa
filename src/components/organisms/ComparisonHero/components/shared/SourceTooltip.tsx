@@ -334,13 +334,16 @@ function TooltipContent({
   isTop: boolean;
   title?: string;
 }) {
-  // Assistant Logic:
-  // Title (sintesis) should be bold.
-  // Descripcion should be full.
-  // Sources are links.
-  // "Ver más" goes to first source.
-
+  const [isExpanded, setIsExpanded] = useState(false);
   const firstSource = sources.length > 0 ? sources[0] : null;
+
+  // Character limit for truncated description
+  const CHAR_LIMIT = 100;
+  const shouldTruncate = description && description.length > CHAR_LIMIT;
+  const displayDescription =
+    shouldTruncate && !isExpanded
+      ? description.substring(0, CHAR_LIMIT) + "..."
+      : description;
 
   // Helper to extract clean domain name for tags
   const getSourceLabel = (url: string) => {
@@ -359,6 +362,19 @@ function TooltipContent({
     }
   };
 
+  const handleVerMasClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (shouldTruncate) {
+      // Toggle expansion if description is truncatable
+      setIsExpanded(!isExpanded);
+    } else if (firstSource) {
+      // Otherwise, navigate to source
+      window.open(firstSource, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <span
       className={`
@@ -367,8 +383,19 @@ function TooltipContent({
         ${isMobile ? "p-3" : "p-4"}
         text-left
         animate-tooltip-in
-        flex flex-col gap-2 min-w-[200px]
+        flex flex-col gap-2
+        transition-all duration-300 ease-in-out
       `}
+      style={{
+        width: isExpanded
+          ? isMobile
+            ? "90vw"
+            : "500px"
+          : isMobile
+            ? "240px"
+            : "320px",
+        minWidth: "200px",
+      }}
     >
       {/* Title (Sintesis) */}
       {title && (
@@ -377,14 +404,25 @@ function TooltipContent({
         </span>
       )}
 
-      {/* Description */}
-      {description && (
+      {/* Description with inline Ver más */}
+      {displayDescription && (
         <span className="block font-atName font-light text-sm leading-relaxed tracking-wide text-gray-700">
-          {description}
+          {displayDescription}
+          {shouldTruncate && (
+            <>
+              {" "}
+              <button
+                onClick={handleVerMasClick}
+                className="inline font-atName font-light text-sm text-blue-600 hover:text-blue-800 hover:underline cursor-pointer bg-transparent border-none p-0 leading-relaxed tracking-wide"
+              >
+                {isExpanded ? "ver menos" : "ver más"}
+              </button>
+            </>
+          )}
         </span>
       )}
 
-      {/* Sources and Ver Más */}
+      {/* Sources */}
       <span className="block mt-1 pt-2 border-t border-gray-100">
         <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider mr-2">
           FUENTES:
@@ -413,19 +451,6 @@ function TooltipContent({
             </a>
           ))}
         </span>
-
-        {/* Ver más button pointing to first source */}
-        {firstSource && (
-          <a
-            href={firstSource}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="block mt-2 text-right text-[10px] text-blue-600 font-bold hover:underline uppercase tracking-wide cursor-pointer"
-          >
-            VER MÁS →
-          </a>
-        )}
       </span>
 
       <span

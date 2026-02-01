@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import type { CandidateComparisonData, ProposalData } from "@/data";
 import { Typography } from "@/components/atoms";
 import { SourceTooltip } from "../components/shared";
@@ -286,7 +286,7 @@ export function PropuestasPrincipalesSection({
                 {/* Círculo central sobre la línea */}
                 <button
                   onClick={() => toggleProposal(proposalKey)}
-                  className="absolute left-1/2 -translate-x-1/2 top-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors z-20"
+                  className="absolute left-1/2 -translate-x-1/2 top-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-all duration-300 z-20"
                   aria-label={
                     expandedProposal === proposalKey
                       ? "Colapsar propuesta"
@@ -294,11 +294,13 @@ export function PropuestasPrincipalesSection({
                   }
                   disabled={!leftProposal.titulo && !rightProposal.titulo}
                 >
-                  {expandedProposal === proposalKey ? (
-                    <ChevronUp className="w-4 h-4 lg:w-5 lg:h-5 text-black" />
-                  ) : (
-                    <ChevronDown className="w-4 h-4 lg:w-5 lg:h-5 text-black" />
-                  )}
+                  <ChevronDown
+                    className={`w-4 h-4 lg:w-5 lg:h-5 text-black transition-transform duration-300 ${
+                      expandedProposal === proposalKey
+                        ? "rotate-180"
+                        : "rotate-0"
+                    }`}
+                  />
                 </button>
 
                 {/* Título candidato derecha */}
@@ -322,7 +324,7 @@ export function PropuestasPrincipalesSection({
 
               {/* Contenido expandible */}
               {expandedProposal === proposalKey && (
-                <div className="grid grid-cols-2 gap-4 lg:gap-12 mt-8">
+                <div className="grid grid-cols-2 gap-4 lg:gap-12 mt-8 animate-in slide-in-from-top-4 fade-in duration-300">
                   {/* Contenido izquierda */}
                   <ProposalDetail
                     data={leftProposal}
