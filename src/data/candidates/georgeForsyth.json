@@ -194,63 +194,273 @@
   "propuestasPrincipales": {
     "institucional": [
       {
-        "titulo": "Blindaje Constitucional de Órganos Autónomos [cite: 146]",
-        "descripcion": "Reformas para proteger órganos de control y reducir captura política mediante autonomía presupuestal[cite: 147].",
+        "titulo": "PERÚ DEMOCRÁTICO",
+        "descripcion": "Impulsar reformas constitucionales y legislativas para fortalecer la democracia, blindar órganos autónomos y ampliar la participación ciudadana como contrapeso.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22PER%C3%9A%20DEMOCR%C3%81TICO%22"
+        ]
+      },
+      {
+        "titulo": "EJE 1: BLINDAJE CONSTITUCIONAL DE ÓRGANOS AUTÓNOMOS",
+        "descripcion": "Reformas constitucionales (mayorías, prohibición de vaciamiento competencial, autonomía presupuestal) para proteger órganos de control y reducir captura política.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20BLINDAJE%20CONSTITUCIONAL%20DE%20%C3%93RGANOS%20AUT%C3%93NOMOS"
         ]
       },
       {
-        "titulo": "Contraloría 4.0 - Inteligencia Artificial Anticorrupción [cite: 150]",
-        "descripcion": "Detectar y prevenir corrupción en tiempo real con IA y auditorías automatizadas[cite: 151].",
+        "titulo": "PERÚ ÍNTEGRO: TOLERANCIA CERO A LA CORRUPCIÓN",
+        "descripcion": "Programa anticorrupción para reducir el costo de la corrupción y recuperar la confianza ciudadana.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PER%C3%9A%20%C3%8DNTEGRO%3A%20TOLERANCIA%20CERO%20A%20LA%20CORRUPCI%C3%93N"
+        ]
+      },
+      {
+        "titulo": "EJE 1: CONTRALORÍA 4.0 - INTELIGENCIA ARTIFICIAL ANTICORRUPCIÓN",
+        "descripcion": "Detectar y prevenir corrupción en tiempo real con IA, cruces masivos de bases y auditorías automatizadas.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201:%20CONTRALOR%C3%8DA%204.0%20,INTELIGENCIA%20ARTIFICIAL%20ANTICORRUPCI%C3%93N"
+        ]
+      },
+      {
+        "titulo": "EJE 1: AHOGO FINANCIERO DEL CRIMEN ORGANIZADO",
+        "descripcion": "Corte de flujos financieros ilícitos (extinción de dominio, cooperación interinstitucional e internacional).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20AHOGO%20FINANCIERO%20DEL%20CRIMEN%20ORGANIZADO"
+        ]
+      },
+      {
+        "titulo": "EJE 2: TRANSPARENCIA RADICAL Y GOBIERNO ABIERTO",
+        "descripcion": "Plataforma nacional de integridad (blockchain), portal de datos abiertos en tiempo real, fiscalización ciudadana empoderada y trazabilidad de recursos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20TRANSPARENCIA%20RADICAL%20Y%20GOBIERNO%20ABIERTO"
+        ]
+      },
+      {
+        "titulo": "PROGRAMA: POLICÍA AL SERVICIO DEL CIUDADANO",
+        "descripcion": "Modernizar y descentralizar el servicio policial para una PNP cercana, profesional y focalizada en prevención y protección comunitaria.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20POLIC%C3%8DA%20AL%20SERVICIO%20DEL%20CIUDADANO"
+        ]
+      },
+      {
+        "titulo": "EJE (Policía) — PODER EJECUTIVO PARA COMITÉS LOCALES / EVALUACIÓN POR RESULTADOS",
+        "descripcion": "Fortalecer comités locales (CODISEC) con presupuesto y métricas públicas; evaluación por resultados y ranking público por desempeño.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20PODER%20EJECUTIVO%20PARA%20COMIT%C3%89S%20LOCALES"
+        ]
+      },
+      {
+        "titulo": "PROGRAMA: JUSTICIA ACCESIBLE PARA TODOS",
+        "descripcion": "Acercar la justicia (módulos rurales, juzgados itinerantes), modernizar digitalmente el sistema (expediente electrónico, audiencias virtuales) y fortalecer defensa pública.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20JUSTICIA%20ACCESIBLE%20PARA%20TODOS"
+        ]
+      },
+      {
+        "titulo": "EJE (Justicia) — JUSTICIA DIGITAL y DEFENSA PÚBLICA FORTALECIDA",
+        "descripcion": "Expediente Judicial Electrónico Universal, plataformas de seguimiento de casos, duplicar defensores públicos y centros de asistencia legal gratuita.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20JUSTICIA%20DIGITAL%20,MODERNIZACI%C3%93N%20TECNOL%C3%93GICA%20DEL%20SISTEMA"
+        ]
+      },
+      {
+        "titulo": "GESTIÓN DEL RIESGO DE DESASTRES",
+        "descripcion": "Fortalecer monitoreo, brigadas y capacidades locales; infraestructura resiliente y reducción de vulnerabilidad territorial.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=GESTI%C3%93N%20DEL%20RIESGO%20DE%20DESASTRES"
         ]
       }
     ],
     "economico": [
       {
-        "titulo": "Perú: País integrado y abierto al mundo [cite: 82]",
-        "descripcion": "Posicionar al Perú como hub logístico del Pacífico Sur mediante infraestructura de transporte[cite: 83].",
+        "titulo": "PERÚ: País integrado y abierto al mundo",
+        "descripcion": "Reducir la brecha de infraestructura de transporte y bajar costos logísticos para posicionar al Perú como hub logístico del Pacífico Sur.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Reducir%20la%20brecha%20de%20infraestructura%20de%20transporte"
         ]
       },
       {
-        "titulo": "Perú potencia agroexportadora mundial [cite: 97]",
-        "descripcion": "Duplicar exportaciones agrícolas mediante riego y financiamiento[cite: 98].",
+        "titulo": "EJE 1: Metro de Lima – Movilidad digna",
+        "descripcion": "Prioriza la culminación y expansión del Metro (Líneas 2, 3 y 4) y la integración tarifaria metropolitana.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201:%20METRO%20DE%20LIMA,MOVILIDAD%20DIGNA"
+        ]
+      },
+      {
+        "titulo": "EJE 2: Red ferroviaria – Conectando regiones",
+        "descripcion": "Desarrollar ferrocarriles interurbanos (Lima–Ica, Lima–Barranca, Central Andino) para carga y pasajeros.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20RED%20FERROVIARIA,%20CONECTANDO%20REGIONES"
+        ]
+      },
+      {
+        "titulo": "EJE 3: Red vial estratégica",
+        "descripcion": "Pavimentación y mejora de red vial nacional, departamental y rural; priorizar ejes transversales y autopistas de alta montaña.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%203%3A%20RED%20VIAL%20ESTRATEGICA"
+        ]
+      },
+      {
+        "titulo": "EJE 4: Puertos y aeropuertos – Hub del Pacífico",
+        "descripcion": "Articular Puerto de Chancay y modernizar puertos/aeropuertos para convertir al Perú en nodo logístico y turístico.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%204%3A%20PUERTOS%20Y%20AEROPUERTOS,%20HUB%20DEL%20PAC%C3%8DFICO"
+        ]
+      },
+      {
+        "titulo": "EJE 5: Corredores logísticos productivos",
+        "descripcion": "Crear plataformas logísticas, truck centers y parques industriales para reducir costos y unir cadenas productivas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%205%3A%20CORREDORES%20LOG%C3%8DSTICOS%20PRODUCTIVOS"
+        ]
+      },
+      {
+        "titulo": "Formalización y apoyo a MYPES",
+        "descripcion": "Ventanillas únicas, amnistía tributaria inicial y acceso ampliado a crédito/formalización para formalizar cientos de miles de MYPES.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Ventanillas%20%C3%9Anicas%20MYPE%3A"
+        ]
+      },
+      {
+        "titulo": "Perú potencia agroexportadora mundial",
+        "descripcion": "Duplicar exportaciones agrícolas (USD 13,000 → USD 26,000) mediante riego, corredores agroexportadores y acceso a financiamiento.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Posicionar%20al%20Per%C3%BA%20como%20la%20primera%20potencia%20agroexportadora%20de%20Am%C3%A9rica%20Latina"
+        ]
+      },
+      {
+        "titulo": "EJE (Agua para el campo) – Sistemas de riego e irrigación tecnificada",
+        "descripcion": "Destrabar megaproyectos de irrigación, crear autoridad nacional de irrigación y masificar riego tecnificado.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20AGUA%20PARA%20EL%20CAMPO"
+        ]
+      },
+      {
+        "titulo": "Perú destino mundial (turismo)",
+        "descripcion": "Consolidar al Perú como potencia turística global: aumento de turistas y divisas; conectar por aire con más aeropuertos regionales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Consolidar%20al%20Per%C3%BA%20como%20potencia%20tur%C3%ADstica%20global"
+        ]
+      },
+      {
+        "titulo": "Diversificación productiva y mayor competitividad",
+        "descripcion": "Diversificar la base productiva, destrabar inversiones, aumentar inversión pública y privada y reducir informalidad para impulsar crecimiento sostenido.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=LIMITADA%20DIVERSIFICACI%C3%93N%20PRODUCTIVA%20Y%20BAJA%20COMPETITIVIDAD%20DE%20LA%20ECONOM%C3%ADA"
         ]
       }
     ],
     "social": [
       {
-        "titulo": "Anemia Cero [cite: 108]",
-        "descripcion": "Estrategia nacional de nutrición infantil para diagnóstico y seguimiento en niños de 0–5 años[cite: 109].",
+        "titulo": "ANEMIA CERO — Estrategia nacional de nutrición infantil",
+        "descripcion": "Articulación de transferencias, cuidado, alimentación y atención de salud con personal especializado para diagnóstico y seguimiento de anemia en 0–5 años.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22ANEMIA%20CERO%22.%20ESTRATEGIA%20NACIONAL%20DE%20NUTRICI%C3%93N%20INFANTIL"
         ]
       },
       {
-        "titulo": "Igualdad entre Mujeres y Hombres [cite: 122]",
-        "descripcion": "Reducir violencia de género con ampliación de Centros de Emergencia Mujer y cámaras Gesell[cite: 123].",
+        "titulo": "PERÚ ALIMENTA — Programa de alimentación digna",
+        "descripcion": "Garantizar alimentación nutritiva (Comedores Solidarios y Tarjeta Solidaria) a hogares en pobreza extrema, con infraestructura, compras locales y verificación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22PER%C3%9A%20ALIMENTA%22"
+        ]
+      },
+      {
+        "titulo": "SALUD DIGNA PARA TODOS — Sistema universal efectivo",
+        "descripcion": "Marco para un sistema de salud universal efectivo: articulación del sistema (MINSA/EsSalud), fortalecimiento de primer nivel, telemedicina, vacunación, salud mental y PADOMI.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20SALUD%20DIGNA%20PARA%20TODOS"
+        ]
+      },
+      {
+        "titulo": "PADOMI UNIVERSAL (Programa de Atención Domiciliaria)",
+        "descripcion": "Extensión nacional de la atención domiciliaria (visita médica mensual, entrega de medicamentos, brigadas móviles) para adultos mayores y crónicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%20NACIONAL%20DE%20ATENCI%C3%93N%20DOMICILIARIA%20%28PADOMI%20UNIVERSAL%29"
+        ]
+      },
+      {
+        "titulo": "PERÚ EDUCA — Formación de calidad",
+        "descripcion": "Transformar el sistema educativo (aprendizajes efectivos, educación digital, infraestructura, docentes, oficios del futuro, educación superior vinculada al empleo).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20PER%C3%9A%20EDUCA.%20FORMACI%C3%93N%20DE%20CALIDAD%20PARA%20TRANSFORMAR%20EL%20PA%C3%8DS"
+        ]
+      },
+      {
+        "titulo": "PERÚ DIGITAL 2030 — Talento digital",
+        "descripcion": "Programa nacional para formar talento digital, becas en tecnología, certificaciones internacionales y centros de excelencia (IA, ciberseguridad).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%20NACIONAL%20%22PER%C3%9A%20DIGITAL%202030%22"
+        ]
+      },
+      {
+        "titulo": "MYPE FORMAL — Más beneficios, menos trámites",
+        "descripcion": "Régimen único para MYPE (RUM), incentivos a la formalización, bono de formalización, fiscalización inteligente y beneficios tangibles para formales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22MYPE%20FORMAL.%20M%C3%A1s%20Beneficios.%20Menos%20Tr%C3%A1mites%22"
+        ]
+      },
+      {
+        "titulo": "IGUALDAD ENTRE MUJERES Y HOMBRES",
+        "descripcion": "Acciones para reducir la violencia de género (ampliación de Centros de Emergencia Mujer, cámaras Gesell), conciliación trabajo-familia y fortalecimiento de protección.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=IGUALDAD%20ENTRE%20MUJERES%20Y%20HOMBRES"
+        ]
+      },
+      {
+        "titulo": "TRABAJO DIGNO",
+        "descripcion": "Revisión integral de la legislación laboral, propuesta de un nuevo Código del Trabajo, incentivos para formalización y protección de derechos laborales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=TRABAJO%20DIGNO"
+        ]
+      },
+      {
+        "titulo": "Protección de la niñez y adolescencia",
+        "descripcion": "Fortalecimiento de Unidades de Protección, ampliación de centros de acogida (CAR), prevención del trabajo infantil y ampliación de CEDIF/servicios de protección.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Protecci%C3%B3n%20de%20la%20Ni%C3%B1ez%20y%20Adolescencia"
+        ]
+      },
+      {
+        "titulo": "Adultos mayores autónomos y atendidos",
+        "descripcion": "Pensión, PADOMI, centros de atención y políticas para garantizar autonomía y cuidado de la población mayor.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=ADULTOS%20MAYORES%20AUT%C3%93NOMOS%20Y%20ATENDIDOS"
         ]
       }
     ],
     "ambiental": [
       {
-        "titulo": "Agua para Vivir [cite: 134]",
-        "descripcion": "Gestión inteligente del agua para garantizar acceso universal seguro y continuo[cite: 135].",
+        "titulo": "PERÚ PREPARADO — Prevención ante el Fenómeno del Niño",
+        "descripcion": "Reducir pérdidas económicas por el Fenómeno del Niño mediante obras de prevención en cuencas críticas, sistema de observación de riesgos, fondo de emergencia climática, etc.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20%22PER%C3%9A%20PREPARADO%22.%20PREVENCI%C3%93N%20ANTE%20EL%20FEN%C3%93MENO%20DEL%20NI%C3%91O"
+        ]
+      },
+      {
+        "titulo": "AGUA PARA VIVIR — Gestión inteligente del agua",
+        "descripcion": "Garantizar acceso universal a agua segura y continua (metas 2031), con ejes como Cero fugas, Reforma de EPS, economía circular del agua, siembra y cosecha de agua, riego tecnificado, desalinizaciones estratégicas y gobernanza del agua.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20AGUA%20PARA%20VIVIR,AGUA"
         ]
       },
       {
-        "titulo": "Perú con Energías Renovables [cite: 140]",
-        "descripcion": "Meta de ~30% de la matriz energética al 2031 con solar e hidrógeno verde[cite: 141].",
+        "titulo": "LIMA: AIRE LIMPIO Y MOVILIDAD DIGNA",
+        "descripcion": "Reducción de PM2.5 en Lima y transformación del sistema de transporte (metro, Metropolitano, renovación vehicular, ciclovías, zonas de bajas emisiones, monitoreo).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20LIMA%3A%20AIRE%20LIMPIO%20Y%20MOVILIDAD%20DIGNA"
+        ]
+      },
+      {
+        "titulo": "RECICLA PERÚ — Economía circular",
+        "descripcion": "Transitar a una economía circular: segregación en fuente, formalización de recicladores, infraestructura de valorización, Responsabilidad Extendida del Productor (REP) y reducción en la fuente.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20%22RECICLA%20PER%C3%9A%22"
+        ]
+      },
+      {
+        "titulo": "PERÚ CON ENERGÍAS RENOVABLES",
+        "descripcion": "Aumentar la participación de renovables (meta: ~30% de la matriz al 2031) mediante destrabe de proyectos, transmisión, energía solar para comunidades, mini-hidro de bajo impacto, hidrógeno verde piloto, etc.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20%22PER%C3%9A%20CON%20ENERG%C3%8DAS%20RENOVABLES%22"
         ]
@@ -258,49 +468,189 @@
     ],
     "educativo": [
       {
-        "titulo": "Educación Digital Escolar [cite: 173]",
-        "descripcion": "Laptops masivas, conectividad universal y currículo de programación obligatorio[cite: 174].",
+        "titulo": "PERÚ EDUCA — Formación de calidad para transformar el país",
+        "descripcion": "Transformar el sistema educativo para garantizar aprendizajes de calidad, cerrar brechas de infraestructura y conectividad y formar capital humano competitivo.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20PER%C3%9A%20EDUCA.%20FORMACI%C3%93N%20DE%20CALIDAD%20PARA%20TRANSFORMAR%20EL%20PA%C3%8DS"
+        ]
+      },
+      {
+        "titulo": "EJE 1: Aprendizajes efectivos",
+        "descripcion": "Duplicar estudiantes con nivel satisfactorio en competencias básicas mediante refuerzo escolar, tutores, sistema de alerta temprana y bonos por desempeño docente.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20APRENDIZAJES%20EFECTIVOS"
+        ]
+      },
+      {
+        "titulo": "EJE 2: Educación digital escolar",
+        "descripcion": "Formación docente en programación, distribución masiva de laptops, conectividad universal en colegios y currículo de programación obligatorio en secundaria.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20EDUCACI%C3%93N%20DIGITAL%20ESCOLAR"
         ]
       },
       {
-        "titulo": "Programa Nacional Oficios del Futuro [cite: 177]",
-        "descripcion": "Formar técnicos en oficios resistentes a la automatización para reducir población 'nini'[cite: 178].",
+        "titulo": "EJE 3: Infraestructura y docentes del Bicentenario",
+        "descripcion": "Priorizar colegios en estado crítico (algoritmo de priorización), Escuelas Bicentenario, escuelas modulares de emergencia y políticas para mejor formación, evaluación y salarios docentes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%203%3A%20INFRAESTRUCTURA%20Y%20DOCENTES%20DEL%20BICENTENARIO"
+        ]
+      },
+      {
+        "titulo": "EJE 4: Programa Nacional 'Oficios del Futuro'",
+        "descripcion": "Formar técnicos en oficios resistentes a la automatización (modelo dual, becas integrales y articulación con empresas) para reducir la población de jóvenes 'ninis'.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=A%20los%20dos%20tercios%20del%20mandato%20se%20debe%20contar%20con%20servicios%20b%C3%A1sicos%20en%20todos%20los%20centros%20educativos"
+        ]
+      },
+      {
+        "titulo": "EJE 5: Excelencia en educación superior",
+        "descripcion": "Fortalecer SUNEDU, seleccionar universidades públicas para intervención intensiva, aumentar inversión en I+D y ampliar becas técnicas y STEM (Beca 18).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%205%3A%20EXCELENCIA%20EN%20EDUCACI%C3%93N%20SUPERIOR"
         ]
       }
     ],
     "salud": [
       {
-        "titulo": "Salud Digna para Todos [cite: 112, 187]",
-        "descripcion": "Sistema universal articulado (MINSA/EsSalud) con historia clínica electrónica unificada[cite: 113, 188].",
+        "titulo": "ANEMIA CERO — Estrategia nacional de nutrición infantil",
+        "descripcion": "Estrategia nacional de nutrición infantil para diagnosticar, tratar y hacer seguimiento de la anemia en 0–5 años (transferencias condicionadas + personal especializado y diagnóstico).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22ANEMIA%20CERO%22"
+        ]
+      },
+      {
+        "titulo": "PERÚ ALIMENTA — Programa de alimentación digna",
+        "descripcion": "Programa de alimentación digna (Comedores Solidarios y Tarjeta Solidaria) para hogares en pobreza extrema, articulado con programas sociales y compras locales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22PER%C3%9A%20ALIMENTA%22"
+        ]
+      },
+      {
+        "titulo": "SALUD DIGNA PARA TODOS",
+        "descripcion": "Programa para articular el sistema fragmentado y fortalecer el primer nivel (Redes Integradas, historia clínica electrónica unificada, telemedicina, vacunación y salud mental).",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20SALUD%20DIGNA%20PARA%20TODOS"
         ]
       },
       {
-        "titulo": "PADOMI Universal [cite: 114, 189]",
-        "descripcion": "Extensión nacional de atención domiciliaria para adultos mayores y crónicos[cite: 115, 190].",
+        "titulo": "PROGRAMA NACIONAL DE ATENCIÓN DOMICILIARIA (PADOMI UNIVERSAL)",
+        "descripcion": "Extensión nacional de la atención domiciliaria (visitas, entrega de medicamentos, brigadas) para adultos mayores y personas con dependencia.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%20NACIONAL%20DE%20ATENCI%C3%93N%20DOMICILIARIA%20%28PADOMI%20UNIVERSAL%29"
+        ]
+      },
+      {
+        "titulo": "ADULTOS MAYORES AUTÓNOMOS Y ATENDIDOS",
+        "descripcion": "Programa integral para pensiones, atención domiciliaria y centros de cuidado que busca garantizar autonomía y cuidado de la población mayor.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=ADULTOS%20MAYORES%20AUT%C3%93NOMOS%20Y%20ATENDIDOS"
         ]
       }
     ],
     "seguridad": [
       {
-        "titulo": "Poder Ejecutivo para Comités Locales [cite: 197]",
-        "descripcion": "Presupuesto obligatorio y capacidad ejecutiva para CODISEC/CORESEC[cite: 198].",
+        "titulo": "CIUDADANÍA SEGURA — Sin temor en las calles",
+        "descripcion": "Transformar el SINASEC en un sistema de gestión territorial efectivo con poder ejecutivo, recursos asignados y resultados medibles.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22CIUDADAN%C3%8DA%20SEGURA%22%20Sin%20Temor%20en%20las%20Calles"
+        ]
+      },
+      {
+        "titulo": "EJE 1: PODER EJECUTIVO PARA COMITÉS LOCALES",
+        "descripcion": "Otorgar poder ejecutivo y presupuesto obligatorio a CODISEC/COPROSEC/CORESEC para que aprueben y ejecuten planes distritales con recursos vinculados.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201:%20PODER%20EJECUTIVO%20PARA%20COMIT%C3%89S%20LOCALES"
         ]
       },
       {
-        "titulo": "Policía al Servicio del Ciudadano [cite: 211]",
-        "descripcion": "Modernización y descentralización con patrullaje focalizado y cercanía comunitaria[cite: 212, 223].",
+        "titulo": "EJE 2: EVALUACIÓN POR RESULTADOS",
+        "descripcion": "Indicadores obligatorios (reducción de victimización, tiempo de respuesta policial, tasa de denuncia), ranking público de comités y vinculación de resultados a incentivos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20EVALUACI%C3%93N%20POR%20RESULTADOS"
+        ]
+      },
+      {
+        "titulo": "EJE 3: SECRETARÍAS TÉCNICAS PROFESIONALIZADAS",
+        "descripcion": "Secretarías técnicas con perfil técnico certificado, estabilidad laboral (carrera pública) y capacitación avalada por SERVIR.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%203%3A%20SECRETAR%C3%8DAS%20T%C3%89CNICAS%20PROFESIONALIZADAS"
+        ]
+      },
+      {
+        "titulo": "EJE 4: SISTEMA DE INFORMACIÓN INTEGRADO",
+        "descripcion": "Plataforma digital única interoperable (CODISEC–COPROSEC–CORESEC–CONASEC) con mapas del delito actualizados en tiempo real.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%204%3A%20SISTEMA%20DE%20INFORMACI%C3%93N%20INTEGRADO"
+        ]
+      },
+      {
+        "titulo": "EJE 5: PATRULLAJE INTEGRADO EFECTIVO",
+        "descripcion": "Convenios PNP–municipalidad, integración de videovigilancia y protocolos únicos de intervención coordinada para cobertura verificable.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%205%3A%20PATRULLAJE%20INTEGRADO%20EFECTIVO"
+        ]
+      },
+      {
+        "titulo": "EJE 6: PARTICIPACIÓN CIUDADANA CON RECURSOS",
+        "descripcion": "Presupuesto participativo específico para seguridad, equipamiento para juntas vecinales y meta nacional de juntas activas equipadas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%206%3A%20PARTICIPACI%C3%93N%20CIUDADANA%20CON%20RECURSOS"
+        ]
+      },
+      {
+        "titulo": "EJE 7: RENDICIÓN DE CUENTAS EFECTIVA",
+        "descripcion": "Consultas públicas trimestrales obligatorias, sanciones por incumplimiento y portal de transparencia con indicadores por comité.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%207%3A%20RENDICI%C3%93N%20DE%20CUENTAS%20EFECTIVA"
+        ]
+      },
+      {
+        "titulo": "PROGRAMA: POLICÍA AL SERVICIO DEL CIUDADANO",
+        "descripcion": "Modernizar y descentralizar el servicio policial para ofrecer atención cercana, profesional y focalizada en prevención y protección comunitaria.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20POLIC%C3%8DA%20AL%20SERVICIO%20DEL%20CIUDADANO"
+        ]
+      },
+      {
+        "titulo": "EJE 1 (Policía): SERVICIO DE ALTA CALIDAD AL CIUDADANO",
+        "descripcion": "Estándares de trato cordial y profesional, atención prioritaria a víctimas y grupos vulnerables, evaluación de atención y medidas anticorrupción.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20SERVICIO%20DE%20ALTA%20CALIDAD%20AL%20CIUDADANO"
+        ]
+      },
+      {
+        "titulo": "EJE 2 (Policía): DESCENTRALIZACIÓN Y SECTORIZACIÓN",
+        "descripcion": "Dividir jurisdicción de comisarías por sectores/subsectores, asignar jefes y recursos según criterios territoriales y delito.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20DESCENTRALIZACI%C3%93N%20Y%20SECTORIZACI%C3%93N"
+        ]
+      },
+      {
+        "titulo": "EJE 3 (Policía): GESTIÓN DE LA INFORMACIÓN E INNOVACIÓN TECNOLÓGICA",
+        "descripcion": "Mapas del delito en tiempo real, intercambio de información PNP–gobiernos locales, centro de análisis y uso de IA para procesar datos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%203%3A%20GESTI%C3%93N%20DE%20LA%20INFORMACI%C3%93N%20E%20INNOVACI%C3%93N%20TECNOL%C3%93GICA"
+        ]
+      },
+      {
+        "titulo": "EJE 4 (Policía): COORDINACIÓN Y ARTICULACIÓN",
+        "descripcion": "Articular PNP con gobiernos locales, recuperar espacios públicos y firmar alianzas multisectoriales para la seguridad local.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%204%3A%20COORDINACI%C3%93N%20Y%20ARTICULACI%C3%93N"
+        ]
+      },
+      {
+        "titulo": "EJE 5 (Policía): SERVICIO POLICIAL INTEGRAL FOCALIZADO",
+        "descripcion": "Intervenciones integrales focalizadas (control, disuasión, prevención, investigación) adaptadas al análisis territorial.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%205%3A%20SERVICIO%20POLICIAL%20INTEGRAL%20FOCALIZADO"
+        ]
+      },
+      {
+        "titulo": "EJE 6 (Policía): CERCANÍA A LA COMUNIDAD",
+        "descripcion": "Fortalecer la relación policía–comunidad (patrullaje a pie, empoderamiento de líderes, reuniones de evaluación y enfoque preventivo).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%206%3A%20CERCAN%C3%8DA%20A%20LA%20COMUNIDAD"
         ]
       }
     ]

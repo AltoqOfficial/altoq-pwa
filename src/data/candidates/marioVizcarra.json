@@ -154,140 +154,539 @@
     "institucional": [
       {
         "titulo": "Creación del INDA y Reorganización del MIDAGRI",
-        "descripcion": "Creación del Instituto Nacional de Desarrollo Agrario y reorganización ministerial para eliminar la captura institucional y la corrupción vía digitalización.",
+        "descripcion": "Se propone crear el Instituto Nacional de Desarrollo Agrario (INDA) y reorganizar el MIDAGRI para eliminar la captura institucional y reducir la rotación de directivos. Incluye la digitalización total mediante la plataforma 'AgroTransparente' para combatir la corrupción y las irregularidades en la gestión de recursos.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%206:%20Institucionalidad%20y%20gobernanza"
         ]
       },
       {
-        "titulo": "Carrera Pública Meritocrática Agraria",
-        "descripcion": "Implementación de una carrera meritocrática y creación de la Escuela de Gestión Pública Agraria para tecnificar el sector.",
+        "titulo": "Carrera Pública y Escuela de Gestión Pública Agraria",
+        "descripcion": "Busca implementar una carrera pública meritocrática que garantice estabilidad y profesionalismo a los técnicos del sector para evitar la ineficiencia administrativa. Se establecerá la Escuela de Gestión Pública Agraria para brindar capacitación continua y formación técnica especializada a los servidores del sector.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%206:%20Institucionalidad%20y%20gobernanza"
         ]
       },
       {
         "titulo": "Veeduría Ciudadana y Tribunal Agrario",
-        "descripcion": "Mecanismos de fiscalización por parte de los productores y creación de un tribunal especializado para resolver conflictos jurídicos.",
+        "descripcion": "Establece mecanismos de veeduría ciudadana para que los propios productores fiscalicen la ejecución presupuestal y el cumplimiento de los programas estatales. Asimismo, plantea la creación de un Tribunal Agrario que brinde seguridad jurídica y resuelva conflictos de manera especializada y oportuna en el sector.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%206:%20Institucionalidad%20y%20gobernanza"
         ]
       }
     ],
     "economico": [
       {
-        "titulo": "Comando Temporal de Destrabe de Inversiones",
-        "descripcion": "Liderado por el MEF para reducir trámites burocráticos y reactivar la inversión pública-privada.",
+        "titulo": "Reactivación de la inversión pública-privada",
+        "descripcion": "Consiste en la creación de un 'Comando Temporal de Destrabe de Inversiones' liderado por el MEF para reducir trámites burocráticos.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de la regla fiscal",
+        "descripcion": "Busca coordinar acciones con el BCRP para mantener la disciplina fiscal sin detener la ejecución de proyectos de inversión pública necesarios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
+        ]
+      },
+      {
+        "titulo": "Reforma tributaria integral",
+        "descripcion": "Plantea la simplificación del sistema, la digitalización total de expedientes y un control fiscal más riguroso a través de la SUNAT.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
+        ]
+      },
+      {
+        "titulo": "Ventanilla Única APP y Proyectos Estratégicos (VUPRO)",
+        "descripcion": "Propone centralizar y agilizar los procesos para Asociaciones Público-Privadas y proyectos de gran envergadura nacional en una plataforma única.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
+        ]
+      },
+      {
+        "titulo": "Gestión de deuda y reservas",
+        "descripcion": "Consiste en ampliar el colchón de reservas internacionales y optimizar la gestión de la deuda pública para asegurar solvencia económica.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
         ]
       },
       {
         "titulo": "Régimen Simplificado Progresivo para MYPE",
-        "descripcion": "Sistema tributario diseñado para que las micro y pequeñas empresas transiten hacia la formalidad de manera escalonada.",
+        "descripcion": "Busca implementar un sistema tributario diseñado específicamente para que las micro y pequeñas empresas transiten hacia la formalidad de manera escalonada.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
         ]
       },
       {
-        "titulo": "Plataforma Compras Abiertas 360",
-        "descripcion": "Monitoreo en tiempo real de todas las compras públicas nacionales para asegurar transparencia total.",
+        "titulo": "Sistema de 'Compras Abiertas 360'",
+        "descripcion": "Plantea una plataforma de monitoreo en tiempo real para todas las compras públicas nacionales, asegurando transparencia y control ciudadano total.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
+        ]
+      },
+      {
+        "titulo": "Priorización de proyectos con alta rentabilidad social",
+        "descripcion": "Se enfoca en dirigir el gasto público hacia infraestructura crítica como agua, saneamiento, salud y educación en zonas desatendidas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
+        ]
+      },
+      {
+        "titulo": "Mejora de la infraestructura logística y de transporte",
+        "descripcion": "Consiste en optimizar la red vial y de comunicaciones para reducir los costos de transporte y mejorar la competitividad de los productores.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
+        ]
+      },
+      {
+        "titulo": "Impulso a la conectividad digital nacional",
+        "descripcion": "Busca cerrar la brecha de internet en zonas rurales y escuelas para integrar a toda la población a la economía digital moderna.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
+        ]
+      },
+      {
+        "titulo": "Eficiencia en la ejecución de la inversión pública",
+        "descripcion": "Plantea reformas para que los gobiernos regionales y locales ejecuten presupuestos con diseños técnicos adecuados y sin retrasos innecesarios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
+        ]
+      },
+      {
+        "titulo": "Incentivos y beneficios para la formalización empresarial",
+        "descripcion": "Establece mecanismos de apoyo técnico y financiero para que las pymes crezcan, innoven y se conviertan en el motor del empleo digno.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Crecimiento%20Econ%C3%B3mico%20y%20Estabilidad%20Fiscal"
         ]
       }
     ],
     "social": [
       {
-        "titulo": "Programa Nacional Agua 100",
-        "descripcion": "Estrategia para lograr cobertura universal de agua potable segura al año 2031.",
+        "titulo": "Implementación masiva de programas de vivienda social sostenible",
+        "descripcion": "Ejecución de proyectos como 'Una Casita Para Ti' enfocados en ciudades intermedias para reducir el déficit habitacional con criterios ecológicos.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
         ]
       },
       {
-        "titulo": "Vivienda Social Sostenible \"Una Casita Para Ti\"",
-        "descripcion": "Ejecución de proyectos de vivienda en ciudades intermedias con criterios ecológicos y metodologías BIM.",
+        "titulo": "Incentivos fiscales y financieros para edificación industrializada",
+        "descripcion": "Promoción del uso de metodologías BIM/DFMA y materiales sostenibles mediante beneficios económicos para modernizar la construcción en el país.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Reforzamiento estructural de edificaciones públicas",
+        "descripcion": "Rehabilitación y mantenimiento preventivo de hospitales, colegios y obras viales a través de la gestión de Gobiernos Regionales y Municipalidades.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Programa Nacional 'Agua 100'",
+        "descripcion": "Estrategia orientada a lograr la cobertura universal y el acceso a agua potable segura para toda la población peruana al año 2031.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Plantas modulares de tratamiento de aguas residuales",
+        "descripcion": "Instalación de tecnología compacta para el saneamiento en zonas rurales y periurbanas, facilitando la gestión de residuos líquidos en áreas aisladas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Tarifa social diferenciada y subsidios cruzados",
+        "descripcion": "Implementación de un sistema de cobro equitativo bajo control de SUNASS para asegurar que las familias vulnerables puedan costear el servicio.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Tratamiento obligatorio de aguas residuales",
+        "descripcion": "Normativa que exige procesar los desechos líquidos antes de ser vertidos en ríos o mares para proteger el medio ambiente y la salud.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Plantas desalinizadoras y trasvases de cuencas",
+        "descripcion": "Generación de agua mediante la desalinización de agua de mar y el traslado de recursos hídricos para fines domésticos, agroindustriales y eléctricos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de la GRD en planeamiento urbano",
+        "descripcion": "Restricción de habilitaciones en zonas de riesgo no mitigable y reubicación de viviendas precarias para prevenir tragedias ante fenómenos naturales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Programa Nacional de Reforzamiento Sísmico",
+        "descripcion": "Intervención técnica en viviendas e infraestructura crítica del Estado para aumentar su resistencia ante terremotos y otros eventos sísmicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Seguros obligatorios contra desastres",
+        "descripcion": "Exigencia de pólizas de protección para viviendas nuevas que cuenten con financiamiento estatal, asegurando el patrimonio familiar ante emergencias.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Adopción masiva de BIM/DFMA al 2028",
+        "descripcion": "Digitalización y estandarización de procesos en proyectos públicos y privados para mejorar la eficiencia y reducir costos en la construcción nacional.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Programa Nacional de Reciclaje de RCD",
+        "descripcion": "Creación de plantas regionales para la valorización de residuos de construcción y demolición, fomentando una economía circular en las obras.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Estándares verdes obligatorios en edificaciones",
+        "descripcion": "Implementación de normas de eficiencia energética y ahorro de agua que deben cumplir todas las nuevas construcciones para ser sostenibles.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
         ]
       },
       {
         "titulo": "Impulso a sistemas de transporte masivo eléctrico",
-        "descripcion": "Desarrollo de metros, buses eléctricos y teleféricos para reducir contaminación y tiempos de viaje.",
+        "descripcion": "Desarrollo de infraestructura para metros, buses eléctricos y teleféricos urbanos con el fin de reducir la contaminación y el tiempo de viaje.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Plan Nacional de Movilidad Activa",
+        "descripcion": "Expansión de la red de ciclovías e infraestructura peatonal segura para fomentar formas de transporte no motorizadas en las ciudades.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
+        ]
+      },
+      {
+        "titulo": "Reordenamiento del transporte informal con tecnología",
+        "descripcion": "Formalización e integración del transporte público utilizando herramientas tecnológicas para mejorar la seguridad y la eficiencia del servicio.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Vivienda%20Sostenible%20(PNVS)"
         ]
       }
     ],
     "ambiental": [
       {
-        "titulo": "Fondo Rotatorio \"Mi Chacra Crece\"",
-        "descripcion": "Capitalización de 300 mil familias agricultoras mediante créditos, asistencia técnica y seguros agrarios.",
+        "titulo": "Fondo rotatorio 'Mi Chacra Crece'",
+        "descripcion": "Capitalizará a 300 mil familias de la agricultura familiar mediante créditos, asistencia técnica y seguros agrarios especializados.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
         ]
       },
       {
-        "titulo": "Perú AgroSostenible",
-        "descripcion": "Promoción de agricultura de precisión, I+D varietal y creación de clústeres de exportación.",
+        "titulo": "Sistema nacional de garantías rurales",
+        "descripcion": "Implementar un mecanismo de respaldo financiero para facilitar el acceso a préstamos del sector agrario tradicionalmente excluido.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
         ]
       },
       {
-        "titulo": "Eficiencia Hídrica y Recuperación de Andenes",
-        "descripcion": "Instalación de riego tecnificado y rehabilitación de infraestructura incaica como solución al cambio climático.",
+        "titulo": "Seguros agrarios focalizados",
+        "descripcion": "Diseñar coberturas de riesgo específicas para proteger la producción de los pequeños agricultores ante desastres climáticos o plagas.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Agro-Asiste (plataforma + IA) y red extensionista",
+        "descripcion": "Brindar asesoría técnica personalizada mediante tecnología de inteligencia artificial y una red presencial de técnicos en campo.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Producción nacional de semilla mejorada",
+        "descripcion": "Fomentar la investigación y multiplicación de semillas de alta calidad genética para elevar los rendimientos de los cultivos locales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Parques agroindustriales rurales",
+        "descripcion": "Crear infraestructura de valor agregado en zonas rurales que incluya sistemas de almacenamiento del recurso hídrico para riego.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de organizaciones rurales y formación",
+        "descripcion": "Potenciar las capacidades de gestión de las asociaciones de productores y su formación técnica para la exportación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "I+D varietal y agricultura de precisión",
+        "descripcion": "Promover la investigación de nuevas variedades de exportación y el uso de tecnologías de precisión para optimizar recursos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Clústeres y parques de exportación",
+        "descripcion": "Establecer zonas económicas especializadas que agrupen a empresas exportadoras para mejorar la competitividad y logística conjunta.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Infraestructura logística",
+        "descripcion": "Invertir en cadenas de frío, puertos y carreteras rurales para asegurar el traslado eficiente y seguro de productos agroindustriales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Certificaciones y penetración de mercados",
+        "descripcion": "Apoyar la obtención de estándares internacionales para facilitar el ingreso de productos peruanos a mercados globales exigentes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Recuperación de andenes y sistemas ancestrales",
+        "descripcion": "Rehabilitar infraestructuras incaicas de cultivo y gestión hídrica como solución sostenible y resiliente al cambio climático.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Incentivos para autosuficiencia alimentos básicos",
+        "descripcion": "Fomento de la producción interna de granos y productos esenciales para reducir la dependencia externa.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Modernización de mercados y abastecimiento de programa social escolar",
+        "descripcion": "Mejora de la infraestructura de abastos y vinculación de productores locales con Qali Warma.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Transferencias focalizadas y comedores",
+        "descripcion": "Apoyo económico directo y fortalecimiento de ollas comunes para combatir la desnutrición.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Reservas estratégicas del recurso hídrico y alerta temprana",
+        "descripcion": "Gestión anticipada de fuentes de agua y sistemas de monitoreo para prevenir crisis de riego.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Agroforestales, silvopastoril y conservación de suelos",
+        "descripcion": "Técnicas de manejo de tierras que combinan árboles con cultivos o ganado para proteger el suelo.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Eficiencia hídrica y riego tecnificado",
+        "descripcion": "Instalación de sistemas de goteo o aspersión para maximizar el ahorro y almacenamiento de agua.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Bioeconomía y residuos orgánicos",
+        "descripcion": "Aprovechamiento de desechos agrícolas para generar nuevos productos o energía sostenible.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento INIA/centros de excelencia",
+        "descripcion": "Repotenciación de laboratorios e institutos de investigación nacional para la vanguardia agraria.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Plataformas AgroDigital / biotecnología / CITEs / sensores",
+        "descripcion": "Digitalización del campo mediante uso de tecnología aplicada y control de datos satelitales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
+        ]
+      },
+      {
+        "titulo": "Ecosistema de innovación (fondos, hub)",
+        "descripcion": "Creación de redes y financiamiento para emprendimientos tecnológicos en el sector agropecuario.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Agricultura%20familiar%20pr%C3%B3spera%20y%20exportadora"
         ]
       }
     ],
     "educativo": [
       {
-        "titulo": "Modelo Moquegua de Infraestructura Educativa",
-        "descripcion": "Réplica de convenios público-privados para rehabilitar colegios y equipamiento tecnológico de forma ágil.",
+        "titulo": "Fortalecimiento del Programa Juntos para la permanencia escolar",
+        "descripcion": "Garantiza la continuidad de estudiantes de secundaria en situación de pobreza mediante incentivos que eviten el abandono escolar y promuevan su culminación en el sistema educativo.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20brechas%20de%20desigualdad%20en%20la%20educaci%C3%B3n"
         ]
       },
       {
-        "titulo": "Conectividad Digital Rural al 80%",
-        "descripcion": "Dotar de internet de alta velocidad y servicios básicos a las instituciones rurales para eliminar desventajas competitivas.",
+        "titulo": "Alimentación escolar con pertinencia cultural y productos locales",
+        "descripcion": "Fortalece el servicio alimentario escolar utilizando insumos de la agricultura familiar local para asegurar una nutrición adecuada respetando la identidad y costumbres de cada región.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20brechas%20de%20desigualdad%20en%20la%20educaci%C3%B3n"
+        ]
+      },
+      {
+        "titulo": "Inversión en infraestructura y conectividad digital en zonas rurales",
+        "descripcion": "Busca dotar de servicios básicos (agua, luz, desagüe) e internet de alta velocidad al 80% de instituciones rurales para eliminar las desventajas competitivas actuales de los estudiantes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20brechas%20de%20desigualdad%20en%20la%20educaci%C3%B3n"
+        ]
+      },
+      {
+        "titulo": "Evaluación y capacitación docente continua y meritocrática",
+        "descripcion": "Implementa programas de formación técnica inicial y constante para maestros, asegurando que su ingreso y ascenso en la carrera pública se base en concursos justos y capacidades pedagógicas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20brechas%20de%20desigualdad%20en%20la%20educaci%C3%B3n"
+        ]
+      },
+      {
+        "titulo": "Innovación tecnológica y digitalización del currículo escolar",
+        "descripcion": "Integra herramientas digitales e investigación científica en la enseñanza básica para que los alumnos desarrollen competencias acordes a la modernidad y mejoren en comprensión lectora y matemáticas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20brechas%20de%20desigualdad%20en%20la%20educaci%C3%B3n"
+        ]
+      },
+      {
+        "titulo": "Modernización de la infraestructura educativa bajo el modelo Moquegua",
+        "descripcion": "Replica convenios con el sector privado para financiar la rehabilitación de colegios y equipamiento tecnológico de forma ágil, optimizando la gestión y ejecución de recursos para la calidad educativa.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20brechas%20de%20desigualdad%20en%20la%20educaci%C3%B3n"
+        ]
+      },
+      {
+        "titulo": "Transversalización del enfoque de género y respeto a la diversidad",
+        "descripcion": "Asegura que las políticas educativas promuevan la igualdad de oportunidades entre hombres y mujeres, protegiendo los derechos de minorías y poblaciones vulnerables frente a retrocesos legislativos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20brechas%20de%20desigualdad%20en%20la%20educaci%C3%B3n"
         ]
       }
     ],
     "salud": [
       {
-        "titulo": "Sistema Farmacia Digital y Compra Unificada",
-        "descripcion": "Centralización de adquisiciones estatales para reducir costos y monitoreo de stock en tiempo real vía app.",
+        "titulo": "Centro Nacional de Inteligencia en Salud Pública y Redes Integradas (RIS)",
+        "descripcion": "Busca integrar hospitales, laboratorios y farmacias mediante un sistema de inteligencia, además de implementar Redes Integradas de Salud (RIS) en las 24 regiones con énfasis en áreas rurales para el control de enfermedades no transmisibles.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Atenci%C3%B3n%20primaria%20y%20enfermedades%20no%20transmisibles"
         ]
       },
       {
-        "titulo": "Programa Nacional Cuna Saludable",
-        "descripcion": "Intervención multisectorial contra la anemia y desnutrición crónica infantil en zonas de pobreza.",
+        "titulo": "Programa Nacional 'Cuna Saludable' contra la anemia y desnutrición",
+        "descripcion": "Plantea una intervención multisectorial para asegurar la suplementación con hierro, el control del crecimiento y el desarrollo infantil temprano, priorizando zonas con altos índices de pobreza extrema y ruralidad.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Atenci%C3%B3n%20primaria%20y%20enfermedades%20no%20transmisibles"
+        ]
+      },
+      {
+        "titulo": "Expansión de Centros de Salud Mental Comunitaria (CSMC)",
+        "descripcion": "Consiste en duplicar el número de centros especializados a nivel nacional e integrar servicios de atención psicológica en instituciones educativas y centros laborales para abordar el estigma y las secuelas post-pandemia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Atenci%C3%B3n%20primaria%20y%20enfermedades%20no%20transmisibles"
+        ]
+      },
+      {
+        "titulo": "Plan de Modernización Hospitalaria y Telesalud Nacional",
+        "descripcion": "Propone renovar el equipamiento médico en centros de salud de primer nivel y desplegar masivamente la telemedicina en zonas remotas, utilizando la capacidad logística de las Fuerzas Armadas para evacuaciones de emergencia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Atenci%C3%B3n%20primaria%20y%20enfermedades%20no%20transmisibles"
+        ]
+      },
+      {
+        "titulo": "Reforma del SERUMS y Programa de Especialización Descentralizada",
+        "descripcion": "Busca mejorar las condiciones laborales y de seguridad del personal en provincias, incentivando la especialización en regiones con déficit de médicos mediante becas y una escala salarial basada en el desempeño.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Atenci%C3%B3n%20primaria%20y%20enfermedades%20no%20transmisibles"
+        ]
+      },
+      {
+        "titulo": "Sistema 'Farmacia Digital' y Compra Unificada Nacional",
+        "descripcion": "Consiste en centralizar las adquisiciones estatales para reducir costos y garantizar el abastecimiento permanente de medicinas esenciales, permitiendo que los ciudadanos monitoreen el stock en tiempo real mediante una aplicación móvil.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Atenci%C3%B3n%20primaria%20y%20enfermedades%20no%20transmisibles"
         ]
       }
     ],
     "seguridad": [
       {
-        "titulo": "Vigilancia Tecnológica y Predictiva",
-        "descripcion": "Uso de IA para análisis de mapas de calor del delito e interconexión de cámaras municipales con la PNP.",
+        "titulo": "Formalización agresiva de la economía informal",
+        "descripcion": "Busca implementar una simplificación tributaria para pequeños negocios y establecer la bancarización obligatoria junto al uso masivo de pagos digitales. El objetivo es permitir el seguimiento de dinero proveniente de actividades ilegales mediante la trazabilidad financiera.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20espacios%20al%20crimen%20desde%20la%20econom%C3%ADa"
         ]
       },
       {
-        "titulo": "Formalización Agresiva y Trazabilidad Financiera",
-        "descripcion": "Bancarización obligatoria y pagos digitales para seguir el rastro de dinero de actividades ilegales.",
+        "titulo": "Control de mercados ilegales",
+        "descripcion": "Establece la trazabilidad total del oro desde su extracción hasta la exportación y desarrolla programas de sustitución productiva en zonas cocaleras. Incluye la cooperación binacional de inteligencia para ejecutar acciones conjuntas contra el narcotráfico y la minería ilegal con países vecinos.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf"
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20espacios%20al%20crimen%20desde%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Intervención social en zonas críticas",
+        "descripcion": "Implementa el programa nacional 'Camino Seguro' enfocado en la reducción de la deserción escolar, el pandillaje y la promoción de empleabilidad para jóvenes vulnerables. Contempla el mejoramiento urbano mediante iluminación, instalación de cámaras inteligentes y la recuperación efectiva de espacios públicos en zonas rojas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20espacios%20al%20crimen%20desde%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Vigilancia tecnológica y predictiva",
+        "descripcion": "Implementa el uso de inteligencia artificial para el análisis de mapas de calor del delito y la interconexión de centrales de videovigilancia municipales con la PNP.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20espacios%20al%20crimen%20desde%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de la investigación criminal",
+        "descripcion": "Moderniza las unidades de inteligencia de la Policía Nacional para desarticular bandas atomizadas y organizaciones transnacionales mediante tecnología avanzada y capacitación especializada.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20espacios%20al%20crimen%20desde%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Control fronterizo y migratorio estricto",
+        "descripcion": "Refuerza la vigilancia en fronteras para combatir el tráfico de armas, explosivos y la trata de personas, trabajando en coordinación con las Fuerzas Armadas en zonas estratégicas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20espacios%20al%20crimen%20desde%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Prevención del delito desde el entorno",
+        "descripcion": "Fomenta la participación ciudadana organizada y el uso de alarmas vecinales integradas al sistema de respuesta rápida de las fuerzas del orden para disuadir la delincuencia común.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20espacios%20al%20crimen%20desde%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Reforma del sistema de justicia y penitenciario",
+        "descripcion": "Propone eliminar leyes que favorecen la impunidad (como la 'Ley Soto'), implementar el uso de grilletes electrónicos para delitos no graves y reducir el hacinamiento carcelario. Busca limpiar la corrupción interna en la Policía y el Poder Judicial para recuperar la confianza ciudadana y asegurar sanciones efectivas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/f9624874-7cf6-4737-8db3-b73707c98e70.pdf#:~:text=Pol%C3%ADtica%201:%20Cerrar%20espacios%20al%20crimen%20desde%20la%20econom%C3%ADa"
         ]
       }
     ]

@@ -213,44 +213,79 @@
     "economico": [
       {
         "titulo": "Estabilidad Macroeconómica",
-        "descripcion": "Independencia del BCRP, respeto a contratos y reducción del déficit fiscal al 1% del PBI para 2031.",
+        "descripcion": "Fortalecimiento de la disciplina fiscal y autonomía monetaria. Busca asegurar la independencia del BCRP, respetar los contratos y reducir el déficit fiscal al 1% del PBI para el año 2031. Esto garantiza un entorno de previsibilidad regulatoria y resiliencia frente a riesgos económicos.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Aseguramiento%20de%20la%20independencia%20del%20BCRP%20y%20el%20respeto%20a%20los%20contratos.%20%E2%80%A2%20Sostenimiento%20del%20d%C3%A9ficit%20fiscal%20del%201%%20del%20PBI%20en%202031.="
         ]
       },
       {
-        "titulo": "Estrategia Cero Colas",
-        "descripcion": "Modernización del Estado mediante atención 100% digital en trámites de alta demanda.",
+        "titulo": "Digitalización y Estrategia 'Cero Colas'",
+        "descripcion": "Modernización del Estado mediante la atención 100% digital. Implementación de atención digital para trámites de alta demanda y citas obligatorias para los presenciales, con el fin de eliminar colas físicas en dos años. Incluye horarios extendidos y monitoreo de tiempos de espera en tiempo real.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=estrategia%20nacional%20%E2%80%9CCero%20Colas%E2%80%9D="
         ]
       },
       {
-        "titulo": "Shock Desregulatorio",
-        "descripcion": "Eliminar más de 500 trámites innecesarios y reducir en 40% el tiempo de aprobación de proyectos de inversión.",
+        "titulo": "Simplificación y Ventanilla Única con IA",
+        "descripcion": "Implementación de una Ventanilla Única Digital Nacional potenciada por Inteligencia Artificial. Permitirá realizar en línea al menos el 80% de los trámites empresariales, eliminando la discrecionalidad de los funcionarios. El sistema busca agilizar la formalización y proteger el derecho a la propiedad de manera transparente.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Ventanilla%20%C3%9Anica%20Digital%20Nacional%20con%20IA%20y%20tercerizaci%C3%B3n%20regulada,="
+        ]
+      },
+      {
+        "titulo": "Shock Desregulatorio y Lucha contra la Burocracia",
+        "descripcion": "Reducción sustancial de trabas administrativas y procedimientos redundantes. Plantea eliminar más de 500 trámites innecesarios y reducir en 40% el tiempo de aprobación de proyectos de inversión. Se fortalecerá a INDECOPI para eliminar barreras burocráticas de oficio y sin esperar denuncias.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=para%20reducir%20en%20al%20menos%2040%20%%20el%20tiempo%20promedio%20de%20tramitaci%C3%B3n%20de%20proyectos%20de%20inversi%C3%B3n="
+        ]
+      },
+      {
+        "titulo": "Competitividad y Generación de Empleo",
+        "descripcion": "Creación de una Unidad Antiburocracia para incentivar la inversión privada. Busca atraer entre 5,000 y 7,000 millones de dólares anuales en inversión adicional para generar más de 500,000 nuevos empleos formales. Se sancionará la ineficiencia pública que paralice inversiones estratégicas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Principales%20metas%20e%20indicadores="
         ]
       }
     ],
     "social": [
       {
         "titulo": "Salud Infantil y Nutrición",
-        "descripcion": "Garantizar cadena de frío para vacunas y presupuesto específico para lucha contra la anemia.",
+        "descripcion": "Fortalecimiento del tamizaje de desarrollo temprano y lucha contra la anemia infantil. Se garantiza la cadena de frío para vacunas en todo el país y se asigna presupuesto específico para suplementos y medicamentos destinados a gestantes y niños. Busca asegurar el acceso universal al agua potable y saneamiento en regiones vulnerables.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Fortalecimiento%20de%20la%20implementaci%C3%B3n%20del%20Plan%20Multisectorial%20de%20Lucha="
         ]
       },
       {
-        "titulo": "Salud Mental Juvenil",
-        "descripcion": "Creación de centros 'COOL' y líneas de atención psicológica 24/7.",
+        "titulo": "Educación e Inclusión",
+        "descripcion": "Ampliación de becas, servicios de apoyo educativo y estrategias para evitar la deserción escolar. Implementa la 'Beca Retoma tus Estudios' y el sistema 'Alerta Estudiante' para identificar riesgos de abandono. Además, propone educación flexible y multicultural para zonas aisladas, junto con el fortalecimiento de la educación técnica en áreas STEM.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Dise%C3%B1o%20e%20implementaci%C3%B3n%20de%20estrategias%20para%20dinamizar%20la%20educaci%C3%B3n="
+        ]
+      },
+      {
+        "titulo": "Salud Mental y Bienestar Juvenil",
+        "descripcion": "Creación de centros especializados y líneas de atención psicológica 24/7 para jóvenes. Establece los centros 'COOL' para acompañamiento emocional y módulos juveniles en centros de salud mental comunitaria con horarios extendidos. Incluye una plataforma de chat atendida por psicólogos para atender crisis y prevenir problemas psicosociales.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Creaci%C3%B3n%20de%20%E2%80%9CCentros%20de%20Oportunidades%20y%20Orientaci%C3%B3n%20Local="
         ]
       },
       {
-        "titulo": "Amigos con Huella",
-        "descripcion": "Sistema nacional de identificación de mascotas con microchip y red de albergues.",
+        "titulo": "Empleo y Emprendimiento Joven",
+        "descripcion": "Lanzamiento del programa 'Empleo Joven con Futuro' y fondos de capital semilla. Busca reducir el costo laboral mediante subsidios estatales en salud (SIS o EsSalud) para contrataciones juveniles en MYPES. También ofrece paquetes de formalización a costo cero y financiamiento para emprendimientos de egresados y titulados.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Creaci%C3%B3n%20del%20programa%20%E2%80%9CCapital%20Semilla%20Joven%E2%80%9D="
+        ]
+      },
+      {
+        "titulo": "Protección de Poblaciones Vulnerables",
+        "descripcion": "Integración universal de niños con discapacidad al programa CONTIGO y justicia especializada. Asegura que todos los menores con discapacidad en pobreza reciban transferencias monetarias y crea un sistema de protección para víctimas de violencia sexual. Incluye protocolos de crianza positiva para prevenir la violencia familiar.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Integraci%C3%B3n%20como%20beneficiarios%20del%20Programa%20CONTIGO="
+        ]
+      },
+      {
+        "titulo": "Tenencia Responsable y Voluntariado",
+        "descripcion": "Creación de un sistema nacional de identificación de mascotas y red de albergues. Implementa el programa 'Amigos con Huella' para el registro con microchip e historial de vacunación estatal. Además, fortalece el voluntariado nacional (SINAVOL) para que sea reconocido formalmente por universidades y empresas.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Implementaci%C3%B3n%20del%20programa%20nacional%20%E2%80%9CAmigos%20con%20Huella%20%E2%80%93%20Sistema%20Nacional%20de%20Tenencia%20Responsable%20de%20Mascotas%E2%80%9D="
         ]
@@ -258,72 +293,159 @@
     ],
     "ambiental": [
       {
-        "titulo": "Amazonía y Cero Deforestación",
-        "descripcion": "Vigilancia satelital, drones y creación de un 'Fondo Verde Amazónico'.",
+        "titulo": "Economía Circular y Residuos Sólidos",
+        "descripcion": "Eliminación de botaderos y creación de plantas de valorización energética. Busca reemplazar botaderos abiertos por rellenos regionales y plantas de tratamiento modernas mediante asociaciones público-privadas. Propone incentivos tributarios para empresas que reciclen y créditos blandos para que las MYPEs adopten tecnologías limpias.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Econom%C3%ADa%20circular%20y%20gesti%C3%B3n%20moderna%20de%20residuos="
+        ]
+      },
+      {
+        "titulo": "Amazonía y Lucha contra la Deforestación",
+        "descripcion": "Programa de 'Cero Deforestación Ilegal' con vigilancia satelital y drones. Plantea endurecer las penas contra la tala ilegal y el tráfico de especies, además de crear un 'Fondo Verde Amazónico' para proyectos sostenibles. Incluye la formación de brigadas de protección ambiental integradas por líderes locales y jóvenes.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Amazon%C3%ADa,%20biodiversidad%20y%20lucha%20contra%20la%20deforestaci%C3%B3n="
         ]
       },
       {
-        "titulo": "Economía Circular",
-        "descripcion": "Eliminación de botaderos y creación de plantas de valorización energética.",
+        "titulo": "Acción Climática y Monitoreo Ambiental",
+        "descripcion": "Modernización del sistema de monitoreo en tiempo real y bonos de carbono. Implementará estaciones digitales para medir la calidad del aire y agua en todas las regiones, visibles para el público. También busca financiamiento internacional a través de bonos verdes y la remediación de pasivos ambientales con metas claras.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Econom%C3%ADa%20circular%20y%20gesti%C3%B3n%20moderna%20de%20residuos="
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Acci%C3%B3n%20clim%C3%A1tica,%20monitoreo%20ambiental%20y%20finanzas%20verdes="
         ]
       }
     ],
     "educativo": [
       {
-        "titulo": "Infraestructura Educativa",
-        "descripcion": "Construcción de 3,000 colegios y entrega de 6 millones de dispositivos con internet satelital.",
+        "titulo": "Infraestructura y Conectividad Educativa",
+        "descripcion": "Construcción de 3,000 colegios y cierre de la brecha digital mediante la entrega de equipos. Planea la reconstrucción total de escuelas con daños críticos y la rehabilitación de locales en zonas rurales. Además, busca entregar 6 millones de laptops o tablets con internet satelital para asegurar conectividad al 100% de escuelas rurales.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Construcci%C3%B3n%20de%203,000%20colegios%20durante%20el%20periodo%20de%20gesti%C3%B3n.="
         ]
       },
       {
-        "titulo": "Rumbo Técnico Joven",
-        "descripcion": "Certificación técnica en secundaria y duplicación de becas universitarias.",
+        "titulo": "Formación Cívica, Valores y Habilidades para la Vida",
+        "descripcion": "Reforzamiento de la currícula en educación cívica, ética pública e identidad nacional. Propone reorganizar contenidos para trabajar habilidades blandas, manejo emocional y emprendimiento desde la primaria. Incluye programas de prevención contra el bullying, violencia sexual y embarazo adolescente mediante un sistema de alerta temprana.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Rumbo%20T%C3%A9cnico%20Joven%E2%80%9D="
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Reforzamiento%20integral%20de%20la%20curr%C3%ADcula%20de%20la%20Educaci%C3%B3n%20B%C3%A1sica%20Regular="
+        ]
+      },
+      {
+        "titulo": "Desarrollo y Revalorización Docente",
+        "descripcion": "Programa nacional de desarrollo profesional y cumplimiento del pago de la deuda social. Capacitará a los maestros en inteligencia artificial, habilidades socioemocionales e idiomas nativos para zonas indígenas. Asimismo, asegura el cumplimiento de la resolución del Tribunal Constitucional sobre pagos pendientes a los docentes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Aseguramiento%20del%20cumplimiento%20de%20la%20resoluci%C3%B3n%20del%20Tribunal%20Constitucional="
+        ]
+      },
+      {
+        "titulo": "Alimentación y Bienestar Escolar",
+        "descripcion": "Implementación del programa 'Desayuno para Aprender y Crecer' y dotación de uniformes. Reformulación de la alimentación escolar con menús de alta proteína comprados directamente a productores locales. Incluye la entrega de uniformes en zonas de pobreza extrema priorizando la producción textil nacional.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=reformulando%20la%20alimentaci%C3%B3n="
+        ]
+      },
+      {
+        "titulo": "Educación Técnica y Superior",
+        "descripcion": "Certificación técnica en la secundaria y duplicación de becas universitarias. Los estudiantes de secundaria podrán egresar con una certificación técnica corta para una rápida inserción laboral. En el nivel superior, se impulsarán créditos educativos con garantía estatal y se ampliará el número de beneficiarios de PRONABEC.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Rumbo%20T%C3%A9cnico%20Joven%E2%80%9D=",
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Duplicar%20el%20acceso%20a%20becas%20y%20cr%C3%A9dito="
+        ]
+      },
+      {
+        "titulo": "Innovación y Competencias Globales",
+        "descripcion": "Enseñanza de programación, IA y certificación internacional en el idioma inglés. Integra la ciencia de la computación desde la primaria y busca que todos los alumnos de secundaria logren una certificación básica de inglés (A2) al 2031. Promueve alianzas con embajadas y líderes tecnológicos para contenidos digitales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Actualizaci%C3%B3n%20de%20la%20Pol%C3%ADtica="
         ]
       }
     ],
     "salud": [
       {
-        "titulo": "Historia Clínica Electrónica",
-        "descripcion": "Integrar el 80% de los sistemas de salud (MINSA, EsSalud) vinculados al DNI.",
+        "titulo": "Prevención y Salud Infantil",
+        "descripcion": "Creación de centros materno-infantiles rurales y reducción drástica de la anemia. Implementará un padrón nominal para seguimiento en tiempo real de gestantes y niños, junto con el programa 'Bebés que Nacen Fuertes'. Busca reducir la anemia infantil al 20% mediante vacunación universal y chequeos preventivos obligatorios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Reducir%20la%20anemia%20infantil%20al%2020%="
+        ]
+      },
+      {
+        "titulo": "Atención Primaria y Modelo CLAS",
+        "descripcion": "Reactivación de las Comunidades Locales de Administración de Salud (CLAS) y salud mental. Fortalece la gestión comunitaria de los centros de salud con financiamiento sostenible y control social. Además, amplía la red de Centros de Salud Mental Comunitaria y lanza una plataforma digital de orientación emocional disponible las 24 horas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Reactivaci%C3%B3n%20y%20fortalecimiento%20del%20modelo%20CLAS="
+        ]
+      },
+      {
+        "titulo": "Modernización y Telemedicina",
+        "descripcion": "Implementación de un sistema nacional de telemedicina y citas prontas. Busca eliminar las largas esperas mediante mecanismos digitales de citas y atención domiciliaria para pacientes en pobreza. El objetivo es que el 100% de los centros de primer nivel cuenten con telemedicina operativa para zonas rurales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Garantizar%20telemedicina%20operativa%20en%20el%20100%="
+        ]
+      },
+      {
+        "titulo": "Digitalización e Interoperabilidad",
+        "descripcion": "Historia Clínica Electrónica universal vinculada al DNI. Integrará el 80% de los sistemas de salud (MINSA, EsSalud y Sanidades) para que la información del paciente sea accesible en cualquier establecimiento. Esto permitirá una trazabilidad total y una atención continua sin trámites burocráticos repetitivos.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Integrar%20el%2080%%20del%20sistema%20de%20salud="
         ]
       },
       {
-        "titulo": "Modelo CLAS",
-        "descripcion": "Reactivación y fortalecimiento de las Comunidades Locales de Administración de Salud.",
+        "titulo": "Atención de Adultos Mayores y Cuidados",
+        "descripcion": "Creación del Sistema Nacional de Cuidados y beneficios farmacéuticos. Establece el 'Carnet Nacional del Adulto Mayor' para descuentos obligatorios en consultas y medicamentos. Además, reconoce el trabajo de los cuidadores certificados como una actividad económica formal y complementaria al sistema de salud.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Reactivaci%C3%B3n%20y%20fortalecimiento%20del%20modelo%20CLAS="
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Establecimiento%20de%20un%20plan%20de%20vacunaci%C3%B3n%20gratuit="
+        ]
+      },
+      {
+        "titulo": "Infraestructura y Medicamentos de Alto Costo",
+        "descripcion": "Construcción de hospitales por macroregión y modernización del FINSAL. Plantea construir hospitales tipo III para casos complejos y actualizar el fondo para enfermedades de alto costo, como el cáncer. Asimismo, fomentará la producción nacional de genéricos y permitirá el ingreso rápido de medicinas de alta vigilancia sanitaria.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Modernizaci%C3%B3n%20y%20actualizaci%C3%B3n%20del%20Fondo%20Nacional%20para%20Enfermedades%20de%20Alto%20Costo%20(FINSAL)="
         ]
       }
     ],
     "seguridad": [
       {
-        "titulo": "Perú con Orden",
-        "descripcion": "Plataforma de tecnología predictiva, drones y reconocimiento facial.",
+        "titulo": "Prevención Temprana y Social",
+        "descripcion": "Implementación del 'Programa Nacional de Prevención Temprana' y consejos regionales. Se enfoca en alejar a jóvenes de zonas vulnerables de la delincuencia mediante becas, deporte y cultura. Incluye el programa 'Empleo Joven con Futuro' y la recuperación de espacios públicos con iluminación y vigilancia comunitaria.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Programa%20Nacional%20de%20Prevenci%C3%B3n="
+        ]
+      },
+      {
+        "titulo": "Modernización y Estrategia Policial",
+        "descripcion": "Creación de la plataforma 'Perú con Orden' y uso de tecnología predictiva. Propone el uso de drones, cámaras con reconocimiento facial, botones de pánico en celulares y la modernización de comisarías. Busca profesionalizar a la policía en dos líneas: seguridad interna e investigación criminal con estándares internacionales.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Incremento%20del%20patrullaje%20motorizado%20y%20a%C3%A9reo%20(drones)%20con%20tecnolog%C3%ADa%20GPS%20y%20c%C3%A1maras%20de%20reconocimiento%20facial"
         ]
       },
       {
-        "titulo": "Mega Penales",
-        "descripcion": "Construcción de 4 mega penales de máxima seguridad con bloqueo de señal celular.",
+        "titulo": "Combate al Crimen Organizado",
+        "descripcion": "Instalación de Centros de Comando (C5i) y un Comando Unificado Permanente. Establece una estrategia de interdicción en fronteras y rutas criminales para golpear el narcotráfico, la minería ilegal y la extorsión a MYPEs. Plantea un Plan de Emergencia con facultades legislativas por 60 días para agilizar operativos.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Construcci%C3%B3n%20de%20four%20(4)%20mega%20penales%20de%20m%C3%A1xima%20seguridad="
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Implementaci%C3%B3n%20r%C3%A1pida%20de%20Centros%20de%20Comando%20y%20Videovigilancia%20(C5i)="
         ]
       },
       {
-        "titulo": "Unidades de Flagrancia",
-        "descripcion": "Procesos inmediatos y sentencias rápidas contra sicariato y extorsión.",
+        "titulo": "Justicia y Flagrancia Express",
+        "descripcion": "Ampliación de Unidades de Flagrancia y reforma del sistema judicial. Busca procesos inmediatos y sentencias rápidas contra delitos como sicariato y extorsión mediante una mejor articulación entre Policía, Fiscalía y Jueces. Incluye el expediente electrónico penal para dar celeridad a los casos.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Creaci%C3%B3n%20de%20nuevas%20Unidades%20de%20Flagrancia%20Expres="
+        ]
+      },
+      {
+        "titulo": "Reforma del Sistema Penitenciario",
+        "descripcion": "Construcción de mega penales y administración temporal de las Fuerzas Armadas. Planea construir 4 mega penales de máxima seguridad y penales especializados para jóvenes, asegurando el bloqueo total de señal celular. Introduce el programa 'Manos que Reparan' para que internos realicen mantenimiento de colegios y áreas verdes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Construcci%C3%B3n%20de%20cuatro%20(4)%20mega%20penales%20de%20m%C3%A1xima%20seguridad=",
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=l%20Programa%20Nacional%20de%20Trabajo%20Comunitario%20Penitenciario="
+        ]
+      },
+      {
+        "titulo": "Reinserción y Apoyo a Víctimas",
+        "descripcion": "Creación de cárceles productivas y fondo de apoyo educativo para hijos de internos. Fomenta que los internos generen ingresos mediante talleres para pagar su reparación civil y financiar becas para sus hijos. A la par, incrementa el número de abogados de oficio para asegurar defensa gratuita y especializada a las víctimas de delitos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Implementaci%C3%B3n%20de%20un%20r%C3%A9gimen%20de%20trabajo%20penitenciario=",
+          "https://mpesije.jne.gob.pe/docs/da4b943d-4344-4743-9362-a11ccf3054cb.pdf#:~:text=Fondo%20de%20Apoyo%20Educativo%20para%20hijas%20e%20hijos%20de%20personas%20privadas%20de%20libertad%E2%80%9D="
         ]
       }
     ]

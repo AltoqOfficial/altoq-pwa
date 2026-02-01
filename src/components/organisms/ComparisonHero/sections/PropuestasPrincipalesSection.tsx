@@ -51,6 +51,7 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
         {data.source ? (
           <SourceTooltip
             source={data.source}
+            description={data.descripcion}
             side={align === "left" ? "left" : "right"}
           >
             <Typography

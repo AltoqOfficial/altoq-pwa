@@ -207,7 +207,63 @@
     "institucional": [
       {
         "titulo": "Ley Patriota y Referéndum Constitucional",
-        "descripcion": "Eliminación de la inmunidad para todas las autoridades y establecimiento de la revocatoria del Presidente y Congresistas.",
+        "descripcion": "Presentación de una 'Ley Patriota' el 28 de julio de 2026, seguida de un Referéndum para aprobar importantes cambios constitucionales: revocatoria del Presidente y congresistas vía referéndum si no cumplen promesas, eliminación total de la inmunidad para el Presidente y miembros del Congreso, censura ciudadana de Ministros y altos funcionarios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Juicio de Residencia",
+        "descripcion": "Revisión obligatoria de las actuaciones del Presidente al final de su mandato.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Constitución Económica",
+        "descripcion": "Derogación del segundo párrafo del artículo 62 de la Constitución en materia de Contratos Ley, cuyo objetivo es revisar los contratos considerados lesivos o corruptos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Reforma del sistema de justicia",
+        "descripcion": "Reforma total del Poder Judicial, del Ministerio Público, del Tribunal Constitucional y de la Junta Nacional de Justicia: Creación de Jurados Ciudadanos, límite de edad para jueces y fiscales, Corte Suprema solo como vía de revisión excepcional (casación).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Sanciones drásticas",
+        "descripcion": "25 años por el delito de perjurio, eliminación de beneficios penitenciarios por delitos graves contra la sociedad y el Estado (corrupción), imprescriptibilidad de los delitos de corrupción, acumulación de penas para funcionarios públicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Nuevos Ministerios y Entidades",
+        "descripcion": "Creación del Ministerio de la Amazonía, Ministerio de Ciencia, Tecnología e Innovación (MCTI), y una Secretaría de Estado a nivel presidencial para la transparencia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Reforma policial",
+        "descripcion": "Reorganización de las fuerzas de seguridad en: Guardia Civil, Policía Nacional de Investigación, Guardia Republicana y Policía de Migraciones.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Gestión Pública",
+        "descripcion": "Creación de la Escuela de Gestión Pública, nueva Ley de Remuneraciones basada en la meritocracia eliminando las 'planillas doradas', eliminación de trabas burocráticas innecesarias (TUPAs) y consolidación de procedimientos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Lucha contra la corrupción en los contratos",
+        "descripcion": "Ley para anular los arbitrajes en los contratos estatales (limitándolos solo a los convenios internacionales) y prohibición de adendas salvo casos extraordinarios aprobados por la Contraloría. Embargo de bienes de colaboradores que contraten con corrupción o participen en lavado de activos.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
         ]
@@ -215,8 +271,57 @@
     ],
     "economico": [
       {
-        "titulo": "Revolución Tributaria",
-        "descripcion": "Reducción gradual del IGV del 18% al 10% y eliminación del Impuesto a la Renta de Quinta Categoría.",
+        "titulo": "Revolución Tributaria (Reducción de Impuestos)",
+        "descripcion": "Bajar la carga fiscal bajo la premisa de que 'todos paguen poco para que todos paguen': Reducción gradual del IGV del 18% al 10%, eliminación total del Impuesto a la Renta de Quinta Categoría (trabajadores dependientes), alivio a independientes subiendo el tope inafecto de Cuarta Categoría, y reinversión de utilidades libre de impuestos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Nuevo Régimen para MYPES",
+        "descripcion": "Incluir a la economía informal con un sistema simplificado: Régimen Especial Universal para cualquier actividad hasta 5 millones en ventas, pagando solo 4% de IGV (sin crédito fiscal) y 1% de Impuesto a la Renta sobre el valor de venta, sin requerir balances (solo libros de actas y ventas/compras digitales).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Reforma de SUNAT",
+        "descripcion": "Transformar SUNAT en una entidad promotora, simplificando trámites y eliminando su rol persecutor.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Empleo e Institucionalidad",
+        "descripcion": "Meta de generar 1 millón de empleos formales al año, dividir el Viceministerio de Economía en dos (Macroeconomía y Microeconomía), y derogar el artículo 62 de la Constitución para eliminar la inmutabilidad de los Contratos Ley.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Impulso al Turismo",
+        "descripcion": "Crear el Ministerio de Turismo, habilitar 5 aeropuertos internacionales adicionales (Cuzco, Pisco, Arequipa, Iquitos y Piura), construir trenes de alta velocidad (Lima-Ica y Lima-Trujillo) y un Túnel y Tren Trasandino, y devolver el IGV al turista extranjero en aeropuertos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Agricultura y Textiles",
+        "descripcion": "Restituir el Drawback al 5% para proteger las exportaciones, aplicar medidas antidumping a la importación de prendas de bajo costo para proteger la industria textil nacional, y reactivar el cultivo de algodón mediante un autogravamen para financiar tecnología.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Minería",
+        "descripcion": "Reactivar proyectos mineros paralizados y formalizar la pequeña minería, crear una comisión para un fondo de preservación del empleo del trabajador minero.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Sistema Financiero y Crédito",
+        "descripcion": "Permitir que los títulos de propiedad (COFOPRI) sirvan como garantía para obtener créditos de maquinaria e insumos en Consorcios de Exportación, y exonerar a las micro y pequeñas empresas del pago del Impuesto a las Transacciones Financieras (ITF).",
         "source": [
           "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
         ]
@@ -224,8 +329,78 @@
     ],
     "social": [
       {
+        "titulo": "Meta Cero Anemia",
+        "descripcion": "Eliminación total de la desnutrición crónica y anemia infantil mediante decretos de urgencia el 28 de julio de 2026.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Alimentación Garantizada",
+        "descripcion": "Programas de alimentación basados en proteínas (carnes, huevos, lácteos) para gestantes (monitorizado en centros de salud) y para niños y adolescentes (desayunos y almuerzos escolares).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Dieta Nacional",
+        "descripcion": "Fomento del consumo de alimentos ancestrales y locales (quinua, cuy, pescado) en lugar de importados (trigo, arroz).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
         "titulo": "Shock de Saneamiento",
-        "descripcion": "Financiamiento y ejecución inmediata de todos los proyectos de agua y alcantarillado.",
+        "descripcion": "Decreto de urgencia para el financiamiento y ejecución inmediata de todos los proyectos de agua y alcantarillado.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Vivienda Joven",
+        "descripcion": "Creación del programa 'Vivienda Joven' para facilitar el acceso a menores de edad, sumado a la continuidad de Techo Propio y MiVivienda.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Formalización de Autoconstrucción",
+        "descripcion": "Legalizar las edificaciones de autoconstrucción de sectores populares para que ganen valor y sirvan de activo económico.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Subsidios Directos",
+        "descripcion": "Mantener los programas de transferencias monetarias directas a la población necesitada, eliminando gastos burocráticos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Créditos Sociales",
+        "descripcion": "Fomentar programas de microcréditos dirigidos especialmente a jubilados y personas de la tercera edad.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Monetización de Títulos",
+        "descripcion": "Permitir que los títulos de propiedad (COFOPRI) sirvan como garantía bancaria para obtener créditos productivos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Enfoque Bio-Social",
+        "descripcion": "Protección del niño desde el vientre materno con nutrición garantizada como requisito para la educación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Becas",
+        "descripcion": "Ampliación del programa Beca 18 y auditoría para asegurar que llegue a quien lo necesita.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
         ]
@@ -234,7 +409,42 @@
     "ambiental": [
       {
         "titulo": "Canje de Deuda por Conservación",
-        "descripcion": "Valorizar la captura de CO2 para negociar deuda externa y atraer capitales.",
+        "descripcion": "Valorizar la biodiversidad y captura de CO2 para pagar deuda externa.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      },
+      {
+        "titulo": "Minería Responsable y Revisión de Contratos",
+        "descripcion": "'Ni una mina más con contaminación': Solo operarán proyectos mineros que utilicen tecnología de punta para mitigar el impacto ambiental. Auditoría Ambiental para revisar los Estudios de Impacto Ambiental (EIA) de grandes proyectos vigentes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      },
+      {
+        "titulo": "Defensa del Agua y Cabeceras de Cuenca",
+        "descripcion": "Prioridad del agua como derecho humano fundamental. En conflictos entre minería y agricultura, la prioridad será siempre el agua para consumo humano y agricultura. Intangibilidad (protección absoluta) de las cabeceras de cuenca donde nace el agua.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      },
+      {
+        "titulo": "Licencia Social y Consulta Previa",
+        "descripcion": "'No se impondrán proyectos a sangre y fuego'. Si un proyecto no tiene la licencia social (aceptación de la comunidad), no va. Estado árbitro, no cómplice: dejar de actuar como 'socio' de las mineras y asumir rol de fiscalizador imparcial.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      },
+      {
+        "titulo": "Delitos Ambientales y Sanciones",
+        "descripcion": "Imprescriptibilidad de delitos ambientales graves (derrames de petróleo, relaves tóxicos). Las empresas responsables asumen la reparación civil y remediación inmediata, sin dilaciones judiciales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      },
+      {
+        "titulo": "Canon Comunal",
+        "descripcion": "Los beneficios económicos (Canon) de la explotación de recursos naturales llegan directamente a las familias y comunidades de la zona de influencia, no solo a la burocracia de los Gobiernos Regionales o Locales.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
         ]
@@ -242,8 +452,57 @@
     ],
     "educativo": [
       {
-        "titulo": "Ciencia y Tecnología",
-        "descripcion": "Educación orientada decididamente a la ciencia y tecnología dotándola de infraestructura moderna.",
+        "titulo": "Ciencia y Tecnología (CTI)",
+        "descripcion": "Impulsar una educación orientada decididamente a la ciencia, la tecnología y la innovación, dotándola de infraestructura moderna y laboratorios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Valores y Civismo",
+        "descripcion": "Rescate de la Educación Cívica para la formación de ciudadanía, así como el reforzamiento de valores, razonamiento matemático y científico.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Idiomas",
+        "descripcion": "Promoción de la educación bilingüe (español y lenguas nativas) incorporando el inglés. Enseñanza de una segunda lengua extranjera (específicamente chino e inglés) en colegios bilingües.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Mejoras Salariales Docentes",
+        "descripcion": "Aumentos anuales diferenciados para mejorar los ingresos de los docentes, 'bonificación real' para profesores de educación rural y bilingüe nativa, cumplimiento de la Ley de Homologación de sueldos para docentes universitarios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Infraestructura y Financiamiento",
+        "descripcion": "Reducción y limitación del gasto en armamento para redirigir fondos al sector educación, legislación para permitir el pago de impuestos mediante inversión en educación (similar a Obras por Impuestos), modernización de escuelas en zonas rurales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Educación Técnica y Superior",
+        "descripcion": "Reactivación de los Institutos Técnicos alineándolos con los requerimientos del mercado laboral, reorganización de la formación laboral para vincularla a las demandas de la pequeña, mediana y gran empresa, creación de colegios agropecuarios y empresariales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Nutrición y Aprendizaje",
+        "descripcion": "Articulación directa entre educación y nutrición. Garantía de desayunos y almuerzos escolares, reconociendo que sin una alimentación adecuada (proteínas) no hay rendimiento académico.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Becas y Créditos",
+        "descripcion": "Auditoría y ampliación del programa Beca 18, y creación de programas de crédito educativo para estudios tanto en Perú como en el extranjero.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
         ]
@@ -251,8 +510,78 @@
     ],
     "salud": [
       {
+        "titulo": "Atención continua 24 horas",
+        "descripcion": "Uso del 100% de los recursos de salud a tiempo completo para revertir las esperas, estableciendo turnos de 24 horas para consultas médicas, cirugías de emergencia, programadas y tratamientos oncológicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
         "titulo": "Mi Médico de Cabecera",
-        "descripcion": "Asignación de un médico especialista por cada distrito para atención personalizada.",
+        "descripcion": "Creación del programa 'Mi médico de Cabecera', asignando un médico especialista en Medicina Familiar y Comunitaria por cada distrito a nivel nacional para cuidar la salud de cada ciudadano de forma personalizada.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Seguro Universal",
+        "descripcion": "Garantizar el acceso universal a través del fortalecimiento del Seguro Integral de Salud (SIS).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Libre elección de EPS",
+        "descripcion": "Permitir que los trabajadores escojan libremente entre diferentes empresas prestadoras de salud (EPS) para generar competencia y más planes accesibles.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Droguería Nacional",
+        "descripcion": "Creación de la 'Droguería Nacional' para implementar la fabricación e importación directa de insumos y equipos médicos, eliminando intermediarios para bajar costos y equipar los centros con alta tecnología.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Laboratorio Farmacéutico Nacional",
+        "descripcion": "Creación de una entidad estatal para la producción de medicamentos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Hospitales y Camas",
+        "descripcion": "Construcción de hospitales nacionales en regiones estratégicas y reequipamiento de los hospitales emblemáticos (como el Dos de Mayo o Loayza). La meta es llegar a 2 camas por cada mil habitantes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Nutrición Materno-Infantil",
+        "descripcion": "Implementación de programas de alimentación basados en proteínas (carnes, huevos, lácteos) para gestantes, niños y adolescentes, monitoreados en centros maternos y colegios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Cero Desnutrición",
+        "descripcion": "El objetivo explícito es reducir a CERO la desnutrición crónica infantil en menores de 5 años.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Bonos por Prevención",
+        "descripcion": "Programa de bonificaciones familiares condicionadas a realizar chequeos preventivos anuales y cumplir con el calendario de vacunación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Financiamiento",
+        "descripcion": "Incrementar la inversión per cápita en salud a entre US$ 800 y US$ 1,000 al año por habitante. Meta del 7% del PBI al sector Salud.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
         ]
@@ -261,7 +590,112 @@
     "seguridad": [
       {
         "titulo": "Reforma Policial",
-        "descripcion": "Especialización en Policía Comunitaria e Investigaciones con depuración de malos elementos.",
+        "descripcion": "Volver al esquema de dos cuerpos policiales especializados: una Policía Comunitaria (prevención) y una Policía de Investigaciones (investigación del delito).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Depuración Policial",
+        "descripcion": "Creación de una comisión de depuración para eliminar los 'malos elementos' de la PNP, utilizando pruebas de confianza, exámenes toxicológicos y una Unidad de Inteligencia Financiera para detectar enriquecimiento ilícito.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Infraestructura de Investigación",
+        "descripcion": "Construcción y equipamiento de 5 laboratorios de investigación criminal certificados y mejoramiento de 3 morgues especializadas en criminología forense.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Escuelas de Policía",
+        "descripcion": "Reducción drástica de las escuelas de policía, pasando de 25 a solo 7, para garantizar una mejor formación y control.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Mapa del Delito y Tecnología",
+        "descripcion": "Determinación de zonas críticas (mapa del delito) para declarar estados de emergencia focalizados. Implementación de cámaras de vigilancia interconectadas y centrales de alarma en colegios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Control de Armas",
+        "descripcion": "Reorganización de la SUCAMEC y decomiso/destrucción de armas ilegales o sin licencia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Rol de las Fuerzas Armadas",
+        "descripcion": "Protección de locales públicos a cargo de las Fuerzas Armadas para liberar policías para el patrullaje.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Bloqueo en Penales",
+        "descripcion": "Bloqueo total de comunicaciones y régimen de visitas restringidas en los penales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Autoridad Nacional Antidrogas (ANAN)",
+        "descripcion": "Creación de la ANAN con autonomía constitucional y atribuciones para levantar el secreto bancario y tributario.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Muerte Civil Financiera",
+        "descripcion": "Incautación total de propiedades y negocios de cualquier persona o empresa que colabore directa o indirectamente con el narcotráfico.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Control del Espacio Aéreo",
+        "descripcion": "Intervención permanente de las Fuerzas Armadas para el control del espacio aéreo, marítimo y fluvial (interdicción).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Industrialización de la Coca",
+        "descripcion": "Fomento a la industrialización legal de la hoja de coca y reorganización de ENACO.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Fronteras Vivas",
+        "descripcion": "Ejecución de un programa de desarrollo en fronteras con incentivos tributarios para integrar a esos pueblos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Cero Beneficios",
+        "descripcion": "Eliminación total de beneficios penitenciarios para el crimen organizado, narcotráfico y corrupción agravada.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Trabajos Forzados (Penas de Trabajo)",
+        "descripcion": "Establecimiento de penas que incluyan trabajos obligatorios en la construcción de carreteras y servicios públicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Cárcel Efectiva",
+        "descripcion": "Aplicación de cárcel efectiva y eliminación de leyes 'pro-crimen'.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
         ]

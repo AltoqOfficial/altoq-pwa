@@ -183,110 +183,194 @@
     "institucional": [
       {
         "titulo": "Asamblea Constituyente / Nueva Constitución",
-        "descripcion": "Impulso a una Nueva Constitución democrática para recuperar soberanía sobre recursos y separar poderes.",
+        "descripcion": "Impulso a una Asamblea Constituyente y a una Nueva Constitución democrática y representativa que corrija los vicios del texto vigente (recuperar soberanía sobre recursos, separar poderes y reforzar legitimidad popular).",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Impulso%20a%20una%20Asamblea%20Constituyente"
         ]
       },
       {
-        "titulo": "Lucha anticorrupción",
-        "descripcion": "Declarar imprescriptibilidad de delitos contra la administración pública e inhabilitación perpetua para corruptos.",
+        "titulo": "Separación efectiva de poderes y control ciudadano",
+        "descripcion": "Aprobar marco normativo para una separación real entre poderes (legislativo, ejecutivo, judicial, electoral, constitucional y nuevo 'poder popular'), instalar contrapesos ciudadanos y controlar la influencia de grupos económicos; prohibir prácticas de lobby y la 'puerta giratoria'.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Se%20prohibir%C3%A1%20la%20pr%C3%A1ctica%20de%20los%20lobbies%2C%20la%20puerta%20giratoria"
+        ]
+      },
+      {
+        "titulo": "Lucha anticorrupción (imprescriptibilidad e inhabilitación)",
+        "descripcion": "Declarar la imprescriptibilidad de los delitos contra la administración pública y la inhabilitación perpetua para corruptos; institucionalizar control social (veedurías ciudadanas) como mecanismo de fiscalización.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Se%20declarar%C3%A1%20la%20imprescriptibilidad%20de%20los%20delitos%20contra%20la%20administraci%C3%B3n%20p%C3%BAblica%20y%20la%20inhabilitaci%C3%B3n%20perpetua"
+        ]
+      },
+      {
+        "titulo": "Democracia participativa: referéndum, audiencias y consejos ciudadanos",
+        "descripcion": "Institucionalizar mecanismos de democracia directa: referéndum, audiencias públicas, consulta popular y creación de consejos ciudadanos/vecinales/comunales con facultades de fiscalización y propuesta normativa.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=institucionalizar%C3%A1%20el%20refer%C3%A9ndum%2C%20las%20audiencias%20p%C3%BAblicas%20y%20la%20consulta%20popular"
         ]
       }
     ],
     "economico": [
       {
         "titulo": "Ruptura con el modelo primario-exportador",
-        "descripcion": "Desarrollar industria nacional con valor agregado; promover sustitución de importaciones estratégicas.",
+        "descripcion": "Desarrollar una industria nacional con mayor valor agregado; promover sustitución de importaciones estratégicas y cadenas productivas descentralizadas (complejos industriales regionales).",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Ruptura%20con%20el%20modelo%20primario,exportador%20y%20soberan%C3%ADa%20productiva"
         ]
       },
       {
-        "titulo": "Justicia fiscal",
-        "descripcion": "Implementar sistema tributario progresivo, impuesto a grandes fortunas y reducción de evasión.",
+        "titulo": "Justicia fiscal y redistribución de la riqueza",
+        "descripcion": "Implementar un sistema tributario progresivo (impuesto a grandes fortunas, eliminación de exoneraciones regresivas, reducción de evasión) para financiar innovación comunitaria, servicios públicos y derechos sociales.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Justicia%20fiscal%20y%20redistribuci%C3%B3n%20de%20la%20riqueza"
+        ]
+      },
+      {
+        "titulo": "Diversificación productiva y matriz energética",
+        "descripcion": "Orientar la economía hacia sectores intensivos en empleo, innovación y tecnología (agroindustria, manufactura, industrias creativas, bioeconomía y turismo sostenible); fortalecer parques industriales, clústeres y centros de innovación; transformar la matriz energética hacia renovables y renegociar contratos estratégicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Diversificaci%C3%B3n%20productiva%2C%20matriz%20energ%C3%A9tica%20y%20recursos%20estrat%C3%A9gicos"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de ciencia, tecnología e innovación",
+        "descripcion": "Impulsar investigación y desarrollo (I+D), crear/unificar institucionalidad (propuesta de un nuevo Ministerio de Ciencia y Tecnología), y promover Centros de Innovación Productiva y Transferencia Tecnológica (CITE).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Impulsar%20la%20ciencia%2C%20tecnolog%C3%ADa%20e%20innovaci%C3%B3n%20con%20un%20nuevo%20Ministerio%20de%20Ciencia%20y%20Tecnolog%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Metas de valor agregado y productividad",
+        "descripcion": "Aumentar la participación de exportaciones con mayor contenido tecnológico/valor agregado (meta citada: 40% de exportaciones con valor agregado), incrementar la participación industrial del PBI, y subir la inversión en I+D (ej.: de 0.15% a 0.50% del PBI).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=40%25%20de%20las%20exportaciones%20con%20valor%20agregado"
         ]
       }
     ],
     "social": [
       {
-        "titulo": "Acceso a vivienda digna",
-        "descripcion": "Programas de vivienda social y creación del Instituto Nacional de Desarrollo Urbano.",
+        "titulo": "Sistema de salud público, universal e integrado",
+        "descripcion": "Construir un sistema nacional de salud público, universal e integrado con rectoría única; centralizar compras estratégicas, crear inventario nacional de equipos biomédicos, garantizar suministros estratégicos y plataformas de gestión de activos y redistribución para aumentar cobertura y calidad en zonas rurales y amazónicas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Centralizar%20estrat%C3%A9gicamente%20las%20compras%20de%20suministros%20m%C3%A9dicos%20y%20Equipamiento%20Biom%C3%A9dico%20Mayor"
+        ]
+      },
+      {
+        "titulo": "Acceso a vivienda digna y servicios públicos",
+        "descripcion": "Incorporar el derecho a la vivienda digna y segura; programas de vivienda social, crear Instituto Nacional de Desarrollo Urbano y Ordenamiento Territorial, laboratorios urbanos y asistencia técnica para zonas rurales y urbano-marginales.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Impulsar%20la%20incorporaci%C3%B3n%20del%20derecho%20a%20la%20vivienda%20digna%2C%20segura"
         ]
       },
       {
-        "titulo": "Protección de pueblos originarios",
-        "descripcion": "Garantizar representación política de pueblos originarios en el Parlamento.",
+        "titulo": "Educación pública universal para erradicar la inequidad",
+        "descripcion": "Defender la educación pública universal, gratuita e intercultural; priorizar la formación docente, reducción de brechas territoriales, fortalecimiento de la educación técnica/vocacional, apoyo a universidades públicas y expansión de becas (Pronabec).",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=otorgar%C3%A1%20representaci%C3%B3n%20a%20los%20pueblos%20originarios%20en%20el%20parlamento"
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Educaci%C3%B3n%20p%C3%BAblica%20universal%20para%20erradicar%20la%20inequidad"
+        ]
+      },
+      {
+        "titulo": "Protección social y empleo digno",
+        "descripcion": "Fortalecer políticas de protección social y formalización laboral; reducir la informalidad (meta explícita en el Plan), mejorar Remuneración Mínima Vital y ampliar accesos a seguridad social, formación y empleo formal para poblaciones vulnerables.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Reducir%20la%20informalidad%20laboral%20al%2060"
         ]
       }
     ],
     "ambiental": [
       {
-        "titulo": "Protección del agua",
-        "descripcion": "Restablecer intangibilidad de cabeceras de cuenca y glaciares; prioridad para consumo humano y agricultura familiar.",
+        "titulo": "Protección del agua en defensa de la vida",
+        "descripcion": "Establece la priorización del agua para consumo humano, agricultura familiar y comunidades campesinas; impulsos para articular planes territoriales con Planes de Gestión de Recursos Hídricos y enfoques integrados de cuenca. Incluye diagnóstico del abuso hídrico por grandes consorcios y medidas para corregirlo.",
         "source": [
-          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Restablecer%20las%20condiciones%20de%20intangibilidad%20de%20cabeceras%20de%20cuenca%2C%20glaciares%2C%20lagunas%20y%20cuerpos%20de%20agua"
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=9.%20Protecci%C3%B3n%20del%20agua%20en%20defensa%20de%20la%20vida"
         ]
       },
       {
-        "titulo": "Fondo de Agua y Canon hídrico",
-        "descripcion": "Crear fondo para conservación y establecer canon para usuarios de alto beneficio (minería/agroexportación).",
+        "titulo": "Fondo de Agua y canon hídrico (instrumentos económicos)",
+        "descripcion": "Crear un Fondo de Agua para financiar proyectos de conservación de ecosistemas productores de agua y establecer un canon hídrico para que usuarios de alto beneficio (p. ej. minería, agroexportación, industria) financien la seguridad hídrica de las cuencas.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Establecer%20un%20Fondo%20de%20Agua%20para%20implementar%20proyectos%20de%20conservaci%C3%B3n%20de%20los%20ecosistemas%20productores%20de%20agua"
+        ]
+      },
+      {
+        "titulo": "Gestión del Riesgo de Desastres (GRD) y adaptación climática",
+        "descripcion": "Convertir la GRD y la adaptación climática en motores de desarrollo tecnológico y territorial: inversión prospectiva en resiliencia, protección de agua, bosques y ecosistemas; crear polos tecnológicos nacionales (sensores, drones, sistemas de alerta).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Gesti%C3%B3n%20del%20Riesgo%20de%20Desastres%20%28GRD%29%20y%20adaptaci%C3%B3n%20clim%C3%A1tica%20como%20motores%20de%20desarrollo"
         ]
       }
     ],
     "educativo": [
       {
-        "titulo": "Financiamiento del 6% del PBI",
-        "descripcion": "Incrementar inversión para restituir carácter público; aumentar matrícula universitaria pública en 50%.",
+        "titulo": "Restituir carácter público y financiamiento",
+        "descripcion": "Restituir el carácter público, universal, gratuito e intercultural del sistema educativo y fortalecer el rol del Estado como garante; incrementar la inversión educativa hasta 6% del PBI, aumentar la matrícula pública universitaria en 50% y reducir la brecha urbano-rural en aprendizajes en 30%.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Restituir%20el%20caracter%20publico,30%"
         ]
       },
       {
-        "titulo": "Cierre de brecha de infraestructura",
-        "descripcion": "Garantizar que 100% de escuelas tengan servicios básicos y 80% conectividad.",
+        "titulo": "Cierre de brecha de infraestructura escolar",
+        "descripcion": "Cierre progresivo de la brecha de infraestructura: escuelas dignas y seguras; meta de 20% de reducción de brecha y garantizar que 100% de escuelas cuenten con servicios básicos y 80% con conectividad, priorizando Amazonía y Andes.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Cierre%20progresivo%20de%20la%20brecha%20de%20infraestructura%2C%20creando%20escuelas%20dignas%2C%20seguras%20y%20con%20acceso%20a%20la%20tecnolog%C3%ADa%2C%20para%20lo%20cual%20se%20propone%20alcanzar%20un%2020%25%20en%20la%20reducci%C3%B3n%20de%20la%20brecha%20de%20infraestructura%2C%20garantizando%20que%20el%20100%25%20de%20las%20escuelas%20contar%C3%A1n%20con%20servicios%20b%C3%A1sicos%20y%20un%2080%25%20con%20conectividad"
+        ]
+      },
+      {
+        "titulo": "Estabilidad laboral y formación docente masiva",
+        "descripcion": "Garantizar estabilidad laboral y salarios dignos para docentes; nombramiento del 90% del magisterio, formación continua que alcance a >250,000 docentes, cierre de brechas EIB en 70%, y aumento de la remuneración docente.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Garantizar%20la%20estabilidad%20laboral%2C%20la%20formaci%C3%B3n%20de%20calidad%20y%20salarios%20dignos%20para%20las%20y%20los%20docentes%2C%20a%20trav%C3%A9s%20del%20nombramiento%20del%2090%25%20de%20docentes%2C%20la%20formaci%C3%B3n%20continua%20alcanzando%20a%20m%C3%A1s%20de%20250%20000%20docentes"
         ]
       }
     ],
     "salud": [
       {
-        "titulo": "Redes Integradas de Salud (RIS)",
-        "descripcion": "Crear RIS territoriales con rectoría única y sistema nacional de referencia/contrarreferencia.",
+        "titulo": "Implementar Redes Integradas de Salud (RIS) en todo el país",
+        "descripcion": "Crear e implementar las RIS como unidad de organización territorial del servicio (integrando I, II, III niveles), con rectoría, registros interoperables y un sistema nacional único de referencia/contrarreferencia.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Implementar%20las%20Redes%20Integradas%20de%20Salud%20en%20todo%20el%20territorio%20nacional"
         ]
       },
       {
-        "titulo": "Centralización de suministros",
-        "descripcion": "Crear Fondo Intangible de Suministros y fortalecer CENARES para compras centralizadas.",
+        "titulo": "Centralizar compras y asegurar suministros estratégicos",
+        "descripcion": "Crear un Fondo Financiero Intangible de Suministros Estratégicos Médicos y fortalecer un operador logístico (CENARES) para compras centralizadas, economías de escala, distribución 'capilar', sistema de alertas de vencimiento y redistribución de insumos.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Creaci%C3%B3n%20de%20un%20Fondo%20Financiero%20Intangible%20de%20Suministros%20Estrat%C3%A9gicos%20M%C3%A9dicos"
+        ]
+      },
+      {
+        "titulo": "Financiamiento basado en resultados y Pago per Cápita ajustado",
+        "descripcion": "Introducir Pago per cápita ajustado y por resultados para asignar recursos a las RIS según población adscrita y metas clínicas (control de anemia, diabetes, hipertensión), vinculando financiamiento con desempeño y metas sanitarias.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Implementaci%C3%B3n%20del%20Pago%20per%20C%C3%A1pita%20Ajustado%20y%20por%20Resultados"
         ]
       }
     ],
     "seguridad": [
       {
-        "titulo": "Reforma estructural de la PNP",
-        "descripcion": "Profesionalización, evaluación de integridad al 100% y control ciudadano.",
+        "titulo": "Política nacional integral, territorial y preventiva",
+        "descripcion": "Implementar una política nacional de seguridad ciudadana con enfoque integral, territorial y preventivo que combata la corrupción policial, recupere el control estatal frente al crimen organizado y garantice protección y presencia estatal.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=implementaremos%20una%20pol%C3%ADtica%20nacional%20de%20seguridad%20ciudadana%20con%20enfoque%20integral"
+        ]
+      },
+      {
+        "titulo": "Reformas estructurales a la Policía Nacional del Perú (PNP)",
+        "descripcion": "Reforma estructural de la PNP para combatir el crimen organizado: profesionalización, evaluación de integridad y desempeño, formación en inteligencia y tecnología, y control ciudadano.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Reforma%20estructural%20de%20la%20Polic%C3%ADa%20Nacional%20del%20Per%C3%BA"
         ]
       },
       {
-        "titulo": "Reducción de homicidios",
-        "descripcion": "Meta nacional de reducir homicidios por hechos delictivos en un 70%.",
+        "titulo": "Planes locales de seguridad y reconocimiento legal de juntas vecinales",
+        "descripcion": "Implementar planes locales de seguridad con participación directa de juntas vecinales, gobiernos locales y organizaciones sociales; otorgar reconocimiento y protección legal a juntas vecinales y comités comunales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=planes%20locales%20de%20seguridad%20con%20participaci%C3%B3n%20directa%20de%20juntas%20vecinales"
+        ]
+      },
+      {
+        "titulo": "Metas cuantificables de impacto (victimización y homicidios)",
+        "descripcion": "Establecer metas nacionales —p. ej. reducción de homicidios en 70%— y otros indicadores (confianza pública en la PNP, número de RIS/planes locales operativos, número de juntas vecinales activas, espacios públicos recuperados).",
         "source": [
           "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Reducci%C3%B3n%20de%20homicidios%20por%20hechos%20delictivos%20en%20un%2070%25"
         ]

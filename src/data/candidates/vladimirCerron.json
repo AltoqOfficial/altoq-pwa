@@ -170,8 +170,8 @@
   "propuestasPrincipales": {
     "institucional": [
       {
-        "titulo": "Asamblea Constituyente Plurinacional",
-        "descripcion": "Establecer un Estado Plurinacional y elección popular de jueces y fiscales.",
+        "titulo": "Refundación del Estado mediante una Asamblea Constituyente",
+        "descripcion": "Reemplazo de la Constitución de 1993 por una nueva Carta Magna que establezca un Estado Plurinacional. Se busca descentralizar el poder fiscal y político, erradicar la corrupción sistémica en el sistema judicial, y eliminar la inmunidad de altos funcionarios.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=REFUNDACIÓN%20DEL%20ESTADO%20Y%20NUEVA%20CONSTITUCIÓN"
         ]
@@ -179,8 +179,8 @@
     ],
     "economico": [
       {
-        "titulo": "Economía Popular con Mercados",
-        "descripcion": "Renegociación de contratos-ley y recuperación de soberanía sobre recursos (gas, litio).",
+        "titulo": "Implementación de una 'Economía Popular con Mercados'",
+        "descripcion": "Se busca transformar el modelo primario exportador actual. El Estado asume un rol planificador, empresario e industrializador. Las medidas clave incluyen la renegociación o anulación de contratos-ley y peajes lesivos, la recuperación de la soberanía sobre recursos naturales (gas, litio, minerales) y una reforma tributaria progresiva para elevar la presión tributaria al 20% del PBI, eliminando exoneraciones a grandes grupos de poder.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=DIMENSION%20ECONOMICA"
         ]
@@ -188,8 +188,8 @@
     ],
     "social": [
       {
-        "titulo": "Justicia Social y Estado de Bienestar",
-        "descripcion": "Sistema universal de pensiones público y entrega de 500,000 títulos de propiedad.",
+        "titulo": "Estado de bienestar con derechos sociales garantizados y Justicia Social",
+        "descripcion": "Reducción estructural de la pobreza y desigualdad. Se plantea un sistema universal de pensiones digno y público (eliminando la exclusión previsional), la entrega de 500,000 títulos de propiedad urbana priorizando asentamientos humanos, y programas de 'Hambre Cero' articulados con empleo y vivienda.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=DERECHOS%20SOCIALES%20Y%20JUSTICIA%20SOCIAL"
         ]
@@ -197,8 +197,8 @@
     ],
     "ambiental": [
       {
-        "titulo": "Soberanía ecológica",
-        "descripcion": "Deforestación Neta Cero al 2030 y protección estricta de cabeceras de cuenca.",
+        "titulo": "Soberanía ecológica y Deforestación Neta Cero al 2030",
+        "descripcion": "Protección estricta de cabeceras de cuenca y glaciares. Se propone combatir frontalmente la minería ilegal y la tala, restaurar ecosistemas amazónicos, y garantizar que el agua sea un derecho humano (oponiéndose a su privatización). También se impulsa una transición energética soberana hacia fuentes renovables.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=MEDIO%20AMBIENTE,%20AGUA%20Y%20TRANSICIÓN%20ECOLÓGICA"
         ]
@@ -206,8 +206,8 @@
     ],
     "educativo": [
       {
-        "titulo": "Ingreso Libre",
-        "descripcion": "Eliminación de exámenes de admisión y creación de universidades públicas regionales.",
+        "titulo": "Educación pública, gratuita, universal y de calidad (Ingreso Libre)",
+        "descripcion": "Eliminación del analfabetismo y garantía de acceso universal a la educación básica. Para la educación superior, se plantea el ingreso libre a las universidades (eliminación de exámenes de admisión restrictivos), la creación de universidades públicas regionales y el aumento del presupuesto para el sector.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=EDUCACIÓN%20LIBERADORA%20Y%20SALUD%20UNIVERSAL"
         ]
@@ -215,8 +215,8 @@
     ],
     "salud": [
       {
-        "titulo": "Sistema Único de Salud",
-        "descripcion": "Unificación de Minsa y EsSalud; programa 'Médicos de la Familia' (modelo cubano).",
+        "titulo": "Creación del Sistema Único de Salud (público y gratuito)",
+        "descripcion": "Unificación de los subsistemas de salud (MINSA, EsSalud, etc.) bajo la rectoría del Estado. Implementación del programa 'Médicos de la Familia' para atención preventiva en los barrios y construcción de hospitales especializados docentes en cada región para cerrar brechas de infraestructura.",
         "source": [
           "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=Implementar%20un%20Sistema"
         ]
@@ -224,8 +224,8 @@
     ],
     "seguridad": [
       {
-        "titulo": "Seguridad con enfoque comunitario",
-        "descripcion": "Participación activa de rondas campesinas y urbanas; ataque a causas sociales del delito.",
+        "titulo": "Seguridad Ciudadana con enfoque preventivo y comunitario",
+        "descripcion": "Reforma integral de la Policía Nacional para depurar la corrupción y mejorar su eficiencia. Se propone la participación activa de la ciudadanía organizada (rondas campesinas y urbanas) en el sistema de seguridad, además de atacar las causas sociales del delito (pobreza, desempleo).",
         "source": [
           "https://mpesije.jne.gob.pe/docs/b2d25860-484e-4226-bd13-a57fb83c59cb.pdf#:~:text=SEGURIDAD%20CIUDADANA%20CON%20ENFOQUE%20PREVENTIVO"
         ]

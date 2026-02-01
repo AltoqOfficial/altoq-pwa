@@ -187,127 +187,263 @@
     "institucional": [
       {
         "titulo": "Simplificación administrativa y servicio al ciudadano",
-        "descripcion": "Eliminación de barreras burocráticas mediante simplificación intensiva y Código del Servicio Público para sancionar el mal servicio.",
+        "descripcion": "Eliminación de barreras burocráticas mediante una simplificación administrativa intensiva, promoviendo la inversión privada y la implementación del Código del Servicio Público para mejorar la atención y sancionar el mal servicio. (Meta 2026: profundizar la modernización en la organización y funcionamiento de los ministerios).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Eliminaremos%20las%20barreras%20burocr%C3%A1ticas%20por%20medio%20de%20una%20intensiva%20simplificaci%C3%B3n%20administrativa,%20alentando%20y%20promoviendo%20la%20inversi%C3%B3n%20privada."
         ]
       },
       {
         "titulo": "Racionalización del aparato estatal",
-        "descripcion": "Reducción y reorganización de ministerios por eficiencia y descentralización de sedes del Poder Ejecutivo.",
+        "descripcion": "Reducción y reorganización de ministerios con base en criterios de eficiencia y optimización del gasto público, junto con la descentralización de sedes ministeriales y del Poder Ejecutivo. (Meta 2026: iniciar estudios técnicos para reducir el número de ministerios y redistribuir el personal en sedes desconcentradas).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Reduciremos%20el%20n%C3%BAmero%20de%20ministerios%20existentes,%20tomando%20como%20preceptos%20para%20dicha%20reducci%C3%B3n%20la%20ineficiencia"
         ]
       },
       {
         "titulo": "Fortalecimiento de gobiernos regionales y locales",
-        "descripcion": "Incentivos económicos vinculados a indicadores sociales y apoyo técnico especializado.",
+        "descripcion": "Implementación de incentivos económicos vinculados a mejoras en indicadores sociales, junto con apoyo técnico, equipos gerenciales especializados y capacitación de funcionarios para fortalecer la gestión pública. (Meta 2026: capacitar y promover el desarrollo de proyectos de inversión e infraestructura en gobiernos regionales y municipales).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Estableceremos%20incentivos%20econ%C3%B3micos%20en%20pro%20de%20la%20mejora%20en%20la%20gesti%C3%B3n%20de%20los%20Gobiernos%20Regionales%20y%20Locales"
         ]
       },
       {
         "titulo": "Revalorización y meritocracia en la función pública",
-        "descripcion": "Ingreso y ascenso basados en méritos, competencias y evaluaciones permanentes.",
+        "descripcion": "Fortalecimiento de la función pública mediante el ingreso, permanencia y ascenso basados en méritos, competencias y evaluaciones permanentes, promoviendo la profesionalización y una cultura de servicio al ciudadano. (Meta 2026: revalorizar la función pública a través de la capacitación, la meritocracia y el reconocimiento del desempeño profesional).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Revaloraremos%20la%20funci%C3%B3n%20p%C3%BAblica,%20a%20la%20cual%20se%20ingresar%C3%A1%20por%20m%C3%A9ritos%20y%20competencias."
         ]
       },
       {
         "titulo": "Gobierno digital y transparencia",
-        "descripcion": "Acceso masivo a información vía internet para fortalecer la transparencia y eficiencia de trámites.",
+        "descripcion": "Impulso al acceso masivo a la información vía Internet para fortalecer la transparencia del Estado y mejorar la comunicación y eficiencia de los trámites y decisiones públicas. (Meta 2026: fortalecer la transparencia estatal y consolidar un gobierno digital integrado y eficaz al servicio del ciudadano).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Aseguraremos%20el%20acceso%20masivo%20a%20la%20informaci%C3%B3n%20v%C3%ADa%20Internet,%20no%20solamente%20para%20mejorar%20la%20transparencia"
         ]
       },
       {
         "titulo": "Renovación y fortalecimiento de la carrera judicial",
-        "descripcion": "Ingreso de jóvenes profesionales formados en la Academia de la Magistratura con desempeño supervisado.",
+        "descripcion": "Promoción del ingreso de jóvenes profesionales a la carrera judicial mediante formación especializada en la Academia de la Magistratura y desempeño supervisado como jueces y fiscales. (Meta 2026: impulsar el ingreso de jueces jóvenes a la carrera judicial).",
         "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Promoveremos%20el%20acceso%20de%20j%C3%B3venes%20profesionales%20a%20la%20carrera%20judicial%20luego%20de%20un%20a%C3%B1o%20de%20formaci%C3%B3n%20especializada%20en%20la%20Academia%20de%20la%20Magistratura."
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Promoveremos%20el%20acceso%20de%20j%C3%B3venes%20profesionales%20a%20la%20carrera%20judicial%20luego%20de%20un%20a%C3%B1o%20de%20formaci%C3%B3n%20especializada%20en%20la%20Academia%20de%20la%20Magistratura.",
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=DIMENSI%C3%93N%20INSTITUCIONAL"
         ]
       }
     ],
     "economico": [
       {
         "titulo": "Crecimiento sostenido y reducción de inflación",
-        "descripcion": "Crecimiento del PBI del 2% anual hasta llegar al 7% al quinto año y tipo de cambio favorable a la exportación.",
+        "descripcion": "Garantizaremos medidas que permitan un crecimiento sostenido del PBI y una reducida inflación promedio para los próximos 5 años, así como un tipo de cambio que favorezca la exportación. (Meta 2026: Incremento anual del 2% del PBI hasta llegar al 7% al quinto año).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=crecimiento%20sostenido%20del%20PBI%20y%20una%20reducida%20inflaci%C3%B3n"
         ]
       },
       {
         "titulo": "Industrialización y diversificación productiva",
-        "descripcion": "Impulso a bienes con valor agregado y tecnología para reducir dependencia de materias primas. Meta: 2 millones de empleos.",
+        "descripcion": "Impulso a la producción de bienes y servicios con mayor valor agregado, fortaleciendo la innovación, la tecnología y la productividad para reducir la dependencia de las materias primas. (Meta 2026: generación de 2 millones de empleos y mayor participación de la industria nacional en inversiones con altos estándares de calidad).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20la%20industrializaci%C3%B3n%20y%20la%20producci%C3%B3n%20de%20bienes%20y%20servicios%20de%20mayor%20valor%20agregado"
         ]
       },
       {
+        "titulo": "Generación de ingresos y trabajo comunitario",
+        "descripcion": "Implementación de programas de trabajo remunerado por horas en zonas rurales y urbanas, orientados a labores comunales, reparación de andenes, reforestación y conservación del bosque seco, priorizando a las poblaciones más pobres. (Meta 2026: promover trabajo digno e igualitario en zonas rurales para reducir la pobreza extrema y contribuir al cumplimiento del Objetivo 10 de la Agenda 2030).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=generaci%C3%B3n%20de%20ingresos%20para%20los%20m%C3%A1s%20pobres,%20por%20medio%20de%20una%20retribuci%C3%B3n%20por%20horas%20de%20trabajo%20en%20zonas%20rurales"
+        ]
+      },
+      {
+        "titulo": "Promoción y desarrollo de las PYMEs",
+        "descripcion": "Creación del Instituto de Promoción y Desarrollo de las PYMEs para fomentar la formalización, la asociatividad, los clústeres productivos y la exportación mediante el CERTIPYME. (Meta 2026: impulsar el intercambio y posicionamiento internacional de productos PYMEs).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Crearemos%20el%20Instituto%20de%20Promoci%C3%B3n%20y%20Desarrollo%20de%20las%20PYMEs,"
+        ]
+      },
+      {
         "titulo": "Acceso al financiamiento para PYMEs",
-        "descripcion": "Creación del Banco PYME de capital privado para impulsar el acceso al crédito.",
+        "descripcion": "Impulso al acceso al crédito para las PYMEs en coordinación con la iniciativa privada, mediante la creación del Banco PYME de capital privado. (Meta 2026: creación del Banco PYME).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20decididamente,%20en%20conjunci%C3%B3n%20con%20la%20iniciativa%20privada,%20el%20acceso%20al%20financiamiento%20para%20las%20PYMEs"
         ]
       },
       {
+        "titulo": "Modernización de mercados de abasto",
+        "descripcion": "Impulso a la modernización de mercados de abasto y centros comerciales, con implementación de mercados mayoristas y reorganización integral del programa Mi Mercado. (Meta 2026: promover mercados de abasto y mayoristas con mejores condiciones y mayor competitividad).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20la%20modernizaci%C3%B3n%20de%20los%20mercados%20de%20abasto%20y%20centros%20comerciales"
+        ]
+      },
+      {
+        "titulo": "Parques logísticos y zonas de libre comercio",
+        "descripcion": "Impulso al desarrollo de parques logísticos, comercio internacional y zonas libres de impuestos en zonas fronterizas con alto potencial de inversión. (Meta 2026: fortalecer las zonas de libre comercio para reducir el contrabando).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20el%20desarrollo%20de%20Parques%20Log%C3%ADsticos%20y%20de%20Comercio%20Internacional"
+        ]
+      },
+      {
+        "titulo": "Desarrollo industrial de productos nativos",
+        "descripcion": "Promoción de la industrialización para el consumo interno y la exportación de productos nativos, incorporando mecanismos de incentivo a la inversión inicial. (Meta 2026: aumentar y mejorar la calidad de los productos nativos).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Promoveremos%20el%20desarrollo%20industrial%20para%20el%20consumo%20interno%20y%20la%20exportaci%C3%B3n%20de%20productos"
+        ]
+      },
+      {
+        "titulo": "Impulso al trabajo artesanal familiar",
+        "descripcion": "Incorporación de comunidades rurales al trabajo artesanal familiar mediante el uso de insumos regionales, capacitación en nuevas técnicas de elaboración y fortalecimiento de la comercialización. (Meta 2026: aumentar y mejorar la calidad de los productos artesanales e incentivar el trabajo artesanal familiar).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Incorporaremos%20a%20las%20comunidades%20de%20las%20zonas%20rurales%20al%20trabajo%20familiar"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento del transporte urbano masivo",
+        "descripcion": "Potenciación del sistema Metropolitano en coordinación con las municipalidades, culminación de los sistemas de transporte masivo en marcha y promoción de nuevas líneas de Metro a nivel nacional. (Meta 2026: implementar más líneas de transporte urbano en todo el país).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Potenciaremos%20el%20Sistema%20%E2%80%9CMetropolitano%E2%80%9D%20en%20el%20Per%C3%BA,%20en%20estrecha%20cooperaci%C3%B3n%20con%20las%20Municipalidades"
+        ]
+      },
+      {
+        "titulo": "Rehabilitación y ampliación de la red vial nacional",
+        "descripcion": "Impulso a la modernización de la Red Vial Nacional, con especial énfasis en carreteras de penetración convertidas en autopistas de cuatro carriles, con participación de las FFAA, para fortalecer el desarrollo económico, el turismo y las cadenas productivas regionales. (Meta 2026: construir y mejorar autopistas y vías nacionales que conecten ciudades y pueblos del país).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=rehabilitaci%C3%B3n%20y%20ampliaci%C3%B3n%20de%20la%20Red%20Vial%20Nacional"
+        ]
+      },
+      {
+        "titulo": "Modernización portuaria y aeroportuaria",
+        "descripcion": "Potenciación del puerto del Callao y de los puertos del país, así como la modernización y seguridad de los aeropuertos nacionales, para consolidar al Perú como eje logístico regional, incrementar exportaciones y generar empleo. (Meta 2026: iniciar la construcción de la segunda pista del AIJCH, ampliar los muelles del puerto del Callao y promover nuevos puertos de carga para el comercio exterior).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Potenciaremos%20el%20puerto%20del%20Callao%20y%20puertos%20del%20pa%C3%ADs,%20para%20consolidar%20al%20Per%C3%BA%20como%20eje%20del%20transporte%20de%20carga%20en%20Sudam%C3%A9rica"
+        ]
+      },
+      {
         "titulo": "Desarrollo de la conectividad ferroviaria",
-        "descripcion": "Modernización de la red nacional, línea Tumbes-Tacna y Tren Bioceánico vía asociaciones gobierno a gobierno.",
+        "descripcion": "Recuperación y modernización de la red ferroviaria nacional para el transporte eficiente y seguro de pasajeros y carga, mediante asociaciones de gobierno a gobierno. (Meta 2026: impulsar la línea ferroviaria Tumbes–Tacna y el Tren Bioceánico que conecte los océanos Atlántico y Pacífico).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Recuperaremos%20la%20conectividad%20interna%20y%20externa%20del%20Per%C3%BA,%20con%20redes%20ferroviarias%20modernas"
         ]
       },
       {
-        "titulo": "Generación de ingresos y trabajo comunitario",
-        "descripcion": "Programas de trabajo remunerado por horas en zonas rurales/urbanas para labores comunales y reforestación.",
+        "titulo": "Conectividad digital nacional",
+        "descripcion": "Impulso a la expansión de la banda ancha en todo el territorio nacional, garantizando acceso a internet de calidad y a precios asequibles. (Meta 2026: fomentar la conectividad digital a nivel nacional).",
         "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=generaci%C3%B3n%20de%20ingresos%20para%20los%20m%C3%A1s%20pobres,%20por%20medio%20de%20una%20retribuci%C3%B3n%20por%20horas%20de%20trabajo%20en%20zonas%20rurales"
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20que%20los%20proveedores%20de%20comunicaci%C3%B3n%20v%C3%ADa%20internet%20abastezcan%20de%20comunicaci%C3%B3n%20digital%20(banda%20ancha)"
+        ]
+      },
+      {
+        "titulo": "Protección y fortalecimiento del sector agropecuario",
+        "descripcion": "Implementación de la Ley de la Defensoría del Campesino y de un marco jurídico predecible, fortaleciendo la capacidad institucional y las carreras públicas especializadas para una gestión eficiente del sector agropecuario. (Meta 2026: creación de la Defensoría del Campesino y promoción de trabajo digno y reconocido para los trabajadores agropecuarios).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Implementaremos%20la%20Ley%20de%20la%20Defensor%C3%ADa%20del%20Campesino%20y%20un%20marco%20jur%C3%ADdico%20facilitador%20y%20predecible."
+        ]
+      },
+      {
+        "titulo": "Gestión integrada de cuencas",
+        "descripcion": "Impulso a la Autoridad de Cuencas para planificar y gestionar de manera integrada la infraestructura productiva y el uso sostenible de los recursos naturales, articulando a productores con gobiernos locales y regionales. (Meta 2026: creación de la Autoridad de Cuencas como organismo autónomo).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20la%20Autoridad%20de%20Cuencas%20para%20planear%20y%20gestionar%20de%20manera%20integrada%20la%20infraestructura%20f%C3%ADsica"
+        ]
+      },
+      {
+        "titulo": "Investigación y desarrollo agrobiotecnológico",
+        "descripcion": "Construcción de un sistema de investigación e innovación en valles y cuencas, articulado con universidades e institutos especializados, promoviendo acuerdos internacionales y un agro libre de transgénicos. (Meta 2026: crear un sistema eficiente de I+D en cada cuenca y valle agrícola e impulsar la producción de alimentos orgánicos).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Construiremos%20un%20sistema%20de%20investigaci%C3%B3n%20desde%20cada%20valle%20y%20cuenca,%20con%20los%20mejores%20agricultores%20y%20el%20soporte%20de%20instituciones%20universitarias%20e%20institutos%20especializados"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de organizaciones agrarias",
+        "descripcion": "Apoyo a las organizaciones de empresarios agrarios para la gestión de clústeres y cadenas productivas, promoviendo la asociatividad, el acceso a créditos, la transferencia tecnológica, nuevas inversiones y capacitación permanente. (Meta 2026: fortalecer las organizaciones agrarias a nivel nacional).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=promoveremos%20m%C3%A1s%20y%20mejores%20mecanismos%20de%20asociatividad,%20a%20efectos%20de%20lograr%20mejoras%20en%20la%20comercializaci%C3%B3n%20de%20sus%20productos"
         ]
       }
     ],
     "social": [
       {
         "titulo": "Lucha frontal contra la corrupción",
-        "descripcion": "Creación de la Central de Lucha Contra la Corrupción (CCC) con poderes para infiltrar y capturar el delito in fraganti.",
+        "descripcion": "Creación de la Central de Lucha Contra la Corrupción (CCC) con plenos poderes para detectar, intervenir y sancionar actos de corrupción en todos los niveles del Estado, incluyendo la verificación patrimonial de los funcionarios públicos. (Meta 2026: reducir sustancialmente la corrupción y recuperar la confianza ciudadana en las instituciones).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Crearemos%20una%20Central%20de%20lucha%20Contra%20la%20Corrupci%C3%B3n%20(CCC),%20la%20cual%20dotaremos%20de%20plenos%20poderes%20para%20detectar,%20infiltrar%20y%20capturar%20el%20delito%20cometido%20%E2%80%9Cin%20fraganti%E2%80%9D"
         ]
       },
       {
         "titulo": "Seguridad ciudadana integral",
-        "descripcion": "Unidades Itinerantes de Pacificación Ciudadana e inteligencia para combatir delincuencia y microcomercialización.",
+        "descripcion": "Implementación de Unidades Itinerantes de Pacificación Ciudadana con inteligencia, agentes encubiertos y acción conjunta de todas las instituciones del sistema de seguridad, para combatir la delincuencia, el pandillaje y la microcomercialización de drogas. (Meta 2026: reducir significativamente los índices de violencia y delitos, e implementar sistemas de videovigilancia en coordinación con gobiernos regionales y municipales).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Derrotaremos%20la%20delincuencia%20com%C3%BAn,%20el%20pandillaje%20y%20la%20micro%20comercializaci%C3%B3n%20de%20drogas,%20por%20medio%20de%20las%20Unidades%20Itinerantes%20de%20Pacificaci%C3%B3n%20Ciudadana,%20inteligencia%20y%20agentes%20encubiertos"
         ]
       },
       {
-        "titulo": "Alimentación y desarrollo infantil",
-        "descripcion": "Programa alimentario proteico desde la gestación para erradicar anemia y desnutrición.",
+        "titulo": "Fortalecimiento de programas sociales y alimentarios",
+        "descripcion": "Reforzamiento de las organizaciones populares y programas sociales para una distribución eficiente de la ayuda alimentaria, basada en productos nacionales, orientada a reducir la pobreza extrema, eliminar duplicidades y promover el emprendimiento. (Meta 2026: disminuir significativamente la pobreza extrema y la desnutrición mediante canastas básicas adquiridas a productores agrícolas, reactivando la economía).",
         "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Nos%20preocuparemos%20de%20la%20alimentaci%C3%B3n%20desde%20el%20vientre%20de%20la%20madre"
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Lucharemos%20para%20erradicar%20la%20pobreza%20extrema,%20fortaleciendo%20%E2%80%93sin%20caer%20en%20la%20politizaci%C3%B3n%E2%80%93%20los%20programas%20sociales%20de%20subsidio%20y%20de%20inversi%C3%B3n%20social."
+        ]
+      },
+      {
+        "titulo": "Espacios de esparcimiento y fortalecimiento familiar",
+        "descripcion": "Extensión de los Clubes Zonales a nivel nacional para fortalecer los lazos familiares y brindar espacios de recreación y encuentro de calidad a la población más vulnerable. (Meta 2026: aumentar los espacios de esparcimiento familiar en todo el Perú).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Extenderemos%20a%20todo%20el%20pa%C3%ADs%20la%20experiencia%20de%20los%20Clubes%20Zonales%20para%20fortalecer%20los%20lazos%20y,%20por%20consiguiente,%20los%20valores%20familiares"
+        ]
+      },
+      {
+        "titulo": "Alimentación y desarrollo infantil",
+        "descripcion": "Implementación de un programa alimentario con alto contenido proteico desde la gestación hasta la etapa escolar, para asegurar el desarrollo físico y mental de niños y estudiantes. (Meta 2026: erradicar la anemia y la desnutrición infantil mediante la adquisición de productos de calidad a proveedores nacionales).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Nos%20preocuparemos%20de%20la%20alimentaci%C3%B3n%20desde%20el%20vientre%20de%20la%20madre",
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=DIMENSI%C3%93N%20SOCIAL"
         ]
       }
     ],
     "ambiental": [
       {
+        "titulo": "Control de emisiones y acción climática",
+        "descripcion": "Implementación de medidas para controlar y reducir las emisiones de gases de efecto invernadero y otros contaminantes, protegiendo la biodiversidad y reduciendo la vulnerabilidad del país frente al cambio climático. (Meta 2026: reducir de manera significativa las emisiones de gases de efecto invernadero).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Controlaremos%20las%20emisiones%20de%20gases%20de%20efecto%20invernadero%20y%20contaminantes%20debido%20a%20que%20el%20Per%C3%BA"
+        ]
+      },
+      {
+        "titulo": "Gestión integral de los recursos hídricos",
+        "descripcion": "Implementación de mecanismos obligatorios para prevenir la contaminación de cuerpos de agua, fortalecimiento del Consejo Nacional del Agua, ampliación del acceso a agua potable y ejecución del programa de emergencia 'agua en la esquina', con apoyo de asociaciones público-privadas. (Meta 2026: lograr una administración eficiente de los recursos hídricos y garantizar agua de calidad, en línea con el Objetivo 6 de la Agenda 2030).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Estableceremos%20mecanismos%20de%20car%C3%A1cter%20obligatorio%20para%20evitar%20que%20las%20municipalidades%20y%20las%20empresas%20p%C3%BAblicas%20y%20privadas%20viertan"
+        ]
+      },
+      {
         "titulo": "Protección y reforestación de bosques",
-        "descripcion": "Reforestar 500 mil hectáreas anuales contra la tala indiscriminada respetando el hábitat de comunidades.",
+        "descripcion": "Protección de los bosques frente a la tala indiscriminada, respeto al hábitat de las comunidades, ejecución de políticas de reforestación, manejo forestal sostenible e impulso a la producción de madera certificada. (Meta 2026: reforestar 500 mil hectáreas anuales hasta alcanzar 2 millones y alinear las políticas al Objetivo 15 de la Agenda 2030).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Protegeremos%20los%20bosques%20contra%20la%20tala%20indiscriminada%20respetando%20el%20h%C3%A1bitat%20de%20las%20poblaciones%20que%20viven%20en%20ellos."
         ]
       },
       {
-        "titulo": "Gestión integral de los recursos hídricos",
-        "descripcion": "Mecanismos obligatorios contra contaminación y programa 'agua en la esquina' mediante APPs.",
+        "titulo": "Pesca sostenible y acuicultura",
+        "descripcion": "Promoción de una pesca responsable y sostenible, mitigando impactos ambientales, e impulso a la acuicultura de especies marinas y continentales, con participación de PYMEs. (Meta 2026: fortalecer la pesca sostenible y la acuicultura entre la costa y la selva, alineadas al Objetivo 14 de la Agenda 2030).",
         "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Estableceremos%20mecanismos%20de%20car%C3%A1cter%20obligatorio%20para%20evitar%20que%20las%20municipalidades%20y%20las%20empresas%20p%C3%BAblicas%20y%20privadas%20viertan"
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Promoveremos%20la%20pesca%20sostenible%20y%20responsable%20con%20los%20recursos%20marinos,%20mitigando%20el%20impacto%20de%20los%20residuos%20s%C3%B3lidos%20y%20l%C3%ADquidos%20propios%20de%20esta%20actividad%20industrial."
+        ]
+      },
+      {
+        "titulo": "Gestión sostenible de los recursos naturales",
+        "descripcion": "Garantía del uso sostenible de los recursos naturales mediante una gestión eficiente de las actividades extractivas y productivas, protegiendo los ecosistemas, la biodiversidad y combatiendo el tráfico ilegal de flora y fauna. (Meta 2026: mejorar la redistribución y gestión de los recursos naturales y energéticos, asegurando la protección de la diversidad biológica y los ecosistemas).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Garantizaremos%20el%20uso%20sostenible%20de%20los%20recursos,forestal%20y%20dem%C3%A1s%20sectores"
+        ]
+      },
+      {
+        "titulo": "Protección de comunidades nativas y originarias",
+        "descripcion": "Protección integral de las comunidades nativas y originarias con enfoque pluricultural y multilingüe, fortaleciendo las áreas naturales protegidas y garantizando la seguridad jurídica sobre sus tierras y recursos naturales. (Meta 2026: fortalecer la protección de las comunidades nativas y originarias, asegurando sus recursos y la preservación de su cultura).",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Protegeremos%20a%20las%20comunidades%20nativas%20y%20originarias%20respetando%20y%20manteniendo%20su%20cultura%20con%20un%20enfoque%20pluricultural%20y%20multiling%C3%BCe",
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=DIMENSION%20TERRITORIAL,AMBIENTAL"
         ]
       }
     ],
     "educativo": [
       {
         "titulo": "Incentivos tributarios para educación",
-        "descripcion": "Exoneración de Impuesto Predial a inmuebles para fines educativos cedidos gratuitamente.",
+        "descripcion": "Exoneración del Impuesto Predial a los inmuebles destinados a fines educativos cuando sean cedidos de manera gratuita, eliminando la presunción de obtención de renta en dichas cesiones. (Meta 2026: eliminar la presunción de renta en cesiones gratuitas con fines educativos).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Permitiremos%20a%20los%20propietarios%20de%20bienes%20inmuebles%20destinados%20para%20fines%20educativos"
         ]
@@ -316,7 +452,7 @@
     "salud": [
       {
         "titulo": "Descentralización y desarrollo comunitario",
-        "descripcion": "Agentes de Desarrollo comunitarios para salud básica, alfabetización y saneamiento rural.",
+        "descripcion": "Descentralización de los programas de apoyo social con participación de la población organizada y formación de Agentes de Desarrollo comunitarios para salud básica, alfabetización y saneamiento rural. (Meta 2026: propiciar el desarrollo de las comunidades campesinas y nativas).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Desarrollo%20seleccionados,nativos"
         ]
@@ -325,7 +461,7 @@
     "seguridad": [
       {
         "titulo": "Salud ocupacional como derecho ciudadano",
-        "descripcion": "Creación de la Oficina Nacional de Salud Ocupacional para fortalecer prevención laboral.",
+        "descripcion": "Promoción y garantía de la salud ocupacional como un derecho fundamental de los trabajadores, fortaleciendo la prevención y protección en el ámbito laboral. (Meta 2026: creación de la Oficina Nacional de Salud Ocupacional).",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Favorecer%20la%20Salud%20Ocupacional,%20como%20derecho%20ciudadano."
         ]
