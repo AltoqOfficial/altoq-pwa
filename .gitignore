@@ -72,3 +72,6 @@ Thumbs.db
 
 # Private Data
 src/data/questionnaire/mapping.json
+
+# Logs
+*.txt
