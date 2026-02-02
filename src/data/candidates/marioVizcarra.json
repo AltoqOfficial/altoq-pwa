@@ -708,42 +708,38 @@
     }
   },
   "controversias": {
-    "antecedentes": [
-      {
-        "titulo": "Condena por delito de Peculado (2005)",
-        "estado": "Sentencia cumplida/Firme",
-        "source": [
-          "https://altavoz.pe/politica/mario-vizcarra-registra-una-condena-por-corrupcion/",
-          "https://www.infobae.com/peru/2026/01/01/jee-no-admite-candidatura-de-mario-vizcarra-al-senado-por-su-sentencia-por-peculado/"
-        ]
-      }
-    ],
+    "antecedentes": [],
     "procesosJudiciales": [
       {
         "titulo": "Proceso por peculado derivado de su gestión en CTAR Moquegua",
         "estado": "Archivado",
+        "descripcion": "Mario Vizcarra consignó que fue condenado por el Poder Judicial por el delito contra la administración pública en la modalidad de peculado. Fue una sentencia suspendida que quedó firme en octubre del 2005.",
         "source": [
-          "https://altavoz.pe/politica/mario-vizcarra-registra-una-condena-por-corrupcion/"
+          "https://altavoz.pe/politica/mario-vizcarra-registra-una-condena-por-corrupcion/#:~:text=Mario%20Vizcarra%20consign%C3%B3,octubre%20del%202005.",
+          "https://www.infobae.com/peru/2026/01/01/jee-no-admite-candidatura-de-mario-vizcarra-al-senado-por-su-sentencia-por-peculado/#:~:text=condenatoria%20firme%20por%20peculado."
         ]
       }
     ],
     "declaraciones": [
       {
         "titulo": "Postura a favor del aborto libre",
+        "descripcion": "Estaría a favor del aborto en todos los casos, “más aún en temas de violación”. “Es obvio que se debe respetar el derecho de la mujer a decidir sobre su cuerpo y su proyecto de vida”, mencionó.",
         "source": [
-          "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
+          "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/#:~:text=Sobre%20el%20aborto%2C%20defendi%C3%B3%20que%20la%20decisi%C3%B3n%20debe%20recaer%20en%20la%20mujer.%20Agreg%C3%B3%20que%20estar%C3%ADa%20a%20favor%20de%20la%20interrupci%C3%B3n%20en%20todos%20los%20casos%2C%20%E2%80%9Cm%C3%A1s%20a%C3%BAn%20en%20temas%20de%20violaci%C3%B3n%E2%80%9D.%20%E2%80%9CEs%20obvio%20que%20se%20debe%20respetar%20el%20derecho%20de%20la%20mujer%20a%20decidir%20sobre%20su%20cuerpo%20y%20su%20proyecto%20de%20vida%E2%80%9D%2C%20mencion%C3%B3"
         ]
       },
       {
         "titulo": "Propuesta de legalización de drogas que no impliquen daño social",
+        "descripcion": "“Algún tipo de drogas vamos a legalizarlas, aquellas que no impliquen un daño para la sociedad”, sostuvo.",
         "source": [
-          "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
+          "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/#:~:text=En%20otro%20momento%2C%20fue,para%20la%20sociedad%E2%80%9D%2C%20sostuvo"
         ]
       },
       {
         "titulo": "Respaldo a la Unión Civil y derechos de minorías sexuales",
+        "descripcion": "“Si las personas deciden su opción sexual o de relación, hay que respetarlas siempre que no transgredan los derechos de otros”.",
         "source": [
-          "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/"
+          "https://www.infobae.com/peru/2025/12/01/mario-vizcarra-responde-a-investigaciones-y-devela-su-posicion-a-favor-del-aborto-y-legalizacion-de-drogas-por-que-oponerse/#:~:text=%E2%80%9CSi%20las%20personas%20deciden%20su%20opci%C3%B3n%20sexual%20o%20de%20relaci%C3%B3n%2C%20hay%20que%20respetarlas%20siempre%20que%20no%20transgredan%20los%20derechos%20de%20otros%E2%80%9D%2C%20afirm%C3%B3%2C%20abriendo%20paso%20al%20respaldo%20de%20iniciativas%20como%20uni%C3%B3n%20civil"
         ]
       }
     ],

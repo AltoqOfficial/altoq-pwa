@@ -487,26 +487,34 @@
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "No registra antecedentes policiales conocidos.",
-        "estado": null,
-        "source": []
-      },
-      {
-        "titulo": "No registra antecedentes judiciales.",
+        "titulo": "No registra antecedentes policiales",
+        "descripcion": "No registra antecedentes policiales conocidos.",
         "estado": null,
         "source": []
       }
     ],
-    "procesosJudiciales": [
+    "antecedentesJudiciales": [
       {
-        "titulo": "Incidente de tutela de derechos por vulneración al principio de objetividad y debido proceso (Exp. 00029-2018).",
+        "titulo": "No registra antecedentes judiciales",
+        "descripcion": "No registra antecedentes judiciales conocidos.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "antecedentesPenales": [
+      {
+        "titulo": "Incidente de Tutela de Derechos (Lavado de Activos)",
+        "descripcion": "El Séptimo Juzgado de Investigación Preparatoria Nacional declaró infundado el pedido de limitar al Ministerio Público requerir información pericial, pero fundado el que se informe sobre fechas de sesiones periciales. La defensa apeló y posteriormente el juzgado confirmó la decisión en audiencia.",
         "estado": "Resuelto (apelación desistida)",
         "source": [
           "https://img.lpderecho.pe/wp-content/uploads/2025/08/Exp.-00029-2018-29-5001-JR-PE-03-LP-Derecho-1.pdf#:~:text=I.%20ANTECEDENTES:"
         ]
-      },
+      }
+    ],
+    "procesosJudiciales": [
       {
-        "titulo": "Caso Panama Papers: Investigación por presunto delito de lavado de activos vinculada a sociedades offshore.",
+        "titulo": "Caso Panama Papers (Lavado de Activos)",
+        "descripcion": "El Séptimo Juzgado Nacional amplió la investigación preparatoria contra López Aliaga por este caso durante 24 meses adicionales en octubre de 2025. La investigación se centra en presuntas operaciones financieras irregulares vinculadas a sociedades offshore.",
         "estado": "En curso (ampliación 24 meses)",
         "source": [
           "https://www.infobae.com/peru/2024/09/10/rafael-lopez-aliaga-seguira-siendo-investigado-por-lavado-de-activos-pj-desestimo-su-pedido-del-caso-panama-papers/#:~:text=El%20Septimo%20Juzgado%20de%20Investigacion,investigacion%20abierta",
@@ -514,55 +522,71 @@
         ]
       },
       {
-        "titulo": "Procesos penales por difamación agravada contra medios de comunicación (La República).",
+        "titulo": "Difamación Agravada contra medios",
+        "descripcion": "López Aliaga ha iniciado procesos penales por difamación agravada contra medios de comunicación, como el diario La República, debido a publicaciones sobre sus presuntas deudas tributarias.",
         "estado": "En curso",
         "source": []
-      },
+      }
+    ],
+    "procesosArchivados": [
       {
-        "titulo": "Recurso de tutela de derechos para excluir información migratoria en investigación de lavado de activos.",
+        "titulo": "Pedido de Tutela de Derechos (Información Migratoria)",
+        "descripcion": "En noviembre de 2023, la Tercera Sala Penal de Apelaciones Nacional desestimó un recurso de tutela de derechos presentado por la defensa de López Aliaga, el cual buscaba que se excluyera información migratoria de la investigación por lavado de activos.",
         "estado": "Archivado (desestimado)",
         "source": [
-          "https://lpderecho.pe/rafael-lopez-aliaga-limitan-ministerio-publico-informacion-migratoria-investigacion-lavado-de-activos#:~:text=En%20audiencia%20p%C3%BAblica,atendiendo",
-          "https://www.tvperu.gob.pe/noticias/politica/rafael-lopez-aliaga-pj-desestimo-recurso-y-seguira-siendo-investigado-por-lavado-de-activos#:~:text=La%20Tercera%20Sala%20Penal%20de%20Apelaciones%20Nacional,por%20presunto%20delito%20de%20lavado%20de%20activos."
+          "https://lpderecho.pe/rafael-lopez-aliaga-limitan-ministerio-publico-informacion-migratoria-investigacion-lavado-de-activos#:~:text=En%20audiencia%20p%C3%BAblica,atendiendo"
         ]
       },
       {
-        "titulo": "Denuncia por presunto atentado contra su vida archivada por inexistencia del hecho.",
+        "titulo": "Atentado inexistente",
+        "descripcion": "La Fiscalía concluyó que no existió un intento de atentado contra el exalcalde de Lima, archivando la denuncia correspondiente en octubre de 2025.",
         "estado": "Archivado",
+        "source": []
+      },
+      {
+        "titulo": "Observación Electoral por Neutralidad (inicialmente)",
+        "descripcion": "El Jurado Electoral Especial (JEE) de Lima Centro 1 archivó inicialmente un caso contra López Aliaga por supuesta infracción de neutralidad, aunque posteriormente el JNE confirmaría la infracción en otra instancia.",
+        "estado": "Archivado inicialmente / Sancionado después",
         "source": []
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Deuda coactiva con SUNAT del grupo económico superior a S/ 27 millones calificada como 'acoso político'.",
+        "titulo": "Deuda con la SUNAT (S/ 27 millones)",
+        "descripcion": "Se ha documentado que empresas vinculadas al grupo económico de López Aliaga mantienen deudas coactivas con la SUNAT por más de S/ 27 millones. López Aliaga ha declarado que corresponden a personas jurídicas y lo califica de 'acoso político'.",
         "source": [
-          "https://larepublica.pe/politica/2026/01/04/rafael-lopez-aliaga-mantiene-deuda-coactiva-con-la-sunat-por-mas-de-s129-millones-renovacion-popular-rla-porky-hnews-190686#:~:text=de%20acuerdo%20con%20la%20base,190%20soles",
-          "https://youtu.be/1FM4Bqeestw?t=223"
+          "https://larepublica.pe/politica/2026/01/04/rafael-lopez-aliaga-mantiene-deuda-coactiva-con-la-sunat-por-mas-de-s129-millones-renovacion-popular-rla-porky-hnews-190686#:~:text=de%20acuerdo%20con%20la%20base,190%20soles"
         ]
       },
       {
-        "titulo": "Negativa a pagar indemnización de 30 millones de dólares a Lima Expresa llamándolos 'delincuentes'.",
-        "source": []
+        "titulo": "Negativa a Pagar a Concesionaria Lima Expresa",
+        "descripcion": "El alcalde de Lima ha declarado que la municipalidad no pagará la indemnización de 30 millones de dólares ordenada por el Tribunal Arbitral de París a favor de la concesionaria Lima Expresa, a la que calificó de 'delincuente'.",
+        "source": ["https://youtu.be/1FM4Bqeestw?t=223"]
       },
       {
-        "titulo": "Expulsión de dirigentes mineros de Renovación Popular por supuestas 'operaciones raras'.",
+        "titulo": "Expulsiones Internas del Partido",
+        "descripcion": "Se ha informado sobre controversias internas en su partido (Renovación Popular), incluyendo desmentidos de la Confemin a sus declaraciones sobre la expulsión de dirigentes mineros por 'operaciones raras'.",
         "source": []
       }
     ],
     "observaciones": [
       {
-        "titulo": "Infracción de neutralidad electoral confirmada por el JNE (noviembre 2025).",
+        "titulo": "Infracción de Neutralidad Electoral (JNE)",
+        "descripcion": "El Jurado Nacional de Elecciones (JNE) confirmó en noviembre de 2025 que López Aliaga infringió el principio de neutralidad electoral durante su gestión como alcalde, al realizar actos oficiales con símbolos de su partido.",
         "source": [
-          "https://caretas.pe/politica/jne-confirma-infraccion-de-rafael-lopez-aliaga-por-vulnerar-el-principio-de-neutralidad-electoral/#:~:text=oficiales-,El%20Jurado%20Nacional%20de,Renovacion%20Popular",
+          "https://caretas.pe/politica/jne-confirma-infraccion-de-rafael-lopez-aliaga-por-vulnerar-el-principio-de-neutralidad-electoral/#:~:text=oficiales-,El%20Jurado%20Nacional%20de,Renovacion%20Popular"
+        ]
+      },
+      {
+        "titulo": "Proceso Sancionador por Propaganda Electoral (JNE)",
+        "descripcion": "En diciembre de 2025, el JNE inició otro proceso sancionador contra él por invocar a Dios en su propaganda electoral, lo cual está prohibido por ley.",
+        "source": [
           "https://www.infobae.com/peru/2025/11/05/rafael-lopez-aliaga-si-vulnero-la-neutralidad-electoral-jne-confirma-infraccion-del-exalcalde/#:~:text=Los%20magistrados%20del,politica"
         ]
       },
       {
-        "titulo": "Proceso sancionador por invocar a Dios en propaganda electoral (diciembre 2025).",
-        "source": []
-      },
-      {
-        "titulo": "Omisión de información en declaración jurada sobre vínculo con empresa Peruval Corp.",
+        "titulo": "Omisión de Información al JNE",
+        "descripcion": "Se ha reportado que López Aliaga no declaró ante el JNE su vínculo con la empresa Peruval Corp., la cual mantiene una deuda coactiva millonaria con la SUNAT.",
         "source": []
       }
     ]

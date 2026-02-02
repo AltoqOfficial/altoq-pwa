@@ -706,15 +706,18 @@
     "antecedentes": [
       {
         "titulo": "Detención por requisitoria vigente (Reo Contumaz) en 2024",
-        "estado": null,
+        "descripcion": "En enero de 2024, fue detenido por la Policía Nacional del Perú y trasladado a la carceleta tras ser declarado 'reo contumaz' por ausentarse a la audiencia de un juicio oral. Fue liberado posteriormente bajo reglas de conducta.",
+        "estado": "Detención temporal (Liberado)",
         "source": [
-          "https://www.infobae.com/peru/2024/01/27/fernando-olivera-fue-arrestado-por-caso-de-difamacion-contra-gobernadora-de-moquegua-fue-liberado-horas-despues/#:~:text=La%20captura%20fue%20ejecutada%20por%20miembros%20de%20la%20División%20de%20Requisitoria,se%20ordenara%20su%20liberación"
+          "https://www.infobae.com/peru/2024/01/27/fernando-olivera-fue-arrestado-por-caso-de-difamacion-contra-gobernadora-de-moquegua-fue-liberado-horas-despues/#:~:text=La%20captura%20fue%20ejecutada%20por%20miembros%20de%20la%20División%20de%20Requisitoria,se%20ordenara%20su%20liberación",
+          "https://larepublica.pe/politica/2024/01/27/detienen-a-fernando-olivera-por-caso-de-difamacion-contra-gobernadora-de-arequipa-940194"
         ]
       }
     ],
     "procesosJudiciales": [
       {
         "titulo": "Investigación por colusión agravada - Caso Carretera Interoceánica",
+        "descripcion": "El Poder Judicial rechazó su pedido de archivo de investigación por colusión agravada, por presunta participación en favorecer la concesión a Odebrecht en 2005 durante su gestión ministerial.",
         "estado": "En curso",
         "source": [
           "https://larazon.pe/fernando-olivera-poder-judicial-rechaza-archivo-en-caso-de-colusion-agravada-relacionado-con-odebrecht/#:~:text=El%20Poder%20Judicial%2C%20en%20segunda%20instancia%2C%20rechaz%C3%B3,que%20le%20imputa%20la%20Fiscal%C3%ADa"
@@ -722,34 +725,40 @@
       },
       {
         "titulo": "Investigación preliminar por tráfico de influencias (Lava Jato)",
-        "estado": "En curso",
+        "descripcion": "El Equipo Especial Lava Jato mantiene una investigación preliminar en su contra vinculada al caso Odebrecht.",
+        "estado": "En curso (Preliminar)",
         "source": [
           "https://www.americatv.com.pe/noticias/actualidad/fernando-olivera-declaro-como-investigado-caso-odebrecht-n376825?#:~:text=Fernando%20Olivera%20es%20investigado,adjudicada%20a%20Odebrecht"
         ]
       },
       {
         "titulo": "Juicio por difamación agravada contra gobernadora de Moquegua",
+        "descripcion": "Enfrenta juicio por acusar de corrupción a la gobernadora regional. Su ausencia en el proceso motivó la declaración de reo contumaz.",
         "estado": "En curso",
         "source": [
           "https://rpp.pe/politica/judiciales/fernando-olivera-poder-judicial-dispuso-liberacion-de-exministro-tras-ser-detenido-por-caso-de-difamacion-noticia-1530082#:~:text=Fernando%20Olivera%20afirmó%20en%202022,afrontaba%20un%20proceso%20judicial"
         ]
       }
     ],
+    "procesosArchivados": [],
     "declaraciones": [
       {
         "titulo": "Vladiaudios sobre presunto fraude electoral",
+        "descripcion": "Difundió audios atribuidos a Vladimiro Montesinos alegando un fraude electoral sistémico en 2021, los cuales fueron desestimados periodísticamente como pruebas concluyentes de fraude.",
         "source": [
           "https://www.idl-reporteros.pe/conspiraciones-telefonicas/#:~:text=El%20jueves%2024%20a%20las%205%3A30%20de%20la%20tarde,el%20vídeo%20Kouri%2DMontesinos"
         ]
       },
       {
         "titulo": "Cartas Falsas al Vaticano",
+        "descripcion": "Presentó documentos atribuidos a la Santa Sede ('cartas al Vaticano') acusando al Cardenal Cipriani, que resultaron ser apócrifos, lo que generó un escándalo mediático y cuestionamientos a su credibilidad.",
         "source": [
           "https://rpp.pe/politica/actualidad/cardenal-perdona-cartas-falsas-pero-queda-esa-huella-de-maldad-noticia-291141#:~:text=el%20cardenal%20Juan%20Luis%20Cipriani%20al%20ser%20consultado,firmada%20por%20el%20religioso"
         ]
       },
       {
         "titulo": "Acusaciones de corrupción al presidente del Congreso José Jerí",
+        "descripcion": "En campaña electoral 2025, criticó fuertemente al Congreso y a su presidente José Jerí, calificándolo de representante de la 'corrupción', lo que generó repercusión mediática.",
         "source": [
           "https://larepublica.pe/politica/2025/11/20/fernando-olivera-sobre-jose-jeri-es-el-representante-del-congreso-de-la-corrupcion-hnews-814820#:~:text=el%20periodista%20Pedro%20Salinas%20entrevistó,parte%20de%20un%20partido%20de%20la%20corrupción"
         ]
@@ -757,9 +766,11 @@
     ],
     "observaciones": [
       {
-        "titulo": "Liberación del vocero de Sendero Luminoso Adolfo Olaechea (2003)",
+        "titulo": "Responsabilidad política en liberación de vocero de Sendero Luminoso (2003)",
+        "descripcion": "Sectores políticos (APRA) lo acusaron de negligencia durante su gestión como embajador en España, vinculándolo a irregularidades que facilitaron la liberación de Adolfo Olaechea, vocero de Sendero Luminoso.",
         "source": [
-          "https://lum.cultura.pe/cdi/video/apra-culpo-fernando-olivera-por-la-excarcelacion-de-olaechea#:~:text=El%2004%20de%20noviembre%20de%202003,en%20el%20tema%20jurídico"
+          "https://lum.cultura.pe/cdi/video/apra-culpo-fernando-olivera-por-la-excarcelacion-de-olaechea#:~:text=El%2004%20de%20noviembre%20de%202003,en%20el%20tema%20jurídico",
+          "https://youtu.be/eWfZK50W7Hw?t=40"
         ]
       }
     ]

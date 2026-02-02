@@ -678,61 +678,116 @@
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "Candidato en 2021 excluido por omisión de información en su hoja de vida [cite: 258]",
+        "titulo": "No registra antecedentes policiales conocidos.",
+        "descripcion": "No registra antecedentes policiales en las bases de datos de consulta pública.",
         "estado": null,
-        "source": [
-          "https://www.infobae.com/america/america-latina/2021/02/11/george-forsyth-el-candidato-que-lideraba-las-encuestas-fue-excluido-de-las-elecciones-presidenciales-en-peru/#:~:text=fue%20excluido%20de%20las%20elecciones%20presidenciales"
-        ]
+        "source": []
+      },
+      {
+        "titulo": "No registra sentencias penales firmes.",
+        "descripcion": "No registra sentencias penales firmes ni condenas penales conocidas.",
+        "estado": null,
+        "source": []
       }
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Investigación preparatoria ampliada hasta 2026 por presunta colusión en La Victoria [cite: 239]",
-        "estado": "En curso",
+        "titulo": "Investigación por colusión agravada en La Victoria (ampliada a 2026)",
+        "descripcion": "El Poder Judicial amplió hasta mayo de 2026 la investigación preparatoria contra Forsyth por presunta colusión agravada, relacionada con supuestos favorecimientos a empresas vinculadas a una misma familia en contrataciones municipales.",
+        "estado": "En curso (Ampliado)",
         "source": [
           "https://canalb.pe/noticias/judiciales/poder-judicial-extiende-investigacion-contra-forsyth-por-presunta-colusion-en-la-victoria#:~:text=El%20Poder%20Judicial%20resolvi%C3%B3%20ampliar%20hasta%20mayo%20de%202026%20la%20investigaci%C3%B3n%20preparatoria%20contra%20George%20Forsyth"
         ]
       },
       {
-        "titulo": "Diligencias preliminares por presuntos contratos favoreciendo a socio en La Victoria [cite: 241]",
-        "estado": "En curso",
+        "titulo": "Investigación preliminar por contratos favoreciendo a socio",
+        "descripcion": "La Primera Fiscalía Anticorrupción inició diligencias preliminares (2021) sobre presuntos contratos irregulares en la Municipalidad de La Victoria a favor de personas cercanas o socios.",
+        "estado": "Investigación preliminar",
         "source": [
           "https://peru21.pe/politica/george-forsyth-fiscalia-inicia-investigacion-preliminar-en-su-contra-por-contratos-de-su-amigo-en-la-victoria-nndc-noticia/#:~:text=La%20Primera%20,la%20victoria"
         ]
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "Denuncia por violencia familiar de Vanessa Terkes",
+        "descripcion": "La denuncia por violencia psicológica/familiar presentada en 2019 fue declarada 'infundada' o archivada en sede judicial tras los trámites correspondientes.",
+        "estado": "Archivado / Infundado",
+        "source": [
+          "https://peru21.pe/espectaculos/george-forsyth-revela-denuncia-vanessa-terkes-declarada-infundada-nndc-496568-noticia/#:~:text=la%20denuncia%20por%20violencia%20familiar%20que%20interpuso%20Vanessa%20Terkes%20en%20su%20contra%20ante%20el%20Poder%20Judicial%20fue%20declarada%20%22infundada%22",
+          "https://rpp.pe/lima/actualidad/asi-fue-la-entrevista-con-la-que-vanessa-terkes-rompio-su-silencio-tras-denuncia-a-george-forsyth-audio-noticia-1200344"
+        ]
       },
       {
-        "titulo": "Denuncia de violencia familiar de Vanessa Terkes declarada 'infundada' [cite: 244]",
-        "estado": "Archivado",
+        "titulo": "Expedientes civiles citados por JNE (2021)",
+        "descripcion": "Durante la fiscalización electoral de 2021 se detectaron menciones a procesos civiles/familiares (indemnización, violencia) que posteriormente fueron aclarados como no constitutivos de impedimento o archivados.",
+        "estado": "Aclarado / Archivado",
         "source": [
-          "https://peru21.pe/espectaculos/george-forsyth-revela-denuncia-vanessa-terkes-declarada-infundada-nndc-496568-noticia/#:~:text=la%20denuncia%20por%20violencia%20familiar%20que%20interpuso%20Vanessa%20Terkes%20en%20su%20contra%20ante%20el%20Poder%20Judicial%20fue%20declarada%20%22infundada%22"
+          "https://larepublica.pe/elecciones/2021/02/08/forsyth-podria-ser-excluido-por-omitir-informacion-sobre-procesos-judiciales-pltc",
+          "https://lalupa.pe/peru/george-forsyth-omitio-informacion-sobre-procesos-judiciales-y-podria-ser-excluido-34960"
         ]
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Alegaciones públicas de maltrato y frases insultantes ('eres una porquería') [cite: 250, 260]",
+        "titulo": "Denuncias públicas de maltrato ('eres una porquería')",
+        "descripcion": "Vanessa Terkes declaró en medios haber recibido trato humillante y frases denigrantes durante su relación, lo que generó amplia cobertura mediática.",
         "source": [
-          "https://peru21.pe/espectaculos/local/vanessa-terkes-llora-revela-infierno-george-forsyth-me-dijo-vales-porqueria-483464-noticia/#:~:text=Vanessa%20Terkes%20llora%20y%20revela%20'infierno'%20que%20vivi%C3%B3%20con%20Forsyth:%20%22Me%20dijo:%20'no%20vales%20nada,%20eres%20una%20porquer%C3%ADa'%22"
+          "https://rpp.pe/famosos/farandula/vanessa-terkes-revela-entre-lagrimas-que-george-forsyth-le-dijo-eres-una-porqueria-noticia-1201898",
+          "https://peru21.pe/espectaculos/local/vanessa-terkes-llora-revela-infierno-george-forsyth-me-dijo-vales-porqueria-483464-noticia"
+        ]
+      },
+      {
+        "titulo": "Exclusión electoral 2021 por hoja de vida",
+        "descripcion": "Fue excluido temporalmente de la contienda presidencial 2021 por omitir información sobre ingresos y empresas en su Declaración Jurada de Hoja de Vida.",
+        "source": [
+          "https://www.infobae.com/america/america-latina/2021/02/11/george-forsyth-el-candidato-que-lideraba-las-encuestas-fue-excluido-de-las-elecciones-presidenciales-en-peru"
+        ]
+      },
+      {
+        "titulo": "Polémica por uso de uniforme militar",
+        "descripcion": "Cuestionado legal y éticamente por aparecer con uniforme militar en un acto oficial con el presidente de su partido, generando debate sobre el uso político de insignias castrenses.",
+        "source": [
+          "https://caretas.pe/politica/revelan-aparicion-de-george-forsyth-con-uniforme-militar-frente-al-presidente-jose-jeri",
+          "https://peru21.pe/politica/george-forsyth-habria-vulnerado-la-ley-al-utilizar-uniforme-militar"
+        ]
+      },
+      {
+        "titulo": "Declaración sobre 'gobierno populista'",
+        "descripcion": "Afirmó: 'No queremos un gobierno populista que esté de espaldas a la población', frase que generó reacciones por la carga ideológica en el contexto electoral.",
+        "source": [
+          "https://www.infobae.com/america/america-latina/2021/04/03/george-forsyth-el-ex-futbolista-que-quiere-ser-presidente-del-peru-no-queremos-un-gobierno-populista-que-este-de-espaldas-a-la-poblacion"
         ]
       }
     ],
     "observaciones": [
       {
-        "titulo": "Aparición con uniforme militar en acto oficial (posible vulneración legal) [cite: 254, 262]",
+        "titulo": "Deuda coactiva (Los M S.A.C.)",
+        "descripcion": "Se reportaron deudas coactivas menores y estado de 'suspensión temporal' en SUNAT para empresas vinculadas (Los M S.A.C., Imka Gastro, etc.), lo cual fue observado por fiscalizadores electorales.",
         "source": [
-          "https://caretas.pe/politica/revelan-aparicion-de-george-forsyth-con-uniforme-militar-frente-al-presidente-jose-jeri/#:~:text=El%20precandidato%20presidencial%20de%20Somos%20Per%C3%BA%20asisti%C3%B3%20uniformado%20a%20la%20ceremonia"
+          "https://elcomercio.pe/elecciones-2021/george-forsyth-jee-lo-excluye-de-las-elecciones-2021-por-omitir-informacion-en-su-hoja-de-vida-victoria-nacional-nndc-noticia",
+          "https://elcomercio.pe/politica/elecciones/george-forsyth-personero-legal-de-victoria-nacional-presento-apelacion-contra-exclusion-elecciones-2021-jee-nndc-noticia"
         ]
       },
       {
-        "titulo": "Reporte de deuda coactiva de Los M S.A.C. ante centrales de riesgo [cite: 265, 267]",
+        "titulo": "Informe Contraloría: Asfalto deficiente (S/1.7 millones)",
+        "descripcion": "La Contraloría detectó pagos por S/1.7 millones en obras de asfalto que no cumplían especificaciones técnicas en La Victoria, identificando presuntas responsabilidades.",
         "source": [
-          "https://elcomercio.pe/elecciones-2021/george-forsyth-jee-lo-excluye-de-las-elecciones-2021-por-omitir-informacion-en-su-hoja-de-vida-victoria-nacional-nndc-noticia#:~:text=segun%20la%20resolucion,hoja%20de%20vida"
+          "https://www.gob.pe/institucion/contraloria/noticias/1235430-contraloria-detecta-pago-de-s-1-7-millones-por-asfalto-deficiente-en-la-victoria"
         ]
       },
       {
-        "titulo": "Contraloría detecta pago de S/1.7 millones por asfalto deficiente en La Victoria [cite: 275, 276]",
+        "titulo": "Deuda y arbitraje por recolección de residuos",
+        "descripcion": "Investigaciones periodísticas señalan una deuda impaga millonaria (aprox. S/3.2 a S/6 millones con intereses) por servicios de basura durante su gestión, lo que derivó en arbitraje.",
         "source": [
-          "https://www.gob.pe/institucion/contraloria/noticias/1235430-contraloria-detecta-pago-de-s-1-7-millones-por-asfalto-deficiente-en-la-victoria#:~:text=La%20Contralor%C3%ADa%20General%20revel%C3%B3%20que%20la%20Municipalidad%20Distrital,pavimentos%20urbanos"
+          "https://sudaca.pe/noticia/informes/la-deuda-que-george-forsyth-dejo-en-la-victoria-y-que-podria-costarle-s6-millones-al-distrito"
+        ]
+      },
+      {
+        "titulo": "Observaciones OCI por pagos a personal de confianza",
+        "descripcion": "El OCI advirtió sobre contratos y pagos (más de S/100,000) a colaboradores cercanos (como Renzo Navarro) durante su gestión municipal.",
+        "source": [
+          "https://elcomercio.pe/politica/elecciones/george-forsyth-renzo-navarro-el-hombre-de-confianza-del-candidato-presidencial-que-recibio-mas-de-s100-mil-de-la-municipalidad-de-la-victoria-elecciones-2021-noticia"
         ]
       }
     ]

@@ -255,7 +255,8 @@
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "Clandestinidad y Orden de Captura Vigente",
+        "titulo": "Orden de Captura Vigente (Prófugo)",
+        "descripcion": "Desde octubre de 2023, Vladimir Cerrón se encuentra en la clandestinidad tras ser sentenciado (aunque dicha sentencia fue luego anulada, mantiene orden de prisión preventiva por otro caso). Ha eludido múltiples operativos policiales.",
         "estado": "Activo",
         "source": [
           "https://www.infobae.com/peru/2025/07/14/vladimir-cerron-reaparece-en-tiktok-tras-mas-de-600-dias-profugo-pero-el-estado-no-puede-ubicarlo-segun-abogado-el-peru-no-tiene-como-rastrearlo#:~:text=Tras%20mas,simpatizantes"
@@ -263,6 +264,7 @@
       },
       {
         "titulo": "Destitución de EsSalud",
+        "descripcion": "Fue despedido de EsSalud durante la gestión de Fiorella Molinelli.",
         "estado": "Finalizado",
         "source": [
           "https://willax.pe/destacados/fiorella-molinelli-vladimir-cerron-fue-despedido-de-essalud-durante-mi-gestion"
@@ -270,58 +272,91 @@
       },
       {
         "titulo": "Destitución de docente universitario",
+        "descripcion": "Fue destituido de su cargo como docente nombrado en la Universidad Nacional del Centro del Perú.",
         "estado": "Finalizado",
         "source": [
           "https://files.uncp.edu.pe/bk2/La+Universidad/Resoluciones/CU/0047-CU-2020.pdf"
         ]
       }
     ],
-    "procesosJudiciales": [
-      {
-        "titulo": "Caso Los Dinámicos del Centro (Organización Criminal)",
-        "estado": "Sentenciado (Prisión preventiva ratificada en 2026)",
-        "source": [
-          "https://hytimes.pe/2026/01/09/poder-judicial-ratifica-prision-preventiva-para-vladimir-cerron-por-organizacion-criminal-y-lavado-de-activos/#:~:text=La%20defensa%20de%20Cerron,nacional%20Peru%20Libre"
-        ]
-      },
+    "antecedentesJudiciales": [
       {
         "titulo": "Caso Aeródromo Wanka",
-        "estado": "Archivado (Absuelto por Corte Suprema en 2025)",
+        "descripcion": "Sentenciado inicialmente a prisión efectiva en 2023. Sin embargo, en marzo de 2025, la Corte Suprema ANULÓ la sentencia penal y lo absolvió de los cargos, reduciendo la reparación civil.",
+        "estado": "Absuelto por Corte Suprema (marzo 2025)",
         "source": [
           "https://www.infobae.com/peru/2025/03/26/vladimir-cerron-corte-suprema-absuelve-al-profugo-lider-de-peru-libre-del-caso-aerodromo-wanka/#:~:text=La%20Sala%20Penal,en%20el%20caso"
         ]
       },
       {
         "titulo": "Caso Saneamiento La Oroya",
-        "estado": "Archivado (Sentencia nula por el TC en 2025)",
+        "descripcion": "Sentencia por negociación incompatible que lo inhabilitó en 2019. En marzo de 2025, el Tribunal Constitucional declaró NULA dicha sentencia y restauró sus derechos políticos.",
+        "estado": "Sentencia nula por el TC (marzo 2025)",
         "source": [
           "https://elbuho.pe/2025/03/tc-declara-nula-sentencia-condenatoria-contra-vladimir-cerron-por-caso-la-oroya#:~:text=El%20Tribunal%20Constitucional,en%20el%202019"
         ]
+      }
+    ],
+    "antecedentesPenales": [
+      {
+        "titulo": "Sin antecedentes penales vigentes",
+        "descripcion": "Al haber sido anuladas o absueltas sus sentencias firmes en 2025, técnicamente no registra antecedentes penales vigentes condenatorios, aunque mantiene procesos abiertos.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "Caso 'Los Dinámicos del Centro' (Org. Criminal)",
+        "descripcion": "Investigación por presunto liderazgo de red criminal para financiar al partido con tráfico de licencias. En enero de 2026, el Poder Judicial RATIFICÓ la prisión preventiva de 36 meses, motivo por el cual sigue prófugo.",
+        "estado": "Prisión preventiva ratificada (enero 2026)",
+        "source": [
+          "https://hytimes.pe/2026/01/09/poder-judicial-ratifica-prision-preventiva-para-vladimir-cerron-por-organizacion-criminal-y-lavado-de-activos/#:~:text=La%20defensa%20de%20Cerron,nacional%20Peru%20Libre"
+        ]
       },
       {
-        "titulo": "Caso Antalsis (Colusión)",
-        "estado": "En curso",
+        "titulo": "Caso Antalsis (Colusión y Asociación Ilícita)",
+        "descripcion": "Acusado de colusión con la empresa Antalsis. En enero de 2026, una sala de apelaciones revocó la prisión preventiva y dictó comparecencia simple o con restricciones (situación legal en disputa).",
+        "estado": "Prisión preventiva revocada (enero 2026)",
         "source": [
           "https://www.infobae.com/peru/2025/01/21/revocan-prision-preventiva-contra-vladimir-cerron-en-caso-antalsis-tribunal-encontro-fallas-en-resolucion-judicial#:~:text=al%20declarar%20nula%20la,en%20agravio%20del%20Estado"
         ]
       },
       {
         "titulo": "Investigación por Lavado de Activos (Financiamiento Campaña)",
+        "descripcion": "Investigación fiscal sobre el origen de fondos para las campañas electorales de Perú Libre.",
         "estado": "En curso",
         "source": [
           "https://elcomercio.pe/politica/vladimir-cerron-cuales-son-las-razones-por-las-que-el-profugo-fundador-de-peru-libre-seguira-siendo-investigado-por-presunto-lavado-de-activos-noticia/#:~:text=En%20un%20reciente%20fallo,a%20su%20partido%20Peru%20Libre"
         ]
       }
     ],
+    "procesosArchivados": [
+      {
+        "titulo": "Sin procesos archivados por prescripción",
+        "descripcion": "Las resoluciones de Wanka y La Oroya son absoluciones/nulidades recientes, consideradas victorias legales, no archivos por prescripción simple.",
+        "estado": null,
+        "source": []
+      }
+    ],
     "declaraciones": [
       {
+        "titulo": "Clandestinidad y Campaña vía TikTok",
+        "descripcion": "A pesar de estar prófugo de la justicia, realiza mítines virtuales y transmisiones en vivo por TikTok, desafiando a las autoridades y presentando libros desde la clandestinidad.",
+        "source": [
+          "https://www.infobae.com/peru/2025/07/14/vladimir-cerron-reaparece-en-tiktok-tras-mas-de-600-dias-profugo-pero-el-estado-no-puede-ubicarlo-segun-abogado-el-peru-no-tiene-como-rastrearlo#:~:text=Tras%20mas,simpatizantes"
+        ]
+      },
+      {
         "titulo": "Enfrentamiento con 'Caviares' y ONGs",
+        "descripcion": "Utiliza sus redes para atacar constantemente a la izquierda progresista ('caviares') y ONGs, culpándolos de la caída de Pedro Castillo y de la persecución judicial en su contra.",
         "source": [
           "https://www.infobae.com/peru/2025/07/11/vladimir-cerron-reaparece-en-tiktok-y-revela-tensiones-con-pedro-castillo-en-las-elecciones-2021-tuve-problemas-con-los-caviares/#:~:text=Cerron%20Rojas%20revel%C3%B3%20los,a%20m%C3%A1s%20votantes"
         ]
       },
       {
-        "titulo": "Críticas a la firmeza ideológica de Pedro Castillo",
+        "titulo": "Relación con Pedro Castillo",
+        "descripcion": "Ha calificado al ex presidente Castillo como alguien que 'se rodeó de traidores' y carecía de firmeza ideológica, buscando posicionarse él como el verdadero líder de la izquierda consecuente.",
         "source": [
           "https://caretas.pe/home_web/home_principal_secundario/vladimir-cerron-ataca-a-castillo-chavez-y-torres-son-traidores-del-pueblo#:~:text=El%20lider%20de%20Peru,del%20partido"
         ]
@@ -330,11 +365,13 @@
     "observaciones": [
       {
         "titulo": "Acusaciones de protección estatal ('El Cofre')",
+        "descripcion": "Existen audios y denuncias periodísticas que sugieren que habría sido ayudado a escapar o movilizarse utilizando vehículos oficiales de la Presidencia ('El Cofre'), lo que implicaría protección del Ejecutivo.",
         "source": [
           "https://perusupportgroup.org.uk/2024/07/who-is-protecting-vladimir-cerron/#:~:text=One%20line%20of%20thought,PL%20back%20in%202021"
         ]
       }
-    ]
+    ],
+    "aclaracionContextual": "Vladimir Cerrón presenta una paradoja política única para el 2026: ha logrado limpiar sus antecedentes penales firmes (Wanka y La Oroya) mediante fallos de la Corte Suprema y el TC en 2025, lo que le habilitaría teóricamente para postular. Sin embargo, mantiene una orden de prisión preventiva vigente por el caso 'Dinámicos del Centro' que lo obliga a mantenerse en la clandestinidad, desde donde dirige su campaña presidencial digital."
   },
   "transparencia": {
     "items": ["Hoja de vida JNE", "Registro CTI Vitae", "Infogob"],

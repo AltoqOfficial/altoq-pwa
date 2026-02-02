@@ -310,36 +310,79 @@
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "Recluido en prisión en los años 70 por motivos políticos durante régimen militar.",
-        "estado": "Amnistiado",
-        "source": [
-          "https://caretas.pe/politica/equipo-de-lopez-chau-confirma-que-estuvo-recluido-en-prision-y-salio-por-una-amnistia/"
-        ]
+        "titulo": "No registra antecedentes policiales conocidos",
+        "descripcion": "No se encontró registro de antecedentes policiales.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "antecedentesJudiciales": [
+      {
+        "titulo": "No registra antecedentes judiciales conocidos",
+        "descripcion": "No se encontró registro de antecedentes judiciales.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "antecedentesPenales": [
+      {
+        "titulo": "No registra antecedentes penales conocidos",
+        "descripcion": "No se encontró registro de antecedentes penales.",
+        "estado": null,
+        "source": []
       }
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Investigación por colusión y negociación incompatible (Caso Sonia Ulloa).",
-        "estado": "En curso",
-        "source": [
-          "https://www.infobae.com/peru/2025/07/17/alfonso-lopez-chau-en-la-mira-de-la-fiscalia-es-investigado-por-presuntamente-beneficiar-a-trabajadora-en-la-uni/"
-        ]
+        "titulo": "No registra procesos judiciales en curso conocidos",
+        "descripcion": "No se encontró registro de procesos judiciales en curso.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "No registra procesos judiciales archivados conocidos",
+        "descripcion": "No se encontró registro de procesos judiciales archivados.",
+        "estado": null,
+        "source": []
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Calificación de 'luchador social' a Víctor Polay Campos en 1989.",
+        "titulo": "Investigado por presuntos delitos de colusión y negociación incompatible",
+        "descripcion": "Es investigado por presuntos delitos de colusión y negociación incompatible, por presuntamente beneficiar a la trabajadora Sonia Ana Ulloa como secretaria general de la UNI de forma irregular y no cumplir los requisitos para asumir el cargo.",
         "source": [
-          "https://canaln.pe/actualidad/lopez-chau-llamo-luchador-politico-victor-polay-1989-n488900/"
+          "https://www.infobae.com/peru/2025/07/17/alfonso-lopez-chau-en-la-mira-de-la-fiscalia-es-investigado-por-presuntamente-beneficiar-a-trabajadora-en-la-uni/#:~:text=enfrenta%20una,para%20el%20Estado"
+        ]
+      },
+      {
+        "titulo": "Reclusión en prisión durante la década de 1970 por motivos políticos",
+        "descripcion": "Se reveló que estuvo recluido en prisión durante la década de 1970 por motivos políticos durante el régimen militar de Juan Velasco, siendo posteriormente amnistiado. No existe sentencia penal ni antecedentes judiciales.",
+        "source": [
+          "https://caretas.pe/politica/equipo-de-lopez-chau-confirma-que-estuvo-recluido-en-prision-y-salio-por-una-amnistia/#:~:text=persecuciones%20pol%C3%ADticas"
+        ]
+      },
+      {
+        "titulo": "Cuestionamientos por candidatos con denuncias graves en Ahora Nación",
+        "descripcion": "Es cuestionado por la inclusión de candidatos con denuncias graves dentro del partido Ahora Nación, incluyendo antecedentes por presunta violación y señalamientos sobre manejos económicos irregulares.",
+        "source": [
+          "https://willax.pe/politica/alfonso-lopez-chau-candidato-congreso-violacion-menor-willax/#:~:text=graves%20irregularidades%20en%20las%20candidaturas"
+        ]
+      },
+      {
+        "titulo": "Calificación de 'luchador social' a Víctor Polay Campos en 1989",
+        "descripcion": "Es señalado por haber calificado como 'luchador social' al guerrillero del MRTA Víctor Polay Campos en 1989, según una publicación de archivo correspondiente a una columna escrita por él que fue difundida públicamente.",
+        "source": [
+          "https://canaln.pe/actualidad/lopez-chau-llamo-luchador-politico-victor-polay-1989-n488900/#:~:text=luchador%20pol%C3%ADtico"
         ]
       }
     ],
     "observaciones": [
       {
-        "titulo": "Cuestionamientos por candidatos con denuncias graves dentro del partido Ahora Nación.",
-        "source": [
-          "https://willax.pe/politica/alfonso-lopez-chau-candidato-congreso-violacion-menor-willax/"
-        ]
+        "titulo": "No registra observaciones administrativas o financieras conocidas",
+        "descripcion": "No se encontró registro de observaciones administrativas o financieras (SUNAT, INDECOPI u otros).",
+        "source": []
       }
     ]
   },

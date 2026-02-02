@@ -61,7 +61,7 @@ function ControversyDetail({
         )}
 
         {/* Título/Descripción con SourceTooltip */}
-        <SourceTooltip source={data.source}>
+        <SourceTooltip source={data.source} description={data.descripcion}>
           <Typography
             color="white"
             className="text-sm lg:text-base font-atName font-medium leading-tight"

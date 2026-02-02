@@ -575,31 +575,48 @@
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "Denuncia (2012): Señalado como sospechoso del presunto hurto de una laptop y televisor.",
-        "estado": "No derivó en sentencia penal conocida.",
+        "titulo": "Mención en parte policial por presunto hurto (2012)",
+        "descripcion": "Figura en un parte policial de junio de 2012 como sospechoso del presunto hurto de una laptop y un televisor, señalado por un excompañero. Esta mención no derivó en sentencia penal conocida y el candidato afirma no tener antecedentes.",
+        "estado": "Mención policial (Sin sentencia)",
         "source": [
           "https://larepublica.pe/politica/2025/12/01/enrique-valderrama-candidato-del-apra-fue-acusado-en-el-hurto-de-una-laptop-y-un-televisor-en-el-2012-hnews-11717#:~:text=de%20acuerdo%20con,caso"
         ]
-      }
-    ],
-    "procesosJudiciales": [
+      },
       {
-        "titulo": "No registra antecedentes penales ni judiciales (Certificados al 02/12/2025).",
+        "titulo": "No registra antecedentes judiciales ni penales vigentes",
+        "descripcion": "Según certificados oficiales del Poder Judicial y el INPE emitidos en diciembre de 2025, no registra antecedentes penales ni judiciales vigentes.",
         "estado": "Limpio",
         "source": [
           "https://www.facebook.com/AlianzaPopularRevolucionariaAmericana/posts/pfbid0iZxVC3s35ErdDGt3o1f7AcsXfSD4GYyM1K7G7prG2sQV9wGa7SwLpzQub2cBkvYPl"
         ]
       }
     ],
+    "procesosJudiciales": [
+      {
+        "titulo": "No registra procesos judiciales en curso conocidos",
+        "descripcion": "No registra procesos judiciales en curso conocidos.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosArchivados": [],
     "declaraciones": [
       {
-        "titulo": "Cuestionamientos internos por manejo de listas y 'ajustes' tras las internas del APRA.",
+        "titulo": "Críticas internas por conformación de listas",
+        "descripcion": "Tras las elecciones internas del APRA, hubo cuestionamientos sobre la inclusión de invitados y el manejo de listas ('dedocracia'), a lo cual Valderrama respondió defendiendo la legalidad del proceso.",
         "source": [
           "https://www.infobae.com/peru/2025/12/27/enrique-valderrama-candidato-presidencial-del-apra-niega-irregularidades-y-defiende-inclusion-de-invitados-en-listas#:~:text=Las%20declaraciones%20del%20candidato,del%20partido"
         ]
       }
     ],
-    "observaciones": []
+    "observaciones": [
+      {
+        "descripcion": "Su liderazgo ha estado marcado por una fuerte confrontación con facciones tradicionales del partido (como la de Jorge del Castillo), generando tensiones públicas sobre la legitimidad de las listas parlamentarias y la renovación generacional del aprismo.",
+        "source": [
+          "https://panamericana.pe/politica/460007-nuevo-rostro-apra-enrique-valderrama-derrota-velasquez-quesquen-castillo"
+        ]
+      }
+    ]
   },
   "transparencia": {
     "items": [

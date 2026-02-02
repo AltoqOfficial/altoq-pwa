@@ -388,21 +388,48 @@
     "antecedentes": [
       {
         "titulo": "No registra antecedentes policiales conocidos.",
+        "descripcion": "No registra antecedentes policiales en las bases de datos de consulta pública.",
         "estado": null,
         "source": []
+      },
+      {
+        "titulo": "Medidas de protección dictadas por Juzgado de Familia (2019)",
+        "descripcion": "El Vigésimo Primer Juzgado de Familia de Lima dictó medidas de protección precautorias a favor de la denunciante por presunto acoso, incluyendo resticciones de acercamiento. No constituye condena penal.",
+        "estado": "Antecedente judicial (Medida de protección)",
+        "source": [
+          "https://www.pj.gob.pe/wps/wcm/connect/cortesuperiorlimapjcs/s_csj_lima_nuevo/as_inicio/as_imagen_prensa/as_noticias/csjli_n_juzgado_dicta_medidas_proteccion_periodista_violencia_sexual_lescano_120319#:~:text=el%20juez%20sacha,sexual"
+        ]
+      },
+      {
+        "titulo": "Investigación fiscal por acoso sexual (Archivada)",
+        "descripcion": "La Fiscalía abrió investigación por presunto acoso sexual en marzo de 2019, la cual fue archivada definitivamente a inicios de 2020 sin acusación penal.",
+        "estado": "Archivado",
+        "source": [
+          "https://lpderecho.pe/yonhy-lescano-fiscalia-archivo-definitivamente-denuncia-acoso-periodista#:~:text=el%20fiscal%20henry,reserva"
+        ]
       }
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Investigación fiscal por denuncia de presunto acoso sexual (2019)",
-        "estado": "Archivado",
+        "titulo": "No registra procesos penales en curso conocidos.",
+        "descripcion": "No registra procesos judiciales en curso conocidos.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "Investigación fiscal por denuncia de acoso sexual (2019)",
+        "descripcion": "Carpeta fiscal por presunto acoso sexual archivada definitivamente en 2020; no hubo acusación penal ni sentencia condenatoria.",
+        "estado": "Archivado definitivamente",
         "source": [
           "https://lpderecho.pe/yonhy-lescano-fiscalia-archivo-definitivamente-denuncia-acoso-periodista#:~:text=el%20fiscal%20henry,reserva"
         ]
       },
       {
-        "titulo": "Medidas de protección dictadas por el 21° Juzgado de Familia de Lima",
-        "estado": "Archivado",
+        "titulo": "Medidas de protección (Juzgado de Familia)",
+        "descripcion": "Medidas precautorias dictadas en 2019 a favor de la denunciante en el marco de la denuncia por acoso.",
+        "estado": "Medida precautoria",
         "source": [
           "https://www.pj.gob.pe/wps/wcm/connect/cortesuperiorlimapjcs/s_csj_lima_nuevo/as_inicio/as_imagen_prensa/as_noticias/csjli_n_juzgado_dicta_medidas_proteccion_periodista_violencia_sexual_lescano_120319#:~:text=el%20juez%20sacha,sexual"
         ]
@@ -410,25 +437,36 @@
     ],
     "declaraciones": [
       {
-        "titulo": "Denuncia por acoso sexual y debate sobre autenticidad de chats",
+        "titulo": "Denuncia por acoso sexual y debate sobre pruebas",
+        "descripcion": "En 2019 se difundieron chats de WhatsApp con contenido sexual. El caso generó debate mediático y análisis sobre la autenticidad de los mensajes.",
         "source": [
           "https://ojo-publico.com/politica/elecciones-2021/las-mentiras-detras-del-archivo-la-denuncia-acoso-contra-lescano#:~:text=urante%20las,son%20falsos"
         ]
       },
       {
-        "titulo": "Alegación de chats 'fraguados' y peritaje presentado por Lescano",
+        "titulo": "Suspensión del Congreso (120 días)",
+        "descripcion": "Fue suspendido por 120 días por el Pleno del Congreso tras informe de la Comisión de Ética relacionado con la denuncia de acoso.",
+        "source": [
+          "https://comunicaciones.congreso.gob.pe/noticias/pleno-aprobo-suspension-de-congresista-lescano/#:~:text=el%20pleno,legislatura"
+        ]
+      },
+      {
+        "titulo": "Alegación de chats 'fraguados' y peritaje",
+        "descripcion": "Lescano sostuvo públicamente que los chats fueron falsificados y presentó un peritaje internacional para defender su versión.",
         "source": [
           "https://rpp.pe/politica/congreso/yonhy-lescano-tras-ser-suspendido-se-ha-consumado-una-cobarde-vendetta-politica-congreso-noticia-1189810#:~:text=El%20suspendido%20legislador,lescano"
         ]
       },
       {
-        "titulo": "Fallo judicial sobre difamación (2022) concluye que no se demostró falsedad de mensajes",
+        "titulo": "Fallo judicial sobre difamación (2022)",
+        "descripcion": "Un juez señaló en un fallo posterior que no se demostró que los mensajes fueran falsos, aunque faltaron pruebas para acreditar acoso penal, desestimando una demanda de difamación interpuesta por Lescano.",
         "source": [
           "https://www.infobae.com/america/peru/2022/09/29/caso-de-acoso-sexual-juez-concluye-que-no-difamaron-a-yonhy-lescano-con-denuncia#:~:text=Para%20el%20juez,periodista"
         ]
       },
       {
-        "titulo": "Declaraciones engañosas sobre el pago de impuestos de Las Bambas",
+        "titulo": "Declaraciones sobre impuestos de Las Bambas (Fact-checking)",
+        "descripcion": "Afirmaciones públicas sobre el pago de impuestos de la minera Las Bambas fueron calificadas como engañosas o incompletas tras verificaciones de hechos.",
         "source": [
           "https://ojo-publico.com/1334/afirmacion-congresista-lescano-sobre-pago-impuestos-las-bambas-es-enganosa#:~:text=urante%20el%20Pleno%20del%20Congreso,es%20enga%C3%B1osa"
         ]
@@ -436,16 +474,9 @@
     ],
     "observaciones": [
       {
-        "titulo": "Suspensión en el Congreso por 120 días tras informe de Comisión de Ética",
-        "source": [
-          "https://comunicaciones.congreso.gob.pe/noticias/pleno-aprobo-suspension-de-congresista-lescano/#:~:text=el%20pleno,legislatura"
-        ]
-      },
-      {
-        "titulo": "Vinculado a actuaciones administrativas (recursos de reconsideración) contra organismos reguladores",
-        "source": [
-          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf"
-        ]
+        "titulo": "Actuaciones administrativas como recurrente",
+        "descripcion": "Aparece vinculado a recursos administrativos (reconsideraciones) ante organismos reguladores, sin que consten multas tributarias condenatorias firmes a su nombre en registros públicos.",
+        "source": []
       }
     ]
   },

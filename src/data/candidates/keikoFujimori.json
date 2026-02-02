@@ -469,41 +469,61 @@
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "Caso Cócteles - Investigación por aportes de campaña",
-        "estado": "En proceso de anulación",
-        "source": [
-          "https://www.infobae.com/peru/2024/07/02/juicio-a-keiko-fujimori-estos-son-los-delitos-de-los-que-se-le-acusa-y-los-anos-de-carcel-que-ha-pedido-la-fiscalia/#:~:text=investigaci%C3%B3n%20que%20inici%C3%B3%20en%20el%202014%20y%20se%20formaliz%C3%B3%20en%20el%202019"
-        ]
+        "titulo": "No registra antecedentes policiales condenatorios vinculados a prisión efectiva",
+        "descripcion": "No registra antecedentes policiales condenatorios vinculados a prisión efectiva vigente.",
+        "estado": null,
+        "source": []
       }
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Caso Cócteles - Presunto uso de eventos para ocultar dinero ilícito",
-        "estado": "En curso",
+        "titulo": "Investigación preliminar por lavado de activos (Campaña 2021)",
+        "descripcion": "En enero de 2026, se informó sobre una investigación preliminar contra Keiko Fujimori, Fuerza Popular y otros implicados por presunto lavado de activos relacionado con aportes a la campaña electoral de 2021.",
+        "estado": "En curso (Investigación preliminar)",
         "source": [
-          "https://larepublica.pe/politica/2024/06/27/juicio-a-keiko-fujimori-antecedentes-cronologia-y-en-que-consiste-el-caso-cocteles-1821690#:~:text=Cronolog%C3%ADa%20del%20caso%20C%C3%B3cteles"
+          "https://rpp.pe/politica/judiciales/keiko-fujimori-no-pedira-indemnizacion-al-estado-tras-archivamiento-del-caso-cocteles-noticia-1528657"
+        ]
+      },
+      {
+        "titulo": "Investigación por presunta falsa declaración y falsedad genérica",
+        "descripcion": "A pesar del archivamiento del caso principal, se mantiene la posibilidad de imputaciones por presunta falsa declaración en procedimiento administrativo y falsedad genérica.",
+        "estado": "Posible imputación",
+        "source": ["https://es.wikipedia.org/wiki/Caso_C%C3%B3cteles"]
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "Caso Cócteles (Lavado de activos y organización criminal)",
+        "descripcion": "El Tribunal Constitucional anuló el juicio oral y ordenó el archivo del caso en octubre de 2025, decisión ratificada posteriormente. El proceso por presuntos aportes ilícitos en campañas de 2011 y 2016 quedó sin efecto jurídico.",
+        "estado": "Anulado / Archivado (Octubre 2025)",
+        "source": [
+          "https://www.infobae.com/peru/2026/01/15/keiko-fujimori-caso-cocteles-anulado-tc-archivamiento-definitivo/",
+          "https://rpp.pe/politica/judiciales/keiko-fujimori-no-pedira-indemnizacion-al-estado-tras-archivamiento-del-caso-cocteles-noticia-1528657"
         ]
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Crítica a Gustavo Petro ('Con el Perú no te metas')",
+        "titulo": "Respuesta dura a Gustavo Petro ('Con el Perú no te metas')",
+        "descripcion": "Keiko Fujimori respondió con dureza al presidente colombiano Gustavo Petro tras sus comentarios sobre la soberanía de la Isla Santa Rosa, utilizando la frase 'Con el Perú no te metas', lo que generó amplia repercusión mediática.",
         "source": [
-          "https://caretas.pe/home_web/home_principal/con-el-peru-no-te-metas-keiko-fujimori-responde-con-dureza-a-gustavo-petro-por-disputa-territorial-sobre-la-isla-santa-rosa/#:~:text=En%20medio%20de%20una,la%20isla%20Santa%20Rosa"
+          "https://caretas.pe/home_web/home_principal/con-el-peru-no-te-metas-keiko-fujimori-responde-con-dureza-a-gustavo-petro-por-disputa-territorial-sobre-la-isla-santa-rosa/"
         ]
       },
       {
-        "titulo": "Comentario sobre película Chavín de Huántar respecto a su padre",
+        "titulo": "Crítica sobre la película 'Chavín de Huántar'",
+        "descripcion": "Tras ver la película sobre la operación Chavín de Huántar, lamentó públicamente que, en su opinión, se hubiera omitido el rol político y de liderazgo de su padre, Alberto Fujimori, en el éxito del rescate de los rehenes.",
         "source": [
-          "https://cosas.pe/actualidad/355633/keiko-fujimori-tras-ver-pelicula-chavin-de-huantar-que-pena-que-se-hayan-olvidado-de-mi-padre/#:~:text=Sin%20embargo,Chavin%20de%20Huantar."
+          "https://cosas.pe/actualidad/355633/keiko-fujimori-tras-ver-pelicula-chavin-de-huantar-que-pena-que-se-hayan-olvidado-de-mi-padre/"
         ]
       }
     ],
     "observaciones": [
       {
-        "titulo": "Uso irregular de cámara del Congreso en evento partidario",
+        "titulo": "Uso irregular de recursos del Congreso en evento partidario",
+        "descripcion": "Se reportó que un equipo de comunicaciones del Congreso grabó un acto político proselitista de Keiko Fujimori en Trujillo, lo que generó cuestionamientos por el presunto uso indebido de recursos públicos para fines partidarios.",
         "source": [
-          "https://elpopular.pe/actualidad/2025/11/02/escandalo-en-fuerza-popular-equipo-del-congreso-grabo-acto-politico-de-keiko-fujimori-en-trujillo-149934#:~:text=El%20pasado,el%20evento%20partidario"
+          "https://elpopular.pe/actualidad/2025/11/02/escandalo-en-fuerza-popular-equipo-del-congreso-grabo-acto-politico-de-keiko-fujimori-en-trujillo-149934"
         ]
       }
     ]

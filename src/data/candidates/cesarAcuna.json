@@ -427,31 +427,101 @@
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "4 denuncias policiales por violencia familiar (Retención en vehículo, acoso, maltrato físico y hostigamiento)",
+        "titulo": "4 denuncias policiales por violencia familiar (2018-2020)",
+        "descripcion": "La República obtuvo acceso al registro de cuatro denuncias policiales que interpuso Jenny Gutiérrez contra César Acuña. Según el abogado de César Acuña, Elio Riera Garro, todos han sido archivados, pero se presume que uno de ellos se encuentra bajo investigación en el Ministerio Público.",
         "estado": "Archivados / Uno en investigación",
         "source": [
           "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=La%20Rep%C3%BAblica%20obtuvo%20acceso%20al%20registro%20de%20cuatro%20denuncias%20policiales%20que%20interpuso%20Jenny%20Guti%C3%A9rrez%20contra%20C%C3%A9sar%20Acu%C3%B1a"
         ]
+      },
+      {
+        "titulo": "Caso: Retención en vehículo (27 marzo 2018)",
+        "descripcion": "Jenny Gutiérrez denunció que Acuña no la dejaba bajar de su vehículo tras una discusión luego de dejar a su hijo en el colegio, logrando descender recién a la altura de la embajada de EE.UU.",
+        "estado": "Archivado",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=El%2027%20de%20marzo%20de%202018"
+        ]
+      },
+      {
+        "titulo": "Caso: Acoso/Mensajes (19 abril 2018)",
+        "descripcion": "Denuncia por mensajes recibidos desde el celular de Acuña, presuntamente escritos por su hija, cuestionando fotos enviadas por la madre.",
+        "estado": "Archivado",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=El-,19%20de%20abril%20de%202018,-%2C%20Guti%C3%A9rrez%20inform%C3%B3%20a"
+        ]
+      },
+      {
+        "titulo": "Caso: Maltrato físico y psicológico (26 junio 2018)",
+        "descripcion": "Durante un retorno del Jockey Plaza, la denunciante afirma que Acuña le pidió tener intimidad en presencia del menor. Ante la negativa, este reaccionó exigiéndoles que se bajaran y 'se larguen' del carro, asustando al niño.",
+        "estado": "Archivado",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=El%2026%20de%20junio%20de%202018"
+        ]
+      },
+      {
+        "titulo": "Caso: Hostigamiento/Amedrentamiento (5 marzo 2020)",
+        "descripcion": "Denuncia por la presencia de camionetas con personas en el interior frente a su domicilio tras una visita de Acuña, con el fin de amedrentar.",
+        "estado": "Archivado",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=El%205%20de%20marzo%20de%202020"
+        ]
+      }
+    ],
+    "antecedentesJudiciales": [
+      {
+        "titulo": "Antecedente por Alimentos — Sentencia Confirmada",
+        "descripcion": "César Acuña fue demandado por su expareja, Jenny Gutiérrez Vaisman, para el pago de una pensión alimenticia a favor de su menor hijo. Aunque Acuña apeló la decisión inicial, la sentencia fue ratificada en segunda instancia. El candidato reconoció esta obligación en su Hoja de Vida presentada ante el JNE para las elecciones de 2026. El 17° Juzgado de Familia de Lima ratificó el fallo que lo obliga a 'prestar en forma mensual y adelantada' la manutención.",
+        "estado": "En ejecución / Sentencia confirmada",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=reconoce%20que%20est%C3%A1%20cumpliendo%20una%20sentencia%20judicial",
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=17%C2%B0%20Juzgado%20de%20Familia%20de%20Lima%20que%20ratifica%20el%20fallo%20original%20de%20%E2%80%9Cprestar%20en%20forma%20mensual%20y%20adelantada%E2%80%9D",
+          "https://lpderecho.pe/confirman-sentencia-ordena-cesar-acuna-pagar-30-000-soles-cada-mes-pension-alimenticia-favor-menor-hijo-exp-02974-2023/#:~:text=Confirman-,sentencia%20que%20ordena%20a%20C%C3%A9sar%20Acu%C3%B1a%20pagar%2030%20000%20soles%20cada%20mes%20por%20pensi%C3%B3n%20alimenticia%20a%20favor%20de%20su%20menor%20hijo,-%5BExp.%2002974%2D2023",
+          "https://www.infobae.com/peru/2023/11/25/cesar-acuna-pj-ordena-al-lider-de-app-dar-una-pension-de-90-mil-soles-mensuales-a-su-ultimo-hijo/#:~:text=alimenticia%20mensual%20y%20adelantada"
+        ]
+      }
+    ],
+    "antecedentesPenales": [
+      {
+        "titulo": "No registra antecedentes penales conocidos",
+        "descripcion": "No se encontró registro de antecedentes penales.",
+        "estado": null,
+        "source": []
       }
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Sentencia Confirmada por Pago de Pensión Alimenticia (S/ 30,000 mensuales)",
-        "estado": "En ejecución",
-        "source": [
-          "https://lpderecho.pe/confirman-sentencia-ordena-cesar-acuna-pagar-30-000-soles-cada-mes-pension-alimenticia-favor-menor-hijo-exp-02974-2023/#:~:text=Confirman-,sentencia%20que%20ordena%20a%20C%C3%A9sar%20Acu%C3%B1a%20pagar%2030%20000%20soles%20cada%20mes%20por%20pensi%C3%B3n%20alimenticia%20a%20favor%20de%20su%20menor%20hijo,-%5BExp.%2002974%2D2023"
-        ]
+        "titulo": "No registra procesos judiciales en curso conocidos",
+        "descripcion": "No se encontró registro de procesos judiciales en curso.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "No registra procesos judiciales archivados conocidos",
+        "descripcion": "No se encontró registro de procesos judiciales archivados.",
+        "estado": null,
+        "source": []
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Afirmación sobre Rafael López Aliaga: 'No permitiremos que el peor alcalde de Lima sea presidente'",
+        "titulo": "'No permitiremos que el peor alcalde de Lima sea presidente'",
+        "descripcion": "En esta declaración, el candidato de Alianza para el Progreso cuestiona la capacidad de Rafael López Aliaga basándose en su previo desempeño municipal. Acuña sostiene que la baja ejecución presupuestal en la capital descalifica al líder de Renovación Popular, marcando así una confrontación directa en el actual escenario preelectoral de 2026.",
         "source": [
-          "https://gestion.pe/peru/acuna-advierte-a-lopez-aliaga-no-permitiremos-que-el-peor-alcalde-de-lima-sea-presidente-noticia/#:~:text=%E2%80%9CC%C3%A9sar%20Acu%C3%B1a%20ofrece%20porque%20es%20un%20candidato%20de%20centro%2C%20no%20soy%20un%20candidato%20de%20la%20izquierda%20radical%2C%20ni%20soy%20un%20candidato%20de%20la%20derecha%20radical%2C%20soy%20un%20candidato%20de%20centro%20que%20defiende%20al%20pueblo.%20Soy%20un%20candidato%20que%20cuida%20al%20pueblo%E2%80%9D%2C%20acot%C3%B3."
+          "https://gestion.pe/peru/acuna-advierte-a-lopez-aliaga-no-permitiremos-que-el-peor-alcalde-de-lima-sea-presidente-noticia/#:~:text=%E2%80%9CNo%20permitiremos%20que%20el%20peor%20alcalde%20de%20Lima%20sea%20presidente%E2%80%9D"
         ]
       },
       {
-        "titulo": "Deslinde de seguridad: 'Constitucionalmente, el responsable de dar seguridad es la PNP. No es el gobernador'",
+        "titulo": "'Si quieren vivir en un país en paz, desde ahora comiencen a vivir en paz...'",
+        "descripcion": "Esta declaración fue realizada por el candidato de APP durante una charla magistral en la Universidad César Vallejo (UCV). En dicho evento, Acuña defendió su preparación política para las elecciones de 2026, mientras sus frases redundantes generaban una nueva controversia mediática.",
+        "source": [
+          "https://willax.pe/politica/cesar-acuna-candidato-presidencial-pais-paz-vivir-willax#:~:text=Lo%20mencionado%20por%20el%20hoy%20candidato%20presidencial%20fue%20durante%20una%20charla%20en%20la%20Universidad%20C%C3%A9sar%20Vallejo%20(UCV)."
+        ]
+      },
+      {
+        "titulo": "'Constitucionalmente, el responsable de dar seguridad es la Policía Nacional. No es el gobernador'",
+        "descripcion": "Con esta frase, el líder de APP deslindó su responsabilidad directa frente a la crisis de criminalidad en La Libertad durante agosto de 2025. Pese a presidir el Comité Regional de Seguridad Ciudadana, Acuña sostuvo que su rol se limita únicamente a la coordinación y no a la ejecución operativa.",
         "source": [
           "https://www.infobae.com/peru/2025/08/09/cesar-acuna-vuelve-a-deslindar-de-la-inseguridad-en-la-libertad-el-responsable-es-la-pnp-y-no-el-gobernador/#:~:text=seguridad%20ciudadana%E2%80%9D%2C-,afirm%C3%B3%20Acu%C3%B1a,-durante%20una%20entrevista"
         ]
@@ -459,15 +529,19 @@
     ],
     "observaciones": [
       {
-        "titulo": "Deudas coactivas del Club UCV ante la SUNAT (S/ 106,160)",
+        "titulo": "Deudas coactivas del Club Universidad César Vallejo (UCV) — SUNAT",
+        "descripcion": "Según registros oficiales de la SUNAT actualizados al 19 de diciembre de 2025, el club de fútbol del cual César Acuña es representante legal fue reportado en las centrales de riesgo. La institución acumuló una deuda total de S/ 106,160, desglosada en S/ 89,095 correspondientes al Tesoro Público y S/ 17,065 por aportes impagos a EsSalud de sus trabajadores.",
         "source": [
-          "https://larepublica.pe/politica/2025/12/25/club-cesar-vallejo-propiedad-de-cesar-acuna-reporta-deudas-coactivas-por-mas-de-100-mil-soles-ante-la-sunat-hnews-1441375#:~:text=Seg%C3%BAn%20informaci%C3%B3n%20oficial%20de%20la%20SUNAT%20actualizados%20al%2019%20de%20diciembre%2C%20el%20club%20C%C3%A9sar%20Vallejo%20F%C3%BAtbol%20Club%20S.A.C"
+          "https://larepublica.pe/politica/2025/12/25/club-cesar-vallejo-propiedad-de-cesar-acuna-reporta-deudas-coactivas-por-mas-de-100-mil-soles-ante-la-sunat-hnews-1441375#:~:text=Seg%C3%BAn%20informaci%C3%B3n%20oficial%20de%20la%20SUNAT%20actualizados%20al%2019%20de%20diciembre%2C%20el%20club%20C%C3%A9sar%20Vallejo%20F%C3%BAtbol%20Club%20S.A.C",
+          "https://www.infobae.com/peru/2025/12/25/cesar-acuna-debe-a-essalud-mas-de-s-17-mil-por-club-ucv-candidato-presidencial-no-cumplio-con-el-aporte-a-sus-trabajadores/#:~:text=C%C3%A9sar%20Acu%C3%B1a%20debe%20a%20EsSalud%20m%C3%A1s%20de%20S/%2017%20mil%20por%20Club%20UCV%3A%20candidato%20presidencial%20no%20cumpli%C3%B3%20con%20el%20aporte%20a%20sus%20trabajadores"
         ]
       },
       {
-        "titulo": "Sanción de Indecopi por infracción al Derecho de Autor (Libro 'Política Educativa' y Tesis Doctoral)",
+        "titulo": "Infracción a las Normas del Derecho de Autor — Sancionados con multa por Indecopi",
+        "descripcion": "Indecopi determinó que César Acuña y la Universidad César Vallejo (UCV) vulneraron los derechos morales y patrimoniales de autor en dos situaciones distintas: 1) 'Política Educativa': Acuña se proclamó erróneamente coautor de la obra, cuyo autor único es Otoniel Alvarado Oyarce. La UCV publicó ejemplares atribuyendo la autoría exclusivamente a Acuña y mutiló párrafos de la obra original. Además, se alteró el prólogo escrito por el sacerdote Ricardo Morales Basadre para favorecer a Acuña. 2) Tesis Doctoral: Se comprobó que la tesis presentada por Acuña ante la Universidad Complutense de Madrid reprodujo fragmentos de otros autores sin citarlos ni reconocer su autoría.",
         "source": [
-          "https://www.tvperu.gob.pe/noticias/politica/indecopi-sanciona-a-cesar-acuna-y-a-ucv-por-infringir-normas-del-derecho-de-autor#:~:text=primer%20procedimiento%20sancionador%2C-,la%20Comisi%C3%B3n%20de%20Derecho,-de%20Autor%20del"
+          "https://www.tvperu.gob.pe/noticias/politica/indecopi-sanciona-a-cesar-acuna-y-a-ucv-por-infringir-normas-del-derecho-de-autor#:~:text=primer%20procedimiento%20sancionador%2C-,la%20Comisi%C3%B3n%20de%20Derecho,-de%20Autor%20del",
+          "https://canaln.pe/actualidad/indecopi-sanciono-cesar-acuna-y-ucv-plagio-libro-n246036#:~:text=Indecopi%20sanciona%20a%20C%C3%A9sar%20Acu%C3%B1a%20por%20infringir%20normas%20de%20Derecho%20de%20Autor"
         ]
       }
     ]

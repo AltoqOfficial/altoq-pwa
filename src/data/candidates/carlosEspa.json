@@ -217,8 +217,9 @@
   "controversias": {
     "antecedentes": [
       {
-        "titulo": "No registra antecedentes policiales, penales ni judiciales condenatorios.",
-        "estado": null,
+        "titulo": "Sin antecedentes policiales, penales ni judiciales vigentes",
+        "descripcion": "No registra antecedentes policiales, penales ni sentencias judiciales condenatorias vigentes en las bases de datos de consulta pública y según su declaración jurada ante el ente electoral.",
+        "estado": "Limpio",
         "source": [
           "https://plataformahistorico.jne.gob.pe/",
           "https://infogob.jne.gob.pe/"
@@ -227,34 +228,46 @@
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Archivos administrativos relacionados a su labor periodística.",
-        "estado": "Archivado",
-        "source": ["https://infogob.jne.gob.pe/"]
-      },
-      {
-        "titulo": "No se reportan procesos penales abiertos de relevancia pública.",
+        "titulo": "No se reportan procesos penales abiertos de relevancia pública",
+        "descripcion": "No se reportan procesos penales abiertos de relevancia pública en el sistema de consulta de expedientes judiciales.",
         "estado": "Sin procesos",
         "source": [
           "https://mpesije.jne.gob.pe/docs/e9d731a4-a79f-42e0-9ff7-29f6abe2bd3f.pdf"
         ]
       }
     ],
+    "procesosArchivados": [
+      {
+        "titulo": "Archivos administrativos relacionados a labor periodística",
+        "descripcion": "Se registran archivos administrativos relacionados a su labor periodística pasada, sin que estos hayan derivado en condenas o procesos penales vigentes.",
+        "estado": "Archivado",
+        "source": ["https://infogob.jne.gob.pe/"]
+      }
+    ],
     "declaraciones": [
       {
-        "titulo": "Propuesta de reabrir el penal El Frontón, cuestionada por su viabilidad jurídica internacional.",
+        "titulo": "Cuestionamiento por propuesta de reabrir penal 'El Frontón'",
+        "descripcion": "Su propuesta de reabrir el penal El Frontón ha sido señalada por analistas y medios como una medida de difícil viabilidad jurídica debido a tratados internacionales de derechos humanos.",
         "source": ["https://www.youtube.com/watch?v=_RLRJeCoP1Y&t=2s"]
+      },
+      {
+        "titulo": "Denuncia de presiones y salida de TV (Cuarto Poder, 2004)",
+        "descripcion": "Su retiro de la televisión en 2004 fue un hecho mediático controversial, donde denunció presiones editoriales que limitaban la libertad de prensa, específicamente durante el gobierno de Alejandro Toledo.",
+        "source": [
+          "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/"
+        ]
       }
     ],
     "observaciones": [
       {
-        "titulo": "Salida controversial de Cuarto Poder en 2004 denunciando presiones gubernamentales.",
-        "source": [
-          "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/"
-        ]
+        "titulo": "No presenta deudas coactivas (SUNAT)",
+        "descripcion": "Al cierre de 2025, no presenta deudas coactivas en estado de cobranza con la SUNAT bajo su registro personal o de sus empresas declaradas.",
+        "source": ["https://www.sunat.gob.pe/"]
       },
       {
-        "titulo": "No presenta deudas coactivas con la SUNAT al cierre de 2025.",
-        "source": ["https://www.sunat.gob.pe/"]
+        "titulo": "Posicionamiento como 'outsider' y transparencia",
+        "descripcion": "El candidato basa su discurso de transparencia en su pasado como periodista de investigación y su rechazo al clientelismo burocrático, posicionándose como un 'outsider' con formación académica sólida en ciencias políticas.",
+        "source": ["https://www.youtube.com/watch?v=OCCJEdwrkwI"]
       }
     ]
   },

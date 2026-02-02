@@ -102,6 +102,7 @@ export interface ControversyData {
   titulo: string;
   estado?: string;
   source?: string | string[];
+  descripcion?: string;
 }
 
 export interface Controversias {

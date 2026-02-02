@@ -401,42 +401,196 @@
     "antecedentes": [
       {
         "titulo": "No registra antecedentes policiales conocidos.",
+        "descripcion": "No registra antecedentes policiales conocidos.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "antecedentesJudiciales": [
+      {
+        "titulo": "Ampliación de la investigación preliminar por rebelión / conspiración (10 dic 2022)",
+        "descripcion": "En el Expediente N°00039-2022 (investigación por los hechos del 7-dic-2022) la fiscalía, mediante Disposición N°4 de fecha 10/12/2022, amplió la investigación preliminar para comprender a Roberto Helbert Sánchez Palomino como presunto coautor del delito contra los Poderes del Estado (rebelión) y, alternativamente, conspiración. Es una investigación fiscal (no una condena).",
+        "estado": "Investigación fiscal",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2022/12/Expediente-00039-2022-0-5001-JS-PE-01-LPDerecho.pdf#:~:text=Con%20Disposici%C3%B3n%20N%C2%B04%20del%2010%20de%20diciembre%20de%202022%2C%20ampli%C3%B3%20la%20investigaci%C3%B3n%20preliminar%20a%20fin%20comprender%20a%20ROBERTO%20HELBERT%20S%C3%81NCHEZ%20PALOMINO"
+        ]
+      },
+      {
+        "titulo": "Formación de causa penal (Resolución Legislativa del Congreso)",
+        "descripcion": "El Congreso, mediante resoluciones vinculadas a las investigaciones por el 7-dic-2022, declaró haber lugar a la formación de causa penal contra Roberto Sánchez (actuación parlamentaria que habilita el avance del proceso penal). Es una actuación de la función parlamentaria que formaliza el pase de la carpeta a sede judicial.",
+        "estado": "Declarado haber lugar",
+        "source": [
+          "https://comunicaciones.congreso.gob.pe/noticias/declaran-haber-lugar-a-formacion-de-causa-penal-contra-exministros-betssy-chavez-willy-huertas-y-roberto-sanchez-por-intento-de-golpe-de-estado/#:~:text=Declaran%20haber%20lugar%20a%20formaci%C3%B3n%20de%20causa%20penal%20contra"
+        ]
+      },
+      {
+        "titulo": "Informe final de la Subcomisión de Acusaciones Constitucionales / Denuncia Constitucional N°328 (08-mar-2023)",
+        "descripcion": "El Informe Final (Acusaciones Constitucionales) de marzo de 2023 incluyó a Roberto Sánchez en el conjunto de denunciados por su actuación del 7-dic-2022 y recomendó actuaciones/consecuencias constitucionales (es un procedimiento parlamentario/judicial-congresal).",
+        "estado": "Procedimiento parlamentario",
+        "source": [
+          "https://leyes.congreso.gob.pe/Documentos/2021_2026/Acusaciones_Constitucionales/Informe_Final/INF_FINAL_328.pdf#:~:text=Determinar%20si%2C%20el%20denunciado%20Roberto%20Helbert%20S%C3%A1nchez%20Palomino%2C%20con%20fecha%2007%20de%20diciembre%20de%202022"
+        ]
+      },
+      {
+        "titulo": "Pedido de impedimento de salida declarado inadmisible (marzo 2023)",
+        "descripcion": "La Comisión Permanente del Congreso solicitó medidas como el impedimento de salida; el Poder Judicial declaró inadmisible (o rechazó) ciertos pedidos de la Comisión para medidas cautelares contra Betssy Chávez y Roberto Sánchez (decisiones procesales que negaron medidas cautelares en ese momento).",
+        "estado": "Inadmisible",
+        "source": [
+          "https://es.scribd.com/document/631160525/Declaran-inadmisible-pedido-del-Congreso-contra-Betssy-Chavez-y-Roberto-Sanchez#:~:text=Declaran%20Inadmisible%20Pedido%20Del%20Congreso%20Contra%20Betssy%20Ch%C3%A1vez%20y%20Roberto%20S%C3%A1nchez"
+        ]
+      },
+      {
+        "titulo": "Investigaciones conexas por presunta organización criminal y/o obstrucción (2022–2024)",
+        "descripcion": "La Fiscalía incorporó a Sánchez en diligencias relacionadas con las pesquisas sobre presunta organización criminal y obstrucción a la justicia derivadas de la gestión y los hechos de diciembre de 2022; aparecen actuaciones, solicitudes de información y diligencias en expedientes conexos. (Se trata de investigaciones en curso o tramitadas; no equivalen a una condena).",
+        "estado": "Investigaciones en curso",
+        "source": [
+          "https://rpp.pe/politica/judiciales/fiscalia-incluye-a-ministro-roberto-sanchez-en-investigacion-a-pedro-castillo-por-presunta-organizacion-criminal-noticia-1444625#:~:text=investigara%20a%20Roberto%20Sanchez%20Palomino,a%20la%20justicia"
+        ]
+      },
+      {
+        "titulo": "Acusación / requerimiento acusatorio y solicitud de penas por parte de la Fiscalía",
+        "descripcion": "En distintas etapas la Fiscalía formuló requerimientos acusatorios o presentó escritos pidiendo penas (en algunos extractos periodísticos se menciona que la Fiscalía solicitó penas severas, p. ej. peticiones hasta 25 años en ciertas imputaciones); esos escritos integran el trámite penal pero no son condenas (son acusaciones fiscales).",
+        "estado": "Acusaciones fiscales",
+        "source": [
+          "https://rpp.pe/politica/judiciales/corte-suprema-evaluara-si-excluye-o-no-a-congresista-roberto-sanchez-del-proceso-penal-por-el-fallido-golpe-de-estado-noticia-1612427#:~:text=La%20Fiscal%C3%ADa%20pidi%C3%B3%2025%20a%C3%B1os%20de%20prisi%C3%B3n%20contra%20S%C3%A1nchez"
+        ]
+      },
+      {
+        "titulo": "Resolución de la Corte Suprema: exclusión del proceso penal por rebelión (enero 2025)",
+        "descripcion": "En enero de 2025 la Sala Penal Permanente de la Corte Suprema resolvió excluir a Roberto Sánchez del proceso penal por rebelión vinculado al 7-dic-2022 (decisión jurisdiccional que lo separó de esa investigación concreta). Esto modifica el estado de la causa respecto de la imputación de rebelión (no es una absolución por otros eventuales cargos; es una decisión sobre esa investigación específica).",
+        "estado": "Excluido del proceso",
+        "source": [
+          "https://www.infobae.com/peru/2025/01/30/roberto-sanchez-se-salva-de-juicio-por-intento-de-golpe-de-estado-corte-suprema-excluye-a-congresista-de-investigacion/#:~:text=la%20Sala%20Penal%20Permanente%20de,proceso%20penal"
+        ]
+      },
+      {
+        "titulo": "Actas, declaraciones y elementos probatorios en expedientes (2022–2024)",
+        "descripcion": "En los distintos tomos del Expediente N°00039 (y expedientes conexos) figuran declaraciones testimoniales de Sánchez (p. ej. declaración del 09/12/2022), actas fiscales y registros telefónicos incorporados como elementos de convicción en la investigación. Son actuaciones probatorias dentro del proceso.",
+        "estado": "Actuaciones probatorias",
+        "source": [
+          "https://magazinjurisprudencial.com/wp-content/uploads/2022/12/Resolucion-numero-3-del-expedeinte-39-2022-2_221215_224428_watermark.pdf#:~:text=Declaraci%C3%B3n%20testimonial%20de%20Roberto%20Helbert%20S%C3%A1nchez%20Palomino%2C%20de%20fecha%2009%20de%20diciembre%20de%202022"
+        ]
+      }
+    ],
+    "antecedentesPenales": [
+      {
+        "titulo": "No registra sentencias penales firmes ni condenas penales conocidas.",
+        "descripcion": "No registra sentencias penales firmes ni condenas penales conocidas.",
         "estado": null,
         "source": []
       }
     ],
     "procesosJudiciales": [
       {
-        "titulo": "Exclusión del proceso penal por rebelión (Hechos 7-D) por resolución de la Corte Suprema.",
-        "estado": "Archivado/Excluido (Enero 2025)",
+        "titulo": "Denuncia Constitucional N°328 (Procedimiento Parlamentario / Formación de causa)",
+        "descripcion": "Informe final de la Subcomisión de Acusaciones Constitucionales (marzo 2023) que acusó a Betssy Chávez, Willy Huerta y Roberto Sánchez por hechos vinculados al 7-dic-2022; la Comisión Permanente aprobó elevar la acusación. Es un proceso constitucional (ante el Congreso) que sigue su tramitación y estuvo vinculado a la sugerencia de suspensión mientras dure el trámite.",
+        "estado": "En trámite",
         "source": [
-          "https://www.infobae.com/peru/2025/01/30/roberto-sanchez-se-salva-de-juicio-por-intento-de-golpe-de-estado-corte-suprema-excluye-a-congresista-de-investigacion/#:~:text=la%20Sala%20Penal%20Permanente%20de,proceso%20penal"
+          "https://leyes.congreso.gob.pe/Documentos/2021_2026/Acusaciones_Constitucionales/Informe_Final/INF_FINAL_328.pdf#:~:text=3.%20Acusar%20al%20denunciado%20ROBERTO,%20modalidad%20CONSPIRACION"
         ]
       },
       {
-        "titulo": "Denuncia Constitucional por presunta negociación incompatible / contratación irregular en Mincetur.",
-        "estado": "En trámite parlamentario (Presentada Enero 2025)",
+        "titulo": "Investigación / denuncia por presunta negociación incompatible / contratación irregular (ene-2025)",
+        "descripcion": "La Fiscalía de la Nación presentó en enero de 2025 una denuncia constitucional contra Roberto Sánchez (junto a otros congresistas/exministros) por presuntas contrataciones irregulares / negociación incompatible durante su gestión en Mincetur; es un trámite que se procesa ante el Congreso (área de denuncias constitucionales).",
+        "estado": "Denuncia presentada (trámite parlamentario en curso)",
         "source": [
           "https://andina.pe/agencia/noticia-mp-presenta-denuncia-constitucional-contra-congresistas-guido-bellido-y-roberto-sanchez-1015925.aspx#:~:text=De%20igual%20forma%20contra%20el%20legislador%20Roberto,en%20agravio%20del%20Estado"
         ]
       },
       {
-        "titulo": "Inclusión en investigación por presunta organización criminal y obstrucción a la justicia.",
+        "titulo": "Investigación preliminar por organización criminal / obstrucción (nov-2022)",
+        "descripcion": "El Ministerio Público dispuso incluir a Sánchez (6-nov-2022) en la investigación preliminar que se sigue a Pedro Castillo por presunta organización criminal; la inclusión fue por posibles hechos de obstrucción a la justicia u otros delitos conexos. La inclusión y diligencias iniciales constan en el expediente; parte de ese expediente tuvo decisiones de exclusión posteriores sobre la imputación por rebelión.",
         "estado": "En curso",
         "source": [
           "https://rpp.pe/politica/judiciales/fiscalia-incluye-a-ministro-roberto-sanchez-en-investigacion-a-pedro-castillo-por-presunta-organizacion-criminal-noticia-1444625#:~:text=investigar%C3%A1%20a%20Roberto%20Sanchez,obstrucci%C3%B3n%20a%20la%20justicia"
+        ]
+      },
+      {
+        "titulo": "Diligencias y requerimientos conexos (investigaciones fiscales 2023–2025)",
+        "descripcion": "A partir de 2023–2025 la Fiscalía ha practicado diligencias, pedidos de información, formulación de requerimientos acusatorios y otras actuaciones (algunos escritos periodísticos mencionan solicitudes de penas), que forman parte de distintos trámites penales y constitucionales donde figura Sánchez como investigado o denunciado.",
+        "estado": "Trámites fiscales y parlamentarios en curso",
+        "source": [
+          "https://www.infobae.com/peru/2025/01/23/guido-bellido-y-roberto-sanchez-en-problemas-fiscalia-los-denuncio-por-una-presunta-contratacion-irregular-cuando-eran-ministros/#:~:text=Fiscal%C3%ADa%20los%20denunci%C3%B3%20por%20una%20presunta%20contrataci%C3%B3n%20irregular"
+        ]
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "Proceso penal por rebelión vinculado al 7-dic-2022 — EXCLUIDO (enero 2025)",
+        "descripcion": "El expediente principal sobre los hechos del 7 de diciembre de 2022 (Exp. 00039-2022) llegó a la Corte Suprema; la Sala Penal Permanente resolvió excluir a Roberto Sánchez de la investigación por el delito de rebelión y, según las coberturas, esa parte del proceso quedó archivada/excluida respecto de él. (Importante: la exclusión se refiere a la imputación por rebelión en ese expediente; la exclusión no implica que no haya otras investigaciones/denuncias distintas).",
+        "estado": "Archivado/Excluido (Enero 2025)",
+        "source": [
+          "https://www.infobae.com/peru/2025/01/30/roberto-sanchez-se-salva-de-juicio-por-intento-de-golpe-de-estado-corte-suprema-excluye-a-congresista-de-investigacion/#:~:text=la%20Sala%20Penal%20Permanente%20de,proceso%20penal"
         ]
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Calificó como 'patrañas' testimonios de colaborador eficaz sobre pagos a Bruno Pacheco.",
+        "titulo": "Acuerdo informado para entregar S/8,000 a favor de Bruno Pacheco (afirmación de colaborador eficaz)",
+        "descripcion": "Un colaborador eficaz declaró que Sánchez habría acordado la entrega de S/8,000 mensuales a favor de la pareja del exsecretario Bruno Pacheco; Sánchez negó la versión pero reconoció que la Mincetur contrató a la pareja de Pacheco. (Acusación en investigación; reconocimientos parciales por parte de Sánchez.)",
+        "source": [
+          "https://elcomercio.pe/politica/justicia/roberto-sanchez-reconoce-que-el-mincetur-contrato-a-pareja-de-bruno-pacheco-noticia/#:~:text=Roberto%20S%C3%A1nchez%20reconoce%20que%20el%20Mincetur%20contrato%20a%20pareja%20de%20Bruno%20Pacheco"
+        ]
+      },
+      {
+        "titulo": "Calificó como 'patrañas' testimonios sobre pagos a Bruno Pacheco",
+        "descripcion": "Frente a las versiones de un colaborador eficaz sobre pagos a favor de Pacheco, Sánchez calificó esas imputaciones como 'patrañas' y negó los hechos; la declaración fue ampliamente citada en la prensa. (Declaración pública de rechazo a la versión del colaborador.)",
         "source": [
           "https://gestion.pe/peru/politica/roberto-sanchez-califica-como-patranas-testimonio-sobre-pagos-a-favor-bruno-pacheco-rmmn-noticia/#:~:text=Roberto%20S%C3%A1nchez%20califica%20como%20%E2%80%9Cpatra%C3%B1as%E2%80%9D%20testimonio%20sobre%20pagos%20a%20favor%20Bruno%20Pacheco"
         ]
       },
       {
-        "titulo": "Cuestionó la actuación del Ministerio Público calificando sus hipótesis como 'imaginativas' y 'afiebradas'.",
+        "titulo": "Inclusión en investigación fiscal por obstrucción a la justicia (noviembre 2022)",
+        "descripcion": "La Fiscalía dispuso incluir a Roberto Sánchez en la investigación preliminar abierta por los hechos que rodearon al expresidente Castillo; la inclusión fue por indagaciones que contienen, entre otros, el presunto delito de obstrucción a la justicia. (Acto procesal / medida fiscal.)",
+        "source": [
+          "https://elperuano.pe/noticia/196386-fiscalia-incluye-a-ministro-roberto-sanchez-en-investigacion-preliminar-abierta-a-mandatario#:~:text=Fiscalia%20incluye%20a%20ministro,%20investigacion%20preliminar"
+        ]
+      },
+      {
+        "titulo": "Acusaciones por fraude administrativo / 'mochasueldos' y negociaciones incompatibles (2022–2024)",
+        "descripcion": "Diversos reportes e investigaciones periodísticas y fiscales imputan a Sánchez conductas como negociación incompatible, tráfico de influencias y malos manejos en contrataciones en Mincetur (términos periodísticos: 'mochasueldos', 'cobro de cupos' en algunas notas). La Fiscalía abrió diligencias y disposiciones en torno a estos hechos. (Investigación / acusación en curso).",
+        "source": [
+          "https://www.infobae.com/peru/2024/08/12/roberto-sanchez-exministro-de-pedro-castillo-investigado-por-corrupcion-acusado-de-mochasueldos-y-delitos-contra-la-administracion-publica/#:~:text=acusado%20de%20%E2%80%98mochasueldos%E2%80%99"
+        ]
+      },
+      {
+        "titulo": "Afirmación de haber intentado amplificar el mensaje del 7-D por radio",
+        "descripcion": "En la acusación fiscal relativa al 7-D, se señala que Sánchez habría intentado que el mensaje de disolución emitido por Pedro Castillo se transmitiera por radio para alcanzar mayor cobertura; la imputación forma parte de las diligencias en el expediente. (Alegación incluida en escritos fiscales).",
+        "source": [
+          "https://www.infobae.com/peru/2024/01/19/congresista-roberto-sanchez-habria-buscado-que-el-mensaje-golpista-de-pedro-castillo-se-transmita-por-radio/#:~:text=Congresista%20Roberto%20S%C3%A1nchez%20habr%C3%ADa%20buscado%20que%20el%20mensaje%20golpista%20de%20Pedro%20Castillo%20se%20transmita%20por%20radio"
+        ]
+      },
+      {
+        "titulo": "Reacción pública a citaciones fiscales: alegó vulneración de derecho a la defensa",
+        "descripcion": "Al ser notificado por la Fiscalía en diciembre de 2022, Sánchez publicó que la forma y hora de la notificación 'vulneran mi derecho a la defensa', reclamando irregularidades en el procedimiento de citación. (Declaración pública en redes y prensa sobre el trato procesal).",
+        "source": [
+          "https://larepublica.pe/politica/judiciales/2022/12/10/pedro-castillo-roberto-sanchez-tras-ser-notificado-hoy-por-la-fiscalia-esto-vulnera-mi-derecho-a-la-defensa-golpe-de-estado-mdga#:~:text=esto%20vulnera%20mi%20derecho%20a%20la%20defensa"
+        ]
+      },
+      {
+        "titulo": "Reconoció llamadas a Bruno Pacheco: 'es mi función como ministro'",
+        "descripcion": "Ante la controversia sobre comunicaciones con Bruno Pacheco, Sánchez afirmó públicamente que realizó llamadas al exsecretario porque 'es mi función como ministro', justificando las comunicaciones institucionales. (Declaración de contexto/justificación de llamadas).",
+        "source": [
+          "https://willax.pe/politica/roberto-sanchez-confiesa-que-realizo-llamadas-a-bruno-pacheco-es-mi-funcion-como-ministro#:~:text=es%20mi%20funci%C3%B3n%20como%20ministro"
+        ]
+      },
+      {
+        "titulo": "Denuncias que habría utilizado personal de su despacho para campaña (2025)",
+        "descripcion": "Informes periodísticos (investigación audiovisual y nota escrita) denuncian que personal de su despacho habría sido usado para labores proselitistas o apoyo a su campaña; la denuncia generó investigación y reproche público. (Reproche/denuncia periodística; posibles sanciones administrativas o electorales).",
+        "source": [
+          "https://elcomercio.pe/politica/congreso/roberto-sanchez-denuncian-que-el-congresista-de-juntos-por-el-peru-utiliza-a-trabajadores-de-su-despacho-para-su-campana-elecciones-2026-ultimas-noticia/#:~:text=Denuncian%20que%20congresista%20Roberto%20S%C3%A1nchez%20utiliza%20a%20sus%20trabajadores%20para%20su%20campa%C3%B1a"
+        ]
+      },
+      {
+        "titulo": "Medida del JEE: vulneración de la neutralidad electoral (2025)",
+        "descripcion": "El Jurado Electoral Especial determinó en diciembre de 2025 que Sánchez incurrió en infracción a la neutralidad electoral por participar en actividades de proselitismo (resolución administrativa en materia electoral). (Acto administrativo-electoral con efectos regulatorios).",
+        "source": [
+          "https://rpp.pe/politica/elecciones/jee-senala-que-roberto-sanchez-incurrio-en-infraccion-a-la-neutralidad-electoral-noticia-1669166#:~:text=vulner%C3%B3%20el%20principio%20de%20neutralidad%20electoral"
+        ]
+      },
+      {
+        "titulo": "Críticas al Ministerio Público: calificó hipótesis como 'imaginativas' y 'afiebradas'",
+        "descripcion": "Sánchez ha hecho declaraciones públicas fuertes cuestionando la actuación del Ministerio Público y calificando determinadas hipótesis como 'imaginativas' o 'afiebradas' (declaraciones públicas para la prensa y redes), lo que generó polémica por su rol como funcionario/investigado. (Declaraciones públicas críticas a autoridad acusadora).",
         "source": [
           "https://comunicaciones.congreso.gob.pe/noticias/exministro-de-comercio-exterior-sostiene-que-no-dijo-todo-por-el-pais/#:~:text=hip%C3%B3tesis%20del%20Ministerio%20P%C3%BAblico%20sean%20%C2%ABimaginativas%C2%BB%20y%20%C2%ABafiebradas%C2%BB"
         ]
@@ -444,15 +598,31 @@
     ],
     "observaciones": [
       {
-        "titulo": "Infracción a la neutralidad electoral determinada por el JEE por participar en proselitismo.",
+        "titulo": "Observación / informe de transferencia administrativa — MINCETUR (2022)",
+        "descripcion": "Documento oficial del Ministerio de Comercio Exterior y Turismo (informe de transferencia al término de la gestión). Contiene secciones con 'asuntos de prioritaria atención', recomendaciones y observaciones de carácter administrativo sobre la gestión del pliego en el periodo 2021–2022. Es una observación institucional sobre la gestión del ministerio, no una sanción personal (no es una multa SUNAT/INDECOPI).",
         "source": [
-          "https://rpp.pe/politica/elecciones/jee-senala-que-roberto-sanchez-incurrio-en-infraccion-a-la-neutralidad-electoral-noticia-1669166#:~:text=vulner%C3%B3%20el%20principio%20de%20neutralidad%20electoral"
+          "https://transparencia.mincetur.gob.pe/institucional/transferencia_gestion/2022/MINCETUR/INFORME_TRANSFERENCIA_PLIEGO_MINCETUR.pdf#:~:text=INFORME%20DE%20TRANSFERENCIA%20DE%20GESTI%C3%93N"
         ]
       },
       {
-        "titulo": "Denuncia sobre utilización de trabajadores de su despacho para su campaña electoral.",
+        "titulo": "Observaciones en registros de control (Contraloría — PALOMINO TRAVEL S.A.C.)",
+        "descripcion": "La Contraloría publica listados de 'penalidades' y hojas informativas donde aparece la empresa PALOMINO TRAVEL S.A.C. (proveedor vinculado a servicios de transporte en expedientes de contrataciones). Eso es una observación/registro administrativo sobre una empresa; no se puede asumir vínculo personal con el congresista sin prueba adicional.",
         "source": [
-          "https://elcomercio.pe/politica/congreso/roberto-sanchez-denuncian-que-el-congresista-de-juntos-por-el-peru-utiliza-a-trabajadores-de-su-despacho-para-su-campana-elecciones-2026-ultimas-noticia/#:~:text=Denuncian%20que%20congresista%20Roberto%20S%C3%A1nchez%20utiliza%20a%20sus%20trabajadores%20para%20su%20campa%C3%B1a"
+          "https://doc.contraloria.gob.pe/transparencia/documentos/2022/penalidades_202203.pdf#:~:text=PALOMINO%20TRAVEL%20S.A.C"
+        ]
+      },
+      {
+        "titulo": "Observación / expediente JNE (SAIP / trámites administrativos)",
+        "descripcion": "En los repositorios del JNE aparecen comunicaciones/observaciones relacionadas a solicitudes o trámites (por ejemplo solicitudes de certificaciones o absolución de observaciones administrativas en procedimientos del ROP/SAIP). Son trámites administrativos-electorales o de transparencia (no multas tributarias). Indican que su nombre figura en actuaciones administrativas del JNE pero no constituyen sanción fiscal o de INDECOPI.",
+        "source": [
+          "https://www.jne.gob.pe/transparencia/2023/SC/AIP_abril2023.pdf#:~:text=ROBERTO%20HELBERT%20SANCHEZ%20PALOMINO"
+        ]
+      },
+      {
+        "titulo": "Actuación administrativa-electoral: informe del JEE / infracción a la neutralidad (2025)",
+        "descripcion": "El Jurado Electoral Especial (JEE) emitió observaciones sobre vulneración del principio de neutralidad electoral por parte del congresista (uso de recursos o personal en actividades proselitistas). Esto es una observación y procedimiento administrativo-electoral (puede generar sanciones administrativas electorales), no es una sanción tributaria ni una multa de SUNAT/INDECOPI. Es relevante porque es una observación administrativa con efectos disciplinarios/electorales.",
+        "source": [
+          "https://rpp.pe/politica/elecciones/jee-senala-que-roberto-sanchez-incurrio-en-infraccion-a-la-neutralidad-electoral-noticia-1669166#:~:text=JEE%20se%C3%B1ala%20que%20Roberto%20S%C3%A1nchez%20incurri%C3%B3%20en%20infracci%C3%B3n%20a%20la%20neutralidad%20electoral"
         ]
       }
     ]
