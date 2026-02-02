@@ -118,10 +118,10 @@ export function SectionHeader({ title }: SectionHeaderProps) {
           </div>
         </div>
 
-        {/* Hamburger Menu Button - Mobile Only */}
+        {/* Hamburger Menu Button - Mobile/Tablet Only (Hidden on XL desktop where sidebar exists) */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden p-2 text-white focus:outline-none"
+          className="xl:hidden p-2 text-white focus:outline-none"
           aria-label="Abrir menú"
         >
           {isMenuOpen ? (
@@ -158,9 +158,9 @@ export function SectionHeader({ title }: SectionHeaderProps) {
         </button>
       </div>
 
-      {/* Full Screen Menu Overlay - Mobile Only */}
+      {/* Full Screen Menu Overlay - Mobile/Tablet Only */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-100 bg-neutral-500 flex flex-col md:hidden animate-fade-in">
+        <div className="fixed inset-0 z-100 bg-neutral-500 flex flex-col xl:hidden animate-fade-in">
           <div className="flex items-center justify-between px-4 py-6 border-b border-white/10">
             <Typography
               font="sohneBreit"
