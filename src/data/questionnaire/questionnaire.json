@@ -4,15 +4,33 @@
   "language": "es-PE",
   "title": "Mi Candidato Ideal",
   "description": "Cuestionario breve para perfilar preferencias ciudadanas y recomendar candidatos según coincidencia con planes de gobierno.",
-  "estimated_time_minutes": { "min": 5, "max": 7 },
+  "estimated_time_minutes": {
+    "min": 5,
+    "max": 7
+  },
   "response_scale": {
     "type": "single_choice",
     "options": [
-      { "key": "A", "label": "A" },
-      { "key": "B", "label": "B" },
-      { "key": "C", "label": "C" },
-      { "key": "D", "label": "D" },
-      { "key": "E", "label": "E" }
+      {
+        "key": "A",
+        "label": "A"
+      },
+      {
+        "key": "B",
+        "label": "B"
+      },
+      {
+        "key": "C",
+        "label": "C"
+      },
+      {
+        "key": "D",
+        "label": "D"
+      },
+      {
+        "key": "E",
+        "label": "E"
+      }
     ]
   },
   "sections": [
@@ -89,7 +107,10 @@
           "id": "Q3",
           "text": "Cuando un trámite del Estado es lento o burocrático, ¿qué solución debería priorizarse?",
           "choices": [
-            { "key": "A", "text": "Reducir trámites y requisitos al mínimo" },
+            {
+              "key": "A",
+              "text": "Reducir trámites y requisitos al mínimo"
+            },
             {
               "key": "B",
               "text": "Que el ciudadano no sea perjudicado por la demora del Estado"
@@ -198,7 +219,7 @@
             },
             {
               "key": "D",
-              "text": "Usar tecnología (como grilletes) para reducir el hacinamiento"
+              "text": "Reubicar cárceles en zonas remotas para mayor aislamiento y control"
             },
             {
               "key": "E",
@@ -244,7 +265,7 @@
             },
             {
               "key": "B",
-              "text": "Reglas estrictas de ingreso y expulsión para migrantes que delinquen"
+              "text": "Expulsión inmediata de extranjeros que cometan delitos"
             },
             {
               "key": "C",
@@ -256,7 +277,7 @@
             },
             {
               "key": "E",
-              "text": "Eliminar subsidios que faciliten actividades ilegales en frontera"
+              "text": "Control migratorio moderno con biometría y cruce de bases de datos"
             }
           ],
           "tags": ["fronteras", "migracion", "seguridad", "cooperacion"]
@@ -286,7 +307,7 @@
             },
             {
               "key": "D",
-              "text": "Aumentar de forma sostenida el presupuesto público en salud"
+              "text": "Invertir fuertemente en infraestructura hospitalaria y atención primaria"
             },
             {
               "key": "E",
@@ -305,7 +326,7 @@
             },
             {
               "key": "B",
-              "text": "Dar mayor peso a la educación técnica y práctica desde el colegio"
+              "text": "Priorizar educación técnica, financiera y tecnológica desde el colegio"
             },
             {
               "key": "C",
@@ -427,14 +448,17 @@
               "key": "B",
               "text": "Respaldar préstamos privados con garantías del Estado"
             },
-            { "key": "C", "text": "Poner límites a las tasas de interés" },
+            {
+              "key": "C",
+              "text": "Regular tasas de interés y ofrecer tasas sociales subsidiadas"
+            },
             {
               "key": "D",
               "text": "Usar pagos digitales como historial crediticio"
             },
             {
               "key": "E",
-              "text": "Ofrecer seguros agrarios y microseguros subsidiados"
+              "text": "Implementar seguros agrarios y microseguros frente a riesgos climáticos"
             }
           ],
           "tags": ["credito", "inclusion_financiera", "agro", "mypes"]
@@ -445,7 +469,7 @@
           "choices": [
             {
               "key": "A",
-              "text": "Cobrar más impuestos a grandes empresas y eliminar exoneraciones"
+              "text": "Reforma tributaria progresiva para grandes contribuyentes"
             },
             {
               "key": "B",
@@ -453,15 +477,15 @@
             },
             {
               "key": "C",
-              "text": "Reducir impuestos para incentivar consumo e inversión"
+              "text": "Reducir impuestos generales para estimular consumo e inversión"
             },
             {
               "key": "D",
-              "text": "Crear impuestos específicos a grandes fortunas o sobreganancias"
+              "text": "Impuestos a grandes fortunas y sobreganancias"
             },
             {
               "key": "E",
-              "text": "Mantener disciplina fiscal evitando subir impuestos o gastos"
+              "text": "Mantener estabilidad fiscal y control del déficit"
             }
           ],
           "tags": [
@@ -477,7 +501,7 @@
           "choices": [
             {
               "key": "A",
-              "text": "Un régimen laboral más simple y flexible para pequeños negocios"
+              "text": "Régimen laboral único y simplificado para MYPEs"
             },
             {
               "key": "B",
@@ -485,11 +509,11 @@
             },
             {
               "key": "C",
-              "text": "Fortalecer la fiscalización laboral con enfoque orientador"
+              "text": "Fiscalización laboral preventiva con uso de tecnología"
             },
             {
               "key": "D",
-              "text": "Programas de primer empleo con incentivos a empresas"
+              "text": "Programas de empleo juvenil con incentivos a empresas"
             },
             {
               "key": "E",
@@ -511,19 +535,19 @@
           "choices": [
             {
               "key": "A",
-              "text": "Un Estado que planifica, regula y participa directamente en sectores estratégicos"
+              "text": "Estado con rol empresarial y planificador en sectores estratégicos"
             },
             {
               "key": "B",
-              "text": "Un Estado que interviene solo cuando el mercado no llega"
+              "text": "Estado subsidiario que garantiza libre mercado e inversión privada"
             },
             {
               "key": "C",
-              "text": "Un Estado principalmente regulador, sin participar en la producción"
+              "text": "Estado regulador fuerte contra monopolios y abusos"
             },
             {
               "key": "D",
-              "text": "Un Estado que impulsa inversión y garantiza servicios básicos"
+              "text": "Estado promotor de inversión y servicios públicos eficientes"
             },
             {
               "key": "E",
@@ -536,11 +560,26 @@
           "id": "Q18",
           "text": "Para integrar mejor el país y reducir brechas territoriales, ¿qué inversión debería ser prioridad nacional?",
           "choices": [
-            { "key": "A", "text": "Carreteras y mantenimiento vial" },
-            { "key": "B", "text": "Trenes de carga y pasajeros" },
-            { "key": "C", "text": "Puertos y aeropuertos para el comercio" },
-            { "key": "D", "text": "Conectividad digital y fibra óptica" },
-            { "key": "E", "text": "Transporte público masivo en ciudades" }
+            {
+              "key": "A",
+              "text": "Carreteras y mantenimiento vial"
+            },
+            {
+              "key": "B",
+              "text": "Trenes de carga y pasajeros"
+            },
+            {
+              "key": "C",
+              "text": "Puertos y aeropuertos para el comercio"
+            },
+            {
+              "key": "D",
+              "text": "Conectividad digital y fibra óptica"
+            },
+            {
+              "key": "E",
+              "text": "Transporte público masivo en ciudades"
+            }
           ],
           "tags": [
             "infraestructura",
@@ -565,8 +604,14 @@
               "key": "C",
               "text": "Zonas económicas especiales para atraer inversión"
             },
-            { "key": "D", "text": "Economía circular y energías renovables" },
-            { "key": "E", "text": "Modernización agrícola con valor agregado" }
+            {
+              "key": "D",
+              "text": "Economía circular y energías renovables"
+            },
+            {
+              "key": "E",
+              "text": "Modernización agrícola con valor agregado"
+            }
           ],
           "tags": [
             "diversificacion",
@@ -587,11 +632,17 @@
               "key": "B",
               "text": "Combate frontal a actividades ilegales que dañan el ambiente"
             },
-            { "key": "C", "text": "Transición a energías renovables" },
-            { "key": "D", "text": "Ordenamiento territorial obligatorio" },
+            {
+              "key": "C",
+              "text": "Transición a energías renovables"
+            },
+            {
+              "key": "D",
+              "text": "Ordenamiento territorial obligatorio"
+            },
             {
               "key": "E",
-              "text": "Impuestos verdes y eliminación de subsidios contaminantes"
+              "text": "Economía circular y gestión integral de residuos (reciclaje y valorización)"
             }
           ],
           "tags": [

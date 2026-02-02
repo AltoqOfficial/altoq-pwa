@@ -201,7 +201,7 @@
             },
             {
               "key": "D",
-              "text": "Acelerar el uso de tecnología (grilletes electrónicos o monitoreo) para reducir el hacinamiento y liberar a reos de baja peligrosidad, asegurando el control externo"
+              "text": "Construir y reubicar los penales en zonas de altura, frontera o lugares remotos lejos de las ciudades, para garantizar el aislamiento total y descongestionar las urbes"
             },
             {
               "key": "E",
@@ -247,7 +247,7 @@
             },
             {
               "key": "B",
-              "text": "Establecer cuotas de ingreso y reglas claras de expulsión para los migrantes irregulares que cometan delitos, priorizando la mano de obra calificada según las necesidades del país"
+              "text": "Implementar la expulsión inmediata de extranjeros que cometan delitos y prohibir el ingreso de personas indocumentadas o con antecedentes penales"
             },
             {
               "key": "C",
@@ -259,7 +259,7 @@
             },
             {
               "key": "E",
-              "text": "Eliminar los subsidios (combustibles, gas) en zonas de frontera para evitar el financiamiento indirecto de actividades ilegales como la minería ilegal"
+              "text": "Modernizar el control migratorio mediante el uso intensivo de biometría e interoperabilidad de bases de datos criminales (nacionales e internacionales) para identificar y expulsar de forma inmediata a extranjeros con antecedentes."
             }
           ],
           "tags": ["fronteras", "migracion", "seguridad", "cooperacion"]
@@ -289,7 +289,7 @@
             },
             {
               "key": "D",
-              "text": "Aumentar progresivamente el presupuesto público en salud hasta alcanzar al menos el 6% del Producto Bruto Interno (PBI)"
+              "text": "Ejecutar un shock de inversiones en infraestructura hospitalaria y reorientar el presupuesto público para asegurar la cobertura en el primer nivel de atención"
             },
             {
               "key": "E",
@@ -308,7 +308,7 @@
             },
             {
               "key": "B",
-              "text": "Priorizar la enseñanza práctica y técnica (75% práctica), incluyendo robótica, inteligencia artificial y educación financiera, para que los egresados tengan una carrera técnica"
+              "text": "Reformar el currículo escolar priorizando la educación técnica, financiera y tecnológica (robótica, IA) para asegurar la inserción laboral de los egresados"
             },
             {
               "key": "C",
@@ -432,7 +432,7 @@
             },
             {
               "key": "C",
-              "text": "El Estado debe establecer topes o límites máximos a las tasas de interés cobradas por los bancos y microfinancieras para proteger a los usuarios"
+              "text": "Intervenir en el mercado financiero regulando las tasas de interés, comprando deudas o fijando tasas sociales subsidiadas para aliviar a los deudores"
             },
             {
               "key": "D",
@@ -440,7 +440,7 @@
             },
             {
               "key": "E",
-              "text": "El Estado debe crear seguros agrarios y microseguros de bajo costo subsidiados, para reducir el riesgo de pérdida por desastres naturales o eventos climáticos"
+              "text": "Implementar seguros agrarios y microseguros subsidiados por el Estado para proteger a productores y MYPEs frente a riesgos climáticos y comerciales"
             }
           ],
           "tags": ["credito", "inclusion_financiera", "agro", "mypes"]
@@ -451,7 +451,7 @@
           "choices": [
             {
               "key": "A",
-              "text": "Aumentar la presión tributaria, fiscalizando a los grandes contribuyentes y eliminando las exoneraciones fiscales que benefician a sectores concentrados"
+              "text": "Implementar una reforma tributaria progresiva que aumente la presión a los grandes contribuyentes mediante impuestos a las fortunas, sobretasas a utilidades extraordinarias y la eliminación de exoneraciones"
             },
             {
               "key": "B",
@@ -459,15 +459,15 @@
             },
             {
               "key": "C",
-              "text": "Reducir los impuestos generales (como el IGV y el Impuesto a la Renta) para estimular la inversión y el consumo, aunque esto pueda afectar inicialmente el déficit fiscal"
+              "text": "Reducir los impuestos generales (como el IGV y el Impuesto a la Renta) para devolver liquidez a las familias y empresas, estimulando el consumo y la inversión privada"
             },
             {
               "key": "D",
-              "text": "Crear nuevos impuestos específicos (por ejemplo, a los bienes de lujo, a las grandes fortunas o a las sobreganancias mineras) para financiar programas sociales de forma progresiva"
+              "text": "Crear nuevos impuestos a las grandes fortunas, a los bienes de lujo y a las sobreganancias mineras para financiar el gasto social y la infraestructura"
             },
             {
               "key": "E",
-              "text": "Mantener la estabilidad macroeconómica y el control estricto del déficit y la deuda pública, evitando cualquier incremento de impuestos o gastos que pongan en riesgo el \"grado de inversión\""
+              "text": "Mantener la estabilidad macroeconómica y el control estricto del déficit fiscal y la deuda pública para preservar el grado de inversión y la confianza"
             }
           ],
           "tags": [
@@ -483,7 +483,7 @@
           "choices": [
             {
               "key": "A",
-              "text": "Implementar un régimen laboral único y simplificado con costos laborales reducidos para las MYPEs, facilitando su transición a la formalidad"
+              "text": "Implementar un régimen laboral único y simplificado con costos reducidos para las MYPEs, facilitando su transición a la formalidad mediante incentivos y flexibilidad"
             },
             {
               "key": "B",
@@ -491,11 +491,11 @@
             },
             {
               "key": "C",
-              "text": "Fortalecer la inspección laboral (SUNAFIL) con uso de tecnología para fiscalizar el cumplimiento de los derechos de los trabajadores, enfocándose en la orientación antes que en la sanción"
+              "text": "Reorientar la labor de SUNAFIL hacia un enfoque preventivo y orientador usando tecnología e inteligencia de datos, priorizando la subsanación voluntaria sobre la sanción económica"
             },
             {
               "key": "D",
-              "text": "Implementar programas de \"primer empleo\" o pasantías remuneradas, con incentivos tributarios para las empresas que contraten jóvenes y mujeres"
+              "text": "Implementar programas de empleo juvenil y pasantías mediante subsidios a la seguridad social o incentivos tributarios para empresas que contraten a jóvenes y mujeres"
             },
             {
               "key": "E",
@@ -517,19 +517,19 @@
           "choices": [
             {
               "key": "A",
-              "text": "Un Estado planificador, regulador y empresario, con participación directa en sectores estratégicos (gas, energía, litio) para garantizar la soberanía y los derechos sociales"
+              "text": "Restituir el rol empresarial y planificador del Estado en sectores estratégicos, modificando la Constitución para permitir su participación directa en la economía y garantizar la soberanía de los recursos"
             },
             {
               "key": "B",
-              "text": "Un Estado que ejerce un rol subsidiario, promoviendo el libre mercado y la competencia, e interviniendo solo donde la actividad privada es insuficiente o está ausente"
+              "text": "Mantener y fortalecer el rol subsidiario del Estado, garantizando el libre mercado, la competencia y la inversión privada como motores del desarrollo"
             },
             {
               "key": "C",
-              "text": "Un Estado que se limita a ser regulador estricto, asegurando reglas de juego justas y combatiendo prácticas monopólicas o la usura, pero sin participar directamente en la producción"
+              "text": "Fortalecer al Estado como un regulador estricto que combate frontalmente los monopolios, los oligopolios y la usura financiera para garantizar una competencia justa"
             },
             {
               "key": "D",
-              "text": "Un Estado que promueve activamente la inversión pública y privada en infraestructura, pero que enfoca su rol en la provisión eficiente de servicios sociales básicos (educación, salud)"
+              "text": "Consolidar un Estado promotor que prioriza la inversión en infraestructura y garantiza la provisión eficiente de servicios básicos (salud, educación, seguridad), dejando la actividad productiva al sector privado"
             },
             {
               "key": "E",
@@ -624,7 +624,7 @@
             },
             {
               "key": "E",
-              "text": "Crear un impuesto verde (al carbono o a las emisiones) y eliminar los subsidios a los combustibles fósiles, para que el costo ambiental se refleje en la economía"
+              "text": "Impulsar la economía circular y la gestión integral de residuos sólidos (valorización, reciclaje e industrialización de desechos) para reducir el impacto ambiental y transformar los residuos en recursos productivos."
             }
           ],
           "tags": [
