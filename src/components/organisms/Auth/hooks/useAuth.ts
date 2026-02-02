@@ -8,9 +8,11 @@ import type {
   SignupRequest,
   ResetPasswordRequest,
   UpdatePasswordRequest,
+  CheckEmailRequest,
   AuthResponse,
   SignupResponse,
   MessageResponse,
+  CheckEmailResponse,
   ErrorResponse,
 } from "../types/auth.types";
 
@@ -43,7 +45,9 @@ function clearCookie(name: string): void {
 /**
  * Hook for user login
  *
- * On success: stores tokens in cookies and redirects to /dashboard
+ * On success: stores tokens in cookies and redirects appropriately
+ * - If pending form exists → redirects to /formulario-candidato?showResults=true
+ * - Otherwise → redirects to /
  *
  * @example
  * ```tsx
@@ -61,8 +65,15 @@ export function useLogin() {
       setCookie("accessToken", data.accessToken);
       setCookie("refreshToken", data.refreshToken);
 
-      // Redirect to dashboard
-      router.push("/dashboard");
+      // Check if there's a pending form submission
+      const pendingForm = localStorage.getItem("altoq_candidate_form_v2");
+      if (pendingForm) {
+        // Redirect to results page to complete the form
+        router.push("/formulario-candidato?showResults=true");
+      } else {
+        // Redirect to home (shows dashboard for authenticated users)
+        router.push("/");
+      }
     },
   });
 }
@@ -174,5 +185,22 @@ export function useUpdatePassword() {
       // Redirect to login after password update
       router.push("/login?passwordUpdated=true");
     },
+  });
+}
+
+/**
+ * Hook for checking if email already exists
+ *
+ * Used during registration to validate email before proceeding
+ *
+ * @example
+ * ```tsx
+ * const { mutate: checkEmail, isPending, data } = useCheckEmail();
+ * checkEmail({ email: 'user@example.com' });
+ * ```
+ */
+export function useCheckEmail() {
+  return useMutation<CheckEmailResponse, ErrorResponse, CheckEmailRequest>({
+    mutationFn: authService.checkEmail,
   });
 }

@@ -1,0 +1,709 @@
+{
+  "id": "roberto-sanchez-palomino",
+  "slug": "roberto-sanchez-palomino",
+  "fullName": "Roberto Helbert Sánchez Palomino",
+  "shortName": "Roberto Sánchez",
+  "image": "/candidatos/roberto-sanchez.webp",
+  "color": "#E30013",
+  "party": "Juntos por el Perú",
+  "partyIcon": "/partidos/juntos-por-el-peru.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/robertosanchp/",
+    "tiktok": null,
+    "twitter": "https://x.com/RobertoSanchP",
+    "facebook": "https://web.facebook.com/RobertoSanchez.Oficial/",
+    "web": "https://www.robertosanchezjp.com/"
+  },
+  "perfilGeneral": {
+    "edad": {
+      "value": null,
+      "source": []
+    },
+    "nacimiento": {
+      "value": null,
+      "source": []
+    },
+    "lugar": {
+      "value": null,
+      "source": []
+    },
+    "nivelEducativo": {
+      "value": [
+        "Universidad Nacional Mayor de San Marcos – Bachiller en Psicología – 1998",
+        "Universidad Nacional Mayor de San Marcos - Psicólogo – 2000",
+        "Pontificia Universidad Católica del Perú – Maestría de Políticas Sociales – 2023"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://es.scribd.com/document/974065706/Juntos-Por-El-Peru-Roberto-Helbert-Sanchez-Palomino#:~:text=bachiller%20en%20psicologia",
+        "https://es.scribd.com/document/974065706/Juntos-Por-El-Peru-Roberto-Helbert-Sanchez-Palomino#:~:text=psicologo",
+        "https://es.scribd.com/document/974065706/Juntos-Por-El-Peru-Roberto-Helbert-Sanchez-Palomino#:~:text=maestria%20de%20politicas%20socilaes"
+      ]
+    },
+    "profesion": {
+      "value": ["Psicólogo"],
+      "source": [
+        "https://es.scribd.com/document/974065706/Juntos-Por-El-Peru-Roberto-Helbert-Sanchez-Palomino#:~:text=psicologo"
+      ]
+    },
+    "partidoActual": {
+      "value": "Juntos por el Perú",
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/#:~:text=Juntos%20por%20el%20Per%C3%BA"
+      ]
+    },
+    "cambiosDePartido": {
+      "value": "0",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/roberto-helbert-sanchez-palomino_historial-partidario_mDIDCbZ0jT0=Ib"
+      ]
+    },
+    "historialPartidos": [
+      {
+        "ano": "2021",
+        "partido": "Juntos por el Perú",
+        "icono": "/partidos/juntos-por-el-peru.png",
+        "source": [
+          "https://infogob.jne.gob.pe/Politico/FichaPolitico/roberto-helbert-sanchez-palomino_historial-partidario_mDIDCbZ0jT0=Ib"
+        ]
+      }
+    ]
+  },
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "5",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/roberto-helbert-sanchez-palomino_historial-partidario_mDIDCbZ0jT0=Ib"
+      ]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Congresista de la República (2021-2026)",
+        "Apoderado - Partido Político Juntos por el Perú (2024-Actualidad)",
+        "Representante Legal - Partido Político Juntos por el Perú (2024-Actualidad)"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.congreso.gob.pe/deu/obleuterat/?K=290&TPL=if0&a=iv&id=1147#:~:text=Grupo%20o%20Partido%20Pol%C3%ADtico:%20Juntos%20por%20el%20Per%C3%BA",
+        "https://es.scribd.com/document/662406621/Directivos-JxP#:~:text=Cargo:%20Apoderado",
+        "https://jp.org.pe/"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2026 → En curso"],
+      "source": [
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/#:~:text=Roberto%20S%C3%A1nchez"
+      ]
+    }
+  },
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 5,
+      "detalle": {
+        "values": [
+          "Gerente de Administración y Finanzas (2017-2018)",
+          "Gerente de la Capital Humano (2019)",
+          "Gerente de Desarrollo Social (2019-2020)",
+          "Ministro (2021-2022)",
+          "Congresista de la República (2021-2026)"
+        ],
+        "source": [
+          "https://www.caribbeannewsdigital.com/es/turismo/roberto-helbert-sanchez-es-el-nuevo-ministro-de-turismo-de-peru#:~:text=entre%20el%202017%20y%202018%20se%20desempe%C3%B1%C3%B3%20como%20gerente%20de%20Administraci%C3%B3n%20y%20Finanzas%20de%20Municipalidad%20Provincial%20de%20Huaura",
+          "https://www.caribbeannewsdigital.com/es/turismo/roberto-helbert-sanchez-es-el-nuevo-ministro-de-turismo-de-peru#:~:text=en%202019%20fue%20gerente%20de%20Capital%20Humano%20de%20la%20Municipalidad%20Distrital%20de%20San%20Borja",
+          "https://www.caribbeannewsdigital.com/es/turismo/roberto-helbert-sanchez-es-el-nuevo-ministro-de-turismo-de-peru#:~:text=en%202020%20fue%20gerente%20de%20Desarrollo%20Social%20de%20la%20Municipalidad%20Provincial%20de%20Huaral",
+          "https://larepublica.pe/economia/2022/12/07/disolucion-del-congreso-roberto-sanchez-renuncio-al-mincetur-tras-golpe-de-estado#:~:text=S%C3%A1nchez%20fue%20titular%20del%20Mincetur%20desde%20el%2028%20de%20julio%20de%202021%20y%20fue%20ratificado%20en%20su%20cargo%20el%20%C3%BAltimo%2025%20de%20noviembre",
+          "https://www.congreso.gob.pe/deu/obleuterat/?K=290&TPL=if0&a=iv&id=1147#:~:text=Grupo%20o%20Partido%20Pol%C3%ADtico:%20Juntos%20por%20el%20Per%C3%BA"
+        ]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 0,
+      "detalle": {
+        "values": [],
+        "source": []
+      }
+    },
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+  },
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": "Izquierda",
+      "descripcion": "Se usa evidencia primaria (autodeclaraciones) + caracterización por medios. Roberto Sánchez se ha definido públicamente y en entrevistas como integrante/representante de la izquierda —por ejemplo declaró \"Representamos a la izquierda moderna\" en una entrevista con RPP; en otras apariciones ha afirmado \"soy un hombre de izquierda\" y en su actividad pública promueve propuestas y discursos propios del campo de la izquierda (llamados a refundar el modelo económico, énfasis en justicia social y rol del Estado). Estas autodeclaraciones, sumadas a cómo lo presentan medios nacionales (RPP, El Comercio) y su rol como presidente de Juntos por el Perú, permiten clasificar su ubicación ideológica hacia la izquierda. (Minuto 12:51)",
+      "source": ["https://youtu.be/XLkolkxOJYw?t=771"]
+    },
+    "economia": {
+      "sintesis": "Soberanía y diversificación productiva",
+      "descripcion": "Crítica al modelo económico; cuestiona la 'economía social de mercado' actual y aboga por mayor intervención estatal, justicia fiscal y soberanía sobre los recursos naturales.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=La%20iniciativa%20privada%20es%20libre.%20Se%20ejerce%20en%20una%20econom%C3%ADa%20social%20de%20mercado"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": null,
+      "source": []
+    },
+    "aborto": {
+      "sintesis": "A favor (casos de violación)",
+      "descripcion": "A favor de la despenalización en casos de violación sexual.",
+      "source": [
+        "https://www.congreso.gob.pe/index.php?File=%2FDocs%2FDGP%2FDIDP%2Fagenda2024%2FAGENDA-2024-2025-EQUIDAD-TEMA-68.html&K=73549&Kfn=didp%2Fprocedimientos-parlamentarios%2Fagenda-2024-2025%2FEQUIDAD#:~:text=Ley%20que%20despenaliza%20el%20aborto%20en%20casos%20de%20embarazos%20como%20consecuencia%20de%20violaci%C3%B3n%20sexual"
+      ]
+    },
+    "seguridad": {
+      "sintesis": "Enfoque preventivo y reforma policial",
+      "descripcion": "Enfoque preventivo y comunitario; propone planes locales con participación de juntas vecinales y reforma de la PNP.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=implementaremos%20una%20pol%C3%ADtica%20nacional%20de%20seguridad%20ciudadana%20con%20enfoque%20integral"
+      ]
+    },
+    "ambiente": {
+      "sintesis": "Defensa del agua y vida",
+      "descripcion": "Prioriza la conservación de biodiversidad, protección de cabeceras de cuenca ('Agua en defensa de la vida') y adaptación climática.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Protecci%C3%B3n%20del%20agua%20en%20defensa%20de%20la%20vida"
+      ]
+    },
+    "educacion": {
+      "sintesis": "Educación pública universal",
+      "descripcion": "Estado garante de la educación pública, universal, gratuita e intercultural.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=fortalecer%20el%20rol%20del%20Estado%20como%20garante%20del%20derecho%20a%20la%20educaci%C3%B3n"
+      ]
+    },
+    "reformaPolitica": {
+      "sintesis": "Nueva Constitución",
+      "descripcion": "Refundación institucional mediante una Nueva Constitución; selección de autoridades por mérito y probidad.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=debe%20hacerse%20en%20m%C3%A9rito%20a%20la%20antig%C3%BCedad%20y%20probidad%20comprobada%20en%20el%20ejercicio%20de%20la%20funci%C3%B3n.%20En%20tanto%20el%20Tribunal%20Constitucional%20no%20ser%C3%A1%20un%20ente%20de%20manipulaci%C3%B3n%20pol%C3%ADtica"
+      ]
+    }
+  },
+  "propuestasPrincipales": {
+    "institucional": [
+      {
+        "titulo": "Asamblea Constituyente / Nueva Constitución",
+        "descripcion": "Impulso a una Asamblea Constituyente y a una Nueva Constitución democrática y representativa que corrija los vicios del texto vigente (recuperar soberanía sobre recursos, separar poderes y reforzar legitimidad popular).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Impulso%20a%20una%20Asamblea%20Constituyente"
+        ]
+      },
+      {
+        "titulo": "Separación efectiva de poderes y control ciudadano",
+        "descripcion": "Aprobar marco normativo para una separación real entre poderes (legislativo, ejecutivo, judicial, electoral, constitucional y nuevo 'poder popular'), instalar contrapesos ciudadanos y controlar la influencia de grupos económicos; prohibir prácticas de lobby y la 'puerta giratoria'.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Se%20prohibir%C3%A1%20la%20pr%C3%A1ctica%20de%20los%20lobbies%2C%20la%20puerta%20giratoria"
+        ]
+      },
+      {
+        "titulo": "Lucha anticorrupción (imprescriptibilidad e inhabilitación)",
+        "descripcion": "Declarar la imprescriptibilidad de los delitos contra la administración pública y la inhabilitación perpetua para corruptos; institucionalizar control social (veedurías ciudadanas) como mecanismo de fiscalización.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Se%20declarar%C3%A1%20la%20imprescriptibilidad%20de%20los%20delitos%20contra%20la%20administraci%C3%B3n%20p%C3%BAblica%20y%20la%20inhabilitaci%C3%B3n%20perpetua"
+        ]
+      },
+      {
+        "titulo": "Democracia participativa: referéndum, audiencias y consejos ciudadanos",
+        "descripcion": "Institucionalizar mecanismos de democracia directa: referéndum, audiencias públicas, consulta popular y creación de consejos ciudadanos/vecinales/comunales con facultades de fiscalización y propuesta normativa.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=institucionalizar%C3%A1%20el%20refer%C3%A9ndum%2C%20las%20audiencias%20p%C3%BAblicas%20y%20la%20consulta%20popular"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Ruptura con el modelo primario-exportador",
+        "descripcion": "Desarrollar una industria nacional con mayor valor agregado; promover sustitución de importaciones estratégicas y cadenas productivas descentralizadas (complejos industriales regionales).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Ruptura%20con%20el%20modelo%20primario,exportador%20y%20soberan%C3%ADa%20productiva"
+        ]
+      },
+      {
+        "titulo": "Justicia fiscal y redistribución de la riqueza",
+        "descripcion": "Implementar un sistema tributario progresivo (impuesto a grandes fortunas, eliminación de exoneraciones regresivas, reducción de evasión) para financiar innovación comunitaria, servicios públicos y derechos sociales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Justicia%20fiscal%20y%20redistribuci%C3%B3n%20de%20la%20riqueza"
+        ]
+      },
+      {
+        "titulo": "Diversificación productiva y matriz energética",
+        "descripcion": "Orientar la economía hacia sectores intensivos en empleo, innovación y tecnología (agroindustria, manufactura, industrias creativas, bioeconomía y turismo sostenible); fortalecer parques industriales, clústeres y centros de innovación; transformar la matriz energética hacia renovables y renegociar contratos estratégicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Diversificaci%C3%B3n%20productiva%2C%20matriz%20energ%C3%A9tica%20y%20recursos%20estrat%C3%A9gicos"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de ciencia, tecnología e innovación",
+        "descripcion": "Impulsar investigación y desarrollo (I+D), crear/unificar institucionalidad (propuesta de un nuevo Ministerio de Ciencia y Tecnología), y promover Centros de Innovación Productiva y Transferencia Tecnológica (CITE).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Impulsar%20la%20ciencia%2C%20tecnolog%C3%ADa%20e%20innovaci%C3%B3n%20con%20un%20nuevo%20Ministerio%20de%20Ciencia%20y%20Tecnolog%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Metas de valor agregado y productividad",
+        "descripcion": "Aumentar la participación de exportaciones con mayor contenido tecnológico/valor agregado (meta citada: 40% de exportaciones con valor agregado), incrementar la participación industrial del PBI, y subir la inversión en I+D (ej.: de 0.15% a 0.50% del PBI).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=40%25%20de%20las%20exportaciones%20con%20valor%20agregado"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Sistema de salud público, universal e integrado",
+        "descripcion": "Construir un sistema nacional de salud público, universal e integrado con rectoría única; centralizar compras estratégicas, crear inventario nacional de equipos biomédicos, garantizar suministros estratégicos y plataformas de gestión de activos y redistribución para aumentar cobertura y calidad en zonas rurales y amazónicas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Centralizar%20estrat%C3%A9gicamente%20las%20compras%20de%20suministros%20m%C3%A9dicos%20y%20Equipamiento%20Biom%C3%A9dico%20Mayor"
+        ]
+      },
+      {
+        "titulo": "Acceso a vivienda digna y servicios públicos",
+        "descripcion": "Incorporar el derecho a la vivienda digna y segura; programas de vivienda social, crear Instituto Nacional de Desarrollo Urbano y Ordenamiento Territorial, laboratorios urbanos y asistencia técnica para zonas rurales y urbano-marginales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Impulsar%20la%20incorporaci%C3%B3n%20del%20derecho%20a%20la%20vivienda%20digna%2C%20segura"
+        ]
+      },
+      {
+        "titulo": "Educación pública universal para erradicar la inequidad",
+        "descripcion": "Defender la educación pública universal, gratuita e intercultural; priorizar la formación docente, reducción de brechas territoriales, fortalecimiento de la educación técnica/vocacional, apoyo a universidades públicas y expansión de becas (Pronabec).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Educaci%C3%B3n%20p%C3%BAblica%20universal%20para%20erradicar%20la%20inequidad"
+        ]
+      },
+      {
+        "titulo": "Protección social y empleo digno",
+        "descripcion": "Fortalecer políticas de protección social y formalización laboral; reducir la informalidad (meta explícita en el Plan), mejorar Remuneración Mínima Vital y ampliar accesos a seguridad social, formación y empleo formal para poblaciones vulnerables.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Reducir%20la%20informalidad%20laboral%20al%2060"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Protección del agua en defensa de la vida",
+        "descripcion": "Establece la priorización del agua para consumo humano, agricultura familiar y comunidades campesinas; impulsos para articular planes territoriales con Planes de Gestión de Recursos Hídricos y enfoques integrados de cuenca. Incluye diagnóstico del abuso hídrico por grandes consorcios y medidas para corregirlo.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=9.%20Protecci%C3%B3n%20del%20agua%20en%20defensa%20de%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Fondo de Agua y canon hídrico (instrumentos económicos)",
+        "descripcion": "Crear un Fondo de Agua para financiar proyectos de conservación de ecosistemas productores de agua y establecer un canon hídrico para que usuarios de alto beneficio (p. ej. minería, agroexportación, industria) financien la seguridad hídrica de las cuencas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Establecer%20un%20Fondo%20de%20Agua%20para%20implementar%20proyectos%20de%20conservaci%C3%B3n%20de%20los%20ecosistemas%20productores%20de%20agua"
+        ]
+      },
+      {
+        "titulo": "Gestión del Riesgo de Desastres (GRD) y adaptación climática",
+        "descripcion": "Convertir la GRD y la adaptación climática en motores de desarrollo tecnológico y territorial: inversión prospectiva en resiliencia, protección de agua, bosques y ecosistemas; crear polos tecnológicos nacionales (sensores, drones, sistemas de alerta).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Gesti%C3%B3n%20del%20Riesgo%20de%20Desastres%20%28GRD%29%20y%20adaptaci%C3%B3n%20clim%C3%A1tica%20como%20motores%20de%20desarrollo"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Restituir carácter público y financiamiento",
+        "descripcion": "Restituir el carácter público, universal, gratuito e intercultural del sistema educativo y fortalecer el rol del Estado como garante; incrementar la inversión educativa hasta 6% del PBI, aumentar la matrícula pública universitaria en 50% y reducir la brecha urbano-rural en aprendizajes en 30%.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Restituir%20el%20caracter%20publico,30%"
+        ]
+      },
+      {
+        "titulo": "Cierre de brecha de infraestructura escolar",
+        "descripcion": "Cierre progresivo de la brecha de infraestructura: escuelas dignas y seguras; meta de 20% de reducción de brecha y garantizar que 100% de escuelas cuenten con servicios básicos y 80% con conectividad, priorizando Amazonía y Andes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Cierre%20progresivo%20de%20la%20brecha%20de%20infraestructura%2C%20creando%20escuelas%20dignas%2C%20seguras%20y%20con%20acceso%20a%20la%20tecnolog%C3%ADa%2C%20para%20lo%20cual%20se%20propone%20alcanzar%20un%2020%25%20en%20la%20reducci%C3%B3n%20de%20la%20brecha%20de%20infraestructura%2C%20garantizando%20que%20el%20100%25%20de%20las%20escuelas%20contar%C3%A1n%20con%20servicios%20b%C3%A1sicos%20y%20un%2080%25%20con%20conectividad"
+        ]
+      },
+      {
+        "titulo": "Estabilidad laboral y formación docente masiva",
+        "descripcion": "Garantizar estabilidad laboral y salarios dignos para docentes; nombramiento del 90% del magisterio, formación continua que alcance a >250,000 docentes, cierre de brechas EIB en 70%, y aumento de la remuneración docente.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Garantizar%20la%20estabilidad%20laboral%2C%20la%20formaci%C3%B3n%20de%20calidad%20y%20salarios%20dignos%20para%20las%20y%20los%20docentes%2C%20a%20trav%C3%A9s%20del%20nombramiento%20del%2090%25%20de%20docentes%2C%20la%20formaci%C3%B3n%20continua%20alcanzando%20a%20m%C3%A1s%20de%20250%20000%20docentes"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Implementar Redes Integradas de Salud (RIS) en todo el país",
+        "descripcion": "Crear e implementar las RIS como unidad de organización territorial del servicio (integrando I, II, III niveles), con rectoría, registros interoperables y un sistema nacional único de referencia/contrarreferencia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Implementar%20las%20Redes%20Integradas%20de%20Salud%20en%20todo%20el%20territorio%20nacional"
+        ]
+      },
+      {
+        "titulo": "Centralizar compras y asegurar suministros estratégicos",
+        "descripcion": "Crear un Fondo Financiero Intangible de Suministros Estratégicos Médicos y fortalecer un operador logístico (CENARES) para compras centralizadas, economías de escala, distribución 'capilar', sistema de alertas de vencimiento y redistribución de insumos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Creaci%C3%B3n%20de%20un%20Fondo%20Financiero%20Intangible%20de%20Suministros%20Estrat%C3%A9gicos%20M%C3%A9dicos"
+        ]
+      },
+      {
+        "titulo": "Financiamiento basado en resultados y Pago per Cápita ajustado",
+        "descripcion": "Introducir Pago per cápita ajustado y por resultados para asignar recursos a las RIS según población adscrita y metas clínicas (control de anemia, diabetes, hipertensión), vinculando financiamiento con desempeño y metas sanitarias.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Implementaci%C3%B3n%20del%20Pago%20per%20C%C3%A1pita%20Ajustado%20y%20por%20Resultados"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Política nacional integral, territorial y preventiva",
+        "descripcion": "Implementar una política nacional de seguridad ciudadana con enfoque integral, territorial y preventivo que combata la corrupción policial, recupere el control estatal frente al crimen organizado y garantice protección y presencia estatal.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=implementaremos%20una%20pol%C3%ADtica%20nacional%20de%20seguridad%20ciudadana%20con%20enfoque%20integral"
+        ]
+      },
+      {
+        "titulo": "Reformas estructurales a la Policía Nacional del Perú (PNP)",
+        "descripcion": "Reforma estructural de la PNP para combatir el crimen organizado: profesionalización, evaluación de integridad y desempeño, formación en inteligencia y tecnología, y control ciudadano.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Reforma%20estructural%20de%20la%20Polic%C3%ADa%20Nacional%20del%20Per%C3%BA"
+        ]
+      },
+      {
+        "titulo": "Planes locales de seguridad y reconocimiento legal de juntas vecinales",
+        "descripcion": "Implementar planes locales de seguridad con participación directa de juntas vecinales, gobiernos locales y organizaciones sociales; otorgar reconocimiento y protección legal a juntas vecinales y comités comunales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=planes%20locales%20de%20seguridad%20con%20participaci%C3%B3n%20directa%20de%20juntas%20vecinales"
+        ]
+      },
+      {
+        "titulo": "Metas cuantificables de impacto (victimización y homicidios)",
+        "descripcion": "Establecer metas nacionales —p. ej. reducción de homicidios en 70%— y otros indicadores (confianza pública en la PNP, número de RIS/planes locales operativos, número de juntas vecinales activas, espacios públicos recuperados).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Reducci%C3%B3n%20de%20homicidios%20por%20hechos%20delictivos%20en%20un%2070%25"
+        ]
+      }
+    ]
+  },
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+      ]
+    },
+    "diferencias": {
+      "value": "No se reportan contradicciones ideológicas; el plan mantiene el discurso de izquierda del candidato.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf"
+      ]
+    },
+    "cumplimientoPrevio": {
+      "value": "Su actividad como congresista (coautoría de leyes de despenalización) refleja propuestas del plan.",
+      "source": [
+        "https://www.congreso.gob.pe/index.php?File=%2FDocs%2FDGP%2FDIDP%2Fagenda2024%2FAGENDA-2024-2025-EQUIDAD-TEMA-68.html&K=73549"
+      ]
+    }
+  },
+  "controversias": {
+    "antecedentes": [
+      {
+        "titulo": "No registra antecedentes policiales conocidos.",
+        "descripcion": "No registra antecedentes policiales conocidos.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "antecedentesJudiciales": [
+      {
+        "titulo": "Ampliación de la investigación preliminar por rebelión / conspiración (10 dic 2022)",
+        "descripcion": "En el Expediente N°00039-2022 (investigación por los hechos del 7-dic-2022) la fiscalía, mediante Disposición N°4 de fecha 10/12/2022, amplió la investigación preliminar para comprender a Roberto Helbert Sánchez Palomino como presunto coautor del delito contra los Poderes del Estado (rebelión) y, alternativamente, conspiración. Es una investigación fiscal (no una condena).",
+        "estado": "Investigación fiscal",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2022/12/Expediente-00039-2022-0-5001-JS-PE-01-LPDerecho.pdf#:~:text=Con%20Disposici%C3%B3n%20N%C2%B04%20del%2010%20de%20diciembre%20de%202022%2C%20ampli%C3%B3%20la%20investigaci%C3%B3n%20preliminar%20a%20fin%20comprender%20a%20ROBERTO%20HELBERT%20S%C3%81NCHEZ%20PALOMINO"
+        ]
+      },
+      {
+        "titulo": "Formación de causa penal (Resolución Legislativa del Congreso)",
+        "descripcion": "El Congreso, mediante resoluciones vinculadas a las investigaciones por el 7-dic-2022, declaró haber lugar a la formación de causa penal contra Roberto Sánchez (actuación parlamentaria que habilita el avance del proceso penal). Es una actuación de la función parlamentaria que formaliza el pase de la carpeta a sede judicial.",
+        "estado": "Declarado haber lugar",
+        "source": [
+          "https://comunicaciones.congreso.gob.pe/noticias/declaran-haber-lugar-a-formacion-de-causa-penal-contra-exministros-betssy-chavez-willy-huertas-y-roberto-sanchez-por-intento-de-golpe-de-estado/#:~:text=Declaran%20haber%20lugar%20a%20formaci%C3%B3n%20de%20causa%20penal%20contra"
+        ]
+      },
+      {
+        "titulo": "Informe final de la Subcomisión de Acusaciones Constitucionales / Denuncia Constitucional N°328 (08-mar-2023)",
+        "descripcion": "El Informe Final (Acusaciones Constitucionales) de marzo de 2023 incluyó a Roberto Sánchez en el conjunto de denunciados por su actuación del 7-dic-2022 y recomendó actuaciones/consecuencias constitucionales (es un procedimiento parlamentario/judicial-congresal).",
+        "estado": "Procedimiento parlamentario",
+        "source": [
+          "https://leyes.congreso.gob.pe/Documentos/2021_2026/Acusaciones_Constitucionales/Informe_Final/INF_FINAL_328.pdf#:~:text=Determinar%20si%2C%20el%20denunciado%20Roberto%20Helbert%20S%C3%A1nchez%20Palomino%2C%20con%20fecha%2007%20de%20diciembre%20de%202022"
+        ]
+      },
+      {
+        "titulo": "Pedido de impedimento de salida declarado inadmisible (marzo 2023)",
+        "descripcion": "La Comisión Permanente del Congreso solicitó medidas como el impedimento de salida; el Poder Judicial declaró inadmisible (o rechazó) ciertos pedidos de la Comisión para medidas cautelares contra Betssy Chávez y Roberto Sánchez (decisiones procesales que negaron medidas cautelares en ese momento).",
+        "estado": "Inadmisible",
+        "source": [
+          "https://es.scribd.com/document/631160525/Declaran-inadmisible-pedido-del-Congreso-contra-Betssy-Chavez-y-Roberto-Sanchez#:~:text=Declaran%20Inadmisible%20Pedido%20Del%20Congreso%20Contra%20Betssy%20Ch%C3%A1vez%20y%20Roberto%20S%C3%A1nchez"
+        ]
+      },
+      {
+        "titulo": "Investigaciones conexas por presunta organización criminal y/o obstrucción (2022–2024)",
+        "descripcion": "La Fiscalía incorporó a Sánchez en diligencias relacionadas con las pesquisas sobre presunta organización criminal y obstrucción a la justicia derivadas de la gestión y los hechos de diciembre de 2022; aparecen actuaciones, solicitudes de información y diligencias en expedientes conexos. (Se trata de investigaciones en curso o tramitadas; no equivalen a una condena).",
+        "estado": "Investigaciones en curso",
+        "source": [
+          "https://rpp.pe/politica/judiciales/fiscalia-incluye-a-ministro-roberto-sanchez-en-investigacion-a-pedro-castillo-por-presunta-organizacion-criminal-noticia-1444625#:~:text=investigara%20a%20Roberto%20Sanchez%20Palomino,a%20la%20justicia"
+        ]
+      },
+      {
+        "titulo": "Acusación / requerimiento acusatorio y solicitud de penas por parte de la Fiscalía",
+        "descripcion": "En distintas etapas la Fiscalía formuló requerimientos acusatorios o presentó escritos pidiendo penas (en algunos extractos periodísticos se menciona que la Fiscalía solicitó penas severas, p. ej. peticiones hasta 25 años en ciertas imputaciones); esos escritos integran el trámite penal pero no son condenas (son acusaciones fiscales).",
+        "estado": "Acusaciones fiscales",
+        "source": [
+          "https://rpp.pe/politica/judiciales/corte-suprema-evaluara-si-excluye-o-no-a-congresista-roberto-sanchez-del-proceso-penal-por-el-fallido-golpe-de-estado-noticia-1612427#:~:text=La%20Fiscal%C3%ADa%20pidi%C3%B3%2025%20a%C3%B1os%20de%20prisi%C3%B3n%20contra%20S%C3%A1nchez"
+        ]
+      },
+      {
+        "titulo": "Resolución de la Corte Suprema: exclusión del proceso penal por rebelión (enero 2025)",
+        "descripcion": "En enero de 2025 la Sala Penal Permanente de la Corte Suprema resolvió excluir a Roberto Sánchez del proceso penal por rebelión vinculado al 7-dic-2022 (decisión jurisdiccional que lo separó de esa investigación concreta). Esto modifica el estado de la causa respecto de la imputación de rebelión (no es una absolución por otros eventuales cargos; es una decisión sobre esa investigación específica).",
+        "estado": "Excluido del proceso",
+        "source": [
+          "https://www.infobae.com/peru/2025/01/30/roberto-sanchez-se-salva-de-juicio-por-intento-de-golpe-de-estado-corte-suprema-excluye-a-congresista-de-investigacion/#:~:text=la%20Sala%20Penal%20Permanente%20de,proceso%20penal"
+        ]
+      },
+      {
+        "titulo": "Actas, declaraciones y elementos probatorios en expedientes (2022–2024)",
+        "descripcion": "En los distintos tomos del Expediente N°00039 (y expedientes conexos) figuran declaraciones testimoniales de Sánchez (p. ej. declaración del 09/12/2022), actas fiscales y registros telefónicos incorporados como elementos de convicción en la investigación. Son actuaciones probatorias dentro del proceso.",
+        "estado": "Actuaciones probatorias",
+        "source": [
+          "https://magazinjurisprudencial.com/wp-content/uploads/2022/12/Resolucion-numero-3-del-expedeinte-39-2022-2_221215_224428_watermark.pdf#:~:text=Declaraci%C3%B3n%20testimonial%20de%20Roberto%20Helbert%20S%C3%A1nchez%20Palomino%2C%20de%20fecha%2009%20de%20diciembre%20de%202022"
+        ]
+      }
+    ],
+    "antecedentesPenales": [
+      {
+        "titulo": "No registra sentencias penales firmes ni condenas penales conocidas.",
+        "descripcion": "No registra sentencias penales firmes ni condenas penales conocidas.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "Denuncia Constitucional N°328 (Procedimiento Parlamentario / Formación de causa)",
+        "descripcion": "Informe final de la Subcomisión de Acusaciones Constitucionales (marzo 2023) que acusó a Betssy Chávez, Willy Huerta y Roberto Sánchez por hechos vinculados al 7-dic-2022; la Comisión Permanente aprobó elevar la acusación. Es un proceso constitucional (ante el Congreso) que sigue su tramitación y estuvo vinculado a la sugerencia de suspensión mientras dure el trámite.",
+        "estado": "En trámite",
+        "source": [
+          "https://leyes.congreso.gob.pe/Documentos/2021_2026/Acusaciones_Constitucionales/Informe_Final/INF_FINAL_328.pdf#:~:text=3.%20Acusar%20al%20denunciado%20ROBERTO,%20modalidad%20CONSPIRACION"
+        ]
+      },
+      {
+        "titulo": "Investigación / denuncia por presunta negociación incompatible / contratación irregular (ene-2025)",
+        "descripcion": "La Fiscalía de la Nación presentó en enero de 2025 una denuncia constitucional contra Roberto Sánchez (junto a otros congresistas/exministros) por presuntas contrataciones irregulares / negociación incompatible durante su gestión en Mincetur; es un trámite que se procesa ante el Congreso (área de denuncias constitucionales).",
+        "estado": "Denuncia presentada (trámite parlamentario en curso)",
+        "source": [
+          "https://andina.pe/agencia/noticia-mp-presenta-denuncia-constitucional-contra-congresistas-guido-bellido-y-roberto-sanchez-1015925.aspx#:~:text=De%20igual%20forma%20contra%20el%20legislador%20Roberto,en%20agravio%20del%20Estado"
+        ]
+      },
+      {
+        "titulo": "Investigación preliminar por organización criminal / obstrucción (nov-2022)",
+        "descripcion": "El Ministerio Público dispuso incluir a Sánchez (6-nov-2022) en la investigación preliminar que se sigue a Pedro Castillo por presunta organización criminal; la inclusión fue por posibles hechos de obstrucción a la justicia u otros delitos conexos. La inclusión y diligencias iniciales constan en el expediente; parte de ese expediente tuvo decisiones de exclusión posteriores sobre la imputación por rebelión.",
+        "estado": "En curso",
+        "source": [
+          "https://rpp.pe/politica/judiciales/fiscalia-incluye-a-ministro-roberto-sanchez-en-investigacion-a-pedro-castillo-por-presunta-organizacion-criminal-noticia-1444625#:~:text=investigar%C3%A1%20a%20Roberto%20Sanchez,obstrucci%C3%B3n%20a%20la%20justicia"
+        ]
+      },
+      {
+        "titulo": "Diligencias y requerimientos conexos (investigaciones fiscales 2023–2025)",
+        "descripcion": "A partir de 2023–2025 la Fiscalía ha practicado diligencias, pedidos de información, formulación de requerimientos acusatorios y otras actuaciones (algunos escritos periodísticos mencionan solicitudes de penas), que forman parte de distintos trámites penales y constitucionales donde figura Sánchez como investigado o denunciado.",
+        "estado": "Trámites fiscales y parlamentarios en curso",
+        "source": [
+          "https://www.infobae.com/peru/2025/01/23/guido-bellido-y-roberto-sanchez-en-problemas-fiscalia-los-denuncio-por-una-presunta-contratacion-irregular-cuando-eran-ministros/#:~:text=Fiscal%C3%ADa%20los%20denunci%C3%B3%20por%20una%20presunta%20contrataci%C3%B3n%20irregular"
+        ]
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "Proceso penal por rebelión vinculado al 7-dic-2022 — EXCLUIDO (enero 2025)",
+        "descripcion": "El expediente principal sobre los hechos del 7 de diciembre de 2022 (Exp. 00039-2022) llegó a la Corte Suprema; la Sala Penal Permanente resolvió excluir a Roberto Sánchez de la investigación por el delito de rebelión y, según las coberturas, esa parte del proceso quedó archivada/excluida respecto de él. (Importante: la exclusión se refiere a la imputación por rebelión en ese expediente; la exclusión no implica que no haya otras investigaciones/denuncias distintas).",
+        "estado": "Archivado/Excluido (Enero 2025)",
+        "source": [
+          "https://www.infobae.com/peru/2025/01/30/roberto-sanchez-se-salva-de-juicio-por-intento-de-golpe-de-estado-corte-suprema-excluye-a-congresista-de-investigacion/#:~:text=la%20Sala%20Penal%20Permanente%20de,proceso%20penal"
+        ]
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Acuerdo informado para entregar S/8,000 a favor de Bruno Pacheco (afirmación de colaborador eficaz)",
+        "descripcion": "Un colaborador eficaz declaró que Sánchez habría acordado la entrega de S/8,000 mensuales a favor de la pareja del exsecretario Bruno Pacheco; Sánchez negó la versión pero reconoció que la Mincetur contrató a la pareja de Pacheco. (Acusación en investigación; reconocimientos parciales por parte de Sánchez.)",
+        "source": [
+          "https://elcomercio.pe/politica/justicia/roberto-sanchez-reconoce-que-el-mincetur-contrato-a-pareja-de-bruno-pacheco-noticia/#:~:text=Roberto%20S%C3%A1nchez%20reconoce%20que%20el%20Mincetur%20contrato%20a%20pareja%20de%20Bruno%20Pacheco"
+        ]
+      },
+      {
+        "titulo": "Calificó como 'patrañas' testimonios sobre pagos a Bruno Pacheco",
+        "descripcion": "Frente a las versiones de un colaborador eficaz sobre pagos a favor de Pacheco, Sánchez calificó esas imputaciones como 'patrañas' y negó los hechos; la declaración fue ampliamente citada en la prensa. (Declaración pública de rechazo a la versión del colaborador.)",
+        "source": [
+          "https://gestion.pe/peru/politica/roberto-sanchez-califica-como-patranas-testimonio-sobre-pagos-a-favor-bruno-pacheco-rmmn-noticia/#:~:text=Roberto%20S%C3%A1nchez%20califica%20como%20%E2%80%9Cpatra%C3%B1as%E2%80%9D%20testimonio%20sobre%20pagos%20a%20favor%20Bruno%20Pacheco"
+        ]
+      },
+      {
+        "titulo": "Inclusión en investigación fiscal por obstrucción a la justicia (noviembre 2022)",
+        "descripcion": "La Fiscalía dispuso incluir a Roberto Sánchez en la investigación preliminar abierta por los hechos que rodearon al expresidente Castillo; la inclusión fue por indagaciones que contienen, entre otros, el presunto delito de obstrucción a la justicia. (Acto procesal / medida fiscal.)",
+        "source": [
+          "https://elperuano.pe/noticia/196386-fiscalia-incluye-a-ministro-roberto-sanchez-en-investigacion-preliminar-abierta-a-mandatario#:~:text=Fiscalia%20incluye%20a%20ministro,%20investigacion%20preliminar"
+        ]
+      },
+      {
+        "titulo": "Acusaciones por fraude administrativo / 'mochasueldos' y negociaciones incompatibles (2022–2024)",
+        "descripcion": "Diversos reportes e investigaciones periodísticas y fiscales imputan a Sánchez conductas como negociación incompatible, tráfico de influencias y malos manejos en contrataciones en Mincetur (términos periodísticos: 'mochasueldos', 'cobro de cupos' en algunas notas). La Fiscalía abrió diligencias y disposiciones en torno a estos hechos. (Investigación / acusación en curso).",
+        "source": [
+          "https://www.infobae.com/peru/2024/08/12/roberto-sanchez-exministro-de-pedro-castillo-investigado-por-corrupcion-acusado-de-mochasueldos-y-delitos-contra-la-administracion-publica/#:~:text=acusado%20de%20%E2%80%98mochasueldos%E2%80%99"
+        ]
+      },
+      {
+        "titulo": "Afirmación de haber intentado amplificar el mensaje del 7-D por radio",
+        "descripcion": "En la acusación fiscal relativa al 7-D, se señala que Sánchez habría intentado que el mensaje de disolución emitido por Pedro Castillo se transmitiera por radio para alcanzar mayor cobertura; la imputación forma parte de las diligencias en el expediente. (Alegación incluida en escritos fiscales).",
+        "source": [
+          "https://www.infobae.com/peru/2024/01/19/congresista-roberto-sanchez-habria-buscado-que-el-mensaje-golpista-de-pedro-castillo-se-transmita-por-radio/#:~:text=Congresista%20Roberto%20S%C3%A1nchez%20habr%C3%ADa%20buscado%20que%20el%20mensaje%20golpista%20de%20Pedro%20Castillo%20se%20transmita%20por%20radio"
+        ]
+      },
+      {
+        "titulo": "Reacción pública a citaciones fiscales: alegó vulneración de derecho a la defensa",
+        "descripcion": "Al ser notificado por la Fiscalía en diciembre de 2022, Sánchez publicó que la forma y hora de la notificación 'vulneran mi derecho a la defensa', reclamando irregularidades en el procedimiento de citación. (Declaración pública en redes y prensa sobre el trato procesal).",
+        "source": [
+          "https://larepublica.pe/politica/judiciales/2022/12/10/pedro-castillo-roberto-sanchez-tras-ser-notificado-hoy-por-la-fiscalia-esto-vulnera-mi-derecho-a-la-defensa-golpe-de-estado-mdga#:~:text=esto%20vulnera%20mi%20derecho%20a%20la%20defensa"
+        ]
+      },
+      {
+        "titulo": "Reconoció llamadas a Bruno Pacheco: 'es mi función como ministro'",
+        "descripcion": "Ante la controversia sobre comunicaciones con Bruno Pacheco, Sánchez afirmó públicamente que realizó llamadas al exsecretario porque 'es mi función como ministro', justificando las comunicaciones institucionales. (Declaración de contexto/justificación de llamadas).",
+        "source": [
+          "https://willax.pe/politica/roberto-sanchez-confiesa-que-realizo-llamadas-a-bruno-pacheco-es-mi-funcion-como-ministro#:~:text=es%20mi%20funci%C3%B3n%20como%20ministro"
+        ]
+      },
+      {
+        "titulo": "Denuncias que habría utilizado personal de su despacho para campaña (2025)",
+        "descripcion": "Informes periodísticos (investigación audiovisual y nota escrita) denuncian que personal de su despacho habría sido usado para labores proselitistas o apoyo a su campaña; la denuncia generó investigación y reproche público. (Reproche/denuncia periodística; posibles sanciones administrativas o electorales).",
+        "source": [
+          "https://elcomercio.pe/politica/congreso/roberto-sanchez-denuncian-que-el-congresista-de-juntos-por-el-peru-utiliza-a-trabajadores-de-su-despacho-para-su-campana-elecciones-2026-ultimas-noticia/#:~:text=Denuncian%20que%20congresista%20Roberto%20S%C3%A1nchez%20utiliza%20a%20sus%20trabajadores%20para%20su%20campa%C3%B1a"
+        ]
+      },
+      {
+        "titulo": "Medida del JEE: vulneración de la neutralidad electoral (2025)",
+        "descripcion": "El Jurado Electoral Especial determinó en diciembre de 2025 que Sánchez incurrió en infracción a la neutralidad electoral por participar en actividades de proselitismo (resolución administrativa en materia electoral). (Acto administrativo-electoral con efectos regulatorios).",
+        "source": [
+          "https://rpp.pe/politica/elecciones/jee-senala-que-roberto-sanchez-incurrio-en-infraccion-a-la-neutralidad-electoral-noticia-1669166#:~:text=vulner%C3%B3%20el%20principio%20de%20neutralidad%20electoral"
+        ]
+      },
+      {
+        "titulo": "Críticas al Ministerio Público: calificó hipótesis como 'imaginativas' y 'afiebradas'",
+        "descripcion": "Sánchez ha hecho declaraciones públicas fuertes cuestionando la actuación del Ministerio Público y calificando determinadas hipótesis como 'imaginativas' o 'afiebradas' (declaraciones públicas para la prensa y redes), lo que generó polémica por su rol como funcionario/investigado. (Declaraciones públicas críticas a autoridad acusadora).",
+        "source": [
+          "https://comunicaciones.congreso.gob.pe/noticias/exministro-de-comercio-exterior-sostiene-que-no-dijo-todo-por-el-pais/#:~:text=hip%C3%B3tesis%20del%20Ministerio%20P%C3%BAblico%20sean%20%C2%ABimaginativas%C2%BB%20y%20%C2%ABafiebradas%C2%BB"
+        ]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "Observación / informe de transferencia administrativa — MINCETUR (2022)",
+        "descripcion": "Documento oficial del Ministerio de Comercio Exterior y Turismo (informe de transferencia al término de la gestión). Contiene secciones con 'asuntos de prioritaria atención', recomendaciones y observaciones de carácter administrativo sobre la gestión del pliego en el periodo 2021–2022. Es una observación institucional sobre la gestión del ministerio, no una sanción personal (no es una multa SUNAT/INDECOPI).",
+        "source": [
+          "https://transparencia.mincetur.gob.pe/institucional/transferencia_gestion/2022/MINCETUR/INFORME_TRANSFERENCIA_PLIEGO_MINCETUR.pdf#:~:text=INFORME%20DE%20TRANSFERENCIA%20DE%20GESTI%C3%93N"
+        ]
+      },
+      {
+        "titulo": "Observaciones en registros de control (Contraloría — PALOMINO TRAVEL S.A.C.)",
+        "descripcion": "La Contraloría publica listados de 'penalidades' y hojas informativas donde aparece la empresa PALOMINO TRAVEL S.A.C. (proveedor vinculado a servicios de transporte en expedientes de contrataciones). Eso es una observación/registro administrativo sobre una empresa; no se puede asumir vínculo personal con el congresista sin prueba adicional.",
+        "source": [
+          "https://doc.contraloria.gob.pe/transparencia/documentos/2022/penalidades_202203.pdf#:~:text=PALOMINO%20TRAVEL%20S.A.C"
+        ]
+      },
+      {
+        "titulo": "Observación / expediente JNE (SAIP / trámites administrativos)",
+        "descripcion": "En los repositorios del JNE aparecen comunicaciones/observaciones relacionadas a solicitudes o trámites (por ejemplo solicitudes de certificaciones o absolución de observaciones administrativas en procedimientos del ROP/SAIP). Son trámites administrativos-electorales o de transparencia (no multas tributarias). Indican que su nombre figura en actuaciones administrativas del JNE pero no constituyen sanción fiscal o de INDECOPI.",
+        "source": [
+          "https://www.jne.gob.pe/transparencia/2023/SC/AIP_abril2023.pdf#:~:text=ROBERTO%20HELBERT%20SANCHEZ%20PALOMINO"
+        ]
+      },
+      {
+        "titulo": "Actuación administrativa-electoral: informe del JEE / infracción a la neutralidad (2025)",
+        "descripcion": "El Jurado Electoral Especial (JEE) emitió observaciones sobre vulneración del principio de neutralidad electoral por parte del congresista (uso de recursos o personal en actividades proselitistas). Esto es una observación y procedimiento administrativo-electoral (puede generar sanciones administrativas electorales), no es una sanción tributaria ni una multa de SUNAT/INDECOPI. Es relevante porque es una observación administrativa con efectos disciplinarios/electorales.",
+        "source": [
+          "https://rpp.pe/politica/elecciones/jee-senala-que-roberto-sanchez-incurrio-en-infraccion-a-la-neutralidad-electoral-noticia-1669166#:~:text=JEE%20se%C3%B1ala%20que%20Roberto%20S%C3%A1nchez%20incurri%C3%B3%20en%20infracci%C3%B3n%20a%20la%20neutralidad%20electoral"
+        ]
+      }
+    ]
+  },
+  "transparencia": {
+    "items": [
+      "Informe de Transferencia de Gestión 2022 - MINCETUR",
+      "Registros del JNE sobre trámites administrativos ROP/SAIP"
+    ],
+    "source": [
+      "https://transparencia.mincetur.gob.pe/institucional/transferencia_gestion/2022/MINCETUR/INFORME_TRANSFERENCIA_PLIEGO_MINCETUR.pdf#:~:text=INFORME%20DE%20TRANSFERENCIA%20DE%20GESTI%C3%93N",
+      "https://www.jne.gob.pe/transparencia/2023/SC/AIP_abril2023.pdf#:~:text=ROBERTO%20HELBERT%20SANCHEZ%20PALOMINO"
+    ]
+  },
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Alto - Presidente de Juntos por el Perú y exministro con capacidad de gestión regional.",
+      "source": [
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/"
+      ]
+    },
+    "comunicacion": {
+      "value": "Alto - Define su postura como 'izquierda moderna' y tiene amplia presencia mediática.",
+      "source": ["https://youtu.be/XLkolkxOJYw?t=771"]
+    },
+    "credibilidad": {
+      "value": "Bajo - Afectada por múltiples denuncias constitucionales y señalamientos de uso de recursos públicos para campaña.",
+      "source": [
+        "https://andina.pe/agencia/noticia-mp-presenta-denuncia-constitucional-contra-congresistas-guido-bellido-y-roberto-sanchez-1015925.aspx",
+        "https://elcomercio.pe/politica/congreso/roberto-sanchez-denuncian-que-el-congresista-de-juntos-por-el-peru-utiliza-a-trabajadores-de-su-despacho-para-su-campana-elecciones-2026-ultimas-noticia/"
+      ]
+    }
+  },
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 0,
+      "max": 0,
+      "descripcion": "No aparece con porcentaje individual; incluido en 'Otros' (12% total) en encuesta Ipsos Dic-2025.",
+      "source": [
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf#:~:text=Roberto%20S%C3%A1nchez%20por%20Juntos%20por%20el%20Per%C3%BA"
+      ]
+    },
+    "aprobacion": {
+      "value": null,
+      "source": []
+    },
+    "redes": {
+      "value": "Manejo oficial en Facebook, Instagram y X con enfoque proselitista.",
+      "source": ["https://x.com/RobertoSanchP"]
+    }
+  },
+  "innovacionYVision": {
+    "items": [
+      "Creación del Ministerio de Ciencia y Tecnología",
+      "Producir 50% del equipamiento en GRD (drones, sensores) en el país",
+      "Implementación de 10 complejos industriales descentralizados tecnológicos"
+    ],
+    "source": [
+      "https://mpesije.jne.gob.pe/docs/3dd0e649-061c-4f31-8c3f-7a0836b58bde.pdf#:~:text=Impulsar%20la%20ciencia%2C%20tecnolog%C3%ADa%20e%20innovaci%C3%B3n%20con%20un%20nuevo%20Ministerio%20de%20Ciencia%20y%20Tecnolog%C3%ADa"
+    ]
+  },
+  "historialLegislativo": {
+    "tieneHistorial": true,
+    "productivityLabel": "Media",
+    "asistencia": {
+      "porcentaje": null,
+      "label": null,
+      "source": null
+    },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [
+      "Ley que despenaliza el aborto en casos de embarazos por violación"
+    ],
+    "nota": "Congresista en ejercicio del periodo 2021-2026.",
+    "source": "https://www.congreso.gob.pe/deu/obleuterat/?K=290&TPL=if0&a=iv&id=1147"
+  }
+}

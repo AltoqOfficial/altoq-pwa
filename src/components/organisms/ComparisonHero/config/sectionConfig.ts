@@ -58,12 +58,12 @@ export const EXPERIENCIA_POLITICA_CONFIG: SectionDefinition = {
 };
 
 /**
- * Experiencia de Gestión Section Config
+ * Experiencia Profesional Section Config
  */
 export const EXPERIENCIA_GESTION_CONFIG: SectionDefinition = {
-  id: "ExperienciadeGestion",
-  navId: "ExperienciadeGestion",
-  title: "EXPERIENCIA DE GESTIÓN",
+  id: "ExperienciaProfesional",
+  navId: "ExperienciaProfesional",
+  title: "EXPERIENCIA PROFESIONAL",
   dataKey: "experienciaGestion",
   layout: "custom", // Uses custom component
 };
@@ -195,7 +195,7 @@ export const INNOVACION_VISION_CONFIG: SectionDefinition = {
 export const HISTORIAL_LEGISLATIVO_CONFIG: SectionDefinition = {
   id: "HistorialLegislativo",
   navId: "HistorialLegislativo",
-  title: "HISTORIAL LEGISLATIVO",
+  title: "PROYECTOS DE LEY",
   dataKey: "historialLegislativo",
   layout: "custom", // Uses LegislativeHistoryChart
 };
@@ -209,12 +209,7 @@ export const ALL_SECTIONS_CONFIG: SectionDefinition[] = [
   EXPERIENCIA_GESTION_CONFIG,
   IDEOLOGIA_POLITICA_CONFIG,
   PROPUESTAS_PRINCIPALES_CONFIG,
-  COHERENCIA_PLAN_CONFIG,
   CONTROVERSIAS_CONFIG,
-  TRANSPARENCIA_CONFIG,
-  COMPETENCIAS_PERSONALES_CONFIG,
-  PERCEPCION_PUBLICA_CONFIG,
-  INNOVACION_VISION_CONFIG,
   HISTORIAL_LEGISLATIVO_CONFIG,
 ];
 

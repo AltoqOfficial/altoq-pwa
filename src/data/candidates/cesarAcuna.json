@@ -1,0 +1,615 @@
+{
+  "id": "cesar-acuna-peralta",
+  "slug": "cesar-acuna-peralta",
+  "fullName": "César Acuña Peralta",
+  "shortName": "César Acuña",
+  "image": "/candidatos/cesar-acuna.webp",
+  "color": "#004b93",
+  "party": "Partido Político Alianza para el Progreso",
+  "partyIcon": "/partidos/alianza-para-el-progreso.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/cesaracunap/",
+    "tiktok": "tiktok.com/@cesaracunap",
+    "twitter": "https://x.com/CesarAcunaP",
+    "facebook": "https://www.facebook.com/CesarAcunaCAP/",
+    "web": "https://www.cesaracuna.pe/sobre-mi"
+  },
+  "perfilGeneral": {
+    "edad": { "value": null, "source": [] },
+    "nacimiento": { "value": null, "source": [] },
+    "lugar": { "value": null, "source": [] },
+    "nivelEducativo": {
+      "value": [
+        "Posdoctorado en Comunicación, Educación y Cultural, Colombia - Universidad Santo Tomás",
+        "Bachiller de Ingeniería Química - Universidad Nacional de Trujillo (1995)",
+        "Maestro en la Administración de la Educación - Universidad de Lima (1997)",
+        "Magister en Dirección Universitaria, Colombia - Universidad de Los Andes (1998)",
+        "Doctor en Educación - Universidad Complutense de Madrid, España (2013)"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://andina.pe/agencia/noticia-elecciones-2021-conoce-perfil-cesar-acuna-candidato-presidencial-app-831173.aspx#:~:text=Tiene%20un%20posdoctorado",
+        "https://www.infobae.com/peru/2024/02/16/cesar-acuna-cuanto-mide-el-empresario-y-politico/#:~:text=cuanto%20a%20su-,formaci%C3%B3n%20acad%C3%A9mica,-%2C%20Acu%C3%B1a%20posee%20un",
+        "https://larepublica.pe/politica/elecciones/2022/10/02/cesar-acuna-regresaria-al-gobierno-regional-de-la-libertad-tras-liderar-la-preferencia-con-30-elecciones-regionales-y-municipales-2022-elecciones-2022-resultado-de-elecciones#:~:text=urna%2C%20seg%C3%BAn%20ipsos-,Perfil,-de%20C%C3%A9sar%20Acu%C3%B1a"
+      ]
+    },
+    "profesion": {
+      "value": ["Ingeniería Química"],
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "partidoActual": {
+      "value": "Partido Político Alianza para el Progreso",
+      "source": [
+        "https://www.infobae.com/peru/2025/10/31/cesar-acuna-lidera-lista-presidencial-por-alianza-para-el-progreso-para-las-elecciones-2026-quienes-son-los-canditatos-a-la-vicepresidencia-del-partido/#:~:text=candidato%20presidencial%20de-,Alianza%20para%20el%20Progreso,-para%20las%20elecciones"
+      ]
+    },
+    "cambiosDePartido": {
+      "value": "0",
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "historialPartidos": [
+      {
+        "ano": "2001",
+        "partido": "Alianza para el Progreso",
+        "icono": "/partidos/alianza-para-el-progreso.png",
+        "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+      }
+    ]
+  },
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "Más de 20 años",
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Gobernador Regional de la Libertad (1999-1999)",
+        "Congresista de la República (2001-2006)",
+        "Fundador del Partido Político Alianza para el Progreso (2001)",
+        "Alcalde Provincial de Trujillo (2007-2014)",
+        "Gobernador Regional de la Libertad (2015-2018)",
+        "Gobernador Regional de la Libertad (2023-2025)",
+        "Presidente en Alianza para el Progreso (2023-2025)"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.cesaracuna.pe/sobre-mi",
+        "https://www.facebook.com/share/p/16c2EXFRN8/"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2026 → Candidato Presidencial Oficialmente Inscrito"],
+      "source": [
+        "https://www.infobae.com/peru/2026/01/04/elecciones-generales-2026-32-formulas-presidenciales-estan-oficialmente-inscritas/#:~:text=C%C3%A9sar%20Acu%C3%B1a%20lidera%20lista%20presidencial%20por%20Alianza%20para%20el%20Progreso%20para%20las%20Elecciones%202026"
+      ]
+    }
+  },
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 3,
+      "detalle": {
+        "values": [
+          "Gobernador Regional de la Libertad (2015-2015)",
+          "Alcalde - Municipalidad Provincial de Trujillo (2007-2014)"
+        ],
+        "source": [
+          "https://larepublica.pe/elecciones/2021/01/22/cesar-acuna-biografia-carrera-politica-y-partido-al-cual-pertenece-pltc#:~:text=Durante%20el%202015%2C%20trabaj%C3%B3%20como%20gobernador%20regional%20de%20La%20Libertad.",
+          "https://larepublica.pe/elecciones/2021/01/22/cesar-acuna-biografia-carrera-politica-y-partido-al-cual-pertenece-pltc#:~:text=Postul%C3%B3%20a%20la%20Alcald%C3%ADa%20de%20Trujillo%20y%20fue%20elegido%20para%20los%20periodos%202007%2D2010%20y%202011%2D2014"
+        ]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 1,
+      "detalle": {
+        "values": ["Asesor - Universidad César Vallejo (2019-2025)"],
+        "source": [
+          "https://larepublica.pe/elecciones/2021/01/22/cesar-acuna-biografia-carrera-politica-y-partido-al-cual-pertenece-pltc"
+        ]
+      }
+    },
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+  },
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": "Centro",
+      "descripcion": "Alianza para el Progreso se define como una fuerza de centro que busca el desarrollo nacional mediante la convivencia de la economía social de mercado y la protección de los sectores más vulnerables. César Acuña sustenta esta postura afirmando: \"No soy un candidato de la izquierda radical, ni soy un candidato de la derecha radical, soy un candidato de centro que defiende al pueblo\", enfatizando que su prioridad es promover la inversión privada para generar calidad de vida sin descuidar el rol promotor y social del Estado.",
+      "source": [
+        "https://larepublica.pe/sociedad/2025/09/10/alianza-para-el-progreso-se-alista-para-postular-en-su-segunda-campana-electoral-elecciones-2026-hnews-792520#:~:text=Alianza%20para%20el%20Progreso%20ha%20tratado%20de%20mantener%20una%20postura%20ideol%C3%B3gica%20de%20centro",
+        "https://larepublica.pe/elecciones/2021/03/15/cesar-acuna-no-soy-un-candidato-de-la-izquierda-ni-de-la-derecha-radical-pltc#:~:text=%E2%80%9CC%C3%A9sar%20Acu%C3%B1a%20ofrece%20porque%20es%20un%20candidato%20de%20centro%2C%20no%20soy%20un%20candidato%20de%20la%20izquierda%20radical%2C%20ni%20soy%20un%20candidato%20de%20la%20derecha%20radical%2C%20soy%20un%20candidato%20de%20centro%20que%20defiende%20al%20pueblo.%20Soy%20un%20candidato%20que%20cuida%20al%20pueblo%E2%80%9D%2C%20acot%C3%B3.",
+        "https://www.tvperu.gob.pe/noticias/politica/cesar-acuna-no-estamos-con-la-extrema-izquierda-ni-con-la-extrema-derecha#:~:text=C%C3%A9sar%20Acu%C3%B1a%3A%20%E2%80%9CNo%20estamos%20con%20la%20extrema%20izquierda%20ni%20con%20la%20extrema%20derecha%E2%80%9D"
+      ]
+    },
+    "economia": {
+      "sintesis": "Inversión privada y Justicia Social",
+      "descripcion": "Economía competitiva basada en la estabilidad macroeconómica e inversión privada agresiva (US$ 80 mil millones) con enfoque en justicia social y formalización empresarial.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=La%20institucionalidad%20econ%C3%B3mica="
+      ]
+    },
+    "matrimonioIgualitario": { "value": "-", "source": [] },
+    "aborto": {
+      "sintesis": "Defensa de la dignidad humana",
+      "descripcion": "Postura basada en el respeto a la Constitución de 1993 y la dignidad humana (sin mención explícita al término aborto, alineada al conservadurismo).",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Respeto%20por%20la%20dignidad%20de%20las%20personas="
+      ]
+    },
+    "seguridad": {
+      "sintesis": "Ministerio de Defensa y Seguridad Interna",
+      "descripcion": "Propone la creación del Ministerio de Defensa y Seguridad Interna, el uso de Inteligencia Artificial para análisis predictivo y cárdeles modernas mediante Obras por Impuestos y APP.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=La%20reducci%C3%B3n%20dr%C3%A1stica%20de%20homicidios="
+      ]
+    },
+    "ambiente": {
+      "sintesis": "Reingeniería ambiental (SENACE)",
+      "descripcion": "Reingeniería del SENACE para absorber ANA y SERFOR, manejo forestal sostenible y remediación de pasivos ambientales.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=el%20Estado%20debe%20mejorar="
+      ]
+    },
+    "educacion": {
+      "sintesis": "Secundaria técnica y meritocracia",
+      "descripcion": "Propone la reestructuración del MINEDU, secundaria técnica obligatoria, fortalecimiento de la carrera docente y certificaciones en inglés e IA.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=MINEDU%20debe%20iniciar%20Plan%20de%20promoci%C3%B3n="
+      ]
+    },
+    "reformaPolitica": {
+      "sintesis": "Reducción de ministerios",
+      "descripcion": "Reducción de ministerios de 19 a 10, descentralización efectiva y reformas constitucionales para facilitar convenios tributarios.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Redise%C3%B1o%20del%20Poder%20Ejecutivo:%20reducci%C3%B3n%20de%2019%20a%2010%20ministerios="
+      ]
+    }
+  },
+  "propuestasPrincipales": {
+    "institucional": [
+      {
+        "titulo": "Rediseño del Poder Ejecutivo",
+        "descripcion": "Reducción de 19 a solo 10 ministerios para eliminar duplicidades y gasto improductivo.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Redise%C3%B1o%20del%20Poder%20Ejecutivo:%20reducci%C3%B3n%20de%2019%20a%2010%20ministerios="
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Estabilidad Macroeconómica y Crecimiento",
+        "descripcion": "Propone un crecimiento anual no menor al 6% desde el 2027 y exportaciones por más de US$ 100 mil millones anuales mediante una política fiscal responsable y colaboración con el BCR para mantener la inflación baja.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=2.1%20Defensa%20de%20la%20estabilidad%20macroecon%C3%B3mica%20como%20activo%20pa%C3%ADs="
+        ]
+      },
+      {
+        "titulo": "Plan de Inversiones y Convenios Tributarios",
+        "descripcion": "Busca adjudicar US$ 80 mil millones en proyectos APP y reformar el artículo 56 de la Constitución para que el Ejecutivo apruebe convenios de doble tributación sin pasar por el Congreso para atraer flujos de inversión.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=2.2%20Agresivo%20Plan%20de%20Promoci%C3%B3n%20de%20Inversiones="
+        ]
+      },
+      {
+        "titulo": "Reforma Tributaria y Formalización",
+        "descripcion": "Plantea eliminar los regímenes RER y MYPE Tributario para migrar a un Impuesto a la Renta de Tercera Categoría con tasas progresivas, además de crear el Régimen Simplificado para la Formalización (RSF) que reemplaza al RUS.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=2.5%20Reforma%20tributaria%20con%20enfoque%20progresivo="
+        ]
+      },
+      {
+        "titulo": "Minería e Hidrocarburos",
+        "descripcion": "Propone viabilizar proyectos mineros por US$ 60 mil millones mediante una ventanilla única digital y extinguir Perupetro por su ineficacia, además de promover el ingreso de capital privado en Petroperú para evitar inyecciones de dinero estatal.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=2.7%20Fortalecimiento%20Integral%20del%20Desarrollo%20Minero=",
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=2.10%20Fortalecimiento%20Integral%20del%20Desarrollo%20Energ%C3%A9tico="
+        ]
+      },
+      {
+        "titulo": "Sector Turismo y Conectividad",
+        "descripcion": "Meta de 10 millones de turistas anuales, modernización de aeropuertos regionales y concesión de Corpac al sector privado; asimismo, propone ejecutar teleféricos en Puno, Ancash, Cusco, Moquegua y San Martín para ampliar destinos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=2.11%20Reforzamiento%20de%20la%20Pol%C3%ADtica%20de%20Promoci%C3%B3n%20del%20Turismo%20Interno%20y%20Externo="
+        ]
+      },
+      {
+        "titulo": "Reforma del Sistema de Pensiones",
+        "descripcion": "Las AFP serán reemplazadas por Empresas Administradoras de Fondos (EAF) para aumentar la competencia e inyectar un 'capital semilla' estatal en un fondo blindado para asegurar que todos los peruanos tengan pensión, replicando el modelo alemán.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=2.14%20Reformulaci%C3%B3n%20del%20Sistema%20de%20Pensiones="
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Vivienda y Desarrollo Urbano",
+        "descripcion": "Propone construir 1.25 millones de viviendas nuevas en el quinquenio mediante la emisión de deuda directa por S/. 13,500 millones anuales para subsidios, la extinción de COFOPRI y la creación de una policía especializada contra el tráfico de tierras.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=3.1%201.25%20millones%20de%20viviendas%20nuevas%20en%20el%20quinquenio="
+        ]
+      },
+      {
+        "titulo": "Agua y Saneamiento",
+        "descripcion": "Plantea transferir las EPS de las municipalidades al OTASS para promover la inversión privada global vía APP, incluyendo la adjudicación de plantas desaladoras en Ancón y Chorrillos para asegurar el abastecimiento de agua en Lima.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=3.2%20Agua%20y%20saneamiento="
+        ]
+      },
+      {
+        "titulo": "Salud Integral y Digital",
+        "descripcion": "Busca fortalecer el primer nivel de atención con el 'Plan Mil' mediante APP, implementar la Historia Clínica Digital interoperable y replicar el modelo de gestión logística de medicamentos (Salog) en toda la red nacional de salud.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=3.3%20Salud="
+        ]
+      },
+      {
+        "titulo": "Educación Técnica y Superior",
+        "descripcion": "Se enfoca en reestructurar el MINEDU, implementar secundaria técnica obligatoria en colegios públicos y priorizar becas para estudios técnicos (Becas TEC) mediante alianzas con empresas privadas para reducir la brecha laboral.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=3.4%20Educaci%C3%B3n="
+        ]
+      },
+      {
+        "titulo": "Conectividad y Transformación Digital",
+        "descripcion": "Propone crear la figura del 'Zar de Tecnología e Infraestructura Digital' y extinguir OSIPTEL y PRONATEL, buscando un Estado 100% transaccional en línea al 2030 con identidad digital universal y cobertura 5G/satelital en zonas rurales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=3.5%20Conectividad%20y%20Transformaci%C3%B3n%20Digital="
+        ]
+      },
+      {
+        "titulo": "Programas Sociales y Deporte",
+        "descripcion": "Plantea reestructurar los programas sociales hacia un enfoque de inserción laboral productiva y masificar el deporte mediante un portafolio de proyectos gestionados por Proinversión y el mecanismo de Obras por Impuestos para infraestructura deportiva.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=3.7%20Reforma%20y%20Reestructuraci%C3%B3n%20de%20los%20Programas%20Sociales=",
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=3.8%20Estrategia%20para%20la%20masificaci%C3%B3n%20del%20deporte%20en%20todos%20los%20niveles="
+        ]
+      },
+      {
+        "titulo": "Oportunidades para Jóvenes",
+        "descripcion": "Enfocado en facilitar el acceso a estudios superiores, otorgar bonos específicos de vivienda para jóvenes y generar programas de empleo directo para egresados de universidades e institutos técnicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=3.9.%20J%C3%B3venes="
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Reingeniería de la Gestión Ambiental",
+        "descripcion": "Propone que el SENACE absorba las funciones de certificación ambiental de otras entidades (como el ANA y SERFOR) para centralizar y agilizar los permisos, aplicando un sistema de 'Huella Ambiental'.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=certificaci%C3%B3n%20ambiental=",
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=sistema%20de%20regulaci%C3%B3n%20ambiental="
+        ]
+      },
+      {
+        "titulo": "Manejo Forestal Sostenible y Deforestación",
+        "descripcion": "Busca poner en valor los Bosques de Producción Permanente para atacar las causas de la deforestación y las actividades ilegales, promoviendo el aprovechamiento económico responsable del bosque.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Urge%20poner%20en%20valor="
+        ]
+      },
+      {
+        "titulo": "Remediación de Pasivos y Sostenibilidad",
+        "descripcion": "Plantea el cierre de brechas en tratamiento de aguas residuales mediante 18 proyectos de plantas (PTARES) para garantizar la sostenibilidad ambiental de las localidades en un horizonte de 30 años.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=tratamiento%20de%20aguas%20residuales%20(18)=",
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=coadyuven%20al%20cierre%20de%20brecha="
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Reestructuración del Sistema Educativo",
+        "descripcion": "Propone la reingeniería del MINEDU y el fortalecimiento de las DRE y UGEL, junto con la creación de una Carrera Directiva Nacional basada en mérito y una evaluación docente orientada a resultados medibles.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Reestructuraci%C3%B3n%20del%20MINEDU="
+        ]
+      },
+      {
+        "titulo": "Educación Secundaria Técnica y Certificaciones",
+        "descripcion": "Plantea implementar obligatoriamente la educación secundaria técnica en colegios públicos y establecer certificaciones de dominio de inglés y de Inteligencia Artificial (IA) para mejorar la empleabilidad de los egresados.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Educaci%C3%B3n%20T%C3%A9cnica%20y%20Superior="
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de la Educación Técnica Superior",
+        "descripcion": "Busca potenciar el PRONABEC priorizando las 'Becas TEC' para estudios técnicos sobre los universitarios y crear 'Institutos de Excelencia Regionales' en alianza estratégica con el sector privado y las empresas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Potenciar%20enfoque%20del%20PRONABEC="
+        ]
+      },
+      {
+        "titulo": "Infraestructura Educativa mediante Inversión Privada",
+        "descripcion": "Propone cerrar la brecha de infraestructura escolar utilizando mecanismos de Obras por Impuestos (OXI), APP y un modelo de 'Canon educativo', además de garantizar un Colegio de Alto Rendimiento (COAR) en cada región.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Infraestructura%20Educativa="
+        ]
+      },
+      {
+        "titulo": "Transformación Digital en las Escuelas",
+        "descripcion": "Incluye el despliegue de fibra óptica hasta las escuelas rurales y el desarrollo de 'Escuelas digitales inteligentes', integrando la programación y el pensamiento crítico desde el nivel de educación primaria.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Escuelas%20digitales%20inteligentes="
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Fortalecimiento del Primer Nivel de Atención (Plan Mil)",
+        "descripcion": "Propone viabilizar la mejora de más de mil centros de salud (categorías I-2 y I-3) mediante el mecanismo de APP, dotándolos de infraestructura moderna, equipamiento con Inteligencia Artificial y mantenimiento preventivo permanente.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=La%20Atenci%C3%B3n%20Primaria%20de%20Salud%20debe%20ser%20fortalecida="
+        ]
+      },
+      {
+        "titulo": "Aseguramiento Real y Portabilidad",
+        "descripcion": "Busca que la afiliación al SIS o EsSalud se traduzca en un acceso efectivo y coordinado en cualquier punto de la red nacional, eliminando la fragmentación del sistema y colocando al ciudadano como centro de la gestión.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=el%20aseguramiento%20ser%C3%A1%20real,%20portable%20y%20coordinado="
+        ]
+      },
+      {
+        "titulo": "Transformación Digital e Interoperabilidad",
+        "descripcion": "Plantea la implementación obligatoria de la Historia Clínica Digital interoperable entre todos los sub-sistemas (MINSA, EsSalud, privados) y el uso de telemedicina con IA para mejorar la rapidez y calidad del diagnóstico preventivo.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=la%20Historia%20Cl%C3%ADnica%20Digital%20debe%20aplicarse=",
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=adquisici%C3%B3n%20de%20equipamiento="
+        ]
+      },
+      {
+        "titulo": "Gestión Logística de Medicamentos y Red Torre Trecca",
+        "descripcion": "Propone replicar el modelo de APP 'Salog' para modernizar el almacenamiento y distribución oportuna de medicinas a nivel nacional, además de construir torres de atención especializada (tipo Torre Trecca) en el norte, sur y este de Lima y regiones.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=APP%20Salog=",
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Otro%20proyecto="
+        ]
+      },
+      {
+        "titulo": "Reforma de Gobernanza y Rectoría del MINSA",
+        "descripcion": "Busca que el MINSA ejerza una rectoría sólida centrada en políticas de salud, delegando la ejecución de proyectos de infraestructura a entes especializados, y separando las funciones de 'financiador' y 'prestador' en EsSalud para mayor eficiencia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=La%20reforma%20del%20sistema="
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Unificación de Mando y Ministerio de Defensa y Seguridad Interna",
+        "descripcion": "Propone una reestructuración ministerial para crear el Ministerio de Defensa y Seguridad Interna, integrando bajo un solo mando estratégico a las Fuerzas Armadas y la Policía Nacional para optimizar la lucha contra el crimen organizado.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Seguridad%20ciudadana%20como,requisito%20de%20desarrollo",
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Ministerio%20de%20Defensa="
+        ]
+      },
+      {
+        "titulo": "Inteligencia Artificial y Big Data para Prevención del Delito",
+        "descripcion": "Plantea el uso de tecnologías avanzadas para la detección temprana de patrones criminales como extorsión y sicariato, mediante un 'Centro de Fusión de Inteligencia' que integre datos de la Policía, FF.AA. e instituciones privadas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Pilar%202:%20Ciberseguridad%20Nacional="
+        ]
+      },
+      {
+        "titulo": "Reforma del Sistema Penitenciario mediante OXI y APP",
+        "descripcion": "Busca solucionar el hacinamiento carcelario mediante la construcción de centros de reclusión modernos utilizando los mecanismos de Obras por Impuestos y Asociaciones Público-Privadas, asegurando una gestión eficiente y segura de los penales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Desarrollo%20de%20mercados%20de%20abastos%20municipales%20v%C3%ADa%20OXI=",
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Obras%20por%20Impuestos%20r%C3%A1pidas="
+        ]
+      },
+      {
+        "titulo": "Brigada Nacional de Ciberpolicía y Ciberseguridad",
+        "descripcion": "Propone la creación de una brigada especializada para combatir delitos informáticos y proteger la infraestructura crítica nacional (agua, energía, telecomunicaciones), bajo el liderazgo de un 'Zar de Tecnología e Infraestructura Digital'.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Ciberseguridad%20y%20Comunicaciones%20Cr%C3%ADticas%20Nacionales="
+        ]
+      },
+      {
+        "titulo": "Control de Fronteras y Lucha contra la Minería Ilegal",
+        "descripcion": "Plantea reforzar la presencia estatal en zonas fronterizas con puestos de control policial y militar, además de implementar un sistema nacional de trazabilidad de explosivos y combustibles para desarticular las redes ligadas a la minería ilegal.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf#:~:text=Miner%C3%ADa%20Ilegal="
+        ]
+      }
+    ]
+  },
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pd"
+      ]
+    },
+    "diferencias": { "value": "-", "source": [] },
+    "cumplimientoPrevio": {
+      "value": "Menciona ejecución de obras como alcalde y gobernador como respaldo",
+      "source": ["https://www.cesaracuna.pe/sobre-mi"]
+    }
+  },
+  "controversias": {
+    "antecedentes": [
+      {
+        "titulo": "4 denuncias policiales por violencia familiar (2018-2020)",
+        "descripcion": "La República obtuvo acceso al registro de cuatro denuncias policiales que interpuso Jenny Gutiérrez contra César Acuña. Según el abogado de César Acuña, Elio Riera Garro, todos han sido archivados, pero se presume que uno de ellos se encuentra bajo investigación en el Ministerio Público.",
+        "estado": "Archivados / Uno en investigación",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=La%20Rep%C3%BAblica%20obtuvo%20acceso%20al%20registro%20de%20cuatro%20denuncias%20policiales%20que%20interpuso%20Jenny%20Guti%C3%A9rrez%20contra%20C%C3%A9sar%20Acu%C3%B1a"
+        ]
+      },
+      {
+        "titulo": "Caso: Retención en vehículo (27 marzo 2018)",
+        "descripcion": "Jenny Gutiérrez denunció que Acuña no la dejaba bajar de su vehículo tras una discusión luego de dejar a su hijo en el colegio, logrando descender recién a la altura de la embajada de EE.UU.",
+        "estado": "Archivado",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=El%2027%20de%20marzo%20de%202018"
+        ]
+      },
+      {
+        "titulo": "Caso: Acoso/Mensajes (19 abril 2018)",
+        "descripcion": "Denuncia por mensajes recibidos desde el celular de Acuña, presuntamente escritos por su hija, cuestionando fotos enviadas por la madre.",
+        "estado": "Archivado",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=El-,19%20de%20abril%20de%202018,-%2C%20Guti%C3%A9rrez%20inform%C3%B3%20a"
+        ]
+      },
+      {
+        "titulo": "Caso: Maltrato físico y psicológico (26 junio 2018)",
+        "descripcion": "Durante un retorno del Jockey Plaza, la denunciante afirma que Acuña le pidió tener intimidad en presencia del menor. Ante la negativa, este reaccionó exigiéndoles que se bajaran y 'se larguen' del carro, asustando al niño.",
+        "estado": "Archivado",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=El%2026%20de%20junio%20de%202018"
+        ]
+      },
+      {
+        "titulo": "Caso: Hostigamiento/Amedrentamiento (5 marzo 2020)",
+        "descripcion": "Denuncia por la presencia de camionetas con personas en el interior frente a su domicilio tras una visita de Acuña, con el fin de amedrentar.",
+        "estado": "Archivado",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=El%205%20de%20marzo%20de%202020"
+        ]
+      }
+    ],
+    "antecedentesJudiciales": [
+      {
+        "titulo": "Antecedente por Alimentos — Sentencia Confirmada",
+        "descripcion": "César Acuña fue demandado por su expareja, Jenny Gutiérrez Vaisman, para el pago de una pensión alimenticia a favor de su menor hijo. Aunque Acuña apeló la decisión inicial, la sentencia fue ratificada en segunda instancia. El candidato reconoció esta obligación en su Hoja de Vida presentada ante el JNE para las elecciones de 2026. El 17° Juzgado de Familia de Lima ratificó el fallo que lo obliga a 'prestar en forma mensual y adelantada' la manutención.",
+        "estado": "En ejecución / Sentencia confirmada",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=reconoce%20que%20est%C3%A1%20cumpliendo%20una%20sentencia%20judicial",
+          "https://larepublica.pe/politica/2025/12/28/cesar-acuna-obligado-por-sentencia-a-pagar-alimentos-para-su-menor-hijo-cesar-acuna-peralta-jenny-gutierrez-vaisman-hnews-2609496#:~:text=17%C2%B0%20Juzgado%20de%20Familia%20de%20Lima%20que%20ratifica%20el%20fallo%20original%20de%20%E2%80%9Cprestar%20en%20forma%20mensual%20y%20adelantada%E2%80%9D",
+          "https://lpderecho.pe/confirman-sentencia-ordena-cesar-acuna-pagar-30-000-soles-cada-mes-pension-alimenticia-favor-menor-hijo-exp-02974-2023/#:~:text=Confirman-,sentencia%20que%20ordena%20a%20C%C3%A9sar%20Acu%C3%B1a%20pagar%2030%20000%20soles%20cada%20mes%20por%20pensi%C3%B3n%20alimenticia%20a%20favor%20de%20su%20menor%20hijo,-%5BExp.%2002974%2D2023",
+          "https://www.infobae.com/peru/2023/11/25/cesar-acuna-pj-ordena-al-lider-de-app-dar-una-pension-de-90-mil-soles-mensuales-a-su-ultimo-hijo/#:~:text=alimenticia%20mensual%20y%20adelantada"
+        ]
+      }
+    ],
+    "antecedentesPenales": [
+      {
+        "titulo": "No registra antecedentes penales conocidos",
+        "descripcion": "No se encontró registro de antecedentes penales.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "No registra procesos judiciales en curso conocidos",
+        "descripcion": "No se encontró registro de procesos judiciales en curso.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "No registra procesos judiciales archivados conocidos",
+        "descripcion": "No se encontró registro de procesos judiciales archivados.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "'No permitiremos que el peor alcalde de Lima sea presidente'",
+        "descripcion": "En esta declaración, el candidato de Alianza para el Progreso cuestiona la capacidad de Rafael López Aliaga basándose en su previo desempeño municipal. Acuña sostiene que la baja ejecución presupuestal en la capital descalifica al líder de Renovación Popular, marcando así una confrontación directa en el actual escenario preelectoral de 2026.",
+        "source": [
+          "https://gestion.pe/peru/acuna-advierte-a-lopez-aliaga-no-permitiremos-que-el-peor-alcalde-de-lima-sea-presidente-noticia/#:~:text=%E2%80%9CNo%20permitiremos%20que%20el%20peor%20alcalde%20de%20Lima%20sea%20presidente%E2%80%9D"
+        ]
+      },
+      {
+        "titulo": "'Si quieren vivir en un país en paz, desde ahora comiencen a vivir en paz...'",
+        "descripcion": "Esta declaración fue realizada por el candidato de APP durante una charla magistral en la Universidad César Vallejo (UCV). En dicho evento, Acuña defendió su preparación política para las elecciones de 2026, mientras sus frases redundantes generaban una nueva controversia mediática.",
+        "source": [
+          "https://willax.pe/politica/cesar-acuna-candidato-presidencial-pais-paz-vivir-willax#:~:text=Lo%20mencionado%20por%20el%20hoy%20candidato%20presidencial%20fue%20durante%20una%20charla%20en%20la%20Universidad%20C%C3%A9sar%20Vallejo%20(UCV)."
+        ]
+      },
+      {
+        "titulo": "'Constitucionalmente, el responsable de dar seguridad es la Policía Nacional. No es el gobernador'",
+        "descripcion": "Con esta frase, el líder de APP deslindó su responsabilidad directa frente a la crisis de criminalidad en La Libertad durante agosto de 2025. Pese a presidir el Comité Regional de Seguridad Ciudadana, Acuña sostuvo que su rol se limita únicamente a la coordinación y no a la ejecución operativa.",
+        "source": [
+          "https://www.infobae.com/peru/2025/08/09/cesar-acuna-vuelve-a-deslindar-de-la-inseguridad-en-la-libertad-el-responsable-es-la-pnp-y-no-el-gobernador/#:~:text=seguridad%20ciudadana%E2%80%9D%2C-,afirm%C3%B3%20Acu%C3%B1a,-durante%20una%20entrevista"
+        ]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "Deudas coactivas del Club Universidad César Vallejo (UCV) — SUNAT",
+        "descripcion": "Según registros oficiales de la SUNAT actualizados al 19 de diciembre de 2025, el club de fútbol del cual César Acuña es representante legal fue reportado en las centrales de riesgo. La institución acumuló una deuda total de S/ 106,160, desglosada en S/ 89,095 correspondientes al Tesoro Público y S/ 17,065 por aportes impagos a EsSalud de sus trabajadores.",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/25/club-cesar-vallejo-propiedad-de-cesar-acuna-reporta-deudas-coactivas-por-mas-de-100-mil-soles-ante-la-sunat-hnews-1441375#:~:text=Seg%C3%BAn%20informaci%C3%B3n%20oficial%20de%20la%20SUNAT%20actualizados%20al%2019%20de%20diciembre%2C%20el%20club%20C%C3%A9sar%20Vallejo%20F%C3%BAtbol%20Club%20S.A.C",
+          "https://www.infobae.com/peru/2025/12/25/cesar-acuna-debe-a-essalud-mas-de-s-17-mil-por-club-ucv-candidato-presidencial-no-cumplio-con-el-aporte-a-sus-trabajadores/#:~:text=C%C3%A9sar%20Acu%C3%B1a%20debe%20a%20EsSalud%20m%C3%A1s%20de%20S/%2017%20mil%20por%20Club%20UCV%3A%20candidato%20presidencial%20no%20cumpli%C3%B3%20con%20el%20aporte%20a%20sus%20trabajadores"
+        ]
+      },
+      {
+        "titulo": "Infracción a las Normas del Derecho de Autor — Sancionados con multa por Indecopi",
+        "descripcion": "Indecopi determinó que César Acuña y la Universidad César Vallejo (UCV) vulneraron los derechos morales y patrimoniales de autor en dos situaciones distintas: 1) 'Política Educativa': Acuña se proclamó erróneamente coautor de la obra, cuyo autor único es Otoniel Alvarado Oyarce. La UCV publicó ejemplares atribuyendo la autoría exclusivamente a Acuña y mutiló párrafos de la obra original. Además, se alteró el prólogo escrito por el sacerdote Ricardo Morales Basadre para favorecer a Acuña. 2) Tesis Doctoral: Se comprobó que la tesis presentada por Acuña ante la Universidad Complutense de Madrid reprodujo fragmentos de otros autores sin citarlos ni reconocer su autoría.",
+        "source": [
+          "https://www.tvperu.gob.pe/noticias/politica/indecopi-sanciona-a-cesar-acuna-y-a-ucv-por-infringir-normas-del-derecho-de-autor#:~:text=primer%20procedimiento%20sancionador%2C-,la%20Comisi%C3%B3n%20de%20Derecho,-de%20Autor%20del",
+          "https://canaln.pe/actualidad/indecopi-sanciono-cesar-acuna-y-ucv-plagio-libro-n246036#:~:text=Indecopi%20sanciona%20a%20C%C3%A9sar%20Acu%C3%B1a%20por%20infringir%20normas%20de%20Derecho%20de%20Autor"
+        ]
+      }
+    ]
+  },
+  "transparencia": {
+    "items": [
+      "Reporte de Hoja de Vida JNE 2026",
+      "Declaración Jurada de Ingresos"
+    ],
+    "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+  },
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Alto - Fundador de APP y universidades con amplia experiencia ejecutiva",
+      "source": ["https://www.cesaracuna.pe/sobre-mi"]
+    },
+    "comunicacion": {
+      "value": "Medio - Uso de frases redundantes frecuentemente viralizadas",
+      "source": [
+        "https://willax.pe/politica/cesar-acuna-candidato-presidencial-pais-paz-vivir-willax#:~:text=Lo%20mencionado%20por%20el%20hoy%20candidato%20presidencial%20fue%20durante%20una%20charla%20en%20la%20Universidad%20C%C3%A9sar%20Vallejo%20(UCV)."
+      ]
+    },
+    "credibilidad": {
+      "value": "Baja - Cuestionada por procesos de plagio y temas de pensión alimenticia",
+      "source": [
+        "https://canaln.pe/actualidad/indecopi-sanciono-cesar-acuna-y-ucv-plagio-libro-n246036#:~:text=Indecopi%20sanciona%20a%20C%C3%A9sar%20Acu%C3%B1a%20por%20infringir%20normas%20de%20Derecho%20de%20Autor"
+      ]
+    }
+  },
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 0.2,
+      "max": 5.8,
+      "descripcion": "3% (Margen de error +/- 2.8%) - América TV - Ipsos (18-19 Dic 2025)",
+      "source": [
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf#:~:text=C%C3%A9sar%20Acu%C3%B1a%203="
+      ]
+    },
+    "aprobacion": { "value": "-", "source": [] },
+    "redes": {
+      "value": "Fuerte presencia multiplataforma con enfoque en juventud y gestión académica",
+      "source": ["https://www.instagram.com/cesaracunap/"]
+    }
+  },
+  "innovacionYVision": {
+    "items": [
+      "Modelo de pensiones semilla alemán",
+      "Zar de Tecnología e Infraestructura Digital",
+      "Ciberpolicía especializada"
+    ],
+    "source": [
+      "https://mpesije.jne.gob.pe/docs/72576403-804a-4f28-85d3-bf4c7e648667.pdf"
+    ]
+  },
+  "historialLegislativo": {
+    "tieneHistorial": true,
+    "productivityLabel": "N/A",
+    "asistencia": { "porcentaje": null, "label": null, "source": null },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [],
+    "nota": "Congresista de la República por La Libertad (2001-2006)",
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+  }
+}

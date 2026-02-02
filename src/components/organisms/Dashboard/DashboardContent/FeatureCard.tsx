@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 interface FeatureCardProps {
   title: string;
@@ -9,6 +10,7 @@ interface FeatureCardProps {
   buttonText: string;
   buttonHref: string;
   variant?: "default" | "bordered";
+  isDark?: boolean;
 }
 
 export function FeatureCard({
@@ -19,12 +21,16 @@ export function FeatureCard({
   buttonText,
   buttonHref,
   variant = "default",
+  isDark = false,
 }: FeatureCardProps) {
   return (
     <div
-      className={`flex flex-col bg-white rounded-xl overflow-hidden ${
-        variant === "bordered" ? "border-2 border-gray-200" : ""
-      }`}
+      className={cn(
+        "flex flex-col rounded-xl overflow-hidden transition-colors",
+        isDark ? "bg-[#1a1a1a]" : "bg-white",
+        variant === "bordered" &&
+          (isDark ? "border-2 border-white/10" : "border-2 border-gray-200")
+      )}
     >
       {/* Image */}
       <div className="relative w-full h-32 sm:h-36 overflow-hidden">
@@ -40,8 +46,20 @@ export function FeatureCard({
 
       {/* Content */}
       <div className="flex flex-col flex-1 p-3 sm:p-4">
-        <h3 className="text-sm font-bold text-gray-900 mb-1">{title}</h3>
-        <p className="text-xs text-gray-500 mb-3 sm:mb-4 flex-1 leading-relaxed line-clamp-3">
+        <h3
+          className={cn(
+            "text-sm font-bold mb-1",
+            isDark ? "text-white" : "text-gray-900"
+          )}
+        >
+          {title}
+        </h3>
+        <p
+          className={cn(
+            "text-xs mb-3 sm:mb-4 flex-1 leading-relaxed line-clamp-3",
+            isDark ? "text-white/60" : "text-gray-500"
+          )}
+        >
           {description}
         </p>
 

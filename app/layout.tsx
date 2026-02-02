@@ -1,5 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { testSohneBreit, testSohneSchmal, kenyanCoffee } from "@/lib/fonts";
+import {
+  testSohneBreit,
+  testSohneSchmal,
+  kenyanCoffee,
+  atNameSans,
+} from "@/lib/fonts";
 import Script from "next/script";
 
 import "./globals.css";
@@ -14,6 +19,7 @@ import { ConditionalLayout } from "@/components/organisms/ConditionalLayout";
 import { GA_MEASUREMENT_ID } from "@/lib/analytics/gtag";
 import { Analytics } from "@/components/organisms/Analytics";
 import { QueryProvider } from "@/lib/providers/QueryProvider";
+import { ThemeProvider } from "@/contexts";
 
 export const metadata: Metadata = createMetadata();
 
@@ -47,7 +53,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="es-PE"
-      className={`${testSohneBreit.variable} ${testSohneSchmal.variable} ${kenyanCoffee.variable}`}
+      className={`${testSohneBreit.variable} ${testSohneSchmal.variable} ${kenyanCoffee.variable} ${atNameSans.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -159,16 +165,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>
       <body className="antialiased" suppressHydrationWarning>
-        <QueryProvider>
-          {/* Analytics - Track page views */}
-          <Analytics />
+        <ThemeProvider defaultTheme="system">
+          <QueryProvider>
+            {/* Analytics - Track page views */}
+            <Analytics />
 
-          {/* PWA Registration */}
-          <PWARegistration />
+            {/* PWA Registration */}
+            <PWARegistration />
 
-          {/* Conditional Layout - Shows Header/Footer for public pages, custom layout for dashboard */}
-          <ConditionalLayout>{children}</ConditionalLayout>
-        </QueryProvider>
+            {/* Conditional Layout - Shows Header/Footer for public pages, custom layout for dashboard */}
+            <ConditionalLayout>{children}</ConditionalLayout>
+          </QueryProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

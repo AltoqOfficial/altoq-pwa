@@ -1,11 +1,14 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useRef, useEffect } from "react";
 
 import { cn } from "@/lib/utils";
 
 export interface SelectProps
-  extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, "size"> {
+  extends Omit<
+    React.SelectHTMLAttributes<HTMLSelectElement>,
+    "size" | "onChange"
+  > {
   /**
    * Visual variant of the select
    * - default: White background (for dark backgrounds)
@@ -45,19 +48,23 @@ export interface SelectProps
    * If not provided, placeholder will be used as the label
    */
   label?: string;
+  /**
+   * onChange handler - receives a synthetic event-like object
+   */
+  onChange?: (e: { target: { value: string; name?: string } }) => void;
 }
 
 /**
  * Select Component (Atom)
- * Reusable select dropdown with multiple variants and sizes
+ * Custom select dropdown with multiple variants and sizes
  *
  * Features:
+ * - Custom dropdown with full styling control
  * - Multiple variants (default, outline, google)
  * - Multiple sizes (sm, md, lg)
  * - Error state with message
  * - Focus states with primary color
  * - Disabled state
- * - Custom arrow icon
  * - Floating label for google variant
  *
  * @example
@@ -71,23 +78,6 @@ export interface SelectProps
  *     { value: "2", label: "Opción 2" },
  *   ]}
  * />
- *
- * <Select
- *   placeholder="Selecciona..."
- *   variant="outline"
- *   error={true}
- *   errorMessage="Este campo es requerido"
- * />
- *
- * <Select
- *   label="País"
- *   variant="google"
- *   size="lg"
- *   options={[
- *     { value: "pe", label: "Perú" },
- *     { value: "co", label: "Colombia" },
- *   ]}
- * />
  * ```
  */
 export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
@@ -99,69 +89,87 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
       errorMessage,
       className,
       wrapperClassName,
-      options,
+      options = [],
       placeholder,
       label,
-      children,
       value,
       defaultValue,
-      onFocus,
-      onBlur,
       onChange,
+      disabled,
+      name,
       ...props
     },
     ref
   ) => {
-    // Internal state for google variant
+    const [isOpen, setIsOpen] = useState(false);
     const [isFocused, setIsFocused] = useState(false);
-    const [hasValue, setHasValue] = useState(Boolean(value || defaultValue));
+    const containerRef = useRef<HTMLDivElement>(null);
+    const hiddenSelectRef = useRef<HTMLSelectElement>(null);
 
-    // Handle focus for google variant
-    const handleFocus = useCallback(
-      (e: React.FocusEvent<HTMLSelectElement>) => {
-        setIsFocused(true);
-        onFocus?.(e);
-      },
-      [onFocus]
+    // Use controlled value if provided, otherwise use internal state
+    const [internalValue, setInternalValue] = useState<string>(
+      (defaultValue as string) || ""
     );
+    const selectedValue =
+      value !== undefined ? (value as string) : internalValue;
 
-    // Handle blur for google variant
-    const handleBlur = useCallback(
-      (e: React.FocusEvent<HTMLSelectElement>) => {
-        setIsFocused(false);
-        setHasValue(Boolean(e.target.value));
-        onBlur?.(e);
-      },
-      [onBlur]
-    );
-
-    // Handle change to track if select has value
-    const handleChange = useCallback(
-      (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setHasValue(Boolean(e.target.value));
-        onChange?.(e);
-      },
-      [onChange]
-    );
-
-    // Update hasValue when controlled value changes
-    React.useEffect(() => {
-      if (value !== undefined) {
-        setHasValue(Boolean(value));
+    // Close dropdown when clicking outside
+    useEffect(() => {
+      function handleClickOutside(event: MouseEvent) {
+        if (
+          containerRef.current &&
+          !containerRef.current.contains(event.target as Node)
+        ) {
+          setIsOpen(false);
+          setIsFocused(false);
+        }
       }
-    }, [value]);
 
-    const baseStyles =
-      "w-full rounded-sm font-medium transition-all duration-200 focus:outline-none disabled:pointer-events-none disabled:opacity-50 appearance-none bg-no-repeat bg-right pr-10 cursor-pointer";
+      document.addEventListener("mousedown", handleClickOutside);
+      return () =>
+        document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
 
-    const variantStyles = {
-      default:
-        "bg-white text-neutral-900 border border-neutral-200 focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20",
-      outline:
-        "bg-transparent font-flexo rounded-[18px] text-black border border-[#202020] focus:border-primary-600 focus:ring-2 focus:ring-primary-600/50 backdrop-blur-sm",
-      google:
-        "bg-transparent font-flexo rounded-[10px] text-black border-0 focus:ring-0",
-    };
+    // Close on escape key
+    useEffect(() => {
+      function handleEscape(event: KeyboardEvent) {
+        if (event.key === "Escape") {
+          setIsOpen(false);
+          setIsFocused(false);
+        }
+      }
+
+      document.addEventListener("keydown", handleEscape);
+      return () => document.removeEventListener("keydown", handleEscape);
+    }, []);
+
+    const handleToggle = useCallback(() => {
+      if (disabled) return;
+      setIsOpen((prev) => !prev);
+      setIsFocused(true);
+    }, [disabled]);
+
+    const handleSelect = useCallback(
+      (optionValue: string) => {
+        if (value === undefined) {
+          setInternalValue(optionValue);
+        }
+        setIsOpen(false);
+        setIsFocused(false);
+
+        // Trigger onChange with event-like object
+        onChange?.({
+          target: {
+            value: optionValue,
+            name,
+          },
+        });
+      },
+      [onChange, name, value]
+    );
+
+    const selectedOption = options.find((opt) => opt.value === selectedValue);
+    const hasValue = Boolean(selectedValue);
 
     const sizeStyles = {
       sm: "h-9 px-3 text-sm",
@@ -169,16 +177,11 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
       lg: "h-14 px-4 text-base md:px-5 md:text-lg",
     };
 
-    const errorStyles = error
-      ? "border-primary-600 focus:border-primary-700 focus:ring-primary-600/20"
-      : "";
-
-    // Custom arrow icon inline
-    const arrowIconColor =
-      variant === "outline" || variant === "google"
-        ? "rgb(32 32 32)"
-        : "rgb(23 23 23)";
-    const backgroundImage = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='${encodeURIComponent(arrowIconColor)}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")`;
+    const dropdownSizeStyles = {
+      sm: "text-sm",
+      md: "text-base",
+      lg: "text-base md:text-lg",
+    };
 
     // Google variant with floating label
     if (variant === "google") {
@@ -186,8 +189,27 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
       const isFloating = isFocused || hasValue;
 
       return (
-        <div className={cn("w-full", wrapperClassName)}>
+        <div className={cn("w-full", wrapperClassName)} ref={containerRef}>
           <div className="relative">
+            {/* Hidden native select for form compatibility */}
+            <select
+              ref={ref || hiddenSelectRef}
+              name={name}
+              value={selectedValue}
+              onChange={() => {}}
+              className="sr-only"
+              tabIndex={-1}
+              aria-hidden="true"
+              {...props}
+            >
+              <option value="">{placeholder}</option>
+              {options.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+
             {/* Fieldset creates the border with notch */}
             <fieldset
               className={cn(
@@ -196,7 +218,7 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
                 error && "border-primary-600"
               )}
             >
-              {/* Legend creates the notch in the border - only renders content when floating */}
+              {/* Legend creates the notch in the border */}
               <legend
                 className={cn(
                   "ml-2 text-sm font-flexo text-transparent select-none h-0",
@@ -214,10 +236,8 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
                 className={cn(
                   "absolute left-3 transition-all duration-200 pointer-events-none font-flexo z-10",
                   isFloating
-                    ? // Floating state - label moves up to the border notch
-                      "top-0 -translate-y-1/2 text-sm text-[#202020] px-1"
-                    : // Default state - label is centered as placeholder
-                      cn(
+                    ? "top-0 -translate-y-1/2 text-sm text-[#202020] px-1"
+                    : cn(
                         "top-1/2 -translate-y-1/2 text-neutral-400",
                         size === "sm" && "text-sm",
                         size === "md" && "text-base",
@@ -230,37 +250,81 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
               </label>
             )}
 
-            {/* Select - no border, fieldset handles it */}
-            <select
-              ref={ref}
-              style={{ backgroundImage }}
+            {/* Custom trigger button */}
+            <button
+              type="button"
+              onClick={handleToggle}
+              disabled={disabled}
               className={cn(
-                baseStyles,
-                variantStyles.google,
+                "w-full bg-transparent font-flexo rounded-[10px] text-black border-0 focus:ring-0",
+                "text-left transition-all duration-200 focus:outline-none",
+                "disabled:pointer-events-none disabled:opacity-50 cursor-pointer",
                 sizeStyles[size],
                 className
               )}
-              value={value}
-              defaultValue={defaultValue}
-              onFocus={handleFocus}
-              onBlur={handleBlur}
-              onChange={handleChange}
-              {...props}
             >
-              {/* Empty placeholder option for controlled behavior */}
-              {placeholder && !hasValue && (
-                <option value="" disabled hidden>
-                  {""}
-                </option>
+              <span
+                className={cn(
+                  "block truncate pr-6",
+                  !hasValue && "text-transparent"
+                )}
+              >
+                {selectedOption?.label || placeholder}
+              </span>
+            </button>
+
+            {/* Arrow icon */}
+            <div
+              className={cn(
+                "absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none transition-transform duration-200",
+                isOpen && "rotate-180"
               )}
-              {options
-                ? options.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))
-                : children}
-            </select>
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M5 7.5L10 12.5L15 7.5"
+                  stroke="rgb(32 32 32)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+
+            {/* Custom dropdown */}
+            {isOpen && (
+              <div
+                className={cn(
+                  "absolute z-50 w-full mt-1 rounded-[10px] border-2 border-[#202020]",
+                  "bg-[#a99191] backdrop-blur-md shadow-lg",
+                  "max-h-60 overflow-auto",
+                  dropdownSizeStyles[size]
+                )}
+              >
+                {options.map((option, index) => (
+                  <button
+                    key={option.value}
+                    type="button"
+                    onClick={() => handleSelect(option.value)}
+                    className={cn(
+                      "w-full px-4 py-3 text-left font-flexo text-[#202020]",
+                      "hover:bg-[#202020]/10 transition-colors cursor-pointer",
+                      selectedValue === option.value && "bg-[#202020]/10",
+                      index === 0 && "rounded-t-[8px]",
+                      index === options.length - 1 && "rounded-b-[8px]"
+                    )}
+                  >
+                    <span className="block truncate">{option.label}</span>
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
           {error && errorMessage && (
             <p className="mt-1.5 text-sm text-primary-600">{errorMessage}</p>
@@ -270,39 +334,133 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
     }
 
     // Default and outline variants
+    const variantStyles = {
+      default: {
+        trigger:
+          "bg-white text-neutral-900 border border-neutral-200 focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 rounded-sm",
+        dropdown: "bg-white border border-neutral-200 rounded-sm shadow-lg",
+        option: "hover:bg-neutral-100",
+      },
+      outline: {
+        trigger:
+          "bg-transparent font-flexo rounded-[18px] text-black border border-[#202020] focus:border-primary-600 focus:ring-2 focus:ring-primary-600/50 backdrop-blur-sm",
+        dropdown:
+          "bg-[#FEFEFE80] backdrop-blur-md border border-[#202020] rounded-[18px] shadow-lg",
+        option: "hover:bg-[#202020]/10",
+      },
+    };
+
+    const currentVariant = variantStyles[variant as "default" | "outline"];
+
     return (
-      <div className={cn("w-full", wrapperClassName)}>
+      <div className={cn("w-full", wrapperClassName)} ref={containerRef}>
         <div className="relative">
+          {/* Hidden native select for form compatibility */}
           <select
-            ref={ref}
-            style={{ backgroundImage }}
-            className={cn(
-              baseStyles,
-              variantStyles[variant],
-              sizeStyles[size],
-              errorStyles,
-              className
-            )}
-            value={value}
-            defaultValue={defaultValue}
-            onFocus={onFocus}
-            onBlur={onBlur}
-            onChange={onChange}
+            ref={ref || hiddenSelectRef}
+            name={name}
+            value={selectedValue}
+            onChange={() => {}}
+            className="sr-only"
+            tabIndex={-1}
+            aria-hidden="true"
             {...props}
           >
-            {placeholder && (
-              <option value="" disabled>
-                {placeholder}
+            <option value="">{placeholder}</option>
+            {options.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
               </option>
-            )}
-            {options
-              ? options.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))
-              : children}
+            ))}
           </select>
+
+          {/* Custom trigger button */}
+          <button
+            type="button"
+            onClick={handleToggle}
+            disabled={disabled}
+            className={cn(
+              "w-full text-left transition-all duration-200 focus:outline-none",
+              "disabled:pointer-events-none disabled:opacity-50 cursor-pointer",
+              currentVariant.trigger,
+              sizeStyles[size],
+              error && "border-primary-600",
+              className
+            )}
+          >
+            <span
+              className={cn(
+                "block truncate pr-6",
+                !hasValue && "text-neutral-400"
+              )}
+            >
+              {selectedOption?.label || placeholder}
+            </span>
+          </button>
+
+          {/* Arrow icon */}
+          <div
+            className={cn(
+              "absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none transition-transform duration-200",
+              isOpen && "rotate-180"
+            )}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M5 7.5L10 12.5L15 7.5"
+                stroke={
+                  variant === "default" ? "rgb(23 23 23)" : "rgb(32 32 32)"
+                }
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+
+          {/* Custom dropdown */}
+          {isOpen && (
+            <div
+              className={cn(
+                "absolute z-50 w-full mt-1 max-h-60 overflow-auto",
+                currentVariant.dropdown,
+                dropdownSizeStyles[size]
+              )}
+            >
+              {options.map((option, index) => (
+                <button
+                  key={option.value}
+                  type="button"
+                  onClick={() => handleSelect(option.value)}
+                  className={cn(
+                    "w-full px-4 py-3 text-left transition-colors cursor-pointer",
+                    variant === "default"
+                      ? "text-neutral-900"
+                      : "font-flexo text-[#202020]",
+                    currentVariant.option,
+                    selectedValue === option.value &&
+                      (variant === "default"
+                        ? "bg-neutral-100"
+                        : "bg-[#202020]/10"),
+                    index === 0 &&
+                      (variant === "outline"
+                        ? "rounded-t-[16px]"
+                        : "rounded-t"),
+                    index === options.length - 1 &&
+                      (variant === "outline" ? "rounded-b-[16px]" : "rounded-b")
+                  )}
+                >
+                  <span className="block truncate">{option.label}</span>
+                </button>
+              ))}
+            </div>
+          )}
         </div>
         {error && errorMessage && (
           <p className="mt-1.5 text-sm text-primary-600">{errorMessage}</p>

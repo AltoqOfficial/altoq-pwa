@@ -237,13 +237,20 @@ const LEFT_CANDIDATES: Candidate[] = [
     src: "/promotion/left/keiko_promotion.webp",
     alt: "Keiko Fujimori",
     zIndex: 30,
-    scale: { default: 0.45, sm: 0.7, md: 0.6, lg: 0.8, xl: 0.8, ["2xl"]: 0.8 },
+    scale: { default: 0.45, sm: 0.7, md: 0.6, lg: 0.55, xl: 0.6, ["2xl"]: 0.8 },
   },
   {
     src: "/promotion/left/butters_promotion.webp",
-    alt: "Miguel Ángel del Castillo",
+    alt: "Carlos Espá",
     zIndex: 20,
-    scale: { default: 1.1, sm: 1.25, md: 1.1, lg: 1.4, xl: 1.5, ["2xl"]: 1.5 },
+    scale: {
+      default: 1.1,
+      sm: 1.25,
+      md: 1.1,
+      lg: 0.95,
+      xl: 1.05,
+      ["2xl"]: 1.5,
+    },
     offsetX: {
       default: 0,
       sm: 60,
@@ -261,8 +268,8 @@ const LEFT_CANDIDATES: Candidate[] = [
       default: 1.2,
       sm: 1.25,
       md: 1.3,
-      lg: 1.55,
-      xl: 1.55,
+      lg: 1.05,
+      xl: 1.15,
       ["2xl"]: 1.6,
     },
     offsetX: {
@@ -293,8 +300,8 @@ const RIGHT_CANDIDATES: Candidate[] = [
       default: 0.55,
       sm: 0.9,
       md: 0.8,
-      lg: 0.9,
-      xl: 1.05,
+      lg: 0.6,
+      xl: 0.7,
       ["2xl"]: 1.05,
     },
   },
@@ -306,8 +313,8 @@ const RIGHT_CANDIDATES: Candidate[] = [
       default: 0.85,
       sm: 1.05,
       md: 0.95,
-      lg: 1.1,
-      xl: 1.25,
+      lg: 0.75,
+      xl: 0.85,
       ["2xl"]: 1.25,
     },
     offsetX: {
@@ -323,7 +330,7 @@ const RIGHT_CANDIDATES: Candidate[] = [
     src: "/promotion/right/alvarez_promotion.webp",
     alt: "José Williams Zapata",
     zIndex: 10,
-    scale: { default: 1.3, sm: 1.4, md: 1.4, lg: 1.4, xl: 1.55, ["2xl"]: 1.6 },
+    scale: { default: 1.3, sm: 1.4, md: 1.4, lg: 0.95, xl: 1.1, ["2xl"]: 1.6 },
     offsetX: {
       default: 80,
       sm: 100,
@@ -676,7 +683,7 @@ export function VSScrollAnimation() {
                 className="w-full max-w-64 cursor-pointer"
                 onClick={() => router.push(getDemoHref())}
               >
-                {isAuthenticated ? "Ir al Dashboard" : "Prueba la demo"}
+                {isAuthenticated ? "Ir al Dashboard" : "¡Prueba ahora!"}
               </Button>
             </motion.div>
 
@@ -721,7 +728,7 @@ export function VSScrollAnimation() {
                 size={isMobile ? MOBILE_CONFIG.buttonSize : undefined}
                 onClick={() => router.push(getDemoHref())}
               >
-                {isAuthenticated ? "Ir al Dashboard" : "Prueba la demo"}
+                {isAuthenticated ? "Ir al Dashboard" : "¡Prueba ahora!"}
               </Button>
             </motion.div>
           </div>

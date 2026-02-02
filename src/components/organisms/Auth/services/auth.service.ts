@@ -5,9 +5,11 @@ import type {
   SignupRequest,
   ResetPasswordRequest,
   UpdatePasswordRequest,
+  CheckEmailRequest,
   AuthResponse,
   SignupResponse,
   MessageResponse,
+  CheckEmailResponse,
   ErrorResponse,
 } from "../types/auth.types";
 
@@ -88,6 +90,22 @@ export const authService = {
     try {
       const response = await axiosInstance.post<MessageResponse>(
         "/auth/update-password",
+        data
+      );
+      return response.data;
+    } catch (error) {
+      throw handleAuthError(error);
+    }
+  },
+
+  /**
+   * Check if email already exists
+   * @returns CheckEmailResponse with exists flag
+   */
+  async checkEmail(data: CheckEmailRequest): Promise<CheckEmailResponse> {
+    try {
+      const response = await axiosInstance.post<CheckEmailResponse>(
+        "/auth/check-email",
         data
       );
       return response.data;

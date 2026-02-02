@@ -1,7 +1,7 @@
 "use client";
 
 import type { CandidateComparisonData } from "@/data";
-import { ComparisonGrid } from "../components/shared";
+import { MobileComparisonView } from "../components/shared/ComparisonView";
 import { PERFIL_GENERAL_CONFIG } from "../config";
 
 interface DynamicSectionProps {
@@ -18,10 +18,14 @@ export function PerfilGeneralSection({
   rightCandidate,
 }: DynamicSectionProps) {
   return (
-    <ComparisonGrid
-      fields={PERFIL_GENERAL_CONFIG.fields!}
-      leftData={leftCandidate?.perfilGeneral}
-      rightData={rightCandidate?.perfilGeneral}
-    />
+    <div className="w-full">
+      <MobileComparisonView
+        fields={PERFIL_GENERAL_CONFIG.fields!}
+        leftData={leftCandidate?.perfilGeneral}
+        rightData={rightCandidate?.perfilGeneral}
+        leftCandidate={leftCandidate}
+        rightCandidate={rightCandidate}
+      />
+    </div>
   );
 }

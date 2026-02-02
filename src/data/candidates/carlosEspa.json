@@ -1,0 +1,344 @@
+{
+  "id": "alfonso-carlos-espa-garces-alvear",
+  "slug": "alfonso-carlos-espa-garces-alvear",
+  "fullName": "Alfonso Carlos Espá Garcés-Alvear",
+  "shortName": "Carlos Espá",
+  "image": "/candidatos/carlos-espa.webp",
+  "color": "#004B93",
+  "party": "SíCreo",
+  "partyIcon": "/partidos/sicreo.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/carlosespaoficial/",
+    "tiktok": "https://www.tiktok.com/@carlosespaoficial",
+    "twitter": null,
+    "facebook": null,
+    "web": "https://sicreo.org.pe/"
+  },
+  "perfilGeneral": {
+    "edad": { "value": null, "source": [] },
+    "nacimiento": { "value": null, "source": [] },
+    "lugar": { "value": null, "source": [] },
+    "nivelEducativo": {
+      "value": [
+        "Bachiller en Derecho - PUCP",
+        "Magíster en Ciencia Política - The American University"
+      ],
+      "source": [
+        "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df#:~:text=Abogado,Peru",
+        "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df#:~:text=master,University"
+      ]
+    },
+    "profesion": {
+      "value": ["Abogado", "Periodista", "Político"],
+      "source": [
+        "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
+      ]
+    },
+    "partidoActual": {
+      "value": "SíCreo",
+      "source": [
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Sintesis-PARTIDO-SICREO-II.pdf"
+      ]
+    },
+    "cambiosDePartido": {
+      "value": "0",
+      "source": [
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
+      ]
+    },
+    "historialPartidos": [
+      {
+        "ano": "2022",
+        "partido": "SíCreo",
+        "icono": "/partidos/sicreo.png",
+        "source": [
+          "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
+        ]
+      }
+    ]
+  },
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "3",
+      "source": [
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
+      ]
+    },
+    "cargosPrevios": {
+      "values": ["Presidente y Fundador del Partido SíCreo (2022-Actualidad)"],
+      "source": [
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
+      ]
+    },
+    "candidaturasPresidenciales": { "values": [], "source": [] }
+  },
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 1,
+      "detalle": {
+        "values": [
+          "Especialista en Medios / Área de Prensa - Embajada de Estados Unidos en el Perú (2005-2015)"
+        ],
+        "source": [
+          "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
+        ]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 1,
+      "detalle": {
+        "values": [
+          "Director y Conductor de Cuarto Poder - América Televisión (2002-2004)"
+        ],
+        "source": [
+          "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/"
+        ]
+      }
+    },
+    "source": "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
+  },
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": "Derecha Liberal y Conservadora",
+      "descripcion": "Aunque él personalmente prefiere rechazar las \"etiquetas\" políticas tradicionales, resalta lo siguiente: la libertad individual es el valor supremo. Su postura es humanista al centrar el progreso en el respeto irrestricto a la familia como núcleo social y al derecho a la vida desde la concepción. Propone un Estado pequeño que no interfiera en las decisiones privadas de los padres ni en la economía, buscando \"secar la corrupción\" mediante la eliminación de trabas burocráticas que asfixian al trabajador honesto.",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "economia": {
+      "value": "Pro inversión privada, libre mercado y eliminación de trabas burocráticas.",
+      "source": [
+        "https://www.youtube.com/watch?v=OCCJEdwrkwI",
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": "No apoya, pero promueve la no discriminación.",
+      "source": ["https://youtu.be/QIBo3MeAiik?t=5018"]
+    },
+    "aborto": {
+      "value": "En contra (solo permite causas legales existentes).",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "seguridad": {
+      "value": "Limpieza y firmeza mediante el imperio de la ley y autoridad.",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "ambiente": {
+      "value": "Desarrollo formal sostenible y combate a la minería ilegal.",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "educacion": {
+      "value": "Educación centrada en la familia y libertad de elección de los padres.",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "reformaPolitica": {
+      "value": "Reforma gradual del Estado y reducción del gasto público superfluo.",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    }
+  },
+  "propuestasPrincipales": {
+    "institucional": [
+      {
+        "titulo": "Estado eficiente y descentralizado",
+        "descripcion": "Reducción del gasto público superfluo, eliminación de la duplicidad de funciones y combate al clientelismo burocrático para transformar el Estado en un facilitador del ciudadano.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf#:~:text=refinacion.-,DIMENSION%20INSTITUCIONAL,metas"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Shock de desregulación y libre mercado",
+        "descripcion": "Eliminación de la 'permisología' y trámites asfixiantes para liberar la iniciativa privada, permitiendo que las fuerzas creadoras de riqueza operen sin la interferencia de un Estado sobredimensionado.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf#:~:text=a%C3%B1os-,DIMENSION%20ECONOMICA,Metas"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Libertad y propiedad privada",
+        "descripcion": "Enfoque en la superación de la pobreza mediante la creación de riqueza individual y el respeto irrestricto a la propiedad privada como base fundamental del desarrollo personal y familiar.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf#:~:text=v.%20VIVIENDA%20Y%20DESARROLLO%20URBANO"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Desarrollo sostenible y minería formal",
+        "descripcion": "Promoción de la inversión minera responsable como motor de desarrollo, combatiendo frontalmente las actividades ilegales (tala y minería) que depredan la Amazonía.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf#:~:text=Nacional-,DIMENSION%20AMBIENTAL"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Libertad de elegir de las familias",
+        "descripcion": "Implementación de un sistema de competencia y meritocracia donde los padres decidan la educación de sus hijos, rompiendo el monopolio sindical en la enseñanza pública.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf#:~:text=EDUCACION:"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Tecnología y servicios eficientes",
+        "descripcion": "Modernización integral del sistema de salud mediante la digitalización de procesos y alianzas estratégico-privadas para garantizar calidad, rapidez y acceso universal.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf#:~:text=SALUD:"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Imperio de la ley y autoridad",
+        "descripcion": "Fortalecimiento logístico y operativo de la Policía Nacional y las Fuerzas Armadas para recuperar el orden interno, combatir el crimen organizado y proteger la soberanía.",
+        "source": [
+          "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf#:~:text=I.%20INSEGURIDAD"
+        ]
+      }
+    ]
+  },
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": ["https://sicreo.org.pe/wp-content/uploads/2025/04/Ideario.pdf"]
+    },
+    "diferencias": {
+      "value": "Ninguna reportada; el discurso de outsider se alinea con las propuestas de reducción del Estado.",
+      "source": ["https://www.youtube.com/watch?v=OCCJEdwrkwI"]
+    },
+    "cumplimientoPrevio": {
+      "value": "No aplica por falta de cargos públicos electos previos.",
+      "source": []
+    }
+  },
+  "controversias": {
+    "antecedentes": [
+      {
+        "titulo": "Sin antecedentes policiales, penales ni judiciales vigentes",
+        "descripcion": "No registra antecedentes policiales, penales ni sentencias judiciales condenatorias vigentes en las bases de datos de consulta pública y según su declaración jurada ante el ente electoral.",
+        "estado": "Limpio",
+        "source": [
+          "https://plataformahistorico.jne.gob.pe/",
+          "https://infogob.jne.gob.pe/"
+        ]
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "No se reportan procesos penales abiertos de relevancia pública",
+        "descripcion": "No se reportan procesos penales abiertos de relevancia pública en el sistema de consulta de expedientes judiciales.",
+        "estado": "Sin procesos",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/e9d731a4-a79f-42e0-9ff7-29f6abe2bd3f.pdf"
+        ]
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "Archivos administrativos relacionados a labor periodística",
+        "descripcion": "Se registran archivos administrativos relacionados a su labor periodística pasada, sin que estos hayan derivado en condenas o procesos penales vigentes.",
+        "estado": "Archivado",
+        "source": ["https://infogob.jne.gob.pe/"]
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Cuestionamiento por propuesta de reabrir penal 'El Frontón'",
+        "descripcion": "Su propuesta de reabrir el penal El Frontón ha sido señalada por analistas y medios como una medida de difícil viabilidad jurídica debido a tratados internacionales de derechos humanos.",
+        "source": ["https://www.youtube.com/watch?v=_RLRJeCoP1Y&t=2s"]
+      },
+      {
+        "titulo": "Denuncia de presiones y salida de TV (Cuarto Poder, 2004)",
+        "descripcion": "Su retiro de la televisión en 2004 fue un hecho mediático controversial, donde denunció presiones editoriales que limitaban la libertad de prensa, específicamente durante el gobierno de Alejandro Toledo.",
+        "source": [
+          "https://ifex.org/es/periodistas-y-director-periodistico-de-america-television-renuncian-por-supuestas-presiones-gubernamentales-en-su-contra/"
+        ]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "No presenta deudas coactivas (SUNAT)",
+        "descripcion": "Al cierre de 2025, no presenta deudas coactivas en estado de cobranza con la SUNAT bajo su registro personal o de sus empresas declaradas.",
+        "source": ["https://www.sunat.gob.pe/"]
+      },
+      {
+        "titulo": "Posicionamiento como 'outsider' y transparencia",
+        "descripcion": "El candidato basa su discurso de transparencia en su pasado como periodista de investigación y su rechazo al clientelismo burocrático, posicionándose como un 'outsider' con formación académica sólida en ciencias políticas.",
+        "source": ["https://www.youtube.com/watch?v=OCCJEdwrkwI"]
+      }
+    ]
+  },
+  "transparencia": {
+    "items": [
+      "Declaración jurada de hoja de vida sin omisiones reportadas",
+      "Inexistencia de deudas coactivas SUNAT",
+      "Historial de transparencia periodística"
+    ],
+    "source": [
+      "https://plataformahistorico.jne.gob.pe/",
+      "https://infogob.jne.gob.pe/"
+    ]
+  },
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Medio - Fundador de un partido nuevo sin estructura previa masiva.",
+      "source": [
+        "https://sicreo.org.pe/wp-content/uploads/2025/04/Acta-Fundacion-.pdf"
+      ]
+    },
+    "comunicacion": {
+      "value": "Alto - Experiencia extensa como director de noticias y comunicador.",
+      "source": [
+        "https://editorial.upc.edu.pe/autor/7a665c7977e7b9df2eee119f358586df"
+      ]
+    },
+    "credibilidad": {
+      "value": "Medio/Alto - Basada en su pasado como periodista de investigación.",
+      "source": ["https://www.youtube.com/watch?v=OCCJEdwrkwI"]
+    }
+  },
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 2,
+      "max": 2,
+      "descripcion": "Encuesta Ipsos Perú para América Televisión (11-12 de diciembre 2025).",
+      "source": [
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf"
+      ]
+    },
+    "aprobacion": { "value": null, "source": [] },
+    "redes": {
+      "value": "Presencia activa en TikTok, Instagram y Youtube bajo el usuario carlosespaoficial.",
+      "source": ["https://votaxmi.com/candidato/38/carlos-espa"]
+    }
+  },
+  "innovacionYVision": {
+    "items": [
+      "Propuesta de 'secar la corrupción' eliminando burocracia",
+      "Implementación de vouchers educativos o competencia meritocrática",
+      "Uso de tecnología y digitalización para modernización de salud"
+    ],
+    "source": [
+      "https://img.lpderecho.pe/wp-content/uploads/2025/12/Partido-Si-creo-Plan-de-Gobierno-LP-derecho.pdf"
+    ]
+  },
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "productivityLabel": "N/A",
+    "asistencia": { "porcentaje": null, "label": null, "source": null },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [],
+    "nota": "No tiene historial legislativo",
+    "source": null
+  }
+}

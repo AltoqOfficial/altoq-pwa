@@ -40,11 +40,52 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 pt-2 md:pt-4 justify-center lg:justify-start">
-            <Link href={getHref("/#como-funciona")}>
-              <Button className="font-flexo-bold rounded-full bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 md:py-4 h-auto text-base md:text-lg w-full sm:w-auto shadow-xl shadow-primary-600/20 transition-all hover:scale-105">
-                {isAuthenticated ? "Ir al Dashboard" : "¿Cómo funciona?"}
+            {isAuthenticated ? (
+              <Link href="/">
+                <Button className="font-flexo-bold rounded-full bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 md:py-4 h-auto text-base md:text-lg w-full sm:w-auto shadow-xl shadow-primary-600/20 transition-all hover:scale-105">
+                  Ir al Dashboard
+                </Button>
+              </Link>
+            ) : (
+              <Button
+                className="font-flexo-bold rounded-full bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 md:py-4 h-auto text-base md:text-lg w-full sm:w-auto shadow-xl shadow-primary-600/20 transition-all hover:scale-105"
+                onClick={() => {
+                  const target = document.getElementById("como-funciona");
+                  if (target) {
+                    const targetPosition =
+                      target.getBoundingClientRect().top + window.scrollY;
+                    const startPosition = window.scrollY;
+                    const distance = targetPosition - startPosition;
+                    const duration = 2000; // 2.5 seconds for smooth scroll
+                    let startTime: number | null = null;
+
+                    const easeInOutCubic = (t: number) => {
+                      return t < 0.5
+                        ? 4 * t * t * t
+                        : 1 - Math.pow(-2 * t + 2, 3) / 2;
+                    };
+
+                    const animation = (currentTime: number) => {
+                      if (startTime === null) startTime = currentTime;
+                      const timeElapsed = currentTime - startTime;
+                      const progress = Math.min(timeElapsed / duration, 1);
+                      const easeProgress = easeInOutCubic(progress);
+                      window.scrollTo(
+                        0,
+                        startPosition + distance * easeProgress
+                      );
+                      if (timeElapsed < duration) {
+                        requestAnimationFrame(animation);
+                      }
+                    };
+
+                    requestAnimationFrame(animation);
+                  }
+                }}
+              >
+                ¿Cómo funciona?
               </Button>
-            </Link>
+            )}
 
             <Link
               href={getHref("/compara")}

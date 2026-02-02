@@ -3,6 +3,8 @@
 import { useState, useCallback } from "react";
 import { Sidebar } from "../Sidebar";
 import { DashboardHeader } from "../DashboardHeader";
+import { useTheme } from "@/contexts";
+import { cn } from "@/lib/utils";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -10,12 +12,18 @@ interface DashboardLayoutProps {
 
 export function DashboardLayout({ children }: DashboardLayoutProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const { resolvedTheme } = useTheme();
 
   const openSidebar = useCallback(() => setIsSidebarOpen(true), []);
   const closeSidebar = useCallback(() => setIsSidebarOpen(false), []);
 
   return (
-    <div className="flex min-h-screen bg-[#FEFEFE]">
+    <div
+      className={cn(
+        "flex min-h-screen transition-colors duration-300",
+        resolvedTheme === "dark" ? "bg-[#202020]" : "bg-[#FEFEFE]"
+      )}
+    >
       {/* Sidebar */}
       <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
 

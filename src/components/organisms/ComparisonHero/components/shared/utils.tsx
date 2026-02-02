@@ -2,7 +2,13 @@
 
 import { Typography } from "@/components/atoms";
 import type { RenderableValue } from "./types";
-import { SourceTooltip, extractValue, extractSource } from "./SourceTooltip";
+import {
+  SourceTooltip,
+  extractValue,
+  extractSource,
+  extractDescription,
+  extractSynthesis,
+} from "./SourceTooltip";
 import type { SourceableString, SourceableArray } from "@/data/types";
 
 /**
@@ -62,8 +68,39 @@ export function renderValueWithSource(value: SourceableValue): React.ReactNode {
 
   // Handle object with value/values and source
   if (typeof value === "object") {
-    const displayValue = extractValue(value);
+    let displayValue = extractValue(value);
     const source = extractSource(value);
+    const description = extractDescription(value);
+    const synthesis = extractSynthesis(value);
+
+    // If no display value but we have synthesis, we can use empty string or just rely on Tooltip displaying synthesis title.
+    // However, usually there is a 'value' field which is the short text.
+    // The user requirement says: "Leer los campos sintesis, descripcion y source".
+    // "Mostrar la síntesis en negrita como título secundario".
+    // In the JSON provided: "value" is sometimes NOT present or null if it's relying on "sintesis".
+    // Wait, the JSONs provided show:
+    // "ideologiaPolitica": { "economia": { "sintesis": "...", "descripcion": "...", "source": [...] } }
+    // Note: NO "value" field in the new structure example!
+    // So 'extractValue' might return undefined.
+    // In that case, we should probably render the 'sintesis' as the main text if 'value' is missing,
+    // OR just render the icon/empty and let the tooltip show everything?
+    // Looking at the designs usually: The grid shows a short text.
+    // If 'value' is missing, we should probably use 'sintesis' as the visible text in the grid too?
+    // Let's check `IdeologiaPoliticaSection`. It calls `renderValueWithSource`.
+    // The previous implementation of `ideologiaPolitica` had "value".
+    // The new structure has `sintesis` instead of `value` in some cases?
+    // User request: "Nueva Estructura Requerida: ... "sintesis": "...", "descripcion": "..." ..."
+    // It does NOT show "value".
+    // Checks `marioVizcarra.json`:
+    // "ideologiaPolitica": { "posicion": { "value": "Centro", ... } }
+    // But for "economia": { "sintesis": "...", ... }
+    // So we should fallback to use `sintesis` as the display value if `value` is missing.
+
+    if (displayValue === undefined || displayValue === null) {
+      if (synthesis) {
+        displayValue = synthesis;
+      }
+    }
 
     if (displayValue === undefined) return "-";
 
@@ -81,7 +118,11 @@ export function renderValueWithSource(value: SourceableValue): React.ReactNode {
               ))
           : "-";
 
-    return <SourceTooltip source={source}>{content}</SourceTooltip>;
+    return (
+      <SourceTooltip source={source} description={description}>
+        {content}
+      </SourceTooltip>
+    );
   }
 
   return "-";
@@ -187,13 +228,16 @@ export function renderTypographyList(
  * Renders a list as Typography components with source tooltip
  */
 export function renderTypographyListWithSource(
-  value: string[] | { items: string[]; source?: string | string[] } | undefined,
+  value:
+    | string[]
+    | { items: string[]; source?: string | string[] | null }
+    | undefined,
   align: "left" | "center" | "right" = "left"
 ): React.ReactNode {
   if (!value) return "-";
 
   let items: string[];
-  let source: string | string[] | undefined;
+  let source: string | string[] | null | undefined;
 
   if (Array.isArray(value)) {
     items = value;

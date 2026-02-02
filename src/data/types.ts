@@ -6,8 +6,9 @@
  * Value with optional source URL for citations
  */
 export interface ValueWithSource {
-  value: string | string[];
-  source?: string | string[];
+  value: string | string[] | null;
+  source?: string | string[] | null;
+  descripcion?: string;
 }
 
 /**
@@ -15,14 +16,22 @@ export interface ValueWithSource {
  */
 export interface ArrayWithSource {
   values: string | string[];
-  source?: string | string[];
+  source?: string | string[] | null;
+  descripcion?: string;
 }
 
 /**
  * Type that can be either a plain value or a value with source
  */
-export type SourceableString = string | string[] | ValueWithSource;
+export type SourceableString = string | string[] | null | ValueWithSource;
 export type SourceableArray = string[] | ArrayWithSource;
+
+export interface PartidoHistorico {
+  ano: string;
+  partido: string;
+  icono?: string;
+  source?: string | string[];
+}
 
 export interface PerfilGeneral {
   edad: SourceableString;
@@ -32,6 +41,7 @@ export interface PerfilGeneral {
   profesion: SourceableString;
   partidoActual: SourceableString;
   cambiosDePartido: SourceableString;
+  historialPartidos?: PartidoHistorico[];
 }
 
 export interface ExperienciaPolitica {
@@ -41,7 +51,7 @@ export interface ExperienciaPolitica {
 }
 
 export interface SectorExperiencia {
-  cantidad: number;
+  cantidad: number | null;
   detalle: SourceableArray;
 }
 
@@ -62,14 +72,24 @@ export interface IdeologiaPolitica {
   reformaPolitica: SourceableString;
 }
 
+export interface ProposalData {
+  titulo?: string;
+  descripcion?: string;
+  viabilidad?: string;
+  respaldo?: string;
+  source?: string | string[];
+}
+
+export type ProposalField = SourceableArray | ProposalData[];
+
 export interface PropuestasPrincipales {
-  economico: SourceableArray;
-  social: SourceableArray;
-  ambiental: SourceableArray;
-  institucional: SourceableArray;
-  educativo: SourceableArray;
-  salud: SourceableArray;
-  seguridad: SourceableArray;
+  economico: ProposalField;
+  social: ProposalField;
+  ambiental: ProposalField;
+  institucional: ProposalField;
+  educativo: ProposalField;
+  salud: ProposalField;
+  seguridad: ProposalField;
 }
 
 export interface CoherenciaConElPlan {
@@ -78,9 +98,21 @@ export interface CoherenciaConElPlan {
   cumplimientoPrevio: SourceableString;
 }
 
+export interface ControversyData {
+  titulo: string;
+  estado?: string;
+  source?: string | string[];
+  descripcion?: string;
+}
+
 export interface Controversias {
-  investigaciones: SourceableArray;
-  enCurso: SourceableArray;
+  antecedentes?: ControversyData[];
+  procesosJudiciales?: ControversyData[];
+  declaraciones?: ControversyData[];
+  observaciones?: ControversyData[];
+  // Campos antiguos para compatibilidad temporal
+  investigaciones?: SourceableArray;
+  enCurso?: SourceableArray;
 }
 
 export interface CompetenciasPersonales {
@@ -90,10 +122,10 @@ export interface CompetenciasPersonales {
 }
 
 export interface IntencionVoto {
-  min: number;
-  max: number;
+  min: number | null;
+  max: number | null;
   descripcion: string;
-  source?: string | string[];
+  source?: string | string[] | null;
 }
 
 export interface PercepcionPublica {
@@ -103,18 +135,37 @@ export interface PercepcionPublica {
 }
 
 export interface Asistencia {
-  porcentaje: number;
-  label: string;
-  source?: string;
+  porcentaje: number | null;
+  label: string | null;
+  source?: string | string[] | null;
+}
+
+export interface LegislativeProject {
+  id: string;
+  code: string; // e.g., "09102/2024-CR"
+  title: string;
+  date: string;
+  url?: string;
+  state?: string; // e.g., "Presentado", "Aprobado", etc. - helpful for coloring if needed
+}
+
+export interface ProjectStats {
+  presentados: number;
+  aprobados: number;
+  enPleno: number;
+  enComision: number;
+  rechazados: number;
+  otros: number; // For any remainder
 }
 
 export interface HistorialLegislativo {
   tieneHistorial: boolean;
-  asistencia: Asistencia;
-  proyectosPresentados: number;
-  proyectosAprobados: number;
+  productivityLabel: "ALTA" | "MEDIA" | "BAJA" | "N/A";
+  asistencia: Asistencia; // Keeping for backward compat or if needed elsewhere, though not in this specific view
+  stats: ProjectStats;
+  projects: LegislativeProject[];
   nota?: string;
-  source?: string;
+  source?: string | string[] | null;
 }
 
 /**
@@ -133,14 +184,25 @@ export interface InnovacionData {
   source?: string | string[];
 }
 
+export interface SocialLinks {
+  instagram?: string;
+  tiktok?: string;
+  twitter?: string;
+  facebook?: string;
+  web?: string;
+}
+
 export interface CandidateComparisonData {
   id: string;
-  slug: string;
-  fullName: string;
-  shortName: string;
+  slug?: string;
+  name?: string; // Alternative to fullName in some candidate files
+  fullName?: string;
+  shortName?: string;
   image: string;
-  color: string;
+  color?: string;
   party: string;
+  partyIcon?: string;
+  socialLinks?: SocialLinks;
   perfilGeneral: PerfilGeneral;
   experienciaPolitica: ExperienciaPolitica;
   experienciaGestion: ExperienciaGestion;
@@ -148,9 +210,9 @@ export interface CandidateComparisonData {
   propuestasPrincipales: PropuestasPrincipales;
   coherenciaConElPlan: CoherenciaConElPlan;
   controversias: Controversias;
-  transparencia: string[] | TransparenciaData;
-  competenciasPersonales: CompetenciasPersonales;
-  percepcionPublica: PercepcionPublica;
-  innovacionYVision: string[] | InnovacionData;
-  historialLegislativo: HistorialLegislativo;
+  transparencia: string[] | TransparenciaData | null;
+  competenciasPersonales: CompetenciasPersonales | null;
+  percepcionPublica: PercepcionPublica | null;
+  innovacionYVision: string[] | InnovacionData | null;
+  historialLegislativo: HistorialLegislativo | null;
 }

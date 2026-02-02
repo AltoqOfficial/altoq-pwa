@@ -5,9 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { DashboardIcon, CompareIcon, SettingsIcon, UserIcon } from "../icons";
+import { SettingsModal } from "../SettingsModal";
 import { cn } from "@/lib/utils";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
 import { useUserProfile } from "@/hooks/useUserProfile";
+import { useTheme } from "@/contexts";
 
 interface NavItem {
   href: string;
@@ -17,8 +19,8 @@ interface NavItem {
 
 const mainNavItems: NavItem[] = [
   {
-    href: "/dashboard",
-    label: "Dashboard",
+    href: "/",
+    label: "Inicio",
     icon: DashboardIcon,
   },
   {
@@ -26,20 +28,15 @@ const mainNavItems: NavItem[] = [
     label: "Comparar candidatos",
     icon: CompareIcon,
   },
-  {
-    href: "/dashboard/ajustes",
-    label: "Ajustes",
-    icon: SettingsIcon,
-  },
 ];
 
 const externalLinks = [
   {
-    href: "https://twitter.com/altoqperu",
+    href: "https://www.tiktok.com/@altoqperu",
     label: "Redes sociales",
   },
   {
-    href: "/unete",
+    href: "/",
     label: "Únete a nosotros",
   },
 ];
@@ -52,13 +49,16 @@ interface SidebarProps {
 export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const pathname = usePathname();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const { mutate: logout, isPending: isLoggingOut } = useLogout();
   const { user, isLoading } = useUserProfile();
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
 
   const isActive = (href: string) => {
-    if (href === "/dashboard") {
-      return pathname === "/dashboard";
+    if (href === "/") {
+      return pathname === "/";
     }
     return pathname.startsWith(href);
   };
@@ -104,26 +104,42 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
       {/* Sidebar */}
       <aside
         className={cn(
-          "fixed lg:static inset-y-0 left-0 z-50 flex flex-col w-[240px] lg:w-[170px] min-h-screen bg-[#FBFBFB] border-r border-gray-100 flex-shrink-0 transition-transform duration-300 ease-in-out",
+          "fixed lg:static inset-y-0 left-0 z-50 flex flex-col w-[240px] lg:w-[170px] min-h-screen flex-shrink-0 transition-all duration-300 ease-in-out",
+          isDark
+            ? "bg-[#1a1a1a] border-r border-white/10"
+            : "bg-[#FBFBFB] border-r border-gray-100",
           isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         )}
       >
         {/* Logo Section */}
-        <div className="flex items-center justify-between lg:justify-center py-6 lg:py-8 px-4 lg:px-0 bg-[#F0F0F0]">
+        <div
+          className={cn(
+            "flex items-center justify-between lg:justify-center py-6 lg:py-8 px-4 lg:px-0",
+            isDark ? "bg-[#151515]" : "bg-[#F0F0F0]"
+          )}
+        >
           <Link href="/">
             <Image
               src="/images/logo/altoq.webp"
               alt="Altoq"
               width={86}
               height={36}
-              className="h-8 lg:h-9 w-auto"
+              className={cn(
+                "h-8 lg:h-9 w-auto",
+                isDark && "brightness-0 invert"
+              )}
               priority
             />
           </Link>
           {/* Close button - mobile only */}
           <button
             onClick={onClose}
-            className="lg:hidden p-2 -mr-2 text-gray-500 hover:text-gray-700"
+            className={cn(
+              "lg:hidden p-2 -mr-2 transition-colors",
+              isDark
+                ? "text-white/60 hover:text-white"
+                : "text-gray-500 hover:text-gray-700"
+            )}
             aria-label="Cerrar menú"
           >
             <svg
@@ -157,8 +173,12 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                     className={cn(
                       "flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium transition-all duration-200",
                       active
-                        ? "text-[#FF2727] bg-red-50"
-                        : "text-[#868686] hover:text-[#FF2727] hover:bg-gray-50"
+                        ? isDark
+                          ? "text-[#FF2727] bg-[#FF2727]/10"
+                          : "text-[#FF2727] bg-red-50"
+                        : isDark
+                          ? "text-white/60 hover:text-[#FF2727] hover:bg-white/5"
+                          : "text-[#868686] hover:text-[#FF2727] hover:bg-gray-50"
                     )}
                   >
                     <Icon isActive={active} className="flex-shrink-0" />
@@ -169,17 +189,42 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                 </li>
               );
             })}
+            {/* Settings Button */}
+            <li>
+              <button
+                onClick={() => setIsSettingsOpen(true)}
+                className={cn(
+                  "flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium transition-all duration-200 w-full",
+                  isDark
+                    ? "text-white/60 hover:text-[#FF2727] hover:bg-white/5"
+                    : "text-[#868686] hover:text-[#FF2727] hover:bg-gray-50"
+                )}
+              >
+                <SettingsIcon className="flex-shrink-0" />
+                <span className="leading-tight text-[13px]">Ajustes</span>
+              </button>
+            </li>
           </ul>
         </nav>
 
         {/* External Links */}
-        <div className="px-4 py-4 lg:py-5 border-t border-gray-100">
+        <div
+          className={cn(
+            "px-4 py-4 lg:py-5 border-t",
+            isDark ? "border-white/10" : "border-gray-100"
+          )}
+        >
           <ul className="space-y-3">
             {externalLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="flex items-center gap-2 text-xs text-[#868686] hover:text-[#FF2727] transition-colors"
+                  className={cn(
+                    "flex items-center gap-2 text-xs transition-colors",
+                    isDark
+                      ? "text-white/50 hover:text-[#FF2727]"
+                      : "text-[#868686] hover:text-[#FF2727]"
+                  )}
                   target={link.href.startsWith("http") ? "_blank" : undefined}
                   rel={
                     link.href.startsWith("http")
@@ -210,21 +255,42 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
 
         {/* User Section with Dropdown */}
         <div
-          className="px-4 py-4 lg:py-5 border-t border-gray-100 relative"
+          className={cn(
+            "px-4 py-4 lg:py-5 border-t relative",
+            isDark ? "border-white/10" : "border-gray-100"
+          )}
           ref={dropdownRef}
         >
           <button
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            className="flex items-center gap-3 w-full hover:bg-gray-50 rounded-lg p-2 -m-2 transition-colors"
+            className={cn(
+              "flex items-center gap-3 w-full rounded-lg p-2 -m-2 transition-colors",
+              isDark ? "hover:bg-white/5" : "hover:bg-gray-50"
+            )}
           >
-            <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
-              <UserIcon className="w-4 h-4" />
+            <div
+              className={cn(
+                "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0",
+                isDark ? "bg-white/10" : "bg-gray-200"
+              )}
+            >
+              <UserIcon className={cn("w-4 h-4", isDark && "text-white/70")} />
             </div>
             <div className="min-w-0 text-left flex-1">
-              <p className="text-sm font-medium text-gray-900 truncate">
+              <p
+                className={cn(
+                  "text-sm font-medium truncate",
+                  isDark ? "text-white" : "text-gray-900"
+                )}
+              >
                 {displayName}
               </p>
-              <p className="text-xs text-gray-500 truncate">
+              <p
+                className={cn(
+                  "text-xs truncate",
+                  isDark ? "text-white/50" : "text-gray-500"
+                )}
+              >
                 {user?.email || ""}
               </p>
             </div>
@@ -240,7 +306,8 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
               strokeLinecap="round"
               strokeLinejoin="round"
               className={cn(
-                "text-gray-400 transition-transform duration-200",
+                "transition-transform duration-200",
+                isDark ? "text-white/40" : "text-gray-400",
                 isDropdownOpen ? "rotate-180" : ""
               )}
             >
@@ -250,11 +317,23 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
 
           {/* Dropdown Menu */}
           {isDropdownOpen && (
-            <div className="absolute bottom-full left-4 right-4 mb-2 bg-white rounded-lg shadow-lg border border-gray-100 overflow-hidden z-50">
+            <div
+              className={cn(
+                "absolute bottom-full left-4 right-4 mb-2 rounded-lg shadow-lg overflow-hidden z-50",
+                isDark
+                  ? "bg-[#2a2a2a] border border-white/10"
+                  : "bg-white border border-gray-100"
+              )}
+            >
               <button
                 onClick={handleLogout}
                 disabled={isLoggingOut}
-                className="flex items-center gap-3 w-full px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF2727] transition-colors disabled:opacity-50"
+                className={cn(
+                  "flex items-center gap-3 w-full px-4 py-3 text-sm transition-colors disabled:opacity-50",
+                  isDark
+                    ? "text-white/70 hover:bg-white/5 hover:text-[#FF2727]"
+                    : "text-gray-700 hover:bg-gray-50 hover:text-[#FF2727]"
+                )}
               >
                 {/* Logout Icon */}
                 <svg
@@ -280,6 +359,12 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           )}
         </div>
       </aside>
+
+      {/* Settings Modal */}
+      <SettingsModal
+        isOpen={isSettingsOpen}
+        onClose={() => setIsSettingsOpen(false)}
+      />
     </>
   );
 }

@@ -45,6 +45,21 @@ export interface UpdatePasswordRequest {
   newPassword: string;
 }
 
+/**
+ * Check email request payload
+ * POST /api/auth/check-email
+ */
+export interface CheckEmailRequest {
+  email: string;
+}
+
+/**
+ * Check email response
+ */
+export interface CheckEmailResponse {
+  exists: boolean;
+}
+
 // ==================== Response DTOs ====================
 
 /**

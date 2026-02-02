@@ -1,0 +1,861 @@
+{
+  "id": "george-patrick-forsyth-sommer",
+  "slug": "george-patrick-forsyth-sommer",
+  "fullName": "George Patrick Forsyth Sommer",
+  "shortName": "George Forsyth",
+  "image": "/candidatos/george-forsyth.webp",
+  "color": "#E1251B",
+  "party": "Partido Democrático Somos Perú",
+  "partyIcon": "/partidos/somos-peru.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/george.forsyth/",
+    "tiktok": null,
+    "twitter": "https://x.com/George_Forsyth",
+    "facebook": "https://web.facebook.com/GeorgeForsythSP/",
+    "web": null
+  },
+  "perfilGeneral": {
+    "edad": { "value": null, "source": [] },
+    "nacimiento": { "value": null, "source": [] },
+    "lugar": { "value": null, "source": [] },
+    "nivelEducativo": {
+      "value": [
+        "Bachiller en Administración de Empresas – 2021",
+        "Magíster de Administración – 2023"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://repositorioacademico.upc.edu.pe/handle/10757/658293#:~:text=Forsyth%20Sommer,%20George%20Patrick",
+        "https://www.linkedin.com/in/george-forsyth-a5139135b/"
+      ]
+    },
+    "profesion": {
+      "value": ["Administrador", "Ex-futbolista profesional"],
+      "source": [
+        "https://repositorioacademico.upc.edu.pe/handle/10757/658293#:~:text=Forsyth%20Sommer,%20George%20Patrick",
+        "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/"
+      ]
+    },
+    "partidoActual": {
+      "value": "Partido Democrático Somos Perú",
+      "source": [
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/#:~:text=Somos%20Per%C3%BA"
+      ]
+    },
+    "cambiosDePartido": {
+      "value": "3",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/george-patrick-forsyth-sommer_historial-partidario_4b@2tWTg7S8=@W"
+      ]
+    },
+    "historialPartidos": [
+      {
+        "ano": "2011",
+        "partido": "Partido Popular Cristiano",
+        "icono": "/partidos/ppc.png",
+        "source": [
+          "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia#:~:text=Con%20el%20Partido%20Popular%20Cristiano%20(PPC)%20logr%C3%B3%20ser%20regidor%20de%20La%20Victoria%20(2011"
+        ]
+      },
+      {
+        "ano": "2019",
+        "partido": "Partido Democrático Somos Perú",
+        "icono": "/partidos/somos-peru.png",
+        "source": [
+          "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia/?ref=ecr#:~:text=luego%20se%20convirti%C3%B3%20en%20alcalde%20de%20dicho%20distrito%20para%20el%20periodo%202019"
+        ]
+      },
+      {
+        "ano": "2020",
+        "partido": "Restauración Nacional/Victoria Nacional",
+        "icono": "/partidos/victoria-nacional.png",
+        "source": [
+          "https://elcomercio.pe/elecciones-2021/george-forsyth-ya-aparece-como-afiliado-al-partido-restauracion-nacional-en-el-rop-elecciones-2021-nndc-noticia/#:~:text=George%20Forsyth%20ya%20aparece%20como%20afiliado%20al%20partido%20Restauraci%C3%B3n%20Nacional%20en%20el%20ROP"
+        ]
+      }
+    ]
+  },
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "5 años y 9 meses",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/george-patrick-forsyth-sommer_procesos-electorales_4b@2tWTg7S8=@W,"
+      ]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Regidor Distrital (2011-2014)",
+        "Alcalde Distrital (2019-2020)"
+      ],
+      "source": [
+        "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia#:~:text=Con%20el%20Partido%20Popular%20Cristiano%20(PPC)%20logr%C3%B3%20ser%20regidor%20de%20La%20Victoria%20(2011",
+        "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia/?ref=ecr#:~:text=luego%20se%20convirti%C3%B3%20en%20alcalde%20de%20dicho%20distrito%20para%20el%20periodo%202019"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2021 → Exclusión", "2026 → En curso"],
+      "source": [
+        "https://www.infobae.com/america/america-latina/2021/02/11/george-forsyth-el-candidato-que-lideraba-las-encuestas-fue-excluido-de-las-elecciones-presidenciales-en-peru/#:~:text=fue%20excluido%20de%20las%20elecciones%20presidenciales",
+        "http://larepublica.pe/politica/2025/11/09/george-forsyth-precandidato-presidencial-de-somos-peru-aparecio-vestido-de-uniforme-militar-frente-a-jose-jeri-hnews-688482#:~:text=George%20Forsyth%20se%20gradu%C3%B3%20y%20convirti%C3%B3%20en%20reservista%20del%20Ej%C3%A9rcito%20en%202019"
+      ]
+    }
+  },
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 2,
+      "detalle": {
+        "values": [
+          "Alcalde Distrital de La Victoria (2019-2020)",
+          "Capitán de Caballería - Oficial Profesional de Reserva (2019-Actualidad)"
+        ],
+        "source": [
+          "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia/?ref=ecr#:~:text=luego%20se%20convirti%C3%B3%20en%20alcalde%20de%20dicho%20distrito%20para%20el%20periodo%202019",
+          "http://larepublica.pe/politica/2025/11/09/george-forsyth-precandidato-presidencial-de-somos-peru-aparecio-vestido-de-uniforme-militar-frente-a-jose-jeri-hnews-688482#:~:text=George%20Forsyth%20se%20gradu%C3%B3%20y%20convirti%C3%B3%20en%20reservista%20del%20Ej%C3%A9rcito%20en%202019"
+        ]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 3,
+      "detalle": {
+        "values": [
+          "Gerente General - Los M S.A.C. (2017-Actualidad)",
+          "Gerente General - Alhambra Inversiones S.R.L (2024-Actualidad)",
+          "Jugador de fútbol profesional (2001-2016)"
+        ],
+        "source": [
+          "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/",
+          "https://larepublica.pe/politica/elecciones/2022/08/18/elecciones-2022-george-forsyth-declaro-no-tener-ingresos-rafael-lopez-aliaga-jne-pacto-etico-electoral#:~:text=gerente%20general%20de%20la%20empresa%20Los%20M,actualidad"
+        ]
+      }
+    },
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+  },
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": "Centro / centro-derecha",
+      "descripcion": "Se toma exclusivamente a partir de la declaración pública del propio George Forsyth recogida en la entrevista de Infobae (03/04/2021): \"No queremos un gobierno populista que esté de espaldas a la población (...) Especialmente dentro del contexto en que nos encontramos actualmente, con una crisis económica terrible, vamos a darle las facilidades que corresponden a la empresa privada\". Esa frase combina una autodefinición/posicionamiento en contra del populismo y una preferencia explícita por facilitar la inversión/actividad privada, lo que, tomado como única evidencia, ubica su posicionamiento en el espectro hacia el centro con sesgo hacia la centro-derecha (énfasis en liberalismo económico limitado y rechazo al populismo).",
+      "source": [
+        "https://www.infobae.com/america/america-latina/2021/04/03/george-forsyth-el-ex-futbolista-que-quiere-ser-presidente-del-peru-no-queremos-un-gobierno-populista-que-este-de-espaldas-a-la-poblacion/#:~:text=No%20queremos%20un%20gobierno%20populista%20que%20est%C3%A9%20de%20espaldas%20a%20la%20poblaci%C3%B3n%20%28...%29%20Especialmente%20dentro%20del%20contexto%20en%20que%20nos%20encontramos%20actualmente%2C%20con%20una%20crisis%20econ%C3%B3mica%20terrible%2C%20vamos%20a%20darle%20las%20facilidades%20que%20corresponden%20a%20la%20empresa%20privada"
+      ]
+    },
+    "economia": {
+      "value": "Economía social de mercado",
+      "descripcion": "Se declara a favor de una economía social de mercado competitiva y abierta, poniendo la descentralización como medio para fortalecer las economías locales y regionales dentro de ese marco (posición ideológica del partido, no propuestas).",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=econom%C3%ADa%20social%20de%20mercado%20competitiva%20y%20abierta"
+      ]
+    },
+    "educacion": {
+      "value": "Infraestructura educativa prioritaria",
+      "descripcion": "Defiende el papel activo del Estado para garantizar la educación pública como bien común, centrada en el acceso universal, la equidad territorial y la mejora de la calidad educativa (enfoque en formación docente y reducción de brechas).",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=la%20importancia%20de%20la%20familia%2C%20que%20es%20la%20c%C3%A9lula%20b%C3%A1sica%20de%20la%20sociedad%2C%20la%20ra%C3%ADz%20de%20su%20grandeza%20y%20el%20%C3%A1mbito%20natural%20de%20la%20educaci%C3%B3n%20y%20de%20la%20cultura"
+      ]
+    },
+    "salud": {
+      "value": "Salud pública e integrada",
+      "descripcion": "Defiende un sistema de salud público, universal e integrado con rectoría única para superar la fragmentación institucional y garantizar acceso efectivo y cobertura ampliada.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=El%20sistema%20de%20salud%20peruano%20atraviesa%20una%20crisis%20estructural%20caracterizada%20por%20una%20profunda%20fragmentaci%C3%B3n%20institucional"
+      ]
+    },
+    "matrimonioIgualitario": { "value": "-", "source": [] },
+    "aborto": {
+      "value": "Restricción con excepciones",
+      "descripcion": "El plan de gobierno que revisaste no contiene propuestas públicas sobre la despenalización del aborto; en la arena pública, George Forsyth declaró que, personalmente, considera admisible la interrupción del embarazo solo en casos de violación o cuando la vida de la madre esté en peligro. En el orden legal peruano, el aborto terapéutico (cuando peligra la vida o la salud de la mujer) está permitido, mientras que la despenalización por violación ha sido objeto de debate y no está plenamente garantizada por la ley.",
+      "source": [
+        "https://canaln.pe/actualidad/george-forsyth-sobre-aborto-solo-casos-violacion-cuando-madre-este-peligro-n432360#:~:text=%E2%80%9CEs%20un%20tema%20muy%20sensible.%20Nosotros%20ya%20nos%20hemos%20pronunciado%20al%20respecto%20y%20creemos%20que%20se%20pueda%20dar%20el%20aborto%20exclusivamente%20en%20casos%20de%20violaci%C3%B3n%20o%20en%20caso%20de%20que%20la%20madre%20est%C3%A9%20en%20peligro%E2%80%9D,%20argument%C3%B3%20el%20tambi%C3%A9n%20exalcalde%20de%20La%20Victoria."
+      ]
+    },
+    "seguridad": {
+      "value": "Gestión territorial del SINASEC con poder ejecutivo y modernización policial cercana al ciudadano.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22CIUDADAN%C3%8DA%20SEGURA%22%20Sin%20Temor%20en%20las%20Calles"
+      ]
+    },
+    "ambiente": {
+      "value": "Conservación y adaptación climática",
+      "descripcion": "Prioriza la conservación de la mega biodiversidad como ventaja estratégica, junto a la adaptación climática y la gestión del agua para enfrentar la alta vulnerabilidad y la degradación acelerada del patrimonio natural. Esta formulación se basa en el diagnóstico del plan que valora la biodiversidad como motor de desarrollo (biocomercio, ecoturismo, bioeconomía) y subraya la urgencia de abordar la crisis hídrica, la deforestación y la exposición a eventos extremos.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=La%20biodiversidad%20peruana,siglo%20XXI"
+      ]
+    },
+    "reformaPolitica": {
+      "value": "Instituciones y transparencia",
+      "descripcion": "Aboga por una reforma institucional orientada a fortalecer la selección de altos funcionarios y la rendición de cuentas, privilegiando mecanismos basados en mérito, transparencia y participación ciudadana para reducir la captura política.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Se%20impulsar%C3%A1n%20reformas%20constitucionales%20para%20fortalecer%20los%20procesos%20de%20selecci%C3%B3n%20de%20altos%20funcionarios"
+      ]
+    }
+  },
+  "propuestasPrincipales": {
+    "institucional": [
+      {
+        "titulo": "PERÚ DEMOCRÁTICO",
+        "descripcion": "Impulsar reformas constitucionales y legislativas para fortalecer la democracia, blindar órganos autónomos y ampliar la participación ciudadana como contrapeso.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22PER%C3%9A%20DEMOCR%C3%81TICO%22"
+        ]
+      },
+      {
+        "titulo": "EJE 1: BLINDAJE CONSTITUCIONAL DE ÓRGANOS AUTÓNOMOS",
+        "descripcion": "Reformas constitucionales (mayorías, prohibición de vaciamiento competencial, autonomía presupuestal) para proteger órganos de control y reducir captura política.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20BLINDAJE%20CONSTITUCIONAL%20DE%20%C3%93RGANOS%20AUT%C3%93NOMOS"
+        ]
+      },
+      {
+        "titulo": "PERÚ ÍNTEGRO: TOLERANCIA CERO A LA CORRUPCIÓN",
+        "descripcion": "Programa anticorrupción para reducir el costo de la corrupción y recuperar la confianza ciudadana.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PER%C3%9A%20%C3%8DNTEGRO%3A%20TOLERANCIA%20CERO%20A%20LA%20CORRUPCI%C3%93N"
+        ]
+      },
+      {
+        "titulo": "EJE 1: CONTRALORÍA 4.0 - INTELIGENCIA ARTIFICIAL ANTICORRUPCIÓN",
+        "descripcion": "Detectar y prevenir corrupción en tiempo real con IA, cruces masivos de bases y auditorías automatizadas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201:%20CONTRALOR%C3%8DA%204.0%20,INTELIGENCIA%20ARTIFICIAL%20ANTICORRUPCI%C3%93N"
+        ]
+      },
+      {
+        "titulo": "EJE 1: AHOGO FINANCIERO DEL CRIMEN ORGANIZADO",
+        "descripcion": "Corte de flujos financieros ilícitos (extinción de dominio, cooperación interinstitucional e internacional).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20AHOGO%20FINANCIERO%20DEL%20CRIMEN%20ORGANIZADO"
+        ]
+      },
+      {
+        "titulo": "EJE 2: TRANSPARENCIA RADICAL Y GOBIERNO ABIERTO",
+        "descripcion": "Plataforma nacional de integridad (blockchain), portal de datos abiertos en tiempo real, fiscalización ciudadana empoderada y trazabilidad de recursos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20TRANSPARENCIA%20RADICAL%20Y%20GOBIERNO%20ABIERTO"
+        ]
+      },
+      {
+        "titulo": "PROGRAMA: POLICÍA AL SERVICIO DEL CIUDADANO",
+        "descripcion": "Modernizar y descentralizar el servicio policial para una PNP cercana, profesional y focalizada en prevención y protección comunitaria.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20POLIC%C3%8DA%20AL%20SERVICIO%20DEL%20CIUDADANO"
+        ]
+      },
+      {
+        "titulo": "EJE (Policía) — PODER EJECUTIVO PARA COMITÉS LOCALES / EVALUACIÓN POR RESULTADOS",
+        "descripcion": "Fortalecer comités locales (CODISEC) con presupuesto y métricas públicas; evaluación por resultados y ranking público por desempeño.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20PODER%20EJECUTIVO%20PARA%20COMIT%C3%89S%20LOCALES"
+        ]
+      },
+      {
+        "titulo": "PROGRAMA: JUSTICIA ACCESIBLE PARA TODOS",
+        "descripcion": "Acercar la justicia (módulos rurales, juzgados itinerantes), modernizar digitalmente el sistema (expediente electrónico, audiencias virtuales) y fortalecer defensa pública.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20JUSTICIA%20ACCESIBLE%20PARA%20TODOS"
+        ]
+      },
+      {
+        "titulo": "EJE (Justicia) — JUSTICIA DIGITAL y DEFENSA PÚBLICA FORTALECIDA",
+        "descripcion": "Expediente Judicial Electrónico Universal, plataformas de seguimiento de casos, duplicar defensores públicos y centros de asistencia legal gratuita.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20JUSTICIA%20DIGITAL%20,MODERNIZACI%C3%93N%20TECNOL%C3%93GICA%20DEL%20SISTEMA"
+        ]
+      },
+      {
+        "titulo": "GESTIÓN DEL RIESGO DE DESASTRES",
+        "descripcion": "Fortalecer monitoreo, brigadas y capacidades locales; infraestructura resiliente y reducción de vulnerabilidad territorial.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=GESTI%C3%93N%20DEL%20RIESGO%20DE%20DESASTRES"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "PERÚ: País integrado y abierto al mundo",
+        "descripcion": "Reducir la brecha de infraestructura de transporte y bajar costos logísticos para posicionar al Perú como hub logístico del Pacífico Sur.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Reducir%20la%20brecha%20de%20infraestructura%20de%20transporte"
+        ]
+      },
+      {
+        "titulo": "EJE 1: Metro de Lima – Movilidad digna",
+        "descripcion": "Prioriza la culminación y expansión del Metro (Líneas 2, 3 y 4) y la integración tarifaria metropolitana.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201:%20METRO%20DE%20LIMA,MOVILIDAD%20DIGNA"
+        ]
+      },
+      {
+        "titulo": "EJE 2: Red ferroviaria – Conectando regiones",
+        "descripcion": "Desarrollar ferrocarriles interurbanos (Lima–Ica, Lima–Barranca, Central Andino) para carga y pasajeros.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20RED%20FERROVIARIA,%20CONECTANDO%20REGIONES"
+        ]
+      },
+      {
+        "titulo": "EJE 3: Red vial estratégica",
+        "descripcion": "Pavimentación y mejora de red vial nacional, departamental y rural; priorizar ejes transversales y autopistas de alta montaña.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%203%3A%20RED%20VIAL%20ESTRATEGICA"
+        ]
+      },
+      {
+        "titulo": "EJE 4: Puertos y aeropuertos – Hub del Pacífico",
+        "descripcion": "Articular Puerto de Chancay y modernizar puertos/aeropuertos para convertir al Perú en nodo logístico y turístico.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%204%3A%20PUERTOS%20Y%20AEROPUERTOS,%20HUB%20DEL%20PAC%C3%8DFICO"
+        ]
+      },
+      {
+        "titulo": "EJE 5: Corredores logísticos productivos",
+        "descripcion": "Crear plataformas logísticas, truck centers y parques industriales para reducir costos y unir cadenas productivas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%205%3A%20CORREDORES%20LOG%C3%8DSTICOS%20PRODUCTIVOS"
+        ]
+      },
+      {
+        "titulo": "Formalización y apoyo a MYPES",
+        "descripcion": "Ventanillas únicas, amnistía tributaria inicial y acceso ampliado a crédito/formalización para formalizar cientos de miles de MYPES.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Ventanillas%20%C3%9Anicas%20MYPE%3A"
+        ]
+      },
+      {
+        "titulo": "Perú potencia agroexportadora mundial",
+        "descripcion": "Duplicar exportaciones agrícolas (USD 13,000 → USD 26,000) mediante riego, corredores agroexportadores y acceso a financiamiento.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Posicionar%20al%20Per%C3%BA%20como%20la%20primera%20potencia%20agroexportadora%20de%20Am%C3%A9rica%20Latina"
+        ]
+      },
+      {
+        "titulo": "EJE (Agua para el campo) – Sistemas de riego e irrigación tecnificada",
+        "descripcion": "Destrabar megaproyectos de irrigación, crear autoridad nacional de irrigación y masificar riego tecnificado.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20AGUA%20PARA%20EL%20CAMPO"
+        ]
+      },
+      {
+        "titulo": "Perú destino mundial (turismo)",
+        "descripcion": "Consolidar al Perú como potencia turística global: aumento de turistas y divisas; conectar por aire con más aeropuertos regionales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Consolidar%20al%20Per%C3%BA%20como%20potencia%20tur%C3%ADstica%20global"
+        ]
+      },
+      {
+        "titulo": "Diversificación productiva y mayor competitividad",
+        "descripcion": "Diversificar la base productiva, destrabar inversiones, aumentar inversión pública y privada y reducir informalidad para impulsar crecimiento sostenido.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=LIMITADA%20DIVERSIFICACI%C3%93N%20PRODUCTIVA%20Y%20BAJA%20COMPETITIVIDAD%20DE%20LA%20ECONOM%C3%ADA"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "ANEMIA CERO — Estrategia nacional de nutrición infantil",
+        "descripcion": "Articulación de transferencias, cuidado, alimentación y atención de salud con personal especializado para diagnóstico y seguimiento de anemia en 0–5 años.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22ANEMIA%20CERO%22.%20ESTRATEGIA%20NACIONAL%20DE%20NUTRICI%C3%93N%20INFANTIL"
+        ]
+      },
+      {
+        "titulo": "PERÚ ALIMENTA — Programa de alimentación digna",
+        "descripcion": "Garantizar alimentación nutritiva (Comedores Solidarios y Tarjeta Solidaria) a hogares en pobreza extrema, con infraestructura, compras locales y verificación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22PER%C3%9A%20ALIMENTA%22"
+        ]
+      },
+      {
+        "titulo": "SALUD DIGNA PARA TODOS — Sistema universal efectivo",
+        "descripcion": "Marco para un sistema de salud universal efectivo: articulación del sistema (MINSA/EsSalud), fortalecimiento de primer nivel, telemedicina, vacunación, salud mental y PADOMI.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20SALUD%20DIGNA%20PARA%20TODOS"
+        ]
+      },
+      {
+        "titulo": "PADOMI UNIVERSAL (Programa de Atención Domiciliaria)",
+        "descripcion": "Extensión nacional de la atención domiciliaria (visita médica mensual, entrega de medicamentos, brigadas móviles) para adultos mayores y crónicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%20NACIONAL%20DE%20ATENCI%C3%93N%20DOMICILIARIA%20%28PADOMI%20UNIVERSAL%29"
+        ]
+      },
+      {
+        "titulo": "PERÚ EDUCA — Formación de calidad",
+        "descripcion": "Transformar el sistema educativo (aprendizajes efectivos, educación digital, infraestructura, docentes, oficios del futuro, educación superior vinculada al empleo).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20PER%C3%9A%20EDUCA.%20FORMACI%C3%93N%20DE%20CALIDAD%20PARA%20TRANSFORMAR%20EL%20PA%C3%8DS"
+        ]
+      },
+      {
+        "titulo": "PERÚ DIGITAL 2030 — Talento digital",
+        "descripcion": "Programa nacional para formar talento digital, becas en tecnología, certificaciones internacionales y centros de excelencia (IA, ciberseguridad).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%20NACIONAL%20%22PER%C3%9A%20DIGITAL%202030%22"
+        ]
+      },
+      {
+        "titulo": "MYPE FORMAL — Más beneficios, menos trámites",
+        "descripcion": "Régimen único para MYPE (RUM), incentivos a la formalización, bono de formalización, fiscalización inteligente y beneficios tangibles para formales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22MYPE%20FORMAL.%20M%C3%A1s%20Beneficios.%20Menos%20Tr%C3%A1mites%22"
+        ]
+      },
+      {
+        "titulo": "IGUALDAD ENTRE MUJERES Y HOMBRES",
+        "descripcion": "Acciones para reducir la violencia de género (ampliación de Centros de Emergencia Mujer, cámaras Gesell), conciliación trabajo-familia y fortalecimiento de protección.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=IGUALDAD%20ENTRE%20MUJERES%20Y%20HOMBRES"
+        ]
+      },
+      {
+        "titulo": "TRABAJO DIGNO",
+        "descripcion": "Revisión integral de la legislación laboral, propuesta de un nuevo Código del Trabajo, incentivos para formalización y protección de derechos laborales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=TRABAJO%20DIGNO"
+        ]
+      },
+      {
+        "titulo": "Protección de la niñez y adolescencia",
+        "descripcion": "Fortalecimiento de Unidades de Protección, ampliación de centros de acogida (CAR), prevención del trabajo infantil y ampliación de CEDIF/servicios de protección.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=Protecci%C3%B3n%20de%20la%20Ni%C3%B1ez%20y%20Adolescencia"
+        ]
+      },
+      {
+        "titulo": "Adultos mayores autónomos y atendidos",
+        "descripcion": "Pensión, PADOMI, centros de atención y políticas para garantizar autonomía y cuidado de la población mayor.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=ADULTOS%20MAYORES%20AUT%C3%93NOMOS%20Y%20ATENDIDOS"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "PERÚ PREPARADO — Prevención ante el Fenómeno del Niño",
+        "descripcion": "Reducir pérdidas económicas por el Fenómeno del Niño mediante obras de prevención en cuencas críticas, sistema de observación de riesgos, fondo de emergencia climática, etc.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20%22PER%C3%9A%20PREPARADO%22.%20PREVENCI%C3%93N%20ANTE%20EL%20FEN%C3%93MENO%20DEL%20NI%C3%91O"
+        ]
+      },
+      {
+        "titulo": "AGUA PARA VIVIR — Gestión inteligente del agua",
+        "descripcion": "Garantizar acceso universal a agua segura y continua (metas 2031), con ejes como Cero fugas, Reforma de EPS, economía circular del agua, siembra y cosecha de agua, riego tecnificado, desalinizaciones estratégicas y gobernanza del agua.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20AGUA%20PARA%20VIVIR,AGUA"
+        ]
+      },
+      {
+        "titulo": "LIMA: AIRE LIMPIO Y MOVILIDAD DIGNA",
+        "descripcion": "Reducción de PM2.5 en Lima y transformación del sistema de transporte (metro, Metropolitano, renovación vehicular, ciclovías, zonas de bajas emisiones, monitoreo).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20LIMA%3A%20AIRE%20LIMPIO%20Y%20MOVILIDAD%20DIGNA"
+        ]
+      },
+      {
+        "titulo": "RECICLA PERÚ — Economía circular",
+        "descripcion": "Transitar a una economía circular: segregación en fuente, formalización de recicladores, infraestructura de valorización, Responsabilidad Extendida del Productor (REP) y reducción en la fuente.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20%22RECICLA%20PER%C3%9A%22"
+        ]
+      },
+      {
+        "titulo": "PERÚ CON ENERGÍAS RENOVABLES",
+        "descripcion": "Aumentar la participación de renovables (meta: ~30% de la matriz al 2031) mediante destrabe de proyectos, transmisión, energía solar para comunidades, mini-hidro de bajo impacto, hidrógeno verde piloto, etc.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA:%20%22PER%C3%9A%20CON%20ENERG%C3%8DAS%20RENOVABLES%22"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "PERÚ EDUCA — Formación de calidad para transformar el país",
+        "descripcion": "Transformar el sistema educativo para garantizar aprendizajes de calidad, cerrar brechas de infraestructura y conectividad y formar capital humano competitivo.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20PER%C3%9A%20EDUCA.%20FORMACI%C3%93N%20DE%20CALIDAD%20PARA%20TRANSFORMAR%20EL%20PA%C3%8DS"
+        ]
+      },
+      {
+        "titulo": "EJE 1: Aprendizajes efectivos",
+        "descripcion": "Duplicar estudiantes con nivel satisfactorio en competencias básicas mediante refuerzo escolar, tutores, sistema de alerta temprana y bonos por desempeño docente.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20APRENDIZAJES%20EFECTIVOS"
+        ]
+      },
+      {
+        "titulo": "EJE 2: Educación digital escolar",
+        "descripcion": "Formación docente en programación, distribución masiva de laptops, conectividad universal en colegios y currículo de programación obligatorio en secundaria.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20EDUCACI%C3%93N%20DIGITAL%20ESCOLAR"
+        ]
+      },
+      {
+        "titulo": "EJE 3: Infraestructura y docentes del Bicentenario",
+        "descripcion": "Priorizar colegios en estado crítico (algoritmo de priorización), Escuelas Bicentenario, escuelas modulares de emergencia y políticas para mejor formación, evaluación y salarios docentes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%203%3A%20INFRAESTRUCTURA%20Y%20DOCENTES%20DEL%20BICENTENARIO"
+        ]
+      },
+      {
+        "titulo": "EJE 4: Programa Nacional 'Oficios del Futuro'",
+        "descripcion": "Formar técnicos en oficios resistentes a la automatización (modelo dual, becas integrales y articulación con empresas) para reducir la población de jóvenes 'ninis'.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=A%20los%20dos%20tercios%20del%20mandato%20se%20debe%20contar%20con%20servicios%20b%C3%A1sicos%20en%20todos%20los%20centros%20educativos"
+        ]
+      },
+      {
+        "titulo": "EJE 5: Excelencia en educación superior",
+        "descripcion": "Fortalecer SUNEDU, seleccionar universidades públicas para intervención intensiva, aumentar inversión en I+D y ampliar becas técnicas y STEM (Beca 18).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%205%3A%20EXCELENCIA%20EN%20EDUCACI%C3%93N%20SUPERIOR"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "ANEMIA CERO — Estrategia nacional de nutrición infantil",
+        "descripcion": "Estrategia nacional de nutrición infantil para diagnosticar, tratar y hacer seguimiento de la anemia en 0–5 años (transferencias condicionadas + personal especializado y diagnóstico).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22ANEMIA%20CERO%22"
+        ]
+      },
+      {
+        "titulo": "PERÚ ALIMENTA — Programa de alimentación digna",
+        "descripcion": "Programa de alimentación digna (Comedores Solidarios y Tarjeta Solidaria) para hogares en pobreza extrema, articulado con programas sociales y compras locales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22PER%C3%9A%20ALIMENTA%22"
+        ]
+      },
+      {
+        "titulo": "SALUD DIGNA PARA TODOS",
+        "descripcion": "Programa para articular el sistema fragmentado y fortalecer el primer nivel (Redes Integradas, historia clínica electrónica unificada, telemedicina, vacunación y salud mental).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20SALUD%20DIGNA%20PARA%20TODOS"
+        ]
+      },
+      {
+        "titulo": "PROGRAMA NACIONAL DE ATENCIÓN DOMICILIARIA (PADOMI UNIVERSAL)",
+        "descripcion": "Extensión nacional de la atención domiciliaria (visitas, entrega de medicamentos, brigadas) para adultos mayores y personas con dependencia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%20NACIONAL%20DE%20ATENCI%C3%93N%20DOMICILIARIA%20%28PADOMI%20UNIVERSAL%29"
+        ]
+      },
+      {
+        "titulo": "ADULTOS MAYORES AUTÓNOMOS Y ATENDIDOS",
+        "descripcion": "Programa integral para pensiones, atención domiciliaria y centros de cuidado que busca garantizar autonomía y cuidado de la población mayor.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=ADULTOS%20MAYORES%20AUT%C3%93NOMOS%20Y%20ATENDIDOS"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "CIUDADANÍA SEGURA — Sin temor en las calles",
+        "descripcion": "Transformar el SINASEC en un sistema de gestión territorial efectivo con poder ejecutivo, recursos asignados y resultados medibles.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22CIUDADAN%C3%8DA%20SEGURA%22%20Sin%20Temor%20en%20las%20Calles"
+        ]
+      },
+      {
+        "titulo": "EJE 1: PODER EJECUTIVO PARA COMITÉS LOCALES",
+        "descripcion": "Otorgar poder ejecutivo y presupuesto obligatorio a CODISEC/COPROSEC/CORESEC para que aprueben y ejecuten planes distritales con recursos vinculados.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201:%20PODER%20EJECUTIVO%20PARA%20COMIT%C3%89S%20LOCALES"
+        ]
+      },
+      {
+        "titulo": "EJE 2: EVALUACIÓN POR RESULTADOS",
+        "descripcion": "Indicadores obligatorios (reducción de victimización, tiempo de respuesta policial, tasa de denuncia), ranking público de comités y vinculación de resultados a incentivos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20EVALUACI%C3%93N%20POR%20RESULTADOS"
+        ]
+      },
+      {
+        "titulo": "EJE 3: SECRETARÍAS TÉCNICAS PROFESIONALIZADAS",
+        "descripcion": "Secretarías técnicas con perfil técnico certificado, estabilidad laboral (carrera pública) y capacitación avalada por SERVIR.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%203%3A%20SECRETAR%C3%8DAS%20T%C3%89CNICAS%20PROFESIONALIZADAS"
+        ]
+      },
+      {
+        "titulo": "EJE 4: SISTEMA DE INFORMACIÓN INTEGRADO",
+        "descripcion": "Plataforma digital única interoperable (CODISEC–COPROSEC–CORESEC–CONASEC) con mapas del delito actualizados en tiempo real.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%204%3A%20SISTEMA%20DE%20INFORMACI%C3%93N%20INTEGRADO"
+        ]
+      },
+      {
+        "titulo": "EJE 5: PATRULLAJE INTEGRADO EFECTIVO",
+        "descripcion": "Convenios PNP–municipalidad, integración de videovigilancia y protocolos únicos de intervención coordinada para cobertura verificable.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%205%3A%20PATRULLAJE%20INTEGRADO%20EFECTIVO"
+        ]
+      },
+      {
+        "titulo": "EJE 6: PARTICIPACIÓN CIUDADANA CON RECURSOS",
+        "descripcion": "Presupuesto participativo específico para seguridad, equipamiento para juntas vecinales y meta nacional de juntas activas equipadas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%206%3A%20PARTICIPACI%C3%93N%20CIUDADANA%20CON%20RECURSOS"
+        ]
+      },
+      {
+        "titulo": "EJE 7: RENDICIÓN DE CUENTAS EFECTIVA",
+        "descripcion": "Consultas públicas trimestrales obligatorias, sanciones por incumplimiento y portal de transparencia con indicadores por comité.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%207%3A%20RENDICI%C3%93N%20DE%20CUENTAS%20EFECTIVA"
+        ]
+      },
+      {
+        "titulo": "PROGRAMA: POLICÍA AL SERVICIO DEL CIUDADANO",
+        "descripcion": "Modernizar y descentralizar el servicio policial para ofrecer atención cercana, profesional y focalizada en prevención y protección comunitaria.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20POLIC%C3%8DA%20AL%20SERVICIO%20DEL%20CIUDADANO"
+        ]
+      },
+      {
+        "titulo": "EJE 1 (Policía): SERVICIO DE ALTA CALIDAD AL CIUDADANO",
+        "descripcion": "Estándares de trato cordial y profesional, atención prioritaria a víctimas y grupos vulnerables, evaluación de atención y medidas anticorrupción.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%201%3A%20SERVICIO%20DE%20ALTA%20CALIDAD%20AL%20CIUDADANO"
+        ]
+      },
+      {
+        "titulo": "EJE 2 (Policía): DESCENTRALIZACIÓN Y SECTORIZACIÓN",
+        "descripcion": "Dividir jurisdicción de comisarías por sectores/subsectores, asignar jefes y recursos según criterios territoriales y delito.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%202%3A%20DESCENTRALIZACI%C3%93N%20Y%20SECTORIZACI%C3%93N"
+        ]
+      },
+      {
+        "titulo": "EJE 3 (Policía): GESTIÓN DE LA INFORMACIÓN E INNOVACIÓN TECNOLÓGICA",
+        "descripcion": "Mapas del delito en tiempo real, intercambio de información PNP–gobiernos locales, centro de análisis y uso de IA para procesar datos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%203%3A%20GESTI%C3%93N%20DE%20LA%20INFORMACI%C3%93N%20E%20INNOVACI%C3%93N%20TECNOL%C3%93GICA"
+        ]
+      },
+      {
+        "titulo": "EJE 4 (Policía): COORDINACIÓN Y ARTICULACIÓN",
+        "descripcion": "Articular PNP con gobiernos locales, recuperar espacios públicos y firmar alianzas multisectoriales para la seguridad local.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%204%3A%20COORDINACI%C3%93N%20Y%20ARTICULACI%C3%93N"
+        ]
+      },
+      {
+        "titulo": "EJE 5 (Policía): SERVICIO POLICIAL INTEGRAL FOCALIZADO",
+        "descripcion": "Intervenciones integrales focalizadas (control, disuasión, prevención, investigación) adaptadas al análisis territorial.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%205%3A%20SERVICIO%20POLICIAL%20INTEGRAL%20FOCALIZADO"
+        ]
+      },
+      {
+        "titulo": "EJE 6 (Policía): CERCANÍA A LA COMUNIDAD",
+        "descripcion": "Fortalecer la relación policía–comunidad (patrullaje a pie, empoderamiento de líderes, reuniones de evaluación y enfoque preventivo).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=EJE%206%3A%20CERCAN%C3%8DA%20A%20LA%20COMUNIDAD"
+        ]
+      }
+    ]
+  },
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "diferencias": {
+      "value": "Su discurso anti-populista se alinea con la diversificación productiva y competitividad del plan.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+      ]
+    },
+    "cumplimientoPrevio": {
+      "value": "Reportes de su gestión municipal muestran enfoque en ordenamiento, pero con riesgos financieros y administrativos detectados.",
+      "source": [
+        "https://sudaca.pe/noticia/informes/la-deuda-que-george-forsyth-dejo-en-la-victoria-y-que-podria-costarle-s6-millones-al-distrito/#:~:text=La%20deuda%20que%20George%20Forsyth%20dejo%20en%20La%20Victoria%20y%20que%20podria%20costarle%20S%2F6%20millones%20al%20distrito"
+      ]
+    }
+  },
+  "controversias": {
+    "antecedentes": [
+      {
+        "titulo": "No registra antecedentes policiales conocidos.",
+        "descripcion": "No registra antecedentes policiales en las bases de datos de consulta pública.",
+        "estado": null,
+        "source": []
+      },
+      {
+        "titulo": "No registra sentencias penales firmes.",
+        "descripcion": "No registra sentencias penales firmes ni condenas penales conocidas.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "Investigación por colusión agravada en La Victoria (ampliada a 2026)",
+        "descripcion": "El Poder Judicial amplió hasta mayo de 2026 la investigación preparatoria contra Forsyth por presunta colusión agravada, relacionada con supuestos favorecimientos a empresas vinculadas a una misma familia en contrataciones municipales.",
+        "estado": "En curso (Ampliado)",
+        "source": [
+          "https://canalb.pe/noticias/judiciales/poder-judicial-extiende-investigacion-contra-forsyth-por-presunta-colusion-en-la-victoria#:~:text=El%20Poder%20Judicial%20resolvi%C3%B3%20ampliar%20hasta%20mayo%20de%202026%20la%20investigaci%C3%B3n%20preparatoria%20contra%20George%20Forsyth"
+        ]
+      },
+      {
+        "titulo": "Investigación preliminar por contratos favoreciendo a socio",
+        "descripcion": "La Primera Fiscalía Anticorrupción inició diligencias preliminares (2021) sobre presuntos contratos irregulares en la Municipalidad de La Victoria a favor de personas cercanas o socios.",
+        "estado": "Investigación preliminar",
+        "source": [
+          "https://peru21.pe/politica/george-forsyth-fiscalia-inicia-investigacion-preliminar-en-su-contra-por-contratos-de-su-amigo-en-la-victoria-nndc-noticia/#:~:text=La%20Primera%20,la%20victoria"
+        ]
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "Denuncia por violencia familiar de Vanessa Terkes",
+        "descripcion": "La denuncia por violencia psicológica/familiar presentada en 2019 fue declarada 'infundada' o archivada en sede judicial tras los trámites correspondientes.",
+        "estado": "Archivado / Infundado",
+        "source": [
+          "https://peru21.pe/espectaculos/george-forsyth-revela-denuncia-vanessa-terkes-declarada-infundada-nndc-496568-noticia/#:~:text=la%20denuncia%20por%20violencia%20familiar%20que%20interpuso%20Vanessa%20Terkes%20en%20su%20contra%20ante%20el%20Poder%20Judicial%20fue%20declarada%20%22infundada%22",
+          "https://rpp.pe/lima/actualidad/asi-fue-la-entrevista-con-la-que-vanessa-terkes-rompio-su-silencio-tras-denuncia-a-george-forsyth-audio-noticia-1200344"
+        ]
+      },
+      {
+        "titulo": "Expedientes civiles citados por JNE (2021)",
+        "descripcion": "Durante la fiscalización electoral de 2021 se detectaron menciones a procesos civiles/familiares (indemnización, violencia) que posteriormente fueron aclarados como no constitutivos de impedimento o archivados.",
+        "estado": "Aclarado / Archivado",
+        "source": [
+          "https://larepublica.pe/elecciones/2021/02/08/forsyth-podria-ser-excluido-por-omitir-informacion-sobre-procesos-judiciales-pltc",
+          "https://lalupa.pe/peru/george-forsyth-omitio-informacion-sobre-procesos-judiciales-y-podria-ser-excluido-34960"
+        ]
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Denuncias públicas de maltrato ('eres una porquería')",
+        "descripcion": "Vanessa Terkes declaró en medios haber recibido trato humillante y frases denigrantes durante su relación, lo que generó amplia cobertura mediática.",
+        "source": [
+          "https://rpp.pe/famosos/farandula/vanessa-terkes-revela-entre-lagrimas-que-george-forsyth-le-dijo-eres-una-porqueria-noticia-1201898",
+          "https://peru21.pe/espectaculos/local/vanessa-terkes-llora-revela-infierno-george-forsyth-me-dijo-vales-porqueria-483464-noticia"
+        ]
+      },
+      {
+        "titulo": "Exclusión electoral 2021 por hoja de vida",
+        "descripcion": "Fue excluido temporalmente de la contienda presidencial 2021 por omitir información sobre ingresos y empresas en su Declaración Jurada de Hoja de Vida.",
+        "source": [
+          "https://www.infobae.com/america/america-latina/2021/02/11/george-forsyth-el-candidato-que-lideraba-las-encuestas-fue-excluido-de-las-elecciones-presidenciales-en-peru"
+        ]
+      },
+      {
+        "titulo": "Polémica por uso de uniforme militar",
+        "descripcion": "Cuestionado legal y éticamente por aparecer con uniforme militar en un acto oficial con el presidente de su partido, generando debate sobre el uso político de insignias castrenses.",
+        "source": [
+          "https://caretas.pe/politica/revelan-aparicion-de-george-forsyth-con-uniforme-militar-frente-al-presidente-jose-jeri",
+          "https://peru21.pe/politica/george-forsyth-habria-vulnerado-la-ley-al-utilizar-uniforme-militar"
+        ]
+      },
+      {
+        "titulo": "Declaración sobre 'gobierno populista'",
+        "descripcion": "Afirmó: 'No queremos un gobierno populista que esté de espaldas a la población', frase que generó reacciones por la carga ideológica en el contexto electoral.",
+        "source": [
+          "https://www.infobae.com/america/america-latina/2021/04/03/george-forsyth-el-ex-futbolista-que-quiere-ser-presidente-del-peru-no-queremos-un-gobierno-populista-que-este-de-espaldas-a-la-poblacion"
+        ]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "Deuda coactiva (Los M S.A.C.)",
+        "descripcion": "Se reportaron deudas coactivas menores y estado de 'suspensión temporal' en SUNAT para empresas vinculadas (Los M S.A.C., Imka Gastro, etc.), lo cual fue observado por fiscalizadores electorales.",
+        "source": [
+          "https://elcomercio.pe/elecciones-2021/george-forsyth-jee-lo-excluye-de-las-elecciones-2021-por-omitir-informacion-en-su-hoja-de-vida-victoria-nacional-nndc-noticia",
+          "https://elcomercio.pe/politica/elecciones/george-forsyth-personero-legal-de-victoria-nacional-presento-apelacion-contra-exclusion-elecciones-2021-jee-nndc-noticia"
+        ]
+      },
+      {
+        "titulo": "Informe Contraloría: Asfalto deficiente (S/1.7 millones)",
+        "descripcion": "La Contraloría detectó pagos por S/1.7 millones en obras de asfalto que no cumplían especificaciones técnicas en La Victoria, identificando presuntas responsabilidades.",
+        "source": [
+          "https://www.gob.pe/institucion/contraloria/noticias/1235430-contraloria-detecta-pago-de-s-1-7-millones-por-asfalto-deficiente-en-la-victoria"
+        ]
+      },
+      {
+        "titulo": "Deuda y arbitraje por recolección de residuos",
+        "descripcion": "Investigaciones periodísticas señalan una deuda impaga millonaria (aprox. S/3.2 a S/6 millones con intereses) por servicios de basura durante su gestión, lo que derivó en arbitraje.",
+        "source": [
+          "https://sudaca.pe/noticia/informes/la-deuda-que-george-forsyth-dejo-en-la-victoria-y-que-podria-costarle-s6-millones-al-distrito"
+        ]
+      },
+      {
+        "titulo": "Observaciones OCI por pagos a personal de confianza",
+        "descripcion": "El OCI advirtió sobre contratos y pagos (más de S/100,000) a colaboradores cercanos (como Renzo Navarro) durante su gestión municipal.",
+        "source": [
+          "https://elcomercio.pe/politica/elecciones/george-forsyth-renzo-navarro-el-hombre-de-confianza-del-candidato-presidencial-que-recibio-mas-de-s100-mil-de-la-municipalidad-de-la-victoria-elecciones-2021-noticia"
+        ]
+      }
+    ]
+  },
+  "transparencia": {
+    "items": [
+      "Informe del JEE N° 030-2021 sobre deudas coactivas",
+      "Reporte de exclusión por omisión de información en Hoja de Vida",
+      "Portal de transparencia con indicadores propuesto en plan"
+    ],
+    "source": [
+      "https://elcomercio.pe/elecciones-2021/george-forsyth-jee-lo-excluye-de-las-elecciones-2021-por-omitir-informacion-en-su-hoja-de-vida-victoria-nacional-nndc-noticia#:~:text=segun%20la%20resolucion,hoja%20de%20vida"
+    ]
+  },
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Medio - Gestión en La Victoria y formación militar de reserva.",
+      "source": [
+        "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/"
+      ]
+    },
+    "comunicacion": {
+      "value": "Alto - Amplia presencia en redes sociales y medios.",
+      "source": ["https://web.facebook.com/GeorgeForsythSP/"]
+    },
+    "credibilidad": {
+      "value": "Bajo/Medio - Afectada por investigaciones fiscales en curso y controversias personales.",
+      "source": [
+        "https://canalb.pe/noticias/judiciales/poder-judicial-extiende-investigacion-contra-forsyth-por-presunta-colusion-en-la-victoria#:~:text=El%20Poder%20Judicial%20resolvi%C3%B3%20ampliar%20hasta%20mayo%20de%202026%20la%20investigaci%C3%B3n%20preparatoria%20contra%20George%20Forsyth"
+      ]
+    }
+  },
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 0,
+      "max": 12,
+      "descripcion": "Encuesta Ipsos 18-19 dic 2025; Forsyth está agrupado en el 12% de 'Otros'.",
+      "source": [
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf#:~:text=George%20Forsyth%20por%20Somos%20Per%C3%BA"
+      ]
+    },
+    "aprobacion": { "value": null, "source": [] },
+    "redes": {
+      "value": "Presencia activa en Facebook, Instagram, X y YouTube.",
+      "source": ["https://x.com/George_Forsyth"]
+    }
+  },
+  "innovacionYVision": {
+    "items": [
+      "Plataforma nacional de integridad con blockchain",
+      "Inteligencia Artificial para detección de corrupción en tiempo real",
+      "Uso de IA para procesamiento de datos criminalísticos en mapas del delito"
+    ],
+    "source": [
+      "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
+    ]
+  },
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "productivityLabel": "N/A",
+    "asistencia": { "porcentaje": null, "label": null, "source": null },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [],
+    "nota": "No tiene historial legislativo.",
+    "source": null
+  }
+}

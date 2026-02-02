@@ -1,10 +1,6 @@
 "use client";
 
-import type {
-  CandidateComparisonData,
-  TransparenciaData,
-  InnovacionData,
-} from "@/data";
+import type { CandidateComparisonData } from "@/data";
 import { renderTypographyListWithSource } from "./utils";
 
 interface ListComparisonLayoutProps {
@@ -31,7 +27,10 @@ export function ListComparisonLayout({
   // Handle both old format (string[]) and new format ({ items, source })
   const getListData = (
     candidate: CandidateComparisonData | null
-  ): string[] | { items: string[]; source?: string | string[] } | undefined => {
+  ):
+    | string[]
+    | { items: string[]; source?: string | string[] | null }
+    | undefined => {
     if (!candidate) return undefined;
     const data = candidate[dataKey];
 
@@ -40,7 +39,7 @@ export function ListComparisonLayout({
     }
 
     if (data && typeof data === "object" && "items" in data) {
-      return data as TransparenciaData | InnovacionData;
+      return data as { items: string[]; source?: string | string[] | null };
     }
 
     return undefined;

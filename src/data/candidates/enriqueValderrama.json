@@ -1,0 +1,699 @@
+{
+  "id": "enrique-valderrama-pena",
+  "slug": "enrique-valderrama-pena",
+  "fullName": "Pitter Enrique Valderrama Peña",
+  "shortName": "Enrique Valderrama",
+  "image": "/candidatos/enrique-valderrama.webp",
+  "color": "#D21034",
+  "party": "Partido Aprista Peruano",
+  "partyIcon": "/partidos/apra.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/enrique.valderrama.pe",
+    "tiktok": null,
+    "twitter": "https://x.com/Valderrama_En",
+    "facebook": "https://www.facebook.com/EV2026/",
+    "web": null
+  },
+  "perfilGeneral": {
+    "edad": {
+      "value": null,
+      "source": []
+    },
+    "nacimiento": {
+      "value": null,
+      "source": []
+    },
+    "lugar": {
+      "value": null,
+      "source": []
+    },
+    "nivelEducativo": {
+      "value": [
+        "Universidad de San Martín de Porres - Bachiller en Derecho – 2022",
+        "Universidad de la Rioja – Maestría – Sin concluirse"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://lpderecho.pe/enrique-valderrama-convierte-oficialmente-candidato-presidencial-apra/#:~:text=Segun%20la,2022",
+        "https://www.linkedin.com/in/enrique-valderrama-pe%C3%B1a/#:~:text=civil-,Universidad,Rioja"
+      ]
+    },
+    "profesion": {
+      "value": ["Bachiller en Derecho"],
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "partidoActual": {
+      "value": "Partido Aprista Peruano",
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/#:~:text=Partido%20Aprista%20Peruano"
+      ]
+    },
+    "cambiosDePartido": {
+      "value": "0",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/pitter-enrique-valderrama-pe%C3%B1a_historial-partidario_aEcgCC5qfUgc6+@0ElOxMA==cC"
+      ]
+    },
+    "historialPartidos": [
+      {
+        "ano": "2010",
+        "partido": "Partido Aprista Peruano",
+        "icono": "/partidos/apra.png",
+        "source": [
+          "https://infogob.jne.gob.pe/Politico/FichaPolitico/pitter-enrique-valderrama-pe%C3%B1a_historial-partidario_aEcgCC5qfUgc6+@0ElOxMA==cC"
+        ]
+      }
+    ]
+  },
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "15 años",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/pitter-enrique-valderrama-pe%C3%B1a_historial-partidario_aEcgCC5qfUgc6+@0ElOxMA==cC",
+        "https://larepublica.pe/politica/2025/12/01/enrique-valderrama-quien-es-el-joven-abogado-que-representara-al-apra-en-las-elecciones-2026-hnews-28412#:~:text=Valderrama%20es%20abogado%20y%20miembro%20activo%20del%20APRA%20desde%202010"
+      ]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Militante (2010 - 2021)",
+        "Comisión Política Nacional - Miembro Designado (21/07/2021 - 07/09/2021)",
+        "Fundador (07/09/2022 - Actualidad)",
+        "Miembro de la Comisión Política (26/05/2025 - Actualidad)"
+      ],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/pitter-enrique-valderrama-pe%C3%B1a_historial-partidario_aEcgCC5qfUgc6+@0ElOxMA==cC",
+        "https://rpp.pe/politica/elecciones/elecciones-2026-conoce-a-enrique-valderrama-el-candidato-presidencial-del-apra-tras-ganar-las-primarias-noticia-1666053#:~:text=Se%20registr%C3%B3%20en%20marzo%20de%202010%20y%20mantuvo%20su%20afiliaci%C3%B3n%20hasta%20septiembre%20de%202021",
+        "https://elecciones2026.pe/about/apra/#:~:text=El%2021%20de%20julio,nacional"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2026 → Candidato Presidencial (Ganador de primarias)"],
+      "source": [
+        "https://rpp.pe/politica/elecciones/elecciones-2026-conoce-a-enrique-valderrama-el-candidato-presidencial-del-apra-tras-ganar-las-primarias-noticia-1666053"
+      ]
+    }
+  },
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 1,
+      "detalle": {
+        "values": [
+          "Gerente general - Entidad Técnica - Programa Mi Vivienda (2015 - 2023)"
+        ],
+        "source": [
+          "https://www.linkedin.com/in/enrique-valderrama-pe%C3%B1a#:~:text=Gerente%20general,vivienda"
+        ]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 4,
+      "detalle": {
+        "values": [
+          "Sub Gerente / Apoderado - PS Innova S.A.C. (2018 - 2023)",
+          "Sub Gerente / Gerente - Contratistas Generales Saalino S.A.C. (2015 - 2019)",
+          "Gerente general - Global Security Law S.A.C. (2015 - 2023)",
+          "Analista Global - Global Security Law S.A.C. (2023 - 2025)"
+        ],
+        "source": [
+          "https://www.datosperu.org/empresa-ps-innova-sac-20600413504.php#:~:text=APODERADO%20VALDERRAMA%20PE%C3%91A%20PITTER%20ENRIQUE%20(DESDE:%2019/12/2018)",
+          "https://www.studocu.com/pe/document/universidad-tecnologica-del-peru/planeamiento-y-control-de-operaciones/acuerdo-municipal-048-huayao/95773992#:~:text=Pitter%20Enrique%20Valderrama%20Pe%C3%B1a,%20Gerente%20General%20de%20la%20empresa%20CONTRATISTAS%20GENERALES%20SAALINO.%20SAC",
+          "https://www.linkedin.com/in/enrique-valderrama-pe%C3%B1a#:~:text=Analista%20legal"
+        ]
+      }
+    },
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+  },
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": "Aprismo / Centro-Izquierda",
+      "descripcion": "El partido se define como un movimiento de izquierda democrática (aprismo), que busca la justicia social a través de la democracia y la libertad (\"pan con libertad\").",
+      "source": ["https://es.wikipedia.org/wiki/Partido_Aprista_Peruano"]
+    },
+    "economia": {
+      "sintesis": "Economía social de mercado",
+      "descripcion": "Estado regulador y promotor que protege y promueve la inversión privada; impulsa la formalización de la economía y de las MYPES mediante reformas tributarias, fortalecimiento de SUNAT y facturación electrónica; promueve empleo formal y reactivación productiva; y mantiene la disciplina fiscal como ancla macroeconómica (metas de déficit y aumento gradual de la presión tributaria).",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=en%20el%20marco%20de%20una%20econom%C3%ADa%20social%20de%20mercado%2C%20el%20Estado%20regular%C3%A1%20la%20econom%C3%ADa"
+      ]
+    },
+    "educacion": {
+      "sintesis": "Educación pública inclusiva",
+      "descripcion": "Garantizar una educación pública, gratuita, inclusiva y de acceso universal mediante evaluación y mejora de la infraestructura educativa (planificación de locales tipo, saneamiento físico-legal y proyectos regionales/locales), ampliación de la conectividad escolar (ampliar el programa \"Todos Conectados\" del MTC y promover uso de TIC), fortalecimiento de estándares y certificación de escuelas para elevar la calidad, erradicación del analfabetismo estricto y reducción del analfabetismo funcional, y facilidades de crédito universitario para estudios de posgrado y científicos.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=La%20educaci%C3%B3n%20p%C3%BAblica%20ser%C3%A1%20gratuita%2C%20inclusiva%20y%20de%20acceso%20universal",
+        "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Ampliar%20el%20programa%20%E2%80%9CTodos%20Conectados%E2%80%9D%20del%20MTC%2C%20que%20brinda%20acceso%20a%20internet%20a%20instituciones%20educativas%20p%C3%BAblicas."
+      ]
+    },
+    "salud": {
+      "sintesis": "Sistema integrado de salud",
+      "descripcion": "Promover un Sistema Integrado de Salud con financiador único y universal que reduzca la fragmentación, fortalezca la atención primaria y preventiva, amplíe la cobertura y garantice acceso equitativo a medicamentos y servicios.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Se%20requiere%20la%20implementaci%C3%B3n%20urgente%20de%20un%20Sistema%20Integrado%20de%20Salud%20con%20un%20financiador%20%C3%BAnico%20y%20universal"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": null,
+      "source": []
+    },
+    "aborto": {
+      "sintesis": "En contra",
+      "descripcion": "\"El asunto del aborto, por ejemplo, estoy en contra… Salvo lo que está en marco de la ley que es el aborto terapeuta en el caso de peligro de muerte de la madre… [En cualquier otro tema] no, la verdad que no\" — Enrique Valderrama (14 de diciembre del 2025) en una Entrevista a Giuliana Caccia en \"Sin Ofender\" (Minuto: 28:50).",
+      "source": ["https://www.facebook.com/watch/?v=2309753066192916"]
+    },
+    "seguridad": {
+      "sintesis": "Mano dura y fortalecimiento de investigación criminal",
+      "descripcion": "Propone políticas de 'mano dura' contra la criminalidad, incrementando el personal en investigación criminal y estableciendo módulos de flagrancia para una justicia rápida.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+      ]
+    },
+    "ambiente": {
+      "sintesis": "Formalización y regulación ambiental",
+      "descripcion": "Prioriza la formalización de la pequeña minería y la revisión de normas vinculadas a economías ilegales; propone marcos regulatorios diferenciados, centros demostrativos (planetGOLD) y metas para eliminar el uso de mercurio en minería formal, además de medidas para inclusión comunitaria y mitigación de impactos ambientales; no obstante, el Plan no desarrolla un programa ambiental sectorial exhaustivo y detallado.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Formalizar%20los%20mineros%20artesanales%2C%20peque%C3%B1os%20y%20medianos"
+      ]
+    },
+    "reformaPolitica": {
+      "sintesis": "Reforma constitucional-electoral",
+      "descripcion": "\"Nosotros vamos a revisar toda la normatividad en todas las materias que este Congreso ha emitido —por lo menos esa va a ser la actitud de la bancada aprista en el Parlamento— y evidentemente cualquier ley que haya favorecido a algún tipo de minería ilegal o algún tipo de esquema, sin duda va a ser revisada, reformada y eliminada.\"",
+      "source": [
+        "https://rpp.pe/politica/elecciones/enrique-valderrama-candidato-presidencial-del-apra-nosotros-vamos-a-revisar-todas-las-normas-pro-crimen-noticia-1668917#:~:text=Nosotros%20vamos%20a%20revisar%20toda%20la%20normatividad%20en%20todas%20las%20materias%20que%20este%20Congreso%20ha%20emitido"
+      ]
+    }
+  },
+  "propuestasPrincipales": {
+    "institucional": [
+      {
+        "titulo": "Reforma constitucional y ordenamiento territorial",
+        "descripcion": "Promover cambios constitucionales/legislativos para mejorar gobernabilidad (p. ej. presentación programática en lugar de voto de investidura) y reorganizar el ordenamiento territorial (reducción de regiones) para planificación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Implementar%20un%20nuevo%20ordenamiento%20territorial%20del%20país%20al%202031%2C%20reduciendo%20el%20número%20de%20regiones%20a%2015"
+        ]
+      },
+      {
+        "titulo": "Reforma del Tribunal Constitucional y estabilidad jurisdiccional",
+        "descripcion": "Modificar estructura y mandatos para mayor independencia y rapidez en resoluciones.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Reformar%20la%20estructura%20y%20el%20régimen%20de%20los%20miembros%20del%20Tribunal%20Constitucional%20para%20permitir%20la%20Conformación%20de%20Subsalas"
+        ]
+      },
+      {
+        "titulo": "Profesionalización del servicio civil y ejecución pública",
+        "descripcion": "Fortalecer Ley SERVIR, profesionalizar la planilla pública y establecer metas de ejecución presupuestaria y evaluación de la calidad del gasto.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Profesionalizar%20el%20servicio%20civil"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento del Poder Judicial y modernización de concursos",
+        "descripcion": "Agilizar concursos, explorar cortes macroregionales y usar tecnología/IA para descongestionar la carga procesal.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Descongestión%20judicial%3A%20uso%20de%20tecnología%20e%20inteligencia%20artificial%20para%20acelerar%20procesos"
+        ]
+      },
+      {
+        "titulo": "Investigación, desarrollo tecnológico y ciberseguridad",
+        "descripcion": "Invertir en I+D, cerrar brechas digitales, y proteger sistemas estratégicos con protocolos de ciberseguridad.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=El%20100%20%25%20de,ciberseguridad"
+        ]
+      },
+      {
+        "titulo": "Defensa y autonomía industrial",
+        "descripcion": "Incentivar coproducción y transferencia tecnológica en defensa, con cláusulas de compensación industrial.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=contribuyendo%20al%20fortalecimiento%20de%20la%20industria%20nacional%20de%20defensa%20y%20a%20la%20reducción%20de%20la%20dependencia%20tecnológica%20externa",
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Reforma tributaria",
+        "descripcion": "Implementación de la facturación electrónica universal y un control efectivo de la economía digital. Las exoneraciones tributarias regresivas serán eliminadas gradualmente y se establecerá un impuesto a las sobreganancias mineras, cuyos ingresos se destinarán directamente al FEF para robustecer el ahorro nacional.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=implementación%20de%20la%20facturación%20electrónica%20universal%20y%20un%20control%20efectivo%20de%20la%20economía%20digital.%20Las%20exoneraciones%20tributarias%20regresivas%20serán%20eliminadas%20gradualmente%20y%20se%20establecerá%20un%20impuesto%20a%20las%20sobreganancias%20mineras%2C%20cuyos%20ingresos%20se%20destinarán%20directamente%20al%20FEF%20para%20robustecer%20el%20ahorro%20nacional"
+        ]
+      },
+      {
+        "titulo": "Reforma laboral",
+        "descripcion": "Se aprobará un Código Laboral unificado y moderno que otorgue predictibilidad al mercado y garantice derechos plenos. Se automatizará la actualización del sueldo mínimo y se fortalecerá la SUNAFIL para combatir la informalidad laboral de manera efectiva. Paralelamente, se crearán incentivos para la capacitación laboral y se fomentará la empleabilidad formal.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Se%20aprobará%20un%20Código%20Laboral%20unificado%20y%20moderno%20que%20otorgue%20predictibilidad%20al%20mercado%20y%20garantice%20derechos%20plenos.%20Se%20automatizará%20la%20actualización%20del%20sueldo%20mínimo%20y%20se%20fortalecerá%20la%20SUNAFIL%20para%20combatir%20la%20informalidad%20laboral%20de%20manera%20efectiva"
+        ]
+      },
+      {
+        "titulo": "Ejecución presupuestaria",
+        "descripcion": "Ejecución presupuestaria obligatorias y progresivas: al menos el 85% para 2027 y el 95% para 2031. Implementaremos sistemas de evaluación constante sobre la calidad del gasto público, garantizando transparencia total y la continuidad de los proyectos de inversión, evitando que los cambios políticos paralicen el desarrollo de la infraestructura nacional.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=ejecución%20presupuestaria%20obligatorias%20y%20progresivas%3A%20al%20menos%20el%2085%25%20para%202027%20y%20el%2095%25%20para%202031.%20Implementaremos%20sistemas%20de%20evaluación%20constante%20sobre%20la%20calidad%20del%20gasto%20público"
+        ]
+      },
+      {
+        "titulo": "RED PRODUCE",
+        "descripcion": "Crear la RED PRODUCE - Red de Centros de Innovación Productiva Regionales. Instalar 25 centros en todas las regiones del país en favor de las MYPE.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Crear%20la%20RED,Regionales",
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Titulación y urbanismo",
+        "descripcion": "Actualizar el catastro nacional; reestructurar COFOPRI priorizando ventanilla única, simplificación administrativa y virtualidad de trámites; aumentar títulos otorgados (meta 250.000 para 2026–2031) y priorizar electrificación y acceso a agua potable.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Otorgar%20títulos%20de%20propiedad%20y%20regularizar%20catastros%20nacionales.%20Actualizar%20el%20catastro%20nacional.%20Reestructuración%20de%20COFOPRI%2C%20priorizando%20Ventanillas%20Únicas%2C%20simplificación%20administrativa%20y%20virtualidad%20de%20trámites"
+        ]
+      },
+      {
+        "titulo": "Sistemas e interoperabilidad",
+        "descripcion": "Sustentar dicho sistema en interoperabilidad y un Registro Único de Hogares en tiempo real; fortalecer la rectoría (fusión MIDIS–MIMP), articular programas sociales con salud y educación, focalización moderna y gestión por resultados; universalizar guarderías y cuidado temprano (integradas a controles de salud, nutrición y protección).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Implementar%20el%20Sistema%20Informatico%20Nacional%20Integrado%20de%20Desarrollo%20e%20Inclusión%20Social%2C%20sustentando%20en%20la%20Interoperabilidad%20y%20un%20Registro%20Único%20de%20Hogares%20en%20tiempo%20real"
+        ]
+      },
+      {
+        "titulo": "Protección y rehabilitación",
+        "descripcion": "Fortalecer mecanismos de denuncia y protección a víctimas; ampliar servicios especializados (psicología, asistencia social y ayuda legal); incluir un programa nacional de rehabilitación de agresores; establecer metas cuantificadas (p. ej. reducción de víctimas y cobertura de atención).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Reducir%20de%20manera%20sostenida%20la%20violencia%20familiar%20y%20sexual%20mediante%20políticas%20integrales%20de%20prevención%2C%20atención%20y%20sanción"
+        ]
+      },
+      {
+        "titulo": "Cultura y turismo",
+        "descripcion": "Recuperar y potenciar el turismo con planes de infraestructura y promoción sectorial; fortalecer la memoria nacional (AGN/BNP) mediante modernización y digitalización del Archivo y Biblioteca Nacional; programas de acceso a la lectura y recuperación de teatros regionales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Construccion%20de%20Museos,nacional"
+        ]
+      },
+      {
+        "titulo": "Reforma deportiva",
+        "descripcion": "Modificar la normativa para poner énfasis en la recreación, la educación física y el deporte masivo (hacer del deporte una política pública con metas de cobertura y participación ciudadana).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Reestructurar%20el%20Instituto%20Peruano%20de%20Deporte.%20Modificar%20la%20normativa%20dando%20énfasis%20a%20la%20recreación%2C%20educación%20física%20y%20el%20deporte",
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Política forestal",
+        "descripcion": "Crear el Centro Nacional de Plantaciones Forestales Comerciales adscrito al MIDAGRI y un Fondo Nacional Forestal que combine incentivos tributarios, créditos y financiamiento climático internacional.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Crear%20un%20Fondo%20Nacional%20Forestal%20que%20combine%20incentivos%20tributarios%2C%20créditos%20y%20financiamiento%20climático%20internacional"
+        ]
+      },
+      {
+        "titulo": "Matriz energética",
+        "descripcion": "La matriz energética peruana migrará hacia las energías renovables no convencionales. La riqueza geográfica y la diversidad biológica no serán amenazadas por el crecimiento socioeconómico. Las especies en peligro o vulnerabilidad serán protegidas adecuadamente. El patrimonio arqueológico,cultural, artístico e histórico de la nación se pondrá en valor.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=La%20matriz%20energética%20peruana%20migrará%20hacia%20las%20energías%20renovables%20no%20convencionales"
+        ]
+      },
+      {
+        "titulo": "Transporte eléctrico y descarbonización urbana",
+        "descripcion": "Implementar una red integrada de transporte público eléctrico en las principales ciudades (corredores troncales) y un plan de incentivos para la renovación gradual de flotas para reducir dependencia de combustibles fósiles.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Implementar%20una%20red%20integrada%20de%20transporte%20público%20eléctrico%20en%20las%2010%20principales%20ciudades%20del%20Perú"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento institucional ambiental (MINAM y convenios internacionales)",
+        "descripcion": "Ampliar capacidades del Ministerio del Ambiente para aplicar acuerdos internacionales (Convenio de Minamata sobre mercurio; Convenio de Basilea) y coordinar fiscalización ambiental (control de mercurio, remediación de sitios contaminados).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Asimismo,Minamata"
+        ]
+      },
+      {
+        "titulo": "Gestión de residuos electrónicos (RAEE) y responsabilidad ampliada del productor (RAP)",
+        "descripcion": "Programas y marcos normativos para Ciclos Sostenibles (SCYCLE) y tratamiento de RAEE bajo esquemas de RAP para mitigar impactos de desechos tecnológicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Impulsaremos%20politicas%20y,Productor"
+        ]
+      },
+      {
+        "titulo": "Sistema integrado de ordenamiento territorial y concesiones",
+        "descripcion": "Crear un Sistema Integrado de Ordenamiento Territorial y Concesiones (incluye concesiones mineras) para ordenar uso del suelo, equilibrar conservación y actividades extractivas, y reducir conflictos territoriales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Creacion%20de%20un%20Sistema%20Integrado%20de%20Ordenamiento%20Territorial%20y%20Concesiones%20Mineras"
+        ]
+      },
+      {
+        "titulo": "Protección de biodiversidad y áreas naturales",
+        "descripcion": "Estrategias para conservación rigurosa de la biodiversidad (refuerzo de áreas protegidas, corredores biológicos y manejo sostenible), articuladas con la política forestal y manejo territorial.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Equilibrar%20con%20rigor%20la%20conservación%20del%20medio%20ambiente%20con%20el%20desarrollo%20de%20actividades%20extractivas"
+        ]
+      },
+      {
+        "titulo": "Mecanismos financieros verdes",
+        "descripcion": "Creación de fondos/incentivos (Fondo Nacional Forestal, créditos verdes, instrumentos de financiamiento climático) para financiar plantaciones, conservación y adaptación al cambio climático.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Fondo%20Nacional%20Forestal%20que%20combine%20incentivos%20tributarios%2C%20créditos%20y%20financiamiento%20climático%20internacional"
+        ]
+      },
+      {
+        "titulo": "Agua y embalses para regulación",
+        "descripcion": "Integrar proyectos de embalses y regulación hídrica (vinculados a hidroenergía y riego eficiente) como parte de la planificación territorial y adaptación climática.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Embalses%20de%20regulación",
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Reforma de la Ley General de Educación y modernización normativa",
+        "descripcion": "Proponer la reforma integral de la Ley General de Educación y de la Ley de Educación Básica Regular para actualizar marcos legales, gobernanza y responsabilidades (incluye potenciar la Política Educativa Nacional a largo plazo).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Reforma%20de%20la%20Ley%20General%20de%20Educación%20y%20de%20la%20Ley%20de%20Educación%20Básica%20Regular"
+        ]
+      },
+      {
+        "titulo": "Actualización curricular integral",
+        "descripcion": "Actualizar programas curriculares en los tres niveles de la EBR (énfasis en pensamiento crítico, formación científica y competencias digitales), con mecanismos de implementación y evaluación periódica.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Actualizar%20los%20Programas%20curriculares%20de%20los%20tres%20niveles%20de%20la%20EBR"
+        ]
+      },
+      {
+        "titulo": "Cumplimiento de la Carrera Pública Magisterial y profesionalización docente",
+        "descripcion": "Garantizar el cumplimiento irrestricto de la carrera pública magisterial (evaluaciones, formación continua, incentivos por desempeño) y programas de formación y acompañamiento para docentes rurales y unidocentes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Cumplimiento%20irrestricto%20de%20la%20Ley%20de%20la%20Carrera%20Pública%20Magisterial"
+        ]
+      },
+      {
+        "titulo": "Meta de acreditación escolar y proyectos educativos regionales/locales",
+        "descripcion": "Meta de que 70% de escuelas públicas obtengan o mantengan acreditación/certificación en los próximos 3 años; ejecutar 100% de proyectos educativos regionales y 90% de proyectos educativos locales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Lograr%20que%20el%2070%25%20de%20las%20escuelas%20públicas%20obtengan%20o%20mantengan%20una%20acreditación%20y%20certificación%20vigente%20en%20los%20próximos%203%20años"
+        ]
+      },
+      {
+        "titulo": "Saneamiento físico-legal y reducción de unidocentes",
+        "descripcion": "Metas concretas: saneamiento físico-legal del 50% de las instituciones (hacia 2026) y plan para reducir el alto número de centros unidocentes (cerca de 19,466 actualmente), mediante reordenamiento escolar y proyectos de infraestructura regionales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Lograr%20contar%20con%20el%20saneamiento%20físico%20legal%20del%2050%25%20de%20las%20instituciones%20educativas%20con%20las%20que%20se%20cuentan%20al%202026"
+        ]
+      },
+      {
+        "titulo": "Programas intersectoriales de bienestar escolar",
+        "descripcion": "Implementar acciones integradas (salud mental, salud bucal, nutrición y protección) que soporten el aprendizaje y la permanencia escolar.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Implementar%20programas%20intersectoriales%20que%20brinden%20soporte%20al%20bienestar%20del%20alumnado.%20(Salud%20mental%2C%20salud%20bucal%2C%20nutrición%2C%20entre%20otros)"
+        ]
+      },
+      {
+        "titulo": "Metas de aprendizaje y evaluación externa (PISA u otras)",
+        "descripcion": "Compromiso de mejorar en ~30% los resultados en pruebas nacionales e internacionales y elevar comprensión lectora y desempeño en matemáticas/ciencias según metas cuantificadas del plan.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Mejorar%20en%20un%2030%25%20los%20resultados%20del%20sistema%20educativo%20en%20pruebas%20nacionales%20e%20internacionales%20(como%20PISA)"
+        ]
+      },
+      {
+        "titulo": "Reducción de unidocentes",
+        "descripcion": "Reducir el número de centros unidocentes ubicados básicamente en la zona rural.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Reducir%20el%20número%20de%20centros%20unidocentes"
+        ]
+      },
+      {
+        "titulo": "Guarderías universales",
+        "descripcion": "Universalización de guarderías y cuidado temprano para la primera infancia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Universalización%20de%20guarderías%20y%20cuidado%20temprano%20para%20la%20primera%20infancia",
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Ley de atención universal / Ley Marco de Aseguramiento",
+        "descripcion": "Propuesta de marco legal para institucionalizar la atención universal y ordenar el aseguramiento en salud (garantizar financiamiento y prestaciones homogéneas).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Ley%20Marco%20de%20Aseguramiento%20en%20Salud"
+        ]
+      },
+      {
+        "titulo": "Reestructuración de micro-redes y fortalecimiento del primer nivel",
+        "descripcion": "Reorganizar las micro-redes de salud del primer nivel para mejorar cobertura territorial y capacidad resolutiva; construcción de los 1.976 establecimientos faltantes y reducción de brechas en hospitales e institutos especializados.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Ley%20de%20atención%20universal%20en%20salud"
+        ]
+      },
+      {
+        "titulo": "Programa 'Pronta Atención en Salud'",
+        "descripcion": "Crear un programa nacional para reducir esperas y colas (meta de disminución significativa de colas/citas en segundo y tercer nivel), agilizar atención y mejorar flujo de pacientes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Creación%20del%20programa%20%E2%80%9CPronta%20atención%20en%20salud%E2%80%9D"
+        ]
+      },
+      {
+        "titulo": "Sistema integrado de información en salud (listado nominal)",
+        "descripcion": "Implementar un sistema único de información con listado nominal de usuarios para seguimiento clínico, transparencia del gasto y evaluación de resultados.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Sistema%20integrado%20de%20información%20en%20salud%20con%20listado%20nominal%20de%20usuarios"
+        ]
+      },
+      {
+        "titulo": "Digitalización operacional: papel-cero, IA y telemedicina ampliada",
+        "descripcion": "Adopción de expediente electrónico, telemedicina, inteligencia artificial y automatización para gestionar citas, historia clínica y teleconsulta en zonas dispersas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Implementar%20el%20uso%20de%20las%20tecnologías%20de%20la%20información%3A%20Telemedicina%2C%20inteligencia"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de recursos humanos",
+        "descripcion": "Incrementar plantillas de profesionales (meta de aumento porcentual en profesionales de salud), capacitación especializada, redistribución equitativa y estrategias para retener talento en zonas rurales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=los%20recursos%20humanos%20serán%20distribuidos%20equitativamente"
+        ]
+      },
+      {
+        "titulo": "Compras estratégicas y Asociaciones Público-Privadas (PPP)",
+        "descripcion": "Promover compras agregadas, alianzas y contratos de PPP para garantizar suministro sostenido de medicamentos, insumos y servicios, reducir costos y mejorar disponibilidad.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Promoción%20e%20impulso%20de%20contratos%20de%20Asociación,Privada"
+        ]
+      },
+      {
+        "titulo": "Control de enfermedades crónicas",
+        "descripcion": "Programas concretos para detección temprana, manejo y disminución de enfermedades crónicas que contribuyan a reducir morbilidad y gasto hospitalario.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Disminución%20y%20control%20de%20enfermedades%20crónicas",
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Aumentar personal especializado en investigación criminal",
+        "descripcion": "Incrementar en ~30% el número de suboficiales dedicados a investigación criminal para cerrar la brecha de especialidad en la PNP.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=aumentar%20en%20un%2030%25%20el%20número%20de%20suboficiales%20dedicados%20a%20investigación%20criminal"
+        ]
+      },
+      {
+        "titulo": "Reducir tiempos de investigación preliminar",
+        "descripcion": "Meta de reducir en un 40% el tiempo de investigación preliminar en delitos complejos, para agilizar resultados y persecución penal.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Reducción%20del%20tiempo%20de%20investigación%20preliminar%20en%20delitos%20complejos%20en%20un%2040%25"
+        ]
+      },
+      {
+        "titulo": "Instalación masiva de módulos de flagrancia",
+        "descripcion": "Despliegue de módulos de flagrancia (meta: 2.000 módulos en zonas de alta criminalidad) para acelerar detenciones, procesos y descongestionar tribunales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=2000%20módulos%20de%20flagrancia%20y%20seguridad%20ciudadana%20en%20zonas%20de%20alta%20criminalidad"
+        ]
+      },
+      {
+        "titulo": "Fortalecer el binomio Fiscalía–PNP y capacidades investigativas",
+        "descripcion": "Mejorar coordinación operativa entre Fiscalía y PNP, incluyendo procedimientos de allanamiento, interceptaciones, capturas e incautaciones, y agilizar procuración de condenas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Fortalecer%20el%20binomio%20fiscalía%20PNP%20en%20la%20investigación%20y%20procuración%20de%20condenas"
+        ]
+      },
+      {
+        "titulo": "Operativos integrales contra economías ilegales",
+        "descripcion": "Políticas y operaciones interinstitucionales para desarticular minería ilegal, tala y narcotráfico, priorizando el desmantelamiento de las economías ilícitas que financian el crimen organizado.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=la%20minería%20ilegal%20será%20erradicada%20de%20manera%20frontal"
+        ]
+      },
+      {
+        "titulo": "Apoyo territorial y control fronterizo con Fuerzas Armadas",
+        "descripcion": "Fortalecer control fronterizo y uso coordinado de Fuerzas Armadas en apoyo a la seguridad en zonas remotas para prevenir ilícitas transnacionales, junto a aumento de efectivos y mejores condiciones laborales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Las%20Fuerzas%20Armadas%20asumirán%20la%20seguridad%20fronteriza"
+        ]
+      },
+      {
+        "titulo": "Prevención comunitaria, rehabilitación y reinserción",
+        "descripcion": "Programas de prevención local (municipal y comunitaria), educación y reinserción para reducir factores de riesgo y complementar la respuesta punitiva.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Ampliar%20la%20capacidad%20penitenciaria%20y%20fortalecer%20los%20programas%20de%20control%20interno%20y%20resocialización%20efectiva"
+        ]
+      },
+      {
+        "titulo": "Modernización tecnológica e inteligencia forense",
+        "descripcion": "Inversión en inteligencia policial, forense digital, sistemas de información criminal e interoperabilidad entre PNP, Fiscalía y Poder Judicial para mejorar la eficacia investigativa.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=Dotarla%20de%20Dirección%20de%20Inteligencia%2C%20Operaciones%20Tácticas%2C%20Equipo%20Forense%20Digital"
+        ]
+      },
+      {
+        "titulo": "Medidas puntuales contra el hacinamiento penitenciario",
+        "descripcion": "(detalle del diagnóstico del Plan) Reconoce la sobrepoblación carcelaria: capacidad ~41,764 vs población intramuros ~101,302 (INPE 2025); por tanto, propone deshacinamiento, control interno, y fortalecer programas de resocialización para evitar que penales funcionen como centros de operación criminal.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf#:~:text=la%20capacidad%20de%20albergue%20del%20sistema%20carcelario%20peruano,302",
+          "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+        ]
+      }
+    ]
+  },
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+      ]
+    },
+    "diferencias": {
+      "value": "No se registran diferencias significativas conocidas.",
+      "source": []
+    },
+    "cumplimientoPrevio": {
+      "value": null,
+      "source": []
+    }
+  },
+  "controversias": {
+    "antecedentes": [
+      {
+        "titulo": "Mención en parte policial por presunto hurto (2012)",
+        "descripcion": "Figura en un parte policial de junio de 2012 como sospechoso del presunto hurto de una laptop y un televisor, señalado por un excompañero. Esta mención no derivó en sentencia penal conocida y el candidato afirma no tener antecedentes.",
+        "estado": "Mención policial (Sin sentencia)",
+        "source": [
+          "https://larepublica.pe/politica/2025/12/01/enrique-valderrama-candidato-del-apra-fue-acusado-en-el-hurto-de-una-laptop-y-un-televisor-en-el-2012-hnews-11717#:~:text=de%20acuerdo%20con,caso"
+        ]
+      },
+      {
+        "titulo": "No registra antecedentes judiciales ni penales vigentes",
+        "descripcion": "Según certificados oficiales del Poder Judicial y el INPE emitidos en diciembre de 2025, no registra antecedentes penales ni judiciales vigentes.",
+        "estado": "Limpio",
+        "source": [
+          "https://www.facebook.com/AlianzaPopularRevolucionariaAmericana/posts/pfbid0iZxVC3s35ErdDGt3o1f7AcsXfSD4GYyM1K7G7prG2sQV9wGa7SwLpzQub2cBkvYPl"
+        ]
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "No registra procesos judiciales en curso conocidos",
+        "descripcion": "No registra procesos judiciales en curso conocidos.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosArchivados": [],
+    "declaraciones": [
+      {
+        "titulo": "Críticas internas por conformación de listas",
+        "descripcion": "Tras las elecciones internas del APRA, hubo cuestionamientos sobre la inclusión de invitados y el manejo de listas ('dedocracia'), a lo cual Valderrama respondió defendiendo la legalidad del proceso.",
+        "source": [
+          "https://www.infobae.com/peru/2025/12/27/enrique-valderrama-candidato-presidencial-del-apra-niega-irregularidades-y-defiende-inclusion-de-invitados-en-listas#:~:text=Las%20declaraciones%20del%20candidato,del%20partido"
+        ]
+      }
+    ],
+    "observaciones": [
+      {
+        "descripcion": "Su liderazgo ha estado marcado por una fuerte confrontación con facciones tradicionales del partido (como la de Jorge del Castillo), generando tensiones públicas sobre la legitimidad de las listas parlamentarias y la renovación generacional del aprismo.",
+        "source": [
+          "https://panamericana.pe/politica/460007-nuevo-rostro-apra-enrique-valderrama-derrota-velasquez-quesquen-castillo"
+        ]
+      }
+    ]
+  },
+  "transparencia": {
+    "items": [
+      "Certificado de Antecedentes Policiales",
+      "Certificado de Antecedentes Penales",
+      "Certificado de Antecedentes Judiciales"
+    ],
+    "source": [
+      "https://www.facebook.com/AlianzaPopularRevolucionariaAmericana/posts/pfbid0iZxVC3s35ErdDGt3o1f7AcsXfSD4GYyM1K7G7prG2sQV9wGa7SwLpzQub2cBkvYPl"
+    ]
+  },
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Alto - 'Nuevo rostro' del APRA tras derrotar a facciones tradicionales.",
+      "source": [
+        "https://panamericana.pe/politica/460007-nuevo-rostro-apra-enrique-valderrama-derrota-velasquez-quesquen-castillo#:~:text=nuevo%20rostro%20apra%20enrique%20valderrama%20derrota%20velasquez%20quesquen%20castillo"
+      ]
+    },
+    "comunicacion": {
+      "value": "Alto - Vocero activo con presencia en medios nacionales y redes sociales.",
+      "source": ["https://x.com/Valderrama_En"]
+    },
+    "credibilidad": {
+      "value": "Medio - En proceso de consolidación ante electorado joven.",
+      "source": []
+    }
+  },
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 0,
+      "max": 0,
+      "descripcion": "Ipsos (diciembre 2025): Agrupado en 'Otros' (12% colectivo). No desglosado individualmente.",
+      "source": [
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf#:~:text=Enrique%20Valderrama%20por%20Partido%20Aprista%20Peruano"
+      ]
+    },
+    "aprobacion": {
+      "value": null,
+      "source": []
+    },
+    "redes": {
+      "value": "Presencia activa con enfoque en renovación partidaria (EV2026).",
+      "source": [
+        "https://x.com/Valderrama_En",
+        "https://www.facebook.com/EV2026/",
+        "https://www.instagram.com/enrique.valderrama.pe"
+      ]
+    }
+  },
+  "innovacionYVision": {
+    "items": [
+      "Facturación electrónica universal",
+      "Migración a energías renovables no convencionales",
+      "Uso de IA para descongestión judicial"
+    ],
+    "source": [
+      "https://mpesije.jne.gob.pe/docs/4d581919-b090-43d4-89e4-e284fde587b7.pdf"
+    ]
+  },
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "productivityLabel": "N/A",
+    "asistencia": {
+      "porcentaje": null,
+      "label": null,
+      "source": null
+    },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [],
+    "nota": "No tiene historial legislativo",
+    "source": null
+  }
+}

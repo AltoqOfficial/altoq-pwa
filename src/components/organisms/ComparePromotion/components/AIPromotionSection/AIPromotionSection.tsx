@@ -9,7 +9,10 @@ const FEATURES = [
 
 export function AIPromotionSection() {
   return (
-    <article className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 xl:gap-16 justify-center items-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-12 sm:py-16">
+    <article
+      id="como-funciona"
+      className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 xl:gap-16 justify-center items-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-12 sm:py-16"
+    >
       <div className="shrink-0 w-full lg:w-auto flex justify-center">
         <Image
           src="/ia_promotion.webp"

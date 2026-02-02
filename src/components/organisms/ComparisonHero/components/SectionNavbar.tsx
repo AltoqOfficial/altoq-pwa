@@ -1,183 +1,174 @@
 "use client";
 
-import { useId } from "react";
-import { Typography } from "@/components/atoms";
+import { Typography, Logo } from "@/components/atoms";
 import { NAV_ITEMS } from "../constants";
+import {
+  IdCard,
+  Landmark,
+  BriefcaseBusiness,
+  Globe,
+  Pin,
+  Glasses,
+  Scale,
+  HatGlasses,
+} from "lucide-react";
 
 interface SectionNavbarProps {
   activeNavIndex: number;
-  navContainerRef: React.RefObject<HTMLDivElement | null>;
+  navContainerRef?: React.RefObject<HTMLDivElement | null>;
   onNavClick: (index: number) => void;
-  onScrollNav: (direction: "left" | "right") => void;
+  onScrollNav?: (direction: "left" | "right") => void;
 }
 
 /**
- * Section Navbar Component
- * Horizontal scrollable navigation for comparison sections
+ * Section Navbar Component (Sidebar)
+ * Vertical navigation for comparison sections, mimicking the hamburger menu style on desktop
  */
 export function SectionNavbar({
   activeNavIndex,
-  navContainerRef,
   onNavClick,
-  onScrollNav,
+  navContainerRef,
 }: SectionNavbarProps) {
-  const uniqueId = useId();
-  const noiseFilterNavId = `noiseFilterNav${uniqueId}`;
-  const gradientNavId = `gradientNav${uniqueId}`;
+  // Mapping for Lucide icons
+  const MENU_ICONS: Record<string, React.ReactNode> = {
+    PerfilGeneral: (
+      <IdCard className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    ExperienciaPolitica: (
+      <Landmark className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    ExperienciaProfesional: (
+      <BriefcaseBusiness className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    IdeologiaPolitica: (
+      <Globe className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    PropuestasPrincipales: (
+      <Pin className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    CoherenciaconelPlan: (
+      <Glasses className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    Controversias: (
+      <HatGlasses className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    Transparencia: (
+      <Scale className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    Competenciaspersonales: (
+      <Glasses className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    PercepcionPublica: (
+      <Globe className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    InnovacionyVision: (
+      <Pin className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+    HistorialLegislativo: (
+      <Landmark className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+    ),
+  };
 
   return (
-    <div id="comparison-navbar" className="w-full sticky top-0 z-50">
-      {/* SVG Definitions for gradient and noise */}
-      <svg width="0" height="0" className="absolute">
-        <defs>
-          {/* Gradient for Nav background */}
-          <linearGradient id={gradientNavId} x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#FF2727" />
-            <stop offset="100%" stopColor="#2F356E" />
-          </linearGradient>
+    <nav
+      className="flex flex-col w-full pl-6 pr-6"
+      id="comparison-navbar"
+      ref={navContainerRef}
+    >
+      {/* Logo Section */}
+      <div className="pl-6 py-6 w-full mb-4 mt-6">
+        <Logo variant="default" asLink priority />
+      </div>
 
-          {/* Noise filter for Nav */}
-          <filter
-            id={noiseFilterNavId}
-            x="-20%"
-            y="-20%"
-            width="140%"
-            height="140%"
-            filterUnits="objectBoundingBox"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="1.25 1.25"
-              numOctaves={3}
-              result="noise"
-              seed={4254}
-              stitchTiles="stitch"
-            />
-            <feColorMatrix
-              in="noise"
-              type="luminanceToAlpha"
-              result="alphaNoise"
-            />
-            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
-              <feFuncA
-                type="discrete"
-                tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
-              />
-            </feComponentTransfer>
-            <feComposite
-              operator="in"
-              in2="shape"
-              in="coloredNoise1"
-              result="noise1Clipped"
-            />
-            <feFlood
-              floodColor="rgba(255, 255, 255, 0.2)"
-              result="color1Flood"
-            />
-            <feComposite
-              operator="in"
-              in2="noise1Clipped"
-              in="color1Flood"
-              result="color1"
-            />
-            <feMerge result="effect1_noise">
-              <feMergeNode in="shape" />
-              <feMergeNode in="color1" />
-            </feMerge>
-          </filter>
-        </defs>
-      </svg>
+      <div className="flex flex-col gap-1 w-full border-l border-white/10 pl-6">
+        {NAV_ITEMS.map((item, index) => {
+          if (item === "Proyectos de Ley") return null;
 
-      {/* Gradient background with noise */}
-      <svg
-        className="absolute inset-0 w-full h-full"
-        preserveAspectRatio="none"
-      >
-        <rect
-          width="100%"
-          height="100%"
-          fill={`url(#${gradientNavId})`}
-          filter={`url(#${noiseFilterNavId})`}
-        />
-      </svg>
+          const normalizedKey = item
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/[\s-]/g, "");
 
-      <nav className="flex items-center relative z-10">
-        <button
-          onClick={() => onScrollNav("left")}
-          className="shrink-0 p-2 md:p-3 lg:p-4 cursor-pointer hover:opacity-70 transition-opacity"
-          aria-label="Scroll left"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="13"
-            height="20"
-            viewBox="0 0 13 20"
-            fill="none"
-            className="w-2 h-3 md:w-3 md:h-4 lg:w-[13px] lg:h-5"
-          >
-            <path
-              d="M12.12 2.12 4.24 10l7.88 7.88L10 20 0 10 10 0z"
-              fill="#FEFEFE"
-            />
-          </svg>
-        </button>
+          const icon = MENU_ICONS[normalizedKey];
+          const isActive = activeNavIndex === index;
 
-        <div
-          ref={navContainerRef}
-          className="flex overflow-x-auto scrollbar-hide gap-1 md:gap-2 py-2 md:py-3"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {NAV_ITEMS.map((item, index) => (
+          return (
             <button
               key={item}
               onClick={() => onNavClick(index)}
-              className={`shrink-0 px-3 md:px-5 lg:px-8 py-2 md:py-3 cursor-pointer transition-all duration-300 ${
-                activeNavIndex === index
-                  ? "opacity-100 scale-105"
-                  : "opacity-50 hover:opacity-75"
+              className={`relative w-full flex items-center gap-4 text-left py-3 transition-colors duration-300 group ${
+                isActive ? "text-[#FF2727]" : "text-white hover:text-white/80"
               }`}
             >
+              {/* Active Indicator */}
+              {isActive && (
+                <div className="absolute -left-[26px] top-1/2 -translate-y-1/2 h-8 w-[4px] bg-[#FF2727]" />
+              )}
+
+              {/* Hover Indicator */}
+              <div
+                className={`absolute -left-[26px] top-1/2 -translate-y-1/2 h-0 w-[4px] bg-[#FF2727]/50 transition-all duration-300 group-hover:h-6 ${isActive ? "opacity-0" : "opacity-100"}`}
+              />
+
+              {icon && (
+                <div className="shrink-0 flex justify-center">{icon}</div>
+              )}
+
               <Typography
-                font="kenyan"
-                weight="600"
-                variant="h4"
-                color="white"
-                className="uppercase whitespace-nowrap text-4xl md:text-3xl lg:text-2xl"
+                variant="p"
+                font="sohneBreit"
+                weight={isActive ? "600" : "200"}
+                className="text-sm xl:text-base leading-none pt-1"
               >
                 {item}
               </Typography>
             </button>
-          ))}
-        </div>
+          );
+        })}
+      </div>
 
-        <button
-          onClick={() => onScrollNav("right")}
-          className="shrink-0 p-2 md:p-3 lg:p-4 cursor-pointer hover:opacity-70 transition-opacity"
-          aria-label="Scroll right"
+      {/* Additional Menu Section - Projects */}
+      {/* <div className="mt-8">
+        <Typography
+          variant="p"
+          font="sohneBreit"
+          weight="400"
+          className="text-white text-sm xl:text-base mb-4 pl-6"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="13"
-            height="20"
-            viewBox="0 0 13 20"
-            fill="none"
-            className="w-2 h-3 md:w-3 md:h-4 lg:w-[13px] lg:h-5"
+          ACERCA DE LOS PARTIDOS
+        </Typography>
+
+        <div className="border-l border-white/10 pl-6">
+          <button
+            onClick={() => projectsIndex !== -1 && onNavClick(projectsIndex)}
+            className={`relative w-full flex items-center gap-4 text-left py-2 transition-colors duration-300 group ${
+              activeNavIndex === projectsIndex
+                ? "text-[#FF2727]"
+                : "text-white hover:text-white/80"
+            }`}
           >
-            <path
-              d="M0 2.12 7.88 10 0 17.88 2.12 20l10-10-10-10z"
-              fill="#FEFEFE"
+            {activeNavIndex === projectsIndex && (
+              <div className="absolute -left-[26px] top-1/2 -translate-y-1/2 h-8 w-[4px] bg-[#FF2727]" />
+            )}
+            <div
+              className={`absolute -left-[26px] top-1/2 -translate-y-1/2 h-0 w-[4px] bg-[#FF2727]/50 transition-all duration-300 group-hover:h-6 ${
+                activeNavIndex === projectsIndex ? "opacity-0" : "opacity-100"
+              }`}
             />
-          </svg>
-        </button>
-      </nav>
-    </div>
+            <div className="shrink-0 flex justify-center">
+              <Scale className="w-5 h-5 xl:w-6 xl:h-6" strokeWidth={1.5} />
+            </div>
+            <Typography
+              variant="p"
+              font="sohneBreit"
+              weight={activeNavIndex === projectsIndex ? "600" : "200"}
+              className="text-sm xl:text-base leading-none pt-1"
+            >
+              Proyectos de Ley
+            </Typography>
+          </button>
+        </div>
+      </div> */}
+    </nav>
   );
 }

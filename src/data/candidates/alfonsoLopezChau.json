@@ -1,0 +1,453 @@
+{
+  "id": "pablo-alfonso-lopez-chau-nava",
+  "slug": "pablo-alfonso-lopez-chau-nava",
+  "fullName": "PABLO ALFONSO LÓPEZ CHAU NAVA",
+  "shortName": "Alfonso López Chau",
+  "image": "/candidatos/alfonso-lopez-chau.webp",
+  "color": "#004595",
+  "party": "Ahora Nación - AN",
+  "partyIcon": "/partidos/ahora-nacion.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/alfonsolopez_chau/",
+    "tiktok": null,
+    "twitter": "https://x.com/LopezChauNava",
+    "facebook": "https://www.facebook.com/profile.php?id=100014146592128",
+    "web": "https://ahoranacion-callao.com/plan.html"
+  },
+  "perfilGeneral": {
+    "edad": { "value": null, "source": [] },
+    "nacimiento": { "value": null, "source": [] },
+    "lugar": { "value": null, "source": [] },
+    "nivelEducativo": {
+      "value": [
+        "Bachiller en Ciencias Económicas (UNAC, 1976)",
+        "Maestro en Economía (UNAM, 2002)",
+        "Doctor en Economía (UNAM, 2005)"
+      ],
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "profesion": {
+      "value": [
+        "Economista",
+        "Ex Rector de la Universidad Nacional de Ingeniería"
+      ],
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "partidoActual": {
+      "value": "Ahora Nación - AN",
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "cambiosDePartido": {
+      "value": "1",
+      "source": [
+        "https://www.infobae.com/peru/2025/04/13/alfonso-lopez-chau-perfil-del-exrector-de-la-uni-que-se-lanzara-como-candidato-presidencial-en-2026/"
+      ]
+    },
+    "historialPartidos": [
+      {
+        "ano": "1995",
+        "partido": "Independiente / Otros",
+        "icono": "/partidos/generico.png",
+        "source": [
+          "https://www.infobae.com/peru/2025/04/13/alfonso-lopez-chau-perfil-del-exrector-de-la-uni-que-se-lanzara-como-candidato-presidencial-en-2026/"
+        ]
+      },
+      {
+        "ano": "2023",
+        "partido": "Ahora Nación",
+        "icono": "/partidos/ahora-nacion.png",
+        "source": [
+          "https://rpp.pe/politica/elecciones/alfonso-lopez-chau-sobre-elecciones-2026-el-peru-necesita-una-alianza-de-partidos-noticia-1628658"
+        ]
+      }
+    ]
+  },
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "4",
+      "source": [
+        "https://www.infobae.com/peru/2025/04/13/alfonso-lopez-chau-perfil-del-exrector-de-la-uni-que-se-lanzara-como-candidato-presidencial-en-2026/"
+      ]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Rector de la Universidad Nacional de Ingeniería (2021-2025)",
+        "Precandidato presidencial (2023-Actualidad)"
+      ],
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2026 → En proceso"],
+      "source": [
+        "https://www.infobae.com/peru/2025/04/12/alfonso-lopez-chau-renuncia-como-rector-de-la-uni-para-iniciar-su-campana-presidencial/"
+      ]
+    }
+  },
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 3,
+      "detalle": {
+        "values": [
+          "Rector de la Universidad Nacional de Ingeniería (2021-2025)",
+          "Director de la Escuela de Ingeniería Económica - UNI (2017-2019)",
+          "Profesor Principal de la Universidad Nacional de Ingeniería (1990-2025)"
+        ],
+        "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 0,
+      "detalle": { "values": [], "source": [] }
+    },
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+  },
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": "Centro Izquierda",
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+    },
+    "economia": {
+      "sintesis": "Soberanía y Diversificación Industrial",
+      "descripcion": "Socialdemocracia económica y Nacionalismo productivo; promueve industria e innovación.",
+      "source": [
+        "https://peru21.pe/politica/cade-ejecutivos-2025-alfonso-lopez-chau-presenta-sus-propuestas-para-el-peru/"
+      ]
+    },
+    "matrimonioIgualitario": { "value": null, "source": [] },
+    "aborto": {
+      "sintesis": "Progresismo moderado",
+      "descripcion": "Enfoque progresista; protección de derechos reproductivos sin retrocesos.",
+      "source": [
+        "https://larepublica.pe/politica/2026/01/09/cinco-partidos-prometen-revision-y-salida-de-corte-idh-y-otros-tres-defienden-permanencia-en-planes-de-gobierno-hnews-305037"
+      ]
+    },
+    "seguridad": {
+      "sintesis": "Autoridad institucional y reforma policial",
+      "descripcion": "Firmeza institucional y recuperación de la autoridad del Estado frente al crimen organizado.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+      ]
+    },
+    "ambiente": {
+      "sintesis": "Sostenibilidad con soberanía",
+      "descripcion": "Desarrollo sostenible con soberanía sobre recursos naturales.",
+      "source": [
+        "https://img.lpderecho.pe/wp-content/uploads/2025/12/Ahora-Nacion-Plan-de-Gobierno-LP-derecho.pdf"
+      ]
+    },
+    "educacion": {
+      "sintesis": "Estado Docente y Universidad Pública",
+      "descripcion": "Estado Docente; educación pública, universal y descentralizada.",
+      "source": [
+        "https://peru21.pe/politica/cade-ejecutivos-2025-alfonso-lopez-chau-presenta-sus-propuestas-para-el-peru/"
+      ]
+    },
+    "reformaPolitica": {
+      "sintesis": "Refundación Republicana",
+      "descripcion": "Reformismo constitucional y descentralización radical del poder.",
+      "source": ["https://ahoranacion-callao.com/ideario.html"]
+    }
+  },
+  "propuestasPrincipales": {
+    "institucional": [
+      {
+        "titulo": "Justicia y Derechos Humanos",
+        "descripcion": "Al 2031 las entidades que conforman el sistema de justicia, incluida la justicia electoral, han recuperado su plena autonomía y ejercen sus funciones con independencia celeridad, objetividad y eficacia, habiendo consolidado un mecanismo de elección de magistrados y personal técnico de diferentes especialidades y niveles, que privilegia la meritocracia, la idoneidad y las máximas garantías de respeto y protección de los derechos fundamentales de todos los ciudadanos, en el marco de cumplimiento de las obligaciones internacionales del Estado peruano en materia de derechos humanos, asegurando un acceso a la justicia libre de corrupción, con los más altos estándares de trasparencia y comprometido con la erradicación de toda forma de violencia, discriminación y desigualdad estructurales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20JUSTICIA%20Y%20DERECHOS%20HUMANOS"
+        ]
+      },
+      {
+        "titulo": "Relaciones Exteriores",
+        "descripcion": "Para el 2031, el Perú será un país líder en América Latina, inmerso en las dinámicas propias del Asia-Pacífico y reconocido como un actor clave del Sur Global responsable y solidario. Tendrá una política exterior fortalecida institucionalmente y comprometida con el desarrollo sostenible y el cambio social, construida sobre la base de la promoción de la democracia, la defensa de los derechos humanos, el medio ambiente, el fomento de la cultura como una herramienta clave para el accionar internacional del Perú, y el impulso de la cooperación a nivel regional y mundial.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20RELACIONES%20EXTERIORES"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Crecimiento económico sostenido con valor agregado",
+        "descripcion": "Queremos un país con crecimiento económico sostenido, basado no solo en la utilización responsable de nuestros recursos naturales, sino en la generación de valor agregado constante, producto de un incremento de la productividad en el largo plazo, con una visión de las ventajas competitivas y comparativas de todas las regiones del Perú. Nos une el reto fundamental de garantizar un uso responsable, equilibrado y productivo de los recursos fiscales de todas y todos los peruanos, con el fin de seguir estando a la vanguardia de la estabilidad macro fiscal en la región, atraer más capitales privados para una inversión con retornos para toda la población y con mirada sostenible, garantizando el bienestar de las futuras generaciones.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20ECONOM%C3%8DA"
+        ]
+      },
+      {
+        "titulo": "Industrialización Nacional",
+        "descripcion": "Al 2031, el Perú habrá iniciado una transición real desde una economía dependiente de la extracción primaria hacia un modelo productivo más diversificado, resiliente y descentralizado, capaz de generar valor agregado, empleo formal y estabilidad frente a los shocks externos. El país debe contar con cadenas productivas regionales integradas a mercados nacionales e internacionales, pequeñas y medianas industrias fortalecidas, y un Estado que orienta la industrialización con criterios técnicos, territoriales y de sostenibilidad.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20INDUSTRIALIZACION"
+        ]
+      },
+      {
+        "titulo": "Emprendimiento y MiPymes",
+        "descripcion": "Al 2031, el Perú será una nación donde hemos hecho realidad la consigna de darle 'todo el poder a las regiones para conquistar los mercados del mundo' a través de la industrialización nacional, asegurando que la moral sea el nuevo motor del desarrollo nacional. Hemos recuperado a través de las MiPymes formalizadas, el alma productiva del país, mediante un Estado transparente y sin privilegios, siendo el núcleo de la economía descentralizada, cerrando brechas y generando, en cada territorio, riqueza con justicia social y empleo digno para el futuro.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20EMPRENDIMIENTO"
+        ]
+      },
+      {
+        "titulo": "Energía y Minas",
+        "descripcion": "Al 2031, el Perú contará con un sector Energía y Minas moderno, sostenible y socialmente legítimo, que garantice el acceso universal, seguro y asequible a la energía, y una actividad minera formal, limpia y responsable, con mayor valor agregado e integrada al desarrollo productivo y territorial del país. La minería y la energía serán palancas para el empleo digno, la innovación tecnológica y el desarrollo de las regiones productoras, reduciendo la informalidad y las brechas territoriales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20ENERGIA%20Y%20MINERIA"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Inclusión Social y Protección Universal",
+        "descripcion": "Deseamos construir un Perú justo, solidario e inclusivo, donde todos los hogares tengan las condiciones para superar la pobreza y la vulnerabilidad, a través de un sistema de protección social universal, adaptativo y de calidad. Un Estado activo y cercano, que garantice igualdad de oportunidades, respete la diversidad cultural, promueva la equidad territorial y fortalezca el tejido social, asegurando que cada persona, sin importar su origen o condición, pueda desarrollar plenamente sus capacidades y participar en la construcción de un futuro próspero y sostenible para el país.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20INCLUSI%C3%93N%20SOCIAL"
+        ]
+      },
+      {
+        "titulo": "Vivienda Digna y Segura",
+        "descripcion": "Al 2031, todas las personas que vivan en el Perú accederán a una vivienda digna, segura y bien ubicada, con servicios básicos garantizados. Se priorizará la reducción del déficit habitacional mediante soluciones sostenibles, urbanismo social y esquemas accesibles de financiamiento. Las familias tendrán condiciones de vida más saludables, protegidas frente a riesgos climáticos y conectadas a oportunidades de desarrollo.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20VIVIENDA"
+        ]
+      },
+      {
+        "titulo": "Trabajo Digno y Formal",
+        "descripcion": "Al 2031, el Perú será un país donde trabajar no sea un privilegio, sino una oportunidad digna para todas las personas. Tendremos una fuerza laboral más calificada, productiva y protegida, donde el empleo decente sea la norma, y no la excepción. La informalidad se habrá reducido de manera sostenida gracias a un Estado que acompaña, capacita y conecta; y los jóvenes podrán acceder a empleos formales, emprendimientos sostenibles y oportunidades reales para desarrollar su talento, sin importar dónde nacieron.",
+        "source": [
+          "http://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20TRABAJO"
+        ]
+      },
+      {
+        "titulo": "Cultura como Motor de Desarrollo",
+        "descripcion": "Vamos a construir una Nación que sitúe a la cultura en el centro de su desarrollo, reconociendo en ella la fuerza que une a las comunidades, dinamiza la economía y preserva la memoria colectiva. Nuestro compromiso es consolidar una política cultural que articule tres grandes ejes: primero, la protección y sostenibilidad del patrimonio, garantizando su conservación y su uso social como fuente de identidad y orgullo; segundo, el impulso a las industrias creativas y culturales, promoviendo la innovación, la formalización y el empleo digno en un sector estratégico para la economía del futuro; y tercero, el acceso e inclusión cultural para que todos los ciudadanos, sin distinción de lengua, origen o territorio, ejerzan plenamente su derecho a la cultura.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20CULTURA"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Desarrollo Sostenible Integral",
+        "descripcion": "El presente Plan de Gobierno se fundamenta en el principio del desarrollo sostenible, entendido como la integración equilibrada de tres dimensiones inseparables: Sociedad (bienestar, equidad y derechos humanos), Economía (crecimiento inclusivo, empleo y competitividad) y Ambiente (protección de ecosistemas, biodiversidad y recursos naturales). El equilibrio entre estos tres pilares es la condición necesaria para un desarrollo que satisfaga las necesidades de la presente generación sin comprometer la capacidad de las futuras.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20AMBIENTE"
+        ]
+      },
+      {
+        "titulo": "Agua y Saneamiento Universal",
+        "descripcion": "Al 2031, todas las personas que vivan en el país contarán con acceso universal a servicios seguros y sostenibles de agua potable y saneamiento, disfrutando de entornos limpios y saludables que reduzcan los riesgos para su salud y promuevan su bienestar. Este logro será posible gracias a sistemas de gestión del agua más eficientes, integrados y transparentes, que rindan cuentas a la ciudadanía, fomenten su participación y aseguren la protección de las fuentes hídricas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20AGUA%20Y%20SANEAMIENTO"
+        ]
+      },
+      {
+        "titulo": "Agricultura Competitiva y Sostenible",
+        "descripcion": "Al 2031 El Agro nacional es competitiva en lo productivo, ambientalmente amigables y con bienestar social; con capacidad tecnológica para asumir las demandas del mercado y adaptarse a las condiciones del cambio climático; con cuencas y subcuencas hidrográficas que ha recuperado su capacidad para producir suficientes recursos; con una producción ambientalmente gestionada, con accesos a servicios de calidad desde el sector público y privado; y organizaciones económicas de productores familiares articulados ventajosamente a los mercados y la generación de oportunidades para los jóvenes y mujeres rurales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20AGRICULTURA"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Sistema Educativo Transformador",
+        "descripcion": "En el 2031, el Perú contará con un sistema educativo, que garantice aprendizajes reales con profundo sentido transformador que fortalezca el talento de cada estudiante y genere igualdad de oportunidades para todos en todos los territorios a través de una gestión descentralizada. Las escuelas serán espacios seguros, conectados y con condiciones dignas para enseñar y aprender; los docentes serán valorados y acompañados como protagonistas del cambio educativo; y los jóvenes podrán acceder a una educación superior diversificada, pertinente, con empleabilidad y arraigo territorial. La educación será motor de justicia social, desarrollo productivo y ciudadanía democrática en todas las regiones del país.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20EDUCACI%C3%93N"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Salud Universal y Entornos Saludables",
+        "descripcion": "Al 2031 todas las personas que vivan en el país lo harán en entornos más saludables, empezando por disponibilidad universal de agua potable, contarán con intervenciones innovadoras de protección específica y de prevención secundaria de acuerdo con sus condiciones de riesgo, y tendrán mayor acceso efectivo a servicios de salud provistos por un sistema más eficiente e integrado, que les rinde cuentas y genera condiciones adecuadas para su participación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20SALUD"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Seguridad Ciudadana y Orden Público",
+        "descripcion": "Al 2031, cada familia peruana podrá vivir en un entorno más seguro, donde los niños caminen tranquilos a la escuela y los emprendedores abran sus negocios sin miedo a la extorsión ni a la violencia; un país donde las instituciones sean firmes, donde la justicia no se compre ni se alquile y donde el crimen organizado no dicte las reglas de la vida diaria. Nuestro compromiso es devolver la tranquilidad a los hogares, recuperar la autoridad del Estado y construir un futuro de orden, respeto y esperanza, impulsando además la transformación del sistema penitenciario en un espacio plenamente controlado y con verdadera capacidad de reinserción, para que deje de ser una extensión del crimen y se convierta en una herramienta real de seguridad y justicia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20SEGURIDAD%20CIUDADANA"
+        ]
+      },
+      {
+        "titulo": "Defensa Nacional y Plan ESCUDO",
+        "descripcion": "Para el 2031, el Perú habrá alcanzado un nivel de DISUASIÓN CREÍBLE en base a la implementación de los programas presupuestales ESCUDO I, ESCUDO II y el ESCUDO III que se pondrá en acción en el quinquenio 2026 – 2031; lo que permitirá hacer sostenible nuestro desarrollo nacional y garantizar la defensa de los intereses nacionales en el Perú y en la Antártida, sin interferencias de actores extranjeros a la soberanía nacional. De igual manera, se habrá consolidado el apoyo al sector interior mediante la reorganización y equipamiento de unidades especializadas para ser empleadas en el orden interno y así hacer más efectiva la participación del sector en la seguridad ciudadana; así como, se habrá restructurado el dispositivo de las FFAA para que estén en zonas de menor desarrollo del país que tengan gran importancia estratégica para la defensa (selva y fronteras). Asimismo, habremos alcanzado el fortalecimiento de las capacidades de ciberdefensa logrando un estado de confianza contra las amenazas cibernéticas en y a través del ciberespacio.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20DEFENSA"
+        ]
+      }
+    ],
+    "transportes": [
+      {
+        "titulo": "Sistema de Transporte Multimodal",
+        "descripcion": "Al 2031 estamos en pleno proceso de construcción e implementación de un sistema de transporte multimodal, con enfoque logístico, moderno y eficiente que impulsa el crecimiento económico, equitativo y la integración territorial. Los planes de infraestructura son formulados descentralizadamente y los proyectos incluyen redes viales, ferroviarias, portuarias y aeroportuarias, los cuales son ejecutados de manera conjunta por los gobiernos subnacionales y el gobierno nacional, reduciendo la brecha de infraestructura. El transporte público en las ciudades es digno, accesible y sostenible, y la seguridad vial ha alcanzado estándares internacionales. La logística de transporte está optimizada para reducir costos y tiempos, conectando los centros de producción con los mercados locales y globales, promoviendo el desarrollo de todas las regiones del país.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf#:~:text=AHORA%20TRANSPORTES"
+        ]
+      }
+    ]
+  },
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+      ]
+    },
+    "diferencias": { "value": null, "source": [] },
+    "cumplimientoPrevio": {
+      "value": "Gestión previa en la UNI alineada a innovación.",
+      "source": [
+        "https://www.infobae.com/peru/2025/04/13/alfonso-lopez-chau-perfil-del-exrector-de-la-uni-que-se-lanzara-como-candidato-presidencial-en-2026/"
+      ]
+    }
+  },
+  "controversias": {
+    "antecedentes": [
+      {
+        "titulo": "No registra antecedentes policiales conocidos",
+        "descripcion": "No se encontró registro de antecedentes policiales.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "antecedentesJudiciales": [
+      {
+        "titulo": "No registra antecedentes judiciales conocidos",
+        "descripcion": "No se encontró registro de antecedentes judiciales.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "antecedentesPenales": [
+      {
+        "titulo": "No registra antecedentes penales conocidos",
+        "descripcion": "No se encontró registro de antecedentes penales.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "No registra procesos judiciales en curso conocidos",
+        "descripcion": "No se encontró registro de procesos judiciales en curso.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "No registra procesos judiciales archivados conocidos",
+        "descripcion": "No se encontró registro de procesos judiciales archivados.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Investigado por presuntos delitos de colusión y negociación incompatible",
+        "descripcion": "Es investigado por presuntos delitos de colusión y negociación incompatible, por presuntamente beneficiar a la trabajadora Sonia Ana Ulloa como secretaria general de la UNI de forma irregular y no cumplir los requisitos para asumir el cargo.",
+        "source": [
+          "https://www.infobae.com/peru/2025/07/17/alfonso-lopez-chau-en-la-mira-de-la-fiscalia-es-investigado-por-presuntamente-beneficiar-a-trabajadora-en-la-uni/#:~:text=enfrenta%20una,para%20el%20Estado"
+        ]
+      },
+      {
+        "titulo": "Reclusión en prisión durante la década de 1970 por motivos políticos",
+        "descripcion": "Se reveló que estuvo recluido en prisión durante la década de 1970 por motivos políticos durante el régimen militar de Juan Velasco, siendo posteriormente amnistiado. No existe sentencia penal ni antecedentes judiciales.",
+        "source": [
+          "https://caretas.pe/politica/equipo-de-lopez-chau-confirma-que-estuvo-recluido-en-prision-y-salio-por-una-amnistia/#:~:text=persecuciones%20pol%C3%ADticas"
+        ]
+      },
+      {
+        "titulo": "Cuestionamientos por candidatos con denuncias graves en Ahora Nación",
+        "descripcion": "Es cuestionado por la inclusión de candidatos con denuncias graves dentro del partido Ahora Nación, incluyendo antecedentes por presunta violación y señalamientos sobre manejos económicos irregulares.",
+        "source": [
+          "https://willax.pe/politica/alfonso-lopez-chau-candidato-congreso-violacion-menor-willax/#:~:text=graves%20irregularidades%20en%20las%20candidaturas"
+        ]
+      },
+      {
+        "titulo": "Calificación de 'luchador social' a Víctor Polay Campos en 1989",
+        "descripcion": "Es señalado por haber calificado como 'luchador social' al guerrillero del MRTA Víctor Polay Campos en 1989, según una publicación de archivo correspondiente a una columna escrita por él que fue difundida públicamente.",
+        "source": [
+          "https://canaln.pe/actualidad/lopez-chau-llamo-luchador-politico-victor-polay-1989-n488900/#:~:text=luchador%20pol%C3%ADtico"
+        ]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "No registra observaciones administrativas o financieras conocidas",
+        "descripcion": "No se encontró registro de observaciones administrativas o financieras (SUNAT, INDECOPI u otros).",
+        "source": []
+      }
+    ]
+  },
+  "transparencia": {
+    "items": ["Información pública en JNE", "Historial académico verificado"],
+    "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+  },
+  "competenciasPersonales": {
+    "liderazgo": {
+      "value": "Alto - Basado en su rectoría en la UNI y capacidad de convocatoria política.",
+      "source": [
+        "https://larepublica.pe/politica/2025/05/12/alfonso-lopez-chau-el-rector-de-la-uni-que-busca-ser-presidente-del-peru-con-economia-nacional-de-mercado-hnews-476949"
+      ]
+    },
+    "comunicacion": {
+      "value": "Alto - Reconocido por sus discursos académicos y políticos.",
+      "source": [
+        "https://peru21.pe/politica/cade-ejecutivos-2025-alfonso-lopez-chau-presenta-sus-propuestas-para-el-peru/"
+      ]
+    },
+    "credibilidad": {
+      "value": "Medio - Influenciada por procesos judiciales en curso.",
+      "source": [
+        "https://www.infobae.com/peru/2025/07/17/alfonso-lopez-chau-en-la-mira-de-la-fiscalia-es-investigado-por-presuntamente-beneficiar-a-trabajadora-en-la-uni/"
+      ]
+    }
+  },
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 1.8,
+      "max": 1.8,
+      "descripcion": "CPI - Diciembre 2025",
+      "source": [
+        "https://rpp.pe/politica/elecciones/cpi-a-cuatro-meses-de-las-elecciones-estos-son-los-candidatos-y-pre-candidatos-presidenciales-que-lideran-la-intencion-de-voto-noticia-1666471"
+      ]
+    },
+    "aprobacion": { "value": null, "source": [] },
+    "redes": {
+      "value": "Presencia activa en múltiples plataformas digitales.",
+      "source": ["https://x.com/LopezChauNava"]
+    }
+  },
+  "innovacionYVision": {
+    "items": [
+      "Uso de ciberdefensa estratégica",
+      "Descentralización productiva regional"
+    ],
+    "source": [
+      "https://mpesije.jne.gob.pe/docs/7d70c5e1-2246-42e8-90c2-372aa1cf7f52.pdf"
+    ]
+  },
+  "historialLegislativo": {
+    "tieneHistorial": false,
+    "productivityLabel": "N/A",
+    "asistencia": { "porcentaje": null, "label": null, "source": null },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [],
+    "nota": "No tiene historial legislativo",
+    "source": null
+  }
+}

@@ -213,7 +213,7 @@ export const MatchResults: React.FC<{ onClose: () => void }> = ({
                   PUESTO
                 </p>
                 <p className="text-white text-xs font-bold uppercase tracking-wider mt-2">
-                  Tu Candidato ideal es :
+                  Tu Match Político es :
                 </p>
               </div>
 

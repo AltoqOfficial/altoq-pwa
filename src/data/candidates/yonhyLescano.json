@@ -1,0 +1,534 @@
+{
+  "id": "yonhy-lescano-ancieta",
+  "slug": "yonhy-lescano-ancieta",
+  "fullName": "Yonhy Lescano Ancieta",
+  "shortName": "Yonhy Lescano",
+  "image": "/candidatos/yonhy-lescano.webp",
+  "color": "#0047AB",
+  "party": "Partido Político Cooperación Popular",
+  "partyIcon": "/partidos/cooperacion-popular.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/yonhylescano/",
+    "tiktok": null,
+    "twitter": "https://x.com/yonhy_lescano",
+    "facebook": "https://www.facebook.com/lescano.pe/",
+    "web": "https://lescano.pe/"
+  },
+  "perfilGeneral": {
+    "edad": { "value": null, "source": [] },
+    "nacimiento": { "value": null, "source": [] },
+    "lugar": { "value": null, "source": [] },
+    "nivelEducativo": {
+      "value": [
+        "Bachiller en Derecho – 1999",
+        "Abogado – 1999",
+        "Grado de Magíster de Derecho (Grado de Maestro) – 2022",
+        "Doctorado de Derecho – En curso"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://otorongo.club/2021/candidate/01211014/#:~:text=BACHILLER%20EN%20DERECHO",
+        "https://otorongo.club/2021/candidate/01211014/#:~:text=ABOGADO",
+        "https://otorongo.club/2021/candidate/01211014/#:~:text=GRADO%20MAESTRIA",
+        "https://yonhy-lescano.blogspot.com/p/datos-personales_20.html#:~:text=Doctorado%20en%20la%20Universidad%20Nacional%20del%20Altiplano%20de%20Puno"
+      ]
+    },
+    "profesion": {
+      "value": [
+        "Profesor Principal de la Universidad Nacional del Altiplano de Puno",
+        "Asesor del Congreso"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.exitosanoticias.pe/actualidad/candidato-yonhy-lescano-mostro-documentos-certifican-su-licenciatura-grado-magister-n49052#:~:text=profesor%20principal%20de%20la%20Universidad%20Nacional%20de%20Altiplano",
+        "https://limagris.com/yonhy-lescano-de-candidato-a-la-presidencia-a-asesor-del-congreso/#:~:text=asesor%20del%20Congreso"
+      ]
+    },
+    "partidoActual": {
+      "value": "Partido Político Cooperación Popular",
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/#:~:text=Cooperaci%C3%B3n%20Popular"
+      ]
+    },
+    "cambiosDePartido": {
+      "value": "3",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/yonhy-lescano-ancieta_historial-partidario_zTKLaAmH2Lw=KA"
+      ]
+    },
+    "historialPartidos": [
+      {
+        "ano": "2004",
+        "partido": "Acción Popular",
+        "icono": "/partidos/accion-popular.png",
+        "source": [
+          "https://andina.pe/agencia/noticia-elecciones-2021-yonhy-lescano-solicita-inscripcion-a-cabeza-accion-popular-827165.aspx#:~:text=adherente%20fundacional%20de%20Acci%C3%B3n%20Popular,%20desde%20el%202004"
+        ]
+      },
+      {
+        "ano": "2011",
+        "partido": "Perú Posible",
+        "icono": "/partidos/peru-posible.png",
+        "source": [
+          "https://www.congreso.gob.pe/?K=290&TPL=if0&a=iv&id=68#:~:text=Grupo%20o%20Partido%20Pol%C3%ADtico:%20Per%C3%BA%20Posible"
+        ]
+      },
+      {
+        "ano": "2024",
+        "partido": "Cooperación Popular",
+        "icono": "/partidos/cooperacion-popular.png",
+        "source": [
+          "https://diariocorreo.pe/politica/yonhy-lescano-critica-al-congreso-pero-facturo-con-la-actual-gestion-casi-medio-millon-de-soles-noticia/#:~:text=Otro%20dato%20no%20menor%20es%20que%20desde%20el%203%20de%20julio%20de%202024,%20Lescano%20es%20militante%20del%20partido%20pol%C3%ADtico%20Cooperaci%C3%B3n%20Popular"
+        ]
+      }
+    ]
+  },
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "21",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/yonhy-lescano-ancieta_historial-partidario_zTKLaAmH2Lw=KA",
+        "https://rpp.pe/politica/congreso/referendum-2018-hasta-dos-decadas-los-congresistas-que-tienen-mas-anos-en-el-parlamento-noticia-1168354?utm_sou#:~:text=Hasta%20dos%20d%C3%A9cadas"
+      ]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Adherente Fundacional - Acción Popular (2004-2023)",
+        "Defensor Adjunto I - Acción Popular (2004-2007)",
+        "Secretario General Nacional - Acción Popular (2009-2011)",
+        "Congresista de la República - Perú Posible (2011-2016)",
+        "Congresista de la República - Acción Popular (2016-2019)",
+        "Miembro del Comité Político - Cooperación Popular (2024-Actualidad)"
+      ],
+      "source": [
+        "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+        "https://andina.pe/agencia/noticia-elecciones-2021-yonhy-lescano-solicita-inscripcion-a-cabeza-accion-popular-827165.aspx#:~:text=adherente%20fundacional%20de%20Acci%C3%B3n%20Popular,%20desde%20el%202004",
+        "https://www.linkedin.com/in/yonhy-lescano#:~:text=Partido%20Acci%C3%B3n%20Popular",
+        "https://www.congreso.gob.pe/?K=290&TPL=if0&a=iv&id=68#:~:text=Grupo%20o%20Partido%20Pol%C3%ADtico:%20Per%C3%BA%20Posible",
+        "https://www.congreso.gob.pe/?K=290&TPL=if0&a=iv&id=822#:~:text=Grupo%20o%20Partido%20Pol%C3%ADtico:%20Acci%C3%B3n%20Popular",
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/yonhy-lescano-ancieta_historial-partidario_zTKLaAmH2Lw=KA"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": ["2021 → Candidato", "2026 → Candidato"],
+      "source": [
+        "https://limagris.com/yonhy-lescano-de-candidato-a-la-presidencia-a-asesor-del-congreso/#:~:text=asesor%20del%20Congreso",
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/#:~:text=Yonhy%20Lescano"
+      ]
+    }
+  },
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 3,
+      "detalle": {
+        "values": [
+          "Profesor Principal - Universidad Nacional del Altiplano de Puno (2021-2025)",
+          "Asesor - Congreso de la República (2021-2025)",
+          "Congresista de la República (2011-2019)"
+        ],
+        "source": [
+          "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
+          "https://www.facebook.com/photo.php?fbid=1621059904757775&id=199745850222528&set=a.199778336885946#:~:text=el%20docente%20principal%20Yonhy%20Lescano%20Ancieta%20ejerce%20la%20docencia%20en%20la%20UNA-Puno",
+          "https://limagris.com/yonhy-lescano-de-candidato-a-la-presidencia-a-asesor-del-congreso/#:~:text=asesor%20del%20Congreso"
+        ]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 0,
+      "detalle": { "values": [], "source": [] }
+    },
+    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+  },
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": "Centro / Populismo",
+      "descripcion": "Lescano se autodefine como un político de centro, aunque sus propuestas a veces oscilan entre el populismo y medidas de carácter social.",
+      "source": ["https://es.wikipedia.org/wiki/Yonhy_Lescano"]
+    },
+    "economia": {
+      "sintesis": "Economía de mercado inclusiva",
+      "descripcion": "\"La dimensión económica de nuestro Plan de Gobierno está orientada a impulsar un crecimiento económico sostenible, competitivo e inclusivo, que genere empleo digno y reduzca la informalidad. Busca fortalecer la productividad, promover la inversión pública y privada responsable, apoyar a las micro y pequeñas empresas, diversificar la economía y fomentar el desarrollo productivo regional, asegurando estabilidad macroeconómica y bienestar para la población.\"",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=La%20dimensi%C3%B3n%20econ%C3%B3mica%20de%20nuestro%20Plan%20de%20Gobierno%20est%C3%A1%20orientada%20a%20impulsar%20un%20crecimiento%20econ%C3%B3mico%20sostenible%2C%20competitivo%20e%20inclusivo"
+      ]
+    },
+    "educacion": {
+      "sintesis": "Educación pública prioritaria",
+      "descripcion": "Garantizar la educación pública mediante la reconstrucción de 27,000 instituciones públicas, capacitación del magisterio, ampliación de becas y acceso progresivo a conectividad y servicios básicos.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Garantizar%20la%20Educaci%C3%B3n%20P%C3%BAblica%3A%20Reconstrucci%C3%B3n%20de%2027%2C000%20instituciones"
+      ]
+    },
+    "salud": {
+      "sintesis": "Sistema de salud universal",
+      "descripcion": "Paralelamente, el Plan propone fortalecer MINSA y EsSalud, reforzar la atención primaria y de especialidades, asegurar turnos mañana/tarde/noche y movilizar especialistas para cirugías regionales, además de priorizar equipamiento y medicinas.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Garantizar%20la%20salud%20p%C3%BAblica%20en%20Minsa%20y%20Essalud%2C%20equipamiento%2C%20fortalecer%20la%20atenci%C3%B3n%20primaria%20y%20de%20especialidades"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": null,
+      "source": []
+    },
+    "aborto": {
+      "sintesis": "Oposición al aborto",
+      "descripcion": "Se opone a la despenalización y legalización del aborto; en RPP afirmó que \"la muerte no es ninguna solución para nada\". Ha propuesto medidas de asistencia (médica y psicológica) para víctimas de violación y llegó a presentar proyectos de ley orientados a proteger al no nacido en casos de violación.",
+      "source": [
+        "https://rpp.pe/peru/actualidad/elecciones-2021-yhony-lescano-a-favor-de-union-civil-y-eutanasia-en-contra-de-aborto-y-legalizacion-de-marihuana-noticia-1318437#:~:text=la%20muerte%20no%20es%20ninguna%20soluci%C3%B3n%20para%20nada"
+      ]
+    },
+    "seguridad": {
+      "value": null,
+      "source": []
+    },
+    "ambiente": {
+      "sintesis": "Ordenamiento territorial sostenible",
+      "descripcion": "La dimensión territorial de nuestro Plan de Gobierno se orienta a promover un desarrollo equilibrado e integrado del territorio nacional, reduciendo las brechas entre regiones urbanas y rurales. Busca fortalecer la descentralización, el ordenamiento territorial y la articulación entre los distintos niveles de gobierno, garantizando el acceso equitativo a infraestructura, servicios públicos y oportunidades económicas, con respeto a las características sociales, culturales y ambientales de cada territorio.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=La%20dimensi%C3%B3n%20territorial%20de%20nuestro%20Plan%20de%20Gobierno%20se%20orienta%20a%20promover%20un%20desarrollo%20equilibrado%20e%20integrado%20del%20territorio%20nacional"
+      ]
+    },
+    "reformaPolitica": {
+      "sintesis": "Fortalecimiento institucional y transparencia",
+      "descripcion": "La dimensión institucional de nuestro Plan de Gobierno se orienta a fortalecer el Estado y sus instituciones, garantizando una gestión pública eficiente y transparente.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=La%20dimensi%C3%B3n%20institucional%20de%20nuestro%20Plan%20de%20Gobierno%20se%20orienta%20a%20fortalecer%20el%20Estado%20y%20sus%20instituciones"
+      ]
+    }
+  },
+  "propuestasPrincipales": {
+    "institucional": [
+      {
+        "titulo": "Nueva Constitución",
+        "descripcion": "Aprobar un nuevo marco constitucional (por Asamblea Constituyente o vía reforma del Congreso) para garantizar justicia social.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Aprobaci%C3%B3n%20de%20una%20nueva%20Constituci%C3%B3n%20a%20trav%C3%A9s%20de%20una%20Asamblea%20Constituyente%20o%20el%20Congreso"
+        ]
+      },
+      {
+        "titulo": "Lucha contra corrupción",
+        "descripcion": "Reorganizar el sistema de control público, usar IA y aprobar la “muerte civil” para funcionarios corruptos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Aprobar%20la%20muerte%20civil%20para%20quienes%20delinquen%20como%20funcionarios%20o%20servidores%20p%C3%BAblicos%20y%20reorganizar%20el%20Sistema%20de%20Control"
+        ]
+      },
+      {
+        "titulo": "Restaurar equilibrio poderes",
+        "descripcion": "Derogar reformas constitucionales 2021-2026 que afectaron el equilibrio de poderes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Derogar%20reforma%20constitucional,de%20ley"
+        ]
+      },
+      {
+        "titulo": "Ministerio Ciencia y Tecnología",
+        "descripcion": "Crear el Ministerio partiendo del INACAL para promover I+D.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Crear%20el%20Ministerio%20de%20Ciencia%20y%20Tecnolog%C3%ADa%20en%20base%20al%20Instituto%20Nacional%20de%20Calidad%20%28INACAL%29"
+        ]
+      },
+      {
+        "titulo": "Reforma del INPE",
+        "descripcion": "Reorganizar el INPE, evaluar personal y corregir actividades criminales internas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Aprobar%20marco%20jur%C3%ADdico%20normativo%20nuevo%20para%20organizar%20internamente%20y%20evaluar%20desempe%C3%B1o%20de%20personal"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Renegociación de concesiones",
+        "descripcion": "Disponer la renegociación de contratos de concesión para hacerlos más equitativos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Disponer%20la%20renegociaci%C3%B3n%20de%20los%20contratos%20de%20concesi%C3%B3n"
+        ]
+      },
+      {
+        "titulo": "Industrialización rural",
+        "descripcion": "Invertir en plantas de industrialización (modelo público-mixto) para agregar valor a productos rurales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Inversi%C3%B3n%20en%20la%20industrializaci%C3%B3n%20para%20que%20los%20productores%20obtenga%20mayor%20valor%20a%20sus%20productos%20y%20darles%20valor%20agregado%20con%20apoyo%20del%20Estado"
+        ]
+      },
+      {
+        "titulo": "Contratación G2G",
+        "descripcion": "Obras de gran envergadura mediante acuerdos gobierno-a-gobierno para garantizar cumplimiento.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Crear%20marco%20normativo%20para%20que%20obras%20del%20Estado%20sean%20ejecutadas%20de%20gobierno%20a%20gobierno%20para%20garantizar%20su%20cumplimiento"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de PetroPerú",
+        "descripcion": "Modelo de capital mixto (público-privado) sin privatización.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Fortalecimiento%20de%20PetroPer%C3%BA%20en%20su%20gerencia%2C%20opci%C3%B3n%20con%20capital%20mixto%2C%20mas%20no%20privatizaci%C3%B3n"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Sueldo mínimo y pensiones",
+        "descripcion": "Dictar normativa para incrementar razonablemente el sueldo mínimo vital y las pensiones ONP.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Dictar%20normativa%20para%20incrementar%20razonablemente%20sueldos%20y%20pensiones%20ONP"
+        ]
+      },
+      {
+        "titulo": "Reforma de pensiones",
+        "descripcion": "Reformar la Ley 32123 (Sistema Único AFP/ONP) para mejorar montos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Reformas%20en%20la%20Ley%2032123%20del%20Sistema%20%C3%9Anico%20de%20Pensiones%20%28AFP%20y%20ONP%29"
+        ]
+      },
+      {
+        "titulo": "Acceso a servicios",
+        "descripcion": "Garantizar agua potable y saneamiento mediante proyectos G2G.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Garantizar%20acceso%20al%20agua%20potable%20y%20saneamiento%20con%20una%20inversi%C3%B3n%20de%20proyectos%20celebrados%20de%20gobierno%20a%20gobierno"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Protección de terrenos estatales",
+        "descripcion": "Medidas de vigilancia y cautela para evitar invasiones y frenar narcotráfico, tala y minería ilegal.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=tomar%20medidas%20de%20vigilancia%20y%20cautela%20de%20todos%20los%20terrenos%20del%20Estado"
+        ]
+      },
+      {
+        "titulo": "Saneamiento y sanción",
+        "descripcion": "Instalar plantas de tratamiento y definir sanciones penales para responsables de contaminación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Establecer%20las%20sanciones%20administrativas%20y%20penales%20para%20los%20responsables%20de%20contaminaci%C3%B3n%20de%20aguas"
+        ]
+      },
+      {
+        "titulo": "Descontaminación de suelos y aguas",
+        "descripcion": "Remediación por relaves mineros mediante plantas de tratamiento.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Instalaci%C3%B3n%20de%20plantas%20de%20tratamiento%20de%20aguas"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Reconstrucción escolar",
+        "descripcion": "Reconstrucción de 27,000 instituciones públicas en mal estado.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Garantizar%20la%20Educaci%C3%B3n%20P%C3%BAblica%3A%20Reconstrucci%C3%B3n%20de%2027%2C000%20instituciones"
+        ]
+      },
+      {
+        "titulo": "Capacitación magisterio",
+        "descripcion": "Programa masivo de formación docente desde enero 2027.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=La%20capacitaci%C3%B3n%20del%20magisterio%20nacional%20debe%20iniciarse%20en%20enero%20del%202027"
+        ]
+      },
+      {
+        "titulo": "Compra de satélite",
+        "descripcion": "Adquirir un satélite de telecomunicaciones para mejorar conectividad educativa.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=La%20compra%20del%20sat%C3%A9lite%20debe%20efectuarse%20el%20primer%20trimestre%20del%20a%C3%B1o%202027"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Salud pública 24/7",
+        "descripcion": "Implementar turnos mañana, tarde y noche en centros de salud desde noviembre 2026.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Atenci%C3%B3n%20ma%C3%B1ana%2C%20tarde%20y%20noche%20en%20centros%20de%20salud"
+        ]
+      },
+      {
+        "titulo": "Suministro de medicinas",
+        "descripcion": "Asegurar abastecimiento permanente desde octubre 2026.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Suministro%20suficiente%20de%20medicinas%20a%20partir%20de%20octubre%20del%202026"
+        ]
+      },
+      {
+        "titulo": "Despliegue especialistas",
+        "descripcion": "Médicos especialistas desplazados a regiones para intervenciones quirúrgicas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=M%C3%A9dicos%20especialistas%20deben%20desplazarse%20a%20departamentos%20para%20intervenciones%20quir%C3%BArgicas"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Reingeniería PNP",
+        "descripcion": "Reorganización institucional y operativa de la Policía Nacional.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Fortalecimiento%20y%20Reingenier%C3%ADa%20institucional%20y%20operativa%20de%20la%20Policial%20Nacional%20del%20Per%C3%BA"
+        ]
+      },
+      {
+        "titulo": "Cero impunidad",
+        "descripcion": "Acelerar procesos en flagrancia y asegurar sentencias efectivas.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf#:~:text=Reforma%20procesal,impunidad"
+        ]
+      }
+    ]
+  },
+  "coherenciaConElPlan": {
+    "nivelDeAlineacion": {
+      "value": "Alto",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf"
+      ]
+    },
+    "diferencias": { "value": null, "source": [] },
+    "cumplimientoPrevio": { "value": null, "source": [] }
+  },
+  "controversias": {
+    "antecedentes": [
+      {
+        "titulo": "No registra antecedentes policiales conocidos.",
+        "descripcion": "No registra antecedentes policiales en las bases de datos de consulta pública.",
+        "estado": null,
+        "source": []
+      },
+      {
+        "titulo": "Medidas de protección dictadas por Juzgado de Familia (2019)",
+        "descripcion": "El Vigésimo Primer Juzgado de Familia de Lima dictó medidas de protección precautorias a favor de la denunciante por presunto acoso, incluyendo resticciones de acercamiento. No constituye condena penal.",
+        "estado": "Antecedente judicial (Medida de protección)",
+        "source": [
+          "https://www.pj.gob.pe/wps/wcm/connect/cortesuperiorlimapjcs/s_csj_lima_nuevo/as_inicio/as_imagen_prensa/as_noticias/csjli_n_juzgado_dicta_medidas_proteccion_periodista_violencia_sexual_lescano_120319#:~:text=el%20juez%20sacha,sexual"
+        ]
+      },
+      {
+        "titulo": "Investigación fiscal por acoso sexual (Archivada)",
+        "descripcion": "La Fiscalía abrió investigación por presunto acoso sexual en marzo de 2019, la cual fue archivada definitivamente a inicios de 2020 sin acusación penal.",
+        "estado": "Archivado",
+        "source": [
+          "https://lpderecho.pe/yonhy-lescano-fiscalia-archivo-definitivamente-denuncia-acoso-periodista#:~:text=el%20fiscal%20henry,reserva"
+        ]
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "No registra procesos penales en curso conocidos.",
+        "descripcion": "No registra procesos judiciales en curso conocidos.",
+        "estado": null,
+        "source": []
+      }
+    ],
+    "procesosArchivados": [
+      {
+        "titulo": "Investigación fiscal por denuncia de acoso sexual (2019)",
+        "descripcion": "Carpeta fiscal por presunto acoso sexual archivada definitivamente en 2020; no hubo acusación penal ni sentencia condenatoria.",
+        "estado": "Archivado definitivamente",
+        "source": [
+          "https://lpderecho.pe/yonhy-lescano-fiscalia-archivo-definitivamente-denuncia-acoso-periodista#:~:text=el%20fiscal%20henry,reserva"
+        ]
+      },
+      {
+        "titulo": "Medidas de protección (Juzgado de Familia)",
+        "descripcion": "Medidas precautorias dictadas en 2019 a favor de la denunciante en el marco de la denuncia por acoso.",
+        "estado": "Medida precautoria",
+        "source": [
+          "https://www.pj.gob.pe/wps/wcm/connect/cortesuperiorlimapjcs/s_csj_lima_nuevo/as_inicio/as_imagen_prensa/as_noticias/csjli_n_juzgado_dicta_medidas_proteccion_periodista_violencia_sexual_lescano_120319#:~:text=el%20juez%20sacha,sexual"
+        ]
+      }
+    ],
+    "declaraciones": [
+      {
+        "titulo": "Denuncia por acoso sexual y debate sobre pruebas",
+        "descripcion": "En 2019 se difundieron chats de WhatsApp con contenido sexual. El caso generó debate mediático y análisis sobre la autenticidad de los mensajes.",
+        "source": [
+          "https://ojo-publico.com/politica/elecciones-2021/las-mentiras-detras-del-archivo-la-denuncia-acoso-contra-lescano#:~:text=urante%20las,son%20falsos"
+        ]
+      },
+      {
+        "titulo": "Suspensión del Congreso (120 días)",
+        "descripcion": "Fue suspendido por 120 días por el Pleno del Congreso tras informe de la Comisión de Ética relacionado con la denuncia de acoso.",
+        "source": [
+          "https://comunicaciones.congreso.gob.pe/noticias/pleno-aprobo-suspension-de-congresista-lescano/#:~:text=el%20pleno,legislatura"
+        ]
+      },
+      {
+        "titulo": "Alegación de chats 'fraguados' y peritaje",
+        "descripcion": "Lescano sostuvo públicamente que los chats fueron falsificados y presentó un peritaje internacional para defender su versión.",
+        "source": [
+          "https://rpp.pe/politica/congreso/yonhy-lescano-tras-ser-suspendido-se-ha-consumado-una-cobarde-vendetta-politica-congreso-noticia-1189810#:~:text=El%20suspendido%20legislador,lescano"
+        ]
+      },
+      {
+        "titulo": "Fallo judicial sobre difamación (2022)",
+        "descripcion": "Un juez señaló en un fallo posterior que no se demostró que los mensajes fueran falsos, aunque faltaron pruebas para acreditar acoso penal, desestimando una demanda de difamación interpuesta por Lescano.",
+        "source": [
+          "https://www.infobae.com/america/peru/2022/09/29/caso-de-acoso-sexual-juez-concluye-que-no-difamaron-a-yonhy-lescano-con-denuncia#:~:text=Para%20el%20juez,periodista"
+        ]
+      },
+      {
+        "titulo": "Declaraciones sobre impuestos de Las Bambas (Fact-checking)",
+        "descripcion": "Afirmaciones públicas sobre el pago de impuestos de la minera Las Bambas fueron calificadas como engañosas o incompletas tras verificaciones de hechos.",
+        "source": [
+          "https://ojo-publico.com/1334/afirmacion-congresista-lescano-sobre-pago-impuestos-las-bambas-es-enganosa#:~:text=urante%20el%20Pleno%20del%20Congreso,es%20enga%C3%B1osa"
+        ]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "Actuaciones administrativas como recurrente",
+        "descripcion": "Aparece vinculado a recursos administrativos (reconsideraciones) ante organismos reguladores, sin que consten multas tributarias condenatorias firmes a su nombre en registros públicos.",
+        "source": []
+      }
+    ]
+  },
+  "transparencia": {
+    "items": [
+      "No consta en fuentes públicas la existencia de multas o sanciones tributarias registradas por la SUNAT o INDECOPI"
+    ],
+    "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
+  },
+  "competenciasPersonales": {
+    "liderazgo": { "value": null, "source": [] },
+    "comunicacion": { "value": null, "source": [] },
+    "credibilidad": { "value": null, "source": [] }
+  },
+  "percepcionPublica": {
+    "intencionVoto": {
+      "min": 2,
+      "max": 2,
+      "descripcion": "Ipsos (encuesta para América Televisión), 18–19 de diciembre de 2025",
+      "source": [
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf#:~:text=Yonhy%20Lescano"
+      ]
+    },
+    "aprobacion": { "value": null, "source": [] },
+    "redes": {
+      "value": "Presencia en X, Instagram, Facebook y YouTube",
+      "source": ["https://lescano.pe/"]
+    }
+  },
+  "innovacionYVision": {
+    "items": [
+      "Crear el Ministerio de Ciencia y Tecnología en base al Instituto Nacional de Calidad (INACAL)",
+      "Uso de IA y otras tecnologías para fiscalizar la gestión pública"
+    ],
+    "source": [
+      "https://mpesije.jne.gob.pe/docs/582e0d55-19ee-4a7f-85ef-c254be5bada6.pdf"
+    ]
+  },
+  "historialLegislativo": {
+    "tieneHistorial": true,
+    "productivityLabel": "N/A",
+    "asistencia": { "porcentaje": null, "label": null, "source": null },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [],
+    "nota": "Congresista de la República en los periodos 2011-2016 y 2016-2019",
+    "source": "https://www.congreso.gob.pe/?K=290&TPL=if0&a=iv&id=822#:~:text=Grupo%20o%20Partido%20Pol%C3%ADtico:%20Acci%C3%B3n%20Popular"
+  }
+}

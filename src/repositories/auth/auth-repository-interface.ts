@@ -9,7 +9,11 @@ export type AuthRepository = {
     email: string,
     password: string
   ) => Promise<AuthTokenResponsePassword["data"]>;
-  signup?: (email: string, password: string) => Promise<AuthResponse["data"]>;
+  signup?: (
+    email: string,
+    password: string,
+    emailRedirectTo?: string
+  ) => Promise<AuthResponse["data"]>;
   logout?: () => Promise<void>;
   resetPassword?: (
     email: string,

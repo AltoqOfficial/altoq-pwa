@@ -71,8 +71,14 @@ export const createAuthService = (
       };
     }
 
-    // 1. Crear usuario en Supabase Auth
-    const { user } = await authRepository.signup(body.email, body.password);
+    // 1. Crear usuario en Supabase Auth con URL de callback para auto-login
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+    const emailRedirectTo = `${siteUrl}/auth/callback`;
+    const { user } = await authRepository.signup(
+      body.email,
+      body.password,
+      emailRedirectTo
+    );
 
     if (!user) {
       throw {

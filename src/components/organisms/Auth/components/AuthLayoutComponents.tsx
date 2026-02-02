@@ -45,6 +45,7 @@ const QUOTES = [
 
 /**
  * Componente de cita animada
+ * Uses fixed min-height to prevent layout shift when quotes change
  */
 export const AnimatedQuote = memo(function AnimatedQuote() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -73,7 +74,7 @@ export const AnimatedQuote = memo(function AnimatedQuote() {
   const currentQuote = QUOTES[currentIndex];
 
   return (
-    <header className="text-center max-w-[90%] md:max-w-[80%] lg:max-w-none">
+    <header className="text-center max-w-[90%] md:max-w-[80%] lg:max-w-none min-h-[140px] md:min-h-[160px] lg:min-h-[180px] flex flex-col justify-center items-center">
       {/* Quote text */}
       <Typography
         font="bigShoulders"
@@ -95,7 +96,7 @@ export const AnimatedQuote = memo(function AnimatedQuote() {
         color="white"
         align="right"
         className={cn(
-          "text-lg md:text-2xl lg:text-3xl transition-all duration-400 ease-in-out delay-75",
+          "text-lg md:text-2xl lg:text-3xl transition-all duration-400 ease-in-out delay-75 w-full",
           isAnimating ? "opacity-0 translate-y-2" : "opacity-100 translate-y-0",
           !currentQuote.author && "invisible"
         )}

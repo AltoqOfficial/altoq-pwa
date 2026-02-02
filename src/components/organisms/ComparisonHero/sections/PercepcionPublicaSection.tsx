@@ -38,7 +38,7 @@ export function PercepcionPublicaSection({
   }
 
   const renderCandidateChart = (candidate: CandidateComparisonData | null) => {
-    if (candidate) {
+    if (candidate && candidate.percepcionPublica) {
       // Extract values and sources
       const aprobacionValue =
         (extractValue(candidate.percepcionPublica.aprobacion) as string) || "";
@@ -55,12 +55,13 @@ export function PercepcionPublicaSection({
           minVote={candidate.percepcionPublica.intencionVoto.min}
           maxVote={candidate.percepcionPublica.intencionVoto.max}
           description={candidate.percepcionPublica.intencionVoto.descripcion}
-          color={candidate.color}
+          color={candidate.color || "#6B7280"}
           approval={aprobacionValue}
           socialMedia={redesValue}
           voteSource={candidate.percepcionPublica.intencionVoto.source}
           approvalSource={aprobacionSource}
           socialMediaSource={redesSource}
+          historialPartidos={candidate.perfilGeneral?.historialPartidos}
         />
       );
     }

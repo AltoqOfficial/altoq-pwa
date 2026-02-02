@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { Logo } from "@/components/atoms/Logo";
@@ -9,20 +10,46 @@ import { cn } from "@/lib/utils";
 import { useUserProfile } from "@/hooks/useUserProfile";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
 
-export function Header() {
+// Routes that have dark backgrounds and need light-colored header elements
+const DARK_BACKGROUND_ROUTES = ["/compara"];
+
+interface HeaderProps {
+  className?: string;
+  forceShow?: boolean;
+  variant?: "default" | "transparent";
+}
+
+export function Header({
+  className,
+  forceShow,
+  variant = "default",
+}: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const userMenuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
   const { user, isLoading } = useUserProfile();
   const { mutate: logout, isPending: isLoggingOut } = useLogout();
 
+  // TODO: Restore auth hooks once modules are available
+  // const { user, isLoading } = useUserProfile();
+
+  // const user: any = null;
+  // const isLoading = false;
+
+  // const { mutate: logout, isPending: isLoggingOut } = useLogout();
+  // const logout = () => {};
+  // const isLoggingOut = false;
+
   const isAuthenticated = !!user && !isLoading;
+  const isDarkBackground = DARK_BACKGROUND_ROUTES.some((route) =>
+    pathname.startsWith(route)
+  );
 
   const navLinks = [
-    { href: "/compara", label: "Comparar" },
-    { href: "/formulario-candidato", label: "Candidato Ideal" },
+    { href: "/compara", label: "Comparar Candidatos" },
+    { href: "/formulario-candidato", label: "Match Político" },
     { href: "/#como-funciona", label: "¿Cómo funciona?" },
-    { href: "/sugerencias", label: "Sugerencias" },
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -55,20 +82,29 @@ export function Header() {
   const userInitial = displayName.charAt(0).toUpperCase();
 
   return (
-    <header className="relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300">
+    <header
+      className={cn(
+        "relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300",
+        className
+      )}
+    >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         {/* Logo */}
-        <Logo variant="default" asLink priority />
+        <Logo
+          variant={isDarkBackground ? "white" : "default"}
+          asLink
+          priority
+        />
 
         {/* Desktop Navigation - Center */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-12">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary-600",
-                "text-neutral-900"
+                variant === "transparent" ? "text-white" : "text-neutral-900"
               )}
             >
               {link.label}
@@ -86,13 +122,23 @@ export function Header() {
             <div className="relative" ref={userMenuRef}>
               <button
                 onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
-                className="flex items-center gap-3 px-4 py-2 rounded-2xl hover:bg-gray-100 transition-colors"
+                className={cn(
+                  "flex items-center gap-3 px-4 py-2 rounded-2xl transition-colors",
+                  variant === "transparent"
+                    ? "hover:bg-white/10 text-white"
+                    : "hover:bg-gray-100 text-gray-900"
+                )}
               >
                 {/* Avatar */}
                 <div className="w-9 h-9 rounded-full bg-[#FF2727] flex items-center justify-center text-white font-bold text-sm">
                   {userInitial}
                 </div>
-                <span className="text-sm font-medium text-gray-900 max-w-[120px] truncate">
+                <span
+                  className={cn(
+                    "text-sm font-medium max-w-[120px] truncate",
+                    variant === "transparent" ? "text-white" : "text-gray-900"
+                  )}
+                >
                   {displayName}
                 </span>
                 {/* Arrow */}
@@ -107,7 +153,8 @@ export function Header() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className={cn(
-                    "text-gray-500 transition-transform duration-200",
+                    "transition-transform duration-200",
+                    variant === "transparent" ? "text-white" : "text-gray-500",
                     isUserMenuOpen ? "rotate-180" : ""
                   )}
                 >
@@ -126,7 +173,7 @@ export function Header() {
                     className="absolute right-0 top-full mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden z-50"
                   >
                     <Link
-                      href="/dashboard"
+                      href="/"
                       className="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
                       onClick={() => setIsUserMenuOpen(false)}
                     >
@@ -146,7 +193,7 @@ export function Header() {
                         <rect width="7" height="9" x="14" y="12" rx="1" />
                         <rect width="7" height="5" x="3" y="16" rx="1" />
                       </svg>
-                      Dashboard
+                      Inicio
                     </Link>
                     <div className="h-px bg-gray-100" />
                     <button
@@ -196,18 +243,27 @@ export function Header() {
             animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
             className={cn(
               "w-6 h-0.5 block transition-colors",
-              isOpen ? "bg-neutral-900" : "bg-neutral-900"
+              isOpen || variant === "transparent"
+                ? "bg-white"
+                : "bg-neutral-900"
             )}
           />
           <motion.span
             animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="w-6 h-0.5 block bg-neutral-900 transition-colors"
+            className={cn(
+              "w-6 h-0.5 block transition-colors",
+              isOpen || variant === "transparent"
+                ? "bg-white"
+                : "bg-neutral-900"
+            )}
           />
           <motion.span
             animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
             className={cn(
               "w-6 h-0.5 block transition-colors",
-              isOpen ? "bg-neutral-900" : "bg-neutral-900"
+              isOpen || variant === "transparent"
+                ? "bg-white"
+                : "bg-neutral-900"
             )}
           />
         </button>
@@ -248,11 +304,11 @@ export function Header() {
                     </div>
                   </div>
                   <Link
-                    href="/dashboard"
+                    href="/"
                     className="w-full text-center bg-[#FF2727] hover:bg-[#E82323] text-white font-bold rounded-2xl px-6 py-3 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
-                    Ir al Dashboard
+                    Ir al Inicio
                   </Link>
                   <button
                     onClick={handleLogout}

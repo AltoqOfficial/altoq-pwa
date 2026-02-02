@@ -1,0 +1,808 @@
+{
+  "id": "luis-fernando-olivera-vega",
+  "slug": "luis-fernando-olivera-vega",
+  "fullName": "Luis Fernando Olivera Vega",
+  "shortName": "Fernando Olivera",
+  "image": "/candidatos/fernando-olivera.webp",
+  "color": "#FFFFFF",
+  "party": "PARTIDO FRENTE DE LA ESPERANZA 2021",
+  "partyIcon": "/partidos/frente-esperanza.png",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/fernandooliveravega/#",
+    "tiktok": null,
+    "twitter": null,
+    "facebook": "https://www.facebook.com/FerOliveraVega/",
+    "web": "http://www.partidofrentedelaesperanza2021.pe/DOCUMENTOS/ideario.pdf#page=4&search=centro"
+  },
+  "perfilGeneral": {
+    "edad": { "value": null, "source": [] },
+    "nacimiento": { "value": null, "source": [] },
+    "lugar": {
+      "value": "Jesús María, Lima",
+      "source": [
+        "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera/sobre-congresista/#:~:text=Periodo%20Parlamentario%201995%2D2000&text=Fundador%20del%20Frente%20Independiente%20Moralizador,de%20Investigaci%C3%B3n%20del%20Tren%20El%C3%A9ctrico."
+      ]
+    },
+    "nivelEducativo": {
+      "value": [
+        "Bachiller en Administración de Empresas (1980)",
+        "Master en Relaciones Internacionales (2008)"
+      ],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+      ]
+    },
+    "profesion": {
+      "value": ["Administrador de Empresas", "Político"],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+      ]
+    },
+    "partidoActual": {
+      "value": "PARTIDO FRENTE DE LA ESPERANZA 2021",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+      ]
+    },
+    "cambiosDePartido": {
+      "value": "2",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+      ]
+    },
+    "historialPartidos": [
+      {
+        "ano": "1977-1986",
+        "partido": "Partido Popular Cristiano (PPC)",
+        "icono": "/partidos/ppc.png",
+        "source": [
+          "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+        ]
+      },
+      {
+        "ano": "1990-2006",
+        "partido": "Frente Independiente Moralizador (FIM)",
+        "icono": "/partidos/fim.png",
+        "source": [
+          "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+        ]
+      },
+      {
+        "ano": "2016",
+        "partido": "Frente Esperanza",
+        "icono": "/partidos/frente-esperanza.png",
+        "source": [
+          "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+        ]
+      },
+      {
+        "ano": "2021",
+        "partido": "Frente de la Esperanza 2021",
+        "icono": "/partidos/frente-esperanza-2021.png",
+        "source": [
+          "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+        ]
+      }
+    ]
+  },
+  "experienciaPolitica": {
+    "anosExperiencia": {
+      "value": "40+",
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+      ]
+    },
+    "cargosPrevios": {
+      "values": [
+        "Secretario General en el Ministerio Público (1981-1984)",
+        "Diputado por Convergencia Democrática (1985-1990)",
+        "Diputado por Frente Independiente Moralizador (1990-1992)",
+        "Congresista Constituyente CCD (1992-1995)",
+        "Congresista de la República (1995-2000)",
+        "Congresista de la República (2000-2001)",
+        "Ministro de Justicia (2001-2002)",
+        "Embajador del Perú en España (2002-2005)",
+        "Ministro de Relaciones Exteriores (2005-2005)"
+      ],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+      ]
+    },
+    "candidaturasPresidenciales": {
+      "values": [
+        "2016 → Primera vuelta",
+        "2021 → Excluido",
+        "2026 → Precandidato"
+      ],
+      "source": [
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+      ]
+    }
+  },
+  "experienciaGestion": {
+    "sectorPublico": {
+      "cantidad": 9,
+      "detalle": {
+        "values": [
+          "Secretario General Fiscalía de la Nación (1981-1984)",
+          "Ministro de Justicia (2001-2002)",
+          "Embajador en España (2002-2005)",
+          "Ministro de Relaciones Exteriores (2005-2005)"
+        ],
+        "source": [
+          "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+        ]
+      }
+    },
+    "sectorPrivado": {
+      "cantidad": 2,
+      "detalle": {
+        "values": [
+          "Sub-Gerente Proyecto Instalaciones y Edificaciones S.A. (1977-1980)",
+          "Consultor Autónomo (2005-2025)"
+        ],
+        "source": [
+          "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+        ]
+      }
+    },
+    "source": "https://infogob.jne.gob.pe/Politico/FichaPolitico/luis-fernando-olivera-vega_historial-partidario_bMpJqONPKhY=pO"
+  },
+  "ideologiaPolitica": {
+    "posicion": {
+      "value": "Centro / Personalismo",
+      "descripcion": "Liderado por Fernando Olivera, el partido suele centrarse en la lucha anticorrupción y reformas políticas radicales, con una ubicación difusa en el espectro tradicional.",
+      "source": ["https://es.wikipedia.org/wiki/Frente_de_la_Esperanza_2021"]
+    },
+    "economia": {
+      "sintesis": "Economía Social de Mercado",
+      "descripcion": "Está enmarcada en un Estado de Bienestar. Esta postura combina el respeto a la propiedad privada con un fuerte intervencionismo estatal, proponiendo eliminar la protección constitucional de los \"Contratos Ley\" para que el Estado recupere su capacidad de modificar acuerdos con privados. Además, busca reactivar el consumo y la formalización mediante recortes drásticos de impuestos, específicamente reduciendo el IGV al 10% y eliminando el Impuesto a la Renta de quinta categoría para los trabajadores.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=PROGRAMA%20ECON%C3%93MICO"
+      ]
+    },
+    "educacion": {
+      "sintesis": "Humanista, anti-lucro y productiva",
+      "descripcion": "La ideología educativa del plan es humanista y productiva, caracterizada por un rechazo explícito al lucro en la enseñanza. Propone financiar el sector mediante la reducción del gasto en armamento y vincula la educación directamente con el aparato productivo y la tecnología. Además, asume un enfoque asistencialista al considerar la nutrición (desayunos y almuerzos escolares) como requisito indispensable para el aprendizaje.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACI%C3%93N"
+      ]
+    },
+    "salud": {
+      "sintesis": "Estatista, Intervencionista y Universalista",
+      "descripcion": "El plan asume que el mercado privado (laboratorios extranjeros e importadores locales) encarece los costos. Por ello, propone una ideología de \"Soberanía Sanitaria\", buscando romper la dependencia del sector privado mediante la creación de empresas públicas (\"Droguería y Laboratorio Nacional\") para fabricar medicinas y bajar costos. Asimismo, adopta un enfoque de medicina social (SIS para todos), asignando médicos de cabecera por distrito y ofreciendo incentivos económicos (bonos) a las familias que cumplan con la prevención de enfermedades.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD"
+      ]
+    },
+    "matrimonioIgualitario": {
+      "value": null,
+      "source": []
+    },
+    "aborto": {
+      "sintesis": "NO, apoya el Conservadurismo Social",
+      "descripcion": "Es una ideología social-cristiana o conservadora. Promueve la protección económica de la mujer (salarios, seguros) y su rol materno, mientras adopta una postura implícita de defensa del niño por nacer, alejándose de la agenda feminista liberal sobre derechos reproductivos.",
+      "source": ["https://www.instagram.com/p/DTLHwF4Eb9S/"]
+    },
+    "seguridad": {
+      "value": null,
+      "source": []
+    },
+    "ambiente": {
+      "sintesis": "Desarrollismo Verde o Eco-Capitalismo Pragmático",
+      "descripcion": "La ideología ambiental es pragmática y financiera. El plan ve la biodiversidad y la capacidad de captura de CO2 no solo como bienes a proteger, sino como activos financieros para negociar deuda externa y atraer capitales. Busca conciliar esto con una minería continuista pero regulada, rechazando el daño irreversible pero promoviendo la inversión extractiva.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD"
+      ]
+    },
+    "reformaPolitica": {
+      "sintesis": "Refundacional, Plebiscitaria y Radical",
+      "descripcion": "Es una ideología anti-establishment que busca \"aniquilar\" el sistema de corrupción actual mediante una democracia directa radical. Propone que el control político no lo ejerza el Congreso (al que también busca revocar), sino la ciudadanía directamente a través de referéndums y censuras, eliminando la protección jurídica (inmunidad) de los gobernantes.",
+      "source": [
+        "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO%20En%20nuestro%20concepto"
+      ]
+    }
+  },
+  "propuestasPrincipales": {
+    "institucional": [
+      {
+        "titulo": "Ley Patriota y Referéndum Constitucional",
+        "descripcion": "Presentación de una 'Ley Patriota' el 28 de julio de 2026, seguida de un Referéndum para aprobar importantes cambios constitucionales: revocatoria del Presidente y congresistas vía referéndum si no cumplen promesas, eliminación total de la inmunidad para el Presidente y miembros del Congreso, censura ciudadana de Ministros y altos funcionarios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Juicio de Residencia",
+        "descripcion": "Revisión obligatoria de las actuaciones del Presidente al final de su mandato.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Constitución Económica",
+        "descripcion": "Derogación del segundo párrafo del artículo 62 de la Constitución en materia de Contratos Ley, cuyo objetivo es revisar los contratos considerados lesivos o corruptos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Reforma del sistema de justicia",
+        "descripcion": "Reforma total del Poder Judicial, del Ministerio Público, del Tribunal Constitucional y de la Junta Nacional de Justicia: Creación de Jurados Ciudadanos, límite de edad para jueces y fiscales, Corte Suprema solo como vía de revisión excepcional (casación).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Sanciones drásticas",
+        "descripcion": "25 años por el delito de perjurio, eliminación de beneficios penitenciarios por delitos graves contra la sociedad y el Estado (corrupción), imprescriptibilidad de los delitos de corrupción, acumulación de penas para funcionarios públicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Nuevos Ministerios y Entidades",
+        "descripcion": "Creación del Ministerio de la Amazonía, Ministerio de Ciencia, Tecnología e Innovación (MCTI), y una Secretaría de Estado a nivel presidencial para la transparencia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Reforma policial",
+        "descripcion": "Reorganización de las fuerzas de seguridad en: Guardia Civil, Policía Nacional de Investigación, Guardia Republicana y Policía de Migraciones.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Gestión Pública",
+        "descripcion": "Creación de la Escuela de Gestión Pública, nueva Ley de Remuneraciones basada en la meritocracia eliminando las 'planillas doradas', eliminación de trabas burocráticas innecesarias (TUPAs) y consolidación de procedimientos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      },
+      {
+        "titulo": "Lucha contra la corrupción en los contratos",
+        "descripcion": "Ley para anular los arbitrajes en los contratos estatales (limitándolos solo a los convenios internacionales) y prohibición de adendas salvo casos extraordinarios aprobados por la Contraloría. Embargo de bienes de colaboradores que contraten con corrupción o participen en lavado de activos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EL%20ESTADO,s%C3%B3lido%20y%20eficiente"
+        ]
+      }
+    ],
+    "economico": [
+      {
+        "titulo": "Revolución Tributaria (Reducción de Impuestos)",
+        "descripcion": "Bajar la carga fiscal bajo la premisa de que 'todos paguen poco para que todos paguen': Reducción gradual del IGV del 18% al 10%, eliminación total del Impuesto a la Renta de Quinta Categoría (trabajadores dependientes), alivio a independientes subiendo el tope inafecto de Cuarta Categoría, y reinversión de utilidades libre de impuestos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Nuevo Régimen para MYPES",
+        "descripcion": "Incluir a la economía informal con un sistema simplificado: Régimen Especial Universal para cualquier actividad hasta 5 millones en ventas, pagando solo 4% de IGV (sin crédito fiscal) y 1% de Impuesto a la Renta sobre el valor de venta, sin requerir balances (solo libros de actas y ventas/compras digitales).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Reforma de SUNAT",
+        "descripcion": "Transformar SUNAT en una entidad promotora, simplificando trámites y eliminando su rol persecutor.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Empleo e Institucionalidad",
+        "descripcion": "Meta de generar 1 millón de empleos formales al año, dividir el Viceministerio de Economía en dos (Macroeconomía y Microeconomía), y derogar el artículo 62 de la Constitución para eliminar la inmutabilidad de los Contratos Ley.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Impulso al Turismo",
+        "descripcion": "Crear el Ministerio de Turismo, habilitar 5 aeropuertos internacionales adicionales (Cuzco, Pisco, Arequipa, Iquitos y Piura), construir trenes de alta velocidad (Lima-Ica y Lima-Trujillo) y un Túnel y Tren Trasandino, y devolver el IGV al turista extranjero en aeropuertos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Agricultura y Textiles",
+        "descripcion": "Restituir el Drawback al 5% para proteger las exportaciones, aplicar medidas antidumping a la importación de prendas de bajo costo para proteger la industria textil nacional, y reactivar el cultivo de algodón mediante un autogravamen para financiar tecnología.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Minería",
+        "descripcion": "Reactivar proyectos mineros paralizados y formalizar la pequeña minería, crear una comisión para un fondo de preservación del empleo del trabajador minero.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Sistema Financiero y Crédito",
+        "descripcion": "Permitir que los títulos de propiedad (COFOPRI) sirvan como garantía para obtener créditos de maquinaria e insumos en Consorcios de Exportación, y exonerar a las micro y pequeñas empresas del pago del Impuesto a las Transacciones Financieras (ITF).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Partimos%20de%20la%20convicci%C3%B3n%20de%20que%20la%20econom%C3%ADa"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "titulo": "Meta Cero Anemia",
+        "descripcion": "Eliminación total de la desnutrición crónica y anemia infantil mediante decretos de urgencia el 28 de julio de 2026.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Alimentación Garantizada",
+        "descripcion": "Programas de alimentación basados en proteínas (carnes, huevos, lácteos) para gestantes (monitorizado en centros de salud) y para niños y adolescentes (desayunos y almuerzos escolares).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Dieta Nacional",
+        "descripcion": "Fomento del consumo de alimentos ancestrales y locales (quinua, cuy, pescado) en lugar de importados (trigo, arroz).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Shock de Saneamiento",
+        "descripcion": "Decreto de urgencia para el financiamiento y ejecución inmediata de todos los proyectos de agua y alcantarillado.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Vivienda Joven",
+        "descripcion": "Creación del programa 'Vivienda Joven' para facilitar el acceso a menores de edad, sumado a la continuidad de Techo Propio y MiVivienda.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Formalización de Autoconstrucción",
+        "descripcion": "Legalizar las edificaciones de autoconstrucción de sectores populares para que ganen valor y sirvan de activo económico.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Subsidios Directos",
+        "descripcion": "Mantener los programas de transferencias monetarias directas a la población necesitada, eliminando gastos burocráticos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Créditos Sociales",
+        "descripcion": "Fomentar programas de microcréditos dirigidos especialmente a jubilados y personas de la tercera edad.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Monetización de Títulos",
+        "descripcion": "Permitir que los títulos de propiedad (COFOPRI) sirvan como garantía bancaria para obtener créditos productivos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Enfoque Bio-Social",
+        "descripcion": "Protección del niño desde el vientre materno con nutrición garantizada como requisito para la educación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      },
+      {
+        "titulo": "Becas",
+        "descripcion": "Ampliación del programa Beca 18 y auditoría para asegurar que llegue a quien lo necesita.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=Agua%20Potable%20y%20Saneamiento"
+        ]
+      }
+    ],
+    "ambiental": [
+      {
+        "titulo": "Canje de Deuda por Conservación",
+        "descripcion": "Valorizar la biodiversidad y captura de CO2 para pagar deuda externa.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      },
+      {
+        "titulo": "Minería Responsable y Revisión de Contratos",
+        "descripcion": "'Ni una mina más con contaminación': Solo operarán proyectos mineros que utilicen tecnología de punta para mitigar el impacto ambiental. Auditoría Ambiental para revisar los Estudios de Impacto Ambiental (EIA) de grandes proyectos vigentes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      },
+      {
+        "titulo": "Defensa del Agua y Cabeceras de Cuenca",
+        "descripcion": "Prioridad del agua como derecho humano fundamental. En conflictos entre minería y agricultura, la prioridad será siempre el agua para consumo humano y agricultura. Intangibilidad (protección absoluta) de las cabeceras de cuenca donde nace el agua.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      },
+      {
+        "titulo": "Licencia Social y Consulta Previa",
+        "descripcion": "'No se impondrán proyectos a sangre y fuego'. Si un proyecto no tiene la licencia social (aceptación de la comunidad), no va. Estado árbitro, no cómplice: dejar de actuar como 'socio' de las mineras y asumir rol de fiscalizador imparcial.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      },
+      {
+        "titulo": "Delitos Ambientales y Sanciones",
+        "descripcion": "Imprescriptibilidad de delitos ambientales graves (derrames de petróleo, relaves tóxicos). Las empresas responsables asumen la reparación civil y remediación inmediata, sin dilaciones judiciales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      },
+      {
+        "titulo": "Canon Comunal",
+        "descripcion": "Los beneficios económicos (Canon) de la explotación de recursos naturales llegan directamente a las familias y comunidades de la zona de influencia, no solo a la burocracia de los Gobiernos Regionales o Locales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=BIODIVERSIDAD%20Un%20gran%20reto%20que%20debemos%20asumir%20es%20la%20plena"
+        ]
+      }
+    ],
+    "educativo": [
+      {
+        "titulo": "Ciencia y Tecnología (CTI)",
+        "descripcion": "Impulsar una educación orientada decididamente a la ciencia, la tecnología y la innovación, dotándola de infraestructura moderna y laboratorios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Valores y Civismo",
+        "descripcion": "Rescate de la Educación Cívica para la formación de ciudadanía, así como el reforzamiento de valores, razonamiento matemático y científico.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Idiomas",
+        "descripcion": "Promoción de la educación bilingüe (español y lenguas nativas) incorporando el inglés. Enseñanza de una segunda lengua extranjera (específicamente chino e inglés) en colegios bilingües.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Mejoras Salariales Docentes",
+        "descripcion": "Aumentos anuales diferenciados para mejorar los ingresos de los docentes, 'bonificación real' para profesores de educación rural y bilingüe nativa, cumplimiento de la Ley de Homologación de sueldos para docentes universitarios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Infraestructura y Financiamiento",
+        "descripcion": "Reducción y limitación del gasto en armamento para redirigir fondos al sector educación, legislación para permitir el pago de impuestos mediante inversión en educación (similar a Obras por Impuestos), modernización de escuelas en zonas rurales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Educación Técnica y Superior",
+        "descripcion": "Reactivación de los Institutos Técnicos alineándolos con los requerimientos del mercado laboral, reorganización de la formación laboral para vincularla a las demandas de la pequeña, mediana y gran empresa, creación de colegios agropecuarios y empresariales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Nutrición y Aprendizaje",
+        "descripcion": "Articulación directa entre educación y nutrición. Garantía de desayunos y almuerzos escolares, reconociendo que sin una alimentación adecuada (proteínas) no hay rendimiento académico.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      },
+      {
+        "titulo": "Becas y Créditos",
+        "descripcion": "Auditoría y ampliación del programa Beca 18, y creación de programas de crédito educativo para estudios tanto en Perú como en el extranjero.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=EDUCACIÓN,camino%20incorrecto"
+        ]
+      }
+    ],
+    "salud": [
+      {
+        "titulo": "Atención continua 24 horas",
+        "descripcion": "Uso del 100% de los recursos de salud a tiempo completo para revertir las esperas, estableciendo turnos de 24 horas para consultas médicas, cirugías de emergencia, programadas y tratamientos oncológicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Mi Médico de Cabecera",
+        "descripcion": "Creación del programa 'Mi médico de Cabecera', asignando un médico especialista en Medicina Familiar y Comunitaria por cada distrito a nivel nacional para cuidar la salud de cada ciudadano de forma personalizada.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Seguro Universal",
+        "descripcion": "Garantizar el acceso universal a través del fortalecimiento del Seguro Integral de Salud (SIS).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Libre elección de EPS",
+        "descripcion": "Permitir que los trabajadores escojan libremente entre diferentes empresas prestadoras de salud (EPS) para generar competencia y más planes accesibles.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Droguería Nacional",
+        "descripcion": "Creación de la 'Droguería Nacional' para implementar la fabricación e importación directa de insumos y equipos médicos, eliminando intermediarios para bajar costos y equipar los centros con alta tecnología.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Laboratorio Farmacéutico Nacional",
+        "descripcion": "Creación de una entidad estatal para la producción de medicamentos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Hospitales y Camas",
+        "descripcion": "Construcción de hospitales nacionales en regiones estratégicas y reequipamiento de los hospitales emblemáticos (como el Dos de Mayo o Loayza). La meta es llegar a 2 camas por cada mil habitantes.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Nutrición Materno-Infantil",
+        "descripcion": "Implementación de programas de alimentación basados en proteínas (carnes, huevos, lácteos) para gestantes, niños y adolescentes, monitoreados en centros maternos y colegios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Cero Desnutrición",
+        "descripcion": "El objetivo explícito es reducir a CERO la desnutrición crónica infantil en menores de 5 años.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Bonos por Prevención",
+        "descripcion": "Programa de bonificaciones familiares condicionadas a realizar chequeos preventivos anuales y cumplir con el calendario de vacunación.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      },
+      {
+        "titulo": "Financiamiento",
+        "descripcion": "Incrementar la inversión per cápita en salud a entre US$ 800 y US$ 1,000 al año por habitante. Meta del 7% del PBI al sector Salud.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SALUD,-El%20derecho%20a%20la%20vida"
+        ]
+      }
+    ],
+    "seguridad": [
+      {
+        "titulo": "Reforma Policial",
+        "descripcion": "Volver al esquema de dos cuerpos policiales especializados: una Policía Comunitaria (prevención) y una Policía de Investigaciones (investigación del delito).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Depuración Policial",
+        "descripcion": "Creación de una comisión de depuración para eliminar los 'malos elementos' de la PNP, utilizando pruebas de confianza, exámenes toxicológicos y una Unidad de Inteligencia Financiera para detectar enriquecimiento ilícito.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Infraestructura de Investigación",
+        "descripcion": "Construcción y equipamiento de 5 laboratorios de investigación criminal certificados y mejoramiento de 3 morgues especializadas en criminología forense.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Escuelas de Policía",
+        "descripcion": "Reducción drástica de las escuelas de policía, pasando de 25 a solo 7, para garantizar una mejor formación y control.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Mapa del Delito y Tecnología",
+        "descripcion": "Determinación de zonas críticas (mapa del delito) para declarar estados de emergencia focalizados. Implementación de cámaras de vigilancia interconectadas y centrales de alarma en colegios.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Control de Armas",
+        "descripcion": "Reorganización de la SUCAMEC y decomiso/destrucción de armas ilegales o sin licencia.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Rol de las Fuerzas Armadas",
+        "descripcion": "Protección de locales públicos a cargo de las Fuerzas Armadas para liberar policías para el patrullaje.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Bloqueo en Penales",
+        "descripcion": "Bloqueo total de comunicaciones y régimen de visitas restringidas en los penales.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Autoridad Nacional Antidrogas (ANAN)",
+        "descripcion": "Creación de la ANAN con autonomía constitucional y atribuciones para levantar el secreto bancario y tributario.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Muerte Civil Financiera",
+        "descripcion": "Incautación total de propiedades y negocios de cualquier persona o empresa que colabore directa o indirectamente con el narcotráfico.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Control del Espacio Aéreo",
+        "descripcion": "Intervención permanente de las Fuerzas Armadas para el control del espacio aéreo, marítimo y fluvial (interdicción).",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Industrialización de la Coca",
+        "descripcion": "Fomento a la industrialización legal de la hoja de coca y reorganización de ENACO.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Fronteras Vivas",
+        "descripcion": "Ejecución de un programa de desarrollo en fronteras con incentivos tributarios para integrar a esos pueblos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Cero Beneficios",
+        "descripcion": "Eliminación total de beneficios penitenciarios para el crimen organizado, narcotráfico y corrupción agravada.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Trabajos Forzados (Penas de Trabajo)",
+        "descripcion": "Establecimiento de penas que incluyan trabajos obligatorios en la construcción de carreteras y servicios públicos.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      },
+      {
+        "titulo": "Cárcel Efectiva",
+        "descripcion": "Aplicación de cárcel efectiva y eliminación de leyes 'pro-crimen'.",
+        "source": [
+          "https://mpesije.jne.gob.pe/docs/d656b83f-3177-4053-a381-0f36ec99490a.pdf#:~:text=SEGURIDAD%20CIUDADANA,El%20principio%20b%C3%A1sico%20es%20que%20todo%20peruano%20tiene"
+        ]
+      }
+    ]
+  },
+  "controversias": {
+    "antecedentes": [
+      {
+        "titulo": "Detención por requisitoria vigente (Reo Contumaz) en 2024",
+        "descripcion": "En enero de 2024, fue detenido por la Policía Nacional del Perú y trasladado a la carceleta tras ser declarado 'reo contumaz' por ausentarse a la audiencia de un juicio oral. Fue liberado posteriormente bajo reglas de conducta.",
+        "estado": "Detención temporal (Liberado)",
+        "source": [
+          "https://www.infobae.com/peru/2024/01/27/fernando-olivera-fue-arrestado-por-caso-de-difamacion-contra-gobernadora-de-moquegua-fue-liberado-horas-despues/#:~:text=La%20captura%20fue%20ejecutada%20por%20miembros%20de%20la%20División%20de%20Requisitoria,se%20ordenara%20su%20liberación",
+          "https://larepublica.pe/politica/2024/01/27/detienen-a-fernando-olivera-por-caso-de-difamacion-contra-gobernadora-de-arequipa-940194"
+        ]
+      }
+    ],
+    "procesosJudiciales": [
+      {
+        "titulo": "Investigación por colusión agravada - Caso Carretera Interoceánica",
+        "descripcion": "El Poder Judicial rechazó su pedido de archivo de investigación por colusión agravada, por presunta participación en favorecer la concesión a Odebrecht en 2005 durante su gestión ministerial.",
+        "estado": "En curso",
+        "source": [
+          "https://larazon.pe/fernando-olivera-poder-judicial-rechaza-archivo-en-caso-de-colusion-agravada-relacionado-con-odebrecht/#:~:text=El%20Poder%20Judicial%2C%20en%20segunda%20instancia%2C%20rechaz%C3%B3,que%20le%20imputa%20la%20Fiscal%C3%ADa"
+        ]
+      },
+      {
+        "titulo": "Investigación preliminar por tráfico de influencias (Lava Jato)",
+        "descripcion": "El Equipo Especial Lava Jato mantiene una investigación preliminar en su contra vinculada al caso Odebrecht.",
+        "estado": "En curso (Preliminar)",
+        "source": [
+          "https://www.americatv.com.pe/noticias/actualidad/fernando-olivera-declaro-como-investigado-caso-odebrecht-n376825?#:~:text=Fernando%20Olivera%20es%20investigado,adjudicada%20a%20Odebrecht"
+        ]
+      },
+      {
+        "titulo": "Juicio por difamación agravada contra gobernadora de Moquegua",
+        "descripcion": "Enfrenta juicio por acusar de corrupción a la gobernadora regional. Su ausencia en el proceso motivó la declaración de reo contumaz.",
+        "estado": "En curso",
+        "source": [
+          "https://rpp.pe/politica/judiciales/fernando-olivera-poder-judicial-dispuso-liberacion-de-exministro-tras-ser-detenido-por-caso-de-difamacion-noticia-1530082#:~:text=Fernando%20Olivera%20afirmó%20en%202022,afrontaba%20un%20proceso%20judicial"
+        ]
+      }
+    ],
+    "procesosArchivados": [],
+    "declaraciones": [
+      {
+        "titulo": "Vladiaudios sobre presunto fraude electoral",
+        "descripcion": "Difundió audios atribuidos a Vladimiro Montesinos alegando un fraude electoral sistémico en 2021, los cuales fueron desestimados periodísticamente como pruebas concluyentes de fraude.",
+        "source": [
+          "https://www.idl-reporteros.pe/conspiraciones-telefonicas/#:~:text=El%20jueves%2024%20a%20las%205%3A30%20de%20la%20tarde,el%20vídeo%20Kouri%2DMontesinos"
+        ]
+      },
+      {
+        "titulo": "Cartas Falsas al Vaticano",
+        "descripcion": "Presentó documentos atribuidos a la Santa Sede ('cartas al Vaticano') acusando al Cardenal Cipriani, que resultaron ser apócrifos, lo que generó un escándalo mediático y cuestionamientos a su credibilidad.",
+        "source": [
+          "https://rpp.pe/politica/actualidad/cardenal-perdona-cartas-falsas-pero-queda-esa-huella-de-maldad-noticia-291141#:~:text=el%20cardenal%20Juan%20Luis%20Cipriani%20al%20ser%20consultado,firmada%20por%20el%20religioso"
+        ]
+      },
+      {
+        "titulo": "Acusaciones de corrupción al presidente del Congreso José Jerí",
+        "descripcion": "En campaña electoral 2025, criticó fuertemente al Congreso y a su presidente José Jerí, calificándolo de representante de la 'corrupción', lo que generó repercusión mediática.",
+        "source": [
+          "https://larepublica.pe/politica/2025/11/20/fernando-olivera-sobre-jose-jeri-es-el-representante-del-congreso-de-la-corrupcion-hnews-814820#:~:text=el%20periodista%20Pedro%20Salinas%20entrevistó,parte%20de%20un%20partido%20de%20la%20corrupción"
+        ]
+      }
+    ],
+    "observaciones": [
+      {
+        "titulo": "Responsabilidad política en liberación de vocero de Sendero Luminoso (2003)",
+        "descripcion": "Sectores políticos (APRA) lo acusaron de negligencia durante su gestión como embajador en España, vinculándolo a irregularidades que facilitaron la liberación de Adolfo Olaechea, vocero de Sendero Luminoso.",
+        "source": [
+          "https://lum.cultura.pe/cdi/video/apra-culpo-fernando-olivera-por-la-excarcelacion-de-olaechea#:~:text=El%2004%20de%20noviembre%20de%202003,en%20el%20tema%20jurídico",
+          "https://youtu.be/eWfZK50W7Hw?t=40"
+        ]
+      }
+    ]
+  },
+  "percepsionPublica": {
+    "intencionVoto": {
+      "min": 1.2,
+      "max": 1.2,
+      "descripcion": "Encuesta Datum Diciembre 2025: Mantiene núcleo duro en provincias pero bajo en la capital.",
+      "source": [
+        "https://www.datum.com.pe/new_web_files/files/pdf/510a-0125%20-%20Encuesta%20DATUM%20-%20Diciembre%202025%20-%20Informe%20ELECTORAL%20Final%20v1_251216113108.pdf#:~:text=INTENCI%C3%93N%20DE%20VOTO%20PRESIDENCIAL"
+      ]
+    }
+  },
+  "historialLegislativo": {
+    "tieneHistorial": true,
+    "productivityLabel": "16 años ininterrumpidos",
+    "asistencia": {
+      "porcentaje": null,
+      "label": "5 periodos consecutivos",
+      "source": null
+    },
+    "stats": {
+      "presentados": 0,
+      "aprobados": 0,
+      "enPleno": 0,
+      "enComision": 0,
+      "rechazados": 0,
+      "otros": 0
+    },
+    "projects": [],
+    "nota": "Elegido en 5 periodos consecutivos entre 1985 y 2001.",
+    "source": "https://www.congreso.gob.pe/congresistas1995/Fernando_Olivera/sobre-congresista/#:~:text=Periodo%20Parlamentario%201995%2D2000&text=Fundador%20del%20Frente%20Independiente%20Moralizador,de%20Investigaci%C3%B3n%20del%20Tren%20El%C3%A9ctrico."
+  }
+}
