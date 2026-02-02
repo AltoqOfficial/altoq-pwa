@@ -1,0 +1,28 @@
+{
+  "plans": [
+    {
+      "plan_id": 1,
+      "party": "Partido de Ejemplo",
+      "candidate_display_name": "Candidato Ejemplo",
+      "url": "https://ejemplo.com"
+    }
+  ],
+  "question_option_mappings": [
+    {
+      "question_id": 1,
+      "option_mappings": [
+        {
+          "option_key": "A",
+          "evidences": [
+            {
+              "plan_id": 1,
+              "label": "Propuesta de Ejemplo",
+              "summary": "Resumen de la propuesta de ejemplo.",
+              "explanation": "Explicación detallada de la propuesta de ejemplo."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
