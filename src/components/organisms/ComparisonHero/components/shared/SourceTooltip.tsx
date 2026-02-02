@@ -149,11 +149,11 @@ export function SourceTooltip({
       }
 
       // Use the anchor position
-      setCoords({ top, left: anchorX });
+      setCoords({ top, left: isMobile ? window.innerWidth / 2 : anchorX });
       return newPosition;
     }
     return "top";
-  }, [side]);
+  }, [side, isMobile]);
 
   // Clear all timeouts
   const clearAllTimeouts = useCallback(() => {
@@ -186,7 +186,10 @@ export function SourceTooltip({
   // Handle click for mobile
   const handleClick = useCallback(
     (e: React.MouseEvent | React.TouchEvent) => {
-      if (isMobile === true) {
+      // Always handle click on mobile
+      // On desktop, we also allow click to toggle persistent state if needed,
+      // but requirements say "hover (desktop) or click (mobile)"
+      if (isMobile) {
         e.preventDefault();
         e.stopPropagation();
         if (isVisible) {
@@ -270,7 +273,8 @@ export function SourceTooltip({
   const isTop = position === "top";
 
   // Transform: Align tooltip to anchor point and position vertically
-  const transformX = "0"; // Align left edge of tooltip to anchor point
+  // If mobile, center horizontally (-50%)
+  const transformX = isMobile ? "-50%" : "0";
   const transformY = isTop ? "-100%" : "0";
 
   return (
@@ -294,13 +298,13 @@ export function SourceTooltip({
         createPortal(
           <div
             ref={tooltipContentRef}
-            className="absolute z-9999 left-0 top-0"
+            className="absolute z-[9999] left-0 top-0"
             style={{
               position: "absolute",
               top: coords.top,
               left: coords.left,
               width: "max-content",
-              maxWidth: isMobile ? "240px" : "320px",
+              maxWidth: "100vh", // Relax constraint to allow TooltipContent to decide
               transform: `translate(${transformX}, ${transformY})`,
             }}
             onMouseEnter={handleMouseEnter}
@@ -309,7 +313,7 @@ export function SourceTooltip({
             <TooltipContent
               description={description}
               sources={sources}
-              isMobile={isMobile}
+              isMobile={!!isMobile}
               isTop={isTop}
               title={title}
             />
@@ -460,7 +464,7 @@ function TooltipContent({
             : "bottom-[calc(100%-1px)] border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-white"
         }`}
         style={{
-          left: "24px",
+          left: isMobile ? "50%" : "24px", // Center arrow on mobile, left-align on desktop
           transform: "translateX(-50%)",
         }}
       />

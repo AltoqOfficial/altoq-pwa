@@ -1,8 +1,7 @@
-"use client";
-
 import { useState } from "react";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import type { CandidateComparisonData, ControversyData } from "@/data";
 import { Typography } from "@/components/atoms";
 import { SourceTooltip } from "../components/shared";
@@ -188,95 +187,105 @@ export function ControversiasSection({
                 </div>
 
                 {/* CONTENIDO DE CATEGORÍA */}
-                {isExpanded && (
-                  <div className="w-full relative pt-2 pb-4 ml-px animate-in slide-in-from-top-4 fade-in duration-300">
-                    {/* Conectar con la siguiente categoría si no es la última */}
-                    {!isLast && (
-                      <div
-                        className="absolute left-[calc(-1.5rem+11px)] lg:left-[calc(-3rem+19px)] w-[2px] bg-white -bottom-8 lg:-bottom-8 z-0"
-                        style={{ top: "0", height: "calc(100% + 2rem)" }}
-                      />
-                    )}
-                    {/* Si es el último, la línea termina en el botón (no hay línea bajando) */}
+                <AnimatePresence>
+                  {isExpanded && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="overflow-hidden w-full relative ml-px"
+                    >
+                      <div className="pt-2 pb-4">
+                        {/* Conectar con la siguiente categoría si no es la última */}
+                        {!isLast && (
+                          <div
+                            className="absolute left-[calc(-1.5rem+11px)] lg:left-[calc(-3rem+19px)] w-[2px] bg-white -bottom-8 lg:-bottom-8 z-0"
+                            style={{ top: "0", height: "calc(100% + 2rem)" }}
+                          />
+                        )}
+                        {/* Si es el último, la línea termina en el botón (no hay línea bajando) */}
 
-                    {/* Mostrar contenido o mensaje de sin evidencia por cada lado */}
-                    <div className="flex flex-col gap-8 lg:gap-10 pl-2 lg:pl-4">
-                      {/* Si ambos lados no tienen datos, mostrar mensaje en ambos */}
-                      {!hasContent ? (
-                        <div className="grid grid-cols-2 gap-4 lg:gap-16 relative z-10">
-                          <div className="flex justify-start pr-2 lg:pr-4">
-                            <Typography
-                              color="white"
-                              className="text-xs font-atName opacity-50"
-                            >
-                              NO SE ENCONTRÓ EVIDENCIA
-                            </Typography>
-                          </div>
-                          <div className="flex justify-start pl-2 lg:pl-4">
-                            <Typography
-                              color="white"
-                              className="text-xs font-atName opacity-50"
-                            >
-                              NO SE ENCONTRÓ EVIDENCIA
-                            </Typography>
-                          </div>
-                        </div>
-                      ) : (
-                        <>
-                          {/* Renderizar los items - mostrando mensaje en primera fila si un lado está vacío */}
-                          {Array.from({ length: maxItems }).map((_, i) => {
-                            const lItem = leftItems[i];
-                            const rItem = rightItems[i];
-                            const showLeftEmptyMessage =
-                              i === 0 && leftItems.length === 0;
-                            const showRightEmptyMessage =
-                              i === 0 && rightItems.length === 0;
-
-                            return (
-                              <div
-                                key={i}
-                                className="grid grid-cols-2 gap-4 lg:gap-16 relative z-10"
-                              >
-                                <div className="flex justify-start pr-2 lg:pr-4">
-                                  {lItem ? (
-                                    <ControversyDetail
-                                      data={lItem}
-                                      color="#FF2727"
-                                      showBadge={showBadge}
-                                    />
-                                  ) : showLeftEmptyMessage ? (
-                                    <Typography
-                                      color="white"
-                                      className="text-xs font-atName opacity-50"
-                                    >
-                                      NO SE ENCONTRÓ EVIDENCIA
-                                    </Typography>
-                                  ) : null}
-                                </div>
-                                <div className="flex justify-start pl-2 lg:pl-4">
-                                  {rItem ? (
-                                    <ControversyDetail
-                                      data={rItem}
-                                      color="#4E58B4"
-                                      showBadge={showBadge}
-                                    />
-                                  ) : showRightEmptyMessage ? (
-                                    <Typography
-                                      color="white"
-                                      className="text-xs font-atName opacity-50"
-                                    >
-                                      NO SE ENCONTRÓ EVIDENCIA
-                                    </Typography>
-                                  ) : null}
-                                </div>
+                        {/* Mostrar contenido o mensaje de sin evidencia por cada lado */}
+                        <div className="flex flex-col gap-8 lg:gap-10 pl-2 lg:pl-4">
+                          {/* Si ambos lados no tienen datos, mostrar mensaje en ambos */}
+                          {!hasContent ? (
+                            <div className="grid grid-cols-2 gap-4 lg:gap-16 relative z-10">
+                              <div className="flex justify-start pr-2 lg:pr-4">
+                                <Typography
+                                  color="white"
+                                  className="text-xs font-atName opacity-50"
+                                >
+                                  NO SE ENCONTRÓ EVIDENCIA
+                                </Typography>
                               </div>
-                            );
-                          })}
-                        </>
-                      )}
-                    </div>
-                  </div>
-                )}
+                              <div className="flex justify-start pl-2 lg:pl-4">
+                                <Typography
+                                  color="white"
+                                  className="text-xs font-atName opacity-50"
+                                >
+                                  NO SE ENCONTRÓ EVIDENCIA
+                                </Typography>
+                              </div>
+                            </div>
+                          ) : (
+                            <>
+                              {/* Renderizar los items - mostrando mensaje en primera fila si un lado está vacío */}
+                              {Array.from({ length: maxItems }).map((_, i) => {
+                                const lItem = leftItems[i];
+                                const rItem = rightItems[i];
+                                const showLeftEmptyMessage =
+                                  i === 0 && leftItems.length === 0;
+                                const showRightEmptyMessage =
+                                  i === 0 && rightItems.length === 0;
+
+                                return (
+                                  <div
+                                    key={i}
+                                    className="grid grid-cols-2 gap-4 lg:gap-16 relative z-10"
+                                  >
+                                    <div className="flex justify-start pr-2 lg:pr-4">
+                                      {lItem ? (
+                                        <ControversyDetail
+                                          data={lItem}
+                                          color="#FF2727"
+                                          showBadge={showBadge}
+                                        />
+                                      ) : showLeftEmptyMessage ? (
+                                        <Typography
+                                          color="white"
+                                          className="text-xs font-atName opacity-50"
+                                        >
+                                          NO SE ENCONTRÓ EVIDENCIA
+                                        </Typography>
+                                      ) : null}
+                                    </div>
+                                    <div className="flex justify-start pl-2 lg:pl-4">
+                                      {rItem ? (
+                                        <ControversyDetail
+                                          data={rItem}
+                                          color="#4E58B4"
+                                          showBadge={showBadge}
+                                        />
+                                      ) : showRightEmptyMessage ? (
+                                        <Typography
+                                          color="white"
+                                          className="text-xs font-atName opacity-50"
+                                        >
+                                          NO SE ENCONTRÓ EVIDENCIA
+                                        </Typography>
+                                      ) : null}
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </>
+                          )}
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
 
                 {/* Línea passthrough si está colapsado */}
                 {!isExpanded && !isLast && (

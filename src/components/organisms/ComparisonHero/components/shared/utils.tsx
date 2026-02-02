@@ -119,11 +119,7 @@ export function renderValueWithSource(value: SourceableValue): React.ReactNode {
           : "-";
 
     return (
-      <SourceTooltip
-        source={source}
-        description={description}
-        title={synthesis}
-      >
+      <SourceTooltip source={source} description={description}>
         {content}
       </SourceTooltip>
     );

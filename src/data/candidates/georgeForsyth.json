@@ -1,11 +1,11 @@
 {
   "id": "george-patrick-forsyth-sommer",
   "slug": "george-patrick-forsyth-sommer",
-  "fullName": "George Patrick Forsyth Sommer [cite: 9]",
+  "fullName": "George Patrick Forsyth Sommer",
   "shortName": "George Forsyth",
   "image": "/candidatos/george-forsyth.webp",
   "color": "#E1251B",
-  "party": "Partido Democrático Somos Perú [cite: 12]",
+  "party": "Partido Democrático Somos Perú",
   "partyIcon": "/partidos/somos-peru.png",
   "socialLinks": {
     "instagram": "https://www.instagram.com/george.forsyth/",
@@ -20,8 +20,8 @@
     "lugar": { "value": null, "source": [] },
     "nivelEducativo": {
       "value": [
-        "Bachiller en Administración de Empresas – 2021 [cite: 26]",
-        "Magíster de Administración – 2023 [cite: 28]"
+        "Bachiller en Administración de Empresas – 2021",
+        "Magíster de Administración – 2023"
       ],
       "source": [
         "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
@@ -30,17 +30,14 @@
       ]
     },
     "profesion": {
-      "value": [
-        "Administrador [cite: 26, 28]",
-        "Ex-futbolista profesional [cite: 47]"
-      ],
+      "value": ["Administrador", "Ex-futbolista profesional"],
       "source": [
         "https://repositorioacademico.upc.edu.pe/handle/10757/658293#:~:text=Forsyth%20Sommer,%20George%20Patrick",
         "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/"
       ]
     },
     "partidoActual": {
-      "value": "Partido Democrático Somos Perú [cite: 12]",
+      "value": "Partido Democrático Somos Perú",
       "source": [
         "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/#:~:text=Somos%20Per%C3%BA"
       ]
@@ -80,15 +77,15 @@
   },
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "5 años y 9 meses [cite: 42]",
+      "value": "5 años y 9 meses",
       "source": [
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/george-patrick-forsyth-sommer_procesos-electorales_4b@2tWTg7S8=@W,"
       ]
     },
     "cargosPrevios": {
       "values": [
-        "Regidor Distrital (2011-2014) [cite: 43]",
-        "Alcalde Distrital (2019-2020) [cite: 44]"
+        "Regidor Distrital (2011-2014)",
+        "Alcalde Distrital (2019-2020)"
       ],
       "source": [
         "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia#:~:text=Con%20el%20Partido%20Popular%20Cristiano%20(PPC)%20logr%C3%B3%20ser%20regidor%20de%20La%20Victoria%20(2011",
@@ -96,7 +93,7 @@
       ]
     },
     "candidaturasPresidenciales": {
-      "values": ["2021 → Exclusión [cite: 259]", "2026 → En curso [cite: 53]"],
+      "values": ["2021 → Exclusión", "2026 → En curso"],
       "source": [
         "https://www.infobae.com/america/america-latina/2021/02/11/george-forsyth-el-candidato-que-lideraba-las-encuestas-fue-excluido-de-las-elecciones-presidenciales-en-peru/#:~:text=fue%20excluido%20de%20las%20elecciones%20presidenciales",
         "http://larepublica.pe/politica/2025/11/09/george-forsyth-precandidato-presidencial-de-somos-peru-aparecio-vestido-de-uniforme-militar-frente-a-jose-jeri-hnews-688482#:~:text=George%20Forsyth%20se%20gradu%C3%B3%20y%20convirti%C3%B3%20en%20reservista%20del%20Ej%C3%A9rcito%20en%202019"
@@ -108,8 +105,8 @@
       "cantidad": 2,
       "detalle": {
         "values": [
-          "Alcalde Distrital de La Victoria (2019-2020) [cite: 44]",
-          "Capitán de Caballería - Oficial Profesional de Reserva (2019-Actualidad) [cite: 53]"
+          "Alcalde Distrital de La Victoria (2019-2020)",
+          "Capitán de Caballería - Oficial Profesional de Reserva (2019-Actualidad)"
         ],
         "source": [
           "https://elcomercio.pe/politica/perfil-george-forsyth-el-recorrido-politico-del-exarquero-que-busco-tambien-ser-alcalde-de-lima-elecciones-alcaldia-de-lima-elecciones-municipales-y-regionales-somos-peru-noticia/?ref=ecr#:~:text=luego%20se%20convirti%C3%B3%20en%20alcalde%20de%20dicho%20distrito%20para%20el%20periodo%202019",
@@ -121,9 +118,9 @@
       "cantidad": 3,
       "detalle": {
         "values": [
-          "Gerente General - Los M S.A.C. (2017-Actualidad) [cite: 57]",
-          "Gerente General - Alhambra Inversiones S.R.L (2024-Actualidad) [cite: 55]",
-          "Jugador de fútbol profesional (2001-2016) [cite: 47]"
+          "Gerente General - Los M S.A.C. (2017-Actualidad)",
+          "Gerente General - Alhambra Inversiones S.R.L (2024-Actualidad)",
+          "Jugador de fútbol profesional (2001-2016)"
         ],
         "source": [
           "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/",
@@ -171,7 +168,7 @@
       ]
     },
     "seguridad": {
-      "value": "Gestión territorial del SINASEC con poder ejecutivo y modernización policial cercana al ciudadano[cite: 195, 211].",
+      "value": "Gestión territorial del SINASEC con poder ejecutivo y modernización policial cercana al ciudadano.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf#:~:text=PROGRAMA%3A%20%22CIUDADAN%C3%8DA%20SEGURA%22%20Sin%20Temor%20en%20las%20Calles"
       ]
@@ -657,19 +654,19 @@
   },
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
-      "value": "Alto [cite: 58-106]",
+      "value": "Alto",
       "source": [
         "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
       ]
     },
     "diferencias": {
-      "value": "Su discurso anti-populista se alinea con la diversificación productiva y competitividad del plan[cite: 21, 104].",
+      "value": "Su discurso anti-populista se alinea con la diversificación productiva y competitividad del plan.",
       "source": [
         "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
       ]
     },
     "cumplimientoPrevio": {
-      "value": "Reportes de su gestión municipal muestran enfoque en ordenamiento, pero con riesgos financieros y administrativos detectados[cite: 274, 280].",
+      "value": "Reportes de su gestión municipal muestran enfoque en ordenamiento, pero con riesgos financieros y administrativos detectados.",
       "source": [
         "https://sudaca.pe/noticia/informes/la-deuda-que-george-forsyth-dejo-en-la-victoria-y-que-podria-costarle-s6-millones-al-distrito/#:~:text=La%20deuda%20que%20George%20Forsyth%20dejo%20en%20La%20Victoria%20y%20que%20podria%20costarle%20S%2F6%20millones%20al%20distrito"
       ]
@@ -794,9 +791,9 @@
   },
   "transparencia": {
     "items": [
-      "Informe del JEE N° 030-2021 sobre deudas coactivas [cite: 267]",
-      "Reporte de exclusión por omisión de información en Hoja de Vida [cite: 258]",
-      "Portal de transparencia con indicadores propuesto en plan [cite: 209]"
+      "Informe del JEE N° 030-2021 sobre deudas coactivas",
+      "Reporte de exclusión por omisión de información en Hoja de Vida",
+      "Portal de transparencia con indicadores propuesto en plan"
     ],
     "source": [
       "https://elcomercio.pe/elecciones-2021/george-forsyth-jee-lo-excluye-de-las-elecciones-2021-por-omitir-informacion-en-su-hoja-de-vida-victoria-nacional-nndc-noticia#:~:text=segun%20la%20resolucion,hoja%20de%20vida"
@@ -804,17 +801,17 @@
   },
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Medio - Gestión en La Victoria y formación militar de reserva[cite: 44, 53].",
+      "value": "Medio - Gestión en La Victoria y formación militar de reserva.",
       "source": [
         "https://www.linkedin.com/in/george-forsyth-a5139135b/details/experience/"
       ]
     },
     "comunicacion": {
-      "value": "Alto - Amplia presencia en redes sociales y medios [cite: 13-18].",
+      "value": "Alto - Amplia presencia en redes sociales y medios.",
       "source": ["https://web.facebook.com/GeorgeForsythSP/"]
     },
     "credibilidad": {
-      "value": "Bajo/Medio - Afectada por investigaciones fiscales en curso y controversias personales[cite: 239, 251].",
+      "value": "Bajo/Medio - Afectada por investigaciones fiscales en curso y controversias personales.",
       "source": [
         "https://canalb.pe/noticias/judiciales/poder-judicial-extiende-investigacion-contra-forsyth-por-presunta-colusion-en-la-victoria#:~:text=El%20Poder%20Judicial%20resolvi%C3%B3%20ampliar%20hasta%20mayo%20de%202026%20la%20investigaci%C3%B3n%20preparatoria%20contra%20George%20Forsyth"
       ]
@@ -824,22 +821,22 @@
     "intencionVoto": {
       "min": 0,
       "max": 12,
-      "descripcion": "Encuesta Ipsos 18-19 dic 2025; Forsyth está agrupado en el 12% de 'Otros' [cite: 31-35].",
+      "descripcion": "Encuesta Ipsos 18-19 dic 2025; Forsyth está agrupado en el 12% de 'Otros'.",
       "source": [
         "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf#:~:text=George%20Forsyth%20por%20Somos%20Per%C3%BA"
       ]
     },
     "aprobacion": { "value": null, "source": [] },
     "redes": {
-      "value": "Presencia activa en Facebook, Instagram, X y YouTube [cite: 14-17].",
+      "value": "Presencia activa en Facebook, Instagram, X y YouTube.",
       "source": ["https://x.com/George_Forsyth"]
     }
   },
   "innovacionYVision": {
     "items": [
-      "Plataforma nacional de integridad con blockchain [cite: 154]",
-      "Inteligencia Artificial para detección de corrupción en tiempo real [cite: 151]",
-      "Uso de IA para procesamiento de datos criminalísticos en mapas del delito [cite: 217]"
+      "Plataforma nacional de integridad con blockchain",
+      "Inteligencia Artificial para detección de corrupción en tiempo real",
+      "Uso de IA para procesamiento de datos criminalísticos en mapas del delito"
     ],
     "source": [
       "https://mpesije.jne.gob.pe/docs/1334ac30-c28e-42a5-8fc5-79a4638ccd2a.pdf"
@@ -858,7 +855,7 @@
       "otros": 0
     },
     "projects": [],
-    "nota": "No tiene historial legislativo [cite: 41-44].",
+    "nota": "No tiene historial legislativo.",
     "source": null
   }
 }

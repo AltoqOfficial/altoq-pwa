@@ -320,7 +320,6 @@ export function ComparisonHero() {
                     <CandidateSelector
                       selectedCandidates={selectedCandidates}
                       onCandidateClick={handleCandidateClick}
-                      lockSelection={true}
                     />
                   </div>
                 </div>
@@ -466,7 +465,6 @@ export function ComparisonHero() {
             <CandidateSelector
               selectedCandidates={selectedCandidates}
               onCandidateClick={handleCandidateClick}
-              lockSelection={true}
             />
           </div>
         </div>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import type { CandidateComparisonData, ProposalData } from "@/data";
 import { Typography } from "@/components/atoms";
 import { SourceTooltip } from "../components/shared";
@@ -324,23 +325,34 @@ export function PropuestasPrincipalesSection({
               </div>
 
               {/* Contenido expandible */}
-              {expandedProposal === proposalKey && (
-                <div className="grid grid-cols-2 gap-4 lg:gap-12 mt-8 animate-in slide-in-from-top-4 fade-in duration-300">
-                  {/* Contenido izquierda */}
-                  <ProposalDetail
-                    data={leftProposal}
-                    color="#FF2727"
-                    align="left"
-                  />
+              {/* Contenido expandible */}
+              <AnimatePresence>
+                {expandedProposal === proposalKey && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    className="overflow-hidden"
+                  >
+                    <div className="grid grid-cols-2 gap-4 lg:gap-12 mt-8">
+                      {/* Contenido izquierda */}
+                      <ProposalDetail
+                        data={leftProposal}
+                        color="#FF2727"
+                        align="left"
+                      />
 
-                  {/* Contenido derecha */}
-                  <ProposalDetail
-                    data={rightProposal}
-                    color="#4E58B4"
-                    align="right"
-                  />
-                </div>
-              )}
+                      {/* Contenido derecha */}
+                      <ProposalDetail
+                        data={rightProposal}
+                        color="#4E58B4"
+                        align="right"
+                      />
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           );
         })}

@@ -30,12 +30,11 @@ export function MobileComparisonView({
       {/* Scroll Container / Desktop Grid */}
       <div
         ref={scrollContainerRef}
-        className="flex items-center overflow-x-auto snap-x snap-mandatory w-full no-scrollbar px-4 gap-4 md:grid md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] md:gap-8 md:overflow-visible md:px-0 md:items-start"
-        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        className="flex flex-col w-full px-4 gap-8 md:grid md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] md:gap-8 md:px-0 md:items-start"
       >
         {/* Left Card Wrapper */}
         {leftCandidate && (
-          <div className="min-w-[85vw] snap-center md:min-w-0 md:w-full">
+          <div className="w-full md:min-w-0 md:w-full">
             <MobileComparisonCard
               candidate={leftCandidate}
               data={leftData}
@@ -48,7 +47,7 @@ export function MobileComparisonView({
         )}
 
         {/* VS Badge in Flow */}
-        <div className="shrink-0 flex items-center justify-center snap-center md:h-auto md:self-center">
+        <div className="shrink-0 flex items-center justify-center md:h-auto md:self-center py-2 md:py-0">
           <div className="w-12 h-16 flex items-center justify-center">
             <Typography
               font="kenyan"
@@ -62,7 +61,7 @@ export function MobileComparisonView({
 
         {/* Right Card Wrapper */}
         {rightCandidate && (
-          <div className="min-w-[85vw] snap-center md:min-w-0 md:w-full">
+          <div className="w-full md:min-w-0 md:w-full">
             <MobileComparisonCard
               candidate={rightCandidate}
               data={rightData}
