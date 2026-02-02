@@ -69,3 +69,6 @@ Thumbs.db
 
 # Turbopack
 .turbo
+
+# Private Data
+src/data/questionnaire/mapping.json
