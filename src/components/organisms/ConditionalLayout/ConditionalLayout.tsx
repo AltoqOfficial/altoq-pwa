@@ -1,6 +1,5 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
 import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
@@ -15,19 +14,6 @@ const noLayoutRoutes = ["/dashboard"];
 // Routes that render their own Header
 const customHeaderRoutes = ["/compara"];
 
-// Hydration-safe hook to detect client-side mounting
-const emptySubscribe = () => () => {};
-const getClientSnapshot = () => true;
-const getServerSnapshot = () => false;
-
-function useIsMounted() {
-  return useSyncExternalStore(
-    emptySubscribe,
-    getClientSnapshot,
-    getServerSnapshot
-  );
-}
-
 /**
  * ConditionalLayout
  * Conditionally renders Header and Footer based on current route and auth state
@@ -36,8 +22,6 @@ function useIsMounted() {
  */
 export function ConditionalLayout({ children }: ConditionalLayoutProps) {
   const pathname = usePathname();
-  const isMounted = useIsMounted();
-
   // Check if current route is a no-layout route
   const isNoLayoutRoute = noLayoutRoutes.some(
     (route) => pathname === route || pathname.startsWith(`${route}/`)
@@ -49,10 +33,10 @@ export function ConditionalLayout({ children }: ConditionalLayoutProps) {
   }
 
   // Determine if we should show Header
-  // On server and before mount, always show Header (default behavior)
-  // After mount, check the route
-  const isCustomHeaderRoute =
-    isMounted && customHeaderRoutes.some((route) => pathname === route);
+  // Check the route directly (consistent on server and client)
+  const isCustomHeaderRoute = customHeaderRoutes.some(
+    (route) => pathname === route
+  );
 
   // Public routes render with Header and Footer
   return (
