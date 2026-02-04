@@ -42,7 +42,7 @@ export default function CandidateFormPage() {
 
   // Show MatchResults if redirected from login with pending form
   if (showResults) {
-    return <MatchResults onClose={handleCloseResults} />;
+    return <MatchResults onClose={handleCloseResults} results={[]} />;
   }
 
   return (
