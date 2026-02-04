@@ -30,8 +30,8 @@ interface RawQuestionnaire {
 
 const RAW_DATA = questionnaireData as RawQuestionnaire;
 
-export const getFormSections = (): Section[] => {
-  return RAW_DATA.sections.map((section: RawSection, index: number) => {
+export const FORM_SECTIONS: Section[] = RAW_DATA.sections.map(
+  (section: RawSection, index: number) => {
     return {
       id: index + 1,
       title: section.title,
@@ -52,5 +52,7 @@ export const getFormSections = (): Section[] => {
         } as Question;
       }),
     };
-  });
-};
+  }
+);
+
+export const getFormSections = (): Section[] => FORM_SECTIONS;

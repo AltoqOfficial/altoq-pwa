@@ -234,11 +234,21 @@ CANDIDATE_FILES.forEach((c) => {
   }
 });
 
+// Pre-index mappings by Question ID for O(1) lookup
+const MAPPINGS_BY_ID = new Map<
+  number,
+  (typeof mappingData.question_option_mappings)[0]
+>();
+mappingData.question_option_mappings.forEach((m) =>
+  MAPPINGS_BY_ID.set(m.question_id, m)
+);
+
+const TOTAL_QUESTIONS = 20;
+
 export const calculatePoliticalMatch = (
   responses: Record<string, string>
 ): MatchCandidate[] => {
   const plans = mappingData.plans;
-  const mappings = mappingData.question_option_mappings;
   const questions = questionnaireData.sections.flatMap((s) => s.questions);
 
   // Initialize scores
@@ -267,7 +277,8 @@ export const calculatePoliticalMatch = (
     const qIdNum = parseInt(questionId.replace("Q", ""), 10);
 
     // Find mapping for this question
-    const qMapping = mappings.find((m) => m.question_id === qIdNum);
+    // Find mapping for this question (Optimized lookup)
+    const qMapping = MAPPINGS_BY_ID.get(qIdNum);
     if (!qMapping) return;
 
     // Find option mapping
@@ -317,7 +328,7 @@ export const calculatePoliticalMatch = (
 
   const results: MatchCandidate[] = plans.map((plan) => {
     const stats = candidateScores[plan.plan_id];
-    const matchPercentage = (stats.score / 20) * 100; // Hardcoded max 20 questions based on questionnaire size (actually 20)
+    const matchPercentage = (stats.score / TOTAL_QUESTIONS) * 100;
     // Or use totalQuestions dynamic if user skips? But we require all.
     // There are 20 questions in the new JSON.
 

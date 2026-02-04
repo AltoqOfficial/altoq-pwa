@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { MatchCandidate } from "@/lib/utils/political-match";
+import type { MatchCandidate } from "@/lib/utils/political-match";
 import { SourceTooltip } from "@/components/organisms/ComparisonHero/components/shared/SourceTooltip";
 
 interface MatchResultsProps {
@@ -82,19 +82,6 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [feedback, setFeedback] = useState<"like" | "dislike" | null>(null);
 
-  // Update selectedId if results change (e.g. initial load)
-  useEffect(() => {
-    // DEBUG LOGS
-    const ids = displayedResults.map((r) => r.id);
-    const uniqueIds = new Set(ids);
-    if (ids.length !== uniqueIds.size) {
-      console.error(
-        "DUPLICATE IDS FOUND IN MATCH RESULTS:",
-        ids.filter((item, index) => ids.indexOf(item) !== index)
-      );
-    }
-  }, [displayedResults]);
-
   // Lock body scroll when modal is open
   useEffect(() => {
     if (showAllMatches) {
@@ -106,14 +93,6 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
       document.body.style.overflow = "unset";
     };
   }, [showAllMatches]);
-
-  // DEBUG: Check order and selection
-  useEffect(() => {
-    console.log(
-      "MatchResults mounted/updated. Results order:",
-      displayedResults.map((r) => `${r.id}:${r.name}:${r.score}`)
-    );
-  }, [displayedResults]);
 
   // Filter results based on search
   const filteredResults = displayedResults.filter(
@@ -214,6 +193,7 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
                 fill
                 className="object-cover object-top transition-all duration-700 group-hover:scale-105"
                 priority
+                sizes="(max-width: 768px) 100vw, 45vw"
               />
 
               {/* Faded Gradient Mask (Vignette + Bottom Fade) */}
@@ -278,6 +258,7 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
                       alt={candidate.name}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 25vw, 120px"
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent" />
                     <span
