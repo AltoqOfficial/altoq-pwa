@@ -4,25 +4,34 @@
   "fullName": "Rafael Bernardo López Aliaga Cazorla",
   "shortName": "Rafael López Aliaga",
   "image": "/candidatos/rafael-lopez-aliaga.webp",
-  "color": "#0054A5",
+  "color": "#PLACEHOLDER",
   "party": "Partido Político Renovación Popular",
   "partyIcon": "/partidos/renovacion-popular.png",
   "socialLinks": {
     "instagram": "https://www.instagram.com/rafaellopezaliagaoficial",
-    "tiktok": "https://www.tiktok.com/@rafael_lopez_aliaga?is_from_webapp=1&sender_device=pc",
-    "twitter": "https://x.com/rlopezaliaga1",
+    "tiktok": "https://www.tiktok.com/@rafael_lopez_aliaga",
+    "twitter": "https://twitter.com/rlopezaliaga1",
     "facebook": "https://www.facebook.com/RafaelLopezAliagaOficial",
     "web": "https://rafaellopezaliaga.pe/"
   },
   "perfilGeneral": {
-    "edad": { "value": null, "source": [] },
-    "nacimiento": { "value": null, "source": [] },
-    "lugar": { "value": null, "source": [] },
+    "edad": {
+      "value": null,
+      "source": []
+    },
+    "nacimiento": {
+      "value": null,
+      "source": []
+    },
+    "lugar": {
+      "value": null,
+      "source": []
+    },
     "nivelEducativo": {
       "value": [
-        "Ingeniero Industrial",
-        "Bachiller en Ciencias de la Ingeniería",
-        "Magíster en Administración"
+        "Ingeniero Industrial – Universidad de Piura (1995)",
+        "Bachiller en Ciencias de la Ingeniería – Universidad de Piura (1995)",
+        "Magíster en Administración – Universidad del Pacífico (1996)"
       ],
       "source": [
         "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
@@ -31,34 +40,37 @@
       ]
     },
     "profesion": {
-      "value": ["Ingeniero Industrial", "Catedrático", "Empresario"],
-      "source": [
-        "https://www.infobae.com/peru/2025/10/31/rafael-lopez-aliaga-oficializo-su-precandidatura-por-renovacion-popular-conoce-a-su-formula-presidencial-con-miras-a-las-elecciones-2026/#:~:text=el%20exalcalde%20de%20lima",
-        "https://larepublica.pe/sociedad/2023/02/28/rafael-lopez-aliaga-que-carreras-estudio-el-alcalde-de-lima-y-en-que-universidades-municipalidad-de-lima-1880284"
-      ]
+      "value": [
+        "Ingeniero Industrial",
+        "Administrador",
+        "Catedrático",
+        "Empresario"
+      ],
+      "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
     },
     "partidoActual": {
       "value": "Partido Político Renovación Popular",
       "source": [
+        "https://www.infobae.com/peru/2025/12/24/elecciones-2026-estos-son-los-34-partidos-politicos-que-lograron-inscribir-sus-formulas-presidenciales-ante-el-jne/#:~:text=Rafael%20L%C3%B3pez%20Aliaga%20(Renovaci%C3%B3n%20Popular)",
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_procesos-electorales_I+zxcOsfVGI=zO/#:~:text=RENOVACION%20POPULAR"
       ]
     },
     "cambiosDePartido": {
-      "value": "1",
-      "source": [
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO"
-      ]
+      "value": null,
+      "source": []
     },
     "historialPartidos": [
       {
-        "ano": "2007",
+        "ano": "2007 - 2010",
         "partido": "Alianza Electoral Unidad Nacional",
+        "rol": "Regidor Provincial",
         "icono": "/partidos/unidad-nacional.png",
         "source": ["https://plataformaelectoral.jne.gob.pe/bandeja/filtros"]
       },
       {
-        "ano": "2019",
+        "ano": "2019 - Presente",
         "partido": "Renovación Popular",
+        "rol": "Presidente / Representante Legal / Candidato",
         "icono": "/partidos/renovacion-popular.png",
         "source": [
           "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO"
@@ -68,7 +80,7 @@
   },
   "experienciaPolitica": {
     "anosExperiencia": {
-      "value": "19",
+      "value": "18 a 19 años",
       "source": [
         "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO",
         "https://youtu.be/ToYPQHjRFo4?t=83"
@@ -76,37 +88,38 @@
     },
     "cargosPrevios": {
       "values": [
-        "Regidor Provincial (2007-2010)",
-        "Representante Legal (2019-2022)",
-        "Alcalde Provincial (2022-Actualidad)",
-        "Presidente (2025-Actualidad)"
+        "Presidente - Renovación Popular (Desde 2025)",
+        "Alcalde Provincial - Renovación Popular (Desde 2022)",
+        "Representante Legal - Renovación Popular (2019 - 2022)",
+        "Regidor Provincial - Alianza Electoral Unidad Nacional (2007 - 2010)"
       ],
       "source": [
         "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO#:~:text=presidente",
-        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO#:~:text=representante%20legal"
+        "https://infogob.jne.gob.pe/Politico/FichaPolitico/rafael-bernardo-l%C3%B3pez-aliaga-cazorla_historial-partidario_I+zxcOsfVGI=zO"
       ]
     },
     "candidaturasPresidenciales": {
-      "values": ["2021 → No electo", "2026 → Precandidato"],
+      "values": [
+        "Precandidato a la Presidencia de la República Elecciones 2026",
+        "Candidato a la presidencia en 2021"
+      ],
       "source": [
-        "https://youtu.be/ToYPQHjRFo4?t=83",
-        "https://www.infobae.com/peru/2025/10/31/rafael-lopez-aliaga-oficializo-su-precandidatura-por-renovacion-popular-conoce-a-su-formula-presidencial-con-miras-a-las-elecciones-2026/"
+        "https://www.infobae.com/peru/2025/10/31/rafael-lopez-aliaga-oficializo-su-precandidatura-por-renovacion-popular-conoce-a-su-formula-presidencial-con-miras-a-las-elecciones-2026/#:~:text=el%20exalcalde%20de%20lima",
+        "https://youtu.be/ToYPQHjRFo4?t=83"
       ]
     }
   },
   "experienciaGestion": {
     "sectorPublico": {
-      "cantidad": 3,
+      "cantidad": 2,
       "detalle": {
         "values": [
-          "Regidor Provincial (2007-2010)",
-          "Catedrático - Universidad Nacional de Ingeniería (2017-2020)",
-          "Alcalde - Municipalidad Metropolitana De Lima (2023-2025)"
+          "Alcalde - Municipalidad Metropolitana De Lima (2023 - 2025)",
+          "Catedrático - Universidad Nacional de Ingeniería (2017 - 2020)"
         ],
         "source": [
           "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
-          "https://larepublica.pe/sociedad/2023/02/28/rafael-lopez-aliaga-que-carreras-estudio-el-alcalde-de-lima-y-en-que-universidades-municipalidad-de-lima-1880284#:~:text=Desde%202017,por%20el%20JNE"
+          "https://larepublica.pe/sociedad/2023/02/28/rafael-lopez-aliaga-que-carreras-estudio-el-alcalde-de-lima-y-en-que-universidades-municipalidad-de-lima-1880284/#:~:text=Desde%202017"
         ]
       }
     },
@@ -114,69 +127,71 @@
       "cantidad": 3,
       "detalle": {
         "values": [
-          "Director - Peru Belmond Hotels S.A. (1990-2022)",
-          "Director - Perurail S.A. (1999-2022)",
-          "Director - Ferrocarril Trasandino S.A. (1999-2022)"
+          "Director - Perurail S.A. (1999 - 2022)",
+          "Director - Peru Belmond Hotels S.A. (1990 - 2022)",
+          "Director - Ferrocarril Trasandino S.A. (1999 - 2022)"
         ],
         "source": [
           "https://plataformaelectoral.jne.gob.pe/bandeja/filtros",
           "https://larepublica.pe/politica/2021/11/03/rafael-lopez-aliaga-direccion-del-mtc-renovo-permiso-a-perurail-por-5-anos-el-ultimo-dia-del-anterior-gobierno-ministerio-de-transportes-y-comunicaciones#:~:text=Desde%201999",
-          "https://larepublica.pe/politica/2025/05/25/lopez-aliaga-y-su-vinculo-con-la-disputa-por-el-hotel-sanctuary-de-machu-picchu-rafael-lopez-aliaga-sanctuary-lodge-de-machu-picchu-belmond-hotels-hotel-machu-picchu-sanctuary-lodge-hnews-1578552#:~:text=En%20la%20memoria,2022",
+          "https://larepublica.pe/politica/2025/05/25/lopez-aliaga-y-su-vinculo-con-la-disputa-por-el-hotel-sanctuary-de-machu-picchu-rafael-lopez-aliaga-sanctuary-lodge-de-machu-picchu-belmond-hotels-hotel-machu-picchu-sanctuary-lodge-hnews-1578552#:~:text=En%20la%20memoria",
           "https://diariocorreo.pe/politica/rafael-lopez-aliaga-y-sus-cuestionados-negocios-noticia/#:~:text=Ferrocarril%20Trasandino%20S.A"
         ]
       }
     },
-    "source": "https://plataformaelectoral.jne.gob.pe/bandeja/filtros"
+    "source": null
   },
   "ideologiaPolitica": {
     "posicion": {
-      "value": "Derecha Socialcristiana / Conservadora",
-      "descripcion": "Se toma a partir de las declaraciones públicas de Rafael López Aliaga en diversas entrevistas y presentaciones de campaña durante 2024 y 2025 (como en Willax y CADE Ejecutivos), donde él mismo se define como un político de \"derecha popular\" y con una formación \"socialcristiana\". La clasificación utiliza su autodefinición basada en la Doctrina Social de la Iglesia y su rechazo a las ideologías de izquierda y al centro que considera \"tibio\". (Minuto 0:47: \"Yo soy de formación política socialcristiana... todos los principios y pilares de la ideología socialcristiana que en el Perú nunca se han aplicado\").",
+      "value": "Derecha Socialcristiana / Derecha Conservadora",
+      "descripcion": "Se define como un político de 'derecha popular' y con una formación 'socialcristiana', basada en la Doctrina Social de la Iglesia y su rechazo a las ideologías de izquierda.",
       "source": [
         "https://youtu.be/E0vaBMnfc6c?t=47",
         "https://larepublica.pe/elecciones/2021/03/03/lopez-aliaga-una-derecha-conservadora-que-atrapa-votos-de-fujimori-pltc#:~:text=La%20representacion,adeptos"
       ]
     },
     "economia": {
-      "sintesis": "Disciplina fiscal y Estado reducido",
-      "descripcion": "Disciplina fiscal y reforma del Estado. Orientación liberal-conservadora centrada en la reducción del tamaño del Estado y austeridad.",
+      "value": "Disciplina fiscal y reforma del Estado",
+      "descripcion": "Orientación liberal-conservadora, centrada en la reducción del tamaño del Estado, una fuerte disciplina fiscal, la austeridad en el gasto público y la disminución de la burocracia.",
       "source": [
         "https://rpp.pe/economia/economia/rafael-lopez-aliaga-en-cade-2025-estas-son-las-propuestas-economica-para-elecciones-2026-con-reforma-del-estado-y-disciplina-fiscal-noticia-1662680#:~:text=Reforma%20del%20Estado%20y%20disciplina%20fiscal"
       ]
     },
-    "matrimonioIgualitario": { "value": null, "source": [] },
+    "matrimonioIgualitario": {
+      "value": null,
+      "descripcion": null,
+      "source": []
+    },
     "aborto": {
-      "sintesis": "Totalmente en contra",
-      "descripcion": "En contra. Define el aborto como el crimen más abominable y afirma que no puede ser legalizado en ninguna circunstancia.",
+      "value": "Provida",
+      "descripcion": "El aborto es el crimen más abominable que existe en la realidad humana... no puede ser legalizado en el Perú en ninguna circunstancia.",
       "source": [
         "https://canaln.pe/actualidad/rafael-lopez-aliaga-aborto-no-pude-legalizado-peru-ninguna-circunstancia-n432281#:~:text=El%20aborto%20es,circunstancia"
       ]
     },
     "seguridad": {
-      "sintesis": "Plan Bukele y Mega Cárceles",
-      "descripcion": "Unidades Itinerantes de Pacificación Ciudadana con inteligencia, agentes encubiertos y sistemas de videovigilancia.",
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
+      "value": null,
+      "descripcion": null,
+      "source": []
     },
     "ambiente": {
-      "sintesis": "Políticas municipales sostenibles",
-      "descripcion": "Establecer políticas municipales sostenibles, crear y recuperar espacios verdes.",
+      "value": "Sostenibilidad Municipal",
+      "descripcion": "Establecer políticas municipales sostenibles en la capital del Perú. Crear y recuperar Espacios Verdes.",
       "source": [
         "https://www.actualidadambiental.pe/wp-content/uploads/2022/09/Plan-de-Gobierno-Renovacion-Popular-Elecciones-2022.pdf#:~:text=crear%20y%20recuperar%20Espacios%20Verdes"
       ]
     },
     "educacion": {
-      "sintesis": "Modelo Finlandia y sin ideología de género",
-      "descripcion": "Modernización tecnológica (tablets e internet satelital), modelo Finlandia y eliminación de ideología de género.",
+      "value": "Modernización tecnológica y valores tradicionales",
+      "descripcion": "Uso de tecnología digital (tablets, internet satelital), modelo educativo inspirado en Finlandia, y eliminación de contenidos vinculados a la ideología de género.",
       "source": [
         "https://youtu.be/DXX3CpNF0FM?t=245",
         "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=educaci%C3%B3n%20escolar"
       ]
     },
     "reformaPolitica": {
-      "sintesis": "Fusión de ministerios y unicameralidad",
-      "descripcion": "Modernización institucional, fusión de ocho ministerios y retorno a la unicameralidad.",
+      "value": "Modernización institucional y unicameralidad",
+      "descripcion": "Fusión de ministerios (ocho ministerios serán uno solo) y retorno al congreso unicameral.",
       "source": [
         "https://elcomercio.pe/politica/rafael-lopez-aliaga-dice-que-fusionara-ocho-ministerios-ligados-al-bienestar-humano-noticia/#:~:text=L%C3%B3pez%20Aliaga%20dijo,en%20uno%20solo",
         "https://elcomercio.pe/politica/elecciones/rafael-lopez-aliaga-en-cade-2025-desde-el-retorno-al-congreso-unicameral-hasta-petro-peru-los-ejes-de-sus-propuestas-tlc-nota-noticia/#:~:text=durante%20el,provisionales"
@@ -184,476 +199,390 @@
     }
   },
   "propuestasPrincipales": {
-    "institucional": [
-      {
-        "titulo": "Simplificación administrativa y servicio al ciudadano",
-        "descripcion": "Eliminación de barreras burocráticas mediante una simplificación administrativa intensiva, promoviendo la inversión privada y la implementación del Código del Servicio Público para mejorar la atención y sancionar el mal servicio. (Meta 2026: profundizar la modernización en la organización y funcionamiento de los ministerios).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Eliminaremos%20las%20barreras%20burocr%C3%A1ticas%20por%20medio%20de%20una%20intensiva%20simplificaci%C3%B3n%20administrativa,%20alentando%20y%20promoviendo%20la%20inversi%C3%B3n%20privada."
-        ]
-      },
-      {
-        "titulo": "Racionalización del aparato estatal",
-        "descripcion": "Reducción y reorganización de ministerios con base en criterios de eficiencia y optimización del gasto público, junto con la descentralización de sedes ministeriales y del Poder Ejecutivo. (Meta 2026: iniciar estudios técnicos para reducir el número de ministerios y redistribuir el personal en sedes desconcentradas).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Reduciremos%20el%20n%C3%BAmero%20de%20ministerios%20existentes,%20tomando%20como%20preceptos%20para%20dicha%20reducci%C3%B3n%20la%20ineficiencia"
-        ]
-      },
-      {
-        "titulo": "Fortalecimiento de gobiernos regionales y locales",
-        "descripcion": "Implementación de incentivos económicos vinculados a mejoras en indicadores sociales, junto con apoyo técnico, equipos gerenciales especializados y capacitación de funcionarios para fortalecer la gestión pública. (Meta 2026: capacitar y promover el desarrollo de proyectos de inversión e infraestructura en gobiernos regionales y municipales).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Estableceremos%20incentivos%20econ%C3%B3micos%20en%20pro%20de%20la%20mejora%20en%20la%20gesti%C3%B3n%20de%20los%20Gobiernos%20Regionales%20y%20Locales"
-        ]
-      },
-      {
-        "titulo": "Revalorización y meritocracia en la función pública",
-        "descripcion": "Fortalecimiento de la función pública mediante el ingreso, permanencia y ascenso basados en méritos, competencias y evaluaciones permanentes, promoviendo la profesionalización y una cultura de servicio al ciudadano. (Meta 2026: revalorizar la función pública a través de la capacitación, la meritocracia y el reconocimiento del desempeño profesional).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Revaloraremos%20la%20funci%C3%B3n%20p%C3%BAblica,%20a%20la%20cual%20se%20ingresar%C3%A1%20por%20m%C3%A9ritos%20y%20competencias."
-        ]
-      },
-      {
-        "titulo": "Gobierno digital y transparencia",
-        "descripcion": "Impulso al acceso masivo a la información vía Internet para fortalecer la transparencia del Estado y mejorar la comunicación y eficiencia de los trámites y decisiones públicas. (Meta 2026: fortalecer la transparencia estatal y consolidar un gobierno digital integrado y eficaz al servicio del ciudadano).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Aseguraremos%20el%20acceso%20masivo%20a%20la%20informaci%C3%B3n%20v%C3%ADa%20Internet,%20no%20solamente%20para%20mejorar%20la%20transparencia"
-        ]
-      },
-      {
-        "titulo": "Renovación y fortalecimiento de la carrera judicial",
-        "descripcion": "Promoción del ingreso de jóvenes profesionales a la carrera judicial mediante formación especializada en la Academia de la Magistratura y desempeño supervisado como jueces y fiscales. (Meta 2026: impulsar el ingreso de jueces jóvenes a la carrera judicial).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Promoveremos%20el%20acceso%20de%20j%C3%B3venes%20profesionales%20a%20la%20carrera%20judicial%20luego%20de%20un%20a%C3%B1o%20de%20formaci%C3%B3n%20especializada%20en%20la%20Academia%20de%20la%20Magistratura.",
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=DIMENSI%C3%93N%20INSTITUCIONAL"
-        ]
-      }
-    ],
     "economico": [
       {
         "titulo": "Crecimiento sostenido y reducción de inflación",
-        "descripcion": "Garantizaremos medidas que permitan un crecimiento sostenido del PBI y una reducida inflación promedio para los próximos 5 años, así como un tipo de cambio que favorezca la exportación. (Meta 2026: Incremento anual del 2% del PBI hasta llegar al 7% al quinto año).",
+        "descripcion": "Incremento anual del 2% del PBI hasta llegar al 7% al quinto año. Medidas para crecimiento sostenido y reducida inflación.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=crecimiento%20sostenido%20del%20PBI%20y%20una%20reducida%20inflaci%C3%B3n"
         ]
       },
       {
         "titulo": "Industrialización y diversificación productiva",
-        "descripcion": "Impulso a la producción de bienes y servicios con mayor valor agregado, fortaleciendo la innovación, la tecnología y la productividad para reducir la dependencia de las materias primas. (Meta 2026: generación de 2 millones de empleos y mayor participación de la industria nacional en inversiones con altos estándares de calidad).",
+        "descripcion": "Impulso a la producción con mayor valor agregado. Meta 2026: generación de 2 millones de empleos.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20la%20industrializaci%C3%B3n%20y%20la%20producci%C3%B3n%20de%20bienes%20y%20servicios%20de%20mayor%20valor%20agregado"
         ]
       },
       {
         "titulo": "Generación de ingresos y trabajo comunitario",
-        "descripcion": "Implementación de programas de trabajo remunerado por horas en zonas rurales y urbanas, orientados a labores comunales, reparación de andenes, reforestación y conservación del bosque seco, priorizando a las poblaciones más pobres. (Meta 2026: promover trabajo digno e igualitario en zonas rurales para reducir la pobreza extrema y contribuir al cumplimiento del Objetivo 10 de la Agenda 2030).",
+        "descripcion": "Programas de trabajo remunerado por horas en zonas rurales y urbanas para labores comunales.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=generaci%C3%B3n%20de%20ingresos%20para%20los%20m%C3%A1s%20pobres,%20por%20medio%20de%20una%20retribuci%C3%B3n%20por%20horas%20de%20trabajo%20en%20zonas%20rurales"
         ]
       },
       {
-        "titulo": "Promoción y desarrollo de las PYMEs",
-        "descripcion": "Creación del Instituto de Promoción y Desarrollo de las PYMEs para fomentar la formalización, la asociatividad, los clústeres productivos y la exportación mediante el CERTIPYME. (Meta 2026: impulsar el intercambio y posicionamiento internacional de productos PYMEs).",
+        "titulo": "Promoción y financiamiento PYMEs",
+        "descripcion": "Creación del Instituto de Promoción y Desarrollo de las PYMEs y del Banco PYME de capital privado.",
         "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Crearemos%20el%20Instituto%20de%20Promoci%C3%B3n%20y%20Desarrollo%20de%20las%20PYMEs,"
-        ]
-      },
-      {
-        "titulo": "Acceso al financiamiento para PYMEs",
-        "descripcion": "Impulso al acceso al crédito para las PYMEs en coordinación con la iniciativa privada, mediante la creación del Banco PYME de capital privado. (Meta 2026: creación del Banco PYME).",
-        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Crearemos%20el%20Instituto%20de%20Promoci%C3%B3n%20y%20Desarrollo%20de%20las%20PYMEs",
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20decididamente,%20en%20conjunci%C3%B3n%20con%20la%20iniciativa%20privada,%20el%20acceso%20al%20financiamiento%20para%20las%20PYMEs"
         ]
       },
       {
         "titulo": "Modernización de mercados de abasto",
-        "descripcion": "Impulso a la modernización de mercados de abasto y centros comerciales, con implementación de mercados mayoristas y reorganización integral del programa Mi Mercado. (Meta 2026: promover mercados de abasto y mayoristas con mejores condiciones y mayor competitividad).",
+        "descripcion": "Impulso a la modernización de mercados de abasto, mayoristas y reorganización del programa Mi Mercado.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20la%20modernizaci%C3%B3n%20de%20los%20mercados%20de%20abasto%20y%20centros%20comerciales"
         ]
       },
       {
         "titulo": "Parques logísticos y zonas de libre comercio",
-        "descripcion": "Impulso al desarrollo de parques logísticos, comercio internacional y zonas libres de impuestos en zonas fronterizas con alto potencial de inversión. (Meta 2026: fortalecer las zonas de libre comercio para reducir el contrabando).",
+        "descripcion": "Desarrollo de parques logísticos y zonas libres de impuestos en fronteras para reducir el contrabando.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20el%20desarrollo%20de%20Parques%20Log%C3%ADsticos%20y%20de%20Comercio%20Internacional"
         ]
       },
       {
-        "titulo": "Desarrollo industrial de productos nativos",
-        "descripcion": "Promoción de la industrialización para el consumo interno y la exportación de productos nativos, incorporando mecanismos de incentivo a la inversión inicial. (Meta 2026: aumentar y mejorar la calidad de los productos nativos).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Promoveremos%20el%20desarrollo%20industrial%20para%20el%20consumo%20interno%20y%20la%20exportaci%C3%B3n%20de%20productos"
-        ]
-      },
-      {
-        "titulo": "Impulso al trabajo artesanal familiar",
-        "descripcion": "Incorporación de comunidades rurales al trabajo artesanal familiar mediante el uso de insumos regionales, capacitación en nuevas técnicas de elaboración y fortalecimiento de la comercialización. (Meta 2026: aumentar y mejorar la calidad de los productos artesanales e incentivar el trabajo artesanal familiar).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Incorporaremos%20a%20las%20comunidades%20de%20las%20zonas%20rurales%20al%20trabajo%20familiar"
-        ]
-      },
-      {
         "titulo": "Fortalecimiento del transporte urbano masivo",
-        "descripcion": "Potenciación del sistema Metropolitano en coordinación con las municipalidades, culminación de los sistemas de transporte masivo en marcha y promoción de nuevas líneas de Metro a nivel nacional. (Meta 2026: implementar más líneas de transporte urbano en todo el país).",
+        "descripcion": "Potenciación del sistema Metropolitano y promoción de nuevas líneas de Metro a nivel nacional.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Potenciaremos%20el%20Sistema%20%E2%80%9CMetropolitano%E2%80%9D%20en%20el%20Per%C3%BA,%20en%20estrecha%20cooperaci%C3%B3n%20con%20las%20Municipalidades"
         ]
       },
       {
         "titulo": "Rehabilitación y ampliación de la red vial nacional",
-        "descripcion": "Impulso a la modernización de la Red Vial Nacional, con especial énfasis en carreteras de penetración convertidas en autopistas de cuatro carriles, con participación de las FFAA, para fortalecer el desarrollo económico, el turismo y las cadenas productivas regionales. (Meta 2026: construir y mejorar autopistas y vías nacionales que conecten ciudades y pueblos del país).",
+        "descripcion": "Modernización de la Red Vial Nacional, convirtiendo carreteras de penetración en autopistas de cuatro carriles.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=rehabilitaci%C3%B3n%20y%20ampliaci%C3%B3n%20de%20la%20Red%20Vial%20Nacional"
         ]
       },
       {
         "titulo": "Modernización portuaria y aeroportuaria",
-        "descripcion": "Potenciación del puerto del Callao y de los puertos del país, así como la modernización y seguridad de los aeropuertos nacionales, para consolidar al Perú como eje logístico regional, incrementar exportaciones y generar empleo. (Meta 2026: iniciar la construcción de la segunda pista del AIJCH, ampliar los muelles del puerto del Callao y promover nuevos puertos de carga para el comercio exterior).",
+        "descripcion": "Potenciación del puerto del Callao, aeropuertos nacionales y promoción de nuevos puertos de carga.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Potenciaremos%20el%20puerto%20del%20Callao%20y%20puertos%20del%20pa%C3%ADs,%20para%20consolidar%20al%20Per%C3%BA%20como%20eje%20del%20transporte%20de%20carga%20en%20Sudam%C3%A9rica"
         ]
       },
       {
         "titulo": "Desarrollo de la conectividad ferroviaria",
-        "descripcion": "Recuperación y modernización de la red ferroviaria nacional para el transporte eficiente y seguro de pasajeros y carga, mediante asociaciones de gobierno a gobierno. (Meta 2026: impulsar la línea ferroviaria Tumbes–Tacna y el Tren Bioceánico que conecte los océanos Atlántico y Pacífico).",
+        "descripcion": "Recuperación de la red ferroviaria. Impulso a la línea Tumbes–Tacna y el Tren Bioceánico.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Recuperaremos%20la%20conectividad%20interna%20y%20externa%20del%20Per%C3%BA,%20con%20redes%20ferroviarias%20modernas"
-        ]
-      },
-      {
-        "titulo": "Conectividad digital nacional",
-        "descripcion": "Impulso a la expansión de la banda ancha en todo el territorio nacional, garantizando acceso a internet de calidad y a precios asequibles. (Meta 2026: fomentar la conectividad digital a nivel nacional).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20que%20los%20proveedores%20de%20comunicaci%C3%B3n%20v%C3%ADa%20internet%20abastezcan%20de%20comunicaci%C3%B3n%20digital%20(banda%20ancha)"
-        ]
-      },
-      {
-        "titulo": "Protección y fortalecimiento del sector agropecuario",
-        "descripcion": "Implementación de la Ley de la Defensoría del Campesino y de un marco jurídico predecible, fortaleciendo la capacidad institucional y las carreras públicas especializadas para una gestión eficiente del sector agropecuario. (Meta 2026: creación de la Defensoría del Campesino y promoción de trabajo digno y reconocido para los trabajadores agropecuarios).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Implementaremos%20la%20Ley%20de%20la%20Defensor%C3%ADa%20del%20Campesino%20y%20un%20marco%20jur%C3%ADdico%20facilitador%20y%20predecible."
-        ]
-      },
-      {
-        "titulo": "Gestión integrada de cuencas",
-        "descripcion": "Impulso a la Autoridad de Cuencas para planificar y gestionar de manera integrada la infraestructura productiva y el uso sostenible de los recursos naturales, articulando a productores con gobiernos locales y regionales. (Meta 2026: creación de la Autoridad de Cuencas como organismo autónomo).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20la%20Autoridad%20de%20Cuencas%20para%20planear%20y%20gestionar%20de%20manera%20integrada%20la%20infraestructura%20f%C3%ADsica"
-        ]
-      },
-      {
-        "titulo": "Investigación y desarrollo agrobiotecnológico",
-        "descripcion": "Construcción de un sistema de investigación e innovación en valles y cuencas, articulado con universidades e institutos especializados, promoviendo acuerdos internacionales y un agro libre de transgénicos. (Meta 2026: crear un sistema eficiente de I+D en cada cuenca y valle agrícola e impulsar la producción de alimentos orgánicos).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Construiremos%20un%20sistema%20de%20investigaci%C3%B3n%20desde%20cada%20valle%20y%20cuenca,%20con%20los%20mejores%20agricultores%20y%20el%20soporte%20de%20instituciones%20universitarias%20e%20institutos%20especializados"
-        ]
-      },
-      {
-        "titulo": "Fortalecimiento de organizaciones agrarias",
-        "descripcion": "Apoyo a las organizaciones de empresarios agrarios para la gestión de clústeres y cadenas productivas, promoviendo la asociatividad, el acceso a créditos, la transferencia tecnológica, nuevas inversiones y capacitación permanente. (Meta 2026: fortalecer las organizaciones agrarias a nivel nacional).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=promoveremos%20m%C3%A1s%20y%20mejores%20mecanismos%20de%20asociatividad,%20a%20efectos%20de%20lograr%20mejoras%20en%20la%20comercializaci%C3%B3n%20de%20sus%20productos"
         ]
       }
     ],
     "social": [
       {
-        "titulo": "Lucha frontal contra la corrupción",
-        "descripcion": "Creación de la Central de Lucha Contra la Corrupción (CCC) con plenos poderes para detectar, intervenir y sancionar actos de corrupción en todos los niveles del Estado, incluyendo la verificación patrimonial de los funcionarios públicos. (Meta 2026: reducir sustancialmente la corrupción y recuperar la confianza ciudadana en las instituciones).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Crearemos%20una%20Central%20de%20lucha%20Contra%20la%20Corrupci%C3%B3n%20(CCC),%20la%20cual%20dotaremos%20de%20plenos%20poderes%20para%20detectar,%20infiltrar%20y%20capturar%20el%20delito%20cometido%20%E2%80%9Cin%20fraganti%E2%80%9D"
-        ]
-      },
-      {
-        "titulo": "Seguridad ciudadana integral",
-        "descripcion": "Implementación de Unidades Itinerantes de Pacificación Ciudadana con inteligencia, agentes encubiertos y acción conjunta de todas las instituciones del sistema de seguridad, para combatir la delincuencia, el pandillaje y la microcomercialización de drogas. (Meta 2026: reducir significativamente los índices de violencia y delitos, e implementar sistemas de videovigilancia en coordinación con gobiernos regionales y municipales).",
-        "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Derrotaremos%20la%20delincuencia%20com%C3%BAn,%20el%20pandillaje%20y%20la%20micro%20comercializaci%C3%B3n%20de%20drogas,%20por%20medio%20de%20las%20Unidades%20Itinerantes%20de%20Pacificaci%C3%B3n%20Ciudadana,%20inteligencia%20y%20agentes%20encubiertos"
-        ]
-      },
-      {
         "titulo": "Fortalecimiento de programas sociales y alimentarios",
-        "descripcion": "Reforzamiento de las organizaciones populares y programas sociales para una distribución eficiente de la ayuda alimentaria, basada en productos nacionales, orientada a reducir la pobreza extrema, eliminar duplicidades y promover el emprendimiento. (Meta 2026: disminuir significativamente la pobreza extrema y la desnutrición mediante canastas básicas adquiridas a productores agrícolas, reactivando la economía).",
+        "descripcion": "Distribución eficiente de ayuda alimentaria basada en productos nacionales para reducir la pobreza extrema.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Lucharemos%20para%20erradicar%20la%20pobreza%20extrema,%20fortaleciendo%20%E2%80%93sin%20caer%20en%20la%20politizaci%C3%B3n%E2%80%93%20los%20programas%20sociales%20de%20subsidio%20y%20de%20inversi%C3%B3n%20social."
         ]
       },
       {
         "titulo": "Espacios de esparcimiento y fortalecimiento familiar",
-        "descripcion": "Extensión de los Clubes Zonales a nivel nacional para fortalecer los lazos familiares y brindar espacios de recreación y encuentro de calidad a la población más vulnerable. (Meta 2026: aumentar los espacios de esparcimiento familiar en todo el Perú).",
+        "descripcion": "Extensión de los Clubes Zonales a nivel nacional.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Extenderemos%20a%20todo%20el%20pa%C3%ADs%20la%20experiencia%20de%20los%20Clubes%20Zonales%20para%20fortalecer%20los%20lazos%20y,%20por%20consiguiente,%20los%20valores%20familiares"
         ]
       },
       {
         "titulo": "Alimentación y desarrollo infantil",
-        "descripcion": "Implementación de un programa alimentario con alto contenido proteico desde la gestación hasta la etapa escolar, para asegurar el desarrollo físico y mental de niños y estudiantes. (Meta 2026: erradicar la anemia y la desnutrición infantil mediante la adquisición de productos de calidad a proveedores nacionales).",
+        "descripcion": "Programa alimentario con alto contenido proteico desde la gestación hasta la etapa escolar para erradicar la anemia.",
         "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Nos%20preocuparemos%20de%20la%20alimentaci%C3%B3n%20desde%20el%20vientre%20de%20la%20madre",
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=DIMENSI%C3%93N%20SOCIAL"
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Nos%20preocuparemos%20de%20la%20alimentaci%C3%B3n%20desde%20el%20vientre%20de%20la%20madre"
         ]
       }
     ],
     "ambiental": [
       {
         "titulo": "Control de emisiones y acción climática",
-        "descripcion": "Implementación de medidas para controlar y reducir las emisiones de gases de efecto invernadero y otros contaminantes, protegiendo la biodiversidad y reduciendo la vulnerabilidad del país frente al cambio climático. (Meta 2026: reducir de manera significativa las emisiones de gases de efecto invernadero).",
+        "descripcion": "Reducir de manera significativa las emisiones de gases de efecto invernadero y contaminantes.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Controlaremos%20las%20emisiones%20de%20gases%20de%20efecto%20invernadero%20y%20contaminantes%20debido%20a%20que%20el%20Per%C3%BA"
         ]
       },
       {
         "titulo": "Gestión integral de los recursos hídricos",
-        "descripcion": "Implementación de mecanismos obligatorios para prevenir la contaminación de cuerpos de agua, fortalecimiento del Consejo Nacional del Agua, ampliación del acceso a agua potable y ejecución del programa de emergencia 'agua en la esquina', con apoyo de asociaciones público-privadas. (Meta 2026: lograr una administración eficiente de los recursos hídricos y garantizar agua de calidad, en línea con el Objetivo 6 de la Agenda 2030).",
+        "descripcion": "Prevenir la contaminación de cuerpos de agua y garantizar agua de calidad. Programa 'agua en la esquina'.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Estableceremos%20mecanismos%20de%20car%C3%A1cter%20obligatorio%20para%20evitar%20que%20las%20municipalidades%20y%20las%20empresas%20p%C3%BAblicas%20y%20privadas%20viertan"
         ]
       },
       {
         "titulo": "Protección y reforestación de bosques",
-        "descripcion": "Protección de los bosques frente a la tala indiscriminada, respeto al hábitat de las comunidades, ejecución de políticas de reforestación, manejo forestal sostenible e impulso a la producción de madera certificada. (Meta 2026: reforestar 500 mil hectáreas anuales hasta alcanzar 2 millones y alinear las políticas al Objetivo 15 de la Agenda 2030).",
+        "descripcion": "Reforestar 500 mil hectáreas anuales y protección contra la tala indiscriminada.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Protegeremos%20los%20bosques%20contra%20la%20tala%20indiscriminada%20respetando%20el%20h%C3%A1bitat%20de%20las%20poblaciones%20que%20viven%20en%20ellos."
         ]
       },
       {
         "titulo": "Pesca sostenible y acuicultura",
-        "descripcion": "Promoción de una pesca responsable y sostenible, mitigando impactos ambientales, e impulso a la acuicultura de especies marinas y continentales, con participación de PYMEs. (Meta 2026: fortalecer la pesca sostenible y la acuicultura entre la costa y la selva, alineadas al Objetivo 14 de la Agenda 2030).",
+        "descripcion": "Promoción de pesca responsable y acuicultura alineadas al Objetivo 14 de la Agenda 2030.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Promoveremos%20la%20pesca%20sostenible%20y%20responsable%20con%20los%20recursos%20marinos,%20mitigando%20el%20impacto%20de%20los%20residuos%20s%C3%B3lidos%20y%20l%C3%ADquidos%20propios%20de%20esta%20actividad%20industrial."
         ]
       },
       {
         "titulo": "Gestión sostenible de los recursos naturales",
-        "descripcion": "Garantía del uso sostenible de los recursos naturales mediante una gestión eficiente de las actividades extractivas y productivas, protegiendo los ecosistemas, la biodiversidad y combatiendo el tráfico ilegal de flora y fauna. (Meta 2026: mejorar la redistribución y gestión de los recursos naturales y energéticos, asegurando la protección de la diversidad biológica y los ecosistemas).",
+        "descripcion": "Gestión eficiente de actividades extractivas, protegiendo ecosistemas y combatiendo el tráfico ilegal.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Garantizaremos%20el%20uso%20sostenible%20de%20los%20recursos,forestal%20y%20dem%C3%A1s%20sectores"
         ]
       },
       {
         "titulo": "Protección de comunidades nativas y originarias",
-        "descripcion": "Protección integral de las comunidades nativas y originarias con enfoque pluricultural y multilingüe, fortaleciendo las áreas naturales protegidas y garantizando la seguridad jurídica sobre sus tierras y recursos naturales. (Meta 2026: fortalecer la protección de las comunidades nativas y originarias, asegurando sus recursos y la preservación de su cultura).",
+        "descripcion": "Protección integral con enfoque pluricultural, garantizando seguridad jurídica sobre tierras y recursos.",
         "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Protegeremos%20a%20las%20comunidades%20nativas%20y%20originarias%20respetando%20y%20manteniendo%20su%20cultura%20con%20un%20enfoque%20pluricultural%20y%20multiling%C3%BCe",
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=DIMENSION%20TERRITORIAL,AMBIENTAL"
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Protegeremos%20a%20las%20comunidades%20nativas%20y%20originarias%20respetando%20y%20manteniendo%20su%20cultura%20con%20un%20enfoque%20pluricultural%20y%20multiling%C3%BCe"
+        ]
+      }
+    ],
+    "institucional": [
+      {
+        "titulo": "Lucha frontal contra la corrupción",
+        "descripcion": "Creación de la Central de Lucha Contra la Corrupción (CCC) con plenos poderes para detectar y sancionar.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Crearemos%20una%20Central%20de%20lucha%20Contra%20la%20Corrupci%C3%B3n%20(CCC),%20la%20cual%20dotaremos%20de%20plenos%20poderes%20para%20detectar,%20infiltrar%20y%20capturar%20el%20delito%20cometido%20%E2%80%9Cin%20fraganti%E2%80%9D"
+        ]
+      },
+      {
+        "titulo": "Simplificación administrativa",
+        "descripcion": "Eliminación de barreras burocráticas y promoción de la inversión privada.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Eliminaremos%20las%20barreras%20burocr%C3%A1ticas%20por%20medio%20de%20una%20intensiva%20simplificaci%C3%B3n%20administrativa,%20alentando%20y%20promoviendo%20la%20inversi%C3%B3n%20privada."
+        ]
+      },
+      {
+        "titulo": "Racionalización del aparato estatal",
+        "descripcion": "Reducción y reorganización de ministerios por ineficiencia.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Reduciremos%20el%20n%C3%BAmero%20de%20ministerios%20existentes,%20tomando%20como%20preceptos%20para%20dicha%20reducci%C3%B3n%20la%20ineficiencia"
+        ]
+      },
+      {
+        "titulo": "Fortalecimiento de gobiernos regionales y locales",
+        "descripcion": "Incentivos económicos vinculados a mejoras en gestión y capacitación de funcionarios.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Estableceremos%20incentivos%20econ%C3%B3micos%20en%20pro%20de%20la%20mejora%20en%20la%20gesti%C3%B3n%20de%20los%20Gobiernos%20Regionales%20y%20Locales"
+        ]
+      },
+      {
+        "titulo": "Revalorización y meritocracia en la función pública",
+        "descripcion": "Ingreso y ascenso basados en méritos y competencias.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Revaloraremos%20la%20funci%C3%B3n%20p%C3%BAblica,%20a%20la%20cual%20se%20ingresar%C3%A1%20por%20m%C3%A9ritos%20y%20competencias."
+        ]
+      },
+      {
+        "titulo": "Gobierno digital y transparencia",
+        "descripcion": "Acceso masivo a la información vía Internet para fortalecer la transparencia.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Aseguraremos%20el%20acceso%20masivo%20a%20la%20informaci%C3%B3n%20v%C3%ADa%20Internet,%20no%20solamente%20para%20mejorar%20la%20transparencia"
+        ]
+      },
+      {
+        "titulo": "Renovación y fortalecimiento de la carrera judicial",
+        "descripcion": "Promoción del ingreso de jóvenes profesionales a la carrera judicial.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Promoveremos%20el%20acceso%20de%20j%C3%B3venes%20profesionales%20a%20la%20carrera%20judicial%20luego%20de%20un%20a%C3%B1o%20de%20formaci%C3%B3n%20especializada%20en%20la%20Academia%20de%20la%20Magistratura."
+        ]
+      },
+      {
+        "titulo": "Conectividad digital nacional",
+        "descripcion": "Impulso a la expansión de la banda ancha en todo el territorio nacional.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Impulsaremos%20que%20los%20proveedores%20de%20comunicaci%C3%B3n%20v%C3%ADa%20internet%20abastezcan%20de%20comunicaci%C3%B3n%20digital%20(banda%20ancha)"
         ]
       }
     ],
     "educativo": [
       {
         "titulo": "Incentivos tributarios para educación",
-        "descripcion": "Exoneración del Impuesto Predial a los inmuebles destinados a fines educativos cuando sean cedidos de manera gratuita, eliminando la presunción de obtención de renta en dichas cesiones. (Meta 2026: eliminar la presunción de renta en cesiones gratuitas con fines educativos).",
+        "descripcion": "Exoneración del Impuesto Predial a inmuebles con fines educativos cedidos gratuitamente.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Permitiremos%20a%20los%20propietarios%20de%20bienes%20inmuebles%20destinados%20para%20fines%20educativos"
+        ]
+      },
+      {
+        "titulo": "Investigación y desarrollo agrobiotecnológico",
+        "descripcion": "Sistema de investigación en valles y cuencas articulado con universidades.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Construiremos%20un%20sistema%20de%20investigaci%C3%B3n%20desde%20cada%20valle%20y%20cuenca,%20con%20los%20mejores%20agricultores%20y%20el%20soporte%20de%20instituciones%20universitarias%20e%20institutos%20especializados"
         ]
       }
     ],
     "salud": [
       {
         "titulo": "Descentralización y desarrollo comunitario",
-        "descripcion": "Descentralización de los programas de apoyo social con participación de la población organizada y formación de Agentes de Desarrollo comunitarios para salud básica, alfabetización y saneamiento rural. (Meta 2026: propiciar el desarrollo de las comunidades campesinas y nativas).",
+        "descripcion": "Formación de Agentes de Desarrollo comunitarios para salud básica y saneamiento rural.",
         "source": [
           "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Desarrollo%20seleccionados,nativos"
+        ]
+      },
+      {
+        "titulo": "Salud ocupacional como derecho ciudadano",
+        "descripcion": "Creación de la Oficina Nacional de Salud Ocupacional para fortalecer la prevención en el ámbito laboral.",
+        "source": [
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Favorecer%20la%20Salud%20Ocupacional,%20como%20derecho%20ciudadano."
         ]
       }
     ],
     "seguridad": [
       {
-        "titulo": "Salud ocupacional como derecho ciudadano",
-        "descripcion": "Promoción y garantía de la salud ocupacional como un derecho fundamental de los trabajadores, fortaleciendo la prevención y protección en el ámbito laboral. (Meta 2026: creación de la Oficina Nacional de Salud Ocupacional).",
+        "titulo": "Seguridad ciudadana integral",
+        "descripcion": "Unidades Itinerantes de Pacificación Ciudadana con inteligencia y agentes encubiertos.",
         "source": [
-          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Favorecer%20la%20Salud%20Ocupacional,%20como%20derecho%20ciudadano."
+          "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf#:~:text=Derrotaremos%20la%20delincuencia%20com%C3%BAn,%20el%20pandillaje%20y%20la%20micro%20comercializaci%C3%B3n%20de%20drogas,%20por%20medio%20de%20las%20Unidades%20Itinerantes%20de%20Pacificaci%C3%B3n%20Ciudadana,%20inteligencia%20y%20agentes%20encubiertos"
         ]
       }
     ]
   },
   "coherenciaConElPlan": {
     "nivelDeAlineacion": {
-      "value": "Alto",
-      "source": [
-        "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-      ]
+      "value": null,
+      "source": []
     },
-    "diferencias": { "value": "-", "source": [] },
+    "diferencias": {
+      "value": null,
+      "source": []
+    },
     "cumplimientoPrevio": {
-      "value": "Implementación y expansión de Hospitales de la Solidaridad como prioridad municipal aplicada a nivel nacional.",
-      "source": [
-        "https://www.facebook.com/saludconlupa/videos/1439458790625689/",
-        "https://larepublica.pe/sociedad/2022/10/04/rafael-lopez-aliaga-8-promesas-en-salud-que-debe-cumplir-el-virtual-alcalde-de-lima-metropolitana-jne-onpe-hospital-de-la-solidaridad-sisol-lima-sana"
-      ]
+      "value": null,
+      "source": []
     }
   },
   "controversias": {
-    "antecedentes": [
-      {
-        "titulo": "No registra antecedentes policiales",
-        "descripcion": "No registra antecedentes policiales conocidos.",
-        "estado": null,
-        "source": []
-      }
-    ],
-    "antecedentesJudiciales": [
-      {
-        "titulo": "No registra antecedentes judiciales",
-        "descripcion": "No registra antecedentes judiciales conocidos.",
-        "estado": null,
-        "source": []
-      }
-    ],
-    "antecedentesPenales": [
-      {
-        "titulo": "Incidente de Tutela de Derechos (Lavado de Activos)",
-        "descripcion": "El Séptimo Juzgado de Investigación Preparatoria Nacional declaró infundado el pedido de limitar al Ministerio Público requerir información pericial, pero fundado el que se informe sobre fechas de sesiones periciales. La defensa apeló y posteriormente el juzgado confirmó la decisión en audiencia.",
-        "estado": "Resuelto (apelación desistida)",
-        "source": [
-          "https://img.lpderecho.pe/wp-content/uploads/2025/08/Exp.-00029-2018-29-5001-JR-PE-03-LP-Derecho-1.pdf#:~:text=I.%20ANTECEDENTES:"
-        ]
-      }
-    ],
+    "antecedentes": [],
     "procesosJudiciales": [
       {
         "titulo": "Caso Panama Papers (Lavado de Activos)",
-        "descripcion": "El Séptimo Juzgado Nacional amplió la investigación preparatoria contra López Aliaga por este caso durante 24 meses adicionales en octubre de 2025. La investigación se centra en presuntas operaciones financieras irregulares vinculadas a sociedades offshore.",
-        "estado": "En curso (ampliación 24 meses)",
+        "descripcion": "Investigación preparatoria ampliada por 24 meses. Se centra en presuntas operaciones financieras irregulares vinculadas a sociedades offshore.",
+        "estado": "En curso (Investigación Preparatoria)",
         "source": [
           "https://www.infobae.com/peru/2024/09/10/rafael-lopez-aliaga-seguira-siendo-investigado-por-lavado-de-activos-pj-desestimo-su-pedido-del-caso-panama-papers/#:~:text=El%20Septimo%20Juzgado%20de%20Investigacion,investigacion%20abierta",
           "https://www.facebook.com/peru21/posts/-caso-panama-papers-ampl%C3%ADan-por-24-meses-plazo-de-investigaci%C3%B3n-a-rafael-l%C3%B3pez-a/1245880384233552/"
         ]
       },
       {
-        "titulo": "Difamación Agravada contra medios",
-        "descripcion": "López Aliaga ha iniciado procesos penales por difamación agravada contra medios de comunicación, como el diario La República, debido a publicaciones sobre sus presuntas deudas tributarias.",
+        "titulo": "Difamación Agravada",
+        "descripcion": "Procesos penales iniciados por López Aliaga contra medios como La República.",
         "estado": "En curso",
         "source": []
-      }
-    ],
-    "procesosArchivados": [
+      },
       {
-        "titulo": "Pedido de Tutela de Derechos (Información Migratoria)",
-        "descripcion": "En noviembre de 2023, la Tercera Sala Penal de Apelaciones Nacional desestimó un recurso de tutela de derechos presentado por la defensa de López Aliaga, el cual buscaba que se excluyera información migratoria de la investigación por lavado de activos.",
-        "estado": "Archivado (desestimado)",
+        "titulo": "Pedido de Tutela de Derechos",
+        "descripcion": "Recurso para excluir información migratoria de la investigación por lavado de activos.",
+        "estado": "Desestimado/Archivado",
         "source": [
           "https://lpderecho.pe/rafael-lopez-aliaga-limitan-ministerio-publico-informacion-migratoria-investigacion-lavado-de-activos#:~:text=En%20audiencia%20p%C3%BAblica,atendiendo"
         ]
       },
       {
         "titulo": "Atentado inexistente",
-        "descripcion": "La Fiscalía concluyó que no existió un intento de atentado contra el exalcalde de Lima, archivando la denuncia correspondiente en octubre de 2025.",
+        "descripcion": "Denuncia sobre intento de atentado contra el exalcalde.",
         "estado": "Archivado",
-        "source": []
-      },
-      {
-        "titulo": "Observación Electoral por Neutralidad (inicialmente)",
-        "descripcion": "El Jurado Electoral Especial (JEE) de Lima Centro 1 archivó inicialmente un caso contra López Aliaga por supuesta infracción de neutralidad, aunque posteriormente el JNE confirmaría la infracción en otra instancia.",
-        "estado": "Archivado inicialmente / Sancionado después",
         "source": []
       }
     ],
     "declaraciones": [
       {
-        "titulo": "Deuda con la SUNAT (S/ 27 millones)",
-        "descripcion": "Se ha documentado que empresas vinculadas al grupo económico de López Aliaga mantienen deudas coactivas con la SUNAT por más de S/ 27 millones. López Aliaga ha declarado que corresponden a personas jurídicas y lo califica de 'acoso político'.",
+        "titulo": "Deuda con la SUNAT",
+        "descripcion": "Deudas coactivas superiores a S/ 27 millones en su grupo económico. Declara que corresponden a personas jurídicas y lo califica de 'acoso político'.",
         "source": [
-          "https://larepublica.pe/politica/2026/01/04/rafael-lopez-aliaga-mantiene-deuda-coactiva-con-la-sunat-por-mas-de-s129-millones-renovacion-popular-rla-porky-hnews-190686#:~:text=de%20acuerdo%20con%20la%20base,190%20soles"
+          "https://larepublica.pe/politica/2026/01/04/rafael-lopez-aliaga-mantiene-deuda-coactiva-con-la-sunat-por-mas-de-s129-millones-renovacion-popular-rla-porky-hnews-190686#:~:text=de%20acuerdo%20con%20la%20base,190%20soles",
+          "https://youtu.be/1FM4Bqeestw?t=223"
         ]
       },
       {
-        "titulo": "Negativa a Pagar a Concesionaria Lima Expresa",
-        "descripcion": "El alcalde de Lima ha declarado que la municipalidad no pagará la indemnización de 30 millones de dólares ordenada por el Tribunal Arbitral de París a favor de la concesionaria Lima Expresa, a la que calificó de 'delincuente'.",
-        "source": ["https://youtu.be/1FM4Bqeestw?t=223"]
+        "titulo": "Negativa a Pagar a Concesionaria",
+        "descripcion": "Declaró que la municipalidad no pagará la indemnización a Lima Expresa, calificándola de 'delincuente'.",
+        "source": []
       },
       {
         "titulo": "Expulsiones Internas del Partido",
-        "descripcion": "Se ha informado sobre controversias internas en su partido (Renovación Popular), incluyendo desmentidos de la Confemin a sus declaraciones sobre la expulsión de dirigentes mineros por 'operaciones raras'.",
+        "descripcion": "Controversias internas en Renovación Popular y desmentidos de la Confemin.",
         "source": []
       }
     ],
     "observaciones": [
       {
         "titulo": "Infracción de Neutralidad Electoral (JNE)",
-        "descripcion": "El Jurado Nacional de Elecciones (JNE) confirmó en noviembre de 2025 que López Aliaga infringió el principio de neutralidad electoral durante su gestión como alcalde, al realizar actos oficiales con símbolos de su partido.",
+        "descripcion": "Confirmada infracción por realizar actos oficiales con símbolos de su partido durante su gestión como alcalde.",
         "source": [
-          "https://caretas.pe/politica/jne-confirma-infraccion-de-rafael-lopez-aliaga-por-vulnerar-el-principio-de-neutralidad-electoral/#:~:text=oficiales-,El%20Jurado%20Nacional%20de,Renovacion%20Popular"
-        ]
-      },
-      {
-        "titulo": "Proceso Sancionador por Propaganda Electoral (JNE)",
-        "descripcion": "En diciembre de 2025, el JNE inició otro proceso sancionador contra él por invocar a Dios en su propaganda electoral, lo cual está prohibido por ley.",
-        "source": [
+          "https://caretas.pe/politica/jne-confirma-infraccion-de-rafael-lopez-aliaga-por-vulnerar-el-principio-de-neutralidad-electoral/#:~:text=oficiales-,El%20Jurado%20Nacional%20de,Renovacion%20Popular",
           "https://www.infobae.com/peru/2025/11/05/rafael-lopez-aliaga-si-vulnero-la-neutralidad-electoral-jne-confirma-infraccion-del-exalcalde/#:~:text=Los%20magistrados%20del,politica"
         ]
       },
       {
+        "titulo": "Proceso Sancionador por Propaganda Electoral",
+        "descripcion": "Iniciado por invocar a Dios en su propaganda electoral.",
+        "source": []
+      },
+      {
         "titulo": "Omisión de Información al JNE",
-        "descripcion": "Se ha reportado que López Aliaga no declaró ante el JNE su vínculo con la empresa Peruval Corp., la cual mantiene una deuda coactiva millonaria con la SUNAT.",
+        "descripcion": "Reporte sobre no declarar vínculo con la empresa Peruval Corp.",
         "source": []
       }
-    ]
+    ],
+    "investigaciones": {
+      "values": [],
+      "source": []
+    },
+    "enCurso": {
+      "values": [],
+      "source": []
+    }
   },
   "transparencia": {
-    "items": [
-      "Vínculo no declarado con Peruval Corp (deuda coactiva SUNAT)",
-      "Historial de infracciones de neutralidad electoral",
-      "Investigación activa por lavado de activos (Panama Papers)"
-    ],
-    "source": [
-      "https://caretas.pe/politica/jne-confirma-infraccion-de-rafael-lopez-aliaga-por-vulnerar-el-principio-de-neutralidad-electoral/",
-      "https://www.infobae.com/peru/2024/09/10/rafael-lopez-aliaga-seguira-siendo-investigado-por-lavado-de-activos-pj-desestimo-su-pedido-del-caso-panama-papers/"
-    ]
+    "items": [],
+    "source": []
   },
   "competenciasPersonales": {
     "liderazgo": {
-      "value": "Alto - Autodefinido como líder de 'derecha popular' y gestor de Renovación Popular.",
-      "source": ["https://youtu.be/E0vaBMnfc6c?t=47"]
+      "value": null,
+      "source": []
     },
     "comunicacion": {
-      "value": "Alto - Presencia constante en medios tradicionales (Willax) y redes sociales oficiales.",
+      "value": null,
       "source": []
     },
     "credibilidad": {
-      "value": "Media - Afectada por deudas tributarias documentadas y procesos legales en curso.",
-      "source": [
-        "https://larepublica.pe/politica/2026/01/04/rafael-lopez-aliaga-mantiene-deuda-coactiva-con-la-sunat-por-mas-de-s129-millones-renovacion-popular-rla-porky-hnews-190686"
-      ]
+      "value": null,
+      "source": []
     }
   },
   "percepcionPublica": {
     "intencionVoto": {
-      "min": 7.2,
-      "max": 12.8,
-      "descripcion": "Lidera la intención de voto nacional con 10% según Ipsos (18–19 de diciembre de 2025).",
+      "min": 10,
+      "max": 10,
+      "descripcion": "Lidera la intención de voto nacional.",
       "source": [
         "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-12/Encuesta%20-%20Am%C3%A9rica%20Televisi%C3%B3n%20-%20Elecciones%20y%20gesti%C3%B3n%20p%C3%BAblica%20al%2019%20de%20diciembre%202025.pdf#:~:text=Rafael%20L%C3%B3pez%20Aliaga"
       ]
     },
-    "aprobacion": { "value": "XX%", "source": [] },
+    "aprobacion": {
+      "value": null,
+      "source": []
+    },
     "redes": {
-      "value": "Presencia activa en X (@rlopezaliaga1), Facebook, Instagram, YouTube y TikTok.",
-      "source": [
-        "https://rafaellopezaliaga.pe/",
-        "https://x.com/rlopezaliaga1",
-        "https://www.facebook.com/RafaelLopezAliagaOficial",
-        "https://www.youtube.com/@rafaellopezaliaga",
-        "https://www.tiktok.com/@rafael_lopez_aliaga?is_from_webapp=1&sender_device=pc"
-      ]
+      "value": null,
+      "source": []
     }
   },
   "innovacionYVision": {
-    "items": [
-      "Tren Bioceánico Tumbes–Tacna",
-      "Programa de emergencia 'Agua en la esquina'",
-      "Central de Lucha Contra la Corrupción con poderes de infiltración",
-      "Modelo educativo basado en Finlandia"
-    ],
-    "source": [
-      "https://declara.jne.gob.pe/ASSETS/PLANGOBIERNO/FILEPLANGOBIERNO/16482.pdf"
-    ]
+    "items": [],
+    "source": []
   },
   "historialLegislativo": {
     "tieneHistorial": false,
     "productivityLabel": "N/A",
-    "asistencia": { "porcentaje": null, "label": null, "source": null },
+    "asistencia": {
+      "porcentaje": null,
+      "label": null,
+      "source": null
+    },
     "stats": {
       "presentados": 0,
       "aprobados": 0,
@@ -663,7 +592,7 @@
       "otros": 0
     },
     "projects": [],
-    "nota": "No tiene historial legislativo; su experiencia política es ejecutiva (alcaldía) y partidaria.",
+    "nota": null,
     "source": null
   }
 }
