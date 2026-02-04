@@ -8,6 +8,10 @@ import { motion } from "framer-motion";
 import { FormStep, AnswerValue } from "./types";
 import { FORM_SECTIONS } from "./constants";
 import { QuestionItem } from "./QuestionItem";
+import {
+  calculatePoliticalMatch,
+  MatchCandidate,
+} from "@/lib/utils/political-match";
 import { MatchResults } from "./MatchResults";
 import { useUserProfile } from "@/hooks/useUserProfile";
 
@@ -68,6 +72,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [matchResults, setMatchResults] = useState<MatchCandidate[]>([]);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Compute loading message based on progress (derived state, no useEffect needed)
@@ -148,6 +153,13 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
 
     // Authenticated users see results
     console.log("Submitting final responses:", responses);
+
+    // Calculate Match
+    const results = calculatePoliticalMatch(
+      responses as Record<string, string>
+    );
+    setMatchResults(results);
+
     setIsSubmitting(false);
     setIsSuccess(true);
     localStorage.removeItem(FORM_STORAGE_KEY);
@@ -207,7 +219,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   }
 
   if (isSuccess) {
-    return <MatchResults onClose={onClose} />;
+    return <MatchResults onClose={onClose} results={matchResults} />;
   }
 
   return (

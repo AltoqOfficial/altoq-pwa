@@ -77,16 +77,16 @@ export const QuestionItem: React.FC<QuestionItemProps> = ({
           ))}
         </div>
       ) : (
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-col gap-3">
           {question.options.map((opt) => (
             <button
               key={opt.value}
               type="button"
               onClick={() => onChange(opt.value)}
               className={cn(
-                "px-6 py-3 rounded-xl text-sm font-normal border-2 transition-all duration-300 text-left min-w-[200px]",
+                "w-full px-6 py-4 rounded-xl text-sm font-normal border-2 transition-all duration-300 text-left",
                 selectedAnswer === opt.value
-                  ? "bg-[#E0E0E0] border-[#E0E0E0] text-black shadow-lg scale-[1.02]"
+                  ? "bg-[#E0E0E0] border-[#E0E0E0] text-black shadow-lg scale-[1.01]"
                   : "bg-[#2C2C2C] border-transparent text-white hover:border-neutral-500 hover:bg-[#353535]"
               )}
             >
@@ -98,8 +98,7 @@ export const QuestionItem: React.FC<QuestionItemProps> = ({
               >
                 {opt.value})
               </span>
-              {opt.label.substring(3)}{" "}
-              {/* Removing the A) prefix if it exists in label, assuming generic label structure or just using description if safer */}
+              {opt.description}
             </button>
           ))}
         </div>
