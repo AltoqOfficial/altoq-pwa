@@ -1,23 +1,21 @@
 import Image from "next/image";
 import { Typography } from "@/components/atoms/Typography";
-import { Button } from "@/components/atoms/Button";
 import { cn } from "@/lib/utils";
 
 /**
  * CandidateFormHero Component (Organism)
- * Hero section for the Candidate Form page
+ * Hero section with "Zero-Click" Start
  *
  * Features:
- * - Catchy title
- * - Description text
- * - CTA button
- * - Gallery of candidates with artistic filters
+ * - Direct engagement with Question 1
+ * - Gallery of candidates
  */
 interface CandidateFormHeroProps {
-  onStartClick: () => void;
+  onStartClick?: () => void; // Optional or deprecated
+  onOptionSelect: (value: string) => void;
 }
 
-export function CandidateFormHero({ onStartClick }: CandidateFormHeroProps) {
+export function CandidateFormHero({ onOptionSelect }: CandidateFormHeroProps) {
   const candidates = [
     { id: 1, image: "/images/iconsForm/candidato1.png", overlayType: "lead" },
     { id: 2, image: "/images/iconsForm/candidato2.png", overlayType: "red" },
@@ -26,63 +24,71 @@ export function CandidateFormHero({ onStartClick }: CandidateFormHeroProps) {
     { id: 5, image: "/images/iconsForm/candidato5.png", overlayType: "lead" },
   ];
 
+  const q1Options = [
+    {
+      key: "A",
+      text: "Que los altos funcionarios sean seleccionados por mérito técnico",
+    },
+    {
+      key: "B",
+      text: "Que el Congreso tenga mayor control político sobre los altos cargos",
+    },
+    {
+      key: "C",
+      text: "Que los funcionarios tengan estabilidad mínima para asegurar continuidad",
+    },
+    {
+      key: "D",
+      text: "Que se eliminen los cargos de confianza y solo exista carrera pública",
+    },
+    {
+      key: "E",
+      text: "Que el Ejecutivo tenga mayor control para tomar decisiones rápidas",
+    },
+  ];
+
   return (
     <section className="relative min-h-[90vh] md:min-h-[85vh] flex flex-col overflow-hidden bg-[#202020] -mt-34.5 md:-mt-20 lg:-mt-34.5">
-      <div className="container relative z-10 mx-auto px-12 md:px-16 lg:px-24 text-left pt-40 md:pt-52 lg:pt-64 mb-20">
+      <div className="container relative z-10 mx-auto px-6 md:px-12 lg:px-24 text-left pt-32 md:pt-40 lg:pt-48 mb-10">
         <Typography
           variant="h3"
-          font="sohneBreit"
           weight="700"
           align="left"
-          className="mb-6 max-w-4xl text-white"
+          className="mb-8 max-w-4xl text-white text-3xl md:text-5xl leading-tight font-flexo-bold"
         >
-          Haz tu Match Político
+          Para reducir la corrupción, ¿qué es más importante para ti?
         </Typography>
 
-        <Typography
-          variant="p"
-          font="sohneBreit"
-          weight="400"
-          align="left"
-          className="mb-6 max-w-md md:max-w-3xl text-white leading-relaxed text-sm md:text-base"
-        >
-          Descubre qué candidatos coinciden más con tus preferencias al comparar
-          tus prioridades con las propuestas de sus planes de gobierno.
-        </Typography>
-
-        <Button
-          variant="primary"
-          size="lg"
-          onClick={onStartClick}
-          className="rounded-md px-10 h-10 w-full md:w-66 text-base md:text-lg hover:scale-105 transition-transform"
-        >
-          Iniciar ahora
-        </Button>
+        <div className="flex flex-col gap-3 max-w-3xl">
+          {q1Options.map((option) => (
+            <button
+              key={option.key}
+              onClick={() => onOptionSelect(option.key)}
+              className={cn(
+                "w-full px-6 py-4 rounded-xl text-sm font-normal border-2 transition-all duration-300 text-left",
+                "bg-[#2C2C2C] border-transparent text-white hover:border-neutral-500 hover:bg-[#353535]"
+              )}
+            >
+              <span className="font-bold mr-1 text-white">{option.key})</span>
+              {option.text}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Candidate Gallery */}
-      <div className="flex w-full mt-auto mb-10 overflow-x-auto md:overflow-hidden no-scrollbar">
+      <div className="flex w-full mt-auto mb-0 overflow-x-auto md:overflow-hidden no-scrollbar opacity-30 hover:opacity-100 transition-opacity duration-500">
         {candidates.map((candidate) => (
           <div
             key={candidate.id}
-            className="relative flex-none w-[33%] md:flex-1 aspect-[3/4] group overflow-hidden"
+            className="relative flex-none w-[25%] md:flex-1 aspect-[3/4] group overflow-hidden grayscale hover:grayscale-0 transition-all duration-500"
           >
             <Image
               src={candidate.image}
               alt={`Candidato ${candidate.id}`}
               fill
-              className="object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110 contrast-150 brightness-110"
+              className="object-cover"
               sizes="(max-width: 768px) 20vw, 20vw"
-            />
-
-            {/* Alternating Overlay Filter (Pure Vibrant Red / Light Gray) */}
-            <div
-              className={cn(
-                "absolute inset-0 z-10 transition-opacity duration-500 group-hover:opacity-0 mix-blend-color",
-                candidate.overlayType === "red"
-                  ? "bg-[#FF0000]"
-                  : "bg-[#E0E0E0]"
-              )}
             />
           </div>
         ))}
