@@ -214,6 +214,24 @@ export function ComparisonHero() {
     }
   }, [hasSelectedCandidates]);
 
+  // Lock body scroll logic AND pause global Lenis to allow nested Lenis
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const globalLenis = (window as any).lenis;
+
+    if (showContent) {
+      document.body.style.overflow = "hidden";
+      if (globalLenis) globalLenis.stop(); // Stop Global Lenis so nested Lenis can take over
+    } else {
+      document.body.style.overflow = "";
+      if (globalLenis) globalLenis.start(); // Resume Global Lenis
+    }
+    return () => {
+      document.body.style.overflow = "";
+      if (globalLenis) globalLenis.start(); // Ensure it resumes on unmount
+    };
+  }, [showContent]);
+
   // Handle Back / Reset
   const handleBack = useCallback(() => {
     // 1. Start slide down animation
