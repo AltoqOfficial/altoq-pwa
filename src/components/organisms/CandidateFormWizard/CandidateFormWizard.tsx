@@ -29,11 +29,13 @@ const LOADING_MESSAGES = [
 export interface CandidateFormWizardProps {
   isOpen: boolean;
   onClose: () => void;
+  initialAnswer?: { questionId: string; value: AnswerValue } | null;
 }
 
 export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   isOpen,
   onClose,
+  initialAnswer,
 }) => {
   const router = useRouter();
   const { user, isLoading: isLoadingUser } = useUserProfile();
@@ -41,17 +43,29 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
 
   const [responses, setResponses] = useState<Record<string, AnswerValue>>(
     () => {
+      let initialResponses: Record<string, AnswerValue> = {};
+
+      // 1. Try to load from localStorage
       if (typeof window !== "undefined") {
         const saved = localStorage.getItem(FORM_STORAGE_KEY);
         if (saved) {
           try {
-            return JSON.parse(saved).responses || {};
+            initialResponses = JSON.parse(saved).responses || {};
           } catch (e) {
             console.error("Error loading responses", e);
           }
         }
       }
-      return {};
+
+      // 2. Merge initialAnswer if provided (e.g. from Zero-Click Start)
+      if (initialAnswer) {
+        initialResponses = {
+          ...initialResponses,
+          [initialAnswer.questionId]: initialAnswer.value,
+        };
+      }
+
+      return initialResponses;
     }
   );
 
@@ -83,8 +97,12 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
 
   // Scroll to top when step changes
   useEffect(() => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollTo({ top: 0, behavior: "smooth" });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    if ((window as any).lenis) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (window as any).lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo({ top: 0, behavior: "instant" });
     }
   }, [step]);
 
@@ -116,6 +134,12 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
       setStep((prev) => (prev + 1) as FormStep);
     } else {
       submitForm();
+    }
+  };
+
+  const prevStep = () => {
+    if (step > 1) {
+      setStep((prev) => (prev - 1) as FormStep);
     }
   };
 
@@ -167,7 +191,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
 
   if (isSubmitting) {
     return (
-      <div className="fixed inset-0 z-[200] bg-neutral-900 flex flex-col items-center justify-center p-6 text-center">
+      <div className="fixed inset-0 z-200 bg-neutral-900 flex flex-col items-center justify-center p-6 text-center">
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{
@@ -188,7 +212,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
           key={loadingMessage}
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="text-white text-2xl md:text-3xl font-bold font-sohne-breit uppercase tracking-wider mb-4"
+          className="text-white text-2xl md:text-3xl font-flexo-bold uppercase tracking-wider mb-4"
         >
           {loadingMessage}
         </motion.h2>
@@ -197,13 +221,13 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-neutral-400 text-sm md:text-base max-w-sm mb-16 leading-relaxed"
+          className="text-neutral-400 text-sm md:text-base max-w-sm mb-16 leading-relaxed font-flexo"
         >
           Altoq nunca influirá en tus decisiones, somos una plataforma neutral
         </motion.p>
 
         <div className="relative">
-          <span className="text-white text-3xl font-bold font-sohne-breit tabular-nums">
+          <span className="text-white text-3xl font-flexo-bold tabular-nums">
             {Math.round(progress)}%
           </span>
           {/* Subtle underline progress */}
@@ -225,28 +249,29 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   return (
     <div
       ref={scrollContainerRef}
-      className="fixed inset-0 z-[100] bg-[#202020] overflow-y-auto no-scrollbar selection:bg-primary-600/30"
+      className="min-h-screen w-full relative z-100 bg-neutral-500 selection:bg-primary-600/30"
     >
       {/* Top Progress Bar */}
-      <div className="fixed top-0 left-0 w-full h-1 bg-neutral-800 z-[110]">
+      <div className="fixed top-0 left-0 w-full h-1 bg-neutral-800 z-110">
         <div
           className="h-full bg-primary-600 transition-all duration-500"
           style={{ width: `${(step / 5) * 100}%` }}
         />
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 pt-20 pb-40">
+      <div className="max-w-5xl mx-auto px-6 pt-20 pb-10">
         {/* Header Section */}
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-4xl md:text-5xl font-bold text-white font-sohne-breit">
-              A
-            </span>
+            <div className="w-2 h-8 bg-[#FF0000]" />
             <div>
-              <p className="text-neutral-400 font-bold text-sm md:text-base uppercase tracking-wider">
-                Sección {step}/5 - {currentSection.title}
+              <p className="text-[#FF0000] font-bold text-sm md:text-base uppercase tracking-wider font-flexo mb-1">
+                Sección {step}/5
               </p>
-              <h2 className="text-white text-xl md:text-2xl font-bold font-sohne-breit mt-1">
+              <p className="text-white/60 text-xs md:text-sm font-bold uppercase tracking-widest">
+                {currentSection.title}
+              </p>
+              <h2 className="text-white text-xl md:text-2xl font-bold font-flexo-bold mt-1">
                 {currentSection.description}
               </h2>
             </div>
@@ -267,15 +292,24 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
         </div>
 
         {/* Navigation Footer */}
-        <div className="fixed bottom-0 left-0 w-full bg-[#202020]/90 backdrop-blur-md border-t border-neutral-800 p-6 z-[110]">
+        <div className="fixed bottom-0 left-0 w-full bg-neutral-500/90 backdrop-blur-md border-t border-neutral-800 p-6 z-110">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 flex items-center gap-6">
               <button
                 onClick={onClose}
-                className="text-white hover:text-neutral-300 transition-colors text-sm font-bold uppercase tracking-widest"
+                className="text-white hover:text-neutral-300 transition-colors text-sm font-flexo-bold uppercase tracking-widest"
               >
                 Cerrar
               </button>
+
+              {step > 1 && (
+                <button
+                  onClick={prevStep}
+                  className="text-neutral-400 hover:text-white transition-colors text-sm font-flexo-bold uppercase tracking-widest"
+                >
+                  Anterior
+                </button>
+              )}
             </div>
 
             <div className="flex flex-col items-center gap-2 order-1 md:order-2">

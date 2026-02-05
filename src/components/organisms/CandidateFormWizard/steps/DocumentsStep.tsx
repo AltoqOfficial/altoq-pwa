@@ -12,7 +12,7 @@ export const DocumentsStep: React.FC = () => {
   return (
     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
       <div className="p-6 border-2 border-dashed border-neutral-200 rounded-lg bg-neutral-50/50">
-        <h3 className="text-lg font-bold text-surface mb-2 font-sohne-breit">
+        <h3 className="text-lg font-bold text-surface mb-2 font-flexo-bold">
           Carga de Documentos
         </h3>
         <p className="text-sm text-neutral-600 mb-6">
