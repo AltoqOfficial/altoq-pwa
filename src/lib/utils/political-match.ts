@@ -59,41 +59,85 @@ const CATEGORY_MAP: Record<string, string> = {
 
 // Maps for Asset normalization
 const PARTY_LOGOS: Record<string, string> = {
+  "Ahora Nación": "/partidos/ahoranacion.webp",
   "Alianza para el Progreso": "/partidos/app.webp",
   "Partido Aprista Peruano": "/partidos/apra.webp",
   "Avanza País": "/partidos/avanzapais.webp",
-  "Fuerza Popular": "/partidos/fuerzaPopularIconr.webp",
+  "Partido Cívico Obras": "/partidos/civicoObras.webp",
+  "Cooperación Popular": "/partidos/cpp.webp", // Verify if CPP is correct abbreviation used in file
+  "Fe en el Perú": "/partidos/fe.webp",
+  "Frente de la Esperanza": "/partidos/frentedelaesperanza.webp",
+  "Fuerza Popular": "/partidos/fuerzaPopulaIconr.webp",
+  "Integridad Democrática": "/partidos/integridadDemocratica.webp",
+  "Juntos por el Perú": "/partidos/juntosporelperu.webp",
+  "Libertad Popular": "/partidos/libertadPopular.webp",
+  "Partido del Buen Gobierno": "/partidos/partidodelbuengobierno.webp",
   "Partido Morado": "/partidos/partidomorado.webp",
+  "Partido Patriótico del Perú": "/partidos/partidopatrioticoperu.webp",
+  "Perú Acción": "/partidos/peruNacion.webp", // Assuming match/rename based on available files
   "Perú Libre": "/partidos/perulibre.webp",
   "Perú Primero": "/partidos/peruprimero.webp",
-  "Renovación Popular": "/partidos/rp.webp",
-  "Partido Democrático Somos Perú": "/partidos/somosperu.webp",
-  "Partido Demócrata Verde": "/partidos/verde.webp",
-  "Fe en el Perú": "/partidos/fe.webp",
-  "Ahora Nación": "/partidos/ahoranacion.webp",
+  "Podemos Perú": "/partidos/podemosPeru.webp",
   "País para Todos": "/partidos/ppt.webp",
-  // Add more heuristic mappings if needed or default
+  "Partido Político Prin": "/partidos/prin.webp",
+  Progresemos: "/partidos/progresemos.webp",
+  "Renovación Popular": "/partidos/rp.webp",
+  "Salvemos al Perú": "/partidos/salvemosalperu.webp",
+  SíCreo: "/partidos/sicreo.webp",
+  "Partido Democrático Somos Perú": "/partidos/somosperu.webp",
+  "Un camino diferente": "/partidos/uncaminodiferente.webp",
+  "Partido Demócrata Unido Perú": "/partidos/unidoPeru.webp",
+  "Partido Demócrata Verde": "/partidos/verde.webp",
+  "Perú Moderno": "/partidos/peruModerno.webp",
+
+  // Pending exact matches or missing files:
+  "Alianza Electoral Venceremos": "/partidos/aev.webp",
+  "Alianza Unidad Nacional": "/partidos/unidadNacional.webp",
+  "Fuerza y Libertad": "/partidos/fyl.webp",
+  "Partido de los Trabajadores y Emprendedores": "/partidos/ptePeru.webp",
+  "Primero la gente": "/partidos/plg.webp",
 };
 
 const CANDIDATE_IMAGES: Record<string, string> = {
+  "Pablo Alfonso López-Chau Nava": "/candidatos/alfonso-lopez-chau.webp",
+  "Ronald Darwin Atencio Sotomayor": "/candidatos/ronald-atencio.webp",
+  "Roberto Enrique Chiabra León": "/candidatos/roberto-chiabra.webp",
   "César Acuña Peralta": "/candidatos/cesar-acuna.webp",
+  "José Daniel Williams Zapata": "/candidatos/jose-williams.webp",
+  "Yonhy Lescano Ancieta": "/candidatos/yonhy-lescano.webp",
+  "Álvaro Gonzalo Paz de la Barra Freigeiro": "/candidatos/alvaro-paz.webp",
+  "Luis Fernando Olivera Vega": "/candidatos/fernando-olivera.webp",
   "Keiko Sofía Fujimori Higuchi": "/candidatos/keiko-fujimori.webp",
+  "Fiorella Giannina Molinelli Aristondo":
+    "/candidatos/fiorella-molinelli.webp",
+  "Wolfgang Mario Grozo Costa": "/candidatos/wolfgang-grozo.webp",
+  "Roberto Helbert Sanchez Palomino": "/candidatos/roberto-sanchez.webp",
+  "Rafael Jorge Belaúnde Llosa": "/candidatos/rafael-belaunde.webp",
+  "Pitter Enrique Valderrama Peña": "/candidatos/enrique-valderrama.webp",
+  "Ricardo Pablo Belmont Cassinelli": "/candidatos/ricardo-belmont.webp",
+  "George Patrick Forsyth Sommer": "/candidatos/george-forsyth.webp",
+  "Charlie Carrasco Salazar": "/candidatos/charlie-carrasco.webp",
+  "Álex Gonzales Castillo": "/candidatos/alex-gonzales.webp",
+  "Mesías Antonio Guevara Amasifuén": "/candidatos/mesias-guevara.webp",
+  "Herbert Caller Gutiérrez": "/candidatos/herbert-caller.webp",
+  "Walter Gilmer Chirinos Purizaga": "/candidatos/walter-chirinos.webp",
+  "Napoleón Becerra García": "/candidatos/napoleon-becerra.webp",
+  "Jorge Nieto Montesinos": "/candidatos/jorge-nieto.webp",
+  "Carlos Gonsalo Álvarez Loayza": "/candidatos/carlos-alvarez.webp",
+  "Francisco Ernesto Diez-Canseco Távara":
+    "/candidatos/francisco-diez-canseco.webp",
+  "Vladimir Roy Cerrón Rojas": "/candidatos/vladimir-cerron.webp",
+  "Carlos Ernesto Jaico Carranza": "/candidatos/carlos-jaico.webp",
+  "Mario Enrique Vizcarra Cornejo": "/candidatos/mario-vizcarra.webp",
+  "José León Luna Gálvez": "/candidatos/jose-luna.webp",
+  "Paul Davis Jaimes Blanco": "/candidatos/paul-jaimes.webp",
   "Rafael Bernardo López-Aliaga Cazorla":
     "/candidatos/rafael-lopez-aliaga.webp",
-  "Vladimir Roy Cerrón Rojas": "/candidatos/vladimir-cerron.webp",
-  "Yonhy Lescano Ancieta": "/candidatos/yonhy-lescano.webp",
-  "George Patrick Forsyth Sommer": "/candidatos/george-forsyth.webp",
-  "Roberto Helbert Sanchez Palomino": "/candidatos/roberto-sanchez.webp",
-  "Mario Enrique Vizcarra Cornejo": "/candidatos/mario-vizcarra.webp",
-  "Luis Fernando Olivera Vega": "/candidatos/fernando-olivera.webp",
+  "Antonio Ortiz Villano": "/candidatos/antonio-ortiz.webp",
   "Alfonso Carlos Espá Garcés-Alvear": "/candidatos/carlos-espa.webp",
-  "Pablo Alfonso López-Chau Nava": "/candidatos/alfonso-lopez-chau.webp",
-  "Pitter Enrique Valderrama Peña": "/candidatos/enrique-valderrama.webp",
-  "Carlos Gonsalo Álvarez Loayza": "/candidatos/carlos-alvarez.webp",
-  "Napoleón Becerra García": "/images/volunteer-placeholder-vertical.png",
-  "Napoleón Becerra": "/images/volunteer-placeholder-vertical.png",
-
-  // Default fallback
+  "Rosario del Pilar Fernández Bazán": "/candidatos/rosario-fernandez.webp",
+  "María Soledad Pérez Tello de Rodríguez": "/candidatos/maria-perez.webp",
+  "Armando Massé": "/candidatos/armando-masse.webp", // Adding extra if key matches
 };
 
 const SHORT_NAME_OVERRIDES: Record<string, string> = {
