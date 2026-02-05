@@ -19,6 +19,7 @@ import { ConditionalLayout } from "@/components/organisms/ConditionalLayout";
 import { GA_MEASUREMENT_ID } from "@/lib/analytics/gtag";
 import { Analytics } from "@/components/organisms/Analytics";
 import { QueryProvider } from "@/lib/providers/QueryProvider";
+import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import { ThemeProvider } from "@/contexts";
 
 export const metadata: Metadata = createMetadata();
@@ -167,6 +168,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className="antialiased" suppressHydrationWarning>
         <ThemeProvider defaultTheme="system">
           <QueryProvider>
+            <SmoothScroll />
             {/* Analytics - Track page views */}
             <Analytics />
 
