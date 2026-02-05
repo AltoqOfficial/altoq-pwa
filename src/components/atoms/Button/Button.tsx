@@ -38,7 +38,7 @@ export function Button({
   const Comp = asChild ? Slot : "button";
 
   const baseStyles =
-    "inline-flex items-center justify-center rounded font-bold transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50 font-sohne-breit select-none";
+    "inline-flex items-center justify-center rounded font-bold transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50 font-flexo-bold select-none";
 
   const variantStyles = {
     primary: "bg-primary-600 text-white hover:bg-primary-700",

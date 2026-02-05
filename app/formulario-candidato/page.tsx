@@ -8,6 +8,8 @@ import {
   MatchResults,
 } from "@/components/organisms/CandidateFormWizard";
 
+import { AnswerValue } from "@/components/organisms/CandidateFormWizard/types";
+
 const FORM_STORAGE_KEY = "altoq_candidate_form_v2";
 
 export default function CandidateFormPage() {
@@ -23,6 +25,12 @@ export default function CandidateFormPage() {
     return shouldShowResults && !!hasPendingForm;
   });
 
+  // State to hold the first answer from the Hero section
+  const [initialAnswer, setInitialAnswer] = useState<{
+    questionId: string;
+    value: AnswerValue;
+  } | null>(null);
+
   const [isWizardOpen, setIsWizardOpen] = useState(false);
 
   // Clear URL param after initial render if showing results
@@ -37,6 +45,7 @@ export default function CandidateFormPage() {
     // Clear form data and go back to hero
     localStorage.removeItem(FORM_STORAGE_KEY);
     setShowResults(false);
+    setInitialAnswer(null);
     router.push("/");
   };
 
@@ -48,13 +57,21 @@ export default function CandidateFormPage() {
   return (
     <>
       {!isWizardOpen && (
-        <CandidateFormHero onStartClick={() => setIsWizardOpen(true)} />
+        <CandidateFormHero
+          onOptionSelect={(value) => {
+            setInitialAnswer({ questionId: "Q1", value: value as AnswerValue });
+            setIsWizardOpen(true);
+          }}
+        />
       )}
 
-      <CandidateFormWizard
-        isOpen={isWizardOpen}
-        onClose={() => setIsWizardOpen(false)}
-      />
+      {isWizardOpen && (
+        <CandidateFormWizard
+          isOpen={true} // Always true since we conditionally render the component
+          onClose={() => setIsWizardOpen(false)}
+          initialAnswer={initialAnswer}
+        />
+      )}
     </>
   );
 }

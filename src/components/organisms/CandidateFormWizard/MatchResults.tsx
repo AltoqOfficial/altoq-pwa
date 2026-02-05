@@ -71,8 +71,14 @@ const MOCK_RESULTS: MatchCandidate[] = [
 ];
 
 export function MatchResults({ results, onClose }: MatchResultsProps) {
-  const displayedResults = results.length > 0 ? results : MOCK_RESULTS;
-  // Default to first candidate's ID
+  // Ensure results are sorted by score descending to guarantee correct ranking
+  const sortedResults = [...(results.length > 0 ? results : MOCK_RESULTS)].sort(
+    (a, b) => b.score - a.score
+  );
+
+  const displayedResults = sortedResults;
+
+  // Default to first candidate's ID (which is now guaranteed to be the highest score)
   const [selectedId, setSelectedId] = useState<string>(
     displayedResults[0]?.id || ""
   );
@@ -81,6 +87,10 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
   const [isListExpanded, setIsListExpanded] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [feedback, setFeedback] = useState<"like" | "dislike" | null>(null);
+
+  const topMatches = displayedResults.slice(0, 4);
+  const currentCandidate =
+    displayedResults.find((r) => r.id === selectedId) || displayedResults[0];
 
   // Lock body scroll when modal is open
   useEffect(() => {
@@ -94,16 +104,50 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
     };
   }, [showAllMatches]);
 
+  // Auto-transition for AI recommendations
+  useEffect(() => {
+    if (!currentCandidate?.reasons || currentCandidate.reasons.length === 0)
+      return;
+
+    const interval = setInterval(() => {
+      setReasonIdx((prev) => {
+        const total = Math.min(3, currentCandidate.reasons.length);
+        return (prev + 1) % total;
+      });
+    }, 5000); // 5 seconds transition
+
+    return () => clearInterval(interval);
+  }, [currentCandidate?.reasons]);
+
+  const handleShare = async () => {
+    if (!currentCandidate) return;
+
+    const shareData = {
+      title: "Encuentra tu Match - Altoq",
+      text: `He hecho match con ${currentCandidate.name} con un ${currentCandidate.score}% de afinidad en Altoq.`,
+      url: window.location.href,
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        await navigator.clipboard.writeText(
+          `${shareData.text} Descúbrelo aquí: ${shareData.url}`
+        );
+        alert("¡Resultado copiado al portapapeles!");
+      }
+    } catch (err) {
+      console.error("Error al compartir:", err);
+    }
+  };
+
   // Filter results based on search
   const filteredResults = displayedResults.filter(
     (c) =>
       c.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       c.party.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
-  const topMatches = displayedResults.slice(0, 4);
-  const currentCandidate =
-    displayedResults.find((r) => r.id === selectedId) || displayedResults[0];
 
   // Logic: If searching, show all matches. If not, respect "Show More" toggle
   const listToShow = searchQuery
@@ -137,13 +181,15 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
     <div className="w-full min-h-screen bg-black text-white selection:bg-[#FF0000] selection:text-white pb-20">
       <main className="max-w-7xl mx-auto px-4 md:px-8 pt-8 md:pt-12">
         {/* Header */}
-        <header className="mb-8 md:mb-12 border-b border-white/10 pb-6 flex justify-between items-start">
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-2 h-2 bg-[#FF0000]" />
-              <h2 className="text-xs font-bold tracking-[0.2em] text-white/60 uppercase">
-                Resultados del Análisis
-              </h2>
+        <header className="mb-8 md:mb-12 border-b border-white/10 pb-6 flex flex-col md:flex-row md:justify-between md:items-start gap-6">
+          <div className="w-full md:w-auto">
+            <div className="flex items-center justify-between md:justify-start gap-3 mb-2">
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-[#FF0000]" />
+                <h2 className="text-xs font-bold tracking-[0.2em] text-white/60 uppercase">
+                  Resultados del Análisis
+                </h2>
+              </div>
             </div>
             <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none">
               HACES MATCH CON
@@ -153,29 +199,58 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
             </h1>
           </div>
 
-          <button
-            onClick={onClose}
-            className="group flex items-center gap-2 px-4 py-2 border border-white/10 rounded-full hover:bg-white/10 transition-all"
-          >
-            <span className="text-xs font-bold uppercase tracking-widest text-white/60 group-hover:text-white">
-              Cerrar
-            </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-white/60 group-hover:text-white"
+          <div className="flex items-center gap-3 w-full md:w-auto justify-start md:justify-end">
+            <button
+              onClick={handleShare}
+              aria-label="Compartir resultados"
+              className="group flex-1 md:flex-none justify-center flex items-center gap-2 px-4 py-3 md:py-2 bg-[#FF0000] border border-[#FF0000] rounded-full hover:bg-red-600 transition-all"
             >
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-          </button>
+              <span className="hidden md:inline text-xs font-flexo-bold uppercase tracking-widest text-white">
+                Compartir
+              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-white"
+              >
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <polyline points="16 6 12 2 8 6" />
+                <line x1="12" y1="2" x2="12" y2="15" />
+              </svg>
+            </button>
+
+            <button
+              onClick={onClose}
+              aria-label="Cerrar resultados"
+              className="group flex-1 md:flex-none justify-center flex items-center gap-2 px-4 py-3 md:py-2 border border-white/10 rounded-full hover:bg-white/10 transition-all"
+            >
+              <span className="hidden md:inline text-xs font-flexo-bold uppercase tracking-widest text-white/60 group-hover:text-white">
+                Cerrar
+              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-white/60 group-hover:text-white"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
         </header>
 
         {/* Top Section: Main Match & Details */}
@@ -228,7 +303,10 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
                       Ideología
                     </p>
                     <p className="text-sm font-bold uppercase line-clamp-2 leading-tight">
-                      {currentCandidate.ideology}
+                      {currentCandidate.ideology &&
+                      currentCandidate.ideology !== "SIN DEFINIR"
+                        ? currentCandidate.ideology
+                        : "No especificado"}
                     </p>
                   </div>
                 </div>
@@ -244,8 +322,7 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
                     key={candidate.id}
                     onClick={() => {
                       setSelectedId(candidate.id);
-                      const len = candidate.reasons?.length || 0;
-                      setReasonIdx(Math.min(reasonIdx, len > 0 ? len - 1 : 0));
+                      setReasonIdx(0);
                     }}
                     className={`relative aspect-square group overflow-hidden border transition-all duration-300 ${
                       isSelected
@@ -351,11 +428,11 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
                 ) : (
                   <AnimatePresence mode="wait">
                     <motion.div
-                      key={currentReason.id}
+                      key={`${currentCandidate.id}-reason-${reasonIdx}`}
                       initial={{ x: 20, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
                       exit={{ x: -20, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
                     >
                       {currentReason.category && (
                         <span className="inline-block px-3 py-1 mb-4 rounded border border-[#FF0000]/30 text-[#FF0000] text-[10px] font-black uppercase tracking-widest bg-[#FF0000]/5">
@@ -384,7 +461,7 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
                   <div className="mt-8 pt-6 border-t border-white/5 flex justify-end">
                     <button
                       onClick={() => setShowAllMatches(true)}
-                      className="group flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors"
+                      className="group flex items-center gap-2 text-xs font-flexo-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors"
                     >
                       <span>Ver las {currentReasons.length} coincidencias</span>
                       <span className="p-1 rounded-full border border-white/20 group-hover:bg-white group-hover:text-black transition-all">
@@ -555,7 +632,10 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
                     </p>
                     <div className="bg-black/40 rounded px-2 py-1.5 border-l-2 border-[#FF0000]">
                       <span className="text-white text-xs font-medium uppercase">
-                        {currentCandidate.ideology}
+                        {currentCandidate.ideology &&
+                        currentCandidate.ideology !== "SIN DEFINIR"
+                          ? currentCandidate.ideology
+                          : "No especificado"}
                       </span>
                     </div>
                   </div>
@@ -656,8 +736,29 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="BUSCAR CANDIDATO O PARTIDO..."
-                    className="w-full bg-[#111111] border border-white/10 rounded-lg py-3 pl-10 pr-4 text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#FF0000]/50 focus:bg-white/5 transition-all uppercase tracking-wide font-bold"
+                    className="w-full bg-[#111111] border border-white/10 rounded-lg py-3 pl-10 pr-10 text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#FF0000]/50 focus:bg-white/5 transition-all uppercase tracking-wide font-bold"
                   />
+                  {searchQuery && (
+                    <button
+                      onClick={() => setSearchQuery("")}
+                      className="absolute inset-y-0 right-2 px-2 flex items-center text-white/40 hover:text-white transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                      </svg>
+                    </button>
+                  )}
                 </div>
 
                 <div className="flex justify-between items-end border-b border-white/20 pb-2 mb-6">
@@ -924,7 +1025,10 @@ export function MatchResults({ results, onClose }: MatchResultsProps) {
               </div>
 
               {/* Scrollable Content */}
-              <div className="p-6 md:p-8 space-y-10 overflow-y-auto custom-scrollbar flex-1">
+              <div
+                data-lenis-prevent
+                className="p-6 md:p-8 space-y-10 overflow-y-auto custom-scrollbar flex-1"
+              >
                 {currentReasons.map((reason, idx) => (
                   <div
                     key={idx}

@@ -1,7 +1,14 @@
-"use client";
-
-import { useCallback, lazy, Suspense, memo, useRef } from "react";
+import {
+  useCallback,
+  lazy,
+  Suspense,
+  memo,
+  useRef,
+  useState,
+  useEffect,
+} from "react";
 import { useSectionNavigation } from "@/hooks";
+import { Header } from "@/components/organisms/Header/Header";
 import {
   SectionNavbar,
   SectionWrapper,
@@ -118,6 +125,20 @@ export function ComparisonContent({
 
   // Scroll container ref
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Monitor Scroll for Header
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      setIsScrolled(container.scrollTop > 20);
+    };
+
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Render a section dynamically based on config
   const renderSection = useCallback(
@@ -164,11 +185,19 @@ export function ComparisonContent({
         onNavClick: handleNavClickWrapper,
       }}
     >
-      <div className="flex flex-col h-dvh overflow-hidden bg-neutral-500 w-full">
-        {/* Fixed Header Area - Removed as per request */}
+      <div className="flex flex-col h-dvh overflow-hidden bg-neutral-500 w-full relative">
+        {/* Fixed Header synced with container scroll */}
+        <div className="absolute top-0 left-0 right-0 z-[60]">
+          <Header
+            forceShow={true}
+            variant="transparent"
+            isScrolled={isScrolled}
+            className="absolute w-full"
+          />
+        </div>
 
         {/* Main Layout Area */}
-        <div className="flex flex-1 min-h-0 relative">
+        <div className="flex flex-1 min-h-0 relative pt-20">
           {/* Fixed Sidebar */}
           <div className="hidden xl:block w-72 shrink-0 h-full border-r border-white/10 bg-neutral-500 shadow-[10px_0_30px_-10px_rgba(0,0,0,3)] overflow-y-auto scrollbar-hide z-40 pb-32">
             <SectionNavbar
@@ -182,8 +211,10 @@ export function ComparisonContent({
           {/* Scrollable Content Area */}
           <div
             ref={scrollContainerRef}
-            className="flex-1 w-full min-w-0 overflow-y-auto overflow-x-hidden scroll-smooth xl:[&::-webkit-scrollbar]:hidden xl:[scrollbar-width:none]"
+            className="flex-1 w-full min-w-0 overflow-y-auto overflow-x-hidden scroll-smooth"
             id="comparison-content-scroll-container"
+            style={{ scrollBehavior: "smooth" }}
+            data-lenis-prevent="true"
           >
             <div
               className="w-full flex justify-center min-h-full"
@@ -203,7 +234,12 @@ export function ComparisonContent({
         {/* Floating Scroll to Top / Back Button */}
         <button
           onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            if (scrollContainerRef.current) {
+              scrollContainerRef.current.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }
             onBack();
           }}
           className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-[#FF2727] hover:scale-105 text-white shadow-lg transition-all duration-300 transform translate-y-0 opacity-100"

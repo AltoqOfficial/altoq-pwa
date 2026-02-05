@@ -31,7 +31,7 @@ export const QuestionItem: React.FC<QuestionItemProps> = ({
               type="button"
               onClick={() => onChange(opt.value)}
               className={cn(
-                "flex flex-col items-center p-3 md:p-4 rounded-xl transition-all duration-300 group min-h-[160px] md:min-h-[200px] border-2",
+                "flex flex-col items-center p-3 md:p-4 rounded-xl transition-all duration-300 group min-h-[160px] md:min-h-[200px] border-2 relative",
                 selectedAnswer === opt.value
                   ? "bg-[#E0E0E0] border-[#E0E0E0] text-black shadow-[0_0_20px_rgba(255,255,255,0.1)] scale-[1.02]"
                   : "bg-[#2C2C2C] border-transparent text-white hover:border-neutral-500 hover:bg-[#353535]"
@@ -64,10 +64,10 @@ export const QuestionItem: React.FC<QuestionItemProps> = ({
               <div className="text-center w-full">
                 <p
                   className={cn(
-                    "text-[10px] md:text-sm font-normal leading-tight text-left",
+                    "text-xs md:text-sm font-medium leading-tight text-left",
                     selectedAnswer === opt.value
-                      ? "text-black font-semibold"
-                      : "text-white"
+                      ? "text-black font-bold"
+                      : "text-white/80"
                   )}
                 >
                   {opt.value}) {opt.description}
@@ -77,28 +77,32 @@ export const QuestionItem: React.FC<QuestionItemProps> = ({
           ))}
         </div>
       ) : (
-        <div className="flex flex-col gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {question.options.map((opt) => (
             <button
               key={opt.value}
               type="button"
               onClick={() => onChange(opt.value)}
               className={cn(
-                "w-full px-6 py-4 rounded-xl text-sm font-normal border-2 transition-all duration-300 text-left",
+                "w-full px-6 py-5 rounded-xl text-sm font-normal border-2 transition-all duration-300 text-left relative",
                 selectedAnswer === opt.value
                   ? "bg-[#E0E0E0] border-[#E0E0E0] text-black shadow-lg scale-[1.01]"
                   : "bg-[#2C2C2C] border-transparent text-white hover:border-neutral-500 hover:bg-[#353535]"
               )}
             >
-              <span
-                className={cn(
-                  "font-bold mr-1",
-                  selectedAnswer === opt.value ? "text-black" : "text-white"
-                )}
-              >
-                {opt.value})
-              </span>
-              {opt.description}
+              <div className="flex items-start gap-3">
+                <span
+                  className={cn(
+                    "font-bold text-base shrink-0",
+                    selectedAnswer === opt.value
+                      ? "text-black"
+                      : "text-[#FF0000]"
+                  )}
+                >
+                  {opt.value})
+                </span>
+                <span className="leading-relaxed">{opt.description}</span>
+              </div>
             </button>
           ))}
         </div>
