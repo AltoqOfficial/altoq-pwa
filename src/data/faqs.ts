@@ -32,7 +32,7 @@ export const faqs: FAQItem[] = [
   {
     question: "¿Qué diferencia a Altoq de otras plataformas electorales?",
     answer:
-      "Altoq se distingue por su enfoque en la experiencia del usuario, información verificada y herramientas interactivas como el comparador de candidatos y el test 'Mi Match Político'. Somos independientes, no partidistas, y nuestra única misión es informar.",
+      'Altoq se distingue por su enfoque en la experiencia del usuario, información verificada y herramientas interactivas como el comparador de candidatos y el test "Encuentra tu Match". Somos independientes, no partidistas, y nuestra única misión es informar.',
   },
   {
     question: "¿La información es confiable?",

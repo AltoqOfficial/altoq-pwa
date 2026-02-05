@@ -1,12 +1,6 @@
 import { Typography } from "@/components/atoms";
 import Image from "next/image";
 
-const FEATURES = [
-  "La Inteligencia Artificial de Altoq cruza tus respuestas con información verificada sobre candidatos y partidos.",
-  "Evalúa coincidencias en temas clave, propuestas y valores para mostrarte resultados claros y explicados.",
-  "No te dice por quién votar. Solo te muestra quién se acerca más a lo que tú piensas.",
-] as const;
-
 export function AIPromotionSection() {
   return (
     <article
@@ -15,28 +9,35 @@ export function AIPromotionSection() {
     >
       <div className="shrink-0 w-full lg:w-auto flex justify-center">
         <Image
-          src="/ia_promotion.webp"
+          src="/promotion/stack_papers.jpg"
           width={700}
           height={700}
-          alt="Ilustración de inteligencia artificial analizando candidatos"
-          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+          alt="Análisis de documentos con IA"
+          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain mix-blend-multiply"
         />
       </div>
 
       <div className="flex flex-col gap-6 sm:gap-8 lg:gap-10 xl:gap-14">
         <h3 className="font-semibold font-sohne-breit max-w-xs sm:max-w-md lg:max-w-xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-left">
-          Datos reales + <span className="text-primary-600">IA</span>
+          Tu voto, fundamentado en{" "}
+          <span className="text-primary-600">Datos</span>
         </h3>
 
-        <div className="space-y-2 sm:space-y-3">
-          {FEATURES.map((feature, index) => (
-            <Typography
-              key={index}
-              className="text-neutral-500 max-w-xs sm:max-w-md lg:max-w-lg text-sm sm:text-base text-center lg:text-left"
-            >
-              {feature}
-            </Typography>
-          ))}
+        <div className="space-y-3 sm:space-y-4">
+          <Typography className="text-neutral-500 max-w-xs sm:max-w-md lg:max-w-lg text-sm sm:text-base text-center lg:text-left">
+            <strong>Fuentes Confiables:</strong> Cruzamos información oficial
+            del JNE, planes de gobierno y verificación de medios serios. No
+            inventamos nada, solo sintetizamos lo que ya existe.
+          </Typography>
+          <Typography className="text-neutral-500 max-w-xs sm:max-w-md lg:max-w-lg text-sm sm:text-base text-center lg:text-left">
+            <strong>Transparencia Total:</strong> Te mostramos el sustento real
+            de cada coincidencia. Verás la propuesta o cita textual que valida
+            tu resultado.
+          </Typography>
+          <Typography className="text-neutral-500 max-w-xs sm:max-w-md lg:max-w-lg text-sm sm:text-base text-center lg:text-left">
+            <strong>Sin Sesgos:</strong> No te decimos por quién votar. Solo te
+            mostramos quién se acerca más a lo que tú ya piensas.
+          </Typography>
         </div>
 
         <p className="text-xs text-neutral-400 mt-6 text-center lg:text-left max-w-xs sm:max-w-md lg:max-w-lg">
