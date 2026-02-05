@@ -17,38 +17,54 @@ interface HeaderProps {
   className?: string;
   forceShow?: boolean;
   variant?: "default" | "transparent";
+  isScrolled?: boolean; // Allow external control of scrolled state
 }
 
 export function Header({
   className,
   forceShow,
   variant = "default",
+  isScrolled: externalIsScrolled,
 }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const [internalIsScrolled, setInternalIsScrolled] = useState(false);
+
+  // Use external state if provided, otherwise use internal
+  const isScrolled = externalIsScrolled ?? internalIsScrolled;
+
   const userMenuRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const { user, isLoading } = useUserProfile();
   const { mutate: logout, isPending: isLoggingOut } = useLogout();
 
-  // TODO: Restore auth hooks once modules are available
-  // const { user, isLoading } = useUserProfile();
+  // Scroll handler for sticky effect (only if no external state controlled)
+  useEffect(() => {
+    if (externalIsScrolled !== undefined) return;
 
-  // const user: any = null;
-  // const isLoading = false;
-
-  // const { mutate: logout, isPending: isLoggingOut } = useLogout();
-  // const logout = () => {};
-  // const isLoggingOut = false;
+    const handleScroll = () => {
+      setInternalIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [externalIsScrolled]);
 
   const isAuthenticated = !!user && !isLoading;
   const isDarkBackground = DARK_BACKGROUND_ROUTES.some((route) =>
     pathname.startsWith(route)
   );
 
+  // Determine styles based on scroll and background
+  const isTransparentState =
+    !isScrolled && (isDarkBackground || variant === "transparent");
+
+  // Text color: Dark if scrolled or on light bg, White if on dark bg/transparent variant AND not scrolled
+  const textColorClass = isTransparentState ? "text-white" : "text-neutral-900";
+  const logoVariant = isTransparentState ? "white" : "default";
+
   const navLinks = [
     { href: "/compara", label: "Comparar Candidatos" },
-    { href: "/formulario-candidato", label: "Match Político" },
+    { href: "/formulario-candidato", label: "Encuentra tu Match" },
     { href: "/#como-funciona", label: "¿Cómo funciona?" },
   ];
 
@@ -84,27 +100,34 @@ export function Header({
   return (
     <header
       className={cn(
-        "relative top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300",
+        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300",
+        isScrolled
+          ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-neutral-100 py-3"
+          : "bg-transparent py-5",
         className
       )}
     >
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Logo
-          variant={isDarkBackground ? "white" : "default"}
+          variant={logoVariant}
           asLink
           priority
+          className="transition-transform duration-300 hover:scale-105"
         />
 
         {/* Desktop Navigation - Center */}
-        <nav className="hidden md:flex items-center gap-12">
+        <nav className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary-600",
-                variant === "transparent" ? "text-white" : "text-neutral-900"
+                "text-sm font-medium transition-all hover:-translate-y-0.5",
+                textColorClass,
+                isTransparentState
+                  ? "hover:text-white/80"
+                  : "hover:text-primary-600"
               )}
             >
               {link.label}
@@ -123,22 +146,17 @@ export function Header({
               <button
                 onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
                 className={cn(
-                  "flex items-center gap-3 px-4 py-2 rounded-2xl transition-colors",
-                  variant === "transparent"
-                    ? "hover:bg-white/10 text-white"
-                    : "hover:bg-gray-100 text-gray-900"
+                  "flex items-center gap-3 px-3 py-2 rounded-2xl transition-all border",
+                  isTransparentState
+                    ? "border-white/20 bg-white/10 hover:bg-white/20 text-white"
+                    : "border-neutral-200 bg-white hover:border-neutral-300 text-neutral-900"
                 )}
               >
                 {/* Avatar */}
-                <div className="w-9 h-9 rounded-full bg-[#FF2727] flex items-center justify-center text-white font-bold text-sm">
+                <div className="w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold text-sm shadow-sm">
                   {userInitial}
                 </div>
-                <span
-                  className={cn(
-                    "text-sm font-medium max-w-[120px] truncate",
-                    variant === "transparent" ? "text-white" : "text-gray-900"
-                  )}
-                >
+                <span className="text-sm font-medium max-w-[100px] truncate">
                   {displayName}
                 </span>
                 {/* Arrow */}
@@ -154,7 +172,6 @@ export function Header({
                   strokeLinejoin="round"
                   className={cn(
                     "transition-transform duration-200",
-                    variant === "transparent" ? "text-white" : "text-gray-500",
                     isUserMenuOpen ? "rotate-180" : ""
                   )}
                 >
@@ -166,15 +183,15 @@ export function Header({
               <AnimatePresence>
                 {isUserMenuOpen && (
                   <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.15 }}
-                    className="absolute right-0 top-full mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden z-50"
+                    initial={{ opacity: 0, y: 8, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 8, scale: 0.95 }}
+                    transition={{ duration: 0.1 }}
+                    className="absolute right-0 top-full mt-2 w-52 bg-white rounded-2xl shadow-xl shadow-neutral-200/50 border border-neutral-100 overflow-hidden z-50 p-1"
                   >
                     <Link
                       href="/"
-                      className="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                      className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-neutral-700 hover:bg-neutral-50 rounded-xl transition-colors"
                       onClick={() => setIsUserMenuOpen(false)}
                     >
                       <svg
@@ -187,6 +204,7 @@ export function Header({
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
+                        className="text-neutral-400"
                       >
                         <rect width="7" height="9" x="3" y="3" rx="1" />
                         <rect width="7" height="5" x="14" y="3" rx="1" />
@@ -195,11 +213,11 @@ export function Header({
                       </svg>
                       Inicio
                     </Link>
-                    <div className="h-px bg-gray-100" />
+                    <div className="h-px bg-neutral-100 my-1" />
                     <button
                       onClick={handleLogout}
                       disabled={isLoggingOut}
-                      className="flex items-center gap-3 w-full px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#FF2727] transition-colors disabled:opacity-50"
+                      className="flex items-center gap-3 w-full px-4 py-3 text-sm font-medium text-neutral-700 hover:bg-red-50 hover:text-red-600 rounded-xl transition-colors disabled:opacity-50"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -211,6 +229,7 @@ export function Header({
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
+                        className="text-neutral-400 group-hover:text-red-500"
                       >
                         <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
                         <polyline points="16 17 21 12 16 7" />
@@ -226,7 +245,10 @@ export function Header({
             // Not authenticated - Show login button
             <Link
               href="/login"
-              className="inline-block bg-[#FF2727] hover:bg-[#E82323] text-white font-bold rounded-2xl px-6 py-3 transition-colors"
+              className={cn(
+                "inline-block font-bold rounded-2xl px-6 py-2.5 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary-500/20",
+                "bg-primary-500 hover:bg-primary-600 text-white"
+              )}
             >
               Iniciar sesión
             </Link>
@@ -235,36 +257,57 @@ export function Header({
 
         {/* Mobile Menu Trigger */}
         <button
-          className="flex md:hidden flex-col justify-center items-center w-8 h-8 space-y-1.5 focus:outline-none z-50 relative"
+          className="flex md:hidden flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-50 relative rounded-full hover:bg-black/5 transition-colors"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
           <motion.span
             animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
             className={cn(
-              "w-6 h-0.5 block transition-colors",
-              isOpen || variant === "transparent"
-                ? "bg-white"
-                : "bg-neutral-900"
+              "w-6 h-0.5 block transition-colors rounded-full",
+              isOpen || isTransparentState ? "bg-white" : "bg-neutral-900"
             )}
+            style={{
+              backgroundColor: isOpen
+                ? isTransparentState
+                  ? "white"
+                  : "#171717"
+                : isTransparentState
+                  ? "white"
+                  : "#171717",
+            }}
           />
           <motion.span
             animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
             className={cn(
-              "w-6 h-0.5 block transition-colors",
-              isOpen || variant === "transparent"
-                ? "bg-white"
-                : "bg-neutral-900"
+              "w-6 h-0.5 block transition-colors rounded-full",
+              isOpen || isTransparentState ? "bg-white" : "bg-neutral-900"
             )}
+            style={{
+              backgroundColor: isOpen
+                ? isTransparentState
+                  ? "white"
+                  : "#171717"
+                : isTransparentState
+                  ? "white"
+                  : "#171717",
+            }}
           />
           <motion.span
             animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
             className={cn(
-              "w-6 h-0.5 block transition-colors",
-              isOpen || variant === "transparent"
-                ? "bg-white"
-                : "bg-neutral-900"
+              "w-6 h-0.5 block transition-colors rounded-full",
+              isOpen || isTransparentState ? "bg-white" : "bg-neutral-900"
             )}
+            style={{
+              backgroundColor: isOpen
+                ? isTransparentState
+                  ? "white"
+                  : "#171717"
+                : isTransparentState
+                  ? "white"
+                  : "#171717",
+            }}
           />
         </button>
 
@@ -272,17 +315,17 @@ export function Header({
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.2 }}
-              className="absolute top-20 left-0 w-full bg-white shadow-lg border-t border-neutral-100 p-6 md:hidden flex flex-col gap-4 items-center"
+              initial={{ opacity: 0, y: -20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -20, scale: 0.95 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="absolute top-20 left-4 right-4 bg-white rounded-3xl shadow-2xl shadow-neutral-900/20 border border-neutral-100 p-6 md:hidden flex flex-col gap-4 items-center overflow-hidden"
             >
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-lg font-medium text-neutral-900 hover:text-primary-600 py-2"
+                  className="w-full text-center text-lg font-medium text-neutral-600 hover:text-primary-600 hover:bg-neutral-50 py-3 rounded-xl transition-all"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
@@ -294,18 +337,20 @@ export function Header({
                 // Authenticated mobile menu
                 <>
                   {/* User info */}
-                  <div className="flex items-center gap-3 py-2">
-                    <div className="w-10 h-10 rounded-full bg-[#FF2727] flex items-center justify-center text-white font-bold">
+                  <div className="flex items-center gap-3 py-2 bg-neutral-50 w-full justify-center rounded-2xl border border-neutral-100">
+                    <div className="w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold text-sm">
                       {userInitial}
                     </div>
-                    <div>
-                      <p className="font-medium text-gray-900">{displayName}</p>
-                      <p className="text-sm text-gray-500">{user?.email}</p>
+                    <div className="text-left">
+                      <p className="font-bold text-sm text-neutral-900 leading-tight">
+                        {displayName}
+                      </p>
+                      <p className="text-xs text-neutral-500">{user?.email}</p>
                     </div>
                   </div>
                   <Link
                     href="/"
-                    className="w-full text-center bg-[#FF2727] hover:bg-[#E82323] text-white font-bold rounded-2xl px-6 py-3 transition-colors"
+                    className="w-full text-center bg-neutral-900 hover:bg-neutral-800 text-white font-bold rounded-2xl px-6 py-3.5 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     Ir al Inicio
@@ -313,7 +358,7 @@ export function Header({
                   <button
                     onClick={handleLogout}
                     disabled={isLoggingOut}
-                    className="w-full text-center border-2 border-gray-300 text-gray-700 font-bold rounded-2xl px-6 py-3 transition-colors hover:border-[#FF2727] hover:text-[#FF2727] disabled:opacity-50"
+                    className="w-full text-center border font-medium border-neutral-200 text-neutral-600 hover:bg-red-50 hover:border-red-200 hover:text-red-600 rounded-2xl px-6 py-3.5 transition-colors disabled:opacity-50"
                   >
                     {isLoggingOut ? "Cerrando sesión..." : "Cerrar sesión"}
                   </button>
@@ -322,7 +367,7 @@ export function Header({
                 // Not authenticated mobile menu
                 <Link
                   href="/login"
-                  className="w-full text-center bg-[#FF2727] hover:bg-[#E82323] text-white font-bold rounded-2xl px-6 py-3 transition-colors"
+                  className="w-full text-center bg-primary-500 hover:bg-primary-600 text-white font-bold rounded-2xl px-6 py-3.5 transition-colors shadow-lg shadow-primary-500/20"
                   onClick={() => setIsOpen(false)}
                 >
                   Iniciar sesión
