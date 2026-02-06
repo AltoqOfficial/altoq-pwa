@@ -30,7 +30,7 @@ export function LandingContent() {
 
       {/* Visual Separator */}
       <div
-        className="h-0.5 w-[70%] mx-auto bg-[#484848] opacity-50 my-32"
+        className="h-0.5 w-[70%] mx-auto bg-[#484848] opacity-50 my-10"
         aria-hidden="true"
       />
 

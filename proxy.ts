@@ -1,9 +1,9 @@
-// proxy.ts
+import { createServerClient } from "@supabase/ssr";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { supabase } from "@/lib/supabase";
 
-// API routes that require authentication (Bearer token)
+// API routes that require authentication
+// Note: These will be checked against Cookies OR Bearer token
 const protectedApiRoutes = ["/api/profile", "/api/auth/logout"];
 
 // Page routes that require authentication (cookie-based)
@@ -13,18 +13,48 @@ const protectedPageRoutes = ["/dashboard"];
 const authRoutes = ["/login", "/register"];
 
 export async function proxy(request: NextRequest) {
+  let response = NextResponse.next({
+    request: {
+      headers: request.headers,
+    },
+  });
+
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_KEY!,
+    {
+      cookies: {
+        getAll() {
+          return request.cookies.getAll();
+        },
+        setAll(cookiesToSet) {
+          cookiesToSet.forEach(({ name, value, options }) => {
+            request.cookies.set(name, value);
+          });
+          response = NextResponse.next({
+            request,
+          });
+          cookiesToSet.forEach(({ name, value, options }) =>
+            response.cookies.set(name, value, options)
+          );
+        },
+      },
+    }
+  );
+
+  // 1. Refresh auth token (critical for SSR) and get User
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
   const { pathname } = request.nextUrl;
+  const isAuthenticated = !!user;
 
-  // Check for authentication token in cookies (for page routes)
-  const accessToken = request.cookies.get("accessToken")?.value;
-  const isAuthenticated = !!accessToken;
-
-  // Check if the current route is a protected page route
+  // 2. Page Route Protection
   const isProtectedPageRoute = protectedPageRoutes.some(
     (route) => pathname === route || pathname.startsWith(`${route}/`)
   );
 
-  // Check if the current route is an auth route (login/register)
   const isAuthRoute = authRoutes.some(
     (route) => pathname === route || pathname.startsWith(`${route}/`)
   );
@@ -41,44 +71,50 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL("/dashboard", request.url));
   }
 
-  // Handle protected API routes (Bearer token authentication)
+  // 3. API Route Protection (Supports Cookie OR Bearer)
   if (protectedApiRoutes.includes(pathname)) {
+    // If we already have a user from cookies, we allow access
+    if (isAuthenticated) {
+      return response;
+    }
+
+    // If no cookie user, check for Bearer token
     const authHeader = request.headers.get("authorization");
+    if (authHeader?.startsWith("Bearer ")) {
+      const token = authHeader.replace("Bearer ", "");
+      const {
+        data: { user: headerUser },
+        error,
+      } = await supabase.auth.getUser(token);
 
-    if (!authHeader?.startsWith("Bearer ")) {
-      return NextResponse.json(
-        { message: "Token requerido", status: 401, code: "missing_token" },
-        { status: 401 }
-      );
+      if (!error && headerUser) {
+        return response;
+      }
     }
 
-    const token = authHeader.replace("Bearer ", "");
-    const {
-      data: { user },
-      error,
-    } = await supabase.auth.getUser(token);
-
-    if (error || !user) {
-      return NextResponse.json(
-        {
-          message: "Token inválido o expirado",
-          status: 401,
-          code: "invalid_token",
-        },
-        { status: 401 }
-      );
-    }
+    // Neither cookie nor valid token found
+    return NextResponse.json(
+      {
+        message: "Token inválido o expirado",
+        status: 401,
+        code: "invalid_token",
+      },
+      { status: 401 }
+    );
   }
 
-  return NextResponse.next();
+  return response;
 }
 
 export const config = {
   matcher: [
-    "/api/profile",
-    "/api/auth/logout",
-    "/dashboard/:path*",
-    "/login",
-    "/register",
+    /*
+     * Match all request paths except for the ones starting with:
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - public files (svg, png, etc)
+     */
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
   ],
 };

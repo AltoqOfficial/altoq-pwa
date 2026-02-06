@@ -1,6 +1,4 @@
-"use client";
-
-import { useUserProfile } from "@/hooks/useUserProfile";
+import { createClient } from "@/lib/supabase/server";
 import { LandingContent } from "@/components/organisms/LandingContent";
 import {
   DashboardLayout,
@@ -8,25 +6,19 @@ import {
 } from "@/components/organisms/Dashboard";
 
 /**
- * ConditionalHome Component
- * Renders landing page for unauthenticated users, dashboard for authenticated users
- * Preserves all existing styling and animations
+ * ConditionalHome Component (Server Component)
+ *
+ * Renders Dashboard for authenticated users and Landing for visitors.
+ * Auth check happens on the server, ensuring 0ms loading flicker.
  */
-export function ConditionalHome() {
-  const { user, isLoading } = useUserProfile();
-  const isAuthenticated = !!user && !isLoading;
+export async function ConditionalHome() {
+  const supabase = await createClient();
 
-  // Show loading state while checking auth
-  if (isLoading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="w-8 h-8 border-4 border-primary-600 border-t-transparent rounded-full animate-spin" />
-      </div>
-    );
-  }
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
-  // Authenticated users see Dashboard
-  if (isAuthenticated) {
+  if (user) {
     return (
       <DashboardLayout>
         <DashboardContent />
@@ -34,6 +26,5 @@ export function ConditionalHome() {
     );
   }
 
-  // Unauthenticated users see Landing
   return <LandingContent />;
 }

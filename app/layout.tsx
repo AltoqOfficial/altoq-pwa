@@ -21,6 +21,7 @@ import { Analytics } from "@/components/organisms/Analytics";
 import { QueryProvider } from "@/lib/providers/QueryProvider";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import { ThemeProvider } from "@/contexts";
+import { ThemeAuthGuard } from "@/components/organisms/ThemeAuthGuard";
 
 export const metadata: Metadata = createMetadata();
 
@@ -171,12 +172,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <SmoothScroll />
             {/* Analytics - Track page views */}
             <Analytics />
-
             {/* PWA Registration */}
             <PWARegistration />
 
             {/* Conditional Layout - Shows Header/Footer for public pages, custom layout for dashboard */}
             <ConditionalLayout>{children}</ConditionalLayout>
+            <ThemeAuthGuard />
           </QueryProvider>
         </ThemeProvider>
       </body>
