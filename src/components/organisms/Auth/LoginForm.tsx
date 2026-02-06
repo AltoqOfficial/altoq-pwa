@@ -115,8 +115,8 @@ export const LoginForm = memo(function LoginForm() {
             ¡Ya casi terminas!
           </h4>
           <p className="font-flexo text-sm text-neutral-600 leading-relaxed">
-            Inicia sesión o regístrate para completar tu Match Político y ver
-            los resultados.
+            Inicia sesión o regístrate para completar tu Match y ver los
+            resultados.
           </p>
         </div>
       )}
