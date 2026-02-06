@@ -2,6 +2,7 @@
 
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
+import { supabase } from "@/lib/supabase";
 import { authService } from "../services/auth.service";
 import type {
   LoginRequest,
@@ -60,10 +61,17 @@ export function useLogin() {
 
   return useMutation<AuthResponse, ErrorResponse, LoginRequest>({
     mutationFn: authService.login,
-    onSuccess: (data) => {
+    onSuccess: async (data) => {
       // Store tokens in cookies
       setCookie("accessToken", data.accessToken);
       setCookie("refreshToken", data.refreshToken);
+
+      // Sync session with Supabase client SDK
+      // This ensures useUserProfile and other hooks detect the session immediately
+      await supabase.auth.setSession({
+        access_token: data.accessToken,
+        refresh_token: data.refreshToken,
+      });
 
       // Check if there's a pending form submission
       const pendingForm = localStorage.getItem("altoq_candidate_form_v2");

@@ -1,32 +1,17 @@
 // app/api/auth/logout/route.ts
-import { supabaseAuthRepository } from "@/repositories/auth/supabase-repository";
-import { createAuthService } from "@/services/auth/auth-service";
-import { AuthService } from "@/services/auth/auth-service-interface";
+import { createClient } from "@/lib/supabase/server";
 import { NextResponse } from "next/server";
 import { handleApiError } from "@/lib/api-error";
 import type { LogoutSuccessResponse } from "@/types/auth";
-import { supabaseProfileRepository } from "@/repositories/profile/supabase-profile-repository";
-import { supabaseAgeRangeRepository } from "@/repositories/age-range/age-range-supabase-repository";
-import { supabaseMotivationRepository } from "@/repositories/motivation/motivation-supabase-repository";
-
-const authService: AuthService = createAuthService(
-  supabaseAuthRepository,
-  supabaseProfileRepository,
-  supabaseMotivationRepository,
-  supabaseAgeRangeRepository
-);
 
 /**
  * Logout de usuario
- * @description Cierra la sesión activa del usuario en Supabase
- * @response LogoutSuccessResponse
- * @auth bearer
- * @tag Auth
- * @openapi
+ * @description Cierra la sesión activa del usuario en Supabase (SSR)
  */
 export async function POST() {
   try {
-    await authService.logout();
+    const supabase = await createClient();
+    await supabase.auth.signOut();
 
     const response: LogoutSuccessResponse = {
       message: "Sesión cerrada",
