@@ -2,10 +2,10 @@ import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
 /**
- * Creates a Supabase client for server-side operations with cookie support
- * Used for handling auth callbacks and server components
+ * Creates a Supabase client for server-side operations with cookie support.
+ * Used for Server Components, Server Actions, and Route Handlers.
  */
-export async function createServerSupabaseClient() {
+export async function createClient() {
   const cookieStore = await cookies();
 
   return createServerClient(
@@ -16,13 +16,7 @@ export async function createServerSupabaseClient() {
         getAll() {
           return cookieStore.getAll();
         },
-        setAll(
-          cookiesToSet: {
-            name: string;
-            value: string;
-            options?: Parameters<typeof cookieStore.set>[2];
-          }[]
-        ) {
+        setAll(cookiesToSet) {
           try {
             cookiesToSet.forEach(({ name, value, options }) =>
               cookieStore.set(name, value, options)

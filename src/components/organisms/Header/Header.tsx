@@ -8,6 +8,7 @@ import { Logo } from "@/components/atoms/Logo";
 import { cn } from "@/lib/utils";
 import { useUserProfile } from "@/hooks/useUserProfile";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
+import { useTheme } from "@/contexts";
 
 // Routes that have dark backgrounds and need light-colored header elements
 
@@ -55,9 +56,17 @@ export function Header({
   isScrolled: externalIsScrolled,
   position = "fixed", // Default to fixed for backward compatibility
 }: HeaderProps) {
+  const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [internalIsScrolled, setInternalIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handle = requestAnimationFrame(() => {
+      setMounted(true);
+    });
+    return () => cancelAnimationFrame(handle);
+  }, []);
 
   // Use external state if provided, otherwise use internal
   const isScrolled = externalIsScrolled ?? internalIsScrolled;
@@ -65,6 +74,8 @@ export function Header({
   const userMenuRef = useRef<HTMLDivElement>(null);
   const { user, isLoading } = useUserProfile();
   const { mutate: logout, isPending: isLoggingOut } = useLogout();
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
 
   // Scroll handler for sticky effect (only if no external state controlled)
   useEffect(() => {
@@ -79,12 +90,21 @@ export function Header({
 
   const isAuthenticated = !!user && !isLoading;
   // Force solid white header across all routes and variants
+  // Now we respect theme, so it can be solid dark too
   const isTransparentState = false;
 
   // Text color: adapts based on background
-  // On dashboard: white text if dark theme, dark text if light theme
-  const textColorClass = isTransparentState ? "text-white" : "text-neutral-900";
-  const logoVariant = isTransparentState ? "white" : "default";
+  const textColorClass = isTransparentState
+    ? "text-white"
+    : isDark
+      ? "text-white"
+      : "text-neutral-900";
+
+  const logoVariant = isTransparentState
+    ? "white"
+    : isDark
+      ? "white"
+      : "default";
 
   const navLinks = [
     { href: "/compara", label: "Comparar Candidatos" },
@@ -130,10 +150,16 @@ export function Header({
         position === "static" && "static",
         // Scroll-based styles (only apply when position is fixed)
         position === "fixed" && isScrolled
-          ? "bg-white shadow-sm border-b border-neutral-100 py-3"
+          ? isDark
+            ? "bg-[#1a1a1a] shadow-sm border-b border-white/10 py-3"
+            : "bg-white shadow-sm border-b border-neutral-100 py-3"
           : position === "static"
-            ? "bg-white border-b border-gray-100"
-            : "bg-white border-b border-neutral-100 py-5",
+            ? isDark
+              ? "bg-[#1a1a1a] border-b border-white/10"
+              : "bg-white border-b border-gray-100"
+            : isDark
+              ? "bg-[#1a1a1a] border-b border-white/10 py-5"
+              : "bg-white border-b border-neutral-100 py-5",
         position === "static"
           ? "py-4"
           : position === "fixed" && !isScrolled && "py-5",
@@ -160,7 +186,9 @@ export function Header({
                 textColorClass,
                 isTransparentState
                   ? "hover:text-white/80"
-                  : "hover:text-primary-600"
+                  : isDark
+                    ? "hover:text-white/80"
+                    : "hover:text-primary-600"
               )}
             >
               {link.label}
@@ -170,9 +198,14 @@ export function Header({
 
         {/* Right Section - Desktop */}
         <div className="hidden md:block">
-          {isLoading ? (
-            // Loading state
-            <div className="w-24 h-10 bg-gray-200 rounded-2xl animate-pulse" />
+          {!mounted || isLoading ? (
+            // Loading state or before mounting
+            <div
+              className={cn(
+                "w-24 h-10 rounded-2xl animate-pulse",
+                isDark ? "bg-white/10" : "bg-gray-200"
+              )}
+            />
           ) : isAuthenticated ? (
             // Authenticated - Show user menu
             <div className="relative" ref={userMenuRef}>
@@ -182,7 +215,9 @@ export function Header({
                   "flex items-center gap-3 px-3 py-2 rounded-2xl transition-all border",
                   isTransparentState
                     ? "border-white/20 bg-white/10 hover:bg-white/20 text-white"
-                    : "border-neutral-200 bg-white hover:border-neutral-300 text-neutral-900"
+                    : isDark
+                      ? "border-white/10 bg-white/5 hover:bg-white/10 text-white"
+                      : "border-neutral-200 bg-white hover:border-neutral-300 text-neutral-900"
                 )}
               >
                 {/* Avatar */}
@@ -220,11 +255,21 @@ export function Header({
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 8, scale: 0.95 }}
                     transition={{ duration: 0.1 }}
-                    className="absolute right-0 top-full mt-2 w-52 bg-white rounded-2xl shadow-xl shadow-neutral-200/50 border border-neutral-100 overflow-hidden z-50 p-1"
+                    className={cn(
+                      "absolute right-0 top-full mt-2 w-52 rounded-2xl shadow-xl overflow-hidden z-50 p-1 border",
+                      isDark
+                        ? "bg-[#202020] border-white/10 shadow-black/50"
+                        : "bg-white border-neutral-100 shadow-neutral-200/50"
+                    )}
                   >
                     <Link
                       href="/"
-                      className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-neutral-700 hover:bg-neutral-50 rounded-xl transition-colors"
+                      className={cn(
+                        "flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl transition-colors",
+                        isDark
+                          ? "text-gray-200 hover:bg-white/10"
+                          : "text-neutral-700 hover:bg-neutral-50"
+                      )}
                       onClick={() => setIsUserMenuOpen(false)}
                     >
                       <svg
@@ -246,11 +291,21 @@ export function Header({
                       </svg>
                       Inicio
                     </Link>
-                    <div className="h-px bg-neutral-100 my-1" />
+                    <div
+                      className={cn(
+                        "h-px my-1",
+                        isDark ? "bg-white/10" : "bg-neutral-100"
+                      )}
+                    />
                     <button
                       onClick={handleLogout}
                       disabled={isLoggingOut}
-                      className="flex items-center gap-3 w-full px-4 py-3 text-sm font-medium text-neutral-700 hover:bg-red-50 hover:text-red-600 rounded-xl transition-colors disabled:opacity-50"
+                      className={cn(
+                        "flex items-center gap-3 w-full px-4 py-3 text-sm font-medium rounded-xl transition-colors disabled:opacity-50",
+                        isDark
+                          ? "text-gray-200 hover:bg-red-500/10 hover:text-red-400"
+                          : "text-neutral-700 hover:bg-red-50 hover:text-red-600"
+                      )}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +317,12 @@ export function Header({
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="text-neutral-400 group-hover:text-red-500"
+                        className={cn(
+                          "text-neutral-400",
+                          isDark
+                            ? "group-hover:text-red-400"
+                            : "group-hover:text-red-500"
+                        )}
                       >
                         <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
                         <polyline points="16 17 21 12 16 7" />
@@ -290,7 +350,10 @@ export function Header({
 
         {/* Mobile Menu Trigger */}
         <button
-          className="flex md:hidden flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-50 relative rounded-full hover:bg-black/5 transition-colors"
+          className={cn(
+            "flex md:hidden flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-50 relative rounded-full transition-colors",
+            isDark ? "hover:bg-white/10" : "hover:bg-black/5"
+          )}
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -298,48 +361,48 @@ export function Header({
             animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
             className={cn(
               "w-6 h-0.5 block transition-colors rounded-full",
-              isOpen || isTransparentState ? "bg-white" : "bg-neutral-900"
+              isOpen || isTransparentState
+                ? isDark
+                  ? "bg-white"
+                  : "bg-neutral-900" // When open, adapt to menu bg or keep logical consistency
+                : isDark
+                  ? "bg-white"
+                  : "bg-neutral-900"
             )}
             style={{
+              // Override for open state which forces specific colors in original code, now we adapt
               backgroundColor: isOpen
-                ? isTransparentState
+                ? isDark
                   ? "white"
                   : "#171717"
-                : isTransparentState
-                  ? "white"
-                  : "#171717",
+                : undefined,
             }}
           />
           <motion.span
             animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
             className={cn(
               "w-6 h-0.5 block transition-colors rounded-full",
-              isOpen || isTransparentState ? "bg-white" : "bg-neutral-900"
+              isDark ? "bg-white" : "bg-neutral-900"
             )}
-            style={{
-              backgroundColor: isOpen
-                ? isTransparentState
-                  ? "white"
-                  : "#171717"
-                : isTransparentState
-                  ? "white"
-                  : "#171717",
-            }}
           />
           <motion.span
             animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
             className={cn(
               "w-6 h-0.5 block transition-colors rounded-full",
-              isOpen || isTransparentState ? "bg-white" : "bg-neutral-900"
+              isOpen || isTransparentState
+                ? isDark
+                  ? "bg-white"
+                  : "bg-neutral-900"
+                : isDark
+                  ? "bg-white"
+                  : "bg-neutral-900"
             )}
             style={{
               backgroundColor: isOpen
-                ? isTransparentState
+                ? isDark
                   ? "white"
                   : "#171717"
-                : isTransparentState
-                  ? "white"
-                  : "#171717",
+                : undefined,
             }}
           />
         </button>
@@ -352,38 +415,80 @@ export function Header({
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -20, scale: 0.95 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="absolute top-20 left-4 right-4 bg-white rounded-3xl shadow-2xl shadow-neutral-900/20 border border-neutral-100 p-6 md:hidden flex flex-col gap-4 items-center overflow-hidden"
+              className={cn(
+                "absolute top-20 left-4 right-4 rounded-3xl shadow-2xl border p-6 md:hidden flex flex-col gap-4 items-center overflow-hidden",
+                isDark
+                  ? "bg-[#202020] border-white/10 shadow-black/50"
+                  : "bg-white border-neutral-100 shadow-neutral-900/20"
+              )}
             >
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="w-full text-center text-lg font-medium text-neutral-600 hover:text-primary-600 hover:bg-neutral-50 py-3 rounded-xl transition-all"
+                  className={cn(
+                    "w-full text-center text-lg font-medium py-3 rounded-xl transition-all",
+                    isDark
+                      ? "text-gray-300 hover:text-white hover:bg-white/10"
+                      : "text-neutral-600 hover:text-primary-600 hover:bg-neutral-50"
+                  )}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="w-full h-px bg-neutral-100 my-2" />
+              <div
+                className={cn(
+                  "w-full h-px my-2",
+                  isDark ? "bg-white/10" : "bg-neutral-100"
+                )}
+              />
 
-              {isAuthenticated ? (
+              {!mounted ? (
+                // Loading state for mobile menu login button
+                <div className="w-full h-14 rounded-2xl animate-pulse bg-gray-200 dark:bg-white/10" />
+              ) : isAuthenticated ? (
                 // Authenticated mobile menu
                 <>
                   {/* User info */}
-                  <div className="flex items-center gap-3 py-2 bg-neutral-50 w-full justify-center rounded-2xl border border-neutral-100">
+                  <div
+                    className={cn(
+                      "flex items-center gap-3 py-2 w-full justify-center rounded-2xl border",
+                      isDark
+                        ? "bg-white/5 border-white/10"
+                        : "bg-neutral-50 border-neutral-100"
+                    )}
+                  >
                     <div className="w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold text-sm">
                       {userInitial}
                     </div>
                     <div className="text-left">
-                      <p className="font-bold text-sm text-neutral-900 leading-tight">
+                      <p
+                        className={cn(
+                          "font-bold text-sm leading-tight",
+                          isDark ? "text-white" : "text-neutral-900"
+                        )}
+                      >
                         {displayName}
                       </p>
-                      <p className="text-xs text-neutral-500">{user?.email}</p>
+                      <p
+                        className={cn(
+                          "text-xs",
+                          isDark ? "text-gray-400" : "text-neutral-500"
+                        )}
+                      >
+                        {user?.email}
+                      </p>
                     </div>
                   </div>
                   <Link
                     href="/"
-                    className="w-full text-center bg-neutral-900 hover:bg-neutral-800 text-white font-bold rounded-2xl px-6 py-3.5 transition-colors"
+                    className={cn(
+                      "w-full text-center font-bold rounded-2xl px-6 py-3.5 transition-colors",
+                      isDark
+                        ? "bg-white text-black hover:bg-gray-200"
+                        : "bg-neutral-900 hover:bg-neutral-800 text-white"
+                    )}
                     onClick={() => setIsOpen(false)}
                   >
                     Ir al Inicio
@@ -391,7 +496,12 @@ export function Header({
                   <button
                     onClick={handleLogout}
                     disabled={isLoggingOut}
-                    className="w-full text-center border font-medium border-neutral-200 text-neutral-600 hover:bg-red-50 hover:border-red-200 hover:text-red-600 rounded-2xl px-6 py-3.5 transition-colors disabled:opacity-50"
+                    className={cn(
+                      "w-full text-center border font-medium rounded-2xl px-6 py-3.5 transition-colors disabled:opacity-50",
+                      isDark
+                        ? "border-white/10 text-gray-300 hover:bg-red-500/10 hover:border-red-500/30 hover:text-red-400"
+                        : "border-neutral-200 text-neutral-600 hover:bg-red-50 hover:border-red-200 hover:text-red-600"
+                    )}
                   >
                     {isLoggingOut ? "Cerrando sesión..." : "Cerrar sesión"}
                   </button>

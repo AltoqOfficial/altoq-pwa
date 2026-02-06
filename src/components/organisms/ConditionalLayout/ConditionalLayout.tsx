@@ -9,7 +9,7 @@ interface ConditionalLayoutProps {
 }
 
 // Routes that should NOT show the landing page Header/Footer
-const noLayoutRoutes = ["/dashboard"];
+const noLayoutRoutes = ["/dashboard", "/formulario-candidato/cuestionario"];
 
 // Routes that render their own Header
 const customHeaderRoutes = [

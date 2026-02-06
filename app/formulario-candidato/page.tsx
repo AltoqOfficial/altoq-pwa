@@ -3,12 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { CandidateFormHero } from "@/components/organisms/CandidateFormHero";
-import {
-  CandidateFormWizard,
-  MatchResults,
-} from "@/components/organisms/CandidateFormWizard";
-
-import { AnswerValue } from "@/components/organisms/CandidateFormWizard/types";
+import { MatchResults } from "@/components/organisms/CandidateFormWizard";
 
 const FORM_STORAGE_KEY = "altoq_candidate_form_v2";
 
@@ -25,14 +20,6 @@ export default function CandidateFormPage() {
     return shouldShowResults && !!hasPendingForm;
   });
 
-  // State to hold the first answer from the Hero section
-  const [initialAnswer, setInitialAnswer] = useState<{
-    questionId: string;
-    value: AnswerValue;
-  } | null>(null);
-
-  const [isWizardOpen, setIsWizardOpen] = useState(false);
-
   // Clear URL param after initial render if showing results
   useEffect(() => {
     if (showResults && !hasCheckedParams.current) {
@@ -45,7 +32,6 @@ export default function CandidateFormPage() {
     // Clear form data and go back to hero
     localStorage.removeItem(FORM_STORAGE_KEY);
     setShowResults(false);
-    setInitialAnswer(null);
     router.push("/");
   };
 
@@ -55,23 +41,11 @@ export default function CandidateFormPage() {
   }
 
   return (
-    <>
-      {!isWizardOpen && (
-        <CandidateFormHero
-          onOptionSelect={(value) => {
-            setInitialAnswer({ questionId: "Q1", value: value as AnswerValue });
-            setIsWizardOpen(true);
-          }}
-        />
-      )}
-
-      {isWizardOpen && (
-        <CandidateFormWizard
-          isOpen={true} // Always true since we conditionally render the component
-          onClose={() => setIsWizardOpen(false)}
-          initialAnswer={initialAnswer}
-        />
-      )}
-    </>
+    <CandidateFormHero
+      onOptionSelect={(value) => {
+        // Redirect to dedicated full-screen wizard route
+        router.push(`/formulario-candidato/cuestionario?q=Q1&v=${value}`);
+      }}
+    />
   );
 }

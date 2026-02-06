@@ -16,7 +16,7 @@ import { SOCIAL_LINKS, CONTACT, EXTERNAL_LINKS } from "@/constants";
  */
 export function Footer() {
   return (
-    <footer className="border-t border-neutral-100 bg-white text-neutral-600">
+    <footer className="border-t transition-colors bg-white border-neutral-100 text-neutral-600 dark:bg-[#1a1a1a] dark:border-white/10 dark:text-gray-300">
       <div className="container mx-auto px-6 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
@@ -26,15 +26,19 @@ export function Footer() {
                 src="/images/logo/altoq.webp"
                 alt="Altoque"
                 fill
-                className="object-contain object-center lg:object-left"
+                className="object-contain object-center lg:object-left dark:brightness-0 dark:invert"
               />
             </div>
-            <Typography variant="h6" weight="400" className="text-neutral-900">
+            <Typography
+              variant="h6"
+              weight="400"
+              className="text-neutral-900 dark:text-white"
+            >
               Infórmate, compara y decide Altoq
             </Typography>
             <Typography
               variant="span"
-              className="text-neutral-500 opacity-70 underline hover:cursor-pointer hover:text-primary-600 transition-colors"
+              className="opacity-70 underline hover:cursor-pointer transition-colors text-neutral-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-white"
             >
               {CONTACT.email}
             </Typography>
@@ -47,19 +51,19 @@ export function Footer() {
                 href={EXTERNAL_LINKS.volunteerForm}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-600 transition-colors hover:text-primary-600 font-medium"
+                className="font-medium transition-colors text-neutral-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white"
               >
                 Únete como voluntario
               </a>
               <Link
                 href="/compara"
-                className="text-neutral-600 transition-colors hover:text-primary-600 font-medium"
+                className="font-medium transition-colors text-neutral-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white"
               >
                 Comparar candidatos
               </Link>
               <Link
                 href="/#faq"
-                className="text-neutral-600 transition-colors hover:text-primary-600 font-medium"
+                className="font-medium transition-colors text-neutral-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white"
               >
                 Preguntas Frecuentes
               </Link>
@@ -73,10 +77,10 @@ export function Footer() {
                 href={SOCIAL_LINKS.tiktok}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group text-neutral-500 transition-colors hover:text-primary-600 flex items-center gap-3 font-medium"
+                className="group transition-colors flex items-center gap-3 font-medium text-neutral-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-white"
                 aria-label="TikTok"
               >
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-100 transition-colors group-hover:bg-primary-50">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full transition-colors bg-neutral-100 group-hover:bg-primary-50 dark:bg-white/10 dark:group-hover:bg-white/20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="13"
@@ -93,10 +97,10 @@ export function Footer() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group text-neutral-500 transition-colors hover:text-primary-600 flex items-center gap-3 font-medium"
+                className="group transition-colors flex items-center gap-3 font-medium text-neutral-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-white"
                 aria-label="LinkedIn"
               >
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-100 transition-colors group-hover:bg-primary-50">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full transition-colors bg-neutral-100 group-hover:bg-primary-50 dark:bg-white/10 dark:group-hover:bg-white/20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="15"
@@ -120,10 +124,10 @@ export function Footer() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group text-neutral-500 transition-colors hover:text-primary-600 flex items-center gap-3 font-medium"
+                className="group transition-colors flex items-center gap-3 font-medium text-neutral-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-white"
                 aria-label="Instagram"
               >
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-100 transition-colors group-hover:bg-primary-50">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full transition-colors bg-neutral-100 group-hover:bg-primary-50 dark:bg-white/10 dark:group-hover:bg-white/20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="15"
@@ -150,8 +154,11 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 border-t border-neutral-100 pt-8 text-center">
-          <Typography variant="small" className="text-neutral-400">
+        <div className="mt-12 border-t pt-8 text-center border-neutral-100 dark:border-white/10">
+          <Typography
+            variant="small"
+            className="text-neutral-400 dark:text-gray-500"
+          >
             © {new Date().getFullYear()} Altoq. All rights reserved.
           </Typography>
         </div>
