@@ -9,22 +9,55 @@ import { Logo } from "@/components/atoms/Logo";
 import { cn } from "@/lib/utils";
 import { useUserProfile } from "@/hooks/useUserProfile";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
+import { useTheme } from "@/contexts";
 
 // Routes that have dark backgrounds and need light-colored header elements
 const DARK_BACKGROUND_ROUTES = ["/compara"];
 
+/**
+ * Header Component Props
+ * @property {string} [className] - Additional CSS classes
+ * @property {boolean} [forceShow] - Force header to be visible regardless of scroll
+ * @property {"default" | "transparent"} [variant="default"] - Visual variant of the header
+ * @property {boolean} [isScrolled] - External control of scrolled state (overrides internal state)
+ * @property {"fixed" | "static"} [position="fixed"] - Position mode of the header
+ *
+ * **Position Modes:**
+ * - `fixed` (default): Header stays at the top of viewport.
+ *   ⚠️ Components below MUST have `mt-21 md:mt-28 lg:mt-21` to compensate for header height.
+ *   See: ConditionalLayout.tsx for implementation example.
+ *
+ * - `static`: Header is part of document flow and pushes content down naturally.
+ *   ✅ No margin-top needed on components below.
+ *   🔍 No z-index applied for better stacking context.
+ *   Example: ComparisonHero uses static header.
+ */
 interface HeaderProps {
   className?: string;
   forceShow?: boolean;
   variant?: "default" | "transparent";
-  isScrolled?: boolean; // Allow external control of scrolled state
+  isScrolled?: boolean;
+  position?: "fixed" | "static";
 }
 
+/**
+ * Header Component
+ *
+ * Main navigation header with authentication state, responsive menu, and flexible positioning.
+ *
+ * @example
+ * // Fixed header (default) - requires margin-top on content below
+ * <Header />
+ *
+ * @example
+ * // Static header - no margin-top needed
+ * <Header position="static" variant="transparent" />
+ */
 export function Header({
   className,
-  forceShow,
   variant = "default",
   isScrolled: externalIsScrolled,
+  position = "fixed", // Default to fixed for backward compatibility
 }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
@@ -37,6 +70,7 @@ export function Header({
   const pathname = usePathname();
   const { user, isLoading } = useUserProfile();
   const { mutate: logout, isPending: isLoggingOut } = useLogout();
+  const { resolvedTheme } = useTheme();
 
   // Scroll handler for sticky effect (only if no external state controlled)
   useEffect(() => {
@@ -53,12 +87,18 @@ export function Header({
   const isDarkBackground = DARK_BACKGROUND_ROUTES.some((route) =>
     pathname.startsWith(route)
   );
+  const isDarkTheme = resolvedTheme === "dark";
 
   // Determine styles based on scroll and background
+  // For static headers, scroll state doesn't affect styling
+  // When static, check theme to adapt colors (for dashboard)
   const isTransparentState =
-    !isScrolled && (isDarkBackground || variant === "transparent");
+    position === "static"
+      ? variant === "transparent" || isDarkBackground || isDarkTheme
+      : !isScrolled && (isDarkBackground || variant === "transparent");
 
-  // Text color: Dark if scrolled or on light bg, White if on dark bg/transparent variant AND not scrolled
+  // Text color: adapts based on background
+  // On dashboard: white text if dark theme, dark text if light theme
   const textColorClass = isTransparentState ? "text-white" : "text-neutral-900";
   const logoVariant = isTransparentState ? "white" : "default";
 
@@ -100,10 +140,21 @@ export function Header({
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300",
-        isScrolled
+        "top-0 left-0 right-0 w-full transition-all duration-300",
+        // Position-specific classes
+        position === "fixed" && "fixed z-50",
+        position === "static" && "static",
+        // Scroll-based styles (only apply when position is fixed)
+        position === "fixed" && isScrolled
           ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-neutral-100 py-3"
-          : "bg-transparent py-5",
+          : position === "static"
+            ? isDarkTheme
+              ? "bg-[#202020] border-b border-white/10"
+              : "bg-white border-b border-gray-100"
+            : "bg-transparent py-5",
+        position === "static"
+          ? "py-4"
+          : position === "fixed" && !isScrolled && "py-5",
         className
       )}
     >
