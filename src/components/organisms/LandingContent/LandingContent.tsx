@@ -1,5 +1,6 @@
 "use client";
 
+import { Header } from "@/components/organisms/Header";
 import { HeroSection } from "@/components/organisms/HeroSection";
 import { FAQSection } from "@/components/organisms/FAQSection";
 import { SuggestionsSection } from "@/components/organisms/SuggestionsSection";
@@ -9,11 +10,15 @@ import { LogoLoop } from "@/components/organisms/LogoLoop";
 /**
  * Landing Content Component
  * Contains all landing page sections for unauthenticated users
+ * Includes Header at the top for proper layout
  * Preserves all animations, margins, padding exactly as original
  */
 export function LandingContent() {
   return (
     <>
+      {/* Header Navigation */}
+      <Header position="fixed" />
+
       {/* Hero Section with Countdown */}
       <HeroSection />
 

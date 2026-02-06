@@ -2,17 +2,14 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { Logo } from "@/components/atoms/Logo";
 import { cn } from "@/lib/utils";
 import { useUserProfile } from "@/hooks/useUserProfile";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
-import { useTheme } from "@/contexts";
 
 // Routes that have dark backgrounds and need light-colored header elements
-const DARK_BACKGROUND_ROUTES = ["/compara"];
 
 /**
  * Header Component Props
@@ -55,7 +52,6 @@ interface HeaderProps {
  */
 export function Header({
   className,
-  variant = "default",
   isScrolled: externalIsScrolled,
   position = "fixed", // Default to fixed for backward compatibility
 }: HeaderProps) {
@@ -67,10 +63,8 @@ export function Header({
   const isScrolled = externalIsScrolled ?? internalIsScrolled;
 
   const userMenuRef = useRef<HTMLDivElement>(null);
-  const pathname = usePathname();
   const { user, isLoading } = useUserProfile();
   const { mutate: logout, isPending: isLoggingOut } = useLogout();
-  const { resolvedTheme } = useTheme();
 
   // Scroll handler for sticky effect (only if no external state controlled)
   useEffect(() => {
@@ -84,18 +78,8 @@ export function Header({
   }, [externalIsScrolled]);
 
   const isAuthenticated = !!user && !isLoading;
-  const isDarkBackground = DARK_BACKGROUND_ROUTES.some((route) =>
-    pathname.startsWith(route)
-  );
-  const isDarkTheme = resolvedTheme === "dark";
-
-  // Determine styles based on scroll and background
-  // For static headers, scroll state doesn't affect styling
-  // When static, check theme to adapt colors (for dashboard)
-  const isTransparentState =
-    position === "static"
-      ? variant === "transparent" || isDarkBackground || isDarkTheme
-      : !isScrolled && (isDarkBackground || variant === "transparent");
+  // Force solid white header across all routes and variants
+  const isTransparentState = false;
 
   // Text color: adapts based on background
   // On dashboard: white text if dark theme, dark text if light theme
@@ -146,12 +130,10 @@ export function Header({
         position === "static" && "static",
         // Scroll-based styles (only apply when position is fixed)
         position === "fixed" && isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-neutral-100 py-3"
+          ? "bg-white shadow-sm border-b border-neutral-100 py-3"
           : position === "static"
-            ? isDarkTheme
-              ? "bg-[#202020] border-b border-white/10"
-              : "bg-white border-b border-gray-100"
-            : "bg-transparent py-5",
+            ? "bg-white border-b border-gray-100"
+            : "bg-white border-b border-neutral-100 py-5",
         position === "static"
           ? "py-4"
           : position === "fixed" && !isScrolled && "py-5",
