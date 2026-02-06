@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: "Bilbo Swash Caps";
   src: url("/fonts/bilbo/BilboSwashCaps-Regular.woff2") format("woff2");
