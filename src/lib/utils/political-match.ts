@@ -376,13 +376,13 @@ export const calculatePoliticalMatch = (
     // Or use totalQuestions dynamic if user skips? But we require all.
     // There are 20 questions in the new JSON.
 
-    const normalizedParty = normalizePartyName(plan.organization);
+    const normalizedParty = normalizePartyName(plan.party);
 
     // Assuming sortedReasons should be stats.reasons, as no sorting logic was provided for it.
     const sortedReasons = stats.reasons;
 
     const shortName =
-      SHORT_NAME_OVERRIDES[plan.organization] ||
+      SHORT_NAME_OVERRIDES[plan.party] ||
       SHORT_NAMES[normalizedParty] ||
       plan.candidate_display_name;
 
@@ -390,11 +390,11 @@ export const calculatePoliticalMatch = (
       id: plan.plan_id.toString(),
       name: shortName,
       fullName: plan.candidate_display_name,
-      party: plan.organization,
+      party: plan.party,
       image:
         CANDIDATE_IMAGES[plan.candidate_display_name] ||
         "/candidatos/placeholder.webp",
-      partyLogo: PARTY_LOGOS[plan.organization] || "/partidos/placeholder.webp",
+      partyLogo: PARTY_LOGOS[plan.party] || "/partidos/placeholder.webp",
       score: Math.round(matchPercentage),
       ideology: IDEOLOGIES[normalizedParty] || "SIN DEFINIR",
       education: EDUCATION[normalizedParty],
