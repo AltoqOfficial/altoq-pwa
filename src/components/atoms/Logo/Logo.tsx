@@ -31,7 +31,7 @@ export function Logo({
   className,
   asLink = false,
   priority = false,
-  quality = 100,
+  quality = 90,
 }: LogoProps) {
   const sizeConfig = {
     sm: { width: 96, height: 32, className: "w-24 h-8" },

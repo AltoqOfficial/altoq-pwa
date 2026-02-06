@@ -12,22 +12,23 @@ export const axiosInstance = axios.create({
   timeout: 10000,
 });
 
+import { supabase } from "@/lib/supabase";
+
 /**
  * Request interceptor to add Authorization header
- * Reads accessToken from cookie if available
+ * Gets accessToken from Supabase session
  */
 axiosInstance.interceptors.request.use(
-  (config) => {
-    // Get token from cookie (browser-side)
-    if (typeof window !== "undefined") {
-      const token = document.cookie
-        .split("; ")
-        .find((row) => row.startsWith("accessToken="))
-        ?.split("=")[1];
+  async (config) => {
+    // Get token from Supabase SDK
+    const {
+      data: { session },
+    } = await supabase.auth.getSession();
 
-      if (token) {
-        config.headers.Authorization = `Bearer ${token}`;
-      }
+    const token = session?.access_token;
+
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
     }
     return config;
   },
