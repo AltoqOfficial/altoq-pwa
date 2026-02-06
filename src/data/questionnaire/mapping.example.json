@@ -2,7 +2,7 @@
   "plans": [
     {
       "plan_id": 1,
-      "party": "Partido de Ejemplo",
+      "organization": "Partido de Ejemplo",
       "candidate_display_name": "Candidato Ejemplo",
       "url": "https://ejemplo.com"
     }
