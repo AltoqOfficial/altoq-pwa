@@ -186,17 +186,25 @@ export function ComparisonContent({
       }}
     >
       <div className="flex flex-col h-dvh overflow-hidden bg-neutral-500 w-full relative">
-        {/* Fixed Header synced with container scroll */}
+        {/* 
+          Fixed Header synced with container scroll.
+          Positioned absolutely to overlay the content.
+          The pt-20 on Main Layout Area compensates for this header.
+        */}
         <div className="absolute top-0 left-0 right-0 z-[60]">
           <Header
             forceShow={true}
             variant="transparent"
             isScrolled={isScrolled}
+            position="fixed"
             className="absolute w-full"
           />
         </div>
 
-        {/* Main Layout Area */}
+        {/* 
+          Main Layout Area
+          pt-20 (80px) compensates for the fixed header above
+        */}
         <div className="flex flex-1 min-h-0 relative pt-20">
           {/* Fixed Sidebar */}
           <div className="hidden xl:block w-72 shrink-0 h-full border-r border-white/10 bg-neutral-500 shadow-[10px_0_30px_-10px_rgba(0,0,0,3)] overflow-y-auto scrollbar-hide z-40 pb-32">

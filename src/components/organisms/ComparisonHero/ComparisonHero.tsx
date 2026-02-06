@@ -250,6 +250,16 @@ export function ComparisonHero() {
   return (
     <ComparisonProvider value={{ activeNavIndex: 0, onNavClick: () => {} }}>
       <div className="relative bg-neutral-500 flex flex-col items-center">
+        {/* 
+          Static Header - Part of document flow, no z-index conflicts.
+          Content below flows naturally without needing margin-top compensation.
+        */}
+        <Header
+          forceShow={true}
+          variant="transparent"
+          position="static"
+          className="hidden md:block"
+        />
         {/* Centralized SVG Filters - rendered once */}
         <SVGFilters uniqueId={uniqueId} />
 
@@ -264,14 +274,9 @@ export function ComparisonHero() {
             }
           `}
         >
-          <Header
-            forceShow={true}
-            variant="transparent"
-            className="hidden md:flex absolute top-0 w-full z-50 mb-4 pointer-events-auto"
-          />
           {/* Hero Content */}
           <div className="w-full">
-            <div className="relative flex justify-center items-start flex-col w-full h-[420px] sm:h-[540px] md:h-[calc(100vh-80px)] md:min-h-[500px] pt-4 md:pt-8 overflow-hidden">
+            <div className="relative flex justify-center items-start flex-col w-full h-[420px] sm:h-[540px] md:h-[calc(100vh-80px)] md:min-h-[500px] overflow-hidden">
               <div className="flex gap-2 h-full xl:gap-4 2xl:gap-8 w-full relative">
                 {/* Left Candidate */}
                 <div className="absolute left-0 bottom-0 h-[65%] md:h-[85%] w-[32%] sm:w-[36%] md:w-[36%] lg:w-[40%] xl:relative xl:w-auto max-w-[300px] md:max-w-[500px] xl:max-w-none xl:flex-1 xl:h-full mx-auto xl:mx-0 order-1 overflow-hidden xl:overflow-visible z-1 xl:flex xl:justify-end bg-transparent">
@@ -319,9 +324,12 @@ export function ComparisonHero() {
 
                 {/* Center Content */}
                 <div className="relative z-10 flex flex-col justify-start gap-2 xl:gap-2 order-1 xl:order-2 max-w-sm mx-auto xl:max-w-none xl:h-full w-full xl:w-auto pointer-events-none xl:pointer-events-auto">
+                  {/* Mobile Header - Static position, no z-index conflicts */}
                   <Header
                     forceShow={true}
-                    className="md:hidden static! bg-transparent! p-0! py-2! pointer-events-auto"
+                    variant="transparent"
+                    position="static"
+                    className="md:hidden p-0 py-2 pointer-events-auto"
                   />
                   <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center pointer-events-auto">
                     <HeroTitle
