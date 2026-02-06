@@ -25,7 +25,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative flex items-center justify-center min-h-auto lg:min-h-[85vh] w-full px-4 container mx-auto mb-10 mt-24 md:mt-28 lg:mt-0">
+    <section className="relative flex items-center justify-center min-h-auto lg:min-h-[85vh] w-full px-4 container mx-auto mb-10 mt-21 md:mt-24 lg:mt-21">
       <div className="w-full bg-primary-50/50 rounded-3xl md:rounded-[2.5rem] p-6 sm:p-8 md:p-12 lg:p-20 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20 overflow-hidden shadow-sm">
         {/* Left Content */}
         <div className="flex-1 max-w-2xl space-y-6 md:space-y-8 z-10 text-center lg:text-left">

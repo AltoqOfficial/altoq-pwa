@@ -12,7 +12,15 @@ interface ConditionalLayoutProps {
 const noLayoutRoutes = ["/dashboard"];
 
 // Routes that render their own Header
-const customHeaderRoutes = ["/compara"];
+const customHeaderRoutes = [
+  "/",
+  "/compara",
+  "/formulario-candidato",
+  "/login",
+  "/register",
+  "/forgot",
+  "/forgot-password",
+];
 
 /**
  * ConditionalLayout

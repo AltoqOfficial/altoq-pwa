@@ -111,5 +111,6 @@ export const CONTACT = {
 
 // External Links
 export const EXTERNAL_LINKS = {
-  volunteerForm: "https://forms.gle/PLACEHOLDER", // TODO: Replace with actual Google Form URL
+  volunteerForm: "https://forms.gle/LJXss32j8WkpmR2e8",
+  suggestionsForm: "https://forms.gle/gzZvAP1FDvdhooj77",
 } as const;

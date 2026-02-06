@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 
@@ -34,9 +33,6 @@ export function Logo({
   priority = false,
   quality = 100,
 }: LogoProps) {
-  const pathname = usePathname();
-  const isComparaPage = pathname === "/compara";
-
   const sizeConfig = {
     sm: { width: 96, height: 32, className: "w-24 h-8" },
     md: { width: 128, height: 42, className: "w-32 h-[42px]" },
@@ -49,11 +45,7 @@ export function Logo({
     red: "",
   };
 
-  // En /compara, forzar el logo a blanco, a menos que se especifique rojo explícitamente
-  const appliedFilter =
-    isComparaPage && variant !== "red"
-      ? "brightness-0 invert"
-      : filterClasses[variant];
+  const appliedFilter = filterClasses[variant];
 
   const logoContent = (
     <Image

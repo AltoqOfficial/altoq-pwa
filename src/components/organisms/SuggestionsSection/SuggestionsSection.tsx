@@ -1,6 +1,7 @@
 "use client";
 import { Typography } from "@/components/atoms/Typography";
 import { Button } from "@/components/atoms/Button";
+import { EXTERNAL_LINKS } from "@/constants";
 
 /**
  * SuggestionsSection Component (Organism)
@@ -71,6 +72,9 @@ export function SuggestionsSection() {
               <Button
                 variant="primary"
                 className="w-full sm:w-auto bg-primary-500 hover:bg-primary-600 text-white font-bold rounded-2xl px-8 py-4 shadow-none transition-colors cursor-pointer"
+                onClick={() =>
+                  window.open(EXTERNAL_LINKS.suggestionsForm, "_blank")
+                }
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   Enviar sugerencia

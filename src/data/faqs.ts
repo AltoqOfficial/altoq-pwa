@@ -20,11 +20,6 @@ export const faqs: FAQItem[] = [
       "Recopilamos información de fuentes oficiales como el JNE (Jurado Nacional de Elecciones), declaraciones públicas de los candidatos, planes de gobierno registrados, y medios de comunicación verificados. Toda la información es contrastada y verificada por nuestro equipo.",
   },
   {
-    question: "¿A qué tipo de elección votar?",
-    answer:
-      "Altoq cubre las Elecciones Generales 2026 en Perú, que incluyen elecciones presidenciales y congresales. Nuestra plataforma te ayudará a conocer tanto a los candidatos presidenciales como a los candidatos al congreso.",
-  },
-  {
     question: "¿Por qué se creó Altoq?",
     answer:
       "Altoq nace de la necesidad de empoderar a los ciudadanos con información clara, objetiva y accesible sobre los candidatos y sus propuestas. Creemos que una democracia fuerte se construye con votantes informados.",
