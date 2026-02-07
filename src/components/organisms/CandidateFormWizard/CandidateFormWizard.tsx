@@ -14,6 +14,8 @@ import {
 } from "@/lib/utils/political-match";
 import { MatchResults } from "./MatchResults";
 import { useUserProfile } from "@/hooks/useUserProfile";
+import { useTheme } from "@/contexts/ThemeContext";
+import { cn } from "@/lib/utils";
 
 const FORM_STORAGE_KEY = "altoq_candidate_form_v2";
 
@@ -40,6 +42,11 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   const router = useRouter();
   const { user, isLoading: isLoadingUser } = useUserProfile();
   const isAuthenticated = !!user && !isLoadingUser;
+  const { resolvedTheme } = useTheme();
+
+  // If user is not logged in, force light theme
+  // If user is logged in, respect their theme selection
+  const isDark = user ? resolvedTheme === "dark" : false;
 
   const [responses, setResponses] = useState<Record<string, AnswerValue>>(
     () => {
@@ -191,7 +198,12 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
 
   if (isSubmitting) {
     return (
-      <div className="fixed inset-0 z-200 bg-neutral-900 flex flex-col items-center justify-center p-6 text-center">
+      <div
+        className={cn(
+          "fixed inset-0 z-200 flex flex-col items-center justify-center p-6 text-center",
+          isDark ? "bg-[#1a1a1a]" : "bg-white"
+        )}
+      >
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{
@@ -212,7 +224,10 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
           key={loadingMessage}
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="text-white text-2xl md:text-3xl font-flexo-bold uppercase tracking-wider mb-4"
+          className={cn(
+            "text-2xl md:text-3xl font-flexo-bold uppercase tracking-wider mb-4",
+            isDark ? "text-white" : "text-neutral-900"
+          )}
         >
           {loadingMessage}
         </motion.h2>
@@ -221,17 +236,30 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-neutral-400 text-sm md:text-base max-w-sm mb-16 leading-relaxed font-flexo"
+          className={cn(
+            "text-sm md:text-base max-w-sm mb-16 leading-relaxed font-flexo",
+            isDark ? "text-neutral-400" : "text-neutral-600"
+          )}
         >
           Altoq nunca influirá en tus decisiones, somos una plataforma neutral
         </motion.p>
 
         <div className="relative">
-          <span className="text-white text-3xl font-flexo-bold tabular-nums">
+          <span
+            className={cn(
+              "text-3xl font-flexo-bold tabular-nums",
+              isDark ? "text-white" : "text-neutral-900"
+            )}
+          >
             {Math.round(progress)}%
           </span>
           {/* Subtle underline progress */}
-          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-24 h-1 bg-neutral-800 rounded-full overflow-hidden">
+          <div
+            className={cn(
+              "absolute -bottom-4 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full overflow-hidden",
+              isDark ? "bg-neutral-800" : "bg-neutral-200"
+            )}
+          >
             <motion.div
               className="h-full bg-primary-600"
               animate={{ width: `${progress}%` }}
@@ -249,10 +277,18 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   return (
     <div
       ref={scrollContainerRef}
-      className="min-h-screen w-full relative z-100 bg-neutral-500 selection:bg-primary-600/30"
+      className={cn(
+        "min-h-screen w-full relative z-100 selection:bg-primary-600/30",
+        isDark ? "bg-[#1a1a1a]" : "bg-white"
+      )}
     >
       {/* Top Progress Bar */}
-      <div className="fixed top-0 left-0 w-full h-1 bg-neutral-800 z-110">
+      <div
+        className={cn(
+          "fixed top-0 left-0 w-full h-1 z-110",
+          isDark ? "bg-white/10" : "bg-neutral-200"
+        )}
+      >
         <div
           className="h-full bg-primary-600 transition-all duration-500"
           style={{ width: `${(step / 5) * 100}%` }}
@@ -268,10 +304,20 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
               <p className="text-[#FF0000] font-bold text-sm md:text-base uppercase tracking-wider font-flexo mb-1">
                 Sección {step}/5
               </p>
-              <p className="text-white/60 text-xs md:text-sm font-bold uppercase tracking-widest">
+              <p
+                className={cn(
+                  "text-xs md:text-sm font-bold uppercase tracking-widest",
+                  isDark ? "text-white/60" : "text-neutral-600"
+                )}
+              >
                 {currentSection.title}
               </p>
-              <h2 className="text-white text-xl md:text-2xl font-bold font-flexo-bold mt-1">
+              <h2
+                className={cn(
+                  "text-xl md:text-2xl font-bold font-flexo-bold mt-1",
+                  isDark ? "text-white" : "text-neutral-900"
+                )}
+              >
                 {currentSection.description}
               </h2>
             </div>
@@ -287,17 +333,30 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
               question={q}
               selectedAnswer={responses[q.id] || ""}
               onChange={(val) => handleAnswer(q.id, val)}
+              isDark={isDark}
             />
           ))}
         </div>
 
         {/* Navigation Footer */}
-        <div className="fixed bottom-0 left-0 w-full bg-neutral-500/90 backdrop-blur-md border-t border-neutral-800 p-6 z-110">
+        <div
+          className={cn(
+            "fixed bottom-0 left-0 w-full backdrop-blur-md border-t p-6 z-110",
+            isDark
+              ? "bg-[#1a1a1a]/95 border-white/10"
+              : "bg-white/95 border-neutral-200"
+          )}
+        >
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="order-2 md:order-1 flex items-center gap-6">
               <button
                 onClick={onClose}
-                className="text-white hover:text-neutral-300 transition-colors text-sm font-flexo-bold uppercase tracking-widest"
+                className={cn(
+                  "transition-colors text-sm font-flexo-bold uppercase tracking-widest",
+                  isDark
+                    ? "text-white hover:text-neutral-300"
+                    : "text-neutral-900 hover:text-neutral-600"
+                )}
               >
                 Cerrar
               </button>
@@ -305,7 +364,12 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
               {step > 1 && (
                 <button
                   onClick={prevStep}
-                  className="text-neutral-400 hover:text-white transition-colors text-sm font-flexo-bold uppercase tracking-widest"
+                  className={cn(
+                    "transition-colors text-sm font-flexo-bold uppercase tracking-widest",
+                    isDark
+                      ? "text-neutral-400 hover:text-white"
+                      : "text-neutral-600 hover:text-neutral-900"
+                  )}
                 >
                   Anterior
                 </button>
@@ -324,7 +388,12 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
                     : "Enviar Respuestas"
                   : "Siguiente Paso"}
               </Button>
-              <p className="text-neutral-300 text-xs font-bold uppercase tracking-tighter mt-1">
+              <p
+                className={cn(
+                  "text-xs font-bold uppercase tracking-tighter mt-1",
+                  isDark ? "text-neutral-300" : "text-neutral-600"
+                )}
+              >
                 Página 0{step} de 05
               </p>
             </div>

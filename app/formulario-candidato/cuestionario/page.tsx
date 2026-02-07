@@ -26,7 +26,7 @@ function QuestionnaireContent() {
 
 export default function QuestionnairePage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-neutral-900" />}>
+    <Suspense fallback={<div className="min-h-screen bg-white" />}>
       <QuestionnaireContent />
     </Suspense>
   );
