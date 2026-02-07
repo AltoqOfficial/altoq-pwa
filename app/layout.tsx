@@ -6,6 +6,7 @@ import {
   atNameSans,
 } from "@/lib/fonts";
 import Script from "next/script";
+import { Suspense } from "react";
 
 import "./globals.css";
 
@@ -176,7 +177,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <PWARegistration />
 
             {/* Conditional Layout - Shows Header/Footer for public pages, custom layout for dashboard */}
-            <ConditionalLayout>{children}</ConditionalLayout>
+            <Suspense fallback={null}>
+              <ConditionalLayout>{children}</ConditionalLayout>
+            </Suspense>
             <ThemeAuthGuard />
           </QueryProvider>
         </ThemeProvider>

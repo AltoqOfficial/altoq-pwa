@@ -19,9 +19,9 @@ export function HeroSection() {
   const { user } = useUserProfile();
   const isAuthenticated = !!user;
 
-  // Redirect to dashboard if authenticated, otherwise to the original path
+  // Redirect to home (/) if authenticated (dashboard is shown there), otherwise to the original path
   const getHref = (defaultHref: string) => {
-    return isAuthenticated ? "/dashboard" : defaultHref;
+    return isAuthenticated ? "/" : defaultHref;
   };
 
   return (

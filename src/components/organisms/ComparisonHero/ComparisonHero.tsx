@@ -254,12 +254,7 @@ export function ComparisonHero() {
           Static Header - Part of document flow, no z-index conflicts.
           Content below flows naturally without needing margin-top compensation.
         */}
-        <Header
-          forceShow={true}
-          variant="transparent"
-          position="static"
-          className="hidden md:block"
-        />
+        <Header forceShow={true} variant="transparent" position="static" />
         {/* Centralized SVG Filters - rendered once */}
         <SVGFilters uniqueId={uniqueId} />
 
@@ -324,13 +319,6 @@ export function ComparisonHero() {
 
                 {/* Center Content */}
                 <div className="relative z-10 flex flex-col justify-start gap-2 xl:gap-2 order-1 xl:order-2 max-w-sm mx-auto xl:max-w-none xl:h-full w-full xl:w-auto pointer-events-none xl:pointer-events-auto">
-                  {/* Mobile Header - Static position, no z-index conflicts */}
-                  <Header
-                    forceShow={true}
-                    variant="transparent"
-                    position="static"
-                    className="md:hidden p-0 py-2 pointer-events-auto"
-                  />
                   <div className="mx-auto px-1 sm:px-4 md:px-0 w-full flex flex-col items-center pointer-events-auto">
                     <HeroTitle
                       className="flex text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-8xl"

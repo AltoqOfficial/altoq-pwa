@@ -136,7 +136,7 @@ const ErrorActions = memo(function ErrorActions({
   if (action === "forgot") {
     return (
       <Link
-        href="/forgot"
+        href="/forgot-password"
         className="text-[#b3261e] font-flexo-bold text-sm underline hover:opacity-80 transition-opacity ml-1"
       >
         Solicitar nuevo enlace

@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Typography } from "@/components/atoms/Typography";
 import { Header } from "@/components/organisms/Header";
 import { cn } from "@/lib/utils";
+import { useTheme } from "@/contexts/ThemeContext";
+import { useUserProfile } from "@/hooks/useUserProfile";
 
 /**
  * CandidateFormHero Component (Organism)
@@ -17,6 +19,13 @@ interface CandidateFormHeroProps {
 }
 
 export function CandidateFormHero({ onOptionSelect }: CandidateFormHeroProps) {
+  const { user } = useUserProfile();
+  const { resolvedTheme } = useTheme();
+
+  // If user is not logged in, force light theme
+  // If user is logged in, respect their theme selection
+  const isDark = user ? resolvedTheme === "dark" : false;
+
   const candidates = [
     { id: 1, image: "/images/iconsForm/candidato1.png", overlayType: "lead" },
     { id: 2, image: "/images/iconsForm/candidato2.png", overlayType: "red" },
@@ -51,13 +60,21 @@ export function CandidateFormHero({ onOptionSelect }: CandidateFormHeroProps) {
   return (
     <>
       <Header position="static" />
-      <section className="relative min-h-[90vh] md:min-h-[85vh] flex flex-col overflow-hidden bg-[#202020]">
+      <section
+        className={cn(
+          "relative min-h-[90vh] md:min-h-[85vh] flex flex-col overflow-hidden",
+          isDark ? "bg-[#1a1a1a]" : "bg-white"
+        )}
+      >
         <div className="container relative z-10 mx-auto px-6 md:px-12 lg:px-24 text-left pt-5 mb-10">
           <Typography
             variant="h3"
             weight="700"
             align="left"
-            className="mb-8 max-w-4xl text-white text-3xl md:text-5xl leading-tight font-flexo-bold"
+            className={cn(
+              "mb-8 max-w-4xl text-3xl md:text-5xl leading-tight font-flexo-bold",
+              isDark ? "text-white" : "text-neutral-900"
+            )}
           >
             Para reducir la corrupción, ¿qué es más importante para ti?
           </Typography>
@@ -69,10 +86,19 @@ export function CandidateFormHero({ onOptionSelect }: CandidateFormHeroProps) {
                 onClick={() => onOptionSelect(option.key)}
                 className={cn(
                   "w-full px-6 py-4 rounded-xl text-sm font-normal border-2 transition-all duration-300 text-left",
-                  "bg-[#2C2C2C] border-transparent text-white hover:border-neutral-500 hover:bg-[#353535]"
+                  isDark
+                    ? "bg-[#2C2C2C] border-transparent text-white hover:border-neutral-500 hover:bg-[#353535]"
+                    : "bg-neutral-50 border-neutral-200 text-neutral-900 hover:border-primary-500 hover:bg-primary-50"
                 )}
               >
-                <span className="font-bold mr-1 text-white">{option.key})</span>
+                <span
+                  className={cn(
+                    "font-bold mr-1",
+                    isDark ? "text-white" : "text-neutral-900"
+                  )}
+                >
+                  {option.key})
+                </span>
                 {option.text}
               </button>
             ))}

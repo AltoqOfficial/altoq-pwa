@@ -7,7 +7,8 @@ import type { NextRequest } from "next/server";
 const protectedApiRoutes = ["/api/profile", "/api/auth/logout"];
 
 // Page routes that require authentication (cookie-based)
-const protectedPageRoutes = ["/dashboard"];
+// Note: Dashboard is rendered at / for authenticated users via ConditionalHome
+const protectedPageRoutes: string[] = [];
 
 // Routes that should redirect to dashboard if already authenticated
 const authRoutes = ["/login", "/register"];
@@ -68,7 +69,7 @@ export async function proxy(request: NextRequest) {
 
   // Redirect authenticated users trying to access auth routes
   if (isAuthRoute && isAuthenticated) {
-    return NextResponse.redirect(new URL("/dashboard", request.url));
+    return NextResponse.redirect(new URL("/", request.url));
   }
 
   // 3. API Route Protection (Supports Cookie OR Bearer)

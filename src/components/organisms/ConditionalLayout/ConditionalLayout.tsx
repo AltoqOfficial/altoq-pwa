@@ -3,13 +3,14 @@
 import { usePathname } from "next/navigation";
 import { Header } from "@/components/organisms/Header";
 import { Footer } from "@/components/organisms/Footer";
+import { useUserProfile } from "@/hooks/useUserProfile";
 
 interface ConditionalLayoutProps {
   children: React.ReactNode;
 }
 
 // Routes that should NOT show the landing page Header/Footer
-const noLayoutRoutes = ["/dashboard", "/formulario-candidato/cuestionario"];
+const noLayoutRoutes = ["/formulario-candidato/cuestionario"];
 
 // Routes that render their own Header
 const customHeaderRoutes = [
@@ -18,7 +19,6 @@ const customHeaderRoutes = [
   "/formulario-candidato",
   "/login",
   "/register",
-  "/forgot",
   "/forgot-password",
 ];
 
@@ -30,6 +30,9 @@ const customHeaderRoutes = [
  */
 export function ConditionalLayout({ children }: ConditionalLayoutProps) {
   const pathname = usePathname();
+  const { user } = useUserProfile();
+  const isAuthenticated = !!user;
+
   // Check if current route is a no-layout route
   const isNoLayoutRoute = noLayoutRoutes.some(
     (route) => pathname === route || pathname.startsWith(`${route}/`)
@@ -41,10 +44,12 @@ export function ConditionalLayout({ children }: ConditionalLayoutProps) {
   }
 
   // Determine if we should show Header
-  // Check the route directly (consistent on server and client)
   const isCustomHeaderRoute = customHeaderRoutes.some(
     (route) => pathname === route
   );
+
+  // Hide Footer for all pages when authenticated
+  const hideFooter = isAuthenticated;
 
   // Public routes render with Header and Footer
   return (
@@ -53,7 +58,7 @@ export function ConditionalLayout({ children }: ConditionalLayoutProps) {
       <main className="flex-1" id="main-content" role="main">
         {children}
       </main>
-      <Footer />
+      {!hideFooter && <Footer />}
     </div>
   );
 }

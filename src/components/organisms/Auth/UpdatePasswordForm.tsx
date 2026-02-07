@@ -300,7 +300,7 @@ export const UpdatePasswordForm = memo(function UpdatePasswordForm() {
             context="update"
           />
           <Link
-            href="/forgot"
+            href="/forgot-password"
             className="block text-center text-[#202020] font-flexo-bold text-base hover:opacity-80 transition-opacity"
           >
             Solicitar nuevo enlace
