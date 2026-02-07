@@ -1,10 +1,9 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { DashboardIcon, CompareIcon, SettingsIcon, UserIcon } from "../icons";
+import { DashboardIcon, CompareIcon, MatchIcon } from "../icons";
 import { SettingsModal } from "../SettingsModal";
 import { cn } from "@/lib/utils";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
@@ -28,16 +27,10 @@ const mainNavItems: NavItem[] = [
     label: "Comparar candidatos",
     icon: CompareIcon,
   },
-];
-
-const externalLinks = [
   {
-    href: "https://www.tiktok.com/@altoqperu",
-    label: "Redes sociales",
-  },
-  {
-    href: "/",
-    label: "Únete a nosotros",
+    href: "/formulario-candidato",
+    label: "Encuentra tu Match",
+    icon: MatchIcon,
   },
 ];
 
@@ -90,6 +83,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
   };
 
   const displayName = isLoading ? "Cargando..." : user?.fullName || "Usuario";
+  const userInitial = (user?.fullName?.charAt(0) || "U").toUpperCase();
 
   return (
     <>
@@ -111,31 +105,12 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         )}
       >
-        {/* Logo Section */}
-        <div
-          className={cn(
-            "flex items-center justify-between lg:justify-center py-6 lg:py-8 px-4 lg:px-0",
-            isDark ? "bg-[#151515]" : "bg-[#F0F0F0]"
-          )}
-        >
-          <Link href="/">
-            <Image
-              src="/images/logo/altoq.webp"
-              alt="Altoq"
-              width={86}
-              height={36}
-              className={cn(
-                "h-8 lg:h-9 w-auto",
-                isDark && "brightness-0 invert"
-              )}
-              priority
-            />
-          </Link>
-          {/* Close button - mobile only */}
+        {/* Close button - mobile only */}
+        <div className="flex items-center justify-end lg:hidden pt-4 px-4">
           <button
             onClick={onClose}
             className={cn(
-              "lg:hidden p-2 -mr-2 transition-colors",
+              "p-2 -mr-2 transition-colors",
               isDark
                 ? "text-white/60 hover:text-white"
                 : "text-gray-500 hover:text-gray-700"
@@ -189,69 +164,8 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                 </li>
               );
             })}
-            {/* Settings Button */}
-            <li>
-              <button
-                onClick={() => setIsSettingsOpen(true)}
-                className={cn(
-                  "flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium transition-all duration-200 w-full",
-                  isDark
-                    ? "text-white/60 hover:text-[#FF2727] hover:bg-white/5"
-                    : "text-[#868686] hover:text-[#FF2727] hover:bg-gray-50"
-                )}
-              >
-                <SettingsIcon className="flex-shrink-0" />
-                <span className="leading-tight text-[13px]">Ajustes</span>
-              </button>
-            </li>
           </ul>
         </nav>
-
-        {/* External Links */}
-        <div
-          className={cn(
-            "px-4 py-4 lg:py-5 border-t",
-            isDark ? "border-white/10" : "border-gray-100"
-          )}
-        >
-          <ul className="space-y-3">
-            {externalLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={cn(
-                    "flex items-center gap-2 text-xs transition-colors",
-                    isDark
-                      ? "text-white/50 hover:text-[#FF2727]"
-                      : "text-[#868686] hover:text-[#FF2727]"
-                  )}
-                  target={link.href.startsWith("http") ? "_blank" : undefined}
-                  rel={
-                    link.href.startsWith("http")
-                      ? "noopener noreferrer"
-                      : undefined
-                  }
-                >
-                  <span>{link.label}</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="10"
-                    height="10"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M7 17L17 7" />
-                    <path d="M7 7h10v10" />
-                  </svg>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
 
         {/* User Section with Dropdown */}
         <div
@@ -268,13 +182,8 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
               isDark ? "hover:bg-white/5" : "hover:bg-gray-50"
             )}
           >
-            <div
-              className={cn(
-                "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0",
-                isDark ? "bg-white/10" : "bg-gray-200"
-              )}
-            >
-              <UserIcon className={cn("w-4 h-4", isDark && "text-white/70")} />
+            <div className="w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center flex-shrink-0 text-white font-bold text-sm shadow-sm">
+              {userInitial}
             </div>
             <div className="min-w-0 text-left flex-1">
               <p
@@ -325,6 +234,37 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                   : "bg-white border border-gray-100"
               )}
             >
+              <button
+                onClick={() => {
+                  setIsDropdownOpen(false);
+                  setIsSettingsOpen(true);
+                }}
+                className={cn(
+                  "flex items-center gap-3 w-full px-4 py-3 text-sm transition-colors",
+                  isDark
+                    ? "text-white/70 hover:bg-white/5 hover:text-[#FF2727]"
+                    : "text-gray-700 hover:bg-gray-50 hover:text-[#FF2727]"
+                )}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                <span>Ajustes</span>
+              </button>
+              <div
+                className={cn("h-px", isDark ? "bg-white/10" : "bg-gray-100")}
+              />
               <button
                 onClick={handleLogout}
                 disabled={isLoggingOut}

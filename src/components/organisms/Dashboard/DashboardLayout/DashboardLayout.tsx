@@ -3,7 +3,6 @@
 import { useState, useCallback } from "react";
 import { Header } from "@/components/organisms/Header";
 import { Sidebar } from "../Sidebar";
-import { DashboardHeader } from "../DashboardHeader";
 import { useTheme } from "@/contexts";
 import { cn } from "@/lib/utils";
 
@@ -15,12 +14,15 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const { resolvedTheme } = useTheme();
 
-  const openSidebar = useCallback(() => setIsSidebarOpen(true), []);
+  const toggleSidebar = useCallback(
+    () => setIsSidebarOpen((prev) => !prev),
+    []
+  );
   const closeSidebar = useCallback(() => setIsSidebarOpen(false), []);
 
   return (
     <>
-      <Header position="static" />
+      <Header position="static" onSidebarToggle={toggleSidebar} />
       <div
         className={cn(
           "flex min-h-screen transition-colors duration-300",
@@ -32,9 +34,6 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
 
         {/* Main Content Area */}
         <div className="flex-1 flex flex-col min-h-screen lg:ml-0">
-          {/* Mobile Header */}
-          <DashboardHeader onMenuClick={openSidebar} />
-
           {/* Page Content */}
           <main className="flex-1 overflow-auto">{children}</main>
         </div>
