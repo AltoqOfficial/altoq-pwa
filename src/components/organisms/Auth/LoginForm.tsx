@@ -219,7 +219,7 @@ export const LoginForm = memo(function LoginForm() {
         )}
 
         <Link
-          href="/forgot"
+          href="/forgot-password"
           className="text-[#202020] font-flexo text-lg flex justify-end hover:underline transition-all cursor-pointer -mt-1 -mb-0.5"
         >
           ¿Olvidaste tu contraseña?
