@@ -44,9 +44,24 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   const isAuthenticated = !!user && !isLoadingUser;
   const { resolvedTheme } = useTheme();
 
+  /*
+   * Start - Hydration Mismatch Fix
+   * We need to wait for the component to mount before using theme data
+   * to avoid server/client mismatch errors.
+   */
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // This is necessary for hydration mismatch handling
+    // eslint-disable-next-line
+    setMounted(true);
+  }, []);
+
   // If user is not logged in, force light theme
   // If user is logged in, respect their theme selection
-  const isDark = user ? resolvedTheme === "dark" : false;
+  // During SSR (not mounted), default to false (light) to match server
+  const isDark = mounted && user ? resolvedTheme === "dark" : false;
+  /* End - Hydration Mismatch Fix */
 
   const [responses, setResponses] = useState<Record<string, AnswerValue>>(
     () => {
@@ -200,8 +215,10 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
     return (
       <div
         className={cn(
-          "fixed inset-0 z-200 flex flex-col items-center justify-center p-6 text-center",
-          isDark ? "bg-[#1a1a1a]" : "bg-white"
+          "fixed inset-0 z-200 flex flex-col items-center justify-center p-6 text-center select-none",
+          isDark
+            ? "bg-neutral-950 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-neutral-800 via-neutral-900 to-black"
+            : "bg-white"
         )}
       >
         <motion.div
@@ -215,9 +232,17 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
             repeat: Infinity,
             repeatType: "reverse",
           }}
-          className="mb-12"
+          className="mb-12 relative"
         >
-          <Logo variant="white" size="lg" className="scale-150" />
+          {/* Glow effect backing for logo in dark mode */}
+          {isDark && (
+            <div className="absolute inset-0 bg-white/5 blur-xl rounded-full transform scale-150" />
+          )}
+          <Logo
+            variant={isDark ? "white" : "default"}
+            size="lg"
+            className="scale-150 relative z-10"
+          />
         </motion.div>
 
         <motion.h2
@@ -238,7 +263,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
           transition={{ delay: 0.2 }}
           className={cn(
             "text-sm md:text-base max-w-sm mb-16 leading-relaxed font-flexo",
-            isDark ? "text-neutral-400" : "text-neutral-600"
+            isDark ? "text-white/70" : "text-neutral-600"
           )}
         >
           Altoq nunca influirá en tus decisiones, somos una plataforma neutral
@@ -256,12 +281,15 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
           {/* Subtle underline progress */}
           <div
             className={cn(
-              "absolute -bottom-4 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full overflow-hidden",
+              "absolute -bottom-4 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full overflow-visible", // overflow-visible for glow
               isDark ? "bg-neutral-800" : "bg-neutral-200"
             )}
           >
             <motion.div
-              className="h-full bg-primary-600"
+              className={cn(
+                "h-full bg-primary-600 rounded-full",
+                isDark && "shadow-[0_0_10px_rgba(220,38,38,0.8)]" // Red glow
+              )}
               animate={{ width: `${progress}%` }}
             />
           </div>
@@ -295,7 +323,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
         />
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 pt-20 pb-10">
+      <div className="max-w-5xl mx-auto px-6 pt-20 pb-30">
         {/* Header Section */}
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-4">
@@ -341,13 +369,13 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
         {/* Navigation Footer */}
         <div
           className={cn(
-            "fixed bottom-0 left-0 w-full backdrop-blur-md border-t p-6 z-110",
+            "fixed bottom-0 left-0 w-full backdrop-blur-md border-t p-4 md:p-6 z-110",
             isDark
               ? "bg-[#1a1a1a]/95 border-white/10"
               : "bg-white/95 border-neutral-200"
           )}
         >
-          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
             <div className="order-2 md:order-1 flex items-center gap-6">
               <button
                 onClick={onClose}
@@ -380,7 +408,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
               <Button
                 onClick={nextStep}
                 disabled={!isSectionComplete || isSubmitting}
-                className="w-full md:w-64 py-4 text-lg"
+                className="w-full md:w-64 py-3 md:py-4 text-base md:text-lg"
               >
                 {step === 5
                   ? isSubmitting

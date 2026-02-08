@@ -204,7 +204,7 @@ interface AnimationConfig {
 
 // ============ CONFIGURATION ============
 const BASE_SIZE = 500;
-const SCROLL_HEIGHT = "250dvh"; // Más corto
+const SCROLL_HEIGHT = "180dvh"; // Más rápido para mejorar la UX
 
 // Configuración para mobile
 const MOBILE_CONFIG = {
@@ -681,6 +681,7 @@ export function VSScrollAnimation() {
               <Button
                 variant="secondary"
                 size="lg"
+                shape="pill"
                 className="w-full max-w-64 cursor-pointer"
                 onClick={() => router.push(getDemoHref())}
               >
@@ -724,9 +725,10 @@ export function VSScrollAnimation() {
                 fortalezas de cada candidato
               </p>
               <Button
-                variant="secondary"
-                className="invert mt-6 cursor-pointer"
+                variant="white"
+                className="mt-6 cursor-pointer"
                 size={isMobile ? MOBILE_CONFIG.buttonSize : undefined}
+                shape="pill"
                 onClick={() => router.push(getDemoHref())}
               >
                 {isAuthenticated ? "Ir al Dashboard" : "¡Prueba ahora!"}

@@ -78,7 +78,7 @@ export const IDEOLOGIA_POLITICA_CONFIG: SectionDefinition = {
   dataKey: "ideologiaPolitica",
   layout: "three-column",
   fields: [
-    { key: "posicion", label: "POSICIÓN" },
+    { key: "posicion", label: "IDEOLOGÍA POLÍTICA" },
     { key: "economia", label: "ECONOMÍA" },
     { key: "matrimonioIgualitario", label: "MATRIMONIO IGUALITARIO" },
     { key: "aborto", label: "ABORTO" },

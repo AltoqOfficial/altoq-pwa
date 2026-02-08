@@ -1,7 +1,15 @@
-import { Typography } from "@/components/atoms";
+"use client";
+
+import { Typography, Button } from "@/components/atoms";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useUserProfile } from "@/hooks/useUserProfile";
 
 export function AIPromotionSection() {
+  const router = useRouter();
+  const { user } = useUserProfile();
+  const isAuthenticated = !!user;
+
   return (
     <article
       id="como-funciona"
@@ -18,7 +26,7 @@ export function AIPromotionSection() {
       </div>
 
       <div className="flex flex-col gap-6 sm:gap-8 lg:gap-10 xl:gap-14">
-        <h3 className="font-semibold font-sohne-breit max-w-xs sm:max-w-md lg:max-w-xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-left">
+        <h3 className="font-semibold font-flexo-medium max-w-xs sm:max-w-md lg:max-w-xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-left">
           Tu voto, fundamentado en{" "}
           <span className="text-primary-600">Datos</span>
         </h3>
@@ -38,6 +46,20 @@ export function AIPromotionSection() {
             <strong>Sin Sesgos:</strong> No te decimos por quién votar. Solo te
             mostramos quién se acerca más a lo que tú ya piensas.
           </Typography>
+        </div>
+
+        <div className="mt-6 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+          <Button
+            variant="primary"
+            size="lg"
+            shape="pill"
+            className="w-full sm:w-auto px-8"
+            onClick={() =>
+              router.push(isAuthenticated ? "/" : "/formulario-candidato")
+            }
+          >
+            {isAuthenticated ? "Ir al Dashboard" : "Encuentra tu Match"}
+          </Button>
         </div>
 
         <p className="text-xs text-neutral-400 mt-6 text-center lg:text-left max-w-xs sm:max-w-md lg:max-w-lg">

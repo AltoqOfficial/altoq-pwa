@@ -54,6 +54,7 @@ function ProposalDetail({ data, color, align }: ProposalDetailProps) {
             source={data.source}
             description={data.descripcion}
             side={align === "left" ? "left" : "right"}
+            className="underline decoration-dashed decoration-white/40 underline-offset-4 hover:decoration-white transition-all pb-0.5"
           >
             <Typography
               color="white"
