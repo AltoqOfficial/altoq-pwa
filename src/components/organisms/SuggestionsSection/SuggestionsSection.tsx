@@ -63,7 +63,7 @@ export function SuggestionsSection() {
               className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-neutral-500 sm:text-lg"
               align="center"
             >
-              ¿Tienes alguna idea para mejorar Altoq? Tu feedback es el motor
+              ¿Tienes alguna idea para mejorar Altoq? Tu sugerencia es el motor
               que nos ayuda a construir la mejor plataforma para los peruanos.
             </Typography>
 
@@ -71,7 +71,8 @@ export function SuggestionsSection() {
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6">
               <Button
                 variant="primary"
-                className="w-full sm:w-auto bg-primary-500 hover:bg-primary-600 text-white font-bold rounded-2xl px-8 py-4 shadow-none transition-colors cursor-pointer"
+                shape="pill"
+                className="w-full sm:w-auto px-8 py-4"
                 onClick={() =>
                   window.open(EXTERNAL_LINKS.suggestionsForm, "_blank")
                 }
@@ -113,7 +114,7 @@ export function SuggestionsSection() {
                     />
                   </svg>
                 </div>
-                <span>Feedback anónimo</span>
+                <span>Permanece anónimo</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="p-1 rounded-full bg-primary-50">

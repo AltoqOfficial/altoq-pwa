@@ -201,7 +201,7 @@ export function MobileComparisonCard({
               font="bigShoulders"
               className="text-white text-[10px] md:text-xs font-black uppercase tracking-wider mb-0.5"
             >
-              POSICIÓN
+              IDEOLOGÍA POLÍTICA
             </Typography>
             <Typography
               font="bigShoulders"

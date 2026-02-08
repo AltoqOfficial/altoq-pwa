@@ -119,7 +119,11 @@ export function renderValueWithSource(value: SourceableValue): React.ReactNode {
           : "-";
 
     return (
-      <SourceTooltip source={source} description={description}>
+      <SourceTooltip
+        source={source}
+        description={description}
+        className="underline decoration-dashed decoration-white/40 underline-offset-4 hover:decoration-white transition-all pb-0.5"
+      >
         {content}
       </SourceTooltip>
     );
@@ -163,7 +167,14 @@ export function renderNumberedListWithSource(
     </span>
   ));
 
-  return <SourceTooltip source={source}>{content}</SourceTooltip>;
+  return (
+    <SourceTooltip
+      source={source}
+      className="underline decoration-dashed decoration-white/40 underline-offset-4 hover:decoration-white transition-all pb-0.5"
+    >
+      {content}
+    </SourceTooltip>
+  );
 }
 
 /**
@@ -199,7 +210,14 @@ export function renderBulletListWithSource(
     </span>
   ));
 
-  return <SourceTooltip source={source}>{content}</SourceTooltip>;
+  return (
+    <SourceTooltip
+      source={source}
+      className="underline decoration-dashed decoration-white/40 underline-offset-4 hover:decoration-white transition-all pb-0.5"
+    >
+      {content}
+    </SourceTooltip>
+  );
 }
 
 /**
@@ -258,7 +276,12 @@ export function renderTypographyListWithSource(
       weight="200"
       className="text-xs md:text-sm lg:text-base"
     >
-      <SourceTooltip source={source}>{item}</SourceTooltip>
+      <SourceTooltip
+        source={source}
+        className="underline decoration-dashed decoration-white/40 underline-offset-4 hover:decoration-white transition-all pb-0.5"
+      >
+        {item}
+      </SourceTooltip>
     </Typography>
   ));
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { Logo } from "@/components/atoms/Logo";
+import { Button } from "@/components/atoms/Button";
 import { cn } from "@/lib/utils";
 import { useUserProfile } from "@/hooks/useUserProfile";
 import { useLogout } from "@/components/organisms/Auth/hooks/useAuth";
@@ -378,15 +379,9 @@ export function Header({
               </div>
             ) : (
               // Not authenticated - Show login button
-              <Link
-                href="/login"
-                className={cn(
-                  "inline-block font-bold rounded-2xl px-6 py-2.5 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary-500/20",
-                  "bg-primary-500 hover:bg-primary-600 text-white"
-                )}
-              >
-                Iniciar sesión
-              </Link>
+              <Button asChild variant="primary" shape="pill">
+                <Link href="/login">Iniciar sesión</Link>
+              </Button>
             )}
           </div>
 
