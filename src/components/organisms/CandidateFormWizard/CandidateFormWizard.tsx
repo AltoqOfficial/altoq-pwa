@@ -16,6 +16,7 @@ import { MatchResults } from "./MatchResults";
 import { useUserProfile } from "@/hooks/useUserProfile";
 import { useTheme } from "@/contexts/ThemeContext";
 import { cn } from "@/lib/utils";
+import { useAnalytics } from "@/hooks/useAnalytics";
 
 const FORM_STORAGE_KEY = "altoq_candidate_form_v2";
 
@@ -43,6 +44,7 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
   const { user, isLoading: isLoadingUser } = useUserProfile();
   const isAuthenticated = !!user && !isLoadingUser;
   const { resolvedTheme } = useTheme();
+  const { track } = useAnalytics();
 
   /*
    * Start - Hydration Mismatch Fix
@@ -149,6 +151,16 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
 
   const handleAnswer = (questionId: string, value: AnswerValue) => {
     setResponses((prev) => ({ ...prev, [questionId]: value }));
+
+    // B2B Tracking: Insight Capture
+    track({
+      name: "question_answered",
+      properties: {
+        questionId,
+        topic: currentSection.title,
+        answerValue: value, // "A", "B", etc.
+      },
+    });
   };
 
   const nextStep = () => {
@@ -205,6 +217,18 @@ export const CandidateFormWizard: React.FC<CandidateFormWizardProps> = ({
       responses as Record<string, string>
     );
     setMatchResults(results);
+
+    // B2B Tracking: Match Completed
+    if (results.length > 0) {
+      track({
+        name: "match_completed",
+        properties: {
+          topCandidateId: results[0].id,
+          matchPercentage: results[0].score, // Score is already 0-100 or similar
+          timeToCompleteSeconds: 0, // TODO: Add timer
+        },
+      });
+    }
 
     setIsSubmitting(false);
     setIsSuccess(true);

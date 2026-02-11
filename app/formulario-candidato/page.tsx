@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { CandidateFormHero } from "@/components/organisms/CandidateFormHero";
 import { MatchResults } from "@/components/organisms/CandidateFormWizard";
 
@@ -9,6 +9,7 @@ const FORM_STORAGE_KEY = "altoq_candidate_form_v2";
 
 export default function CandidateFormPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const hasCheckedParams = useRef(false);
 
   // Check initial state for showResults
@@ -28,6 +29,8 @@ export default function CandidateFormPage() {
     }
   }, [showResults, router]);
 
+  // ... (existing code for effect)
+
   const handleCloseResults = () => {
     // Clear form data and go back to hero
     localStorage.removeItem(FORM_STORAGE_KEY);
@@ -44,7 +47,13 @@ export default function CandidateFormPage() {
     <CandidateFormHero
       onOptionSelect={(value) => {
         // Redirect to dedicated full-screen wizard route
-        router.push(`/formulario-candidato/cuestionario?q=Q1&v=${value}`);
+        // Preserve existing params (like district)
+        const currentParams = new URLSearchParams(searchParams.toString());
+        currentParams.set("q", "Q1");
+        currentParams.set("v", value);
+        router.push(
+          `/formulario-candidato/cuestionario?${currentParams.toString()}`
+        );
       }}
     />
   );

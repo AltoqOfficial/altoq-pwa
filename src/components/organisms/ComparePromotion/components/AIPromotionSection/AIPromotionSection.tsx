@@ -2,12 +2,15 @@
 
 import { Typography, Button } from "@/components/atoms";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useUserProfile } from "@/hooks/useUserProfile";
+import { useAnalytics } from "@/hooks/useAnalytics";
 
 export function AIPromotionSection() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { user } = useUserProfile();
+  const { track } = useAnalytics();
   const isAuthenticated = !!user;
 
   return (
@@ -15,6 +18,7 @@ export function AIPromotionSection() {
       id="como-funciona"
       className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 xl:gap-16 justify-center items-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-12 sm:py-16"
     >
+      {/* ... (existing image and text content) */}
       <div className="shrink-0 w-full lg:w-auto flex justify-center">
         <Image
           src="/promotion/stack_papers.jpg"
@@ -54,9 +58,23 @@ export function AIPromotionSection() {
             size="lg"
             shape="pill"
             className="w-full sm:w-auto px-8"
-            onClick={() =>
-              router.push(isAuthenticated ? "/" : "/formulario-candidato")
-            }
+            onClick={() => {
+              track({
+                name: "match_started",
+                properties: { source: "home_hero" },
+              });
+
+              const destination = isAuthenticated
+                ? "/"
+                : "/formulario-candidato";
+              // Preserve params
+              const queryString = searchParams.toString();
+              const url = queryString
+                ? `${destination}?${queryString}`
+                : destination;
+
+              router.push(url);
+            }}
           >
             {isAuthenticated ? "Ir al Dashboard" : "Encuentra tu Match"}
           </Button>
